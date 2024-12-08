@@ -1,0 +1,70 @@
+== 0000 - Getting Started (Chapter 0)
+
+=== What's the Point?
+* Identify the stuff you need to create Java programs
+* Get your computer ready to go
+
+'''
+
+Our goal is to learn the fundamentals of *object-oriented programming* using the *Java* programming language. 
+You might not even know what those things mean yet, but in order to get started you'll need a couple things installed on your computer.
+
+Java Development Kit (JDK):: A collection of software, used to develop Java programs. Most importantly, it includes a *compiler*.
+Integrated Development Environment (IDE):: An application used to write and test source code. 
+
+These two tools can be used on pretty much any laptop or desktop computer, even if it's not a very great computer.
+
+.Heads Up!
+****
+Java development on a chromebook or iPad is tricky and not recommended for beginners. Use a different computer if at all possible.
+****
+
+The Canvas course includes some options for students who don't have a computer capable of running the necessary software.
+
+=== Install the Java Development Kit
+
+I recommend installing the JDK available at https://adoptium.net, and the Oracle JDK is another great option.
+Detailed directions for this installation can be found in Canvas--and about a gazillion web pages and Youtube videos.
+I recommend installing the JDK before installing your IDE.
+
+
+// TODO: Link two JDK install videos
+// .Time To Watch!
+// ****
+// Title of Youtube video
+
+// video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
+// ****
+
+
+
+=== Install an IDE
+
+A computer program is created by writing *source code*, which is just text and can be created using any text editor.
+However, developing programs with something like Notepad or TextEdit--which come with Windows and macOS, respectively--means going through some potentially confusing (or at least intimidating) steps each time you want to run your program.
+Though IDEs also do much more, the most important thing they do for beginners is give you a "run" button you can press whenever you want to test your code.
+
+You can definitely write Java programs without using an IDE, but it's kinda like getting engaged to someone you've only ever met online: the fact that it turns out okay for some people doesn't mean it's a good idea for you.
+The only people who should write code without an IDE already know too much about programming to be wasting their time reading this book.
+
+There are a lot of great IDEs out there, including many free options, and ultimately it doesn't matter which one you use: they all produce the same files, and a person looking at the files can't tell what IDE you used.
+It's like choosing between Word and Google Docs; each has strengths and weaknesses, but you can write romantic poems about your online fiancé (or fiancée) in either one.
+
+I primarily use Visual Studio Code ("VS Code"), so that's what you'll see in most of my videos. 
+It's completely free and is available for Windows, macOS, and Linux.
+You can download it at https://code.visualstudio.com, and the Canvas course includes detailed installation instructions.
+I recommend installing a JDK prior to installing an IDE.
+
+.Heads Up!
+****
+Visual Studio *Code* is not the same as Visual Studio! There's a free version of Visual Studio (called Visual Studio Community) but it's not intended to be used with Java. 
+You're going to want Visual Studio Code (aka, "VS Code") for your Java coding.
+****
+
+// TODO: Link two IDE install videos
+// .Time To Watch!
+// ****
+// Title of Youtube video
+
+// video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
+// ****

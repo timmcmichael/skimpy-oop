@@ -1,0 +1,249 @@
+:relfileprefix: ../
+:relfilesuffix: /
+:imagesdir: images
+:sourcedir: source
+// The following corrects the directories if this is included in the index file.
+ifeval::["{docname}" == "index"]
+:imagesdir: chapter-2-variables/images
+:sourcedir: chapter-2-variables/source
+endif::[]
+
+== 0010 - Variables (Chapter 2)
+
+=== What's the Point?
+* Know how to select a data type
+* Write code to declare variables and assign values
+* Do some basic math
+
+'''
+It's fun to create programs that display stuff on the screen, but that's pretty limited.
+To start doing things that are more interesting--and useful--we'll need to keep track of some information.
+In computer programming, a piece of information is called *data*.
+
+In broad terms, there are two kinds of data:
+[unordered]
+constant:: A piece of data that can't change during program execution
+variable:: A piece of data that may change (or "vary") during program execution
+
+In our `Hello World` code, the letters and characters we output are constant data.
+
+.HelloWorld.java
+[source,java]
+----
+include::source/HelloWorld.java[]
+
+----
+<.> The string literal "Hello World"
+
+The only way to change what's output is by editing that constant--in the quotation marks--in our source code, before we run the program.
+
+NOTE: The string literal in our `Hello World` code is just one kind of constant. We'll learn about others later.
+
+In order for our programs to be flexible and responsive, we'll need *variables*.
+I encourage beginning students to think of a variable like a container, such as a cup.
+
+// TODO: Take a picture of the Nerds Rule mug and add it here
+
+The container can hold one thing at a time.
+I can put coffee in it, or I can put water in it--but I can't put both.
+If I start with coffee and decide I want to put water in there, the coffee gets dumped out and is gone forever.
+That's fine, but I better make sure you don't want the coffee any more before I put something else in the mug.
+
+A variable works the same way.
+It can hold one value, and that value can vary--remember, that's where the name comes from--but once it's changes, that old value is lost.
+
+I guess I could mix coffee and water, but then that's really a new substance and I can't go get back my plain coffee (or my water).
+If I want to store coffee *and* water, I can do that by using two different containers. 
+
+From a programming perspective--rather than a coffee perspective--a variable is a location in the computer's memory where we can store a value.
+In order to use that value, we have to know where to find it, so we give the memory location a name, technically called an *identifier*.
+
+And the computer will need to know how much memory to set aside for that variable, which depends on the kinds of values we want to store. 
+Storing the number 7 doesn't take very much space; storing a picture of John Elway takes a lot more space.
+The *type* of data we can store in a variable is called it's
+
+..._drumroll_, please...
+
+*data type*.
+
+Reserving a memory location by specifying a data type and identifier is known as *declaring* a variable.
+Placing data in that variable is referred to as *assigning* a value to a variable.
+
+NOTE: If you have programming experience in Python or Javascript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you--so you don't have to specify it. It's one of the reason I prefer to teach beginners using Java, which teaches you how data types work.
+
+
+// TODO: Record and link "Using Variables in Java" video (not including operations)
+.Time To Watch!
+****
+Using Variables in Java
+
+video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
+File from video:
+
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`]
+****
+
+==== Java Identifiers
+Variable names (more properly called variable _identifiers_) are the character sequences that identify a variable.
+There are a few rules that determine whether or not an identifier is valid:
+* The first character much be an uppercase or lowercase letter, an underscore (_), or a dollar sign ($).
+
+// TODO: Record and link a video about variable naming
+.Time To Watch!
+****
+Java variable names
+
+video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
+File from video:
+
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`]
+****
+
+=== Numeric Data Types
+
+Variables for storing numbers come in two flavors: *integers* and *floating point* numbers.
+As you may remember from your math class, an integer is a whole number; that is, a number that doesn't include any decimal places or fractional values. 
+5 is an integer, -824 is an integer, while 3.14 and 7 1/2 are not.
+
+A floating point number includes decimals, so 3.14 can be stored as a floating point number. 
+7 1/2 can also be stored as a floating point number, but only as a decimal (i.e., 7.5).
+
+The most common numeric data types in Java are `int` for integers and `double` for floating point numbers.
+You can get pretty far in programming just using those two, and in courses I teach you won't need to use any other numeric data types--but others do exist.
+
+Other data types for integers are `byte`, `short`, and `long`.
+These different types exist because they use different amounts of memory. `byte` and `short` are smaller than `int`, while `long` is larger.
+The impact of these different memory sizes (or memory *allocations*) is that the types can store values of different sizes.
+For example, a `byte` uses 8 bits of memory and can store a number between -128 and 127 (inclusive), while an `int` takes 32 bits and can store a value between -2,147,483,648 and 2,147,483,647 (inclusive).
+
+.Interesting
+****
+This all goes back to binary numbers. An 8-bit number has 8 digits, and we use the first digit to specify whether the number is positive or negative. That leaves 7 digits, and we can make 128 different combinations of 1s and 0s in 7 digits: `0000000`, `0000001`, `0000002`, and so on, all the way up to `1111111`. Those 128 possibilities give us the `byte` range of -127 to 128 (keeping in mind that we do need one of those combinations to represent zero).
+****
+
+The other floating point data type in Java is called `float`. 
+It's called "single" in some programming languages, which helps understand where the name `double` comes from: `double` uses twice as much memory (64 bits) as a `float` or "single" (32 bits)--and therefore its range of values is twice as big. Be aware that to make a `float` number in Java, you have to add the letter F (in capital or lowercase form) at the end of the number.
+[source,java]
+----
+float myGPA = 3.75f; // <.>
+double myFriendsGPA = 3.54;
+----
+<.> The `f` suffix denotes that the value 3.75 is a `float` rather than a `double`.
+
+==== Who Cares About Memory Size?
+The general rule in programming is to be as efficient with your resources as possible.
+If you're storing a persons age, you don't really need an `int`; nobody is going to be two million years old!
+A `byte` has plenty of room to store even the oldest person's age with plenty to spare, and it uses a fraction of the memory.
+So I should be telling you to use a `byte` in this case.
+
+But I don't worry about that with beginning programmers, for two reasons.
+First, it's already hard enough for a beginner to write programs that work--so instead of asking you to deal with all of the integer types, I just have you use `int` for all integer values to keep things simple.
+Second, even the most pathetic computer a student would use has waaaaaay more RAM than is needed by even the most complex program a beginner will write, so we don't need to worry about it.
+
+But understand that this attitude is only a teaching and learning aid.
+It's like saying we shouldn't worry about the price of groceries because we have plenty of money.
+That might be true, but it's good to be careful with your money--and it's irresponsible of me to tell you to just waste your money.
+
+As you get more comfortable with programming, use your memory resources efficiently.
+
+NOTE: There's another bad practice that I use with beginners. Floating point numbers aren't 100% precise, for reasons that are too nerdy even for us. Because of that precision problem, we should never use `float` or `double` for something like money/currency. Instead, Java has something called `BigDecimal`. But this is another place where I value simplicity, so we just use double for stuff like prices. But know that you'll get fired if you do that at your job with the bank.
+
+=== `boolean` Data Type (and Boolean Logic)
+A `boolean` variable has only two possible values: `true` and `false`.
+It's useful for tracking information that is only one thing or the other. 
+_Am I passing this class?_
+The answer to that is either `true` or `false`--there is no other possibility.
+_Does this person own a car?_
+Again, only two possible answers to that question.
+
+The best practice is to name a `boolean` variable in a way that expresses this either/or state.
+That is to say, we usually name our `boolean` variables using words like _is_, _has_, _can_, and so on.
+
+[source,java]
+----
+boolean isPassing = true;
+boolean hasCar = false;
+----
+
+`boolean` variables go hand-in-hand with _Boolean expressions_ which are statements that evaluate to be either `true` or `false`, like those questions above.
+
+// TODO: Link to chapter on decisions re: boolean logic
+
+
+
+=== Character Data Type
+If you want to store a single character, like a student's letter grade, you can use the `char` data type.
+Char literals are created by putting a character in single quotes, and that characters can be a letter, number, punctuation mark or symbol--or some other weird stuff, too.
+[source,java]
+----
+char myLetterGrade = 'A';
+----
+
+NOTE: Some people pronounce the `char` data type like the word "chart" without the "t". And some people pronouce it like the word "care". Either is okay. 
+
+NOTE: I pronouce it "care," and firmly believe that only a sociopath would say it like "chart" without the "t". I like to think the Traveling Wilburys song https://www.youtube.com/watch?v=1o4s1KVJaVA[_Handle With Care_] is about this data type, and a band with that kind of lineup has got to be right...
+
+A `char` is really just an integer, but the number it holds conforms to a standard list of character values called *ASCII* (with the fun pronounciation "Ass key").
+In this standard, the number 65 is a capital 'A', 66 is 'B', and so on.
+Lowercase numbers are different, so 97 is 'a' and 98 is 'b'. Check out the https://en.wikipedia.org/wiki/ASCII#Table_of_codes[complete ASCII table] if you're curious.
+
+=== Strings
+A `char` is pretty limited since it can only hold a single character.
+If we want to put a collective of characters together to make words and sentences, we need multiple ``char``s grouped into a single variable.
+That data type is called `String`, because it strings together a bunch of ``char``s, light a string of holiday lights.
+
+.A `String` variable is multiple ``char``s strung together like a set of lights.
+image::string_of_lights.png[A string of holiday lights]
+
+A `String` is different from the other data types we've looked at so far.
+The types we've seen so far are *primitive data types*, and `String` is what's called a *reference data type* (though some folks might prefer the more generic "non-primitive data type"). 
+Primitives are stored differently in memory, and they are not _objects_--which we'll learn more about later.
+For now, a really important thing to notice and remember is that primitive types start with a lowercase letter (`int`, `double`, etc.) and reference types start with a capital letter: so you have to remember to type `String` with a capital S.
+
+Strings are really important and there's all kinds of fun and useful stuff we can do with them, but we'll need to save all of that for later while we stay focused on the basics.
+
+
+=== Math Calculations
+// TODO: Section on arthmetic operators
+In order to start doing some calculations, we'll be using _operators_.
+You can think of an operator as a symbol that performs a calculation or other task.
+You've been using an operator already: the _assignment operator_, which uses the `=` symbol.
+There are five arithmetic operators in Java:
+
+.Java arithmetic operators
+[%header, stripes=even, %autowidth]
+|===
+|Operator |Description
+| +
+| Addition
+| -
+| Subtraction
+| * 
+| Multiplication
+| /
+| Division (quotient)
+| %
+| Modulo (remainder)
+|===
+
+The arithmetic operators work pretty much the way you'd expect; except maybe _modulo_, which might be a term you've never heard before. 
+Each operator acts on the value to either side:
+
+[source,java]
+----
+int sum = 5 + 7; // <.> 
+int difference = sum - 2; // <.>
+----
+<.> The value of `sum` will be 12
+<.> The value of `difference` will be 10 (i.e., 10 - 2)
+
+// TODO: Record and link a video about arithmetic operations, including shortcuts
+.Time To Watch!
+****
+Java arithmetic operations
+
+video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
+File from video:
+
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`]
+****
