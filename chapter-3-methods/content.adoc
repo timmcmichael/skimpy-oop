@@ -8,7 +8,9 @@ endif::[]
 
 == 0011 - Methods (Chapter 3)
 
-=== What's the Point?
-* 
+=== Content coming soon!
 
-''''
+// === What's the Point?
+// * 
+
+// ''''
