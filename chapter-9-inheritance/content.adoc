@@ -8,19 +8,26 @@ endif::[]
 
 == 1001 - Inheritance (Chapter 9)
 
-=== What's the Point?
-* Understand the purpose of inheritance
-* 
+=== Content coming soon!
 
-''''
-== RESUME HERE
+// === What's the Point?
+// * 
 
-. inheritance overview
-. overriding
-. constructors
-. arrays of subclass objects
-. the Object class
-. more polymorphism?
+// ''''
+
+// === What's the Point?
+// * Understand the purpose of inheritance
+// * 
+
+// ''''
+// == RESUME HERE
+
+// . inheritance overview
+// . overriding
+// . constructors
+// . arrays of subclass objects
+// . the Object class
+// . more polymorphism?
 
 
 

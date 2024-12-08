@@ -8,10 +8,17 @@ endif::[]
 
 == 1000 - Arrays (Chapter 8)
 
-=== What's the Point?
-* Understand the role of arrays
-* Create and use arrays
-* Write loops to traverse arrays
+=== Content coming soon!
 
-''''
-== RESUME HERE
+// === What's the Point?
+// * 
+
+// ''''
+
+// === What's the Point?
+// * Understand the role of arrays
+// * Create and use arrays
+// * Write loops to traverse arrays
+
+// ''''
+// == RESUME HERE

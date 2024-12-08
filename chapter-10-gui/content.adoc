@@ -8,14 +8,15 @@ endif::[]
 
 == 1010 - Graphical User Interfaces with Swing (Chapter 10)
 
-=== What's the Point?
-* 
+=== Content coming soon!
 
-''''
+// === What's the Point?
+// * 
+
+// ''''
 
 
-
-NOTES: 
-options for JFrame.setDefaultCloseOperation() (video only uses EXIT)
-naming convention. (prefix like in C#, appending widget type on the end "helloLabel"). Make sure it's descriptive.
-Quick note about the role of AWT (in the context of layout, especially);
+// NOTES: 
+// options for JFrame.setDefaultCloseOperation() (video only uses EXIT)
+// naming convention. (prefix like in C#, appending widget type on the end "helloLabel"). Make sure it's descriptive.
+// Quick note about the role of AWT (in the context of layout, especially);

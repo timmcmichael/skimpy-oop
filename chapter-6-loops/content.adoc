@@ -8,10 +8,11 @@ endif::[]
 
 == 0110 - Loops (Chapter 6)
 
-=== What's the Point?
-* 
+=== Content coming soon!
 
-''''
+// === What's the Point?
+// * 
 
+// ''''
 
-. Bonus: Recursion
+// . Bonus: Recursion

@@ -8,7 +8,9 @@ endif::[]
 
 == 0100 - Classes and Objects (Chapter 4)
 
-=== What's the Point?
-* 
+=== Content coming soon!
 
-''''
+// === What's the Point?
+// * 
+
+// ''''
