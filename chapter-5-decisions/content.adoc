@@ -1,0 +1,14 @@
+:imagesdir: images
+:sourcedir: source
+// The following corrects the directories if this is included in the main file.
+ifeval::["{docname}" == "main"]
+:imagesdir: chapter-5-decisions/images
+:sourcedir: chapter-5-decisions/source
+endif::[]
+
+== 0101 - Decisions (Chapter 5)
+
+=== What's the Point?
+* 
+
+''''

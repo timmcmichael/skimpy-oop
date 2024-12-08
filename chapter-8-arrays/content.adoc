@@ -1,0 +1,17 @@
+:imagesdir: images
+:sourcedir: source
+// The following corrects the directories if this is included in the main file.
+ifeval::["{docname}" == "main"]
+:imagesdir: chapter-8-arrays/images
+:sourcedir: chapter-8-arrays/source
+endif::[]
+
+== 1000 - Arrays (Chapter 8)
+
+=== What's the Point?
+* Understand the role of arrays
+* Create and use arrays
+* Write loops to traverse arrays
+
+''''
+== RESUME HERE

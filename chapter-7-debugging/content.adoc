@@ -1,0 +1,56 @@
+:imagesdir: images
+:sourcedir: source
+// The following corrects the directories if this is included in the main file.
+ifeval::["{docname}" == "main"]
+:imagesdir: chapter-7-debugging/images
+:sourcedir: chapter-7-debugging/source
+endif::[]
+
+== 0111 - Debugging (Chapter 7)
+
+=== What's the Point?
+* Distinguish between compile-time and runtime errors
+* Learn some strategies for debugging your code
+* Use the debugging tools available in your IDE
+
+''''
+As soon as you start writing your first lines of code, you'll be writing code with bugs in it.
+Like Thanos, it's inevitable.
+And like Thanos, you can use ludicrous time traveling to fix (decapitate?) your bugs.
+Well, you can't do that last part, but you can fix them in the present; and hopefully, you can do it without too much frustration.
+
+****
+Link to intro to debugging video
+****
+
+We categorize bugs into two general types:
+
+Compile-time errors:: Errors that prevent the compiler from fully processing your source code. These are generally the result of incorrect syntax--in other words, breaking the rules of the language.
+Runtime errors:: Errors in which your code compiles, but it does not execute as intended. Crashes are obvious runtime errors, but making an incorrect calculation is also an example of a runtime error.
+
+Fixing compile-time errors is just a matter of looking over your code and correcting the mistake.
+That's not always as easy as it sounds--especially for beginners--but at least the compiler and/or your IDE can give you feedback about what and where the mistake is.
+
+Runtime errors can be especially frustrating, especially since we can't always tell at what point the actual error is occurring.
+Did I make the mistake at the start of the program when I calculated the answer, is the mistake at the very end where I output it? 
+Or did I do something in the middle that accidentally changed the result?
+Who knows! And if you're like me, you might have done all three...
+
+=== Finding Runtime Errors
+The single most important thing to you is see what actually going on while your program is running.
+Use output statements frequently.
+
+.DebuggingOutput.java - Output statements to help with debugging
+[source,java]
+----
+include::source/DebuggingOutput.java[]
+
+----
+
+The numbered lines identify output statements added to observe the program's behavior.
+
+Your IDE likely includes tools to help see what's happening in your code by stepping through program execution.
+
+****
+Link to intro to VS Code debugging video
+****

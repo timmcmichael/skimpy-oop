@@ -1,0 +1,26 @@
+:imagesdir: images
+:sourcedir: source
+// The following corrects the directories if this is included in the main file.
+ifeval::["{docname}" == "main"]
+:imagesdir: chapter-1/images
+:sourcedir: chapter-1/source
+endif::[]
+
+= 0010 - Variables (Chapter 2)
+
+== What' the Point?
+* ----- Objectives -----
+
+''''
+
+
+
+.Time To Watch!
+****
+Title of Youtube video
+
+video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
+File from video:
+
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+****

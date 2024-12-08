@@ -1,0 +1,27 @@
+:imagesdir: images
+:sourcedir: source
+// The following corrects the directories if this is included in the main file.
+ifeval::["{docname}" == "main"]
+:imagesdir: chapter-9-inheritance/images
+:sourcedir: chapter-9-inheritance/source
+endif::[]
+
+== 1001 - Inheritance (Chapter 9)
+
+=== What's the Point?
+* Understand the purpose of inheritance
+* 
+
+''''
+== RESUME HERE
+
+. inheritance overview
+. overriding
+. constructors
+. arrays of subclass objects
+. the Object class
+. more polymorphism?
+
+
+
+
