@@ -472,11 +472,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="_1000_arrays_chapter_8.html">1000 - Arrays (Chapter 8)</a>
 </li>
-<li><a href="_resume_here.html">RESUME HERE</a>
-</li>
 <li><a href="_1001_inheritance_chapter_9.html">1001 - Inheritance (Chapter 9)</a>
-</li>
-<li><a href="_resume_here_2.html">RESUME HERE</a>
 </li>
 <li><a href="_1010_graphical_user_interfaces_with_swing_chapter_10.html">1010 - Graphical User Interfaces with Swing (Chapter 10)</a>
 </li>
@@ -488,107 +484,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_0111_debugging_chapter_7">0111 - Debugging (Chapter 7)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_whats_the_point_8">What&#8217;s the Point?</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Distinguish between compile-time and runtime errors</p>
-</li>
-<li>
-<p>Learn some strategies for debugging your code</p>
-</li>
-<li>
-<p>Use the debugging tools available in your IDE</p>
-</li>
-</ul>
-</div>
-<hr>
-<div class="paragraph">
-<p>As soon as you start writing your first lines of code, you&#8217;ll be writing code with bugs in it.
-Like Thanos, it&#8217;s inevitable.
-And like Thanos, you can use ludicrous time traveling to fix (decapitate?) your bugs.
-Well, you can&#8217;t do that last part, but you can fix them in the present; and hopefully, you can do it without too much frustration.</p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Link to intro to debugging video</p>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>We categorize bugs into two general types:</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Compile-time errors</dt>
-<dd>
-<p>Errors that prevent the compiler from fully processing your source code. These are generally the result of incorrect syntax&#8212;&#8203;in other words, breaking the rules of the language.</p>
-</dd>
-<dt class="hdlist1">Runtime errors</dt>
-<dd>
-<p>Errors in which your code compiles, but it does not execute as intended. Crashes are obvious runtime errors, but making an incorrect calculation is also an example of a runtime error.</p>
-</dd>
-</dl>
-</div>
-<div class="paragraph">
-<p>Fixing compile-time errors is just a matter of looking over your code and correcting the mistake.
-That&#8217;s not always as easy as it sounds&#8212;&#8203;especially for beginners&#8212;&#8203;but at least the compiler and/or your IDE can give you feedback about what and where the mistake is.</p>
-</div>
-<div class="paragraph">
-<p>Runtime errors can be especially frustrating, especially since we can&#8217;t always tell at what point the actual error is occurring.
-Did I make the mistake at the start of the program when I calculated the answer, is the mistake at the very end where I output it?
-Or did I do something in the middle that accidentally changed the result?
-Who knows! And if you&#8217;re like me, you might have done all three&#8230;&#8203;</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_finding_runtime_errors">Finding Runtime Errors</h3>
-<div class="paragraph">
-<p>The single most important thing to you is see what actually going on while your program is running.
-Use output statements frequently.</p>
-</div>
-<div class="listingblock">
-<div class="title">DebuggingOutput.java - Output statements to help with debugging</div>
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class DebuggingOutput {
+<h3 id="_content_coming_soon_5">Content coming soon!</h3>
 
-    public static void main(String[] args) {
-        int firstNum = 24;
-        int secondNum = 10;
-
-        System.out.println(firstNum); // <b class="conum">(1)</b>
-        System.out.println(secondNum); // <b class="conum">(2)</b>
-
-        int total = sum(firstNum, secondNum);
-        System.out.println(total); // <b class="conum">(3)</b>
-
-    }
-
-    public static int sum(int num1, int num2) {
-        System.out.println(num1 + ", " + num2 + " in method."); // <b class="conum">(4)</b>
-        int result = -1;
-        result = num1 - num2;
-        System.out.println("Total = " + result + " in method."); // <b class="conum">(5)</b>
-        return result;
-    }
-
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The numbered lines identify output statements added to observe the program&#8217;s behavior.</p>
-</div>
-<div class="paragraph">
-<p>Your IDE likely includes tools to help see what&#8217;s happening in your code by stepping through program execution.</p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Link to intro to VS Code debugging video</p>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
