@@ -6,7 +6,7 @@
 * Bold for all key words & vocab
 
 # Current Progress
-## Main
+## index
 Mostly done
 
 ## Chapter 0000 - Getting Started

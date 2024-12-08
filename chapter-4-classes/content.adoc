@@ -1,7 +1,7 @@
 :imagesdir: images
 :sourcedir: source
-// The following corrects the directories if this is included in the main file.
-ifeval::["{docname}" == "main"]
+// The following corrects the directories if this is included in the index file.
+ifeval::["{docname}" == "index"]
 :imagesdir: chapter-4-classes/images
 :sourcedir: chapter-4-classes/source
 endif::[]
