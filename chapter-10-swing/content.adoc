@@ -15,6 +15,12 @@ endif::[]
 
 // ''''
 
+// [.Check Your Learning]
+// ****
+// Can you answer these questions?
+// 1. 
+// 2. 
+// ****
 
 // NOTES: 
 // options for JFrame.setDefaultCloseOperation() (video only uses EXIT)

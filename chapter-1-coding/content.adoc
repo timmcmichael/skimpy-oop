@@ -192,3 +192,10 @@ Here are the parts of the program:
 
 You'll learn about all of these components as go.
 But for now, you're off and running!
+
+[.Check Your Learning]
+****
+Can you answer these questions?
+1. 
+2. 
+****
