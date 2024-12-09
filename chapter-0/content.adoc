@@ -24,19 +24,11 @@ The Canvas course includes some options for students who don't have a computer c
 === Install the Java Development Kit
 
 I recommend installing the JDK available at https://adoptium.net, and the Oracle JDK is another great option.
-Detailed directions for this installation can be found in Canvas--and about a gazillion web pages and Youtube videos.
+I've put together detailed installion instructions--but if they are outdated there are about a gazillion web pages and Youtube videos that will show you the process.
 I recommend installing the JDK before installing your IDE.
 
-
-// TODO: Link two JDK install videos
-// .Time To Watch!
-// ****
-// Title of Youtube video
-
-// video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
-// ****
-
-
+* https://drive.google.com/open?id=1yBFhti2juLLc-GNuxSwj1HBFjxxQL8LMwUBYOLPcUbA&usp=drive_copy[Install JDK on Windows]
+* https://drive.google.com/open?id=1lTWz0KQkn3CbfjF4CICLNWpKhO9GedGhkO-SAHPkwAU&usp=drive_copy[Install JDK on macOS]
 
 === Install an IDE
 
@@ -52,8 +44,8 @@ It's like choosing between Word and Google Docs; each has strengths and weakness
 
 I primarily use Visual Studio Code ("VS Code"), so that's what you'll see in most of my videos. 
 It's completely free and is available for Windows, macOS, and Linux.
-You can download it at https://code.visualstudio.com, and the Canvas course includes detailed installation instructions.
-I recommend installing a JDK prior to installing an IDE.
+You can download it at https://code.visualstudio.com, and the videos below walk through installing VS Code and the tools it needs for Java development.
+I recommend installing a JDK (see previous section) prior to installing an IDE.
 
 .Heads Up!
 ****
@@ -61,10 +53,7 @@ Visual Studio *Code* is not the same as Visual Studio! There's a free version of
 You're going to want Visual Studio Code (aka, "VS Code") for your Java coding.
 ****
 
-// TODO: Link two IDE install videos
-// .Time To Watch!
-// ****
-// Title of Youtube video
+VS Code Installation guides:
 
-// video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
-// ****
+* https://www.youtube.com/watch?v=t1EeX2AKkcY&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=1[Installing VS Code on Windows for Java]
+* https://www.youtube.com/watch?v=iqhgrVWWi78&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=2[Installing VS Code on macOS for Java]
