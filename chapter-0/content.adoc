@@ -1,8 +1,7 @@
 == 0000 - Getting Started (Chapter 0)
 
 === What's the Point?
-* Identify the stuff you need to create Java programs
-* Get your computer ready to go
+* Install the tools you need to create Java programs
 
 '''
 
