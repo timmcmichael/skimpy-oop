@@ -23,7 +23,7 @@ The Canvas course includes some options for students who don't have a computer c
 === Install the Java Development Kit
 
 I recommend installing the JDK available at https://adoptium.net, and the Oracle JDK is another great option.
-I've put together detailed installion instructions--but if they are outdated there are about a gazillion web pages and Youtube videos that will show you the process.
+The linked documents below provide detailed installation instructions--but if they are outdated there are about a gazillion web pages and Youtube videos that will show you the process.
 I recommend installing the JDK before installing your IDE.
 
 * https://drive.google.com/open?id=1yBFhti2juLLc-GNuxSwj1HBFjxxQL8LMwUBYOLPcUbA&usp=drive_copy[Install JDK on Windows]
@@ -58,3 +58,10 @@ VS Code Installation guides:
 * https://www.youtube.com/watch?v=iqhgrVWWi78&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=2[Installing VS Code on macOS for Java]
 
 Once you've installed the JDK and VS Code (along with the Java extensions), you're ready to create your first program. 
+
+[.Check Your Learning]
+****
+Can you answer these questions?
+1. What does JDK stand for?
+2. What is an example of an Integrated Development Environment?
+****
