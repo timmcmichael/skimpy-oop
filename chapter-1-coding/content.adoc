@@ -24,9 +24,23 @@ When the professor turns his back, you can use your fingers to send a quick mess
 Holding up your index finger might mean, "meet me in the library after class;" two fingers could mean, "send me a copy of your homework."
 As long as you agree on what each number means, you could pass along commands or information--it would be like your own little language.
 
-Those commands that a computer can execute super fast?
-Each command, or *instruction*, is represented by a number--a binary number, since that's the number system the computer uses.
-The little language the computer understands is called *machine language*.
+If you're a sports fan, I have a better analogy.
+A quarterback and a coach could have a language based completely on numbers.
+The coach tells the QB "22" and the QB knows which play to run, because they're agreed on what instruction (play) the number 22 means--and there are actually football teams that do exactly this.
+
+Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of 22) and the QB would have to know binary numbers (or have them written on his wrist-band thing as a cheatsheet).
+
+Want to take the analogy one step further?
+A player standing on the sideline with his helmet on could represent a 1, and a player with his helmet off could represent a 0.
+Now the coach could just line up five players and tell the 2nd and 5th ones to take their helmets off.
+The QB could look over, see the pattern of helmets (10110) and run play 22.
+
+Okay, that would be the nerdiest football team in history.
+And how is that relevant?
+
+Okay, back to those commands that a computer can execute super fast.
+Each command, or *instruction* (like football plays), is represented by a number--a binary number, since that's the number system the computer uses.
+The collection of these numbered instructions the computer understands is called *machine language*.
 
 .Interesting
 ****
@@ -47,7 +61,7 @@ NOTE: There are many, many programming languages. https://en.wikipedia.org/wiki/
 The instructions you write using a programming language is called *source code*.
 Translating source code file to a machine language file that can be executed is called *compiling*, and is done by an application called a compiler.
 When the computer runs the program, it's using that machine language translation created by the compiler.
-Clicking on the icon to run Microsoft Word runs a file that's been compiled from source code.
+Clicking on the icon to open Microsoft Word runs a file that's been compiled from source code.
 
 .Time To Watch!
 ****
@@ -74,18 +88,19 @@ This "write once, run anywhere" ability contributes greatly to Java's popularity
 
 === Programming Paradigms
 
-Programming para-what-now?
+A paradigm is a model or example, or maybe better described as a way of seeing things--which is helpful to think about, since we can all have different ways of seeing how a problem could be solved.
 
-Imagine that your long-lost uncle died and left you his giant collection of vinyl records. Or imagine it's books, if that's what you prefer.
-He also left you a bunch of money that can only be used buy whatever shelves, racks, and bins you need to store them. 
+Imagine that your crazy uncle wants to pay you to go through the junk in his garage and organize his giant collection of vinyl records. 
+Or imagine it's a collection books, if that's what you prefer.
 How would you organize the collection? 
 You could group them by artist and then arrange them alphabetically, from https://youtu.be/xFrGuyw1V8s?si=2N4W5250-YP5Pdth[ABBA] to https://youtu.be/F2HH7J-Sx80?si=ByL5Vr4VVYmDA8Rv[Warren Zevon].
-You could group them by genres (keeping disco separate from rock \'n' roll), or just put them in the order they were released.
+Or you could group them by genres (keeping disco separate from rock \'n' roll), or just put them in the order they were released.
 
 There are tons of different ways to do it. 
 None of them are really right or wrong, it just depends on what you prefer--or maybe on how you plan to find things later. 
 Coding is similar, in that we all have different ways we imagine organizing a program or solving a problem. 
-That's kinda the idea of a programming paradigm: how do you think about the program you're creating? How do you picture it being organized?
+That's kinda the idea of a programming paradigm: how do you think about the program you're creating? 
+How do you picture it being organized?
 
 Just like programming languages, paradigms are numerous. 
 In fact, some languages were created specifically to work well with a certain paradigm, and that's one reason there are so many languages. 
@@ -94,20 +109,19 @@ But when someone is going to learn to code, there are often two paradigms we con
 * Procedural Programming
 * Object-Oriented Programming (OOP)
 
-// Procedural Programming:: a program is made up of procedures (you might use the term *functions*), and those procedures call each other during program execution.
-// Object-Oriented Programming (OOP):: a program is made up of objects that have behaviors and related data, and those objects interact with one another during program execution.
-
 They have a lot in common, and in fact OOP is actually a type of procedural programming.
-Programmers love to argue why that approach is better than the other, in the same way some of my friends might argue about Ford trucks vs. Chevy trucks.
-And just like Ford vs. Chevy, there's nothing inherently better about one paradigm or the other--sorry friends, Ford and Chevy trucks really are basically the same.
+Programmers love to argue why one approach is better than the other, in the same way some of my friends might argue about Ford trucks vs. Chevy trucks.
+And just like Ford vs. Chevy, there's nothing inherently better about one paradigm or the other--sorry friends, but Ford and Chevy trucks are basically the same.
 Growing up, my own first coding experiences were exclusively with procedural programming, and I stayed in that world until I began teaching Java--now I very much prefer OOP, both for my own programming and for teaching beginning coders.
 But that really is a personal preference, and I wouldn't argue that OOP is _better_ than procedural programming.
+
 Well, I wouldn't argue _much_. 
 
 ==== Comparing Procedural Programming and OOP
 
 In procedural programming, we break up a program into the tasks we need to complete. 
 Each individual task is handled by a set of statements that we call a *procedure*. 
+If you need to calculate a student's overall course grade,for example, you write a procedure to do it.
 
 The data for your program--the stuff you're keeping track of--is stored somewhere else. 
 If a procedure needs something to complete its task, that data is sent to the procedure, which then sends back a result. 
@@ -118,35 +132,35 @@ image::ProceduralProgramming.png[Diagram of data passing in procedural programmi
 
 Many programming languages (including Python) refer to procedures as *functions*, and the term *subroutines* is also used in some cases; if you've done some programming in any language, you've almost certainly used procedures in some form.
 
-In OOP, the focus shifts from procedures to *objects, which are programming elements that bundle data with the procedures that use it, in contrast to procedural programming.
+In OOP, the focus shifts from procedures to *objects*, which are programming elements that bundle data with the procedures that use it, instead of keeping them separate.
 We'll explore the nature of objects in great detail going forward, so we won't worry about describing it too much for now.
 
 I have my own biases about the topic.
-I tend to think OOP lends itself especially well to things like graphical-user interfaces (GUIs) and games, as well as large projects developed by teams of programmers.
+I tend to think OOP lends itself especially well to things like graphical user interfaces (GUIs) and games, as well as large projects developed by teams of programmers.
 
-The bottom line is that, when faced with a programming task or project, my brain immediately starts thinking in terms of the objects the program will need.
+The bottom line is that, when faced with a programming task or project, my brain immediately starts thinking in terms of the _objects_ the program will need.
 But that's probably just a matter of habit; as I mentioned, I spent much of my life (including all of the time I spent as a professional programmer) seeing programs as a bunch of procedures. 
 
-It's important that you're aware of procedural programming, and we'll refer to it occasionally, but our focus in this book and course is really on OOP.
+It's important that you're aware of procedural programming, and the code we'll write in the next couple chapters is really written from a procedural perspective, but our overall focus in this book and course is really on OOP.
 
 === Software Development Process
 
 Learning to write code means creating a lot of programs--mostly small, straightforward programs at first. 
 Remember those awful word problems where a train leaves Chicago traveling 40mph, and another train leaves Denver at 35mph?
 That kind of stuff; but in my course, we don't get too caught up in the math part of it.
-We care about understanding the requirements of a program and implementing it successfully.
+But we care *a lot* about understanding the requirements of a program and implementing it successfully.
 
 As your programs become bigger and more complex, you'll need to work within a deliberate design and implementation process in order to keep yourself organized and focused.
-Even the smaller programs you'll develop while learning the basics will benefit from a specific approach beyond just opening a new file and starting to type.
+Even the smaller programs you'll develop while learning the basics will benefit from an thoughtful approach beyond just opening a new file and starting to type.
 It ensures that you use your time efficiently.
 And when you are faced with solving a programming problem that really intimidates you, the process will help make the task more approachable.
 
 For big or small projects, a good general approach to software development is:
 
-Analysis:: Identify the goals and scope of the program. As a rule, keep it small and focused--you can always add features later. _What does this program need to do?_
-Testing Plan:: Determine how the final program will be tested. The testing plan will be useful, but most importantly, taking the time to establish a specific testing plan ensures that you thoroughly understand the program before you begin writing code. If you don't know how the program will work, you're not yet ready to begin coding. _How will I make sure the program works correctly?_
-Implementation:: Write and test the code. We say that this is an _iterative_ (or "repeating") process, meaning you'll write and test one small piece, staying with it until you know it's good. Then you'll move on to the next piece and repeat. _What code do I need in order to get the next part of the program working?_
-Revise or maintain:: If your needs or program requirements change, you'll need to go back to the first step and begin planning the next version. If not, you'll need to monitor that the program continues to perform as expected over time. _What's next for this program?_
+Analysis:: Identify the goals and scope of the program. As a rule, keep it small and focused--you can always add features later. *Ask yourself, _What does this program need to do?_*
+Testing Plan:: Determine how the final program will be tested. The testing plan will be useful, but most importantly, taking the time to establish a specific testing plan ensures that you thoroughly understand the program before you begin writing code. If you don't know how the program will work, you're not yet ready to begin coding. *Ask yourself, _How will I make sure the program works correctly?_*
+Implementation:: Write and test the code. We say that this is an _iterative_ (or "repeating") process, meaning you'll write and test one small piece, staying with it until you know it's good. Then you'll move on to the next piece and repeat. *Ask yourself, _What code do I need in order to get the next part of the program working?_*
+Revise or maintain:: If your needs or program requirements change, you'll need to go back to the first step and begin planning the next version. If not, you'll need to monitor that the program continues to perform as expected over time. *Ask yourself, _What's next for this program?_*
 
 We'll flesh out this process as we go--and as our programs become more advanced.
 
@@ -169,7 +183,7 @@ Java Course Folders and First Program
 video::QFjomy6sCZM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 File from video:
 
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+* link:source/HelloWorld.java[HelloWorld.java]
 ****
 
 
