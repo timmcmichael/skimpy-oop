@@ -1,0 +1,20 @@
+:imagesdir: images
+:sourcedir: source
+// The following corrects the directories if this is included in the index file.
+ifeval::["{docname}" == "index"]
+:imagesdir: chapter-1/images
+:sourcedir: chapter-1/source
+endif::[]
+
+== Stuff That's Tacked on the End
+
+=== Answers to _Check Your Learning_ questions
+
+==== Getting Started Chapter
+....
+1. What does JDK stand for?
+    Java Development Kit
+
+2. What is an example of an Integrated Development Environment?
+    Visual Studio Code, eclipse, IntelliJ, and many others.
+....

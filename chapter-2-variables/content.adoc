@@ -247,3 +247,10 @@ File from video:
 
 * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`]
 ****
+
+[.Check Your Learning]
+****
+Can you answer these questions?
+1. 
+2. 
+****

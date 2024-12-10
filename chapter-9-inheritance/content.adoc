@@ -20,7 +20,13 @@ endif::[]
 // * 
 
 // ''''
-// == RESUME HERE
+
+// [.Check Your Learning]
+// ****
+// Can you answer these questions?
+// 1. 
+// 2. 
+// ****
 
 // . inheritance overview
 // . overriding

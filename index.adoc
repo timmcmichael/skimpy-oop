@@ -60,9 +60,20 @@ After the video, continue reading the chapter.
 
 == Related Resources
 
-// TODO: Links to starter files (Google Drive and GitHub)
-// TODO: (Shortened) link to YouTube playlist and channel
+In general, this book includes resources within each chapter. The following links collect those resources so you can find them when necessary.
 
+GitHub Page: https://timmcmichael.github.io
+
+YouTube channel: https://www.youtube.com/@ProfTimEMCC[@ProfTimEMCC]
+
+Course YouTube playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU[Object-Oriented Progamming Fundamentals (CIS150AB)]
+
+=== Source code files:
+
+* Google Drive: https://bit.ly/ProfTimEMCCFiles[https://bit.ly/ProfTimEMCCFiles]
+* GitHub: https://github.com/timmcmichael/EMCCTimFiles[https://github.com/timmcmichael/EMCCTimFiles]
+
+_Note: Files are generally posted in Canvas as well_.
 
 include::chapter-0/content.adoc[]
 
@@ -84,4 +95,6 @@ include::chapter-8-arrays/content.adoc[]
 
 include::chapter-9-inheritance/content.adoc[]
 
-include::chapter-10-gui/content.adoc[]
+include::chapter-10-swing/content.adoc[]
+
+include::back-matter/content.adoc[]

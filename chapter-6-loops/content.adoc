@@ -16,3 +16,10 @@ endif::[]
 // ''''
 
 // . Bonus: Recursion
+
+// [.Check Your Learning]
+// ****
+// Can you answer these questions?
+// 1. 
+// 2. 
+// ****

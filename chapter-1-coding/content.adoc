@@ -52,11 +52,12 @@ Clicking on the icon to run Microsoft Word runs a file that's been compiled from
 // TODO: Move to new channel
 .Time To Watch!
 ****
-Overview of Programming Languages and Compiling
+Coding and Compiling
 
-video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
+video::AsA-DTR3eac[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
 ****
 
+// https://www.youtube.com/watch?v=AsA-DTR3eac&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=4
 
 Some programming languages don't get translated ahead of time--they get translated "on the fly," as the program is running.
 That's called *interpreting* instead of compiling.
@@ -192,3 +193,10 @@ Here are the parts of the program:
 
 You'll learn about all of these components as go.
 But for now, you're off and running!
+
+[.Check Your Learning]
+****
+Can you answer these questions?
+1. 
+2. 
+****
