@@ -22,8 +22,8 @@ In computer programming, a piece of information is called *data*.
 
 In broad terms, there are two kinds of data:
 [unordered]
-constant:: A piece of data that can't change during program execution
-variable:: A piece of data that may change (or "vary") during program execution
+constant:: A piece of data that can't change during program execution.
+variable:: A piece of data that may change (or "vary") during program execution.
 
 In our `Hello World` code, the letters and characters we output are _constant_ data.
 
@@ -54,12 +54,12 @@ I encourage beginning students to think of a variable like a container, such as 
 The container can hold one thing at a time.
 I can put coffee in it, or I can put water in it--but I can't put both.
 If I start with coffee and decide I want to put water in there, the coffee gets dumped out and is gone forever.
-That's fine, but I better make sure you don't want the coffee any more before I put something else in the mug.
+That's fine, but I better make sure I don't want the coffee anymore before I put something else in the mug.
 
 A variable works the same way.
-It can hold one value, and that value can vary--remember, that's where the name comes from--but once it's changes, that old value is lost.
+It can hold one value, and that value can vary--remember, that's where the name comes from--but once it's changed, that old value is lost.
 
-I guess I could mix coffee and water, but then that's really a new substance and I can't go get back my plain coffee (or my water).
+I guess I could mix coffee and water, but then that's really a new substance and I can't get back my plain coffee (or my water).
 If I want to store coffee *and* water, I can do that by using two different containers. 
 
 From a programming perspective--rather than a coffee perspective--a variable is a location in the computer's memory where we can store a value.
@@ -67,7 +67,7 @@ In order to use that value, we have to know where to find it, so we give the mem
 
 And the computer will need to know how much memory to set aside for that variable, which depends on the kinds of values we want to store. 
 Storing the number 7 doesn't take very much space; storing a picture of John Elway takes a lot more space.
-The *type* of data we can store in a variable is called it's
+The *type* of data we can store in a variable is called its
 
 ..._drumroll_, please...
 
@@ -76,7 +76,7 @@ The *type* of data we can store in a variable is called it's
 Reserving a memory location by specifying a data type and identifier is known as *declaring* a variable.
 Placing data in that variable is referred to as *assigning* a value to a variable.
 
-NOTE: If you have programming experience in Python or Javascript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you--so you don't have to specify it. It's one of the reason I prefer to teach beginners using Java, which teaches you how data types work.
+NOTE: If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you--so you don't have to specify it. It's one reason I prefer to teach beginners using Java, which teaches you how data types work.
 
 
 // TODO: Record and link "Using Variables in Java" video (not including operations)
@@ -95,9 +95,9 @@ Variable names (more properly called variable _identifiers_) are the character s
 There are a few rules that determine whether or not an identifier is valid:
 * The first character much be an uppercase or lowercase letter, an underscore (_), or a dollar sign ($).
 
-In addition to those technical rules about identifier names, the convention in java is to use descriptive names in "camel case" format, as described in the preceding video. 
-Single-letter variable names, like `x` for a number, is fine in your math class, but is generally *not* okay when you're coding.
-The expectation in my course is that your code will align with those conventions--because that's what industry expects--and you will lose points if you don't.
+In addition to those technical rules about identifier names, the convention in Java is to use descriptive names in "camel case" format, as described in the preceding video. 
+Single-letter variable names, like `x` for a number, are fine in your math class, but is generally *not* okay when you're coding.
+The expectation in my course is that your code will align with those conventions--because that's what industry people expect--and you will lose points if you don't.
 
 === Numeric Data Types
 
@@ -118,7 +118,7 @@ For example, a `byte` uses 8 bits of memory and can store a number between -128 
 
 .Interesting
 ****
-This all goes back to binary numbers. An 8-bit number has 8 digits, and we use the first digit to specify whether the number is positive or negative. That leaves 7 digits, and we can make 128 different combinations of 1s and 0s in 7 digits: `0000000`, `0000001`, `0000002`, and so on, all the way up to `1111111`. Those 128 possibilities give us the `byte` range of -127 to 128 (keeping in mind that we do need one of those combinations to represent zero).
+This all goes back to binary numbers. An 8-bit number has 8 digits, and we use the first digit to specify whether the number is positive or negative. That leaves 7 digits, and we can make 128 different combinations of 1s and 0s in 7 digits: `0000000`, `0000001`, `0000002`, and so on, all the way up to `1111111`. Those 128 possibilities give us the `byte` range of -128 to 127 (keeping in mind that we do need one of those combinations to represent zero).
 ****
 
 The other floating point data type in Java is called `float`. 
@@ -133,12 +133,12 @@ double myFriendsGPA = 3.54;
 ==== Who Cares About Memory Size?
 The general rule in programming is to be as efficient with your resources (memory, storage, processing speed, network bandwidth, etc.) as possible.
 If you're storing a person's age, you don't really need an `int`; nobody is going to be two million years old!
-A `byte` has plenty of room (up to 128) to store even the oldest person's age, and it uses a fraction of the memory.
+A `byte` has plenty of room (up to 127) to store even the oldest person's age, and it uses a fraction of the memory.
 So I should be telling you to use a `byte` in this case.
 
-But I don't worry about that with beginning programmers, for two reasons.
+But I don't worry about that with beginning programmers for two reasons.
 First, it's hard enough for a beginner to write programs that work--so instead of asking you to deal with _all_ of the integer types, I just have you use `int` whenever you need a whole number, and `double` when you need something with a decimal.
-Second, these days even the most pathetic computer has waaaaaay more RAM than is needed by even the most complex program a beginner will write, so we don't need to worry about it.
+Second, these days even the wimpiest computer has waaaaaay more RAM than is needed by even the most complex program a beginner will write, so we don't need to worry about it.
 
 But understand that this attitude is only a teaching and learning aid.
 It's like saying we shouldn't worry about the price of groceries because we have plenty of money.
@@ -174,7 +174,7 @@ boolean hasCar = false;
 
 // TODO: Link to chapter on decisions re: boolean logic
 
-=== Character Data Type
+=== `char` Data Type
 If you want to store a single character, like a student's letter grade or their first initial, you can use the `char` data type.
 Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol--or some other weird stuff, too.
 [source,java]
@@ -182,9 +182,9 @@ Char literals are created by putting a character in single quotes, and that char
 char myLetterGrade = 'A';
 ----
 
-NOTE: Some people pronounce the `char` data type like the word "chart" without the "t". And some people pronouce it like the word "care". Either is okay. 
+NOTE: Some people pronounce the `char` data type like the word "chart" without the "t". And some people pronounce it like the word "care". Either is okay. 
 
-NOTE: I pronouce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
+NOTE: I pronounce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
 
 A `char` is really just an integer, but the number it holds conforms to a standard list of character values called *ASCII* (with the fun pronounciation "Ass key").
 In this standard, the number 65 is a capital 'A', 66 is 'B', and so on.
@@ -192,8 +192,8 @@ Lowercase letters are considered different characters, so 97 is 'a' and 98 is 'b
 
 === Strings
 A `char` is pretty limited since it can only hold a single character.
-If we want to put a collective of characters together to make words and sentences, we need multiple ``char``s grouped into a single variable.
-That data type is called `String`, because it strings together a bunch of ``char``s, light a string of holiday lights.
+If we want to put a collection of characters together to make words and sentences, we need multiple ``char``s grouped into a single variable.
+That data type is called `String`, because it strings together a bunch of ``char``s, like a string of holiday lights.
 
 .A `String` variable is multiple ``char``s strung together like a set of lights.
 image::string_of_lights.png[A string of holiday lights]
@@ -212,7 +212,7 @@ String bestClass = "CIS150AB";
 
 Strings are really important and there's all kinds of fun and useful stuff we can do with them, but we'll need to save all of that for later while we stay focused on the basics.
 
-NOTE: Always remember that, in Java, single quotes means a `char` and double quotes means a `String`. It's easy to get them mixed up--especially if you use Python, where they are interchangeable--but your code won't compile if you mix them up.
+NOTE: Always remember that, in Java, single quotes mean a `char` and double quotes mean a `String`. It's easy to get them mixed up--especially if you use Python, where they are interchangeable--but your code won't compile if you mix them up.
 
 
 === Math Calculations
@@ -220,7 +220,7 @@ NOTE: Always remember that, in Java, single quotes means a `char` and double quo
 In order to start doing some calculations, we'll be using _operators_.
 You can think of an operator as a symbol that performs a calculation or other task.
 You've been using an operator already: the _assignment operator_, which uses the `=` symbol.
-There are five arithmetic operators in Java:
+To do basic math calculations, there are five arithmetic operators in Java:
 
 .Java arithmetic operators
 [%header, stripes=even, %autowidth]
@@ -238,7 +238,7 @@ There are five arithmetic operators in Java:
 | Modulo (remainder)
 |===
 
-The arithmetic operators work pretty much the way you'd expect; except maybe _modulo_, which might be a term you've never heard before. 
+The arithmetic operators work pretty much the way you'd expect, except maybe _modulo_--which might be a term you've never heard before. 
 Each operator acts on the value to either side:
 
 [source,java]
