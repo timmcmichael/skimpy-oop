@@ -1,5 +1,5 @@
-:relfileprefix: ../
-:relfilesuffix: /
+// :relfileprefix: ../
+// :relfilesuffix: /
 :imagesdir: images
 :sourcedir: source
 // The following corrects the directories if this is included in the index file.
@@ -30,8 +30,15 @@ In our `Hello World` code, the letters and characters we output are _constant_ d
 .HelloWorld.java
 [source,java]
 ----
-include::{sourcedir}/HelloWorld.java[]
+public class HelloWorld {
 
+    public static void main(String[] args) {
+
+        System.out.println("Hello World!"); // <.>
+
+    }
+
+}
 ----
 <.> The string literal "Hello World"
 
