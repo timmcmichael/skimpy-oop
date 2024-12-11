@@ -6,12 +6,12 @@
 '''
 
 Our goal is to learn the fundamentals of *object-oriented programming* using the *Java* programming language. 
-You might not even know what those things mean yet, but in order to get started you'll need a couple things installed on your computer.
+You might not even know what those things mean yet, but to get started you'll need a couple of things installed on your computer.
 
 Java Development Kit (JDK):: A collection of software, used to develop Java programs. Most importantly, it includes a *compiler*.
 Integrated Development Environment (IDE):: An application used to write and test source code. 
 
-These two tools can be used on pretty much any laptop or desktop computer, even if it's not a very great computer.
+These two tools can be used on pretty much any laptop or desktop computer, even if it's not very powerful.
 
 .Heads Up!
 ****
@@ -23,7 +23,7 @@ The Canvas course includes some options for students who don't have a computer c
 === Install the Java Development Kit
 
 I recommend installing the JDK available at https://adoptium.net, and the Oracle JDK is another great option.
-The linked documents below provide detailed installation instructions--but if they are outdated there are about a gazillion web pages and Youtube videos that will show you the process.
+The linked documents below provide detailed installation instructions--but if they are outdated at the moment, there are about a gazillion web pages and Youtube videos that will show you the process.
 I recommend installing the JDK before installing your IDE.
 
 * https://drive.google.com/open?id=1yBFhti2juLLc-GNuxSwj1HBFjxxQL8LMwUBYOLPcUbA&usp=drive_copy[Install JDK on Windows]
@@ -33,12 +33,12 @@ I recommend installing the JDK before installing your IDE.
 
 A computer program is created by writing *source code*, which is just text and can be created using any text editor.
 However, developing programs with something like Notepad or TextEdit--which come with Windows and macOS, respectively--means going through some potentially confusing (or at least intimidating) steps each time you want to run your program.
-Though IDEs also do much more, the most important thing they do for beginners is give you a "run" button you can press whenever you want to test your code.
+Though IDEs do much more, the most important thing they do for beginners is give you a "run" button you can press whenever you want to test your code.
 
-You can definitely write Java programs without using an IDE, but it's kinda like getting engaged to someone you've only ever met online: the fact that it turns out okay for some people doesn't mean it's a good idea for you.
+You can definitely write Java programs without using an IDE, but it's kinda like getting engaged to someone you've only ever met online: just because it turns out okay for some people doesn't mean it's a good idea for you.
 The only people who should write code without an IDE already know too much about programming to be wasting their time reading this book.
 
-There are a lot of great IDEs out there, including many free options, and ultimately it doesn't matter which one you use: they all produce the same files, and a person looking at the files can't tell what IDE you used.
+There are many great IDEs out there, including many free options, and ultimately it doesn't matter which one you use: they all produce the same files, and a person looking at the files can't tell what IDE you used.
 It's like choosing between Word and Google Docs; each has strengths and weaknesses, but you can write romantic poems about your online fiancé (or fiancée) in either one.
 
 I primarily use Visual Studio Code ("VS Code"), so that's what you'll see in most of my videos. 
@@ -49,7 +49,7 @@ I recommend installing a JDK (see previous section) prior to installing an IDE.
 .Heads Up!
 ****
 Visual Studio *Code* is not the same as Visual Studio! There's a free version of Visual Studio (called Visual Studio Community) but it's not intended to be used with Java. 
-You're going to want Visual Studio Code (aka, "VS Code") for your Java coding.
+You're going to want Visual Studio Code (aka "VS Code") for your Java coding.
 ****
 
 VS Code Installation guides:
@@ -62,6 +62,8 @@ Once you've installed the JDK and VS Code (along with the Java extensions), you'
 [.Check Your Learning]
 ****
 Can you answer these questions?
+
 1. What does JDK stand for?
+
 2. What is an example of an Integrated Development Environment?
 ****
