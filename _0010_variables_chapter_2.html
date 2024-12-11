@@ -522,20 +522,12 @@ In computer programming, a piece of information is called <strong>data</strong>.
 </dl>
 </div>
 <div class="paragraph">
-<p>In our <code>Hello World</code> code, the letters and characters we output are constant data.</p>
+<p>In our <code>Hello World</code> code, the letters and characters we output are <em>constant</em> data.</p>
 </div>
 <div class="listingblock">
 <div class="title">HelloWorld.java</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class HelloWorld {
-
-    public static void main(String[] args) {
-
-        System.out.println("Hello World!"); // <b class="conum">(1)</b>
-
-    }
-
-}</code></pre>
+<pre class="highlight"><code class="language-java" data-lang="java">Unresolved directive in chapter-2-variables/content.adoc - include::chapter-2-variables/source/HelloWorld.java[]</code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -613,20 +605,14 @@ If you have programming experience in Python or Javascript, the idea of a data t
 <div class="content">
 <div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p>Using Variables in Java</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe src="https://www.youtube.com/embed/PR6u4KvAkas?rel=0&amp;list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="paragraph">
-<p>File from video:</p>
+<p>Using Variables in Java
+video::At0vquefCuo[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&amp;index=5 ]
+File from video:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java"><code>HelloWorld.java</code></a></p>
+<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java">DeclaringVariables.java</a></p>
 </li>
 </ul>
 </div>
@@ -639,28 +625,10 @@ If you have programming experience in Python or Javascript, the idea of a data t
 There are a few rules that determine whether or not an identifier is valid:
 * The first character much be an uppercase or lowercase letter, an underscore (_), or a dollar sign ($).</p>
 </div>
-<div class="sidebarblock">
-<div class="content">
-<div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p>Java variable names</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe src="https://www.youtube.com/embed/PR6u4KvAkas?rel=0&amp;list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="paragraph">
-<p>File from video:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java"><code>HelloWorld.java</code></a></p>
-</li>
-</ul>
-</div>
-</div>
+<p>In addition to those technical rules about identifier names, the convention in java is to use descriptive names in "camel case" format, as described in the preceding video.
+Single-letter variable names, like <code>x</code> for a number, is fine in your math class, but is generally <strong>not</strong> okay when you&#8217;re coding.
+The expectation in my course is that your code will align with those conventions&#8212;&#8203;because that&#8217;s what industry expects&#8212;&#8203;and you will lose points if you don&#8217;t.</p>
 </div>
 </div>
 </div>
@@ -713,15 +681,15 @@ double myFriendsGPA = 3.54;</code></pre>
 <div class="sect3">
 <h4 id="_who_cares_about_memory_size">Who Cares About Memory Size?</h4>
 <div class="paragraph">
-<p>The general rule in programming is to be as efficient with your resources as possible.
-If you&#8217;re storing a persons age, you don&#8217;t really need an <code>int</code>; nobody is going to be two million years old!
-A <code>byte</code> has plenty of room to store even the oldest person&#8217;s age with plenty to spare, and it uses a fraction of the memory.
+<p>The general rule in programming is to be as efficient with your resources (memory, storage, processing speed, network bandwidth, etc.) as possible.
+If you&#8217;re storing a person&#8217;s age, you don&#8217;t really need an <code>int</code>; nobody is going to be two million years old!
+A <code>byte</code> has plenty of room (up to 128) to store even the oldest person&#8217;s age, and it uses a fraction of the memory.
 So I should be telling you to use a <code>byte</code> in this case.</p>
 </div>
 <div class="paragraph">
 <p>But I don&#8217;t worry about that with beginning programmers, for two reasons.
-First, it&#8217;s already hard enough for a beginner to write programs that work&#8212;&#8203;so instead of asking you to deal with all of the integer types, I just have you use <code>int</code> for all integer values to keep things simple.
-Second, even the most pathetic computer a student would use has waaaaaay more RAM than is needed by even the most complex program a beginner will write, so we don&#8217;t need to worry about it.</p>
+First, it&#8217;s hard enough for a beginner to write programs that work&#8212;&#8203;so instead of asking you to deal with <em>all</em> of the integer types, I just have you use <code>int</code> whenever you need a whole number, and <code>double</code> when you need something with a decimal.
+Second, these days even the most pathetic computer has waaaaaay more RAM than is needed by even the most complex program a beginner will write, so we don&#8217;t need to worry about it.</p>
 </div>
 <div class="paragraph">
 <p>But understand that this attitude is only a teaching and learning aid.
@@ -729,7 +697,8 @@ It&#8217;s like saying we shouldn&#8217;t worry about the price of groceries bec
 That might be true, but it&#8217;s good to be careful with your money&#8212;&#8203;and it&#8217;s irresponsible of me to tell you to just waste your money.</p>
 </div>
 <div class="paragraph">
-<p>As you get more comfortable with programming, use your memory resources efficiently.</p>
+<p>As you get more comfortable with programming, use your memory resources efficiently.
+While you&#8217;re learning, just worry about getting your code to work.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -738,7 +707,11 @@ That might be true, but it&#8217;s good to be careful with your money&#8212;&#82
 <div class="title">Note</div>
 </td>
 <td class="content">
-There&#8217;s another bad practice that I use with beginners. Floating point numbers aren&#8217;t 100% precise, for reasons that are too nerdy even for us. Because of that precision problem, we should never use <code>float</code> or <code>double</code> for something like money/currency. Instead, Java has something called <code>BigDecimal</code>. But this is another place where I value simplicity, so we just use double for stuff like prices. But know that you&#8217;ll get fired if you do that at your job with the bank.
+There&#8217;s another bad data type practice that I use with beginners.
+Floating point numbers aren&#8217;t 100% precise, for reasons that are too nerdy even for us right now.
+Because of that precision problem, we should never use <code>float</code> or <code>double</code> for something like money/currency. Instead, Java has something called <code>BigDecimal</code>.
+But this is another place where I value simplicity for beginners, so we just use double for stuff like prices and account balances in our code.
+Just know that you&#8217;ll get fired if you do that at your job with the bank.
 </td>
 </tr>
 </table>
@@ -752,8 +725,8 @@ There&#8217;s another bad practice that I use with beginners. Floating point num
 It&#8217;s useful for tracking information that is only one thing or the other.
 <em>Am I passing this class?</em>
 The answer to that is either <code>true</code> or <code>false</code>--there is no other possibility.
-<em>Does this person own a car?</em>
-Again, only two possible answers to that question.</p>
+<em>Does Julia own a car?</em>
+Again, only two possible answers to that question; she either owns one or she doesn&#8217;t.</p>
 </div>
 <div class="paragraph">
 <p>The best practice is to name a <code>boolean</code> variable in a way that expresses this either/or state.
@@ -772,8 +745,8 @@ boolean hasCar = false;</code></pre>
 <div class="sect2">
 <h3 id="_character_data_type">Character Data Type</h3>
 <div class="paragraph">
-<p>If you want to store a single character, like a student&#8217;s letter grade, you can use the <code>char</code> data type.
-Char literals are created by putting a character in single quotes, and that characters can be a letter, number, punctuation mark or symbol&#8212;&#8203;or some other weird stuff, too.</p>
+<p>If you want to store a single character, like a student&#8217;s letter grade or their first initial, you can use the <code>char</code> data type.
+Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol&#8212;&#8203;or some other weird stuff, too.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -799,7 +772,7 @@ Some people pronounce the <code>char</code> data type like the word "chart" with
 <div class="title">Note</div>
 </td>
 <td class="content">
-I pronouce it "care," and firmly believe that only a sociopath would say it like "chart" without the "t". I like to think the Traveling Wilburys song <a href="https://www.youtube.com/watch?v=1o4s1KVJaVA"><em>Handle With Care</em></a> is about this data type, and a band with that kind of lineup has got to be right&#8230;&#8203;
+I pronouce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
 </td>
 </tr>
 </table>
@@ -807,7 +780,7 @@ I pronouce it "care," and firmly believe that only a sociopath would say it like
 <div class="paragraph">
 <p>A <code>char</code> is really just an integer, but the number it holds conforms to a standard list of character values called <strong>ASCII</strong> (with the fun pronounciation "Ass key").
 In this standard, the number 65 is a capital 'A', 66 is 'B', and so on.
-Lowercase numbers are different, so 97 is 'a' and 98 is 'b'. Check out the <a href="https://en.wikipedia.org/wiki/ASCII#Table_of_codes">complete ASCII table</a> if you&#8217;re curious.</p>
+Lowercase letters are considered different characters, so 97 is 'a' and 98 is 'b'. Check out the <a href="https://en.wikipedia.org/wiki/ASCII#Table_of_codes">complete ASCII table</a> if you&#8217;re curious.</p>
 </div>
 </div>
 <div class="sect2">
@@ -830,7 +803,28 @@ Primitives are stored differently in memory, and they are not <em>objects</em>--
 For now, a really important thing to notice and remember is that primitive types start with a lowercase letter (<code>int</code>, <code>double</code>, etc.) and reference types start with a capital letter: so you have to remember to type <code>String</code> with a capital S.</p>
 </div>
 <div class="paragraph">
+<p><code>String</code> literals are denoted with double quotation marks.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">String address = "3000 N. Dysart Road";
+String bestClass = "CIS150AB";</code></pre>
+</div>
+</div>
+<div class="paragraph">
 <p>Strings are really important and there&#8217;s all kinds of fun and useful stuff we can do with them, but we&#8217;ll need to save all of that for later while we stay focused on the basics.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Always remember that, in Java, single quotes means a <code>char</code> and double quotes means a <code>String</code>. It&#8217;s easy to get them mixed up&#8212;&#8203;especially if you use Python, where they are interchangeable&#8212;&#8203;but your code won&#8217;t compile if you mix them up.
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
