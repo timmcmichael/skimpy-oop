@@ -78,8 +78,6 @@ Placing data in that variable is referred to as *assigning* a value to a variabl
 
 NOTE: If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you--so you don't have to specify it. It's one reason I prefer to teach beginners using Java, which teaches you how data types work.
 
-
-// TODO: Record and link "Using Variables in Java" video (not including operations)
 .Time To Watch!
 ****
 Using Variables in Java
@@ -130,10 +128,10 @@ double myFriendsGPA = 3.54;
 ----
 <.> The `f` suffix denotes that the value 3.75 is a `float` rather than a `double`.
 
-==== Who Cares About Memory Size?
+==== Who Cares About Variable Size?
 The general rule in programming is to be as efficient with your resources (memory, storage, processing speed, network bandwidth, etc.) as possible.
 If you're storing a person's age, you don't really need an `int`; nobody is going to be two million years old!
-A `byte` has plenty of room (up to 127) to store even the oldest person's age, and it uses a fraction of the memory.
+A `byte` has plenty of room (up to 127) to store even the oldest person's age, and it uses a fraction of the memory--8 bits instead of 32.
 So I should be telling you to use a `byte` in this case.
 
 But I don't worry about that with beginning programmers for two reasons.
@@ -216,11 +214,12 @@ NOTE: Always remember that, in Java, single quotes mean a `char` and double quot
 
 
 === Math Calculations
-// TODO: Section on arthmetic operators
-In order to start doing some calculations, we'll be using _operators_.
-You can think of an operator as a symbol that performs a calculation or other task.
+To start doing some calculations, we'll use _operators_.
+You can think of an operator as a symbol that performs a calculation or other action.
 You've been using an operator already: the _assignment operator_, which uses the `=` symbol.
-To do basic math calculations, there are five arithmetic operators in Java:
+The action it completes is assigning the value on the right of the `=` symbol to the variable on the left.
+Arithmetic operations work in a similar way.
+In Java, there are five arithmetic operators:
 
 .Java arithmetic operators
 [%header, stripes=even, %autowidth]
@@ -259,10 +258,24 @@ File from video:
 
 * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`]
 ****
+==== Order of Operations
+// TODO: Order of operations
+
+=== Getting User Input
+
+// TODO: Text and video on user input with Scanner
 
 [.Check Your Learning]
 ****
 Can you answer these questions?
 1. 
+
+
 2. 
+
+
+3.
+
+
+
 ****

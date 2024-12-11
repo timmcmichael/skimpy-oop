@@ -54,8 +54,8 @@ You're going to want Visual Studio Code (aka "VS Code") for your Java coding.
 
 VS Code Installation guides:
 
-* https://www.youtube.com/watch?v=t1EeX2AKkcY&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=1[Installing VS Code on Windows for Java]
-* https://www.youtube.com/watch?v=iqhgrVWWi78&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=2[Installing VS Code on macOS for Java]
+* https://www.youtube.com/watch?v=Pkj6n3UVXEI&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=1[Installing VS Code on Windows for Java]
+* https://www.youtube.com/watch?v=DrV5vcvIyR0&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=2[Installing VS Code on macOS for Java]
 
 Once you've installed the JDK and VS Code (along with the Java extensions), you're ready to create your first program. 
 
