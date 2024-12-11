@@ -17,7 +17,17 @@ Because the guts of a computer (a CPU) is kinda like a bunch of light switches--
 
 NOTE: Never has the concept of a modern computer been so recklessly simplified. I feel shame.
 
-All of the information a computer handles ultimately has to be represented by some combination of 1s and 0s, which we call a *binary* (or "base-two") number system. The chapters of this eBook are numbered using binary to show basic examples of the numbering system: 0001 is, well, 1 in decical. And 0100 is 4 in decimal. We won't get into binary numbers, but it's not very complicated and is kind of interesting if you're a nerd.
+All of the information a computer handles ultimately has to be represented by some combination of 1s and 0s, which we call a *binary* (or "base-two") number system.
+ The chapters of this eBook are numbered using binary to show basic examples of the numbering system: 0001 is, well, 1 in decimal. 
+And 0100 is 4 in decimal. We won't get into binary numbers, but it's not very complicated and is kind of interesting if you're a nerd.
+
+.Learn More
+****
+The amazing https://code.org[code.org] project has a playlist of great, short videos on how computers work--including binary numbers--if you want to know a little more without going too crazy:
+
+https://www.youtube.com/playlist?list=PLzdnOPI1iJNcsRwJhvksEo1tJqjIqWbN-[How Computers Work]
+****
+
 
 Imagine that your BFF is in your object-oriented programming class, but that cruel professor won't let you sit together.
 When the professor turns his back, you can use your fingers to send a quick message to your BFF.
@@ -26,7 +36,7 @@ As long as you agree on what each number means, you could pass along commands or
 
 If you're a sports fan, I have a better analogy.
 A quarterback and a coach could have a language based completely on numbers.
-The coach tells the QB "22" and the QB knows which play to run, because they're agreed on what instruction (play) the number 22 means--and there are actually football teams that do exactly this.
+The coach tells the QB "22" and the QB knows which play to run, because they're agreed on what instruction (play) the number 22 means--and there are football teams that do exactly this.
 
 Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of 22) and the QB would have to know binary numbers (or have them written on his wrist-band thing as a cheatsheet).
 
@@ -37,10 +47,11 @@ The QB could look over, see the pattern of helmets (10110) and run play 22.
 
 Okay, that would be the nerdiest football team in history.
 And how is that relevant?
+Let's see...
 
-Okay, back to those commands that a computer can execute super fast.
-Each command, or *instruction* (like football plays), is represented by a number--a binary number, since that's the number system the computer uses.
-The collection of these numbered instructions the computer understands is called *machine language*.
+Remember that a computer can execute commands super fast.
+Each command, or *instruction* (like a football play), is represented by a number--a binary number, since that's the number system the computer uses.
+The collection of these instructions the computer understands is called *machine language*.
 
 .Interesting
 ****
@@ -183,7 +194,7 @@ Java Course Folders and First Program
 video::QFjomy6sCZM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 File from video:
 
-* link:source/HelloWorld.java[HelloWorld.java]
+* link:https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding/HelloWorld.java[HelloWorld.java]
 ****
 
 
@@ -194,8 +205,15 @@ Take a look at the code for a basic "Hello World" program; we'll learn what all 
 .HelloWorld.java - Hello World program in Java
 [source,java]
 ----
-include::source/HelloWorld.java[]
+public class HelloWorld { // <.>
 
+    public static void main(String[] args) { // <.>
+
+        System.out.println("Hello World!"); // <.>
+
+    } // <.>
+
+} // <.>
 ----
 Here are the parts of the program:
 

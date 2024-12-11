@@ -1,5 +1,5 @@
-:relfileprefix: ../
-:relfilesuffix: /
+// :relfileprefix: ../
+// :relfilesuffix: /
 :imagesdir: images
 :sourcedir: source
 // The following corrects the directories if this is included in the index file.
@@ -25,13 +25,20 @@ In broad terms, there are two kinds of data:
 constant:: A piece of data that can't change during program execution
 variable:: A piece of data that may change (or "vary") during program execution
 
-In our `Hello World` code, the letters and characters we output are constant data.
+In our `Hello World` code, the letters and characters we output are _constant_ data.
 
 .HelloWorld.java
 [source,java]
 ----
-include::source/HelloWorld.java[]
+public class HelloWorld {
 
+    public static void main(String[] args) {
+
+        System.out.println("Hello World!"); // <.>
+
+    }
+
+}
 ----
 <.> The string literal "Hello World"
 
@@ -76,11 +83,11 @@ NOTE: If you have programming experience in Python or Javascript, the idea of a 
 .Time To Watch!
 ****
 Using Variables in Java
-
-video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
+// https://www.youtube.com/watch?v=At0vquefCuo&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=5
+video::At0vquefCuo[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=5 ]
 File from video:
 
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`]
+* link:https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[DeclaringVariables.java]
 ****
 
 ==== Java Identifiers
@@ -88,16 +95,9 @@ Variable names (more properly called variable _identifiers_) are the character s
 There are a few rules that determine whether or not an identifier is valid:
 * The first character much be an uppercase or lowercase letter, an underscore (_), or a dollar sign ($).
 
-// TODO: Record and link a video about variable naming
-.Time To Watch!
-****
-Java variable names
-
-video::PR6u4KvAkas[youtube, list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw]
-File from video:
-
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`]
-****
+In addition to those technical rules about identifier names, the convention in java is to use descriptive names in "camel case" format, as described in the preceding video. 
+Single-letter variable names, like `x` for a number, is fine in your math class, but is generally *not* okay when you're coding.
+The expectation in my course is that your code will align with those conventions--because that's what industry expects--and you will lose points if you don't.
 
 === Numeric Data Types
 
@@ -131,30 +131,35 @@ double myFriendsGPA = 3.54;
 <.> The `f` suffix denotes that the value 3.75 is a `float` rather than a `double`.
 
 ==== Who Cares About Memory Size?
-The general rule in programming is to be as efficient with your resources as possible.
-If you're storing a persons age, you don't really need an `int`; nobody is going to be two million years old!
-A `byte` has plenty of room to store even the oldest person's age with plenty to spare, and it uses a fraction of the memory.
+The general rule in programming is to be as efficient with your resources (memory, storage, processing speed, network bandwidth, etc.) as possible.
+If you're storing a person's age, you don't really need an `int`; nobody is going to be two million years old!
+A `byte` has plenty of room (up to 128) to store even the oldest person's age, and it uses a fraction of the memory.
 So I should be telling you to use a `byte` in this case.
 
 But I don't worry about that with beginning programmers, for two reasons.
-First, it's already hard enough for a beginner to write programs that work--so instead of asking you to deal with all of the integer types, I just have you use `int` for all integer values to keep things simple.
-Second, even the most pathetic computer a student would use has waaaaaay more RAM than is needed by even the most complex program a beginner will write, so we don't need to worry about it.
+First, it's hard enough for a beginner to write programs that work--so instead of asking you to deal with _all_ of the integer types, I just have you use `int` whenever you need a whole number, and `double` when you need something with a decimal.
+Second, these days even the most pathetic computer has waaaaaay more RAM than is needed by even the most complex program a beginner will write, so we don't need to worry about it.
 
 But understand that this attitude is only a teaching and learning aid.
 It's like saying we shouldn't worry about the price of groceries because we have plenty of money.
 That might be true, but it's good to be careful with your money--and it's irresponsible of me to tell you to just waste your money.
 
 As you get more comfortable with programming, use your memory resources efficiently.
+While you're learning, just worry about getting your code to work.
 
-NOTE: There's another bad practice that I use with beginners. Floating point numbers aren't 100% precise, for reasons that are too nerdy even for us. Because of that precision problem, we should never use `float` or `double` for something like money/currency. Instead, Java has something called `BigDecimal`. But this is another place where I value simplicity, so we just use double for stuff like prices. But know that you'll get fired if you do that at your job with the bank.
+NOTE: There's another bad data type practice that I use with beginners. 
+Floating point numbers aren't 100% precise, for reasons that are too nerdy even for us right now. 
+Because of that precision problem, we should never use `float` or `double` for something like money/currency. Instead, Java has something called `BigDecimal`. 
+But this is another place where I value simplicity for beginners, so we just use double for stuff like prices and account balances in our code. 
+Just know that you'll get fired if you do that at your job with the bank.
 
 === `boolean` Data Type (and Boolean Logic)
 A `boolean` variable has only two possible values: `true` and `false`.
 It's useful for tracking information that is only one thing or the other. 
 _Am I passing this class?_
 The answer to that is either `true` or `false`--there is no other possibility.
-_Does this person own a car?_
-Again, only two possible answers to that question.
+_Does Julia own a car?_
+Again, only two possible answers to that question; she either owns one or she doesn't.
 
 The best practice is to name a `boolean` variable in a way that expresses this either/or state.
 That is to say, we usually name our `boolean` variables using words like _is_, _has_, _can_, and so on.
@@ -169,11 +174,9 @@ boolean hasCar = false;
 
 // TODO: Link to chapter on decisions re: boolean logic
 
-
-
 === Character Data Type
-If you want to store a single character, like a student's letter grade, you can use the `char` data type.
-Char literals are created by putting a character in single quotes, and that characters can be a letter, number, punctuation mark or symbol--or some other weird stuff, too.
+If you want to store a single character, like a student's letter grade or their first initial, you can use the `char` data type.
+Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol--or some other weird stuff, too.
 [source,java]
 ----
 char myLetterGrade = 'A';
@@ -181,11 +184,11 @@ char myLetterGrade = 'A';
 
 NOTE: Some people pronounce the `char` data type like the word "chart" without the "t". And some people pronouce it like the word "care". Either is okay. 
 
-NOTE: I pronouce it "care," and firmly believe that only a sociopath would say it like "chart" without the "t". I like to think the Traveling Wilburys song https://www.youtube.com/watch?v=1o4s1KVJaVA[_Handle With Care_] is about this data type, and a band with that kind of lineup has got to be right...
+NOTE: I pronouce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
 
 A `char` is really just an integer, but the number it holds conforms to a standard list of character values called *ASCII* (with the fun pronounciation "Ass key").
 In this standard, the number 65 is a capital 'A', 66 is 'B', and so on.
-Lowercase numbers are different, so 97 is 'a' and 98 is 'b'. Check out the https://en.wikipedia.org/wiki/ASCII#Table_of_codes[complete ASCII table] if you're curious.
+Lowercase letters are considered different characters, so 97 is 'a' and 98 is 'b'. Check out the https://en.wikipedia.org/wiki/ASCII#Table_of_codes[complete ASCII table] if you're curious.
 
 === Strings
 A `char` is pretty limited since it can only hold a single character.
@@ -200,7 +203,16 @@ The types we've seen so far are *primitive data types*, and `String` is what's c
 Primitives are stored differently in memory, and they are not _objects_--which we'll learn more about later.
 For now, a really important thing to notice and remember is that primitive types start with a lowercase letter (`int`, `double`, etc.) and reference types start with a capital letter: so you have to remember to type `String` with a capital S.
 
+`String` literals are denoted with double quotation marks.
+[source, java]
+----
+String address = "3000 N. Dysart Road";
+String bestClass = "CIS150AB";
+----
+
 Strings are really important and there's all kinds of fun and useful stuff we can do with them, but we'll need to save all of that for later while we stay focused on the basics.
+
+NOTE: Always remember that, in Java, single quotes means a `char` and double quotes means a `String`. It's easy to get them mixed up--especially if you use Python, where they are interchangeable--but your code won't compile if you mix them up.
 
 
 === Math Calculations
