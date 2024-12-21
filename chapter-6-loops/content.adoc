@@ -11,7 +11,7 @@ endif::[]
 === Content coming soon!
 
 
-// TODO: Find wile coyote loops cartoon in Photos (marked as favorite)
+// TODO: Find wile e. coyote loops cartoon in Photos (marked as favorite)
 
 
 // === What's the Point?
