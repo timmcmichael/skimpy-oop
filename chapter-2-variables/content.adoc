@@ -135,7 +135,7 @@ A `byte` has plenty of room (up to 127) to store even the oldest person's age, a
 So I should be telling you to use a `byte` in this case.
 
 But I don't worry about that with beginning programmers for two reasons.
-First, it's hard enough for a beginner to write programs that work--so instead of asking you to deal with _all_ of the integer types, I just have you use `int` whenever you need a whole number, and `double` when you need something with a decimal.
+First, it's hard enough for a beginner to write programs that work--so instead of asking you to deal with _all_ of the numeric types, I just have you use `int` whenever you need a whole number, and `double` when you need something with a decimal.
 Second, these days even the wimpiest computer has waaaaaay more RAM than is needed by even the most complex program a beginner will write, so we don't need to worry about it.
 
 But understand that this attitude is only a teaching and learning aid.
@@ -260,6 +260,12 @@ File from video:
 ****
 ==== Order of Operations
 // TODO: Order of operations
+
+
+==== More Arithmetic with Less Typing!
+
+// compound assignment statements
+// increment/decrement (unary!)
 
 === Getting User Input
 
