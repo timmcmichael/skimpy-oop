@@ -13,7 +13,7 @@ endif::[]
 
 '''
 A computer is basically a device that executes a set of commands--and does so very quickly.
-Because the guts of a computer (a CPU) is kinda like a bunch of light switches--and I mean a *BUNCH* of light switches--it can only deal with zeros and ones: a switch that is off is "zero," and a switch that's on is "one." 
+Because the guts of a computer (a CPU) are kinda like a bunch of light switches--and I mean a *BUNCH* of light switches--it can only deal with zeros and ones: a switch that is off is "zero," and a switch that's on is "one." 
 
 NOTE: Never has the concept of a modern computer been so recklessly simplified. I feel shame.
 
@@ -36,7 +36,7 @@ As long as you agree on what each number means, you could pass along commands or
 
 If you're a sports fan, I have a better analogy.
 A quarterback and a coach could have a language based completely on numbers.
-The coach tells the QB "22" and the QB knows which play to run, because they're agreed on what instruction (play) the number 22 means--and there are football teams that do exactly this.
+The coach tells the QB "22" and the QB knows which play to run, because they've agreed on what instruction (play) the number 22 means--and there are football teams that do exactly this.
 
 Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of 22) and the QB would have to know binary numbers (or have them written on his wrist-band thing as a cheatsheet).
 
@@ -78,8 +78,8 @@ Clicking on the icon to open Microsoft Word runs a file that's been compiled fro
 ****
 Coding and Compiling
 
-// https://www.youtube.com/watch?v=AsA-DTR3eac&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=4
-video::AsA-DTR3eac[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=3]
+// https://www.youtube.com/watch?v=yR939VDXPaM&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=3
+video::yR939VDXPaM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=3]
 ****
 
 Some programming languages don't get translated ahead of time--they get translated "on the fly," as the program is running.
@@ -102,7 +102,7 @@ This "write once, run anywhere" ability contributes greatly to Java's popularity
 A paradigm is a model or example, or maybe better described as a way of seeing things--which is helpful to think about, since we can all have different ways of seeing how a problem could be solved.
 
 Imagine that your crazy uncle wants to pay you to go through the junk in his garage and organize his giant collection of vinyl records. 
-Or imagine it's a collection books, if that's what you prefer.
+Or imagine it's a collection of books, if that's what you prefer.
 How would you organize the collection? 
 You could group them by artist and then arrange them alphabetically, from https://youtu.be/xFrGuyw1V8s?si=2N4W5250-YP5Pdth[ABBA] to https://youtu.be/F2HH7J-Sx80?si=ByL5Vr4VVYmDA8Rv[Warren Zevon].
 Or you could group them by genres (keeping disco separate from rock \'n' roll), or just put them in the order they were released.
@@ -120,7 +120,7 @@ But when someone is going to learn to code, there are often two paradigms we con
 * Procedural Programming
 * Object-Oriented Programming (OOP)
 
-They have a lot in common, and in fact OOP is actually a type of procedural programming.
+They have a lot in common, and in fact, OOP is actually a type of procedural programming.
 Programmers love to argue why one approach is better than the other, in the same way some of my friends might argue about Ford trucks vs. Chevy trucks.
 And just like Ford vs. Chevy, there's nothing inherently better about one paradigm or the other--sorry friends, but Ford and Chevy trucks are basically the same.
 Growing up, my own first coding experiences were exclusively with procedural programming, and I stayed in that world until I began teaching Java--now I very much prefer OOP, both for my own programming and for teaching beginning coders.
@@ -132,11 +132,11 @@ Well, I wouldn't argue _much_.
 
 In procedural programming, we break up a program into the tasks we need to complete. 
 Each individual task is handled by a set of statements that we call a *procedure*. 
-If you need to calculate a student's overall course grade,for example, you write a procedure to do it.
+If you need to calculate a student's overall course grade, for example, you write a procedure to do it.
 
 The data for your program--the stuff you're keeping track of--is stored somewhere else. 
 If a procedure needs something to complete its task, that data is sent to the procedure, which then sends back a result. 
-In short, information is kept separate from the code that uses it and is passed back-and-forth as necessary.
+In short, information is kept separate from the code that uses it and is passed back and forth as necessary.
 
 .Passing data in procedural programming
 image::ProceduralProgramming.png[Diagram of data passing in procedural programming, 400]
@@ -152,17 +152,17 @@ I tend to think OOP lends itself especially well to things like graphical user i
 The bottom line is that, when faced with a programming task or project, my brain immediately starts thinking in terms of the _objects_ the program will need.
 But that's probably just a matter of habit; as I mentioned, I spent much of my life (including all of the time I spent as a professional programmer) seeing programs as a bunch of procedures. 
 
-It's important that you're aware of procedural programming, and the code we'll write in the next couple chapters is really written from a procedural perspective, but our overall focus in this book and course is really on OOP.
+It's important that you're aware of procedural programming, and the code we'll write in the next couple of chapters is really written from a procedural perspective, but our overall focus in this book and course is really on OOP.
 
 === Software Development Process
 
 Learning to write code means creating a lot of programs--mostly small, straightforward programs at first. 
-Remember those awful word problems where a train leaves Chicago traveling 40mph, and another train leaves Denver at 35mph?
+Remember those awful word problems where a train leaves Chicago traveling 40 mph, and another train leaves Denver at 35 mph?
 That kind of stuff; but in my course, we don't get too caught up in the math part of it.
 But we care *a lot* about understanding the requirements of a program and implementing it successfully.
 
 As your programs become bigger and more complex, you'll need to work within a deliberate design and implementation process in order to keep yourself organized and focused.
-Even the smaller programs you'll develop while learning the basics will benefit from an thoughtful approach beyond just opening a new file and starting to type.
+Even the smaller programs you'll develop while learning the basics will benefit from a thoughtful approach beyond just opening a new file and starting to type.
 It ensures that you use your time efficiently.
 And when you are faced with solving a programming problem that really intimidates you, the process will help make the task more approachable.
 
@@ -187,11 +187,11 @@ But Java puts OOP front and center, and you can't start writing statements until
 // TODO: Move to new channel (and clean audio)
 .Time To Watch!
 ****
-Java Course Folders and First Program
+Java File Structure and First Program
 
-// https://www.youtube.com/watch?v=QFjomy6sCZM&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=4
+// https://www.youtube.com/watch?v=zYDdJzs24rs&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=4
 
-video::QFjomy6sCZM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::zYDdJzs24rs[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=4]
 File from video:
 
 * link:https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding/HelloWorld.java[HelloWorld.java]
@@ -220,15 +220,17 @@ Here are the parts of the program:
 <.> Class declaration and start of a code block. This is a publicly accessible class called `HelloWorld`.
 <.> `main()` method declaration and start of a code block. `main()` is where a Java program starts running.
 <.> `println()` statement to output the message.
-<.> End of the `main()` method code black, as indicated by the indenting.
+<.> End of the `main()` method code block, as indicated by the indenting and closing curly brace.
 <.> End of the class code block.
 
-You'll learn about all of these components as go.
+You'll learn about all of these components as we go.
 But for now, you're off and running!
 
 [.Check Your Learning]
 ****
 Can you answer these questions?
-1. 
-2. 
+1. What tool converts your programming into something the computer can run?
+2. What is the name of the instruction set, specific to each computer type, that a computer can understand and execute?
+3. What are some advantages of using an organized software development process?
+4. What programming paradigm bundles procedures with the data they use?
 ****
