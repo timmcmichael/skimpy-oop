@@ -513,11 +513,11 @@ In computer programming, a piece of information is called <strong>data</strong>.
 <dl>
 <dt>constant</dt>
 <dd>
-<p>A piece of data that can&#8217;t change during program execution</p>
+<p>A piece of data that can&#8217;t change during program execution.</p>
 </dd>
 <dt>variable</dt>
 <dd>
-<p>A piece of data that may change (or "vary") during program execution</p>
+<p>A piece of data that may change (or "vary") during program execution.</p>
 </dd>
 </dl>
 </div>
@@ -568,14 +568,14 @@ I encourage beginning students to think of a variable like a container, such as 
 <p>The container can hold one thing at a time.
 I can put coffee in it, or I can put water in it&#8212;&#8203;but I can&#8217;t put both.
 If I start with coffee and decide I want to put water in there, the coffee gets dumped out and is gone forever.
-That&#8217;s fine, but I better make sure you don&#8217;t want the coffee any more before I put something else in the mug.</p>
+That&#8217;s fine, but I better make sure I don&#8217;t want the coffee anymore before I put something else in the mug.</p>
 </div>
 <div class="paragraph">
 <p>A variable works the same way.
-It can hold one value, and that value can vary&#8212;&#8203;remember, that&#8217;s where the name comes from&#8212;&#8203;but once it&#8217;s changes, that old value is lost.</p>
+It can hold one value, and that value can vary&#8212;&#8203;remember, that&#8217;s where the name comes from&#8212;&#8203;but once it&#8217;s changed, that old value is lost.</p>
 </div>
 <div class="paragraph">
-<p>I guess I could mix coffee and water, but then that&#8217;s really a new substance and I can&#8217;t go get back my plain coffee (or my water).
+<p>I guess I could mix coffee and water, but then that&#8217;s really a new substance and I can&#8217;t get back my plain coffee (or my water).
 If I want to store coffee <strong>and</strong> water, I can do that by using two different containers.</p>
 </div>
 <div class="paragraph">
@@ -585,7 +585,7 @@ In order to use that value, we have to know where to find it, so we give the mem
 <div class="paragraph">
 <p>And the computer will need to know how much memory to set aside for that variable, which depends on the kinds of values we want to store.
 Storing the number 7 doesn&#8217;t take very much space; storing a picture of John Elway takes a lot more space.
-The <strong>type</strong> of data we can store in a variable is called it&#8217;s</p>
+The <strong>type</strong> of data we can store in a variable is called its</p>
 </div>
 <div class="paragraph">
 <p>&#8230;&#8203;<em>drumroll</em>, please&#8230;&#8203;</p>
@@ -604,7 +604,7 @@ Placing data in that variable is referred to as <strong>assigning</strong> a val
 <div class="title">Note</div>
 </td>
 <td class="content">
-If you have programming experience in Python or Javascript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you&#8212;&#8203;so you don&#8217;t have to specify it. It&#8217;s one of the reason I prefer to teach beginners using Java, which teaches you how data types work.
+If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you&#8212;&#8203;so you don&#8217;t have to specify it. It&#8217;s one reason I prefer to teach beginners using Java, which teaches you how data types work.
 </td>
 </tr>
 </table>
@@ -634,9 +634,9 @@ There are a few rules that determine whether or not an identifier is valid:
 * The first character much be an uppercase or lowercase letter, an underscore (_), or a dollar sign ($).</p>
 </div>
 <div class="paragraph">
-<p>In addition to those technical rules about identifier names, the convention in java is to use descriptive names in "camel case" format, as described in the preceding video.
-Single-letter variable names, like <code>x</code> for a number, is fine in your math class, but is generally <strong>not</strong> okay when you&#8217;re coding.
-The expectation in my course is that your code will align with those conventions&#8212;&#8203;because that&#8217;s what industry expects&#8212;&#8203;and you will lose points if you don&#8217;t.</p>
+<p>In addition to those technical rules about identifier names, the convention in Java is to use descriptive names in "camel case" format, as described in the preceding video.
+Single-letter variable names, like <code>x</code> for a number, are fine in your math class, but is generally <strong>not</strong> okay when you&#8217;re coding.
+The expectation in my course is that your code will align with those conventions&#8212;&#8203;because that&#8217;s what industry people expect&#8212;&#8203;and you will lose points if you don&#8217;t.</p>
 </div>
 </div>
 </div>
@@ -665,7 +665,7 @@ For example, a <code>byte</code> uses 8 bits of memory and can store a number be
 <div class="content">
 <div class="title">Interesting</div>
 <div class="paragraph">
-<p>This all goes back to binary numbers. An 8-bit number has 8 digits, and we use the first digit to specify whether the number is positive or negative. That leaves 7 digits, and we can make 128 different combinations of 1s and 0s in 7 digits: <code>0000000</code>, <code>0000001</code>, <code>0000002</code>, and so on, all the way up to <code>1111111</code>. Those 128 possibilities give us the <code>byte</code> range of -127 to 128 (keeping in mind that we do need one of those combinations to represent zero).</p>
+<p>This all goes back to binary numbers. An 8-bit number has 8 digits, and we use the first digit to specify whether the number is positive or negative. That leaves 7 digits, and we can make 128 different combinations of 1s and 0s in 7 digits: <code>0000000</code>, <code>0000001</code>, <code>0000002</code>, and so on, all the way up to <code>1111111</code>. Those 128 possibilities give us the <code>byte</code> range of -128 to 127 (keeping in mind that we do need one of those combinations to represent zero).</p>
 </div>
 </div>
 </div>
@@ -687,17 +687,17 @@ double myFriendsGPA = 3.54;</code></pre>
 </ol>
 </div>
 <div class="sect3">
-<h4 id="_who_cares_about_memory_size">Who Cares About Memory Size?</h4>
+<h4 id="_who_cares_about_variable_size">Who Cares About Variable Size?</h4>
 <div class="paragraph">
 <p>The general rule in programming is to be as efficient with your resources (memory, storage, processing speed, network bandwidth, etc.) as possible.
 If you&#8217;re storing a person&#8217;s age, you don&#8217;t really need an <code>int</code>; nobody is going to be two million years old!
-A <code>byte</code> has plenty of room (up to 128) to store even the oldest person&#8217;s age, and it uses a fraction of the memory.
+A <code>byte</code> has plenty of room (up to 127) to store even the oldest person&#8217;s age, and it uses a fraction of the memory&#8212;&#8203;8 bits instead of 32.
 So I should be telling you to use a <code>byte</code> in this case.</p>
 </div>
 <div class="paragraph">
-<p>But I don&#8217;t worry about that with beginning programmers, for two reasons.
-First, it&#8217;s hard enough for a beginner to write programs that work&#8212;&#8203;so instead of asking you to deal with <em>all</em> of the integer types, I just have you use <code>int</code> whenever you need a whole number, and <code>double</code> when you need something with a decimal.
-Second, these days even the most pathetic computer has waaaaaay more RAM than is needed by even the most complex program a beginner will write, so we don&#8217;t need to worry about it.</p>
+<p>But I don&#8217;t worry about that with beginning programmers for two reasons.
+First, it&#8217;s hard enough for a beginner to write programs that work&#8212;&#8203;so instead of asking you to deal with <em>all</em> of the numeric types, I just have you use <code>int</code> whenever you need a whole number, and <code>double</code> when you need something with a decimal.
+Second, these days even the wimpiest computer has waaaaaay more RAM than is needed by even the most complex program a beginner will write, so we don&#8217;t need to worry about it.</p>
 </div>
 <div class="paragraph">
 <p>But understand that this attitude is only a teaching and learning aid.
@@ -751,7 +751,7 @@ boolean hasCar = false;</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_character_data_type">Character Data Type</h3>
+<h3 id="_char_data_type"><code>char</code> Data Type</h3>
 <div class="paragraph">
 <p>If you want to store a single character, like a student&#8217;s letter grade or their first initial, you can use the <code>char</code> data type.
 Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol&#8212;&#8203;or some other weird stuff, too.</p>
@@ -768,7 +768,7 @@ Char literals are created by putting a character in single quotes, and that char
 <div class="title">Note</div>
 </td>
 <td class="content">
-Some people pronounce the <code>char</code> data type like the word "chart" without the "t". And some people pronouce it like the word "care". Either is okay.
+Some people pronounce the <code>char</code> data type like the word "chart" without the "t". And some people pronounce it like the word "care". Either is okay.
 </td>
 </tr>
 </table>
@@ -780,7 +780,7 @@ Some people pronounce the <code>char</code> data type like the word "chart" with
 <div class="title">Note</div>
 </td>
 <td class="content">
-I pronouce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
+I pronounce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
 </td>
 </tr>
 </table>
@@ -795,8 +795,8 @@ Lowercase letters are considered different characters, so 97 is 'a' and 98 is 'b
 <h3 id="_strings">Strings</h3>
 <div class="paragraph">
 <p>A <code>char</code> is pretty limited since it can only hold a single character.
-If we want to put a collective of characters together to make words and sentences, we need multiple <code>char</code>s grouped into a single variable.
-That data type is called <code>String</code>, because it strings together a bunch of <code>char</code>s, light a string of holiday lights.</p>
+If we want to put a collection of characters together to make words and sentences, we need multiple <code>char</code>s grouped into a single variable.
+That data type is called <code>String</code>, because it strings together a bunch of <code>char</code>s, like a string of holiday lights.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -829,7 +829,7 @@ String bestClass = "CIS150AB";</code></pre>
 <div class="title">Note</div>
 </td>
 <td class="content">
-Always remember that, in Java, single quotes means a <code>char</code> and double quotes means a <code>String</code>. It&#8217;s easy to get them mixed up&#8212;&#8203;especially if you use Python, where they are interchangeable&#8212;&#8203;but your code won&#8217;t compile if you mix them up.
+Always remember that, in Java, single quotes mean a <code>char</code> and double quotes mean a <code>String</code>. It&#8217;s easy to get them mixed up&#8212;&#8203;especially if you use Python, where they are interchangeable&#8212;&#8203;but your code won&#8217;t compile if you mix them up.
 </td>
 </tr>
 </table>
@@ -838,10 +838,12 @@ Always remember that, in Java, single quotes means a <code>char</code> and doubl
 <div class="sect2">
 <h3 id="_math_calculations">Math Calculations</h3>
 <div class="paragraph">
-<p>In order to start doing some calculations, we&#8217;ll be using <em>operators</em>.
-You can think of an operator as a symbol that performs a calculation or other task.
+<p>To start doing some calculations, we&#8217;ll use <em>operators</em>.
+You can think of an operator as a symbol that performs a calculation or other action.
 You&#8217;ve been using an operator already: the <em>assignment operator</em>, which uses the <code>=</code> symbol.
-There are five arithmetic operators in Java:</p>
+The action it completes is assigning the value on the right of the <code>=</code> symbol to the variable on the left.
+Arithmetic operations work in a similar way.
+In Java, there are five arithmetic operators:</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Table 1. Java arithmetic operators</caption>
@@ -879,7 +881,7 @@ There are five arithmetic operators in Java:</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>The arithmetic operators work pretty much the way you&#8217;d expect; except maybe <em>modulo</em>, which might be a term you&#8217;ve never heard before.
+<p>The arithmetic operators work pretty much the way you&#8217;d expect, except maybe <em>modulo</em>--which might be a term you&#8217;ve never heard before.
 Each operator acts on the value to either side:</p>
 </div>
 <div class="listingblock">
@@ -906,7 +908,7 @@ int difference = sum - 2; // <b class="conum">(2)</b></code></pre>
 </div>
 <div class="videoblock">
 <div class="content">
-<iframe src="https://www.youtube.com/embed/PR6u4KvAkas?rel=0&amp;list=PL7yAQImwCConGySAAC5r3AB1tFDMFM3fw" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/At0vquefCuo?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 <div class="paragraph">
@@ -915,18 +917,34 @@ int difference = sum - 2; // <b class="conum">(2)</b></code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java"><code>HelloWorld.java</code></a></p>
+<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java"><code>DeclaringVariables.java</code></a></p>
 </li>
 </ul>
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_order_of_operations">Order of Operations</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_more_arithmetic_with_less_typing">More Arithmetic with Less Typing!</h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="_getting_user_input">Getting User Input</h3>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
 <p>Can you answer these questions?
-1.
-2.</p>
+1.</p>
+</div>
+<div class="paragraph">
+<p>2.</p>
+</div>
+<div class="paragraph">
+<p>3.</p>
 </div>
 </div>
 </div>
