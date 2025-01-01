@@ -272,6 +272,8 @@ We call this _operator precedence_, and here are the guidlines:
 
 Consider the following examples:
 
+// TODO: Copy OperatorPrecedence.java to file repo
+
 [source, java]
 ----
 int result1 = 17 - 4 * 6 / 3; // <.>
@@ -340,6 +342,14 @@ Files from video:
 
 * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`FIX.java`]
 ****
+
+The `Scanner` class includes a variety methods for working with input "streams" (including input sources other than a keyboard), but the ones you'll need for our work are:
+
+* `nextLine()`: returns a `String` with everything from the keyboard up until a _line feed_. In other words, this returns a complete line: everything until the user hits enter/return.
+* `next()`: returns a `String` with everything from the keyboard up until the next "delimiter," which by default is whitespace. In other words, it returns what the user typed up until the first space, tab, enter/return, etc. For our purposes, it returns the next word from the input.
+* `nextInt()`
+
+// TODO: finish Scanner reference
 
 WARNING: In case you didn't catch this in the video, there's a weird quirk that happens when you get numeric input from a user and then ask for String input using `next()` or `nextLine()`. If your program seems to skip that String input line, review that part of the video!
 

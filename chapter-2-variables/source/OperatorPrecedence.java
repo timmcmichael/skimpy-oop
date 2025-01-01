@@ -9,8 +9,6 @@ public class OperatorPrecedence {
         System.out.println("result 1 = " + result1);
         System.out.println("result 2 = " + result2);
         System.out.println("result 3 = " + result3);
-
-        System.out.println(result3 %= 3);
     }
 
 }
