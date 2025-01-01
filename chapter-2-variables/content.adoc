@@ -171,8 +171,7 @@ boolean hasCar = false;
 ----
 
 `boolean` variables go hand-in-hand with _Boolean expressions_ which are statements that evaluate to be either `true` or `false`, like those questions above.
-
-// TODO: Link to chapter on decisions re: boolean logic
+We'll look at this "Boolean logic" in the xref:chapter-5-decisions/content.adoc[chapter on decisions].
 
 === `char` Data Type
 If you want to store a single character, like a student's letter grade or their first initial, you can use the `char` data type.
@@ -261,22 +260,96 @@ Files from video:
 
 * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`FIX.java`]
 ****
+
 ==== Order of Operations
-// TODO: Order of operations
+
+Early on in your math studies you learned about _order of operations_ when an arithmetic expression has more than one calculation, and it works the same in Java.
+We call this _operator precedence_, and here are the guidlines:
+
+1. Any operations enclosed are parentheses is evaluated first, following the rest of the rules here.
+2. Multiplication, division, and modulus and evaluated next: the `*`, `/`, and `%` operators. If there are more than one of these operations in the expression, they are evaluated from left to right.
+3. Addition and subtraction and evaluated last. As above, if the expression contains more than one `+` or `-` operator, they evaluate from left to right.
+
+Consider the following examples:
+
+[source, java]
+----
+int result1 = 17 - 4 * 6 / 3; // <.>
+int result2 = 17 - 4 / 2 + 2; // <.>
+int result3 = 17 - 4 / (2 + 2); // <.>
+----
+
+<.> `result1` is 8: `4 * 6` is 24, then `24 / 3` is 8, and then `17 - 8` is 9.
+<.> `result2` is 17: `4 / 2` is 2, then `17 - 2` is 15, and then `15 + 2` is 17.
+<.> `result3` is 16: `(2 + 2)` is 4, then `4 / 4` is 1, and then `17 - 1` is 16.
 
 
 ==== More Arithmetic with Less Typing!
 
-// compound assignment statements
-// increment/decrement (unary!)
+There's a pretty consistent rule of thumb in coding that says programmers want to type as little as possible, so programming languages often provide shorthand ways of writing code that's used frequently.
+_Compound assignment operators_ (also called _shorthand operators_) simplify the syntax when you need to change a variable's value relative to it's existing value. 
+For example, if we want to add 10 to a `weight` variable that already has the value `145`, we could use the following:
+
+`weight = weight + 10;`
+
+Java starts on the right side of the assignment expression and retrieves the current value of `weight`, which is 145, adds 10 to that value, and stores the result back in `weight`.
+
+We can combine the addition operator (`+`) with the assignment operator (`=`) to make a compound addition operator: `+=`, which allows use to rewrite the above line of code as:
+
+`weight += 10`;
+
+You can use compound assignment operators for all of the arithmetic opeerations:
+
+* `+=` adds the value on the right to variable value on the left.
+* `-=` substracts the value on the right from the variable on the left.
+* `*=` multiplies the value on the left by the value on the right.
+* `\=` divides the variable value on the left by the value on the right.
+* `%=` divides the variable value on the left by value on the right, then assigns the *remainder*.
+
+An operation we might not use much now, but will start using a lot when we learn to write loops, is _incrementing_ a value, or adding 1 to a value. 
+The _increment operator_ (`\++`) gives us a very easy way to do that. 
+On somebody's birthday, for example, we could write:
+`age++;`
+
+The `++` simply adds one onto the current value of `age`.
+The _decrement operator_ is `--`, and it subtracts 1 from a variable's value.
+If we're counting down the number of days until our next birthday, we could execute this expression each morning:
+
+`daysRemaining--;`
+
+Increment and decrement only require one operand, so we call them _unary_ operators.
+
+NOTE: There are two forms to the increment and decrement operators: *prefix* and *postfix*. These examples use the postfix form, putting the operator after the variable name, whereas a prefix form would have the operator before the variable name: `++age`. There's a subtle difference in how postfix and prefix operations work, but for now you can use them interchangeably. I mention it here only because you might see code examples online using the prefix form.
+
 
 === Getting User Input
 
-// TODO: Text and video on user input with Scanner
+Until now, our code hasn't been interactive--each execution of a program results in the exact same output, and the user never has the chance to input anything.
+To produce output, we've been using `System.out` to send text to the "standard output device"--your monitor.
+For input, we'll need to use the "standard input device" (your keyboard) by accessing `System.in`.
+We can access that input device using something called the `Scanner` class.
 
-[.Check Your Learning]
+// TODO: Text and video on user input with Scanner
+.Time To Watch!
 ****
+FIX!!!!!
+User Input in Java
+
+video::At0vquefCuo[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+Files from video:
+
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`FIX.java`]
+****
+
+WARNING: In case you didn't catch this in the video, there's a weird quirk that happens when you get numeric input from a user and then ask for String input using `next()` or `nextLine()`. If your program seems to skip that String input line, review that part of the video!
+
+// TODO: "Check your learning" questions
+=== Check Your Learning
+
 Can you answer these questions?
+
+****
+
 1. 
 
 

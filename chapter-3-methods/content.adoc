@@ -15,9 +15,14 @@ endif::[]
 
 // ''''
 
-// [.Check Your Learning]
-// ****
+// === Check Your Learning
+//
 // Can you answer these questions?
+
+// ****
+// 
 // 1. 
+//
 // 2. 
+//
 // ****
