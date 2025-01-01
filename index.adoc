@@ -60,6 +60,8 @@ After the video, continue reading the chapter.
 
 == Related Resources
 
+// TODO update preface links to related resources
+
 In general, this book includes resources within each chapter. The following links collect those resources so you can find them when necessary.
 
 GitHub Page: https://timmcmichael.github.io
