@@ -64,7 +64,7 @@ Once you've installed the JDK and VS Code (along with the Java extensions), you'
 Can you answer these questions?
 
 ****
-1. What does JDK stand for?
+1. What does "JDK" stand for?
 
 2. What is an example of an Integrated Development Environment?
 ****
