@@ -4,6 +4,7 @@
 :toc: left
 :toc-title: Skimpy Contents
 :toclevels: 1
+:source-highlighter: pygments
 
 
 [preface]

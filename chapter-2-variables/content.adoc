@@ -123,8 +123,12 @@ This all goes back to binary numbers. An 8-bit number has 8 digits, and we use t
 
 The other floating point data type in Java is called `float`. 
 It's called "single" in some programming languages, which helps understand where the name `double` comes from: `double` uses twice as much memory (64 bits) as a `float` or "single" (32 bits)--and therefore its range of values is twice as big. Be aware that to make a `float` number in Java, you have to add the letter F (in capital or lowercase form) at the end of the number.
+
+.Examples of numeric variable declarations
+
 [source,java]
 ----
+int myAge = 21;
 float myGPA = 3.75f; // <.>
 double myFriendsGPA = 3.54;
 ----
@@ -164,6 +168,8 @@ Again, only two possible answers to that question; she either owns one or she do
 The best practice is to name a `boolean` variable in a way that expresses this either/or state.
 That is to say, we usually name our `boolean` variables using words like _is_, _has_, _can_, and so on.
 
+.Examples of Boolean variable declarations
+
 [source,java]
 ----
 boolean isPassing = true;
@@ -176,9 +182,13 @@ We'll look at this "Boolean logic" in the xref:chapter-5-decisions/content.adoc[
 === `char` Data Type
 If you want to store a single character, like a student's letter grade or their first initial, you can use the `char` data type.
 Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol--or some other weird stuff, too.
+
+.Examples of character variable declarations
+
 [source,java]
 ----
 char myLetterGrade = 'A';
+char firstInitial = 'T';
 ----
 
 NOTE: Some people pronounce the `char` data type like the word "chart" without the "t". And some people pronounce it like the word "care". Either is okay. 
@@ -203,6 +213,9 @@ Primitives are stored differently in memory, and they are not _objects_--which w
 For now, a really important thing to notice and remember is that primitive types start with a lowercase letter (`int`, `double`, etc.) and reference types start with a capital letter: so you have to remember to type `String` with a capital S.
 
 `String` literals are denoted with double quotation marks.
+
+.Examples of `String` variable declarations
+
 [source, java]
 ----
 String address = "3000 N. Dysart Road";
@@ -213,6 +226,36 @@ Strings are really important and there's all kinds of fun and useful stuff we ca
 
 NOTE: Always remember that, in Java, single quotes mean a `char` and double quotes mean a `String`. It's easy to get them mixed up--especially if you use Python, where they are interchangeable--but your code won't compile if you mix them up.
 
+=== Declaring Constants
+
+A constant is similar to a variable, with two rules:
+
+1. A value must be assigned when the constant is declared.
+2. The assigned value can't change during program execution.
+
+To create a constant, add the keyword `final` at the start of your statement, followed by the rest of a declaration and assignment statement you'd use for a variable.
+So that people looking at your code can easily tell it's a constant rather than a variable, it should be named with all capital letters, using the underscore character to separate words.
+
+.Examples of constant declarations
+
+[source, java]
+----
+final double SALES_TAX_RATE = 8.7;
+final int MINIMUM_AGE = 18;
+final String FAVORITE_CLASS = "CIS150AB";
+----
+
+There are a few different reasons to use constants in your code. For now:
+* Constants improve readability--they identify the purpose of a value within your code.
+* Constants prevent writing code that accidentally changes a value that shouldn't change.
+* Constants make code easier to maintain/update.
+* In some situations, constants are more efficient than variables.
+
+
+.Interesting
+****
+The naming convention used for Java constants is called *snake case*. More specifically, since it's all caps, people refer to it as *screaming snake case*. Snake case with lowercase letters is the standard convention for variables in Python, among other languages.
+****
 
 === Math Calculations
 To start doing some calculations, we'll use _operators_.
@@ -223,7 +266,7 @@ Arithmetic operations work in a similar way.
 In Java, there are five arithmetic operators:
 
 .Java arithmetic operators
-[%header, stripes=even, %autowidth]
+[cols="1,5", %header, stripes=even,width="50%"]
 |===
 |Operator |Description
 | +
@@ -331,7 +374,7 @@ To produce output, we've been using `System.out` to send text to the "standard o
 For input, we'll need to use the "standard input device" (your keyboard) by accessing `System.in`.
 We can access that input device using something called the `Scanner` class.
 
-// TODO: Text and video on user input with Scanner
+// TODO: Record video on user input with Scanner
 .Time To Watch!
 ****
 FIX!!!!!
@@ -343,15 +386,30 @@ Files from video:
 * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`FIX.java`]
 ****
 
-The `Scanner` class includes a variety methods for working with input "streams" (including input sources other than a keyboard), but the ones you'll need for our work are:
+The `Scanner` class includes a variety methods for working with input "streams" (including input sources other than a keyboard), but the ones you'll need for our work are shown below.
 
+////
 * `nextLine()`: returns a `String` with everything from the keyboard up until a _line feed_. In other words, this returns a complete line: everything until the user hits enter/return.
 * `next()`: returns a `String` with everything from the keyboard up until the next "delimiter," which by default is whitespace. In other words, it returns what the user typed up until the first space, tab, enter/return, etc. For our purposes, it returns the next word from the input.
-* `nextInt()`
+* `nextInt()`:  returns an `int`. If the input can't be converted to an `int`, it will cause an error.
+* `nextDouble()`:  returns a `double`. If the input can't be converted to an `double`, it will cause an error.
+////
 
-// TODO: finish Scanner reference
+.Common `Scanner` methods
+[cols="1,5", %header, stripes=even]
+|===
+|Method |Description
+| `nextLine()`
+| Returns a `String` with everything from the keyboard up until a _line feed_. In other words, this returns a complete line: everything until the user hits enter/return.
+| `next()`
+| Returns a `String` with everything from the keyboard up until the next "delimiter," which by default is whitespace. In other words, it returns what the user typed up until the first space, tab, enter/return, etc. For our purposes, it returns the next word from the input.
+| `nextInt()`
+| returns an `int`. If the input can't be converted to an `int`, it will cause an error.
+| `nextDouble()`
+| returns a `double`. If the input can't be converted to a `double`, it will cause an error.
+|===
 
-WARNING: In case you didn't catch this in the video, there's a weird quirk that happens when you get numeric input from a user and then ask for String input using `next()` or `nextLine()`. If your program seems to skip that String input line, review that part of the video!
+WARNING: As a reminder, there's a weird quirk that happens when you get numeric input from a user and then ask for `String` input using `next()` or `nextLine()`. If your program seems to skip that `next()` or `nextLine()`, review that part of the video!
 
 // TODO: "Check your learning" questions
 === Check Your Learning
