@@ -434,6 +434,79 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
@@ -527,23 +600,24 @@ In computer programming, a piece of information is called <strong>data</strong>.
 <div class="listingblock">
 <div class="title">HelloWorld.java</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class HelloWorld {
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
-    public static void main(String[] args) {
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
-        System.out.println("Hello World!"); // <b class="conum">(1)</b>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello World!&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 
-    }
+<span class="tok-w">    </span><span class="tok-p">}</span>
 
-}</code></pre>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
-<ol>
-<li>
-<p>The string literal "Hello World"</p>
-</li>
-</ol>
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The string literal "Hello World"</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>The only way to change what&#8217;s output is by editing that constant&#8212;&#8203;in the quotation marks&#8212;&#8203;in our source code, before we run the program.</p>
@@ -552,7 +626,7 @@ In computer programming, a piece of information is called <strong>data</strong>.
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 The string literal in our <code>Hello World</code> code is just one kind of constant. We&#8217;ll learn about others later.
@@ -601,7 +675,7 @@ Placing data in that variable is referred to as <strong>assigning</strong> a val
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you&#8212;&#8203;so you don&#8217;t have to specify it. It&#8217;s one reason I prefer to teach beginners using Java, which teaches you how data types work.
@@ -621,12 +695,15 @@ If you have programming experience in Python or JavaScript, the idea of a data t
 </div>
 </div>
 <div class="paragraph">
-<p>File from video:</p>
+<p>Files from video:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java">DeclaringVariables.java</a></p>
+</li>
+<li>
+<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariablesFinished.java"><code>DeclaringVariablesFinished.java</code></a></p>
 </li>
 </ul>
 </div>
@@ -680,17 +757,20 @@ For example, a <code>byte</code> uses 8 bits of memory and can store a number be
 It&#8217;s called "single" in some programming languages, which helps understand where the name <code>double</code> comes from: <code>double</code> uses twice as much memory (64 bits) as a <code>float</code> or "single" (32 bits)--and therefore its range of values is twice as big. Be aware that to make a <code>float</code> number in Java, you have to add the letter F (in capital or lowercase form) at the end of the number.</p>
 </div>
 <div class="listingblock">
+<div class="title">Examples of numeric variable declarations</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">float myGPA = 3.75f; // <b class="conum">(1)</b>
-double myFriendsGPA = 3.54;</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">myAge</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">;</span>
+<span class="tok-kt">float</span><span class="tok-w"> </span><span class="tok-n">myGPA</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.75f</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">myFriendsGPA</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.54</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
-<ol>
-<li>
-<p>The <code>f</code> suffix denotes that the value 3.75 is a <code>float</code> rather than a <code>double</code>.</p>
-</li>
-</ol>
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The <code>f</code> suffix denotes that the value 3.75 is a <code>float</code> rather than a <code>double</code>.</td>
+</tr>
+</table>
 </div>
 <div class="sect3">
 <h4 id="_who_cares_about_variable_size">Who Cares About Variable Size?</h4>
@@ -718,7 +798,7 @@ While you&#8217;re learning, just worry about getting your code to work.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 There&#8217;s another bad data type practice that I use with beginners.
@@ -747,13 +827,15 @@ Again, only two possible answers to that question; she either owns one or she do
 That is to say, we usually name our <code>boolean</code> variables using words like <em>is</em>, <em>has</em>, <em>can</em>, and so on.</p>
 </div>
 <div class="listingblock">
+<div class="title">Examples of Boolean variable declarations</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">boolean isPassing = true;
-boolean hasCar = false;</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isPassing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">hasCar</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><code>boolean</code> variables go hand-in-hand with <em>Boolean expressions</em> which are statements that evaluate to be either <code>true</code> or <code>false</code>, like those questions above.</p>
+<p><code>boolean</code> variables go hand-in-hand with <em>Boolean expressions</em> which are statements that evaluate to be either <code>true</code> or <code>false</code>, like those questions above.
+We&#8217;ll look at this "Boolean logic" in the <a href="#">chapter on decisions</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -763,15 +845,17 @@ boolean hasCar = false;</code></pre>
 Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol&#8212;&#8203;or some other weird stuff, too.</p>
 </div>
 <div class="listingblock">
+<div class="title">Examples of character variable declarations</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">char myLetterGrade = 'A';</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">myLetterGrade</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;A&#39;</span><span class="tok-p">;</span>
+<span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">firstInitial</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;T&#39;</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 Some people pronounce the <code>char</code> data type like the word "chart" without the "t". And some people pronounce it like the word "care". Either is okay.
@@ -783,7 +867,7 @@ Some people pronounce the <code>char</code> data type like the word "chart" with
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 I pronounce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
@@ -820,9 +904,10 @@ For now, a really important thing to notice and remember is that primitive types
 <p><code>String</code> literals are denoted with double quotation marks.</p>
 </div>
 <div class="listingblock">
+<div class="title">Examples of <code>String</code> variable declarations</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">String address = "3000 N. Dysart Road";
-String bestClass = "CIS150AB";</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">address</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;3000 N. Dysart Road&quot;</span><span class="tok-p">;</span>
+<span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">bestClass</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;CIS150AB&quot;</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -832,13 +917,56 @@ String bestClass = "CIS150AB";</code></pre>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 Always remember that, in Java, single quotes mean a <code>char</code> and double quotes mean a <code>String</code>. It&#8217;s easy to get them mixed up&#8212;&#8203;especially if you use Python, where they are interchangeable&#8212;&#8203;but your code won&#8217;t compile if you mix them up.
 </td>
 </tr>
 </table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_declaring_constants">Declaring Constants</h3>
+<div class="paragraph">
+<p>A constant is similar to a variable, with two rules:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>A value must be assigned when the constant is declared.</p>
+</li>
+<li>
+<p>The assigned value can&#8217;t change during program execution.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>To create a constant, add the keyword <code>final</code> at the start of your statement, followed by the rest of a declaration and assignment statement you&#8217;d use for a variable.
+So that people looking at your code can easily tell it&#8217;s a constant rather than a variable, it should be named with all capital letters, using the underscore character to separate words.</p>
+</div>
+<div class="listingblock">
+<div class="title">Examples of constant declarations</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">SALES_TAX_RATE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">8.7</span><span class="tok-p">;</span>
+<span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">MINIMUM_AGE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">;</span>
+<span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">FAVORITE_CLASS</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;CIS150AB&quot;</span><span class="tok-p">;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>There are a few different reasons to use constants in your code. For now:
+* Constants improve readability&#8212;&#8203;they identify the purpose of a value within your code.
+* Constants prevent writing code that accidentally changes a value that shouldn&#8217;t change.
+* Constants make code easier to maintain/update.
+* In some situations, constants are more efficient than variables.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Interesting</div>
+<div class="paragraph">
+<p>The naming convention used for Java constants is called <strong>snake case</strong>. More specifically, since it&#8217;s all caps, people refer to it as <strong>screaming snake case</strong>. Snake case with lowercase letters is the standard convention for variables in Python, among other languages.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -851,19 +979,17 @@ The action it completes is assigning the value on the right of the <code>=</code
 Arithmetic operations work in a similar way.
 In Java, there are five arithmetic operators:</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-even stretch">
+<table class="tableblock frame-all grid-all stripes-even" style="width: 50%;">
 <caption class="title">Table 1. Java arithmetic operators</caption>
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Operator</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">+</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Addition</p></td>
@@ -892,25 +1018,28 @@ Each operator acts on the value to either side:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">int sum = 5 + 7; // <b class="conum">(1)</b>
-int difference = sum - 2; // <b class="conum">(2)</b></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">5</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">difference</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
-<ol>
-<li>
-<p>The value of <code>sum</code> will be 12</p>
-</li>
-<li>
-<p>The value of <code>difference</code> will be 10 (i.e., 10 - 2)</p>
-</li>
-</ol>
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The value of <code>sum</code> will be 12</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>The value of <code>difference</code> will be 10 (i.e., 10 - 2)</td>
+</tr>
+</table>
 </div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p>Java arithmetic operations</p>
+<p>FIX!!!!!
+Java arithmetic operations</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -923,10 +1052,7 @@ int difference = sum - 2; // <b class="conum">(2)</b></code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java"><code>DeclaringVariables.java</code></a></p>
-</li>
-<li>
-<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariablesFinished.java"><code>DeclaringVariablesFinished.java</code></a></p>
+<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java"><code>FIX.java</code></a></p>
 </li>
 </ul>
 </div>
@@ -934,20 +1060,208 @@ int difference = sum - 2; // <b class="conum">(2)</b></code></pre>
 </div>
 <div class="sect3">
 <h4 id="_order_of_operations">Order of Operations</h4>
-
+<div class="paragraph">
+<p>Early on in your math studies you learned about <em>order of operations</em> when an arithmetic expression has more than one calculation, and it works the same in Java.
+We call this <em>operator precedence</em>, and here are the guidlines:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Any operations enclosed are parentheses is evaluated first, following the rest of the rules here.</p>
+</li>
+<li>
+<p>Multiplication, division, and modulus and evaluated next: the <code>*</code>, <code>/</code>, and <code>%</code> operators. If there are more than one of these operations in the expression, they are evaluated from left to right.</p>
+</li>
+<li>
+<p>Addition and subtraction and evaluated last. As above, if the expression contains more than one <code>+</code> or <code>-</code> operator, they evaluate from left to right.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Consider the following examples:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result1</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">*</span><span class="tok-w"> </span><span class="tok-mi">6</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result2</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result3</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-mi">2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="3"></i><b>(3)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td><code>result1</code> is 8: <code>4 * 6</code> is 24, then <code>24 / 3</code> is 8, and then <code>17 - 8</code> is 9.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td><code>result2</code> is 17: <code>4 / 2</code> is 2, then <code>17 - 2</code> is 15, and then <code>15 + 2</code> is 17.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td><code>result3</code> is 16: <code>(2 + 2)</code> is 4, then <code>4 / 4</code> is 1, and then <code>17 - 1</code> is 16.</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_more_arithmetic_with_less_typing">More Arithmetic with Less Typing!</h4>
-
+<div class="paragraph">
+<p>There&#8217;s a pretty consistent rule of thumb in coding that says programmers want to type as little as possible, so programming languages often provide shorthand ways of writing code that&#8217;s used frequently.
+<em>Compound assignment operators</em> (also called <em>shorthand operators</em>) simplify the syntax when you need to change a variable&#8217;s value relative to it&#8217;s existing value.
+For example, if we want to add 10 to a <code>weight</code> variable that already has the value <code>145</code>, we could use the following:</p>
+</div>
+<div class="paragraph">
+<p><code>weight = weight + 10;</code></p>
+</div>
+<div class="paragraph">
+<p>Java starts on the right side of the assignment expression and retrieves the current value of <code>weight</code>, which is 145, adds 10 to that value, and stores the result back in <code>weight</code>.</p>
+</div>
+<div class="paragraph">
+<p>We can combine the addition operator (<code>`) with the assignment operator (`=`) to make a compound addition operator: `=</code>, which allows use to rewrite the above line of code as:</p>
+</div>
+<div class="paragraph">
+<p><code>weight += 10</code>;</p>
+</div>
+<div class="paragraph">
+<p>You can use compound assignment operators for all of the arithmetic opeerations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>+=</code> adds the value on the right to variable value on the left.</p>
+</li>
+<li>
+<p><code>-=</code> substracts the value on the right from the variable on the left.</p>
+</li>
+<li>
+<p><code>*=</code> multiplies the value on the left by the value on the right.</p>
+</li>
+<li>
+<p><code>\=</code> divides the variable value on the left by the value on the right.</p>
+</li>
+<li>
+<p><code>%=</code> divides the variable value on the left by value on the right, then assigns the <strong>remainder</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>An operation we might not use much now, but will start using a lot when we learn to write loops, is <em>incrementing</em> a value, or adding 1 to a value.
+The <em>increment operator</em> (<code>+`) gives us a very easy way to do that.
+On somebody's birthday, for example, we could write:
+`age+;</code></p>
+</div>
+<div class="paragraph">
+<p>The <code>++</code> simply adds one onto the current value of <code>age</code>.
+The <em>decrement operator</em> is <code>--</code>, and it subtracts 1 from a variable&#8217;s value.
+If we&#8217;re counting down the number of days until our next birthday, we could execute this expression each morning:</p>
+</div>
+<div class="paragraph">
+<p><code>daysRemaining--;</code></p>
+</div>
+<div class="paragraph">
+<p>Increment and decrement only require one operand, so we call them <em>unary</em> operators.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+There are two forms to the increment and decrement operators: <strong>prefix</strong> and <strong>postfix</strong>. These examples use the postfix form, putting the operator after the variable name, whereas a prefix form would have the operator before the variable name: <code>++age</code>. There&#8217;s a subtle difference in how postfix and prefix operations work, but for now you can use them interchangeably. I mention it here only because you might see code examples online using the prefix form.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_getting_user_input">Getting User Input</h3>
+<div class="paragraph">
+<p>Until now, our code hasn&#8217;t been interactive&#8212;&#8203;each execution of a program results in the exact same output, and the user never has the chance to input anything.
+To produce output, we&#8217;ve been using <code>System.out</code> to send text to the "standard output device"--your monitor.
+For input, we&#8217;ll need to use the "standard input device" (your keyboard) by accessing <code>System.in</code>.
+We can access that input device using something called the <code>Scanner</code> class.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>FIX!!!!!
+User Input in Java</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/At0vquefCuo?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph">
+<p>Files from video:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java"><code>FIX.java</code></a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>Scanner</code> class includes a variety methods for working with input "streams" (including input sources other than a keyboard), but the ones you&#8217;ll need for our work are shown below.</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Table 2. Common <code>Scanner</code> methods</caption>
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Method</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nextLine()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Returns a <code>String</code> with everything from the keyboard up until a <em>line feed</em>. In other words, this returns a complete line: everything until the user hits enter/return.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>next()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Returns a <code>String</code> with everything from the keyboard up until the next "delimiter," which by default is whitespace. In other words, it returns what the user typed up until the first space, tab, enter/return, etc. For our purposes, it returns the next word from the input.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nextInt()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">returns an <code>int</code>. If the input can&#8217;t be converted to an <code>int</code>, it will cause an error.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nextDouble()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">returns a <code>double</code>. If the input can&#8217;t be converted to a <code>double</code>, it will cause an error.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+As a reminder, there&#8217;s a weird quirk that happens when you get numeric input from a user and then ask for <code>String</code> input using <code>next()</code> or <code>nextLine()</code>. If your program seems to skip that <code>next()</code> or <code>nextLine()</code>, review that part of the video!
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_check_your_learning_3">Check Your Learning</h3>
+<div class="paragraph">
+<p>Can you answer these questions?</p>
+</div>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p>Can you answer these questions?
-1.</p>
+<p>1.</p>
 </div>
 <div class="paragraph">
 <p>2.</p>
@@ -966,7 +1280,7 @@ int difference = sum - 2; // <b class="conum">(2)</b></code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-09 20:41:12 -0700
+Last updated 2025-01-01 20:37:46 -0700
 </div>
 </div>
 </body>

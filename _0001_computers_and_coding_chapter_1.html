@@ -434,6 +434,79 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
@@ -506,7 +579,7 @@ Because the guts of a computer (a CPU) are kinda like a bunch of light switches&
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 Never has the concept of a modern computer been so recklessly simplified. I feel shame.
@@ -585,7 +658,7 @@ Of course, even a simple program requires a lot of instructions, so you&#8217;re
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 There are many, many programming languages. <a href="https://en.wikipedia.org/wiki/List_of_programming_languages">Seriously, there are a lot</a>.
@@ -794,51 +867,71 @@ But Java puts OOP front and center, and you can&#8217;t start writing statements
 <div class="listingblock">
 <div class="title">HelloWorld.java - Hello World program in Java</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class HelloWorld { // <b class="conum">(1)</b>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 
-    public static void main(String[] args) { // <b class="conum">(2)</b>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
 
-        System.out.println("Hello World!"); // <b class="conum">(3)</b>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello World!&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="3"></i><b>(3)</b>
 
-    } // <b class="conum">(4)</b>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><i class="conum" data-value="4"></i><b>(4)</b>
 
-} // <b class="conum">(5)</b></code></pre>
+<span class="tok-p">}</span><span class="tok-w"> </span><i class="conum" data-value="5"></i><b>(5)</b></code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Here are the parts of the program:</p>
 </div>
 <div class="colist arabic">
-<ol>
-<li>
-<p>Class declaration and start of a code block. This is a publicly accessible class called <code>HelloWorld</code>.</p>
-</li>
-<li>
-<p><code>main()</code> method declaration and start of a code block. <code>main()</code> is where a Java program starts running.</p>
-</li>
-<li>
-<p><code>println()</code> statement to output the message.</p>
-</li>
-<li>
-<p>End of the <code>main()</code> method code block, as indicated by the indenting and closing curly brace.</p>
-</li>
-<li>
-<p>End of the class code block.</p>
-</li>
-</ol>
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Class declaration and start of a code block. This is a publicly accessible class called <code>HelloWorld</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td><code>main()</code> method declaration and start of a code block. <code>main()</code> is where a Java program starts running.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td><code>println()</code> statement to output the message.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>End of the <code>main()</code> method code block, as indicated by the indenting and closing curly brace.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>End of the class code block.</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>You&#8217;ll learn about all of these components as we go.
 But for now, you&#8217;re off and running!</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_check_your_learning_2">Check Your Learning</h3>
+<div class="paragraph">
+<p>Can you answer these questions?</p>
+</div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph">
-<p>Can you answer these questions?
-1. What tool converts your programming into something the computer can run?
-2. What is the name of the instruction set, specific to each computer type, that a computer can understand and execute?
-3. What are some advantages of using an organized software development process?
-4. What programming paradigm bundles procedures with the data they use?</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>What tool converts your programming into something the computer can run?</p>
+</li>
+<li>
+<p>What is the name of the instruction set, specific to each computer type, that a computer can understand and execute?</p>
+</li>
+<li>
+<p>What are some advantages of using an organized software development process?</p>
+</li>
+<li>
+<p>What programming paradigm bundles procedures with the data they use?</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -851,7 +944,7 @@ But for now, you&#8217;re off and running!</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-09 20:41:12 -0700
+Last updated 2025-01-01 20:37:46 -0700
 </div>
 </div>
 </body>
