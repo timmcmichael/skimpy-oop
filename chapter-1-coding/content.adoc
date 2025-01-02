@@ -203,6 +203,7 @@ Take a look at the code for a basic "Hello World" program; we'll learn what all 
 // TODO: Add HelloWorld.java to shared folder
 
 .HelloWorld.java - Hello World program in Java
+
 [source,java]
 ----
 public class HelloWorld { // <.>

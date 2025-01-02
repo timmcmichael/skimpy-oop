@@ -48,6 +48,7 @@ endif::[]
 // Use output statements frequently.
 
 // .DebuggingOutput.java - Output statements to help with debugging
+
 // [source,java]
 // ----
 // include::source/DebuggingOutput.java[]

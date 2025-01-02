@@ -28,6 +28,7 @@ variable:: A piece of data that may change (or "vary") during program execution.
 In our `Hello World` code, the letters and characters we output are _constant_ data.
 
 .HelloWorld.java
+
 [source,java]
 ----
 public class HelloWorld {
@@ -251,7 +252,6 @@ There are a few different reasons to use constants in your code. For now:
 * Constants make code easier to maintain/update.
 * In some situations, constants are more efficient than variables.
 
-
 .Interesting
 ****
 The naming convention used for Java constants is called *snake case*. More specifically, since it's all caps, people refer to it as *screaming snake case*. Snake case with lowercase letters is the standard convention for variables in Python, among other languages.
@@ -283,6 +283,8 @@ In Java, there are five arithmetic operators:
 
 The arithmetic operators work pretty much the way you'd expect, except maybe _modulo_--which might be a term you've never heard before. 
 Each operator acts on the value to either side:
+
+.Examples of simple arithmetic operations
 
 [source,java]
 ----
@@ -316,6 +318,8 @@ We call this _operator precedence_, and here are the guidlines:
 Consider the following examples:
 
 // TODO: Copy OperatorPrecedence.java to file repo
+
+.Examples of operator precedence
 
 [source, java]
 ----
