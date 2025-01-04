@@ -50,7 +50,8 @@ NOTE: The string literal in our `Hello World` code is just one kind of constant.
 In order for our programs to be flexible and responsive, we'll need *variables*.
 I encourage beginning students to think of a variable like a container, such as a cup.
 
-// TODO: Take a picture of the Nerds Rule mug and add it here
+.A photograph of the *actual* mug used in lectures.
+image::important_mug.jpeg[A coffee mug that says "Nerds Rule", width=300]
 
 The container can hold one thing at a time.
 I can put coffee in it, or I can put water in it--but I can't put both.
