@@ -423,14 +423,13 @@ Can you answer these questions?
 
 ****
 
-1. 
+1. Explain the difference between a declaration and an assignment.
 
+2. Identify a data type you could use for each of the following:
+** A complete mailing address
+** A speed limit
+** The average number of students in classes at EMCC
 
-2. 
-
-
-3.
-
-
+3. What kind of object can you use to get keyboard input from the user?
 
 ****

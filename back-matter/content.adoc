@@ -11,25 +11,43 @@ endif::[]
 === Answers to _Check Your Learning_ questions
 
 ==== Getting Started Chapter
-....
-1. What does JDK stand for?
-    Java Development Kit
 
-2. What is an example of an Integrated Development Environment?
-    Visual Studio Code, eclipse, IntelliJ, and many others.
-....
+[qanda]
+What does JDK stand for?::
+Java Development Kit
+
+What is an example of an Integrated Development Environment?::
+Visual Studio Code, eclipse, IntelliJ, and many others.
 
 ==== Computers and Coding (Chapter 1)
-....
-1. What tool converts your programming into something the computer can run?
-    A compiler (or, in some cases, interpreter)
 
-2. What is the name of the instruction set, specific to each computer type, that a computer can understand and execute?
-    Machine language
+[qanda]
+What tool converts your programming into something the computer can run?::
+A compiler (or, in some cases, interpreter)
 
-3. What are some advantages of using an organized software development process?
-    Keeps you focused, breaks up a complicated problem/program, etc.
+What is the name of the instruction set, specific to each computer type, that a computer can understand and execute?::
+Machine language
 
-4. What programming paradigm bundles procedures with the data they use?
-    Object-oriented programming (OOP)
-....
+What are some advantages of using an organized software development process?::
+Keeps you focused, breaks up a complicated problem/program, etc.
+
+What programming paradigm bundles procedures with the data they use?::
+Object-oriented programming (OOP)
+
+==== Variables (Chapter 2)
+
+[qanda]
+Explain the difference between a declaration and an assignment.::
+A declaration sets aside a memory location for a variable; an assignment puts a value in a variable.
+
+Identify a data type you could use for each of the following::
++
+--
+*A complete mailing address* `String`, since it is a collection of characters, including numbers, letters, and punctuation.
+
+*A speed limit:* `int`, since it is a whole number.
+
+*The average number of students in classes at EMCC:* `double`, since the value may include decimals.
+--
+
+What kind of object can you use to get keyboard input from the user?:: An object of the `Scanner` class.
