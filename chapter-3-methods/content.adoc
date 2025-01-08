@@ -8,21 +8,81 @@ endif::[]
 
 == 0011 - Methods (Chapter 3)
 
-=== Content coming soon!
+//TODO: Ch 3 objectives
+=== What's the Point?
+* 
 
-// === What's the Point?
-// * 
+''''
 
-// ''''
+As our programs begin to get larger and more complex, it will be important to keep our code organized. 
+Each program we write is contained within a _class_, and classes are the basic building block of an OOP program; we'll explore them in more detail in the next chapter.
+Within a program, we can organize code in *methods*.
+A method is a collection of statements that work together to complete a single task.
+Consider the assembly instructions for a LEGO set. 
 
-// === Check Your Learning
-//
-// Can you answer these questions?
+image::LEGO.png[A few LEGO blocks, width=300]
 
-// ****
-// 
-// 1. 
-//
-// 2. 
-//
-// ****
+It might take dozens of steps to put together the set, but taken together, you complete a single task: building the set.
+A method is conceptually the same.
+
+There are a variety of reasons to break your code into methods, but an important advantage for now is *reuseability*. 
+Once you create a method, you can use it as often as you'd like.
+That means you don't have to type the same code over and over.
+In turn, that improves your code's *maintainability*. 
+If you have to perform some calculation ten times in your program and have written out that calculation all ten times, a change to the calculation means updating it in all ten places.
+But if you put that calculation in a method and use that method ten times, you can just update the calculation inside the method and your changes will automatically be used all ten times.
+You'll see more advantages to methods as you learn more about prgramming.
+
+Once you define a method, you *invoke* the method each time you want it to execute.
+We also say that we _call_ a method, which sounds a little cooler than _invoke_ but means the same thing.
+
+You've been defining a method from the start.
+Each program you write includes a method called `main`, which the Java runtime invokes when you run the program.
+
+You've also been calling (_invoking_) methods from the start.
+To output text, we've been calling the `println()` or `print()` methods.
+
+TIP: In Java, parentheses *always* indicate a method, whether or not there is anything inside of the parentheses. Anytime you see parentheses in Java code, you're looking at either a method definition or a method call.
+
+Consider this simple method definition:
+
+[source,java]
+----
+public static displayCopyright() {
+    System.out.println("(C) 2025 by Tim McMichael. All rights reserved.")
+}
+----
+
+- The `public` keyword is an _access modifier_. Defining the method as `public` makes it possible to call the method from anyway. More on this later, and for now all of your methods will be `static`.
+- The `static` keyword basically means that the method belongs to the class and not an object. Again, you'll lear about this soon and for now your methods will be `static`.
+- `displayCopyright` is the identifier for the method, in the same way variables have identifiers. Like variable identifiers, use camelCase to make the name readable--and make the name descriptive. The convention is that the name of a method should describe what it does; usually, that means the identifier is a verb.
+- The parentheses indicate to the compiler that this is a method, as opposed to a variable or some other fancy thing. You'll see what you can put in the parentheses shortly.
+
+
+// TODO: Record and link video 3a: Defining and calling methods in Java
+.Time To Watch!
+****
+Defining and Calling Methods in Java
+
+video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:
+
+// TODO: Fix this file reference
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+****
+
+
+
+
+// TODO: Ch 3 check your learning
+=== Check Your Learning
+
+Can you answer these questions?
+
+****
+
+1. 
+
+2. 
+
+****
