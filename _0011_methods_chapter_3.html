@@ -435,6 +435,78 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
@@ -487,8 +559,256 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_0011_methods_chapter_3">0011 - Methods (Chapter 3)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_content_coming_soon">Content coming soon!</h3>
+<h3 id="_this_content_is_still_under_construction"><mark>THIS CONTENT IS STILL UNDER CONSTRUCTION</mark></h3>
 
+</div>
+<div class="sect2">
+<h3 id="_whats_the_point_4">What&#8217;s the Point?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Define and call methods
+*</p>
+</li>
+</ul>
+</div>
+<hr>
+<div class="paragraph">
+<p>As our programs begin to get larger and more complex, it will be important to keep our code organized.
+Each program we write is contained within a <em>class</em>, and classes are the basic building block of an OOP program; we&#8217;ll explore them in more detail in the next chapter.
+Within a program, we can organize code in <strong>methods</strong>.
+A method is a collection of statements that work together to complete a single task.
+Consider the assembly instructions for a LEGO set.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-3-methods/images/LEGO.png" alt="A few LEGO blocks" width="300">
+</div>
+</div>
+<div class="paragraph">
+<p>It might take dozens of steps to put together the set, but taken together, you complete a single task: building the set.
+A method is conceptually the same.</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;ve worked with other programming languages, you may know methods by a different name.
+In Python, we use functions, and in other languages we use procedures or subroutines.
+All of those terms pretty much mean the same thing, but in Java they&#8217;re called methods.
+And really, they&#8217;re generally called methods whenever we&#8217;re using object-oriented programming, so even in Python we sometimes call them methods.</p>
+</div>
+<div class="paragraph">
+<p>There are a variety of reasons to break your code into methods, but an important advantage for now is <strong>reuseability</strong>.
+Once you create a method, you can use it as often as you&#8217;d like.
+That means you don&#8217;t have to type the same code over and over.
+In turn, that improves your code&#8217;s <strong>maintainability</strong>.
+If you have to perform some calculation ten times in your program and have written out that calculation all ten times, a change to the calculation means updating it in all ten places.
+But if you put that calculation in a method and use that method ten times, you can just update the method and your changes will automatically be used all ten times.
+You&#8217;ll see additional advantages to methods as you learn more about prgramming.</p>
+</div>
+<div class="paragraph">
+<p>Once you define a method, you <strong>invoke</strong> the method each time you want it to execute.
+We also say that we <em>call</em> a method, which sounds a little cooler than <em>invoke</em> but means the same thing.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_defining_your_own_methods">Defining Your Own Methods</h3>
+<div class="paragraph">
+<p>You&#8217;ve been defining a method from the start.
+Each program you write includes a method called <code>main</code>, which the Java runtime invokes when you run the program.</p>
+</div>
+<div class="paragraph">
+<p>You&#8217;ve also been calling (<em>invoking</em>) methods from the start.
+To output text, we&#8217;ve been calling the <code>println()</code> and <code>print()</code> methods.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+In Java, parentheses <strong>always</strong> indicate a method, whether or not there is anything inside of the parentheses. Anytime you see parentheses in Java code, you&#8217;re looking at either a method definition or a method call.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Consider this simple method definition:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">displayCopyright</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;(C) 2025 by Tim McMichael. All rights reserved.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>public</code> keyword is an <em>access modifier</em>. Defining the method as <code>public</code> makes it possible to call the method from anywhere. More on this later, but for now all of your methods will be <code>public</code>.</p>
+</li>
+<li>
+<p>The <code>static</code> keyword basically means that the method belongs to the class and not an object. That will make more sense in the next chapter, but for now your methods will be <code>static</code>.</p>
+</li>
+<li>
+<p>The <code>void</code> keyword indicates that this method will not return anything. This is called the method&#8217;s <em>return type</em>, and we&#8217;ll learn about this shortly.</p>
+</li>
+<li>
+<p><code>displayCopyright</code> is the identifier for the method, in the same way variables have identifiers. Like variable identifiers, use camelCase to make the name readable&#8212;&#8203;and make the name descriptive. The convention is that the name of a method should describe what it does; usually, that means the identifier is (or includes) a verb.</p>
+</li>
+<li>
+<p>The parentheses indicate to the compiler that this is a method, as opposed to a variable or some other fancy thing. You&#8217;ll see what you can put in the parentheses shortly.</p>
+</li>
+</ul>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Defining and Calling Methods in Java</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/xxxxx?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph">
+<p>File from video:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java">HelloWorld.java</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_passing_data_to_methods">Passing Data to Methods</h3>
+<div class="paragraph">
+<p>Sometimes a method needs some information in order to carry out its purpose.
+For example, the <code>print()</code> method needs to know what it&#8217;s supposed to print.
+To provide information to a method, we <em>pass</em> the information in as <strong>arguments</strong>.
+So, the <code>String</code> we want to output is passed to the <code>print()</code> method as an argument, and arguments are always placed inside the parentheses:</p>
+</div>
+<div class="paragraph">
+<p><code>System.out.print("Hello World");</code></p>
+</div>
+<div class="paragraph">
+<p>In this example, "Hello World" is an argument.</p>
+</div>
+<div class="paragraph">
+<p>To allow a method we create to accept arguments, we have to include that in our method definition.
+Within the method we&#8217;re defining, those pieces of information are called <strong>parameters</strong>.
+A parameter is a variable that exists in the method and receives the argument.
+We define parameters inside the parentheses in our method definition.</p>
+</div>
+<div class="listingblock">
+<div class="title">ParameterExample.java - Defining a parameter and pass in an argument</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">ParameterExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">printGreeting</span><span class="tok-p">(</span><span class="tok-s">&quot;Tim&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">printGreeting</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello, &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot;!&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>"Tim" is the argument.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td><code>name</code> is the parameter.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In the above example, "Tim" is passed to the <code>printGreeting()</code> method as an argument.
+Within that method, the parameter <code>name</code> stores the argument, so when this code runs, <code>name</code> is equal to "Tim".</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The actual value passed in when you call a method is referred to as an <em>argument</em>. The variable that receives that value within the method is referred to as a <em>parameter</em>.
+</td>
+</tr>
+</table>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Passing Data to a Method in Java
+video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java">HelloWorld.java</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_returning_values">Returning Values</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_variable_scope">Variable Scope</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_overloading_a_method">Overloading a Method</h3>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Returning Data from a Method in Java
+video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java">HelloWorld.java</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_check_your_learning_4">Check Your Learning</h3>
+<div class="paragraph">
+<p>Can you answer these questions?</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p>1.</p>
+</div>
+<div class="paragraph">
+<p>2.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -498,7 +818,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-01 20:37:46 -0700
+Last updated 2025-01-01 20:38:48 -0700
 </div>
 </div>
 </body>

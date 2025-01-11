@@ -8,7 +8,7 @@ endif::[]
 
 == 0110 - Loops (Chapter 6)
 
-=== Content coming soon!
+=== #Content coming soon!#
 
 
 // TODO: Find wile e. coyote loops cartoon in Photos (marked as favorite)

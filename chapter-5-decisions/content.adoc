@@ -8,7 +8,7 @@ endif::[]
 
 == 0101 - Decisions (Chapter 5)
 
-=== Content coming soon!
+=== #Content coming soon!#
 
 // === What's the Point?
 // * 
