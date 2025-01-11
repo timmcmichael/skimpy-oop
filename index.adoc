@@ -11,10 +11,6 @@
 [preface]
 == Skimpy Preface: An Excuse For The Inadequacies Within
 
-#*Tim: Go through the "TODO" comments!*#
-
-#*Tim: YouTube, add links to playlist description, and make the playlist & videos public*#
-
 This isn't a real textbook. 
 It's not _imaginary_ or anything, it's just missing most of the stuff a real textbook includes. It's, well, skimpy.
 
@@ -24,7 +20,8 @@ It's also skimpy because the purpose of this particular course, at least from my
 It's an introductory course that's taken by a variety of students. If you're a coding student--majoring in _Programming and Systems Analysis_ or _Web Design and Development_, for example--you'll take language-specific courses that will get much more detailed, so our goal here is to give you a foundation for that.
 If you're majoring in something else, you might not never write another line of code after the semester ends--I want you to learn about programming and software development so you can communicate with the coders in your workplace and have a general understanding of how an idea becomes a program or app.
 
-It's also possible that I just don't know very much. You know, a skimpy brain.
+It's also possible that I just don't know very much. 
+You know, a skimpy brain.
 
 === But why are we stuck reading this eBook?
 
@@ -37,6 +34,9 @@ That sometimes seems true, but you're different; I can tell just by looking at y
 But I acknowledge that many students prefer video content and in-person instruction rather reading, so this is my attempt to meet those students halfway.
 
 This eBook might not be very good or very detailed, but it is very free.
+
+// TODO: Update this "under construction" note
+#Unfortunately, as of Spring 2025 this book is *too* skimpy and is still being written, so you'll need the textbook listed in Canvas as well--sorry, I just can type fast enough.# 
 
 === And why are we using Java instead of *_my_* favorite language?
 
@@ -62,11 +62,9 @@ After the video, continue reading the chapter.
 
 == Related Resources
 
-// TODO update preface links to related resources
-
 In general, this book includes resources within each chapter. The following links collect those resources so you can find them when necessary.
 
-GitHub Page: https://timmcmichael.github.io
+GitHub landing page: https://timmcmichael.github.io
 
 YouTube channel: https://www.youtube.com/@ProfTimEMCC[@ProfTimEMCC]
 
@@ -74,10 +72,9 @@ Course YouTube playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLX
 
 === Source code files:
 
-* Google Drive: https://bit.ly/ProfTimEMCCFiles[https://bit.ly/ProfTimEMCCFiles]
 * GitHub: https://github.com/timmcmichael/EMCCTimFiles[https://github.com/timmcmichael/EMCCTimFiles]
 
-_Note: Files are generally posted in Canvas as well_.
+_Note: Files are generally linked in Canvas as well_.
 
 include::chapter-0/content.adoc[]
 
