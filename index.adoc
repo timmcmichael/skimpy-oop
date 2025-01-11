@@ -72,6 +72,9 @@ Course YouTube playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLX
 
 === Source code files:
 
+The files shown in the eBook and videos can be available on GitHub, and it includes information about how to find and download what you are looking for. 
+If you have trouble finding something (or using the GitHub site), please contact me at mailto:tim.mcmichael@estrellamountain.edu[tim.mcmichael@estrellamountain.edu] or in Canvas.
+
 * GitHub: https://github.com/timmcmichael/EMCCTimFiles[https://github.com/timmcmichael/EMCCTimFiles]
 
 _Note: Files are generally linked in Canvas as well_.

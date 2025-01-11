@@ -10,6 +10,7 @@ endif::[]
 === What's the Point?
 * Understand the role of programming languages
 * Get to know a little about Object-Oriented Programming (OOP)
+* Use `print()` and `println()` to produce text output
 
 '''
 A computer is basically a device that executes a set of commands--and does so very quickly.
@@ -223,6 +224,62 @@ Here are the parts of the program:
 
 You'll learn about all of these components as we go.
 But for now, you're off and running!
+
+=== Basic Output
+
+The first programs we create in Java are _console_ programs--they are text-based programs that can't really display any graphics.
+Java provides two basic ways to output text to the console: `System.out.print()` and `System.out.println()` statements.
+`print()` outputs whatever is in the parentheses, and for now we'll put that text in quotation marks:
+
+`System.out.print("Mick Jagger");`
+
+This line of code outputs `Mick Jagger` to the console window.
+After `print()` outputs the text in parentheses, the cursor remains at the end of the output.
+This is just like if you type something in a word processor but don't hit enter; the next time you start typing, the characters resume on the same line.
+In the same way, the next output statement will continue on the same line in the console.
+
+A `println()` statement works exactly the same way, but it advances the cursor to the next line when it's finished.
+Basically, it hits enter, and the next output statement will be on a new line.
+
+.Interesting
+****
+println() works by outputting the text inside the parentheses and then outputting a special character called a _newline_. The newline isn't visible, but it moves the cursor to the next line.
+****
+
+To understand the difference between `print()` and `println()`, consider this program.
+
+.OutputExample.java - Simple console output in Java
+[source,java]
+----
+public class OutputExample {
+
+    public static void main(String[] args) {
+        System.out.print("As the Rolling Stones might say,");
+        System.out.println("you can't always");
+        System.out.println("get what you want.");
+    }
+
+}
+----
+
+The program produces the following output:
+
+[source]
+----
+As the Rolling Stones might say,you can't always
+get what you want
+----
+
+After the `print()` statement executes, the cursor is still sitting right after the _*r*_ in *_Jagger_*, so when the next line of code outputs _*you can't always*_, that text just gets jammed onto the end. 
+Notice that it doesn't even add a space; if we want a space there, we have to include it in our parentheses.
+
+Because _*you can't always*_ is in a `println()` statement, the cursor advances and _*get what you want*_ is on a new line.
+
+You'll use `print()` and `println()` in every Java program you write for quite a while, so it's important to take time to experiment with them on your own to make sure you understand how they work.
+
+// TODO: Add GitHub link at the end of each chapter (see Ch 1 for format)
+
+NOTE: Source code examples from this chapter are available on  https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding[GitHub].
 
 === Check Your Learning
 
