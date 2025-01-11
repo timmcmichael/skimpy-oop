@@ -8,7 +8,7 @@ endif::[]
 
 == 0111 - Debugging (Chapter 7)
 
-=== Content coming soon!
+=== #Content coming soon!#
 
 // === What's the Point?
 // * 

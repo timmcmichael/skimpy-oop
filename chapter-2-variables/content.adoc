@@ -10,6 +10,8 @@ endif::[]
 
 == 0010 - Variables (Chapter 2)
 
+=== #THIS CONTENT IS NOT QUITE COMPLETE - VIDEOS ARE STIlL BEING EDITING AND THERE MAY BE TEMPORARY "PLACEHOLDERS" IN THE MEANTIME#
+
 === What's the Point?
 * Know how to select a data type
 * Write code to declare variables and assign values

@@ -559,6 +559,10 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <h2 id="_0010_variables_chapter_2">0010 - Variables (Chapter 2)</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="_this_content_is_not_quite_complete_videos_are_still_being_editing_and_there_may_be_temporary_placeholders_in_the_meantime"><mark>THIS CONTENT IS NOT QUITE COMPLETE - VIDEOS ARE STIlL BEING EDITING AND THERE MAY BE TEMPORARY "PLACEHOLDERS" IN THE MEANTIME</mark></h3>
+
+</div>
+<div class="sect2">
 <h3 id="_whats_the_point_3">What&#8217;s the Point?</h3>
 <div class="ulist">
 <ul>
@@ -637,6 +641,12 @@ The string literal in our <code>Hello World</code> code is just one kind of cons
 <div class="paragraph">
 <p>In order for our programs to be flexible and responsive, we&#8217;ll need <strong>variables</strong>.
 I encourage beginning students to think of a variable like a container, such as a cup.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-2-variables/images/important_mug.jpeg" alt="A coffee mug that says &quot;Nerds Rule&quot;" width="300">
+</div>
+<div class="title">Figure 2. A photograph of the <strong>actual</strong> mug used in lectures.</div>
 </div>
 <div class="paragraph">
 <p>The container can hold one thing at a time.
@@ -892,7 +902,7 @@ That data type is called <code>String</code>, because it strings together a bunc
 <div class="content">
 <img src="chapter-2-variables/images/string_of_lights.png" alt="A string of holiday lights">
 </div>
-<div class="title">Figure 2. A <code>String</code> variable is multiple <code>char</code>s strung together like a set of lights.</div>
+<div class="title">Figure 3. A <code>String</code> variable is multiple <code>char</code>s strung together like a set of lights.</div>
 </div>
 <div class="paragraph">
 <p>A <code>String</code> is different from the other data types we&#8217;ve looked at so far.
@@ -1017,6 +1027,7 @@ In Java, there are five arithmetic operators:</p>
 Each operator acts on the value to either side:</p>
 </div>
 <div class="listingblock">
+<div class="title">Examples of simple arithmetic operations</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">5</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 <span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">difference</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b></code></pre>
@@ -1081,6 +1092,7 @@ We call this <em>operator precedence</em>, and here are the guidlines:</p>
 <p>Consider the following examples:</p>
 </div>
 <div class="listingblock">
+<div class="title">Examples of operator precedence</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result1</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">*</span><span class="tok-w"> </span><span class="tok-mi">6</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 <span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result2</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
@@ -1260,14 +1272,31 @@ As a reminder, there&#8217;s a weird quirk that happens when you get numeric inp
 </div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph">
-<p>1.</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Explain the difference between a declaration and an assignment.</p>
+</li>
+<li>
+<p>Identify a data type you could use for each of the following:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A complete mailing address</p>
+</li>
+<li>
+<p>A speed limit</p>
+</li>
+<li>
+<p>The average number of students in classes at EMCC</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>2.</p>
-</div>
-<div class="paragraph">
-<p>3.</p>
+</li>
+<li>
+<p>What kind of object can you use to get keyboard input from the user?</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -1280,7 +1309,7 @@ As a reminder, there&#8217;s a weird quirk that happens when you get numeric inp
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-01 20:37:46 -0700
+Last updated 2025-01-01 20:38:48 -0700
 </div>
 </div>
 </body>

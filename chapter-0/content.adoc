@@ -26,8 +26,9 @@ I recommend installing the JDK available at https://adoptium.net, and the Oracle
 The linked documents below provide detailed installation instructions--but if they are outdated at the moment, there are about a gazillion web pages and Youtube videos that will show you the process.
 I recommend installing the JDK before installing your IDE.
 
-* https://drive.google.com/open?id=1yBFhti2juLLc-GNuxSwj1HBFjxxQL8LMwUBYOLPcUbA&usp=drive_copy[Install JDK on Windows]
-* https://drive.google.com/open?id=1lTWz0KQkn3CbfjF4CICLNWpKhO9GedGhkO-SAHPkwAU&usp=drive_copy[Install JDK on macOS]
+
+* https://drive.google.com/open?id=1yBFhti2juLLc-GNuxSwj1HBFjxxQL8LMwUBYOLPcUbA&usp=drive_copy[Install JDK on Windows,window=_blank]
+* https://drive.google.com/open?id=1lTWz0KQkn3CbfjF4CICLNWpKhO9GedGhkO-SAHPkwAU&usp=drive_copy[Install JDK on macOS,window=_blank]
 
 === Install an IDE
 
@@ -52,10 +53,28 @@ Visual Studio *Code* is not the same as Visual Studio! There's a free version of
 You're going to want Visual Studio Code (aka "VS Code") for your Java coding.
 ****
 
-VS Code Installation guides:
+Once you've installed the JDK above, install the IDE you are going to use to learn Java. 
+There's nothing wrong with trying out multiple IDEs to find out which one you prefer.
+Other popular options include https://eclipseide.org/[eclipse], https://www.jetbrains.com/idea/[IntelliJ IDEA], and https://netbeans.apache.ord[Apache Netbeans], and they all have free versions that are great for learning Java.
 
-* https://www.youtube.com/watch?v=Pkj6n3UVXEI&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=1[Installing VS Code on Windows for Java]
-* https://www.youtube.com/watch?v=DrV5vcvIyR0&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=2[Installing VS Code on macOS for Java]
+But my recommendation is to install VS Code.
+
+.Time To Watch!
+****
+Installing VS Code on Windows for Java
+
+video::Pkj6n3UVXEI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=3]
+
+Installing VS Code on macOS for Java
+
+video::DrV5vcvIyR0[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=3]
+
+****
+
+// VS Code Installation guides:
+
+// * https://www.youtube.com/watch?v=Pkj6n3UVXEI&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=1[Installing VS Code on Windows for Java]
+// * https://www.youtube.com/watch?v=DrV5vcvIyR0&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=2[Installing VS Code on macOS for Java]
 
 Once you've installed the JDK and VS Code (along with the Java extensions), you're ready to create your first program. 
 
