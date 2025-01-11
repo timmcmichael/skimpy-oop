@@ -184,7 +184,6 @@ In Python, you just open a file and write your first command; in recent versions
 But Java puts OOP front and center, and you can't start writing statements until you first define a class.
 
 
-// TODO: Move to new channel (and clean audio)
 .Time To Watch!
 ****
 Java File Structure and First Program
@@ -199,8 +198,6 @@ File from video:
 
 
 Take a look at the code for a basic "Hello World" program; we'll learn what all of these pieces are as we go, but we should at least identify them now.
-
-// TODO: Add HelloWorld.java to shared folder
 
 .HelloWorld.java - Hello World program in Java
 
