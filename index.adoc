@@ -4,6 +4,8 @@
 :toc: left
 :toc-title: Skimpy Contents
 :toclevels: 1
+:icons: font
+:source-highlighter: pygments
 
 
 [preface]
@@ -59,6 +61,8 @@ When you see *Time to Watch*, just watch the embedded (or hyperlinked) YouTube v
 After the video, continue reading the chapter.
 
 == Related Resources
+
+// TODO update preface links to related resources
 
 In general, this book includes resources within each chapter. The following links collect those resources so you can find them when necessary.
 

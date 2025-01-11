@@ -59,11 +59,12 @@ VS Code Installation guides:
 
 Once you've installed the JDK and VS Code (along with the Java extensions), you're ready to create your first program. 
 
-[.Check Your Learning]
-****
+=== Check Your Learning
+
 Can you answer these questions?
 
-1. What does JDK stand for?
+****
+1. What does "JDK" stand for?
 
 2. What is an example of an Integrated Development Environment?
 ****

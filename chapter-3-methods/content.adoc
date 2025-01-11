@@ -8,16 +8,170 @@ endif::[]
 
 == 0011 - Methods (Chapter 3)
 
-=== Content coming soon!
+//TODO: Ch 3 objectives
+=== What's the Point?
+* Define and call methods
+* 
 
-// === What's the Point?
-// * 
+''''
 
-// ''''
+As our programs begin to get larger and more complex, it will be important to keep our code organized. 
+Each program we write is contained within a _class_, and classes are the basic building block of an OOP program; we'll explore them in more detail in the next chapter.
+Within a program, we can organize code in *methods*.
+A method is a collection of statements that work together to complete a single task.
+Consider the assembly instructions for a LEGO set. 
 
-// [.Check Your Learning]
-// ****
-// Can you answer these questions?
-// 1. 
-// 2. 
-// ****
+image::LEGO.png[A few LEGO blocks, width=300]
+
+It might take dozens of steps to put together the set, but taken together, you complete a single task: building the set.
+A method is conceptually the same.
+
+If you've worked with other programming languages, you may know methods by a different name. 
+In Python, we use functions, and in other languages we use procedures or subroutines. 
+All of those terms pretty much mean the same thing, but in Java they're called methods.
+And really, they're generally called methods whenever we're using object-oriented programming, so even in Python we sometimes call them methods.
+
+There are a variety of reasons to break your code into methods, but an important advantage for now is *reuseability*. 
+Once you create a method, you can use it as often as you'd like.
+That means you don't have to type the same code over and over.
+In turn, that improves your code's *maintainability*. 
+If you have to perform some calculation ten times in your program and have written out that calculation all ten times, a change to the calculation means updating it in all ten places.
+But if you put that calculation in a method and use that method ten times, you can just update the method and your changes will automatically be used all ten times.
+You'll see additional advantages to methods as you learn more about prgramming.
+
+Once you define a method, you *invoke* the method each time you want it to execute.
+We also say that we _call_ a method, which sounds a little cooler than _invoke_ but means the same thing.
+
+=== Defining Your Own Methods
+
+You've been defining a method from the start.
+Each program you write includes a method called `main`, which the Java runtime invokes when you run the program.
+
+You've also been calling (_invoking_) methods from the start.
+To output text, we've been calling the `println()` and `print()` methods.
+
+TIP: In Java, parentheses *always* indicate a method, whether or not there is anything inside of the parentheses. Anytime you see parentheses in Java code, you're looking at either a method definition or a method call.
+
+Consider this simple method definition:
+
+[source,java]
+----
+public static void displayCopyright() {
+    System.out.println("(C) 2025 by Tim McMichael. All rights reserved.");
+}
+----
+
+- The `public` keyword is an _access modifier_. Defining the method as `public` makes it possible to call the method from anywhere. More on this later, but for now all of your methods will be `public`.
+- The `static` keyword basically means that the method belongs to the class and not an object. That will make more sense in the next chapter, but for now your methods will be `static`.
+- The `void` keyword indicates that this method will not return anything. This is called the method's _return type_, and we'll learn about this shortly.
+- `displayCopyright` is the identifier for the method, in the same way variables have identifiers. Like variable identifiers, use camelCase to make the name readable--and make the name descriptive. The convention is that the name of a method should describe what it does; usually, that means the identifier is (or includes) a verb.
+- The parentheses indicate to the compiler that this is a method, as opposed to a variable or some other fancy thing. You'll see what you can put in the parentheses shortly.
+
+
+// TODO: Record and link video 3a: Defining and calling methods in Java
+.Time To Watch!
+****
+Defining and Calling Methods in Java
+
+video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:
+
+// TODO: Fix this file reference
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+****
+
+=== Passing Data to Methods
+
+Sometimes a method needs some information in order to carry out its purpose.
+For example, the `print()` method needs to know what it's supposed to print.
+To provide information to a method, we _pass_ the information in as *arguments*.
+So, the `String` we want to output is passed to the `print()` method as an argument, and arguments are always placed inside the parentheses:
+
+`System.out.print("Hello World");`
+
+In this example, "Hello World" is an argument.
+
+To allow a method we create to accept arguments, we have to include that in our method definition.
+Within the method we're defining, those pieces of information are called *parameters*.
+A parameter is a variable that exists in the method and receives the argument.
+We define parameters inside the parentheses in our method definition.
+
+.ParameterExample.java - Defining a parameter and pass in an argument
+
+[source,java]
+----
+public class ParameterExample {
+
+    public static void main(String[] args) {
+        printGreeting("Tim"); // <.>
+    }
+
+    public static void printGreeting(String name) { // <.>
+        System.out.println("Hello, " + name + "!");
+    }
+
+}
+----
+
+<.> "Tim" is the argument.
+<.> `name` is the parameter.
+
+In the above example, "Tim" is passed to the `printGreeting()` method as an argument.
+Within that method, the parameter `name` stores the argument, so when this code runs, `name` is equal to "Tim".
+
+TIP: The actual value passed in when you call a method is referred to as an _argument_. The variable that receives that value within the method is referred to as a _parameter_.
+
+// TODO: Record and link video 3b: Passing Data to a Method in Java
+.Time To Watch!
+****
+Passing Data to a Method in Java
+video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:
+
+// TODO: Fix this file reference
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+****
+
+=== Returning Values
+
+
+
+
+
+=== Variable Scope
+// Reference errors
+// Shadowing
+
+
+
+
+
+=== Overloading a Method
+
+
+
+
+// TODO: Record and link video 3c: Returning Data from a Method in Java
+.Time To Watch!
+****
+Returning Data from a Method in Java
+video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:
+
+// TODO: Fix this file reference
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+****
+
+
+// TODO: Ch 3 check your learning
+=== Check Your Learning
+
+Can you answer these questions?
+
+****
+
+1. 
+
+2. 
+
+****

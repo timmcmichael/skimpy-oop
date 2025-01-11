@@ -203,6 +203,7 @@ Take a look at the code for a basic "Hello World" program; we'll learn what all 
 // TODO: Add HelloWorld.java to shared folder
 
 .HelloWorld.java - Hello World program in Java
+
 [source,java]
 ----
 public class HelloWorld { // <.>
@@ -226,9 +227,11 @@ Here are the parts of the program:
 You'll learn about all of these components as we go.
 But for now, you're off and running!
 
-[.Check Your Learning]
-****
+=== Check Your Learning
+
 Can you answer these questions?
+
+****
 1. What tool converts your programming into something the computer can run?
 2. What is the name of the instruction set, specific to each computer type, that a computer can understand and execute?
 3. What are some advantages of using an organized software development process?
