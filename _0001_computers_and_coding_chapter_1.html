@@ -568,7 +568,13 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <li>
 <p>Get to know a little about Object-Oriented Programming (OOP)</p>
 </li>
+<li>
+<p>Use <code>print()</code> and <code>println()</code> to produce text output</p>
+</li>
 </ul>
+</div>
+<div class="paragraph">
+<p><em>Source code examples from this chapter are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding" target="_blank" rel="noopener">GitHub</a>.</em></p>
 </div>
 <hr>
 <div class="paragraph">
@@ -911,6 +917,163 @@ But for now, you&#8217;re off and running!</p>
 </div>
 </div>
 <div class="sect2">
+<h3 id="_basic_output">Basic Output</h3>
+<div class="paragraph">
+<p>The first programs we create in Java are <em>console</em> programs&#8212;&#8203;they are text-based programs that can&#8217;t really display any graphics.
+Start start with, we&#8217;ll use two basic ways to output text to the console: <code>System.out.print()</code> and <code>System.out.println()</code> statements.
+<code>print()</code> outputs whatever is in the parentheses, and we&#8217;ll need to put that text in quotation marks:</p>
+</div>
+<div class="paragraph">
+<p><code>System.out.print("Mick Jagger");</code></p>
+</div>
+<div class="paragraph">
+<p>This line of code outputs <strong>Mick Jagger</strong> to the console window.
+After <code>print()</code> outputs the text in parentheses, the cursor remains at the end of the output.
+This is just like if you type something in a word processor but don&#8217;t hit enter; the next time you start typing, the characters resume on the same line.
+In the same way, the next output statement will continue on the same line in the console.</p>
+</div>
+<div class="paragraph">
+<p>A <code>println()</code> statement works exactly the same way, but it advances the cursor to the next line when it&#8217;s finished.
+Basically, it hits enter, and the next output statement will be on a new line.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Interesting</div>
+<div class="paragraph">
+<p>println() works by outputting the text inside the parentheses and then outputting a special character called a <em>newline</em>. The newline isn&#8217;t visible, but it moves the cursor to the next line.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>To understand the difference between <code>print()</code> and <code>println()</code>, consider this program.</p>
+</div>
+<div class="listingblock">
+<div class="title">OutputExample.java - Simple console output in Java</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">OutputExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;As the Rolling Stones might say,&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;you can&#39;t always&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;get what you want.&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The program produces the following output:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code><span></span>As the Rolling Stones might say,you can&#39;t always
+get what you want</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After the <code>print()</code> statement executes, the cursor is still sitting right after the comma following <strong>say</strong>, so when the next line of code outputs <em>*you can&#8217;t always*</em>, that output just gets jammed onto the end.
+Notice that it doesn&#8217;t even add a space; if we want a space there, we have to include it within our quotation marks.</p>
+</div>
+<div class="paragraph">
+<p>Because <em>*you can&#8217;t always*</em> is in a <code>println()</code> statement, the cursor advances and <em>*get what you want*</em> is on a new line.</p>
+</div>
+<div class="paragraph">
+<p>You&#8217;ll use <code>print()</code> and <code>println()</code> in every Java program you write for quite a while, so it&#8217;s important to take time to experiment with them on your own to make sure you understand how they work.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_code_comments">Code Comments</h3>
+<div class="paragraph">
+<p>The Java compiler goes through your source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn&#8217;t understand, which causes it to stop and output an error message).
+It there&#8217;s something in our source code we don&#8217;t want the compiler to process, we can identify it as a <em>code comment</em> and the compiler will ignore it.
+Code comments are generally used to provide information for any humans who might be looking at the code.
+And since it&#8217;s ignored by the compiler, it can be written however we want; so your code comments should be written in plain human language (english, if you&#8217;re submitting it to me).
+To indicate a comment, use two slashes:</p>
+</div>
+<div class="paragraph">
+<p><code>// This is a comment!</code></p>
+</div>
+<div class="paragraph">
+<p>Once the compiler sees two slashses, it just ignores the rest of the line.
+We can add a comment onto the end of a line of code:</p>
+</div>
+<div class="paragraph">
+<p><code>System.out.println("Hello World"); // this outputs text to the console</code></p>
+</div>
+<div class="paragraph">
+<p>The <code>println()</code> statement still gets processed and will execute when we run out program, but everything after the slashes gets ignored.</p>
+</div>
+<div class="paragraph">
+<p>If you want to make a comment that takes up multiple lines, start the comment block with <code>/<strong></code> (that&#8217;s a slash and an asterisk) and end it with <code></strong>/</code> (asterisk and a slash).
+When the compiler sees <code>/<strong></code> it will ignore everything until it finds <code></strong>/</code>, and then it will resume processing as usual.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-cm">/*</span>
+<span class="tok-cm">This program shows the difference between print() and println().</span>
+<span class="tok-cm">It it referring to an old Rolling Stones song.</span>
+
+<span class="tok-cm">Everything in this comment block will be ignored</span>
+<span class="tok-cm">*/</span>
+<span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">OutputExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;As the Rolling Stones might say,&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;you can&#39;t always&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;get what you want.&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In general, code comments are used to explain or provide context for our code.
+Programming often involves going back to old code to make updates or corrections.
+Sometimes it&#8217;s been a long time and you might not remember what the code is supposed to do, or it not be someone different looking at the code and trying to figure it out.
+So code comments should be descriptive, especially when code might be confusing.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Code comments don&#8217;t cost anything, so use lots of them!
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>We often add a multiline comment block at the top of a file to provide information about the overall program or class.</p>
+</div>
+<div class="sect3">
+<h4 id="_commenting_out_code">"Commenting Out" Code</h4>
+<div class="paragraph">
+<p>Coding is all about trial and error, and programmers spend a lot of time going writing code in different ways until they get it working the way they want.
+In a process like that, it&#8217;s not unusual to delete something only to regret it and wish we could have that old code back.</p>
+</div>
+<div class="paragraph">
+<p>Code commenting gives us a life hack to help prevent that regret.
+Instead of deleting code that&#8217;s not working the way you want, you can just mark it as a comment.
+As far as the compiler is concerned, you&#8217;ve deleted the code.
+But if you want to see or use the code again down the road, it&#8217;s still there.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Code, highlight a section of code and press <strong>Alt-/</strong> (or <strong>Cmd-/</strong> on macOS) and VS Code will add <code>//</code> at the start of each line. Highlighting a comment and pressing the shortcut again will "uncomment" it and remove the slashes. Other IDEs provide similar functionality.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_check_your_learning_2">Check Your Learning</h3>
 <div class="paragraph">
 <p>Can you answer these questions?</p>
@@ -944,7 +1107,7 @@ But for now, you&#8217;re off and running!</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-10 20:54:53 -0700
+Last updated 2025-01-12 18:13:27 -0700
 </div>
 </div>
 </body>

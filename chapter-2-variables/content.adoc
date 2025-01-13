@@ -17,6 +17,8 @@ endif::[]
 * Write code to declare variables and assign values
 * Do some basic math
 
+_Source code examples from this chapter are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/02%20Variables[GitHub^]._
+
 '''
 It's fun to create programs that display stuff on the screen, but that's pretty limited.
 To start doing things that are more interesting--and useful--we'll need to keep track of some information.
