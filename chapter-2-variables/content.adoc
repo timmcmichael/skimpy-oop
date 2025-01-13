@@ -10,7 +10,9 @@ endif::[]
 
 == 0010 - Variables (Chapter 2)
 
-=== #THIS CONTENT IS NOT QUITE COMPLETE - VIDEOS ARE STIlL BEING EDITING AND THERE MAY BE TEMPORARY "PLACEHOLDERS" IN THE MEANTIME#
+// TODO: Upload source files to GitHub archive
+
+=== #THIS CONTENT IS NOT QUITE COMPLETE - VIDEOS ARE STIlL BEING EDITED AND THERE MAY BE TEMPORARY "PLACEHOLDERS" UNTIL THEY ARE DONE#
 
 === What's the Point?
 * Know how to select a data type
@@ -261,6 +263,37 @@ There are a few different reasons to use constants in your code. For now:
 ****
 The naming convention used for Java constants is called *snake case*. More specifically, since it's all caps, people refer to it as *screaming snake case*. Snake case with lowercase letters is the standard convention for variables in Python, among other languages.
 ****
+
+=== Outputting Variable (and Constant) Values
+
+Assigning a value to a variable or constant does not produce any output.
+If you want to display the output of a variable--or a constant--you just put the identifier in a `print()` or `println()` statement without any quotation marks:
+
+[source,java]
+----
+String artistName = "Sam Cooke";
+int birthYear = 1931;
+
+System.out.print(artistName);
+System.out.print(" was born in ");
+System.out.println(birthYear);
+----
+
+This code output `Sam Cooke was born in 1931`.
+We can combine output into one statement by creating a string with multiple pieces using the `+` symbol.
+
+[source,java]
+----
+String artistName = "Sam Cooke";
+int birthYear = 1931;
+
+System.out.println(artistName + " was born in " + birthYear);
+----
+
+Creating a `String` using the `+` symbol is called _concatenating_. 
+Be thoughtful when concatenating, because the `+` symbol is also used to do addition with numbers, as you'll see.
+
+For our purposes, there's no difference between outputting using separate `print()` statements or concatenating everything in one statement; you can use whichever approach you prefer (and we'll learn other ways to output values, too).
 
 === Math Calculations
 To start doing some calculations, we'll use _operators_.

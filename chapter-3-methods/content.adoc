@@ -9,6 +9,7 @@ endif::[]
 == 0011 - Methods (Chapter 3)
 
 === #THIS CONTENT IS STILL UNDER CONSTRUCTION#
+// TODO: Upload source files to GitHub archive
 
 //TODO: Ch 3 objectives
 === What's the Point?
