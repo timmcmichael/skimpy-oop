@@ -12,6 +12,8 @@ endif::[]
 * Get to know a little about Object-Oriented Programming (OOP)
 * Use `print()` and `println()` to produce text output
 
+_Source code examples from this chapter are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding[GitHub^]._
+
 '''
 A computer is basically a device that executes a set of commands--and does so very quickly.
 Because the guts of a computer (a CPU) are kinda like a bunch of light switches--and I mean a *BUNCH* of light switches--it can only deal with zeros and ones: a switch that is off is "zero," and a switch that's on is "one." 
@@ -228,12 +230,12 @@ But for now, you're off and running!
 === Basic Output
 
 The first programs we create in Java are _console_ programs--they are text-based programs that can't really display any graphics.
-Java provides two basic ways to output text to the console: `System.out.print()` and `System.out.println()` statements.
-`print()` outputs whatever is in the parentheses, and for now we'll put that text in quotation marks:
+Start start with, we'll use two basic ways to output text to the console: `System.out.print()` and `System.out.println()` statements.
+`print()` outputs whatever is in the parentheses, and we'll need to put that text in quotation marks:
 
 `System.out.print("Mick Jagger");`
 
-This line of code outputs `Mick Jagger` to the console window.
+This line of code outputs *Mick Jagger* to the console window.
 After `print()` outputs the text in parentheses, the cursor remains at the end of the output.
 This is just like if you type something in a word processor but don't hit enter; the next time you start typing, the characters resume on the same line.
 In the same way, the next output statement will continue on the same line in the console.
@@ -270,8 +272,8 @@ As the Rolling Stones might say,you can't always
 get what you want
 ----
 
-After the `print()` statement executes, the cursor is still sitting right after the _*r*_ in *_Jagger_*, so when the next line of code outputs _*you can't always*_, that text just gets jammed onto the end. 
-Notice that it doesn't even add a space; if we want a space there, we have to include it in our parentheses.
+After the `print()` statement executes, the cursor is still sitting right after the comma following *say*, so when the next line of code outputs _*you can't always*_, that output just gets jammed onto the end. 
+Notice that it doesn't even add a space; if we want a space there, we have to include it within our quotation marks.
 
 Because _*you can't always*_ is in a `println()` statement, the cursor advances and _*get what you want*_ is on a new line.
 
@@ -279,7 +281,7 @@ You'll use `print()` and `println()` in every Java program you write for quite a
 
 // TODO: Add GitHub link at the end of each chapter (see Ch 1 for format)
 
-NOTE: Source code examples from this chapter are available on  https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding[GitHub].
+
 
 === Code Comments
 

@@ -36,7 +36,7 @@ But I acknowledge that many students prefer video content and in-person instruct
 This eBook might not be very good or very detailed, but it is very free.
 
 // TODO: Update this "under construction" note
-#Unfortunately, as of Spring 2025 this book is *too* skimpy and is still being written, so you'll need the textbook listed in Canvas as well--sorry, I just can type fast enough.# 
+#Unfortunately, as of Spring 2025 this book is *too* skimpy and is still being written, so you'll need the textbook listed in Canvas as well--sorry, I just can't type fast enough.# 
 
 === And why are we using Java instead of *_my_* favorite language?
 
