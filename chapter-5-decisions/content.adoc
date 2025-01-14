@@ -9,6 +9,7 @@ endif::[]
 == 0101 - Decisions (Chapter 5)
 
 === #Content coming soon!#
+// TODO: Upload source files to GitHub archive
 
 // === What's the Point?
 // * 

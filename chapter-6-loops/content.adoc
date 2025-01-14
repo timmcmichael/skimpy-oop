@@ -7,6 +7,7 @@ ifeval::["{docname}" == "index"]
 endif::[]
 
 == 0110 - Loops (Chapter 6)
+// TODO: Upload source files to GitHub archive
 
 === #Content coming soon!#
 

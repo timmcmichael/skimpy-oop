@@ -9,6 +9,7 @@ endif::[]
 == 0100 - Classes and Objects (Chapter 4)
 
 === #Content coming soon!#
+// TODO: Upload source files to GitHub archive
 
 // === What's the Point?
 // * 

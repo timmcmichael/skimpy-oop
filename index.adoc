@@ -46,7 +46,7 @@ Okay, there are a few reasons I use Java to teach OOP:
 
 * It's cross-platform, so my students can use Windows, macOS, or Linux machines and I can grade the work without hassle on whatever machine I'm currently using.
 * I like the way Java implements OOP, which I think is "stronger" than in Python, for example.
-* Java is _strongly, staticly typed_, meaning we have to declare data types when we make our variables and that type can't change. I believe this "stricter" approach to data types is better for beginners. 
+* Java is _strongly, statically typed_, meaning we have to declare data types when we make our variables and that type can't change. I believe this "stricter" approach to data types is better for beginners. 
 * Since it uses C syntax, Java skills transfer well to a lot of other languages.
 * At https://www.estrellamountain.edu[Estrella Mountain Community College], we have other CIS classes that teach C# (my favorite OOP language) and Python. I want students using something different for this course so that they get exposed to multiple languages before they graduate. 
 
