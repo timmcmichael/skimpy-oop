@@ -349,9 +349,9 @@ Files from video:
 Early on in your math studies you learned about _order of operations_ when an arithmetic expression has more than one calculation, and it works the same in Java.
 We call this _operator precedence_, and here are the guidlines:
 
-1. Any operations enclosed are parentheses is evaluated first, following the rest of the rules here.
-2. Multiplication, division, and modulus and evaluated next: the `*`, `/`, and `%` operators. If there are more than one of these operations in the expression, they are evaluated from left to right.
-3. Addition and subtraction and evaluated last. As above, if the expression contains more than one `+` or `-` operator, they evaluate from left to right.
+1. Any operations enclosed in parentheses are evaluated first, following the rest of the rules here.
+2. Multiplication, division, and modulus are evaluated next: the `*`, `/`, and `%` operators. If there are more than one of these operations in the expression, they are evaluated from left to right.
+3. Addition and subtraction are evaluated last. As above, if the expression contains more than one `+` or `-` operator, they evaluate from left to right.
 
 Consider the following examples:
 
