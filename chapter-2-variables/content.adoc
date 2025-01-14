@@ -12,7 +12,7 @@ endif::[]
 
 // TODO: Upload source files to GitHub archive
 
-=== #THIS CONTENT IS NOT QUITE COMPLETE - VIDEOS ARE STIlL BEING EDITED AND THERE MAY BE TEMPORARY "PLACEHOLDERS" UNTIL THEY ARE DONE#
+=== #THIS CONTENT IS NOT QUITE COMPLETE - The third and last video is still being edited. You can work read/view up to that point in the meantime.#
 
 === What's the Point?
 * Know how to select a data type
@@ -335,13 +335,15 @@ int difference = sum - 2; // <.>
 // TODO: Record and link a video about arithmetic operations, including shortcuts
 .Time To Watch!
 ****
-FIX!!!!!
-Java arithmetic operations
+Arithmetic Operations in Java
 
-video::At0vquefCuo[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::kfVVgFMuR3A[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 Files from video:
 
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`FIX.java`]
+* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/Operations.java/[`Operations.java`]
+* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/OutputtingVariables.java['OutputtingVariables.java']
+
+
 ****
 
 ==== Order of Operations
@@ -419,13 +421,13 @@ We can access that input device using something called the `Scanner` class.
 // TODO: Record video on user input with Scanner
 .Time To Watch!
 ****
-FIX!!!!!
-User Input in Java
+// FIX!!!!!
+// User Input in Java
 
-video::At0vquefCuo[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-Files from video:
+// video::xxxxxxxxxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
 
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`FIX.java`]
+//* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`FIX.java`]
 ****
 
 The `Scanner` class includes a variety methods for working with input "streams" (including input sources other than a keyboard), but the ones you'll need for our work are shown below.

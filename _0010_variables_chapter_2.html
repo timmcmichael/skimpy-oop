@@ -559,7 +559,7 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <h2 id="_0010_variables_chapter_2">0010 - Variables (Chapter 2)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_this_content_is_not_quite_complete_videos_are_still_being_editing_and_there_may_be_temporary_placeholders_in_the_meantime"><mark>THIS CONTENT IS NOT QUITE COMPLETE - VIDEOS ARE STIlL BEING EDITING AND THERE MAY BE TEMPORARY "PLACEHOLDERS" IN THE MEANTIME</mark></h3>
+<h3 id="_this_content_is_not_quite_complete_the_third_and_last_video_is_still_being_edited_you_can_work_readview_up_to_that_point_in_the_meantime"><mark>THIS CONTENT IS NOT QUITE COMPLETE - The third and last video is still being edited. You can work read/view up to that point in the meantime.</mark></h3>
 
 </div>
 <div class="sect2">
@@ -983,6 +983,42 @@ So that people looking at your code can easily tell it&#8217;s a constant rather
 </div>
 </div>
 <div class="sect2">
+<h3 id="_outputting_variable_and_constant_values">Outputting Variable (and Constant) Values</h3>
+<div class="paragraph">
+<p>Assigning a value to a variable or constant does not produce any output.
+If you want to display the output of a variable&#8212;&#8203;or a constant&#8212;&#8203;you just put the identifier in a <code>print()</code> or <code>println()</code> statement without any quotation marks:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">1931</span><span class="tok-p">;</span>
+
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-n">artistName</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot; was born in &quot;</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">birthYear</span><span class="tok-p">);</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This code output <code>Sam Cooke was born in 1931</code>.
+We can combine output into one statement by creating a string with multiple pieces using the <code>+</code> symbol.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">1931</span><span class="tok-p">;</span>
+
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot; was born in &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-p">);</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Creating a <code>String</code> using the <code>` symbol is called _concatenating_.
+Be thoughtful when concatenating, because the `</code> symbol is also used to do addition with numbers, as you&#8217;ll see.</p>
+</div>
+<div class="paragraph">
+<p>For our purposes, there&#8217;s no difference between outputting using separate <code>print()</code> statements or concatenating everything in one statement; you can use whichever approach you prefer (and we&#8217;ll learn other ways to output values, too).</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_math_calculations">Math Calculations</h3>
 <div class="paragraph">
 <p>To start doing some calculations, we&#8217;ll use <em>operators</em>.
@@ -1052,12 +1088,11 @@ Each operator acts on the value to either side:</p>
 <div class="content">
 <div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p>FIX!!!!!
-Java arithmetic operations</p>
+<p>Arithmetic Operations in Java</p>
 </div>
 <div class="videoblock">
 <div class="content">
-<iframe src="https://www.youtube.com/embed/At0vquefCuo?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/kfVVgFMuR3A?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 <div class="paragraph">
@@ -1066,7 +1101,10 @@ Java arithmetic operations</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java"><code>FIX.java</code></a></p>
+<p><a href="https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/Operations.java/"><code>Operations.java</code></a></p>
+</li>
+<li>
+<p><a href="https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/OutputtingVariables.java">'OutputtingVariables.java'</a></p>
 </li>
 </ul>
 </div>
@@ -1081,13 +1119,13 @@ We call this <em>operator precedence</em>, and here are the guidlines:</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Any operations enclosed are parentheses is evaluated first, following the rest of the rules here.</p>
+<p>Any operations enclosed in parentheses are evaluated first, following the rest of the rules here.</p>
 </li>
 <li>
-<p>Multiplication, division, and modulus and evaluated next: the <code>*</code>, <code>/</code>, and <code>%</code> operators. If there are more than one of these operations in the expression, they are evaluated from left to right.</p>
+<p>Multiplication, division, and modulus are evaluated next: the <code>*</code>, <code>/</code>, and <code>%</code> operators. If there are more than one of these operations in the expression, they are evaluated from left to right.</p>
 </li>
 <li>
-<p>Addition and subtraction and evaluated last. As above, if the expression contains more than one <code>+</code> or <code>-</code> operator, they evaluate from left to right.</p>
+<p>Addition and subtraction are evaluated last. As above, if the expression contains more than one <code>+</code> or <code>-</code> operator, they evaluate from left to right.</p>
 </li>
 </ol>
 </div>
@@ -1202,25 +1240,7 @@ We can access that input device using something called the <code>Scanner</code> 
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Time To Watch!</div>
-<div class="paragraph">
-<p>FIX!!!!!
-User Input in Java</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe src="https://www.youtube.com/embed/At0vquefCuo?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="paragraph">
-<p>Files from video:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java"><code>FIX.java</code></a></p>
-</li>
-</ul>
-</div>
+
 </div>
 </div>
 <div class="paragraph">
@@ -1312,7 +1332,7 @@ As a reminder, there&#8217;s a weird quirk that happens when you get numeric inp
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-12 18:13:27 -0700
+Last updated 2025-01-13 16:19:09 -0700
 </div>
 </div>
 </body>
