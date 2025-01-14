@@ -8,5 +8,8 @@ public class Operations {
         int totalAges = ann + deidre + vanessa;
         double avgAge = totalAges / (double) numFriends;
         System.out.println("Average =" + avgAge);
+
+        int modulo = 10 % 6;
+        System.out.println(modulo);
     }
 }
