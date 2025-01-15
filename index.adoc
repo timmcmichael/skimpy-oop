@@ -9,7 +9,7 @@
 
 
 [preface]
-== Skimpy Preface: An Excuse For The Inadequacies Within
+== Skimpy Preface: An Excuse for the Inadequacies Within
 
 This isn't a real textbook. 
 It's not _imaginary_ or anything, it's just missing most of the stuff a real textbook includes. It's, well, skimpy.
@@ -18,7 +18,7 @@ This content is intended to be a companion to CIS150AB, which is an introduction
 
 It's also skimpy because the purpose of this particular course, at least from my perspective, is not to give students a comprehensive look at a programming language.
 It's an introductory course that's taken by a variety of students. If you're a coding student--majoring in _Programming and Systems Analysis_ or _Web Design and Development_, for example--you'll take language-specific courses that will get much more detailed, so our goal here is to give you a foundation for that.
-If you're majoring in something else, you might not never write another line of code after the semester ends--I want you to learn about programming and software development so you can communicate with the coders in your workplace and have a general understanding of how an idea becomes a program or app.
+If you're majoring in something else, you might never write another line of code after the semester ends--I want you to learn about programming and software development so you can communicate with the coders in your workplace and have a general understanding of how an idea becomes a program or app.
 
 It's also possible that I just don't know very much. 
 You know, a skimpy brain.
@@ -31,23 +31,23 @@ But I can't cover everything we need in my videos, so I started writing content 
 
 To be clear, this *isn't* skimpy just because students don't bother to read textbooks that are dense and detailed.
 That sometimes seems true, but you're different; I can tell just by looking at you! 
-But I acknowledge that many students prefer video content and in-person instruction rather reading, so this is my attempt to meet those students halfway.
+But I acknowledge that many students prefer video content and in-person instruction rather than reading, so this is my attempt to meet those students halfway.
 
 This eBook might not be very good or very detailed, but it is very free.
 
 // TODO: Update this "under construction" note
-#Unfortunately, as of Spring 2025 this book is *too* skimpy and is still being written, so you'll need the textbook listed in Canvas as well--sorry, I just can't type fast enough.# 
+#Unfortunately, as of Spring 2025, this book is *too* skimpy and is still being written, so you'll need the textbook listed in Canvas as well--sorry, I just can't type fast enough.# 
 
 === And why are we using Java instead of *_my_* favorite language?
 
-_looking at you, Python nerds..._
+_Looking at you, Python nerds..._
 
 Okay, there are a few reasons I use Java to teach OOP:
 
 * It's cross-platform, so my students can use Windows, macOS, or Linux machines and I can grade the work without hassle on whatever machine I'm currently using.
 * I like the way Java implements OOP, which I think is "stronger" than in Python, for example.
 * Java is _strongly, statically typed_, meaning we have to declare data types when we make our variables and that type can't change. I believe this "stricter" approach to data types is better for beginners. 
-* Since it uses C syntax, Java skills transfer well to a lot of other languages.
+* Since it uses C syntax, Java skills transfer well to many other languages.
 * At https://www.estrellamountain.edu[Estrella Mountain Community College], we have other CIS classes that teach C# (my favorite OOP language) and Python. I want students using something different for this course so that they get exposed to multiple languages before they graduate. 
 
 If I'm doing this right, what you're mostly learning here is a good foundation of OOP (and general programming) skills and concepts.
