@@ -1,4 +1,4 @@
-= Skimpy OOP: Introduction to Object-Oriented Programming using Java
+= Skimpy OOP: Introduction to Object-Oriented Programming Using Java
 :author: Tim McMichael
 :doctype: book
 :toc: left
