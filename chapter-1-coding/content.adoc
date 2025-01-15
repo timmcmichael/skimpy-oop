@@ -72,7 +72,7 @@ A programming language is something that's easier for humans to use than machine
 
 NOTE: There are many, many programming languages. https://en.wikipedia.org/wiki/List_of_programming_languages[Seriously, there are a lot].
 
-The instructions you write using a programming language is called *source code*.
+The instructions you write using a programming language are called *source code*.
 Translating source code file to a machine language file that can be executed is called *compiling*, and is done by an application called a compiler.
 When the computer runs the program, it's using that machine language translation created by the compiler.
 Clicking on the icon to open Microsoft Word runs a file that's been compiled from source code.
@@ -307,7 +307,7 @@ When the compiler sees `/*` it will ignore everything until it finds `*/`, and t
 ----
 /*
 This program shows the difference between print() and println().
-It it referring to an old Rolling Stones song.
+It is referring to an old Rolling Stones song.
 
 Everything in this comment block will be ignored
 */
@@ -333,7 +333,7 @@ We often add a multiline comment block at the top of a file to provide informati
 
 ==== "Commenting Out" Code
 
-Coding is all about trial and error, and programmers spend a lot of time going writing code in different ways until they get it working the way they want.
+Coding is all about trial and error, and programmers spend a lot of time writing code in different ways until they get it working the way they want.
 In a process like that, it's not unusual to delete something only to regret it and wish we could have that old code back.
 
 Code commenting gives us a life hack to help prevent that regret.
@@ -341,7 +341,7 @@ Instead of deleting code that's not working the way you want, you can just mark 
 As far as the compiler is concerned, you've deleted the code.
 But if you want to see or use the code again down the road, it's still there.
 
-TIP: Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Code, highlight a section of code and press *Alt-/* (or *Cmd-/* on macOS) and VS Code will add `//` at the start of each line. Highlighting a comment and pressing the shortcut again will "uncomment" it and remove the slashes. Other IDEs provide similar functionality.
+TIP: Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Code, highlight a section of code and press *alt-/* (or *&#x2318;-/* on macOS) and VS Code will add `//` at the start of each line. Highlighting a comment and pressing the shortcut again will "uncomment" it and remove the slashes. Other IDEs provide similar functionality.
 
 
 === Check Your Learning
