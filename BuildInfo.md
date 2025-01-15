@@ -10,4 +10,4 @@
 `-D` argument specifies output directory, which could just be a subfolder in gh-pages project -->
 
 
-`sudo gem install pygments.rb`
+ `sudo gem install pygments.rb`
