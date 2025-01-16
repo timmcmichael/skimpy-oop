@@ -424,9 +424,9 @@ User Input in Java
 // https://youtu.be/8y430BQktYQ
 
 video::8y430BQktYQ[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// Files from video:
+File from video:
 
-// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`FIX.java`]
+* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/InputDemo.java[`InputDemo.java`]
 ****
 
 The `Scanner` class includes a variety methods for working with input "streams" (including input sources other than a keyboard), but the ones you'll need for our work are shown below.
