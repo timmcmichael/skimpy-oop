@@ -29,7 +29,7 @@ Consider the assembly instructions for building a LEGO set.
 image::LEGO.png[A few LEGO blocks, width=300]
 
 It might take dozens of small steps to complete the set, but taken together, the instructions exectue a single task: building the set.
-A method is conceptually the same.
+A method is conceptually the same. 
 
 If you've worked with other programming languages, you may know methods by a different name. 
 In Python, we use functions, and in other languages we use procedures or subroutines. 
