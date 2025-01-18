@@ -24,11 +24,11 @@ As our programs begin to get larger and more complex, it will be important to ke
 Each program we write is contained within a _class_, and classes are the basic building block of an OOP program; we'll explore them in more detail in the next chapter.
 Within a program, we can organize code in *methods*.
 A method is a collection of statements that work together to complete a single task.
-Consider the assembly instructions for a LEGO set. 
+Consider the assembly instructions for building a LEGO set. 
 
 image::LEGO.png[A few LEGO blocks, width=300]
 
-It might take dozens of steps to put together the set, but taken together, you complete a single task: building the set.
+It might take dozens of small steps to complete the set, but taken together, the instructions exectue a single task: building the set.
 A method is conceptually the same.
 
 If you've worked with other programming languages, you may know methods by a different name. 
@@ -36,13 +36,13 @@ In Python, we use functions, and in other languages we use procedures or subrout
 All of those terms pretty much mean the same thing, but in Java they're called methods.
 And really, they're generally called methods whenever we're using object-oriented programming, so even in Python we sometimes call them methods.
 
-There are a variety of reasons to break your code into methods, but an important advantage for now is *reuseability*. 
+There are a variety of reasons to break your code into methods, but an important advantage for now is *reusability*. 
 Once you create a method, you can use it as often as you'd like.
 That means you don't have to type the same code over and over.
 In turn, that improves your code's *maintainability*. 
 If you have to perform some calculation ten times in your program and have written out that calculation all ten times, a change to the calculation means updating it in all ten places.
 But if you put that calculation in a method and use that method ten times, you can just update the method and your changes will automatically be used all ten times.
-You'll see additional advantages to methods as you learn more about prgramming.
+You'll see additional advantages to methods as you learn more about programming.
 
 Once you define a method, you *invoke* the method each time you want it to execute.
 We also say that we _call_ a method, which sounds a little cooler than _invoke_ but means the same thing.
@@ -96,22 +96,22 @@ So, the `String` we want to output is passed to the `print()` method as an argum
 
 In this example, "Hello World" is an argument.
 
-To allow a method we create to accept arguments, we have to include that in our method definition.
+We establish what information a method needs as part of the method definition.
 Within the method we're defining, those pieces of information are called *parameters*.
-A parameter is a variable that exists in the method and receives the argument.
-We define parameters inside the parentheses in our method definition.
+A parameter is a variable that exists in the method and receives the argument, and it's declared inside the parentheses in our method definition.
+The methods we've defined so far didn't need any information, so we haven't been putting anything in the parentheses--but now let's see an example with a parameter.
 
-.ParameterExample.java - Defining a parameter and pass in an argument
+.ParameterExample.java - Defining a parameter and passing in an argument
 
 [source,java]
 ----
 public class ParameterExample {
 
     public static void main(String[] args) {
-        printGreeting("Tim"); // <.>
+        outputGreeting("Tim"); // <.>
     }
 
-    public static void printGreeting(String name) { // <.>
+    public static void outputGreeting(String name) { // <.>
         System.out.println("Hello, " + name + "!");
     }
 
@@ -121,7 +121,7 @@ public class ParameterExample {
 <.> "Tim" is the argument.
 <.> `name` is the parameter.
 
-In the above example, "Tim" is passed to the `printGreeting()` method as an argument.
+In the above example, "Tim" is passed to the `outputGreeting()` method as an argument.
 Within that method, the parameter `name` stores the argument, so when this code runs, `name` is equal to "Tim".
 
 TIP: The actual value passed in when you call a method is referred to as an _argument_. The variable that receives that value within the method is referred to as a _parameter_.
