@@ -1,10 +1,14 @@
+/*
+ * This example demonstrates a simple method with a parameter.
+ */
+
 public class ParameterExample {
 
     public static void main(String[] args) {
-        printGreeting("Tim"); // <.>
+        outputGreeting("Tim"); // <.>
     }
 
-    public static void printGreeting(String name) { // <.>
+    public static void outputGreeting(String name) { // <.>
         System.out.println("Hello, " + name + "!");
     }
 
