@@ -559,7 +559,7 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <h2 id="_0011_methods_chapter_3">0011 - Methods (Chapter 3)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_this_content_is_still_under_construction"><mark>THIS CONTENT IS STILL UNDER CONSTRUCTION</mark></h3>
+<h3 id="_this_content_is_still_under_construction_its_incomplete_and_probably_full_of_typos"><mark>THIS CONTENT IS STILL UNDER CONSTRUCTION. It&#8217;s incomplete and probably full of typos.</mark></h3>
 
 </div>
 <div class="sect2">
@@ -581,7 +581,7 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 Each program we write is contained within a <em>class</em>, and classes are the basic building block of an OOP program; we&#8217;ll explore them in more detail in the next chapter.
 Within a program, we can organize code in <strong>methods</strong>.
 A method is a collection of statements that work together to complete a single task.
-Consider the assembly instructions for a LEGO set.</p>
+Consider the assembly instructions for building a LEGO set.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -589,7 +589,7 @@ Consider the assembly instructions for a LEGO set.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>It might take dozens of steps to put together the set, but taken together, you complete a single task: building the set.
+<p>It might take dozens of small steps to complete the set, but taken together, the instructions exectue a single task: building the set.
 A method is conceptually the same.</p>
 </div>
 <div class="paragraph">
@@ -599,13 +599,13 @@ All of those terms pretty much mean the same thing, but in Java they&#8217;re ca
 And really, they&#8217;re generally called methods whenever we&#8217;re using object-oriented programming, so even in Python we sometimes call them methods.</p>
 </div>
 <div class="paragraph">
-<p>There are a variety of reasons to break your code into methods, but an important advantage for now is <strong>reuseability</strong>.
+<p>There are a variety of reasons to break your code into methods, but an important advantage for now is <strong>reusability</strong>.
 Once you create a method, you can use it as often as you&#8217;d like.
 That means you don&#8217;t have to type the same code over and over.
 In turn, that improves your code&#8217;s <strong>maintainability</strong>.
 If you have to perform some calculation ten times in your program and have written out that calculation all ten times, a change to the calculation means updating it in all ten places.
 But if you put that calculation in a method and use that method ten times, you can just update the method and your changes will automatically be used all ten times.
-You&#8217;ll see additional advantages to methods as you learn more about prgramming.</p>
+You&#8217;ll see additional advantages to methods as you learn more about programming.</p>
 </div>
 <div class="paragraph">
 <p>Once you define a method, you <strong>invoke</strong> the method each time you want it to execute.
@@ -675,15 +675,209 @@ In Java, parentheses <strong>always</strong> indicate a method, whether or not t
 </div>
 </div>
 <div class="paragraph">
-<p>File from video:</p>
+<p>Files from video:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java">HelloWorld.java</a></p>
+<p>Start: <a href="https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/SimpleMethod.java"><code>SimpleMethod.java</code></a></p>
+</li>
+<li>
+<p>Finished: <a href="https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/SimpleMethodFinished.java"><code>SimpleMethodFinished.java</code></a></p>
 </li>
 </ul>
 </div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_variable_scope">Variable Scope</h3>
+<div class="paragraph">
+<p>As we begin organizing our code into different methods and (when we learn object-oriented programming basics) classes, we&#8217;ll need to understand how data is compartmentalized within a program.
+Whenever we create a class or method&#8212;&#8203;and other structures we&#8217;ll learn as we go&#8212;&#8203;we use curly braces to define the boundaries and indenting to help make those boundaries clear.
+These braces form <em>code blocks</em>.</p>
+</div>
+<div class="paragraph">
+<p>The outermost code block is our class.
+Although there are a few things that go outside the class, like <code>package</code> and <code>import</code> statments, and the class code block generally contains all of the components of our program.</p>
+</div>
+<div class="paragraph">
+<p>In some cases we can place one block inside another, as such as putting a method inside a class.
+This is called <em>nesting</em> blocks, and a nested block must completely enclosed; in other words, a method can&#8217;t be partly in a class and partly out of it.</p>
+</div>
+<div class="paragraph">
+<p>And some kinds of blocks can&#8217;t be nested.
+A method can be nested inside a class, but a method cannot be nested inside another method.
+Many IDEs, including <a href="https://code.visualstudio.com">Visual Studio Code</a> use color coding to make code blocks more clear.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-3-methods/images/Blocks.png" alt="A screenshot of Java source code with blocks indicated by bracketing">
+</div>
+<div class="title">Figure 4. An example of nested blocks in Visual Studio Code.</div>
+</div>
+<div class="paragraph">
+<p>A variable can only be used or accessed inside the block in which it was declared; that block is the variable&#8217;s <code>scope</code>.
+When you refer to a variable, the compiler checks within that code block, or scope, do see if the variable has has been declared.
+If it doesn&#8217;t find a variable with that identifier within the current scope, it will stop compiling.
+Basically, referring to a variable that is declared in a different scope is the same as referring to a variable you never declared at all.
+Trying to use a variable in a different code block is referred to as an <em>out of scope</em> reference.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>ScopeExample.java</code>. An example of code with an out-of-scope variable reference.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">ScopeExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">favoriteNumber</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">favoriteNumber</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+
+<span class="tok-w">        </span><span class="tok-n">outputNumber</span><span class="tok-p">();</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">outputNumber</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">favoriteNumber</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>This is a valid, or <em>in scope</em> reference because <code>favoriteNumber</code> is declared within <code>main()</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>This is an invalid <em>out of scope</em> reference because <code>favoriteNumber</code> can only be accessed within <code>main()</code>.</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_variable_shadowing">Variable Shadowing</h4>
+<div class="paragraph">
+<p>When we first started using variables, we learned that we can&#8217;t make two variables with the same name, but it&#8217;s a little more nuanced than that.
+We can&#8217;t make two variables with the same name <em>and scope</em>.
+Java <strong>will</strong> allow us to declare a variable with the same name in a different scope, which is called <em>variable shadowing</em>.
+Shadowing is a <strong>very</strong> bad practice, because it often leads to confusion about which variable is in scope.</p>
+</div>
+<div class="paragraph">
+<p>The example below can be confusing to beginners and to people who are reading the code quickly.
+When <code>outputNumber()</code> is called, another variable named <code>favoriteNumber</code> is created and assigned the value <code>18</code>.
+After that is output, an assignment statement changes that value to <code>10</code>.
+Then, program execution returns to <code>main()</code>, where a <code>println()</code> statement outputs <code>favoriteNumber</code> again.
+However, <em>this</em> <code>favoriteNumber</code> wasn&#8217;t changed to 10&#8212;&#8203;the other one was.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>ShadowingExample.java</code>. An example of variable shadowing, which we should avoid.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">ShadowingExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">favoriteNumber</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">favoriteNumber</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+
+<span class="tok-w">        </span><span class="tok-n">outputNumber</span><span class="tok-p">();</span>
+
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">favoriteNumber</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">outputNumber</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">favoriteNumber</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">favoriteNumber</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="3"></i><b>(3)</b>
+<span class="tok-w">        </span><span class="tok-n">favoriteNumber</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>This outputs <code>7</code></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>This outputs <code>18</code>, because it refers to the variable declared in <code>outputNumber()</code></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>This still outputs <code>7</code> because the change to <code>10</code> is made to the <code>favoriteNumber</code> within the <code>outputNumber()</code> method.</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_global_variables">Global Variables</h4>
+<div class="paragraph">
+<p>As we can see, variable scope has a big impact on how our code runs.
+Beginning programmers sometimes try to avoid scope issues by declaring their variables within the class code block, which makes them accessible to any block nested within the class.
+This kind of class-level variable is sometimes called a <em>global variable</em>, and the use of global variables is generally discouraged.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>GlobalVariableExample.java</code>. An example of a global variable, which we should not use.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">GlobalVariableExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">favoriteNumber</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">favoriteNumber</span><span class="tok-p">);</span>
+
+<span class="tok-w">        </span><span class="tok-n">outputNumber</span><span class="tok-p">();</span>
+
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">favoriteNumber</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">outputNumber</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">favoriteNumber</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">favoriteNumber</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Declaration at the class level. Note that global variables must be <code>static</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>This changes the value of <code>favoriteNumber</code> to 18 for all methods in the program.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Instead, we&#8217;ll declare all of our variables within our methods; these are called <em>local variables</em>.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+The use of global or class-level variables in code that you turn in for an assignment in my class is very heavily penalized. As much as possible, I try to reinforce best practices&#8212;&#8203;and that means minimizing the use of global variables.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Of course, this presents a problem.
+What if we need access to a variable in another method?
+The best practice is to pass that variable value to the method as needed, and for the method to pass back a value when necessary.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In the next chapter, we will start using variables that look a lot like the global variables I just said we shouldn&#8217;t use. To be clear, those <em>instance variables</em> behave differently and serve a different purpose. They are <em>global variables</em> as described here.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -702,21 +896,21 @@ So, the <code>String</code> we want to output is passed to the <code>print()</co
 <p>In this example, "Hello World" is an argument.</p>
 </div>
 <div class="paragraph">
-<p>To allow a method we create to accept arguments, we have to include that in our method definition.
+<p>We establish what information a method needs as part of the method definition.
 Within the method we&#8217;re defining, those pieces of information are called <strong>parameters</strong>.
-A parameter is a variable that exists in the method and receives the argument.
-We define parameters inside the parentheses in our method definition.</p>
+A parameter is a variable that exists in the method and receives the argument, and it&#8217;s declared inside the parentheses in our method definition.
+The methods we&#8217;ve defined so far didn&#8217;t need any information, so we haven&#8217;t been putting anything in the parentheses&#8212;&#8203;but now let&#8217;s see an example with a parameter.</p>
 </div>
 <div class="listingblock">
-<div class="title">ParameterExample.java - Defining a parameter and pass in an argument</div>
+<div class="title">ParameterExample.java - Defining a parameter and passing in an argument</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">ParameterExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
 <span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">        </span><span class="tok-n">printGreeting</span><span class="tok-p">(</span><span class="tok-s">&quot;Tim&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-w">        </span><span class="tok-n">outputGreeting</span><span class="tok-p">(</span><span class="tok-s">&quot;Tim&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 <span class="tok-w">    </span><span class="tok-p">}</span>
 
-<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">printGreeting</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">outputGreeting</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
 <span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello, &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot;!&quot;</span><span class="tok-p">);</span>
 <span class="tok-w">    </span><span class="tok-p">}</span>
 
@@ -736,7 +930,7 @@ We define parameters inside the parentheses in our method definition.</p>
 </table>
 </div>
 <div class="paragraph">
-<p>In the above example, "Tim" is passed to the <code>printGreeting()</code> method as an argument.
+<p>In the above example, "Tim" is passed to the <code>outputGreeting()</code> method as an argument.
 Within that method, the parameter <code>name</code> stores the argument, so when this code runs, <code>name</code> is equal to "Tim".</p>
 </div>
 <div class="admonitionblock tip">
@@ -771,10 +965,6 @@ File from video:</p>
 </div>
 <div class="sect2">
 <h3 id="_returning_values">Returning Values</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_variable_scope">Variable Scope</h3>
 
 </div>
 <div class="sect2">
@@ -821,7 +1011,7 @@ File from video:</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-14 21:48:58 -0700
+Last updated 2025-01-14 20:31:41 -0700
 </div>
 </div>
 </body>
