@@ -8,7 +8,7 @@ endif::[]
 
 == 0011 - Methods (Chapter 3)
 
-=== #THIS CONTENT IS STILL UNDER CONSTRUCTION#
+=== #THIS CONTENT IS STILL UNDER CONSTRUCTION. It's incomplete and probably full of typos.#
 // TODO: Upload source files to GitHub archive
 
 //TODO: Ch 3 objectives
@@ -24,25 +24,25 @@ As our programs begin to get larger and more complex, it will be important to ke
 Each program we write is contained within a _class_, and classes are the basic building block of an OOP program; we'll explore them in more detail in the next chapter.
 Within a program, we can organize code in *methods*.
 A method is a collection of statements that work together to complete a single task.
-Consider the assembly instructions for a LEGO set. 
+Consider the assembly instructions for building a LEGO set. 
 
 image::LEGO.png[A few LEGO blocks, width=300]
 
-It might take dozens of steps to put together the set, but taken together, you complete a single task: building the set.
-A method is conceptually the same.
+It might take dozens of small steps to complete the set, but taken together, the instructions exectue a single task: building the set.
+A method is conceptually the same. 
 
 If you've worked with other programming languages, you may know methods by a different name. 
 In Python, we use functions, and in other languages we use procedures or subroutines. 
 All of those terms pretty much mean the same thing, but in Java they're called methods.
 And really, they're generally called methods whenever we're using object-oriented programming, so even in Python we sometimes call them methods.
 
-There are a variety of reasons to break your code into methods, but an important advantage for now is *reuseability*. 
+There are a variety of reasons to break your code into methods, but an important advantage for now is *reusability*. 
 Once you create a method, you can use it as often as you'd like.
 That means you don't have to type the same code over and over.
 In turn, that improves your code's *maintainability*. 
 If you have to perform some calculation ten times in your program and have written out that calculation all ten times, a change to the calculation means updating it in all ten places.
 But if you put that calculation in a method and use that method ten times, you can just update the method and your changes will automatically be used all ten times.
-You'll see additional advantages to methods as you learn more about prgramming.
+You'll see additional advantages to methods as you learn more about programming.
 
 Once you define a method, you *invoke* the method each time you want it to execute.
 We also say that we _call_ a method, which sounds a little cooler than _invoke_ but means the same thing.
@@ -58,7 +58,6 @@ To output text, we've been calling the `println()` and `print()` methods.
 TIP: In Java, parentheses *always* indicate a method, whether or not there is anything inside of the parentheses. Anytime you see parentheses in Java code, you're looking at either a method definition or a method call.
 
 Consider this simple method definition:
-
 [source,java]
 ----
 public static void displayCopyright() {
@@ -79,11 +78,138 @@ public static void displayCopyright() {
 Defining and Calling Methods in Java
 
 video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-File from video:
 
-// TODO: Fix this file reference
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+Files from video:
+
+* Start: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/SimpleMethod.java[`SimpleMethod.java`]
+
+* Finished: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/SimpleMethodFinished.java[`SimpleMethodFinished.java`]
 ****
+
+=== Variable Scope
+// Reference errors
+// Shadowing
+
+As we begin organizing our code into different methods and (when we learn object-oriented programming basics) classes, we'll need to understand how data is compartmentalized within a program.
+Whenever we create a class or method--and other structures we'll learn as we go--we use curly braces to define the boundaries and indenting to help make those boundaries clear.
+These braces form _code blocks_.
+
+The outermost code block is our class.
+Although there are a few things that go outside the class, like `package` and `import` statments, and the class code block generally contains all of the components of our program.
+
+In some cases we can place one block inside another, as such as putting a method inside a class.
+This is called _nesting_ blocks, and a nested block must completely enclosed; in other words, a method can't be partly in a class and partly out of it.
+
+And some kinds of blocks can't be nested. 
+A method can be nested inside a class, but a method cannot be nested inside another method.
+Many IDEs, including https://code.visualstudio.com[Visual Studio Code] use color coding to make code blocks more clear.
+
+.An example of nested blocks in Visual Studio Code.
+image::Blocks.png[A screenshot of Java source code with blocks indicated by bracketing]
+
+A variable can only be used or accessed inside the block in which it was declared; that block is the variable's `scope`.
+When you refer to a variable, the compiler checks within that code block, or scope, do see if the variable has has been declared.
+If it doesn't find a variable with that identifier within the current scope, it will stop compiling.
+Basically, referring to a variable that is declared in a different scope is the same as referring to a variable you never declared at all.
+Trying to use a variable in a different code block is referred to as an _out of scope_ reference.
+
+.`ScopeExample.java`. An example of code with an out-of-scope variable reference.
+[source,java]
+----
+public class ScopeExample {
+
+    public static void main(String[] args) {
+        int favoriteNumber = 7;
+        System.out.println(favoriteNumber); <.>
+
+        outputNumber();
+    }
+
+    public static void outputNumber() {
+        System.out.println(favoriteNumber); <.>
+    }
+}
+----
+<.> This is a valid, or _in scope_ reference because `favoriteNumber` is declared within `main()`.
+<.> This is an invalid _out of scope_ reference because `favoriteNumber` can only be accessed within `main()`.
+
+==== Variable Shadowing
+
+When we first started using variables, we learned that we can't make two variables with the same name, but it's a little more nuanced than that.
+We can't make two variables with the same name _and scope_.
+Java *will* allow us to declare a variable with the same name in a different scope, which is called _variable shadowing_.
+Shadowing is a *very* bad practice, because it often leads to confusion about which variable is in scope.
+
+The example below can be confusing to beginners and to people who are reading the code quickly.
+When `outputNumber()` is called, another variable named `favoriteNumber` is created and assigned the value `18`. 
+After that is output, an assignment statement changes that value to `10`. 
+Then, program execution returns to `main()`, where a `println()` statement outputs `favoriteNumber` again.
+However, _this_ `favoriteNumber` wasn't changed to 10--the other one was.
+
+.`ShadowingExample.java`. An example of variable shadowing, which we should avoid.
+[source,java]
+----
+public class ShadowingExample {
+
+    public static void main(String[] args) {
+        int favoriteNumber = 7;
+        System.out.println(favoriteNumber); <.>
+
+        outputNumber();
+
+        System.out.println(favoriteNumber); <.>
+    }
+
+    public static void outputNumber() {
+        int favoriteNumber = 18;
+        System.out.println(favoriteNumber); <.>
+        favoriteNumber = 10;
+    }
+}
+----
+<.> This outputs `7`
+<.> This outputs `18`, because it refers to the variable declared in `outputNumber()`
+<.> This still outputs `7` because the change to `10` is made to the `favoriteNumber` within the `outputNumber()` method.
+
+==== Global Variables
+
+As we can see, variable scope has a big impact on how our code runs.
+Beginning programmers sometimes try to avoid scope issues by declaring their variables within the class code block, which makes them accessible to any block nested within the class.
+This kind of class-level variable is sometimes called a _global variable_, and the use of global variables is generally discouraged.
+
+
+.`GlobalVariableExample.java`. An example of a global variable, which we should not use.
+[source,java]
+----
+public class GlobalVariableExample {
+    static int favoriteNumber = 7; <.>
+
+    public static void main(String[] args) {
+        System.out.println(favoriteNumber);
+
+        outputNumber();
+
+        System.out.println(favoriteNumber);
+    }
+
+    public static void outputNumber() {
+        System.out.println(favoriteNumber);
+        favoriteNumber = 18; <.>
+    }
+}
+----
+<.> Declaration at the class level. Note that global variables must be `static`.
+<.> This changes the value of `favoriteNumber` to 18 for all methods in the program.
+
+Instead, we'll declare all of our variables within our methods; these are called _local variables_.
+
+WARNING: The use of global or class-level variables in code that you turn in for an assignment in my class is very heavily penalized. As much as possible, I try to reinforce best practices--and that means minimizing the use of global variables.
+
+Of course, this presents a problem.
+What if we need access to a variable in another method?
+The best practice is to pass that variable value to the method as needed, and for the method to pass back a value when necessary.
+
+NOTE: In the next chapter, we will start using variables that look a lot like the global variables I just said we shouldn't use. To be clear, those _instance variables_ behave differently and serve a different purpose. They are _global variables_ as described here.
 
 === Passing Data to Methods
 
@@ -96,22 +222,22 @@ So, the `String` we want to output is passed to the `print()` method as an argum
 
 In this example, "Hello World" is an argument.
 
-To allow a method we create to accept arguments, we have to include that in our method definition.
+We establish what information a method needs as part of the method definition.
 Within the method we're defining, those pieces of information are called *parameters*.
-A parameter is a variable that exists in the method and receives the argument.
-We define parameters inside the parentheses in our method definition.
+A parameter is a variable that exists in the method and receives the argument, and it's declared inside the parentheses in our method definition.
+The methods we've defined so far didn't need any information, so we haven't been putting anything in the parentheses--but now let's see an example with a parameter.
 
-.ParameterExample.java - Defining a parameter and pass in an argument
+.ParameterExample.java - Defining a parameter and passing in an argument
 
 [source,java]
 ----
 public class ParameterExample {
 
     public static void main(String[] args) {
-        printGreeting("Tim"); // <.>
+        outputGreeting("Tim"); // <.>
     }
 
-    public static void printGreeting(String name) { // <.>
+    public static void outputGreeting(String name) { // <.>
         System.out.println("Hello, " + name + "!");
     }
 
@@ -121,7 +247,7 @@ public class ParameterExample {
 <.> "Tim" is the argument.
 <.> `name` is the parameter.
 
-In the above example, "Tim" is passed to the `printGreeting()` method as an argument.
+In the above example, "Tim" is passed to the `outputGreeting()` method as an argument.
 Within that method, the parameter `name` stores the argument, so when this code runs, `name` is equal to "Tim".
 
 TIP: The actual value passed in when you call a method is referred to as an _argument_. The variable that receives that value within the method is referred to as a _parameter_.
@@ -139,13 +265,6 @@ File from video:
 
 === Returning Values
 
-
-
-
-
-=== Variable Scope
-// Reference errors
-// Shadowing
 
 
 
