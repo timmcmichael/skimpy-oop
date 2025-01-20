@@ -8,7 +8,9 @@ endif::[]
 
 == 0011 - Methods (Chapter 3)
 
-=== #THIS CONTENT IS STILL UNDER CONSTRUCTION. It's incomplete and probably full of typos.#
+=== #THIS CONTENT IS STILL UNDER CONSTRUCTION#
+#It's incomplete and probably full of typos. The sections that are not finished refer you to sections in the required textbook that cover the same content. If you don't want to deal with all that, just stop here and use the textbook for this module.#
+
 // TODO: Upload source files to GitHub archive
 
 //TODO: Ch 3 objectives
@@ -77,7 +79,7 @@ public static void displayCopyright() {
 ****
 Defining and Calling Methods in Java
 
-video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::hAxUD7xV7h8[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Files from video:
 
@@ -213,6 +215,8 @@ NOTE: In the next chapter, we will start using variables that look a lot like th
 
 === Passing Data to Methods
 
+==== The video for this section isn't finished yet. See section 3.3 Adding Parameters to Methods (page 91) in the textbook for coverage of this topic    
+
 Sometimes a method needs some information in order to carry out its purpose.
 For example, the `print()` method needs to know what it's supposed to print.
 To provide information to a method, we _pass_ the information in as *arguments*.
@@ -265,13 +269,15 @@ File from video:
 
 === Returning Values
 
+==== See textbook section 3.4 Creating Methods That Return Values (page 95)
 
 
-
+NOTE: `return` ends execution of a method, even if you don't return a value. If the method has a `void` return type, a plain `return` statement simply sends program execution back to the originating call.
 
 
 === Overloading a Method
 
+==== See textbook section 3.6 Overloading a Method (page 104)
 
 
 
@@ -285,6 +291,25 @@ File from video:
 // TODO: Fix this file reference
 * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
 ****
+
+=== Solution Walkthrough
+
+In "solution walkthrough" videos, I give a problem/prompt that is similar to the kinds of work I assign, and then I record myself writing a solution. It's not absolutely mandatory to watch this video, but students report that these videos are particularly helpful.
+
+// TODO: Create a source code file for this solution
+.Time To Watch!
+****
+Methods with Parameters and Returns
+
+video::-ubNZHNV-go[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:
+
+* I don't have the solution file I created handy, so I'll make a new one ASAP!
+
+// TODO: Fix this file reference
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+****
+
 
 
 // TODO: Ch 3 check your learning
