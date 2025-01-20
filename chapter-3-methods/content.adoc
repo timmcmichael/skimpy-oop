@@ -272,6 +272,7 @@ File from video:
 ==== See textbook section 3.4 Creating Methods That Return Values (page 95)
 
 
+NOTE: `return` ends execution of a method, even if you don't return a value. If the method has a `void` return type, a plain `return` statement simply sends program execution back to the originating call.
 
 
 === Overloading a Method
@@ -290,6 +291,25 @@ File from video:
 // TODO: Fix this file reference
 * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
 ****
+
+=== Solution Walkthrough
+
+In "solution walkthrough" videos, I give a problem/prompt that is similar to the kinds of work I assign, and then I record myself writing a solution. It's not absolutely mandatory to watch this video, but students report that these videos are particularly helpful.
+
+// TODO: Create a source code file for this solution
+.Time To Watch!
+****
+Methods with Parameters and Returns
+
+video::-ubNZHNV-go[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:
+
+* I don't have the solution file I created handy, so I'll make a new one ASAP!
+
+// TODO: Fix this file reference
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+****
+
 
 
 // TODO: Ch 3 check your learning
