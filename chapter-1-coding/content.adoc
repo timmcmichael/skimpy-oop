@@ -279,10 +279,6 @@ Because _*you can't always*_ is in a `println()` statement, the cursor advances 
 
 You'll use `print()` and `println()` in every Java program you write for quite a while, so it's important to take time to experiment with them on your own to make sure you understand how they work.
 
-// TODO: Add GitHub link at the end of each chapter (see Ch 1 for format)
-
-
-
 === Code Comments
 
 The Java compiler goes through your source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn't understand, which causes it to stop and output an error message).

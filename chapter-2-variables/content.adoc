@@ -10,8 +10,6 @@ endif::[]
 
 == 0010 - Variables (Chapter 2)
 
-// TODO: Upload source files to GitHub archive
-
 === #THIS CONTENT IS NOT QUITE COMPLETE - The third and last video is still being edited. You can work read/view up to that point in the meantime.#
 
 === What's the Point?
@@ -416,7 +414,6 @@ To produce output, we've been using `System.out` to send text to the "standard o
 For input, we'll need to use the "standard input device" (your keyboard) by accessing `System.in`.
 We can access that input device using something called the `Scanner` class.
 
-// TODO: Record video on user input with Scanner
 .Time To Watch!
 ****
 User Input in Java
@@ -447,7 +444,6 @@ The `Scanner` class includes a variety methods for working with input "streams" 
 
 WARNING: As a reminder, there's a weird quirk that happens when you get numeric input from a user and then ask for `String` input using `next()` or `nextLine()`. If your program seems to skip that `next()` or `nextLine()`, review that part of the video!
 
-// TODO: "Check your learning" questions
 === Check Your Learning
 
 Can you answer these questions?
