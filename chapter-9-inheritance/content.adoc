@@ -14,7 +14,7 @@ endif::[]
 // === What's the Point?
 // * 
 
-_Source code examples from this chapter are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance[GitHub^]._
+_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance[GitHub^]._
 
 // ''''
 

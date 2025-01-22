@@ -12,7 +12,7 @@ endif::[]
 * Get to know a little about Object-Oriented Programming (OOP)
 * Use `print()` and `println()` to produce text output
 
-_Source code examples from this chapter are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding[GitHub^]._
+_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding[GitHub^]._
 
 '''
 A computer is basically a device that executes a set of commands--and does so very quickly.
@@ -278,10 +278,6 @@ Notice that it doesn't even add a space; if we want a space there, we have to in
 Because _*you can't always*_ is in a `println()` statement, the cursor advances and _*get what you want*_ is on a new line.
 
 You'll use `print()` and `println()` in every Java program you write for quite a while, so it's important to take time to experiment with them on your own to make sure you understand how they work.
-
-// TODO: Add GitHub link at the end of each chapter (see Ch 1 for format)
-
-
 
 === Code Comments
 

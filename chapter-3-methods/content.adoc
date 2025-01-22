@@ -11,14 +11,14 @@ endif::[]
 === #THIS CONTENT IS STILL UNDER CONSTRUCTION#
 #It's incomplete and probably full of typos. The sections that are not finished refer you to sections in the required textbook that cover the same content. If you don't want to deal with all that, just stop here and use the textbook for this module.#
 
-// TODO: Upload source files to GitHub archive
-
-//TODO: Ch 3 objectives
 === What's the Point?
 * Define and call methods
-* 
+* Understand variable scope
+* Pass data to methods
+* Return values from methods
+* Overload a method
 
-_Source code examples from this chapter are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/03%20Methods[GitHub^]._
+_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/03%20Methods[GitHub^]._
 
 ''''
 
@@ -74,7 +74,6 @@ public static void displayCopyright() {
 - The parentheses indicate to the compiler that this is a method, as opposed to a variable or some other fancy thing. You'll see what you can put in the parentheses shortly.
 
 
-// TODO: Record and link video 3a: Defining and calling methods in Java
 .Time To Watch!
 ****
 Defining and Calling Methods in Java
@@ -89,8 +88,6 @@ Files from video:
 ****
 
 === Variable Scope
-// Reference errors
-// Shadowing
 
 As we begin organizing our code into different methods and (when we learn object-oriented programming basics) classes, we'll need to understand how data is compartmentalized within a program.
 Whenever we create a class or method--and other structures we'll learn as we go--we use curly braces to define the boundaries and indenting to help make those boundaries clear.
@@ -514,18 +511,16 @@ public class AverageAge {
 In "solution walkthrough" videos, I give a problem/prompt that is similar to the kinds of work I assign, and then I record myself writing a solution. It's not absolutely mandatory to watch this video, but students report that these videos are particularly helpful.
 
 // TODO: Create a source code file for this solution
+// TODO: Check audio levels on this old video.
 
 .Time To Watch!
 ****
-Methods with Parameters and Returns [COMING SOON]
+Methods with Parameters and Returns
 
 video::-ubNZHNV-go[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-File from video:
+Solution file from video:
 
-* I don't have the solution file I created handy, so I'll make a new one ASAP!
-
-// TODO: Fix this file reference
-// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/Percentages.java[`Percentages.java`]
 ****
 
 
