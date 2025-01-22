@@ -953,16 +953,7 @@ The actual value passed in when you call a method is referred to as an <em>argum
 <div class="content">
 <div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p>Passing Data to a Method in Java
-video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-File from video:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java">HelloWorld.java</a></p>
-</li>
-</ul>
+<p>Passing Data to a Method in Java [COMING SOON]</p>
 </div>
 </div>
 </div>
@@ -972,6 +963,87 @@ File from video:</p>
 <h3 id="_returning_values">Returning Values</h3>
 <div class="sect3">
 <h4 id="_see_textbook_section_3_4_creating_methods_that_return_values_page_95">See textbook section 3.4 Creating Methods That Return Values (page 95)</h4>
+<div class="paragraph">
+<p>The methods we&#8217;ve seen to this point are basically commands&#8212;&#8203;they simply perform a task, and then when they&#8217;re done, program execution just goes back to the method that called it and resumes there.
+But we can also create methods that are like questions&#8212;&#8203;they perform a chunk of code, but when they are finished they give back an answer.</p>
+</div>
+<div class="paragraph">
+<p>Consider this method:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">printFavNum</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-w">    </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">favNum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-n">favNum</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+
+<span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getFavNum</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tok-w">    </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">favNum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">favNum</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>This specifies a return type of <code>void</code></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>This specifies a return type of <code>int</code></td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The first method is a command to print out a favorite number, so it does not return anything.
+The <code>void</code> in the method header is the return type, and <em>void</em> basically means nothing; this method returns nothing.
+The second method is asking to get a favorite number, so it is going to give back an <code>int</code>. The return type is specified as <code>int</code>.
+The <code>return</code> statement sends the <code>favNum</code> value back to the method that called <code>getFavNum()</code>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+If a method has a return type of anything other than <code>void</code>, it will only compile if it has a <code>return</code> statement followed by a value (literal or variable) of the specified type.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This means that methods themselves essentially have data types.
+<code>printFavNum()</code> has a data type of <code>void</code>.
+<code>getFavNum()</code> has a data type of <code>int</code>.
+Since methods have types, you can use them in statements just as you&#8217;d use a literal or variable of that type.
+For example, the following line of code is valid:</p>
+</div>
+<div class="paragraph">
+<p><code>int answer = 18 + getFavNum();</code></p>
+</div>
+<div class="paragraph">
+<p>This evaluated the same way as any other assignment statement. It starts on the right and finds that method call, so it will execute <code>getFavNum()</code> and plug the returned value into the operation, resulting in <code>18 + 7</code> and ultimately evaluating to <code>25</code>, which is then assigned to <code>answer</code>.</p>
+</div>
+<div class="paragraph">
+<p>A <code>return</code> statement in a <code>void</code> method stops execution of the method and returns to the calling method.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">shortCircuit</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">   </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-err">“</span><span class="tok-n">This</span><span class="tok-w"> </span><span class="tok-n">runs</span><span class="tok-p">...</span><span class="tok-err">”</span><span class="tok-p">);</span>
+<span class="tok-w">   </span><span class="tok-k">return</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-err">“</span><span class="tok-n">This</span><span class="tok-w"> </span><span class="tok-n">can</span><span class="tok-w"> </span><span class="tok-n">never</span><span class="tok-w"> </span><span class="tok-n">run</span><span class="tok-o">!</span><span class="tok-err">”</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The second print() statement won&#8217;t execute because the return statement ends the method. The compiler doesn&#8217;t like these kinds of <em>unreachable statements</em>, though, so it will not compile.</p>
+</div>
+<div class="paragraph">
+<p><code>return</code> statements in <code>void</code> methods will have some uses for us later on.</p>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -979,10 +1051,91 @@ File from video:</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-<code>return</code> ends execution of a method, even if you don&#8217;t return a value. If the method has a <code>void</code> return type, a plain <code>return</code> statement simply sends program execution back to the originating call.
+A Java method can only return one piece of data, so it can only have one return type.
 </td>
 </tr>
 </table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_returning_vs_outputting">Returning vs. Outputting</h4>
+<div class="paragraph">
+<p>Generally speaking, it&#8217;s better to return values from a method rather than outputting values.
+There are a few reasons for this, but consider an obvious one.
+If you use a <code>print()</code> method, your code is limited to only working in a console application.
+That&#8217;s fine for now, because it&#8217;s the only kind of application we know how to make!
+But what if we want to use that same code in a web application, or a mobile app?
+That <code>print()</code> statement won&#8217;t work&#8212;&#8203;rather, the user will never see the result, because they won&#8217;t have a console window.</p>
+</div>
+<div class="paragraph">
+<p>Consider this code:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">BadOutput</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">kingOfSoul</span><span class="tok-p">();</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">kingOfSoul</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Otis Redding&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the <code>kingOfSoul()</code> method knows who the King of Soul is, how do we print that out if we can&#8217;t perform the output inside the method?
+The solution is to return the String and perform the output in <code>main()</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">GoodOutput</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">kingOfSoul</span><span class="tok-p">());</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">kingOfSoul</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Otis Redding&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This is another example of something that seems annoying, like it&#8217;s just extra work.
+When we&#8217;re learning new things, we sometimes have to accept the wisdom of people who are experienced&#8212;&#8203;and recognize that eventually we&#8217;ll see the point.
+We&#8217;re all about learning good habits and best practices around here, so we&#8217;ll almost always return values rather than printing them.</p>
+</div>
+<div class="paragraph">
+<p>There are times when we want a method whose sole purpose is to produce some output.
+In that case, be sure to give it an appropriate identifier.
+Notice that those kinds of methods in my examples have <em>print</em> or <em>output</em> in the name.</p>
+</div>
+<div class="paragraph">
+<p>I rarely want students to create methods that produce output, and when I do I always make that explicit in my directions.
+When I refer to <em>returning</em> something, I mean just that.
+The rule of thumb is, <strong>all input and output statements should be in the <code>main()</code> method</strong> and data should be passed around as necessary.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+I strongly penalize input and output statements outside of the <code>main()</code> method because I&#8217;m trying to build habits that will serve you well as you learn more about programming.
+</td>
+</tr>
+</table>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Returning Data from a Method in Java [COMING SOON]</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -990,21 +1143,139 @@ File from video:</p>
 <h3 id="_overloading_a_method">Overloading a Method</h3>
 <div class="sect3">
 <h4 id="_see_textbook_section_3_6_overloading_a_method_page_104">See textbook section 3.6 Overloading a Method (page 104)</h4>
-<div class="sidebarblock">
-<div class="content">
-<div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p>Returning Data from a Method in Java
-video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-File from video:</p>
+<p>Sometimes the task, action, or calculation that a method produces has different ways of operating depending on the circumstances.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java">HelloWorld.java</a></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Consider a method that calculates the average age of two people:</p>
 </div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">averageAge</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age1</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">       </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age1</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This is a pretty straightforward method.
+Notice that the return statement uses casting with <code>(double)</code> to ensure that the result is not truncated.</p>
+</div>
+<div class="paragraph">
+<p>If we want to calculate an average age of 3 people, we could almost use the same method.
+We want a method that still calculates the average age, but takes three arguments and divides by 3, instead of 2.</p>
+</div>
+<div class="paragraph">
+<p>To create another version of a method that operates a little differently, we can use <em>method overloading</em>.
+To overload a method, we write a new method with the same identifier, but with a different set of parameters.
+An overload for our <code>averageAge()</code> method could look like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">averageAge</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age1</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age3</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age1</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age3</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that the method identifier is exactly the same, but this version accepts three <code>int</code> arguments instead of two.
+That difference allows the compiler to easily determine which implementation of the method is being called: if there are two `int`s in the parenthesis, it calls the first implementation, and if there are three `int`s, it calls the second implementation.
+When we&#8217;re using the method, we can call whichever best suits our needs at the time.</p>
+</div>
+<div class="paragraph">
+<p>The compiler can also easily distinguish overloaded methods if the <em>types</em> of the parameters are different.
+An implementation that accepts `double`s is valid:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">averageAge</span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">age1</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">age3</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age1</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age3</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the compiler sees a call to <code>averageAge()</code> with three <code>double</code> values, it will invoke this last version.</p>
+</div>
+<div class="sect4">
+<h5 id="_incorrect_overloading">Incorrect Overloading</h5>
+<div class="paragraph">
+<p>Overloaded methods <strong>must</strong> have differences in the number and/or types of the parameters.
+The <em>names</em> of those parameters doesn&#8217;t differntiate them, so different names is not enough to make a valid overload.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>BadOverloading.java</code>. An invalid example of overloading.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">BadOverloading</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">area</span><span class="tok-p">(</span><span class="tok-mi">15</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">));</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-c1">// Calculates area of a rectangle</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">area</span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">length</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">width</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">length</span><span class="tok-w"> </span><span class="tok-o">*</span><span class="tok-w"> </span><span class="tok-n">width</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-c1">// Calculates area of an oval</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">area</span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">smallRadius</span><span class="tok-p">,</span>
+<span class="tok-w">            </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">bigRadius</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">area</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.14</span><span class="tok-w"> </span><span class="tok-o">*</span><span class="tok-w"> </span><span class="tok-n">smallRadius</span><span class="tok-w"> </span><span class="tok-o">*</span><span class="tok-w"> </span><span class="tok-n">bigRadius</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">area</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The compiler can&#8217;t tell if we want the area implementation of a rectangle of the implementation for an oval.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The term we use to describe a method&#8217;s identifier and parameter list (the number, order and types of parameters) is a <em>method signature</em>.
+The method signature must be unique so the compiler can identify which method code to run.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>AverageAge.java</code>. A valid example of method overloading.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">AverageAge</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">averageAge</span><span class="tok-p">(</span><span class="tok-mf">1.25</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mf">1.5</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mf">.5</span><span class="tok-p">));</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">averageAge</span><span class="tok-p">(</span><span class="tok-mi">10</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">));</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">averageAge</span><span class="tok-p">(</span><span class="tok-mi">10</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">25</span><span class="tok-p">));</span><span class="tok-w"> </span><i class="conum" data-value="3"></i><b>(3)</b>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">averageAge</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age1</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age1</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">averageAge</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age1</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age3</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age1</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age3</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">averageAge</span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">age1</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">age3</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age1</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age3</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The compiler sees three <code>double</code> values, so it calls the third implementation.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>The compiler sees two <code>int</code> values, so it calls the first implementation.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>The compiler sees three <code>int</code> values, so it calls the second implementation.</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -1018,7 +1289,7 @@ File from video:</p>
 <div class="content">
 <div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p>Methods with Parameters and Returns</p>
+<p>Methods with Parameters and Returns [COMING SOON]</p>
 </div>
 <div class="videoblock">
 <div class="content">
