@@ -260,11 +260,11 @@ TIP: The actual value passed in when you call a method is referred to as an _arg
 .Time To Watch!
 ****
 Passing Data to a Method in Java
-video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-File from video:
+// video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
 
-// TODO: Fix this file reference
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+// // TODO: Fix this file reference
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
 ****
 
 === Returning Values
