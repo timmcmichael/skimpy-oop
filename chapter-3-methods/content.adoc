@@ -238,10 +238,10 @@ The methods we've defined so far didn't need any information, so we haven't been
 public class ParameterExample {
 
     public static void main(String[] args) {
-        outputGreeting("Tim"); // <.>
+        outputGreeting("Tim"); <.>
     }
 
-    public static void outputGreeting(String name) { // <.>
+    public static void outputGreeting(String name) { <.>
         System.out.println("Hello, " + name + "!");
     }
 
@@ -259,47 +259,265 @@ TIP: The actual value passed in when you call a method is referred to as an _arg
 // TODO: Record and link video 3b: Passing Data to a Method in Java
 .Time To Watch!
 ****
-Passing Data to a Method in Java
-video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-File from video:
+Passing Data to a Method in Java [COMING SOON]
+// video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
 
-// TODO: Fix this file reference
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+// // TODO: Fix this file reference
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
 ****
 
 === Returning Values
 
+// TODO: Remove reference to Farrell when this is complete
 ==== See textbook section 3.4 Creating Methods That Return Values (page 95)
 
+The methods we've seen to this point are basically commands--they simply perform a task, and then when they're done, program execution just goes back to the method that called it and resumes there.
+But we can also create methods that are like questions--they perform a chunk of code, but when they are finished they give back an answer.
 
-NOTE: `return` ends execution of a method, even if you don't return a value. If the method has a `void` return type, a plain `return` statement simply sends program execution back to the originating call.
+Consider this method:
+[source,java]
+----
+public static void printFavNum() { <.>
+    int favNum = 10 - 3;
+    System.out.print(favNum);
+}
 
+public static int getFavNum() { <.>
+    int favNum = 10 - 3;
+    return favNum;
+}
+----
 
-=== Overloading a Method
+<.> This specifies a return type of `void`
+<.> This specifies a return type of `int`
 
-==== See textbook section 3.6 Overloading a Method (page 104)
+The first method is a command to print out a favorite number, so it does not return anything. 
+The `void` in the method header is the return type, and _void_ basically means nothing; this method returns nothing.
+The second method is asking to get a favorite number, so it is going to give back an `int`. The return type is specified as `int`.
+The `return` statement sends the `favNum` value back to the method that called `getFavNum()`.
 
+IMPORTANT: If a method has a return type of anything other than `void`, it will only compile if it has a `return` statement followed by a value (literal or variable) of the specified type.
 
+This means that methods themselves essentially have data types.
+`printFavNum()` has a data type of `void`. 
+`getFavNum()` has a data type of `int`.
+Since methods have types, you can use them in statements just as you'd use a literal or variable of that type. 
+For example, the following line of code is valid:
+
+`int answer = 18 + getFavNum();`
+
+This evaluated the same way as any other assignment statement. It starts on the right and finds that method call, so it will execute `getFavNum()` and plug the returned value into the operation, resulting in `18 + 7` and ultimately evaluating to `25`, which is then assigned to `answer`.
+
+A `return` statement in a `void` method stops execution of the method and returns to the calling method.
+
+[source,java]
+----
+public static void shortCircuit() {
+   System.out.print(“This runs...”);
+   return;
+   System.out.print(“This can never run!”);
+}
+---- 
+
+The second print() statement won't execute because the return statement ends the method. The compiler doesn't like these kinds of _unreachable statements_, though, so it will not compile.
+
+`return` statements in `void` methods will have some uses for us later on.
+
+NOTE: A Java method can only return one piece of data, so it can only have one return type.  
+	
+==== Returning vs. Outputting
+
+Generally speaking, it's better to return values from a method rather than outputting values.
+There are a few reasons for this, but consider an obvious one. 
+If you use a `print()` method, your code is limited to only working in a console application. 
+That's fine for now, because it's the only kind of application we know how to make!
+But what if we want to use that same code in a web application, or a mobile app? 
+That `print()` statement won't work--rather, the user will never see the result, because they won't have a console window.
+
+Consider this code:
+
+[source,java]
+----
+public class BadOutput {
+    public static void main(String[] args) {
+        kingOfSoul();
+    }
+
+    public static void kingOfSoul() {
+        System.out.println("Otis Redding");
+    }
+
+}
+----
+
+If the `kingOfSoul()` method knows who the King of Soul is, how do we print that out if we can't perform the output inside the method?
+The solution is to return the String and perform the output in `main()`.
+
+[source,java]
+----
+public class GoodOutput {
+    public static void main(String[] args) {
+        System.out.println(kingOfSoul());
+    }
+
+    public static String kingOfSoul() {
+        return "Otis Redding";
+    }
+
+}
+----
+
+This is another example of something that seems annoying, like it's just extra work.
+When we're learning new things, we sometimes have to accept the wisdom of people who are experienced--and recognize that eventually we'll see the point.
+We're all about learning good habits and best practices around here, so we'll almost always return values rather than printing them.
+
+There are times when we want a method whose sole purpose is to produce some output. 
+In that case, be sure to give it an appropriate identifier.
+Notice that those kinds of methods in my examples have _print_ or _output_ in the name.
+
+I rarely want students to create methods that produce output, and when I do I always make that explicit in my directions. 
+When I refer to _returning_ something, I mean just that. 
+The rule of thumb is, *all input and output statements should be in the `main()` method* and data should be passed around as necessary.
+
+TIP: I strongly penalize input and output statements outside of the `main()` method because I'm trying to build habits that will serve you well as you learn more about programming.
 
 // TODO: Record and link video 3c: Returning Data from a Method in Java
 .Time To Watch!
 ****
-Returning Data from a Method in Java
-video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-File from video:
+Returning Data from a Method in Java [COMING SOON]
 
-// TODO: Fix this file reference
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+// video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+// // TODO: Fix this file reference
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
 ****
+
+=== Overloading a Method
+
+
+
+// TODO: Remove Farrell reference when this section is complete
+==== See textbook section 3.6 Overloading a Method (page 104)
+
+Sometimes the task, action, or calculation that a method produces has different ways of operating depending on the circumstances.
+
+Consider a method that calculates the average age of two people:
+
+[source,java]
+----
+public static double averageAge(int age1, int age2) {
+       return (double) (age1 + age2) / 2;
+   }
+----
+
+This is a pretty straightforward method. 
+Notice that the return statement uses casting with `(double)` to ensure that the result is not truncated.
+
+If we want to calculate an average age of 3 people, we could almost use the same method. 
+We want a method that still calculates the average age, but takes three arguments and divides by 3, instead of 2.
+
+To create another version of a method that operates a little differently, we can use _method overloading_. 
+To overload a method, we write a new method with the same identifier, but with a different set of parameters. 
+An overload for our `averageAge()` method could look like this:
+
+[source,java]
+----
+public static double averageAge(int age1, int age2, int age3) {
+        return (double) (age1 + age2 + age3) / 3;
+    }
+----
+
+Note that the method identifier is exactly the same, but this version accepts three `int` arguments instead of two.
+That difference allows the compiler to easily determine which implementation of the method is being called: if there are two `int`s in the parenthesis, it calls the first implementation, and if there are three `int`s, it calls the second implementation. 
+When we're using the method, we can call whichever best suits our needs at the time.
+
+The compiler can also easily distinguish overloaded methods if the _types_ of the parameters are different.
+An implementation that accepts `double`s is valid:
+
+[source,java]
+----
+    public static double averageAge(double age1, double age2, double age3) {
+        return (double) (age1 + age2 + age3) / 3;
+    }
+----
+
+If the compiler sees a call to `averageAge()` with three `double` values, it will invoke this last version.
+
+===== Incorrect Overloading
+Overloaded methods *must* have differences in the number and/or types of the parameters. 
+The _names_ of those parameters doesn't differntiate them, so different names is not enough to make a valid overload.
+
+
+.`BadOverloading.java`. An invalid example of overloading.
+[source,java]
+----
+public class BadOverloading {
+    public static void main(String[] args) {
+        System.out.println(area(15, 10)); <.>
+    }
+
+    // Calculates area of a rectangle
+    public static double area(double length, double width) {
+        return length * width;
+    }
+
+    // Calculates area of an oval
+    public static double area(double smallRadius,
+            double bigRadius) {
+        double area = 3.14 * smallRadius * bigRadius;
+        return area;
+    }
+
+}
+----
+
+<.> The compiler can't tell if we want the area implementation of a rectangle of the implementation for an oval.
+
+The term we use to describe a method's identifier and parameter list (the number, order and types of parameters) is a _method signature_. 
+The method signature must be unique so the compiler can identify which method code to run.
+
+.`AverageAge.java`. A valid example of method overloading.
+[source, java]
+----
+public class AverageAge {
+    public static void main(String[] args) {
+        System.out.println(averageAge(1.25, 1.5, .5)); // <.>
+        System.out.println(averageAge(10, 20)); // <.>
+        System.out.println(averageAge(10, 20, 25)); // <.>
+    }
+
+    public static double averageAge(int age1, int age2) {
+        return (double) (age1 + age2) / 2;
+    }
+
+    public static double averageAge(int age1, int age2, int age3) {
+        return (double) (age1 + age2 + age3) / 3;
+    }
+
+    public static double averageAge(double age1, double age2, double age3) {
+        return (double) (age1 + age2 + age3) / 3;
+    }
+
+}
+----
+
+<.> The compiler sees three `double` values, so it calls the third implementation.
+<.> The compiler sees two `int` values, so it calls the first implementation.
+<.> The compiler sees three `int` values, so it calls the second implementation.
+
+
 
 === Solution Walkthrough
 
 In "solution walkthrough" videos, I give a problem/prompt that is similar to the kinds of work I assign, and then I record myself writing a solution. It's not absolutely mandatory to watch this video, but students report that these videos are particularly helpful.
 
 // TODO: Create a source code file for this solution
+
 .Time To Watch!
 ****
-Methods with Parameters and Returns
+Methods with Parameters and Returns [COMING SOON]
 
 video::-ubNZHNV-go[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 File from video:

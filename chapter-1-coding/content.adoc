@@ -206,15 +206,15 @@ Take a look at the code for a basic "Hello World" program; we'll learn what all 
 
 [source,java]
 ----
-public class HelloWorld { // <.>
+public class HelloWorld { <.>
 
-    public static void main(String[] args) { // <.>
+    public static void main(String[] args) { <.>
 
-        System.out.println("Hello World!"); // <.>
+        System.out.println("Hello World!"); <.>
 
-    } // <.>
+    } <.>
 
-} // <.>
+} <.>
 ----
 Here are the parts of the program:
 
