@@ -3,9 +3,10 @@
 :doctype: book
 :toc: left
 :toc-title: Skimpy Contents
-:toclevels: 1
+:toclevels: 2
 :icons: font
 :source-highlighter: pygments
+:multipage-level: 1
 
 
 [preface]
