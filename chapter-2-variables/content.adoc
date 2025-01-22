@@ -41,7 +41,7 @@ public class HelloWorld {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!"); // <.>
+        System.out.println("Hello World!"); <.>
 
     }
 
@@ -137,7 +137,7 @@ It's called "single" in some programming languages, which helps understand where
 [source,java]
 ----
 int myAge = 21;
-float myGPA = 3.75f; // <.>
+float myGPA = 3.75f; <.>
 double myFriendsGPA = 3.54;
 ----
 <.> The `f` suffix denotes that the value 3.75 is a `float` rather than a `double`.
@@ -326,8 +326,8 @@ Each operator acts on the value to either side:
 
 [source,java]
 ----
-int sum = 5 + 7; // <.> 
-int difference = sum - 2; // <.>
+int sum = 5 + 7; <.> 
+int difference = sum - 2; <.>
 ----
 <.> The value of `sum` will be 12
 <.> The value of `difference` will be 10 (i.e., 10 - 2)
@@ -360,9 +360,9 @@ Consider the following examples:
 
 [source, java]
 ----
-int result1 = 17 - 4 * 6 / 3; // <.>
-int result2 = 17 - 4 / 2 + 2; // <.>
-int result3 = 17 - 4 / (2 + 2); // <.>
+int result1 = 17 - 4 * 6 / 3; <.>
+int result2 = 17 - 4 / 2 + 2; <.>
+int result3 = 17 - 4 / (2 + 2); <.>
 ----
 
 <.> `result1` is 8: `4 * 6` is 24, then `24 / 3` is 8, and then `17 - 8` is 9.
