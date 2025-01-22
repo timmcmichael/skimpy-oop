@@ -4,8 +4,7 @@
  * Demo file
  * 
  * The demonstrates passing a arguments to a method by implementing a method 
- * that accepts a radius of a circle and outputs the area. The user will input
- * a radius and the program will output the area.
+ * that accepts a radius of a circle and calculates the area. 
  * 
  * Test Cases:
  * 1.0 -> 3.14
@@ -22,7 +21,7 @@ public class AreaOfCircleFinished {
         double radius = -1.0;
         System.out.print("Enter the radius: ");
         radius = input.nextDouble();
-        printArea();
+        printArea(radius);
     }
 
     public static void printArea(double r) {
