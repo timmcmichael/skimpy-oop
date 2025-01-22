@@ -12,7 +12,7 @@ endif::[]
 * Get to know a little about Object-Oriented Programming (OOP)
 * Use `print()` and `println()` to produce text output
 
-_Source code examples from this chapter are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding[GitHub^]._
+_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding[GitHub^]._
 
 '''
 A computer is basically a device that executes a set of commands--and does so very quickly.
