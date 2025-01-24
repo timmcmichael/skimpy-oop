@@ -432,7 +432,7 @@ An implementation that accepts `double`s is valid:
 
 If the compiler sees a call to `averageAge()` with three `double` values, it will invoke this last version.
 
-===== Incorrect Overloading
+==== Incorrect Overloading
 Overloaded methods *must* have differences in the number and/or types of the parameters. 
 The _names_ of those parameters doesn't differentiate them, so different names is not enough to make a valid overload.
 

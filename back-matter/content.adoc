@@ -13,10 +13,10 @@ endif::[]
 ==== Getting Started Chapter
 
 [qanda]
-What does JDK stand for?::
+*What does JDK stand for?*::
 Java Development Kit
 
-What is an example of an Integrated Development Environment?::
+*What is an example of an Integrated Development Environment?*::
 Visual Studio Code, eclipse, IntelliJ, and many others.
 
 ==== Computers and Coding (Chapter 1)
@@ -35,27 +35,27 @@ Visual Studio Code, eclipse, IntelliJ, and many others.
 // Object-oriented programming (OOP)
 
 [qanda]
-**What is the primary role of a programming language in the context of computer programming?**::
+*What is the primary role of a programming language in the context of computer programming?*::
 The primary role of a programming language is to act as a bridge between human language and machine language. It allows humans to write instructions in a way that is easier for them to understand and use, which can then be accurately translated into machine language that a computer can execute.
 
-**Explain the difference between compiled and interpreted programming languages. Provide an example of each.**::
-   - **Compiled languages** are those where the source code is translated into machine language by a compiler before the program is run. This machine language file can then be executed directly by the computer. An example of a compiled language is C.
-   - **Interpreted languages** are those where the source code is translated into machine language on the fly, as the program is running, by an interpreter. An example of an interpreted language is Python.
-   - **Java** is a unique case as it is both compiled and interpreted. The source code is first compiled into an intermediate language called bytecode, which is then interpreted by the Java Runtime Environment (JRE) at runtime.
+*Explain the difference between compiled and interpreted programming languages. Provide an example of each.*::
+   - *Compiled languages* are those where the source code is translated into machine language by a compiler before the program is run. This machine language file can then be executed directly by the computer. An example of a compiled language is C.
+   - *Interpreted languages* are those where the source code is translated into machine language on the fly, as the program is running, by an interpreter. An example of an interpreted language is Python.
+   - *Java* is a unique case as it is both compiled and interpreted. The source code is first compiled into an intermediate language called bytecode, which is then interpreted by the Java Runtime Environment (JRE) at runtime.
 
-**Describe the basic structure of a simple Java program, such as the "Hello World" example provided in the chapter.**::
+*Describe the basic structure of a simple Java program, such as the "Hello World" example provided in the chapter.*::
    - A simple Java program, like the "Hello World" example, consists of:
-     - **Class declaration**: This defines the class, which is a blueprint for objects. In the example, the class is named `HelloWorld`.
-     - **main() method**: This is the entry point of the program where execution begins. It is declared as `public static void main(String[] args)`.
-     - **println() statement**: This is used to output text to the console. In the example, `System.out.println("Hello World!");` prints "Hello World!" to the console.
-     - **Code blocks**: These are enclosed in curly braces `{}` to define the scope of the class and the main method.
+     - *Class declaration*: This defines the class, which is a blueprint for objects. In the example, the class is named `HelloWorld`.
+     - *main() method*: This is the entry point of the program where execution begins. It is declared as `public static void main(String[] args)`.
+     - *println() statement*: This is used to output text to the console. In the example, `System.out.println("Hello World!");` prints "Hello World!" to the console.
+     - *Code blocks*: These are enclosed in curly braces `{}` to define the scope of the class and the main method.
 
-**What are the key steps in the software development process as outlined in the chapter? Why is it important to follow these steps?**::
+*What are the key steps in the software development process as outlined in the chapter? Why is it important to follow these steps?*::
    - The key steps in the software development process are:
-     - **Analysis**: Identifying the goals and scope of the program. This step ensures that you understand what the program needs to do.
-     - **Testing Plan**: Determining how the final program will be tested. This step ensures that you have a clear understanding of how to verify that the program works correctly.
-     - **Implementation**: Writing and testing the code iteratively. This step involves developing the program piece by piece, testing each part to ensure it works before moving on to the next.
-     - **Revise or Maintain**: Updating the program as needed based on changing requirements or ensuring it continues to perform as expected over time.
+     - *Analysis*: Identifying the goals and scope of the program. This step ensures that you understand what the program needs to do.
+     - *Testing Plan*: Determining how the final program will be tested. This step ensures that you have a clear understanding of how to verify that the program works correctly.
+     - *Implementation*: Writing and testing the code iteratively. This step involves developing the program piece by piece, testing each part to ensure it works before moving on to the next.
+     - *Revise or Maintain*: Updating the program as needed based on changing requirements or ensuring it continues to perform as expected over time.
    - Following these steps is important because it helps keep the development process organized and focused, ensures efficient use of time, and makes complex programming tasks more approachable.
 
 
@@ -80,75 +80,88 @@ The primary role of a programming language is to act as a bridge between human l
 // What kind of object can you use to get keyboard input from the user?:: An object of the `Scanner` class.
 
 [qanda]
-1. **What is the difference between a constant and a variable in Java? Provide an example of each.**::
-   - A **constant** is a piece of data that cannot change during program execution. It is declared using the `final` keyword and must be assigned a value when it is declared. For example:
-     ```java
-     final double SALES_TAX_RATE = 8.7;
-     ```
-   - A **variable** is a piece of data that can change (or "vary") during program execution. It is declared by specifying a data type and an identifier, and can be assigned different values throughout the program. For example:
-     ```java
-     int age = 21;
-     age = 22; // The value of age can be changed
-     ```
-
-2. **Explain the purpose of the `Scanner` class in Java and provide an example of how it is used to get user input.**::
+*What is the difference between a constant and a variable in Java? Provide an example of each.*::
+   - A *constant* is a piece of data that cannot change during program execution. It is declared using the `final` keyword and must be assigned a value when it is declared. For example: 
++
+[source,java]
+----
+final double SALES_TAX_RATE = 8.7;
+----
+   - A *variable* is a piece of data that can change (or "vary") during program execution. It is declared by specifying a data type and an identifier, and can be assigned different values throughout the program. For example:
++
+[source,java]
+----
+int age = 21;
+age = 22; // The value of age can be changed
+----
+*Explain the purpose of the `Scanner` class in Java and provide an example of how it is used to get user input.*::
    - The `Scanner` class in Java is used to get input from the user through the keyboard. It provides methods to read different types of input, such as strings, integers, and doubles. To use the `Scanner` class, you need to import it and create an instance of the class. Here is an example:
-     ```java
-     import java.util.Scanner;
++
+[source,java]
+----
+import java.util.Scanner;
 
-     public class InputDemo {
-         public static void main(String[] args) {
-             Scanner input = new Scanner(System.in);
+public class InputDemo {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    String name;
+    int age;
 
-             System.out.print("Enter your name: ");
-             String name = input.nextLine();
+    System.out.print("Enter your name: ");
+    name = input.nextLine();
 
-             System.out.print("Enter your age: ");
-             int age = input.nextInt();
+    System.out.print("Enter your age: ");
+    age = input.nextInt();
 
-             System.out.println("Hello, " + name + ". You are " + age + " years old.");
-         }
-     }
-     ```
+    System.out.println("Hello, " + name + ". You are " + age + " years old.");
+  }
+}
+----
 
-3. **Describe the difference between integer division and floating-point division in Java. Why is it important to be aware of this distinction?**::
-   - **Integer division** in Java occurs when both operands are integers. The result is also an integer, and any fractional part is truncated (i.e., discarded). For example:
-     ```java
-     int result = 10 / 3; // result is 3, not 3.33
-     ```
-   - **Floating-point division** occurs when at least one of the operands is a floating-point number (e.g., `float` or `double`). The result is a floating-point number, and the fractional part is preserved. For example:
-     ```java
-     double result = 10.0 / 3; // result is 3.333333...
-     ```
+*Describe the difference between integer division and floating-point division in Java. Why is it important to be aware of this distinction?*::
+   - *Integer division* in Java occurs when both operands are integers. The result is also an integer, and any fractional part is truncated (i.e., discarded). For example:
++
+[source,java]
+----
+int result = 10 / 3; // result is 3, not 3.33
+----
+   - *Floating-point division* occurs when at least one of the operands is a floating-point number (e.g., `float` or `double`). The result is a floating-point number, and the fractional part is preserved. For example:
++
+[source,java]
+----
+double result = 10.0 / 3; // result is 3.333333...
+----
    - It is important to be aware of this distinction because using integer division when you expect a floating-point result can lead to incorrect calculations and unexpected behavior in your programs.
 
-4. **What are compound assignment operators in Java? Provide examples of how they are used in arithmetic operations.**::
+*What are compound assignment operators in Java? Provide examples of how they are used in arithmetic operations.*::
    - Compound assignment operators in Java are shorthand ways of writing common arithmetic operations that update the value of a variable. They combine an arithmetic operator with the assignment operator (`=`). Here are some examples:
-     ```java
-     int x = 5;
-     x += 3; // Equivalent to x = x + 3; x is now 8
++
+[source,java]
+----
+int x = 5;
+x += 3; // Equivalent to x = x + 3; x is now 8
 
-     int y = 10;
-     y -= 2; // Equivalent to y = y - 2; y is now 8
+int y = 10;
+y -= 2; // Equivalent to y = y - 2; y is now 8
 
-     int z = 4;
-     z *= 2; // Equivalent to z = z * 2; z is now 8
+int z = 4;
+z *= 2; // Equivalent to z = z * 2; z is now 8
 
-     int a = 20;
-     a /= 4; // Equivalent to a = a / 4; a is now 5
+int a = 20;
+a /= 4; // Equivalent to a = a / 4; a is now 5
 
-     int b = 15;
-     b %= 6; // Equivalent to b = b % 6; b is now 3
-     ```
+int b = 15;
+b %= 6; // Equivalent to b = b % 6; b is now 3
+----
 
 ==== Methods (Chapter 3)
 
 [qanda]
-**What is the main purpose of using methods in Java, and how do they contribute to code maintainability?**::
+*What is the main purpose of using methods in Java, and how do they contribute to code maintainability?*::
 The main purpose of using methods in Java is to organize code into reusable blocks that perform specific tasks. Methods help in breaking down complex programs into smaller, manageable pieces, making the code easier to read, understand, and maintain. By encapsulating functionality within methods, changes can be made in one place without affecting other parts of the program. This improves maintainability because if a bug is found or a change is needed, it can be addressed within the method itself, rather than having to update multiple instances of the same code throughout the program.
 
-**Explain the difference between a parameter and an argument in the context of Java methods. Provide an example to illustrate your explanation.**::
+*Explain the difference between a parameter and an argument in the context of Java methods. Provide an example to illustrate your explanation.*::
 In Java, a parameter is a variable defined in the method declaration that acts as a placeholder for the value that will be passed to the method. An argument, on the other hand, is the actual value that is passed to the method when it is called. For example, in the method definition `public static void printArea(double radius)`, `radius` is a parameter. When the method is called with `printArea(5.0)`, the value `5.0` is the argument passed to the method.
 
-**Why is it generally better to return values from methods rather than printing them directly within the method? How does this practice improve the modularity and reusability of code?**::
+*Why is it generally better to return values from methods rather than printing them directly within the method? How does this practice improve the modularity and reusability of code?*::
 It is generally better to return values from methods rather than printing them directly within the method because returning values allows the method to be more versatile and reusable. When a method returns a value, it can be used in various contexts, such as in calculations, assignments, or further processing, without being tied to a specific output format. This practice improves modularity by keeping the method focused on a single task (e.g., performing a calculation) and leaving the decision of how to use the result to the calling code. It also enhances reusability, as the method can be used in different parts of the program or even in different programs without modification.
