@@ -8,8 +8,8 @@ endif::[]
 
 == 0011 - Methods (Chapter 3)
 
-=== #THIS CONTENT IS STILL UNDER CONSTRUCTION#
-#It's incomplete and probably full of typos. The sections that are not finished refer you to sections in the required textbook that cover the same content. If you don't want to deal with all that, just stop here and use the textbook for this module.#
+=== #THIS CHAPTER NEEDS EDITING#
+#It's basically the first draft and is probably full of typos. I'll keep working on it over the next few days. If you don't want to deal with that, just stop here and use the textbook for this module.#
 
 === What's the Point?
 * Define and call methods
@@ -253,21 +253,20 @@ Within that method, the parameter `name` stores the argument, so when this code 
 
 TIP: The actual value passed in when you call a method is referred to as an _argument_. The variable that receives that value within the method is referred to as a _parameter_.
 
-// TODO: Record and link video 3b: Passing Data to a Method in Java
 .Time To Watch!
 ****
-Passing Data to a Method in Java [COMING SOON]
-// video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// File from video:
+Passing Data to a Method in Java 
 
-// // TODO: Fix this file reference
-// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+video::DNJjyKykPvE[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:
+
+* Start: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfCircle.java[`AreaOfCircle.java`]
+* Finished: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfCircleFinished.java[`AreaOfCircleFinished.java`]
+* Start: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfOval.java[`AreaOfOval.java`]
+* Finished: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfOvalFinished.java[`AreaOfOval.java`]
 ****
 
 === Returning Values
-
-// TODO: Remove reference to Farrell when this is complete
-==== See textbook section 3.4 Creating Methods That Return Values (page 95)
 
 The methods we've seen to this point are basically commands--they simply perform a task, and then when they're done, program execution just goes back to the method that called it and resumes there.
 But we can also create methods that are like questions--they perform a chunk of code, but when they are finished they give back an answer.
@@ -379,24 +378,17 @@ The rule of thumb is, *all input and output statements should be in the `main()`
 
 TIP: I strongly penalize input and output statements outside of the `main()` method because I'm trying to build habits that will serve you well as you learn more about programming.
 
-// TODO: Record and link video 3c: Returning Data from a Method in Java
 .Time To Watch!
 ****
-Returning Data from a Method in Java [COMING SOON]
+Returning Data from a Method in Java
 
-// video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// File from video:
+video::JI0e0vVONmM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:
 
-// // TODO: Fix this file reference
-// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+* Finished: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfOvalFinished.java[`AreaOfOval.java`]
 ****
 
 === Overloading a Method
-
-
-
-// TODO: Remove Farrell reference when this section is complete
-==== See textbook section 3.6 Overloading a Method (page 104)
 
 Sometimes the task, action, or calculation that a method produces has different ways of operating depending on the circumstances.
 
@@ -510,7 +502,6 @@ public class AverageAge {
 
 In "solution walkthrough" videos, I give a problem/prompt that is similar to the kinds of work I assign, and then I record myself writing a solution. It's not absolutely mandatory to watch this video, but students report that these videos are particularly helpful.
 
-// TODO: Create a source code file for this solution
 // TODO: Check audio levels on this old video.
 
 .Time To Watch!
