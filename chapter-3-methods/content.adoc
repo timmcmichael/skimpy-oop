@@ -30,7 +30,7 @@ Consider the assembly instructions for building a LEGO set.
 
 image::LEGO.png[A few LEGO blocks, width=300]
 
-It might take dozens of small steps to complete the set, but taken together, the instructions exectue a single task: building the set.
+It might take dozens of small steps to complete the set, but taken together, the instructions execute a single task: building the set.
 A method is conceptually the same. 
 
 If you've worked with other programming languages, you may know methods by a different name. 
@@ -94,7 +94,7 @@ Whenever we create a class or method--and other structures we'll learn as we go-
 These braces form _code blocks_.
 
 The outermost code block is our class.
-Although there are a few things that go outside the class, like `package` and `import` statments, and the class code block generally contains all of the components of our program.
+Although there are a few things that can go outside the class, like `package` and `import` statements, the class code block contains all of the components of our program.
 
 In some cases we can place one block inside another, as such as putting a method inside a class.
 This is called _nesting_ blocks, and a nested block must completely enclosed; in other words, a method can't be partly in a class and partly out of it.
@@ -129,7 +129,7 @@ public class ScopeExample {
     }
 }
 ----
-<.> This is a valid, or _in scope_ reference because `favoriteNumber` is declared within `main()`.
+<.> This is a valid, or _in scope_, reference because `favoriteNumber` is declared within `main()`.
 <.> This is an invalid _out of scope_ reference because `favoriteNumber` can only be accessed within `main()`.
 
 ==== Variable Shadowing
@@ -211,8 +211,6 @@ The best practice is to pass that variable value to the method as needed, and fo
 NOTE: In the next chapter, we will start using variables that look a lot like the global variables I just said we shouldn't use. To be clear, those _instance variables_ behave differently and serve a different purpose. They are _global variables_ as described here.
 
 === Passing Data to Methods
-
-==== The video for this section isn't finished yet. See section 3.3 Adding Parameters to Methods (page 91) in the textbook for coverage of this topic    
 
 Sometimes a method needs some information in order to carry out its purpose.
 For example, the `print()` method needs to know what it's supposed to print.
@@ -436,7 +434,7 @@ If the compiler sees a call to `averageAge()` with three `double` values, it wil
 
 ===== Incorrect Overloading
 Overloaded methods *must* have differences in the number and/or types of the parameters. 
-The _names_ of those parameters doesn't differntiate them, so different names is not enough to make a valid overload.
+The _names_ of those parameters doesn't differentiate them, so different names is not enough to make a valid overload.
 
 
 .`BadOverloading.java`. An invalid example of overloading.
@@ -523,8 +521,10 @@ Can you answer these questions?
 
 ****
 
-1. 
+1. What is the main purpose of using methods in Java, and how do they contribute to code maintainability?
 
-2. 
+2. Explain the difference between a parameter and an argument in the context of Java methods. Provide an example to illustrate your explanation.
+
+3. Why is it generally better to return values from methods rather than printing them directly within the method? How does this practice improve the modularity and reusability of code?
 
 ****
