@@ -27,7 +27,7 @@ _Source code examples from this chapter and associated videos are available on h
 
 // === Check Your Learning
 //
-// Can you answer these questions?
+// ==== Can you answer these questions?
 
 // ****
 // 
