@@ -2,6 +2,7 @@
 
 1. `/Users/mcmichael/.gem/ruby/2.6.0/bin/asciidoctor-multipage index.adoc`
  (or `/usr/local/bin/asciidoctor-multipage index.adoc`)
+ (or `~/.gem/ruby/2.6.0/bin/asciidoctor-multipage index.adoc`)
 2. Commit to main branch
 3. In GitHub web ui: create pull request to merge. gh-pages as base, to merge with main
 

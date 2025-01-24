@@ -83,7 +83,7 @@ Once you've installed the JDK and VS Code (along with the Java extensions), you'
 
 === Check Your Learning
 
-Can you answer these questions?
+==== Can you answer these questions?
 
 ****
 1. What does "JDK" stand for?

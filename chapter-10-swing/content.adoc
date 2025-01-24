@@ -7,7 +7,7 @@ ifeval::["{docname}" == "index"]
 endif::[]
 
 == 1010 - Graphical User Interfaces with Swing (Chapter 10)
-// TODO: Upload source files to GitHub archive
+// TODO: Upload source files to GitHub archive 
 
 === #Content coming soon!#
 
@@ -20,7 +20,7 @@ _Source code examples from this chapter and associated videos are available on h
 
 // === Check Your Learning
 //
-// Can you answer these questions?
+// ==== Can you answer these questions?
 
 // ****
 // 

@@ -8,9 +8,6 @@ endif::[]
 
 == 0011 - Methods (Chapter 3)
 
-=== #THIS CHAPTER NEEDS EDITING#
-#It's basically the first draft and is probably full of typos. I'll keep working on it over the next few days. If you don't want to deal with that, just stop here and use the textbook for this module.#
-
 === What's the Point?
 * Define and call methods
 * Understand variable scope
@@ -432,7 +429,7 @@ An implementation that accepts `double`s is valid:
 
 If the compiler sees a call to `averageAge()` with three `double` values, it will invoke this last version.
 
-===== Incorrect Overloading
+==== Incorrect Overloading
 Overloaded methods *must* have differences in the number and/or types of the parameters. 
 The _names_ of those parameters doesn't differentiate them, so different names is not enough to make a valid overload.
 

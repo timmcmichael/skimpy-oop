@@ -447,17 +447,21 @@ WARNING: As a reminder, there's a weird quirk that happens when you get numeric 
 // TODO: Use Co-pilot to create better questions
 === Check Your Learning
 
-Can you answer these questions?
+==== Can you answer these questions?
 
 ****
 
-1. Explain the difference between a declaration and an assignment.
+// 1. Explain the difference between a declaration and an assignment.
 
-2. Identify a data type you could use for each of the following:
-** A complete mailing address
-** A speed limit
-** The average number of students in classes at EMCC
+// 2. Identify a data type you could use for each of the following:
+// ** A complete mailing address
+// ** A speed limit
+// ** The average number of students in classes at EMCC
 
-3. What kind of object can you use to get keyboard input from the user?
+// 3. What kind of object can you use to get keyboard input from the user?
 
+1. **What is the difference between a constant and a variable in Java? Provide an example of each.**
+2. **Explain the purpose of the `Scanner` class in Java and provide an example of how it is used to get user input.**
+3. **Describe the difference between integer division and floating-point division in Java. Why is it important to be aware of this distinction?**
+4. **What are compound assignment operators in Java? Provide examples of how they are used in arithmetic operations.**
 ****

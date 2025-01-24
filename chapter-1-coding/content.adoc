@@ -344,11 +344,18 @@ TIP: Many IDEs have a keyboard shortcut for commenting out code. In Visual Studi
 
 === Check Your Learning
 
-Can you answer these questions?
+==== Can you answer these questions?
+
+// ****
+// 1. What tool converts your programming into something the computer can run?
+// 2. What is the name of the instruction set, specific to each computer type, that a computer can understand and execute?
+// 3. What are some advantages of using an organized software development process?
+// 4. What programming paradigm bundles procedures with the data they use?
+// ****
 
 ****
-1. What tool converts your programming into something the computer can run?
-2. What is the name of the instruction set, specific to each computer type, that a computer can understand and execute?
-3. What are some advantages of using an organized software development process?
-4. What programming paradigm bundles procedures with the data they use?
+1. What is the primary role of a programming language in the context of computer programming?
+2. Explain the difference between compiled and interpreted programming languages. Provide an example of each.
+3. Describe the basic structure of a simple Java program, such as the "Hello World" example provided in the chapter.
+4. What are the key steps in the software development process as outlined in the chapter? Why is it important to follow these steps?
 ****
