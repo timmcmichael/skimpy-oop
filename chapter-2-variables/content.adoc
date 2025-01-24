@@ -444,6 +444,7 @@ The `Scanner` class includes a variety methods for working with input "streams" 
 
 WARNING: As a reminder, there's a weird quirk that happens when you get numeric input from a user and then ask for `String` input using `next()` or `nextLine()`. If your program seems to skip that `next()` or `nextLine()`, review that part of the video!
 
+// TODO: Use Co-pilot to create better questions
 === Check Your Learning
 
 Can you answer these questions?

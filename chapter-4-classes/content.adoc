@@ -8,7 +8,7 @@ endif::[]
 
 == 0100 - Classes and Objects (Chapter 4)
 
-=== #Content coming soon!#
+=== #Content coming soon! In the meantime, these topics are covered in Chapter 4 of the textbook--see Canvas for details#
 // TODO: Upload source files to GitHub archive
 
 // === What's the Point?
