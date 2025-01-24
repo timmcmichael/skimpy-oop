@@ -8,9 +8,6 @@ endif::[]
 
 == 0011 - Methods (Chapter 3)
 
-=== #THIS CHAPTER NEEDS EDITING#
-#It's basically the first draft and is probably full of typos. I'll keep working on it over the next few days. If you don't want to deal with that, just stop here and use the textbook for this module.#
-
 === What's the Point?
 * Define and call methods
 * Understand variable scope
