@@ -16,7 +16,81 @@ endif::[]
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects[GitHub^]._
 
-// ''''
+''''
+
+=== OOP Basics
+
+Until now, we have been organizing our programs into methods, which is a procedural programming approach.
+We've been thinking of a program as a collection of tasks that need to be performed in a specific order.
+There's nothing wrong with this approach, but it can become cumbersome as the program grows in size and complexity.
+
+Now we're ready to start our transition to object-oriented programming (OOP), which lets us think about programs the way we think about the world around us.
+Instead of thinking about a program as a bunch of tasks, we can think of it as a bunch of objects that interact with each other.
+
+We'll still be using methods, but they won't be the basic building blocks of our programs.
+Instead, we'll be organizing our programs into *classes*, which are blueprints--or recipes--for creating *objects*.
+A class defines the attributes and behaviors of the objects--and those are the variables and methods we'll write to create our programs.
+
+
+.Time To Watch!
+****
+Intro to OOP: Classes and Objects
+
+video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+****
+
+=== Abstraction and Encapsulation
+
+
+
+
+=== Defining a Class
+
+// Mention that fields look like global variables, which we know are evil. These are instance variables
+
+
+=== Instantiating Objects
+
+
+=== Encapsulation and Object Methods
+
+
+=== Constructors
+
+
+
+''''
+
+Object-oriented programming (OOP) is a programming paradigm that uses "objects" to design applications and computer programs.  
+Objects are instances of classes, which can be thought of as blueprints for creating objects.  
+A class defines a set of properties and methods that are common to all objects of that type.  
+By using classes and objects, developers can create modular, reusable, and maintainable code.  
+
+Classes serve as templates for objects, encapsulating data for the object and methods to manipulate that data.  
+This encapsulation helps in bundling the data with the code that operates on it, thus promoting data hiding and abstraction.  
+For example, a class `Car` might have properties like `color`, `model`, and `year`, and methods like `startEngine()` and `stopEngine()`.  
+Each `Car` object created from this class will have its own set of these properties and methods.  
+
+Objects are the concrete instances of classes.  
+When a class is defined, no memory is allocated until an object of that class is created.  
+Each object can have different values for its properties, even though they share the same structure and behavior defined by their class.  
+This allows for the creation of multiple objects with similar characteristics but different states.  
+
+The use of classes and objects in OOP promotes code reusability.  
+Once a class is defined, it can be used to create multiple objects without rewriting the same code.  
+This makes it easier to manage and update code, as changes to the class definition automatically propagate to all objects instantiated from that class.  
+Additionally, OOP supports inheritance, where a new class can inherit properties and methods from an existing class, further enhancing code reuse and organization.  
+
+Overall, classes and objects are fundamental concepts in OOP that help in organizing complex software systems into manageable, modular components.  
+They provide a clear structure for modeling real-world entities and their interactions, making it easier to design, develop, and maintain software applications.  
+
+''''
+
+=== Defining a Class
+
+
+
+
 
 // === Check Your Learning
 
