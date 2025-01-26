@@ -9,7 +9,10 @@ endif::[]
 == 0101 - Decisions (Chapter 5)
 
 === #Content coming soon!#
+// === #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
+
 // TODO: Upload source files to GitHub archive
+// #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
 
 // === What's the Point?
 // * 

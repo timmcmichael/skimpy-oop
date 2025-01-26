@@ -10,6 +10,7 @@ endif::[]
 // TODO: Upload source files to GitHub archive 
 
 === #Content coming soon!#
+// === #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
 
 // === What's the Point?
 // * 
@@ -17,6 +18,11 @@ endif::[]
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs[GitHub^]._
 
 // ''''
+
+
+// #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
+
+
 
 // === Check Your Learning
 //

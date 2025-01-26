@@ -8,7 +8,7 @@ endif::[]
 
 == 0100 - Classes and Objects (Chapter 4)
 
-=== #Content coming soon! In the meantime, these topics are covered in Chapter 4 of the textbook--see Canvas for details#
+=== #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
 // TODO: Upload source files to GitHub archive
 // TODO: Canvas - update/remove embedded video to new version.
 
@@ -21,6 +21,8 @@ _Source code examples from this chapter and associated videos are available on h
 ''''
 
 === OOP Basics
+
+#This section is almost finished, but in the meantime you can instead read section 4.1 (page 115) in the textbook.#
 
 Until now, we have been organizing our programs into methods, which is a procedural programming approach.
 We've been thinking of a program as a collection of tasks that need to be performed in a specific order.
@@ -36,28 +38,31 @@ A class defines the attributes and behaviors of the objects--and those are the v
 
 .Time To Watch!
 ****
-Intro to OOP: Classes and Objects
+Intro to OOP: Classes and Objects [COMING SOON. Old version of video is linked in Canvas Module Overview.]
 
 video::xxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 ****
 
 === Abstraction and Encapsulation
+#This section is not finished, but in the meantime this content is covered in section 4.2 (page 117) and 4.3 (page 119) in the textbook.#
 
 
 
 
 === Defining a Class
+#This section is not finished, but in the meantime this content is covered in section 4.2 (page 117) and 4.3 (page 119) in the textbook.#
 
 // Mention that fields look like global variables, which we know are evil. These are instance variables
 
 
-=== Instantiating Objects
+=== Instantiating and Using Objects
+#This section is not finished, but in the meantime this content is covered in section 4.4 (page 124) and 4.5 (page 127) in the textbook.#
 
 
-=== Encapsulation and Object Methods
-
+// At this point, students can complete lab assignments in Canvas. The rest of this content is needed for the programming project.
 
 === Constructors
+#This section is not finished, but in the meantime this content is covered in section 4.6 (page 130) in the textbook.#
 
 
 
