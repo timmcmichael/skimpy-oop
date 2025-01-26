@@ -103,3 +103,6 @@ include::chapter-9-inheritance/content.adoc[]
 include::chapter-10-swing/content.adoc[]
 
 include::back-matter/content.adoc[]
+
+// TODO: Canvas - update overview competencies to match book/videos
+// TODO: Canvas - When finished, Update required textbook to recommended; update Module Overview references to match.
