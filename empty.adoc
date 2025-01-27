@@ -14,6 +14,21 @@ endif::[]
 ''''
 
 
+.Example: Class Diagram
+[plantuml, format=svg]
+----
+@startuml
+skinparam classAttributeIconSize 0
+class Car {
+  - make:String
+  - model:String
+  +void start()
+  +void stop()
+}
+@enduml
+----
+
+
 
 .Time To Watch!
 ****
