@@ -120,7 +120,7 @@ And that's what we're here to learn.
 
 === Defining and Using a Class
 
-#This section is not finished, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.#
+#This section is not quite finished, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.#
 
 We'll look at a program to keep rudimentary weather records; for a single day's weather data, we'll have a class called `WeatherRecord`.
 
@@ -189,15 +189,143 @@ In our original class diagram, we indicated that the fields were private by usin
 
 image::WeatherRecordDiagram.png["Class diagram for the `WeatherRecord` class"]
 
-You might remember from https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope[the section on variable scope in Chapter 0011] that using global variables is terrible, and every time we create a global variable, 
+image::SadPuppy.png["Sad puppy", width=200, float=right] 
+
+You might remember from https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope[the section on variable scope in Chapter 0011] that using global variables is terrible, and every time we create a global variable, a puppy loses one of its toys. 
+And these fields look an awful lot like global variables.
+But fields in a class are *not* global variables; they're *instance* variables, and they're a good thing.
+The fields are *encapsulated*, so they can only be accessed and changed by the methods of the class--which is a good thing.
+And the fields are unique to each object, so we can have multiple objects with different values for the fields--which is also a good thing.
+And so no puppies toys will be harmed as long as we use *private* fields correctly.
 
 
 
+==== Methods
 
+#This subsection is coming next!#
 
-// Mention that fields look like global variables, which we know are evil. These are instance variables
+Ensuring that our fields are `private` is the first step in encapsulating our class, but it's not the only step.
+We also need to create methods that can access and change the fields--otherwise, the fields are useless.
+So far, our methods have included the keyword `static`; we'll learn more about that shortly, but when we make methods for an OOP class, we'll leave off that `static` keyword.
+These _nonstatic_ methods are called *instance methods*, and they are otherwise very similar to the `static` methods we've been using.
 
+Though there are exceptions, most of these instance methods will be `public`, so they can be accessed from other classes.
+In broad terms, we can categorize instance methods into two types: *accessor* methods and *mutator* methods.
 
+===== Accessor Methods
+
+Accessor methods give access to the fields of the class, but they don't change the fields.
+Think of them as "read only" methods, and often all they do is return the value of a field.
+Java naming conventions specify that accessor methods should start with `get` and then the name of the field they access, formatted in camelCase. 
+Because of that convention, we also call these methods *getters*.
+
+.Example of an accessor method (or "getter")
+[source,java]
+----
+public int getHighTemperature() {
+        return highTemperature;
+    }
+----
+
+The return type of an accessor method is the same as the type of the field it accesses; in this case `highTemperature` is an `int`, so the return type of our getting is `int`.
+
+The whole point of a getter is to allow other classes to be able to read the value of a field.
+If other classes don't need to know the value, we just don't write a getter for that field.
+But read-only access usually does no harm, so often we'll have getters for all of our fields.
+
+.`WeatherRecord.java`. Getters added to the `WeatherRecord` class.
+[source,java]
+----
+public class WeatherRecord {
+   private String date;
+   private int highTemp;
+   private int avgTemp;
+
+   public String getDate() {
+      return date;
+   }
+
+   public int getHighTemp() {
+      return highTemp;
+   }
+
+   public int getAvgTemp() {
+      return avgTemp;
+   }
+   
+}
+----
+
+===== Mutator Methods
+
+Mutator methods change the fields of the class.
+Though they sometimes return a value, their primary purpose is to change the value of a field and they often have a `void` return type.
+As we're getting the hang of this OOP thing, we'll create a lot of mutator methods that are just *setters*--methods that set the value of a field.
+The naming convention for setters is to start with `set` and then the name of the field they change, formatted in camelCase; they usually have a void return type.
+
+[source,java]
+----
+public void setHighTemperature(int temp) {
+        highTemperature = temp;
+    }
+----
+
+The parameter of a setter is the same type as the field it changes; in this case `highTemperature` is an `int`, so the parameter of our setter is also an `int`.
+All this method does is accept a new value and assign it to the field.
+
+Choosing to write setters isn't quite as straightforward as with getters, where there's generally no harm in exposing read-only access to everything.
+But we really should only write setters for fields that we want to be able to change from outside the class.
+
+TIP: As a rule of thumb for beginners, create getters for all of your fields when you first write your class, and then add setters only as you need them. Because this is sometimes tricky for beginners to determine, I don't deduct points for writing unnecessary setters--but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
+
+If you're paaying attention to what we're doing here, you might be thinking that these setters really just give public access to the fields, which seems to go against the whole idea of encapsulation.
+That's true for now, but only because we don't know enough Java yet to do anything about it.
+As we learn more about Java, we'll be able to write more complex methods that can control *how* fields are changed--for example, by checking the new value to make sure it's valid and won't break anything.
+But for now, this is just another one of those frustrating rules that you just have to follow until you know enough to understand it.
+
+.`WeatherRecord.java`. Setters added to the `WeatherRecord` class, and comments identifying the parts.
+[source,java]
+----
+public class WeatherRecord {
+    // Fields
+    private String date;
+    private int highTemperature;
+    private double averageWindSpeed;
+    
+    // Getters
+    public String getDate() {
+        return date;
+    }
+
+    public int getHighTemperature() {
+        return highTemperature;
+    }
+
+    public double getAverageWindSpeed() {
+        return averageWindSpeed;
+    }
+
+    // Setters and Mutators
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public void setHighTemperature(int highTemperature) {
+        this.highTemperature = highTemperature;
+    }
+
+    public void setAverageWindSpeed(double averageWindSpeed) {
+        this.averageWindSpeed = averageWindSpeed;
+    }
+}
+----
+
+Sometimes mutator methods don't follow the exact pattern and purpose of setters (simply setting a field's value).
+For example, a method might perform a series of calculations and changes to multiple fields, or it might change a field based on the value of another field.
+These methods are still mutators, and we might even still refer to them as _setters_, but they don't always follow the `setFieldName` naming convention.
+
+==== Using the Class
+#This subsection, coming up!#
 
 // At this point, students can complete lab assignments in Canvas. The rest of this content is needed for the programming project.
 
