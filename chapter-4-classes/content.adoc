@@ -91,6 +91,13 @@ Your Canvas course includes access to *Lucid (Whiteboard)*, which is a free onli
 Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
 Diagrams are also useful for sharing information about a class for other programmers who might need to use it.
 
+Classes in and of themselves can't really be used in a program; they're just the blueprints for objects.
+To use a class, we create an object--or _instance_--of the class, which is a specific version of the class with its own attributes and behaviors.
+A recipe analogy also works here: a class is like a recipe for a cake, and an object is a specific cake made from that recipe.
+One class can be used to make as many instances as we need, which is part of what makes OOP so powerful.
+
+In our Pac-Man example, we could create one Ghost class and use it to create all four Ghost objects we'll need in the game.
+
 === Encapsulation
 
 Object-oriented programming is all about creating objects that can interact with each other.
@@ -111,15 +118,85 @@ But it's a best practice--and an important one--so we will encapsulate all of ou
 In fact, I would argue that if you don't encapsulate your classes, you're not really doing object-oriented programming. 
 And that's what we're here to learn.
 
-=== Defining a Class
+=== Defining and Using a Class
 
-#This section is not finished, but in the meantime this content is covered in section 4.2 (page 117) and 4.3 (page 119) in the textbook.#
+#This section is not finished, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.#
+
+We'll look at a program to keep rudimentary weather records; for a single day's weather data, we'll have a class called `WeatherRecord`.
+
+.Class diagram for the `WeatherRecord` class
+[plantuml, target="WeatherRecordDiagram", format=png]
+----
+@startuml
+skinparam classAttributeIconSize 0
+class WeatherRecord {
+   -date:String
+   -highTemp:int
+   -avgWindspeed:int
+   +setDate(String):void
+   +setHighTemp(int):void
+   +setAvgWindspeed(int):void
+   +displayData():void
+}
+@enduml
+----
+
+To implement this class in code, we'll start with a class header. The class header always follows the same pattern: an *access modifier*, the keyword `class`, and the name of the class.
+The class header is followed by a code block, enclosed in curly braces.
+
+.`WeatherRecord.java`. A class header and code block. 
+[source,java]
+----
+public class WeatherRecord {
+
+   // class code goes here
+
+}
+----
+
+Access modifier:: The `public` keyword means that the class can be accessed from any other class. Though this is technically optional, you should always use `public` for now.
+`class` keyword:: The keyword that tells Java we're defining a class. It's required. We'll eventually be able to create different kinds of classes and OOP structures, but for now we're just creating regular classes.
+*Class name* (or _identifier_):: The name of the class, which should be a noun that describes the object the class represents--and is singular, so there's no _s_ at the end. The identifier should start with a capital, with the first letter of each word capitalized (like `WeatherRecord`). This is similar to the _camelCase_ naming convention we've been using for variables and methods; it's called _PascalCase_.
+
+The class code block is where we define the different components that make up the class, which we call the *class members*. 
+To begin with, we'll focus on two types of class members: *fields* and *methods*.
+
+==== Fields
+
+Fields are the implementation of the attributes of the class.
+The are also known as *instance variables* because they similar to the variables we've been using in our programs, but their scope is the object created from the class, not the method where they're defined.
+A field is unique to the object; if we make two objects from our `WeatherRecord` class, each object will have its own date, high temperature, and average temperature.
+If we change the hig temperature for one object, it won't affect the high temperature for the other object.
+
+Fields are declared like our other variables, but they are encapsulated using the `private` access modifier.
+This means that the fields can only be accessed and changed by the methods of the class, not by other classes--which controls how the data is used and prevents accidental or invalid changes.
+
+WARNING: Since a class will compile and run even if we leave off the `private` access modifier, it's easy to forget to use it. But don't worry, I'll help you remember by taking huge points off your assignments if you don't make your fields `private`. As I mentioned, you're not really doing OOP if you don't encapsulate your fields, and we're learning OOP.
+
+Fields are declared at the top of the class using the same naming conventions we've been using for variables: a descriptive name formatted in camelCase.
+
+.`WeatherRecord.java`. Fields added to the `WeatherRecord` class.
+[source,java]
+----
+public class WeatherRecord {
+   private String date;
+   private int highTemp;
+   private int avgTemp;
+}
+----
+
+In our original class diagram, we indicated that the fields were private by using a `-` in front of the field name.
+
+image::WeatherRecordDiagram.png["Class diagram for the `WeatherRecord` class"]
+
+You might remember from https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope[the section on variable scope in Chapter 0011] that using global variables is terrible, and every time we create a global variable, 
+
+
+
+
 
 // Mention that fields look like global variables, which we know are evil. These are instance variables
 
-
-=== Instantiating and Using Objects
-#This section is not finished, but in the meantime this content is covered in section 4.4 (page 124) and 4.5 (page 127) in the textbook.#
 
 
 // At this point, students can complete lab assignments in Canvas. The rest of this content is needed for the programming project.
@@ -130,64 +207,6 @@ And that's what we're here to learn.
 === `static` Constants and Methods
 #This section is not finished, but in the meantime this content is covered in section 4.8 (page 139) in the textbook.#
 
-''''
-
-//// 
-Object-oriented programming (OOP) is a programming paradigm that uses "objects" to design applications and computer programs.  
-Objects are instances of classes, which can be thought of as blueprints for creating objects.  
-A class defines a set of properties and methods that are common to all objects of that type.  
-By using classes and objects, developers can create modular, reusable, and maintainable code.  
-
-Classes serve as templates for objects, encapsulating data for the object and methods to manipulate that data.  
-This encapsulation helps in bundling the data with the code that operates on it, thus promoting data hiding and abstraction.  
-For example, a class `Car` might have properties like `color`, `model`, and `year`, and methods like `startEngine()` and `stopEngine()`.  
-Each `Car` object created from this class will have its own set of these properties and methods.  
-
-Objects are the concrete instances of classes.  
-When a class is defined, no memory is allocated until an object of that class is created.  
-Each object can have different values for its properties, even though they share the same structure and behavior defined by their class.  
-This allows for the creation of multiple objects with similar characteristics but different states.  
-
-The use of classes and objects in OOP promotes code reusability.  
-Once a class is defined, it can be used to create multiple objects without rewriting the same code.  
-This makes it easier to manage and update code, as changes to the class definition automatically propagate to all objects instantiated from that class.  
-Additionally, OOP supports inheritance, where a new class can inherit properties and methods from an existing class, further enhancing code reuse and organization.  
-
-Overall, classes and objects are fundamental concepts in OOP that help in organizing complex software systems into manageable, modular components.  
-They provide a clear structure for modeling real-world entities and their interactions, making it easier to design, develop, and maintain software applications.  
-
-''''
-
-=== Examples of Classes for Beginners
-
-When you're starting out with object-oriented programming, it's helpful to work with classes that are easy to understand and relate to real-world objects. Here are some good examples:
-
-1. **Car Class**
-   - Attributes: color, model, year, speed
-   - Methods: startEngine(), stopEngine(), accelerate(), brake()
-
-2. **Person Class**
-   - Attributes: name, age, gender, height
-   - Methods: walk(), talk(), eat(), sleep()
-
-3. **Book Class**
-   - Attributes: title, author, ISBN, numberOfPages
-   - Methods: open(), close(), readPage(), bookmarkPage()
-
-4. **Dog Class**
-   - Attributes: breed, age, weight, name
-   - Methods: bark(), eat(), sleep(), fetch()
-
-5. **BankAccount Class**
-   - Attributes: accountNumber, accountHolder, balance
-   - Methods: deposit(), withdraw(), checkBalance()
-
-These examples help students understand how to define attributes and methods, and how to instantiate objects from classes. They also provide a foundation for more complex programming concepts as students progress.
-
-=== Defining a Class
-
-
-////
 
 
 // === Check Your Learning

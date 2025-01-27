@@ -435,6 +435,78 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
@@ -471,9 +543,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="_0100_classes_and_objects_chapter_4.html#_encapsulation">Encapsulation</a>
 </li>
-<li><a href="_0100_classes_and_objects_chapter_4.html#_defining_a_class">Defining a Class</a>
-</li>
-<li><a href="_0100_classes_and_objects_chapter_4.html#_instantiating_and_using_objects">Instantiating and Using Objects</a>
+<li><a href="_0100_classes_and_objects_chapter_4.html#_defining_and_using_a_class">Defining and Using a Class</a>
 </li>
 <li><a href="_0100_classes_and_objects_chapter_4.html#_constructors">Constructors</a>
 </li>
@@ -555,20 +625,22 @@ A class defines the <strong>attributes</strong> and <strong>behaviors</strong> o
 <p>In OOP, our planning for a program starts by deciding what objects&#8212;&#8203;and therefore, what classes&#8212;&#8203;we&#8217;ll need in order to implement the functionality we want.
 To help organize our thinking, we&#8217;ll use a tool called a <strong>class diagram</strong>, which gives a visual representation of the classes and their relationships in our program.
 The format programmers use for class diagrams is called UML (Unified Modeling Language).
-The UML standards are extensive, but we&#8217;ll be using a simplified version in this course.
-Consider a program that a restaurant might use to handle orders. A simple class to represent an order might look like this:</p>
+The UML standards are extensive, but we&#8217;ll be using a simplified version in this course.</p>
+</div>
+<div class="paragraph">
+<p>Consider a program that a restaurant might use to handle orders. A simple class to represent an order might look like this:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="chapter-4-classes/images/OrderDiagram.png" alt="OrderDiagram" width="191" height="216">
+<img src="chapter-4-classes/images/OrderDiagram.png" alt="OrderDiagram" width="186" height="216">
 </div>
 <div class="title">Figure 6. Example of a class diagram for a restaurant order</div>
 </div>
 <div class="paragraph">
 <p>The top section of the digram has the name of the class, which is <code>Order</code>.
-The next section is for the attributes of the class&#8212;&#8203;the information the class will store; this example has attributes for the server&#8217;s name, the table number, the items ordered, and the total price.
+The next section is for the attributes of the class&#8212;&#8203;the information the class will store. This example has attributes for the server&#8217;s name, the table number, the items ordered, and the total price.
 The bottom section is for the beahviors of the class, which are the actions the class can perform (or that we can do with the class).
-With an order, we might submit it to the kitchen, print a bill, or close the bill.</p>
+With an order, we might send it to the kitchen, print the bill, or close the bill.</p>
 </div>
 <div class="paragraph">
 <p>We&#8217;ll learn more about the symbols and conventions of UML as we go along, but for now the important part is that we can use class diagrams to help us plan our programs&#8212;&#8203;and to talk about OOP concepts without bogging down on code details.</p>
@@ -577,31 +649,40 @@ With an order, we might submit it to the kitchen, print a bill, or close the bil
 <div class="content">
 <div class="title">Interesting</div>
 <div class="paragraph">
-<p>Your Canvas course includes access to <strong>Lucid (Whiteboard)</strong>, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar, you&#8217;ll have access to the premium features for free.</p>
+<p>Your Canvas course includes access to <strong>Lucid (Whiteboard)</strong>, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar in Canvas, you&#8217;ll have access to the premium features for free.</p>
 </div>
 </div>
 </div>
 <div class="paragraph">
-<p>Many programs will have multiple classes, and diagramming those before we start coding helps find potential problems.
+<p>Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
 Diagrams are also useful for sharing information about a class for other programmers who might need to use it.</p>
+</div>
+<div class="paragraph">
+<p>Classes in and of themselves can&#8217;t really be used in a program; they&#8217;re just the blueprints for objects.
+To use a class, we create an object&#8212;&#8203;or <em>instance</em>--of the class, which is a specific version of the class with its own attributes and behaviors.
+A recipe analogy also works here: a class is like a recipe for a cake, and an object is a specific cake made from that recipe.
+One class can be used to make as many instances as we need, which is part of what makes OOP so powerful.</p>
+</div>
+<div class="paragraph">
+<p>In our Pac-Man example, we could create one Ghost class and use it to create all four Ghost objects we&#8217;ll need in the game.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_encapsulation">Encapsulation</h3>
 <div class="paragraph">
 <p>Object-oriented programming is all about creating objects that can interact with each other.
-Since the objects will be interacting, we need to think about how to keep them from disrupting each other in ways we don&#8217;t want.
-If we have an <code>Order</code> class in a program used by a restaurant, we don&#8217;t want some other class&#8212;&#8203;like to change the entree selection to something not on the menu, or to set the price to a negative numbeer, for example.</p>
+Since the objects will be interacting, we need to think about how to keep them from interfering with each other in ways we don&#8217;t want.
+If we have an <code>Order</code> class in a program used by a restaurant, we don&#8217;t want some other class to change attributes in a way that disrupts the program&#8212;&#8203;like changing the entree selection to something that&#8217;s not on the menu, or setting the price to a negative number, for example.</p>
 </div>
 <div class="paragraph">
 <p>To prevent this kind of tampering, whether it&#8217;s intention or accidental, OOP relies on a concept called <strong>encapsulation</strong>.
 Encapsulation of a class means that attributes are hidden from the outside world, and only the behaviors of the class can access and change them.
 As an analogy, consider the counter at a fast food restaurant. You can&#8217;t just reach over and grab a handful of fries; you have to ask the employee behind the counter to get them for you.
-In this analogy, "order food" is a behavior that gives you access to the fries, but only if you interact in the right way.</p>
+In this analogy, the food is encapsulated and you can only access it by using a behavior, like "order food".</p>
 </div>
 <div class="paragraph">
-<p>Another way to think of encapsulation is how we interacte with other people in social situations.
-When we encounter a stranger, we don&#8217;t automatically know their name and phone number; we have to ask them for that information.
+<p>Another way to think of encapsulation is the way we interacte with other people in social situations.
+When we encounter a stranger, they don&#8217;t automatically know our name and phone number; they have to ask us for that information.
 We&#8217;ve encapsulated our personal information, and we only share it when and how we choose to.</p>
 </div>
 <div class="paragraph">
@@ -612,15 +693,96 @@ And that&#8217;s what we&#8217;re here to learn.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_defining_a_class">Defining a Class</h3>
+<h3 id="_defining_and_using_a_class">Defining and Using a Class</h3>
 <div class="paragraph">
-<p><mark>This section is not finished, but in the meantime this content is covered in section 4.2 (page 117) and 4.3 (page 119) in the textbook.</mark></p>
+<p><mark>This section is not finished, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.</mark></p>
+</div>
+<div class="paragraph">
+<p>A class has to be defined before we can use it to create objects, and you&#8217;ve been defining classes each time you&#8217;ve created a program.</p>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll design a class for a program to keep rudimenrary daily weather records; for a single day&#8217;s weather data, we&#8217;ll create a class called <code>WeatherRecord</code>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-4-classes/images/WeatherRecordDiagram.png" alt="WeatherRecordDiagram" width="223" height="183">
+</div>
+<div class="title">Figure 7. Class diagram for the <code>WeatherRecord</code> class</div>
+</div>
+<div class="paragraph">
+<p>To implement this class in code, we&#8217;ll start with a class header. The class header always follows the same pattern: an <strong>access modifier</strong>, the keyword <code>class</code>, and the name of the class.
+The class header is followed by a code block, enclosed in curly braces.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>WeatherRecord.java</code>. A class header and code block.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+
+<span class="tok-w">   </span><span class="tok-c1">// class code goes here</span>
+
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_instantiating_and_using_objects">Instantiating and Using Objects</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Access modifier</dt>
+<dd>
+<p>The <code>public</code> keyword means that the class can be accessed from any other class. Though this is technically optional, you should always use <code>public</code> for now.</p>
+</dd>
+<dt class="hdlist1"><code>class</code> keyword</dt>
+<dd>
+<p>The keyword that tells Java we&#8217;re defining a class. It&#8217;s required. We&#8217;ll eventually be able to create different kinds of classes and OOP structures, but for now we&#8217;re just creating regular classes.</p>
+</dd>
+<dt class="hdlist1"><strong>Class name</strong> (or <em>identifier</em>)</dt>
+<dd>
+<p>The name of the class, which should be a noun that describes the object the class represents&#8212;&#8203;and is singular, so there&#8217;s no <em>s</em> at the end. The identifier should start with a capital, with the first letter of each word capitalized (like <code>WeatherRecord</code>). This is similar to the <em>camelCase</em> naming convention we&#8217;ve been using for variables and methods; it&#8217;s called <em>PascalCase</em>.</p>
+</dd>
+</dl>
+</div>
 <div class="paragraph">
-<p><mark>This section is not finished, but in the meantime this content is covered in section 4.4 (page 124) and 4.5 (page 127) in the textbook.</mark></p>
+<p>The class code block is where we define the different components that make up the class, which we call the <strong>class members</strong>.
+To begin with, we&#8217;ll focus on two types of class members: <strong>fields</strong> and <strong>methods</strong>.</p>
+</div>
+<div class="sect3">
+<h4 id="_fields">Fields</h4>
+<div class="paragraph">
+<p>Fields are the implementation of the attributes of the class.
+The are also known as <strong>instance variables</strong> because they similar to the variables we&#8217;ve been using in our programs, but their scope is the object created from the class, not the method where they&#8217;re defined.
+A field is unique to the object; if we make two objects from our <code>WeatherRecord</code> class, each object will have its own date, high temperature, and average temperature.
+If we change the hig temperature for one object, it won&#8217;t affect the high temperature for the other object.</p>
+</div>
+<div class="paragraph">
+<p>Fields are declared like our other variables, but they are encapsulated using the <code>private</code> access modifier.
+This means that the fields can only be accessed and changed by the methods of the class, not by other classes&#8212;&#8203;which controls how the data is used and prevents accidental or invalid changes.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Since a class will compile and run even if we leave off the <code>private</code> access modifier, it&#8217;s easy to forget to use it. But don&#8217;t worry, I&#8217;ll help you remember by taking huge points off your assignments if you don&#8217;t make your fields <code>private</code>. As I mentioned, you&#8217;re not really doing OOP if you don&#8217;t encapsulate your fields, and we&#8217;re learning OOP.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Fields are declared at the top of the class using the same naming conventions we&#8217;ve been using for variables: a descriptive name formatted in camelCase.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>WeatherRecord.java</code>. Fields added to the <code>WeatherRecord</code> class.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">avgTemp</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In our original class diagram, we indicated that the fields were private by using a <code>-</code> in front of the field name.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -634,7 +796,6 @@ And that&#8217;s what we&#8217;re here to learn.</p>
 <div class="paragraph">
 <p><mark>This section is not finished, but in the meantime this content is covered in section 4.8 (page 139) in the textbook.</mark></p>
 </div>
-<hr>
 </div>
 </div>
 </div>
