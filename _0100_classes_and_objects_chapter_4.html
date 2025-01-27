@@ -695,13 +695,10 @@ And that&#8217;s what we&#8217;re here to learn.</p>
 <div class="sect2">
 <h3 id="_defining_and_using_a_class">Defining and Using a Class</h3>
 <div class="paragraph">
-<p><mark>This section is not finished, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.</mark></p>
+<p><mark>This section is not quite finished, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.</mark></p>
 </div>
 <div class="paragraph">
-<p>A class has to be defined before we can use it to create objects, and you&#8217;ve been defining classes each time you&#8217;ve created a program.</p>
-</div>
-<div class="paragraph">
-<p>We&#8217;ll design a class for a program to keep rudimenrary daily weather records; for a single day&#8217;s weather data, we&#8217;ll create a class called <code>WeatherRecord</code>.</p>
+<p>We&#8217;ll look at a program to keep rudimentary weather records; for a single day&#8217;s weather data, we&#8217;ll have a class called <code>WeatherRecord</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -782,6 +779,178 @@ Since a class will compile and run even if we leave off the <code>private</code>
 </div>
 <div class="paragraph">
 <p>In our original class diagram, we indicated that the fields were private by using a <code>-</code> in front of the field name.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-4-classes/images/WeatherRecordDiagram.png" alt="Class diagram for the `WeatherRecord` class">
+</div>
+</div>
+<div class="imageblock right">
+<div class="content">
+<img src="chapter-4-classes/images/SadPuppy.png" alt="Sad puppy" width="200">
+</div>
+</div>
+<div class="paragraph">
+<p>You might remember from <a href="https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope">the section on variable scope in Chapter 0011</a> that using global variables is terrible, and every time we create a global variable, a puppy loses one of its toys.
+And these fields look an awful lot like global variables.
+But fields in a class are <strong>not</strong> global variables; they&#8217;re <strong>instance</strong> variables, and they&#8217;re a good thing.
+The fields are <strong>encapsulated</strong>, so they can only be accessed and changed by the methods of the class&#8212;&#8203;which is a good thing.
+And the fields are unique to each object, so we can have multiple objects with different values for the fields&#8212;&#8203;which is also a good thing.
+And so no puppies toys will be harmed as long as we use <strong>private</strong> fields correctly.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_methods">Methods</h4>
+<div class="paragraph">
+<p><mark>This subsection is coming next!</mark></p>
+</div>
+<div class="paragraph">
+<p>Ensuring that our fields are <code>private</code> is the first step in encapsulating our class, but it&#8217;s not the only step.
+We also need to create methods that can access and change the fields&#8212;&#8203;otherwise, the fields are useless.
+So far, our methods have included the keyword <code>static</code>; we&#8217;ll learn more about that shortly, but when we make methods for an OOP class, we&#8217;ll leave off that <code>static</code> keyword.
+These <em>nonstatic</em> methods are called <strong>instance methods</strong>, and they are otherwise very similar to the <code>static</code> methods we&#8217;ve been using.</p>
+</div>
+<div class="paragraph">
+<p>Though there are exceptions, most of these instance methods will be <code>public</code>, so they can be accessed from other classes.
+In broad terms, we can categorize instance methods into two types: <strong>accessor</strong> methods and <strong>mutator</strong> methods.</p>
+</div>
+<div class="sect4">
+<h5 id="_accessor_methods">Accessor Methods</h5>
+<div class="paragraph">
+<p>Accessor methods give access to the fields of the class, but they don&#8217;t change the fields.
+Think of them as "read only" methods, and often all they do is return the value of a field.
+Java naming conventions specify that accessor methods should start with <code>get</code> and then the name of the field they access, formatted in camelCase.
+Because of that convention, we also call these methods <strong>getters</strong>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of an accessor method (or "getter")</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getHighTemperature</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The return type of an accessor method is the same as the type of the field it accesses; in this case <code>highTemperature</code> is an <code>int</code>, so the return type of our getting is <code>int</code>.</p>
+</div>
+<div class="paragraph">
+<p>The whole point of a getter is to allow other classes to be able to read the value of a field.
+If other classes don&#8217;t need to know the value, we just don&#8217;t write a getter for that field.
+But read-only access usually does no harm, so often we&#8217;ll have getters for all of our fields.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>WeatherRecord.java</code>. Getters added to the <code>WeatherRecord</code> class.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">avgTemp</span><span class="tok-p">;</span>
+
+<span class="tok-w">   </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getDate</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">      </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-p">}</span>
+
+<span class="tok-w">   </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getHighTemp</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">      </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">highTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-p">}</span>
+
+<span class="tok-w">   </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getAvgTemp</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">      </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">avgTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_mutator_methods">Mutator Methods</h5>
+<div class="paragraph">
+<p>Mutator methods change the fields of the class.
+Though they sometimes return a value, their primary purpose is to change the value of a field and they often have a <code>void</code> return type.
+As we&#8217;re getting the hang of this OOP thing, we&#8217;ll create a lot of mutator methods that are just <strong>setters</strong>--methods that set the value of a field.
+The naming convention for setters is to start with <code>set</code> and then the name of the field they change, formatted in camelCase; they usually have a void return type.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setHighTemperature</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">temp</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">highTemperature</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">temp</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The parameter of a setter is the same type as the field it changes; in this case <code>highTemperature</code> is an <code>int</code>, so the parameter of our setter is also an <code>int</code>.
+All this method does is accept a new value and assign it to the field.</p>
+</div>
+<div class="paragraph">
+<p>Choosing to write setters isn&#8217;t quite as straightforward as with getters, where there&#8217;s generally no harm in exposing read-only access to everything.
+But we really should only write setters for fields that we want to be able to change from outside the class.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+As a rule of thumb for beginners, create getters for all of your fields when you first write your class, and then add setters only as you need them. Because this is sometimes tricky for beginners to determine, I don&#8217;t deduct points for writing unnecessary setters&#8212;&#8203;but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re paaying attention to what we&#8217;re doing here, you might be thinking that these setters really just give public access to the fields, which seems to go against the whole idea of encapsulation.
+That&#8217;s true for now, but only because we don&#8217;t know enough Java yet to do anything about it.
+As we learn more about Java, we&#8217;ll be able to write more complex methods that can control <strong>how</strong> fields are changed&#8212;&#8203;for example, by checking the new value to make sure it&#8217;s valid and won&#8217;t break anything.
+But for now, this is just another one of those frustrating rules that you just have to follow until you know enough to understand it.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>WeatherRecord.java</code>. Setters added to the <code>WeatherRecord</code> class, and comments identifying the parts.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-c1">// Fields</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
+
+<span class="tok-w">    </span><span class="tok-c1">// Getters</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getDate</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getHighTemperature</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">getAverageWindSpeed</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-c1">// Setters and Mutators</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setDate</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">date</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setHighTemperature</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setAverageWindSpeed</span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Sometimes mutator methods don&#8217;t follow the exact pattern and purpose of setters (simply setting a field&#8217;s value).
+For example, a method might perform a series of calculations and changes to multiple fields, or it might change a field based on the value of another field.
+These methods are still mutators, and we might even still refer to them as <em>setters</em>, but they don&#8217;t always follow the <code>setFieldName</code> naming convention.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_using_the_class">Using the Class</h4>
+<div class="paragraph">
+<p><mark>This subsection, coming up!</mark></p>
 </div>
 </div>
 </div>
