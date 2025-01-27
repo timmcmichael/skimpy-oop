@@ -10,7 +10,9 @@ endif::[]
 // TODO: Upload source files to GitHub archive
 
 === #Content coming soon!#
+// === #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
 
+// #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
 
 // TODO: Find wile e. coyote loops cartoon in Photos (marked as favorite)
 

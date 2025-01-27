@@ -435,6 +435,78 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
@@ -465,7 +537,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="_0100_classes_and_objects_chapter_4.html"><span class="toc-current">0100 - Classes and Objects (Chapter 4)</span></a>
 <ul class="sectlevel2">
-<li><a href="_0100_classes_and_objects_chapter_4.html#_content_coming_soon_in_the_meantime_these_topics_are_covered_in_chapter_4_of_the_textbooksee_canvas_for_details"><mark>Content coming soon! In the meantime, these topics are covered in Chapter 4 of the textbook&#8212;&#8203;see Canvas for details</mark></a>
+<li><a href="_0100_classes_and_objects_chapter_4.html#_content_for_this_module_is_under_construction_for_now_the_section_headers_below_direct_you_to_the_corresponding_chapter_in_our_required_textbook_so_that_you_dont_have_to_wait_for_me_to_finish"><mark>Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you don&#8217;t have to wait for me to finish.</mark></a>
+</li>
+<li><a href="_0100_classes_and_objects_chapter_4.html#_oop_basics">OOP Basics</a>
+</li>
+<li><a href="_0100_classes_and_objects_chapter_4.html#_encapsulation">Encapsulation</a>
+</li>
+<li><a href="_0100_classes_and_objects_chapter_4.html#_defining_and_using_a_class">Defining and Using a Class</a>
+</li>
+<li><a href="_0100_classes_and_objects_chapter_4.html#_constructors">Constructors</a>
+</li>
+<li><a href="_0100_classes_and_objects_chapter_4.html#_static_constants_and_methods"><code>static</code> Constants and Methods</a>
 </li>
 </ul>
 </li>
@@ -491,9 +573,397 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_0100_classes_and_objects_chapter_4">0100 - Classes and Objects (Chapter 4)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_content_coming_soon_in_the_meantime_these_topics_are_covered_in_chapter_4_of_the_textbooksee_canvas_for_details"><mark>Content coming soon! In the meantime, these topics are covered in Chapter 4 of the textbook&#8212;&#8203;see Canvas for details</mark></h3>
+<h3 id="_content_for_this_module_is_under_construction_for_now_the_section_headers_below_direct_you_to_the_corresponding_chapter_in_our_required_textbook_so_that_you_dont_have_to_wait_for_me_to_finish"><mark>Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you don&#8217;t have to wait for me to finish.</mark></h3>
 <div class="paragraph">
 <p><em>Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects" target="_blank" rel="noopener">GitHub</a>.</em></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_oop_basics">OOP Basics</h3>
+<div class="paragraph">
+<p><mark>This section is almost finished, but in the meantime you can instead read section 4.1 (page 115) in the textbook.</mark></p>
+</div>
+<div class="paragraph">
+<p>Until now, we have been organizing our programs into methods, which is a procedural programming approach.
+We&#8217;ve been thinking of a program as a collection of tasks that need to be performed in a specific order.
+There&#8217;s nothing wrong with this approach, but it can get cumbersome as a program grows in size and complexity&#8212;&#8203;and it isn&#8217;t always an intuitive way to plan our programs.</p>
+</div>
+<div class="paragraph">
+<p>Now we&#8217;re ready to start our transition to object-oriented programming (OOP), which lets us think about programs the way we think about the world around us.
+Instead of thinking about a program as a bunch of tasks, we can think of it as a bunch of objects that interact with each other.
+As an example, the old-school video game <a href="https://en.wikipedia.org/wiki/Pac-Man"><strong>Pac-Man</strong></a> has the main character (an object) moving around a maze (another object), and avoiding four ghosts (yep, four more objects).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-4-classes/images/pac-man.png" alt="Screen shot of Pac-Man gameplay" width="500">
+</div>
+<div class="title">Figure 5. Pac-Man arcade game, released in 1980 by Namco</div>
+</div>
+<div class="paragraph">
+<p>If we decide to create Pac-Man, we&#8217;ll still be using methods, but they won&#8217;t be the basic building blocks of our programs.
+Instead, we&#8217;ll be organizing our programs into <strong>classes</strong>, which are blueprints&#8212;&#8203;or recipes&#8212;&#8203;for creating <strong>objects</strong>.
+A class defines the <strong>attributes</strong> and <strong>behaviors</strong> of the objects&#8212;&#8203;and those are the variables and methods we&#8217;ll write to create our programs.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Intro to OOP: Classes and Objects</p>
+</div>
+<div class="paragraph">
+<p><mark>A new versions of this video is on the way. For now, you can use the older version.</mark></p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/wMaFcokumBs?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>In OOP, our planning for a program starts by deciding what objects&#8212;&#8203;and therefore, what classes&#8212;&#8203;we&#8217;ll need in order to implement the functionality we want.
+To help organize our thinking, we&#8217;ll use a tool called a <strong>class diagram</strong>, which gives a visual representation of the classes and their relationships in our program.
+The format programmers use for class diagrams is called UML (Unified Modeling Language).
+The UML standards are extensive, but we&#8217;ll be using a simplified version in this course.</p>
+</div>
+<div class="paragraph">
+<p>Consider a program that a restaurant might use to handle orders. A simple class to represent an order might look like this:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-4-classes/images/OrderDiagram.png" alt="OrderDiagram" width="186" height="216">
+</div>
+<div class="title">Figure 6. Example of a class diagram for a restaurant order</div>
+</div>
+<div class="paragraph">
+<p>The top section of the digram has the name of the class, which is <code>Order</code>.
+The next section is for the attributes of the class&#8212;&#8203;the information the class will store. This example has attributes for the server&#8217;s name, the table number, the items ordered, and the total price.
+The bottom section is for the beahviors of the class, which are the actions the class can perform (or that we can do with the class).
+With an order, we might send it to the kitchen, print the bill, or close the bill.</p>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll learn more about the symbols and conventions of UML as we go along, but for now the important part is that we can use class diagrams to help us plan our programs&#8212;&#8203;and to talk about OOP concepts without bogging down on code details.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Interesting</div>
+<div class="paragraph">
+<p>Your Canvas course includes access to <strong>Lucid (Whiteboard)</strong>, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar in Canvas, you&#8217;ll have access to the premium features for free.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
+Diagrams are also useful for sharing information about a class for other programmers who might need to use it.</p>
+</div>
+<div class="paragraph">
+<p>Classes in and of themselves can&#8217;t really be used in a program; they&#8217;re just the blueprints for objects.
+To use a class, we create an object&#8212;&#8203;or <em>instance</em>--of the class, which is a specific version of the class with its own attributes and behaviors.
+A recipe analogy also works here: a class is like a recipe for a cake, and an object is a specific cake made from that recipe.
+One class can be used to make as many instances as we need, which is part of what makes OOP so powerful.</p>
+</div>
+<div class="paragraph">
+<p>In our Pac-Man example, we could create one Ghost class and use it to create all four Ghost objects we&#8217;ll need in the game.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_encapsulation">Encapsulation</h3>
+<div class="paragraph">
+<p>Object-oriented programming is all about creating objects that can interact with each other.
+Since the objects will be interacting, we need to think about how to keep them from interfering with each other in ways we don&#8217;t want.
+If we have an <code>Order</code> class in a program used by a restaurant, we don&#8217;t want some other class to change attributes in a way that disrupts the program&#8212;&#8203;like changing the entree selection to something that&#8217;s not on the menu, or setting the price to a negative number, for example.</p>
+</div>
+<div class="paragraph">
+<p>To prevent this kind of tampering, whether it&#8217;s intention or accidental, OOP relies on a concept called <strong>encapsulation</strong>.
+Encapsulation of a class means that attributes are hidden from the outside world, and only the behaviors of the class can access and change them.
+As an analogy, consider the counter at a fast food restaurant. You can&#8217;t just reach over and grab a handful of fries; you have to ask the employee behind the counter to get them for you.
+In this analogy, the food is encapsulated and you can only access it by using a behavior, like "order food".</p>
+</div>
+<div class="paragraph">
+<p>Another way to think of encapsulation is the way we interacte with other people in social situations.
+When we encounter a stranger, they don&#8217;t automatically know our name and phone number; they have to ask us for that information.
+We&#8217;ve encapsulated our personal information, and we only share it when and how we choose to.</p>
+</div>
+<div class="paragraph">
+<p>In Java, encapsulation is not a strict requirement, and our code will still work if we don&#8217;t use it.
+But it&#8217;s a best practice&#8212;&#8203;and an important one&#8212;&#8203;so we will encapsulate all of our classes in this course.
+In fact, I would argue that if you don&#8217;t encapsulate your classes, you&#8217;re not really doing object-oriented programming.
+And that&#8217;s what we&#8217;re here to learn.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_defining_and_using_a_class">Defining and Using a Class</h3>
+<div class="paragraph">
+<p><mark>This section is not quite finished, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.</mark></p>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll look at a program to keep rudimentary weather records; for a single day&#8217;s weather data, we&#8217;ll have a class called <code>WeatherRecord</code>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-4-classes/images/WeatherRecordDiagram.png" alt="WeatherRecordDiagram" width="223" height="183">
+</div>
+<div class="title">Figure 7. Class diagram for the <code>WeatherRecord</code> class</div>
+</div>
+<div class="paragraph">
+<p>To implement this class in code, we&#8217;ll start with a class header. The class header always follows the same pattern: an <strong>access modifier</strong>, the keyword <code>class</code>, and the name of the class.
+The class header is followed by a code block, enclosed in curly braces.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>WeatherRecord.java</code>. A class header and code block.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+
+<span class="tok-w">   </span><span class="tok-c1">// class code goes here</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Access modifier</dt>
+<dd>
+<p>The <code>public</code> keyword means that the class can be accessed from any other class. Though this is technically optional, you should always use <code>public</code> for now.</p>
+</dd>
+<dt class="hdlist1"><code>class</code> keyword</dt>
+<dd>
+<p>The keyword that tells Java we&#8217;re defining a class. It&#8217;s required. We&#8217;ll eventually be able to create different kinds of classes and OOP structures, but for now we&#8217;re just creating regular classes.</p>
+</dd>
+<dt class="hdlist1"><strong>Class name</strong> (or <em>identifier</em>)</dt>
+<dd>
+<p>The name of the class, which should be a noun that describes the object the class represents&#8212;&#8203;and is singular, so there&#8217;s no <em>s</em> at the end. The identifier should start with a capital, with the first letter of each word capitalized (like <code>WeatherRecord</code>). This is similar to the <em>camelCase</em> naming convention we&#8217;ve been using for variables and methods; it&#8217;s called <em>PascalCase</em>.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>The class code block is where we define the different components that make up the class, which we call the <strong>class members</strong>.
+To begin with, we&#8217;ll focus on two types of class members: <strong>fields</strong> and <strong>methods</strong>.</p>
+</div>
+<div class="sect3">
+<h4 id="_fields">Fields</h4>
+<div class="paragraph">
+<p>Fields are the implementation of the attributes of the class.
+The are also known as <strong>instance variables</strong> because they similar to the variables we&#8217;ve been using in our programs, but their scope is the object created from the class, not the method where they&#8217;re defined.
+A field is unique to the object; if we make two objects from our <code>WeatherRecord</code> class, each object will have its own date, high temperature, and average temperature.
+If we change the hig temperature for one object, it won&#8217;t affect the high temperature for the other object.</p>
+</div>
+<div class="paragraph">
+<p>Fields are declared like our other variables, but they are encapsulated using the <code>private</code> access modifier.
+This means that the fields can only be accessed and changed by the methods of the class, not by other classes&#8212;&#8203;which controls how the data is used and prevents accidental or invalid changes.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Since a class will compile and run even if we leave off the <code>private</code> access modifier, it&#8217;s easy to forget to use it. But don&#8217;t worry, I&#8217;ll help you remember by taking huge points off your assignments if you don&#8217;t make your fields <code>private</code>. As I mentioned, you&#8217;re not really doing OOP if you don&#8217;t encapsulate your fields, and we&#8217;re learning OOP.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Fields are declared at the top of the class using the same naming conventions we&#8217;ve been using for variables: a descriptive name formatted in camelCase.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>WeatherRecord.java</code>. Fields added to the <code>WeatherRecord</code> class.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">avgTemp</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In our original class diagram, we indicated that the fields were private by using a <code>-</code> in front of the field name.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-4-classes/images/WeatherRecordDiagram.png" alt="Class diagram for the `WeatherRecord` class">
+</div>
+</div>
+<div class="imageblock right">
+<div class="content">
+<img src="chapter-4-classes/images/SadPuppy.png" alt="Sad puppy" width="200">
+</div>
+</div>
+<div class="paragraph">
+<p>You might remember from <a href="https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope">the section on variable scope in Chapter 0011</a> that using global variables is terrible, and every time we create a global variable, a puppy loses one of its toys.
+And these fields look an awful lot like global variables.
+But fields in a class are <strong>not</strong> global variables; they&#8217;re <strong>instance</strong> variables, and they&#8217;re a good thing.
+The fields are <strong>encapsulated</strong>, so they can only be accessed and changed by the methods of the class&#8212;&#8203;which is a good thing.
+And the fields are unique to each object, so we can have multiple objects with different values for the fields&#8212;&#8203;which is also a good thing.
+And so no puppies toys will be harmed as long as we use <strong>private</strong> fields correctly.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_methods">Methods</h4>
+<div class="paragraph">
+<p><mark>This subsection is coming next!</mark></p>
+</div>
+<div class="paragraph">
+<p>Ensuring that our fields are <code>private</code> is the first step in encapsulating our class, but it&#8217;s not the only step.
+We also need to create methods that can access and change the fields&#8212;&#8203;otherwise, the fields are useless.
+So far, our methods have included the keyword <code>static</code>; we&#8217;ll learn more about that shortly, but when we make methods for an OOP class, we&#8217;ll leave off that <code>static</code> keyword.
+These <em>nonstatic</em> methods are called <strong>instance methods</strong>, and they are otherwise very similar to the <code>static</code> methods we&#8217;ve been using.</p>
+</div>
+<div class="paragraph">
+<p>Though there are exceptions, most of these instance methods will be <code>public</code>, so they can be accessed from other classes.
+In broad terms, we can categorize instance methods into two types: <strong>accessor</strong> methods and <strong>mutator</strong> methods.</p>
+</div>
+<div class="sect4">
+<h5 id="_accessor_methods">Accessor Methods</h5>
+<div class="paragraph">
+<p>Accessor methods give access to the fields of the class, but they don&#8217;t change the fields.
+Think of them as "read only" methods, and often all they do is return the value of a field.
+Java naming conventions specify that accessor methods should start with <code>get</code> and then the name of the field they access, formatted in camelCase.
+Because of that convention, we also call these methods <strong>getters</strong>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of an accessor method (or "getter")</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getHighTemperature</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The return type of an accessor method is the same as the type of the field it accesses; in this case <code>highTemperature</code> is an <code>int</code>, so the return type of our getting is <code>int</code>.</p>
+</div>
+<div class="paragraph">
+<p>The whole point of a getter is to allow other classes to be able to read the value of a field.
+If other classes don&#8217;t need to know the value, we just don&#8217;t write a getter for that field.
+But read-only access usually does no harm, so often we&#8217;ll have getters for all of our fields.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>WeatherRecord.java</code>. Getters added to the <code>WeatherRecord</code> class.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">avgTemp</span><span class="tok-p">;</span>
+
+<span class="tok-w">   </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getDate</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">      </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-p">}</span>
+
+<span class="tok-w">   </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getHighTemp</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">      </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">highTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-p">}</span>
+
+<span class="tok-w">   </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getAvgTemp</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">      </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">avgTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_mutator_methods">Mutator Methods</h5>
+<div class="paragraph">
+<p>Mutator methods change the fields of the class.
+Though they sometimes return a value, their primary purpose is to change the value of a field and they often have a <code>void</code> return type.
+As we&#8217;re getting the hang of this OOP thing, we&#8217;ll create a lot of mutator methods that are just <strong>setters</strong>--methods that set the value of a field.
+The naming convention for setters is to start with <code>set</code> and then the name of the field they change, formatted in camelCase; they usually have a void return type.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setHighTemperature</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">temp</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">highTemperature</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">temp</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The parameter of a setter is the same type as the field it changes; in this case <code>highTemperature</code> is an <code>int</code>, so the parameter of our setter is also an <code>int</code>.
+All this method does is accept a new value and assign it to the field.</p>
+</div>
+<div class="paragraph">
+<p>Choosing to write setters isn&#8217;t quite as straightforward as with getters, where there&#8217;s generally no harm in exposing read-only access to everything.
+But we really should only write setters for fields that we want to be able to change from outside the class.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+As a rule of thumb for beginners, create getters for all of your fields when you first write your class, and then add setters only as you need them. Because this is sometimes tricky for beginners to determine, I don&#8217;t deduct points for writing unnecessary setters&#8212;&#8203;but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re paaying attention to what we&#8217;re doing here, you might be thinking that these setters really just give public access to the fields, which seems to go against the whole idea of encapsulation.
+That&#8217;s true for now, but only because we don&#8217;t know enough Java yet to do anything about it.
+As we learn more about Java, we&#8217;ll be able to write more complex methods that can control <strong>how</strong> fields are changed&#8212;&#8203;for example, by checking the new value to make sure it&#8217;s valid and won&#8217;t break anything.
+But for now, this is just another one of those frustrating rules that you just have to follow until you know enough to understand it.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>WeatherRecord.java</code>. Setters added to the <code>WeatherRecord</code> class, and comments identifying the parts.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-c1">// Fields</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
+
+<span class="tok-w">    </span><span class="tok-c1">// Getters</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getDate</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getHighTemperature</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">getAverageWindSpeed</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-c1">// Setters and Mutators</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setDate</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">date</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setHighTemperature</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setAverageWindSpeed</span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Sometimes mutator methods don&#8217;t follow the exact pattern and purpose of setters (simply setting a field&#8217;s value).
+For example, a method might perform a series of calculations and changes to multiple fields, or it might change a field based on the value of another field.
+These methods are still mutators, and we might even still refer to them as <em>setters</em>, but they don&#8217;t always follow the <code>setFieldName</code> naming convention.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_using_the_class">Using the Class</h4>
+<div class="paragraph">
+<p><mark>This subsection, coming up!</mark></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_constructors">Constructors</h3>
+<div class="paragraph">
+<p><mark>This section is not finished, but in the meantime this content is covered in section 4.6 (page 130) in the textbook.</mark></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_static_constants_and_methods"><code>static</code> Constants and Methods</h3>
+<div class="paragraph">
+<p><mark>This section is not finished, but in the meantime this content is covered in section 4.8 (page 139) in the textbook.</mark></p>
 </div>
 </div>
 </div>
@@ -504,7 +974,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-24 13:31:05 -0700
+Last updated 2025-01-26 14:48:24 -0700
 </div>
 </div>
 </body>
