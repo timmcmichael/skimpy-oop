@@ -9,6 +9,11 @@ endif::[]
 == 0101 - Decisions (Chapter 5)
 
 === #Content coming soon!#
+
+
+// Example: two buttons on a food scale. On/Zero/Off button and switch between oz and grams. Multifunction button could be written a couple different ways (logical operators or nested if statements)
+
+
 // === #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
 
 // TODO: Upload source files to GitHub archive
