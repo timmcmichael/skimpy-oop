@@ -44,9 +44,9 @@ A class defines the *attributes* and *behaviors* of the objects--and those are t
 Intro to OOP: Classes and Objects 
 
 // https://youtu.be/Hnzm4sVsIAI
-video::wMaFcokumBs[youtube]
+// video::wMaFcokumBs[youtube]
 
-// video::Hnzm4sVsIAI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::Hnzm4sVsIAI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 ****
 
 In OOP, our planning for a program starts by deciding what objects--and therefore, what classes--we'll need in order to implement the functionality we want.
