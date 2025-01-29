@@ -8,6 +8,7 @@
 :source-highlighter: pygments
 :multipage-level: 1
 
+// TODO: Add link to feedback form in each chapter (and in frontal matter)
 
 [preface]
 == Skimpy Preface: An Excuse for the Inadequacies Within
