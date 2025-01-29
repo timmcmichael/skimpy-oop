@@ -79,10 +79,7 @@ With an order, we might send it to the kitchen, print the bill, or close the bil
 
 We'll learn more about the symbols and conventions of UML as we go along, but for now the important part is that we can use class diagrams to help us plan our programs--and to talk about OOP concepts without bogging down on code details.
 
-.Interesting!
-****
-Your Canvas course includes access to *Lucid (Whiteboard)*, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar in Canvas, you'll have access to the premium features for free.
-****
+NOTE: Your Canvas course includes access to *Lucid (Whiteboard)*, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar in Canvas, you'll have access to the premium features for free.
 
 Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
 Diagrams are also useful for sharing information about a class for other programmers who might need to use it.
@@ -408,8 +405,8 @@ My examples always demonstrate this _separation of concerns_, so you'll have ple
 
 .Interesting!
 ****
-I asked an AI platform to give me an image of an angry mob with pitchforks and torches, and the AI spit out https://github.com/timmcmichael/skimpy-oop/blob/5c16f73bd0e71a33b94727618d3097f503eb27a6/chapter-4-classes/images/creepy_mob.png?raw=true[nightmare fuel].
-I decided it was too creepy to display in the text. If a mob like that comes for me, I'll let them put `print()` statements wherever they want!
+I asked an AI platform to give me an image of an angry mob with pitchforks and torches (coming after me because I make them separate their input and output), and the AI spit out this https://github.com/timmcmichael/skimpy-oop/blob/5c16f73bd0e71a33b94727618d3097f503eb27a6/chapter-4-classes/images/creepy_mob.png?raw=true[nightmare fuel^].
+I decided it was too creepy to display in the text, but the crime against nature should be preserved for posterity. If a mob like that comes for me, I'll let them put `print()` statements wherever they want!
 ****
 
 Why can't we put input/output in our object classes?
@@ -423,10 +420,13 @@ Sorry, I can't do much better than that for now.
 .`WeatherRecordDemo.java`. A driver class to demonstrate the `WeatherRecord` class.
 [source,java]
 ----
-public static void main(String[] args) {
+public class WeatherRecordDemo {
+    public static void main(String[] args) {
+        // Instantiate two objects
         WeatherRecord day1 = new WeatherRecord();
         WeatherRecord day2 = new WeatherRecord();
 
+        // Set field values for both instances
         day1.setDate("2024-10-01");
         day1.setHighTemperature(87);
         day1.setAverageWindSpeed(1.5);
@@ -435,6 +435,7 @@ public static void main(String[] args) {
         day2.setHighTemperature(75);
         day2.setAverageWindSpeed(8.25);
 
+        // Output field values for both instances
         System.out.println("Date: " + day1.getDate());
         System.out.println("High Temperature: " + day1.getHighTemperature());
         System.out.println("Average Wind Speed: " + day1.getAverageWindSpeed());
@@ -445,6 +446,7 @@ public static void main(String[] args) {
         System.out.println("High Temperature: " + day2.getHighTemperature());
         System.out.println("Average Wind Speed: " + day2.getAverageWindSpeed());
     }
+}
 ----
 
 The driver class above creates two instances of the `WeatherRecord` class, uses each setter, then outputs the return from each getter.

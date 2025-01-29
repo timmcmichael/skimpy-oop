@@ -639,13 +639,17 @@ With an order, we might send it to the kitchen, print the bill, or close the bil
 <div class="paragraph">
 <p>We&#8217;ll learn more about the symbols and conventions of UML as we go along, but for now the important part is that we can use class diagrams to help us plan our programs&#8212;&#8203;and to talk about OOP concepts without bogging down on code details.</p>
 </div>
-<div class="sidebarblock">
-<div class="content">
-<div class="title">Interesting!</div>
-<div class="paragraph">
-<p>Your Canvas course includes access to <strong>Lucid (Whiteboard)</strong>, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar in Canvas, you&#8217;ll have access to the premium features for free.</p>
-</div>
-</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Your Canvas course includes access to <strong>Lucid (Whiteboard)</strong>, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar in Canvas, you&#8217;ll have access to the premium features for free.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
@@ -1060,8 +1064,8 @@ My examples always demonstrate this <em>separation of concerns</em>, so you&#821
 <div class="content">
 <div class="title">Interesting!</div>
 <div class="paragraph">
-<p>I asked an AI platform to give me an image of an angry mob with pitchforks and torches, and the AI spit out <a href="https://github.com/timmcmichael/skimpy-oop/blob/5c16f73bd0e71a33b94727618d3097f503eb27a6/chapter-4-classes/images/creepy_mob.png?raw=true">nightmare fuel</a>.
-I decided it was too creepy to display in the text. If a mob like that comes for me, I&#8217;ll let them put <code>print()</code> statements wherever they want!</p>
+<p>I asked an AI platform to give me an image of an angry mob with pitchforks and torches (coming after me because I make them separate their input and output), and the AI spit out this <a href="https://github.com/timmcmichael/skimpy-oop/blob/5c16f73bd0e71a33b94727618d3097f503eb27a6/chapter-4-classes/images/creepy_mob.png?raw=true" target="_blank" rel="noopener">nightmare fuel</a>.
+I decided it was too creepy to display in the text, but the crime against nature should be preserved for posterity. If a mob like that comes for me, I&#8217;ll let them put <code>print()</code> statements wherever they want!</p>
 </div>
 </div>
 </div>
@@ -1078,10 +1082,13 @@ Sorry, I can&#8217;t do much better than that for now.</p>
 <div class="listingblock">
 <div class="title"><code>WeatherRecordDemo.java</code>. A driver class to demonstrate the <code>WeatherRecord</code> class.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecordDemo</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-c1">// Instantiate two objects</span>
 <span class="tok-w">        </span><span class="tok-n">WeatherRecord</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">WeatherRecord</span><span class="tok-p">();</span>
 <span class="tok-w">        </span><span class="tok-n">WeatherRecord</span><span class="tok-w"> </span><span class="tok-n">day2</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">WeatherRecord</span><span class="tok-p">();</span>
 
+<span class="tok-w">        </span><span class="tok-c1">// Set field values for both instances</span>
 <span class="tok-w">        </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">setDate</span><span class="tok-p">(</span><span class="tok-s">&quot;2024-10-01&quot;</span><span class="tok-p">);</span>
 <span class="tok-w">        </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">setHighTemperature</span><span class="tok-p">(</span><span class="tok-mi">87</span><span class="tok-p">);</span>
 <span class="tok-w">        </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">setAverageWindSpeed</span><span class="tok-p">(</span><span class="tok-mf">1.5</span><span class="tok-p">);</span>
@@ -1090,6 +1097,7 @@ Sorry, I can&#8217;t do much better than that for now.</p>
 <span class="tok-w">        </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">setHighTemperature</span><span class="tok-p">(</span><span class="tok-mi">75</span><span class="tok-p">);</span>
 <span class="tok-w">        </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">setAverageWindSpeed</span><span class="tok-p">(</span><span class="tok-mf">8.25</span><span class="tok-p">);</span>
 
+<span class="tok-w">        </span><span class="tok-c1">// Output field values for both instances</span>
 <span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Date: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">getDate</span><span class="tok-p">());</span>
 <span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;High Temperature: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">getHighTemperature</span><span class="tok-p">());</span>
 <span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Average Wind Speed: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">getAverageWindSpeed</span><span class="tok-p">());</span>
@@ -1099,7 +1107,8 @@ Sorry, I can&#8217;t do much better than that for now.</p>
 <span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Date: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">getDate</span><span class="tok-p">());</span>
 <span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;High Temperature: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">getHighTemperature</span><span class="tok-p">());</span>
 <span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Average Wind Speed: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">getAverageWindSpeed</span><span class="tok-p">());</span>
-<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1141,7 +1150,7 @@ In general, I ask students to create at least two instances of each class they a
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-28 21:22:26 -0700
+Last updated 2025-01-28 22:23:36 -0700
 </div>
 </div>
 </body>
