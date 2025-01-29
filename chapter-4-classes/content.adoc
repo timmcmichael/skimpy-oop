@@ -405,8 +405,8 @@ My examples always demonstrate this _separation of concerns_, so you'll have ple
 
 .Interesting!
 ****
-I asked an AI platform to give me an image of an angry mob with pitchforks and torches, and the AI spit out https://github.com/timmcmichael/skimpy-oop/blob/5c16f73bd0e71a33b94727618d3097f503eb27a6/chapter-4-classes/images/creepy_mob.png?raw=true[nightmare fuel].
-I decided it was too creepy to display in the text. If a mob like that comes for me, I'll let them put `print()` statements wherever they want!
+I asked an AI platform to give me an image of an angry mob with pitchforks and torches (coming after me because I make them separate their input and output), and the AI spit out this https://github.com/timmcmichael/skimpy-oop/blob/5c16f73bd0e71a33b94727618d3097f503eb27a6/chapter-4-classes/images/creepy_mob.png?raw=true[nightmare fuel^].
+I decided it was too creepy to display in the text, but the crime against nature should be preserved for posterity. If a mob like that comes for me, I'll let them put `print()` statements wherever they want!
 ****
 
 Why can't we put input/output in our object classes?
