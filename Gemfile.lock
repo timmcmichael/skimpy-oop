@@ -1,0 +1,25 @@
+GEM
+  specs:
+    asciidoctor (2.0.23)
+    asciidoctor-diagram (2.3.1)
+      asciidoctor (>= 1.5.7, < 3.x)
+      asciidoctor-diagram-ditaamini (~> 1.0)
+      asciidoctor-diagram-plantuml (~> 1.2021)
+      rexml
+    asciidoctor-diagram-batik (1.17)
+    asciidoctor-diagram-ditaamini (1.0.3)
+    asciidoctor-diagram-plantuml (1.2024.8)
+      asciidoctor-diagram-batik (~> 1.17)
+    asciidoctor-multipage (0.0.19)
+      asciidoctor (>= 2.0.11, < 2.1)
+    rexml (3.1.9.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  asciidoctor-diagram
+  asciidoctor-multipage
+
+BUNDLED WITH
+   1.17.2

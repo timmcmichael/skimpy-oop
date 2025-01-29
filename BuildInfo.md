@@ -12,4 +12,12 @@
 
 
  `sudo gem install pygments.rb`
- ~/.gem/ruby/2.6.0/bin/asciidoctor-multipage -r ~/.gem/ruby/2.6.0/gems/asciidoctor-diagram-2.3.1/lib/asciidoctor-diagram empty.adoc
+ ~/.gem/ruby/2.6.0/bin/asciidoctor-multipage -r ~/.gem/ruby/2.6.0/gems/asciidoctor-diagram-2.3.1/lib/asciidoctor-diagram empty.adocs
+
+ /Library/Ruby/Gems/2.6.0
+
+ /usr/local/bin/asciidoctor-multipage -r /Library/Ruby/Gems/2.6.0/gems/asciidoctor-diagram-2.3.1/asciidoctor-diagram index.adoc
+
+
+Desktop:
+/usr/local/bin/asciidoctor-multipage -r /Library/Ruby/Gems/2.6.0/gems/asciidoctor-diagram-2.3.1/lib/asciidoctor-diagram index.adoc
