@@ -44,7 +44,6 @@ A class defines the *attributes* and *behaviors* of the objects--and those are t
 Intro to OOP: Classes and Objects 
 
 // https://youtu.be/Hnzm4sVsIAI
-// video::wMaFcokumBs[youtube]
 
 video::Hnzm4sVsIAI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 ****
@@ -54,7 +53,7 @@ To help organize our thinking, we'll use a tool called a *class diagram*, which 
 The format programmers use for class diagrams is called UML (Unified Modeling Language). 
 The UML standards are extensive, but we'll be using a simplified version in this course. 
 
-Consider a program that a restaurant might use to handle orders. A simple class to represent an order might look like this:
+Consider a program to handle orders at a restaurant. A simple class to represent on person's order might look like this:
 
 .Example of a class diagram for a restaurant order
 [plantuml, target="OrderDiagram", format=png]
@@ -119,7 +118,7 @@ And that's what we're here to learn.
 
 === Defining and Using a Class
 
-#This section is not quite finished, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.#
+#This section is still pretty rough, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.#
 
 We'll look at a program to keep rudimentary weather records; for a single day's weather data, we'll have a class called `WeatherRecord`.
 
@@ -197,8 +196,6 @@ The fields are *encapsulated*, so they can only be accessed and changed by the m
 And the fields are unique to each object, so we can have multiple objects with different values for the fields--which is also a good thing.
 And so no puppies toys will be harmed as long as we use *private* fields correctly.
 
-
-
 ==== Methods
 
 #This subsection is coming next!#
@@ -209,6 +206,8 @@ So far, our methods have included the keyword `static`; we'll learn more about t
 These _nonstatic_ methods are called *instance methods*, and they are otherwise very similar to the `static` methods we've been using.
 
 Though there are exceptions, most of these instance methods will be `public`, so they can be accessed from other classes.
+Remember, the foundation of encapsulation is having `private` fields and public methods to to permit interactions with that data.
+
 In broad terms, we can categorize instance methods into two types: *accessor* methods and *mutator* methods.
 
 ===== Accessor Methods
@@ -216,7 +215,7 @@ In broad terms, we can categorize instance methods into two types: *accessor* me
 Accessor methods give access to the fields of the class, but they don't change the fields.
 Think of them as "read only" methods, and often all they do is return the value of a field.
 Java naming conventions specify that accessor methods should start with `get` and then the name of the field they access, formatted in camelCase. 
-Because of that convention, we also call these methods *getters*.
+Because of that convention, another name for accessors methods is *getters*.
 
 .Example of an accessor method (or "getter")
 [source,java]
@@ -228,8 +227,7 @@ public int getHighTemperature() {
 
 The return type of an accessor method is the same as the type of the field it accesses; in this case `highTemperature` is an `int`, so the return type of our getting is `int`.
 
-The whole point of a getter is to allow other classes to be able to read the value of a field.
-If other classes don't need to know the value, we just don't write a getter for that field.
+A getter allows other classes to be able to read the value of a field; if they don't need to know the value, we just don't write a getter for that field.
 But read-only access usually does no harm, so often we'll have getters for all of our fields.
 
 .`WeatherRecord.java`. Getters added to the `WeatherRecord` class.
@@ -324,7 +322,135 @@ For example, a method might perform a series of calculations and changes to mult
 These methods are still mutators, and we might even still refer to them as _setters_, but they don't always follow the `setFieldName` naming convention.
 
 ==== Using the Class
-#This subsection, coming up!#
+#This subsection, coming up! See section 4.4 in the book in the meantime.#
+
+As we've learned, defining a class establishes a blueprint; to make use of a class in a program, we need to use that blueprint to create an object. 
+We can as many objects from a class as we need, and each object is known as an *instance* of the class.
+And creating an instance is called *instantiating* a class.
+
+To create our first objects, we use the same two steps we've been using to create variables: a declaration statement and an assignment statement.
+The declaration is still a _data type_ and an _identifier, but in this case the data type is the name of the class:
+
+.Example of a declaration statement for an object.
+[source,java]
+----
+WeatherRecord day1;
+----
+
+This creates a variable called `day1` that will point to--or _reference_--the memory location where our object will be stored.
+The identifier follows the same rules we learned for primitive variables: a descriptive name typed in camelCase (with a lowercase first letter).
+In this case, the `day1` object is going to maintain the record for the first day of our weather tracking.
+
+The assignment statement works the same, but what we're assigning looks a lot different.
+We'll use the `new` keyword to allocate memory, and then we'll call a *constructor*.
+
+.Example of an assignment statement for a newly declared object.
+[source,java]
+----
+WeatherRecord day1;
+day1 = new WeatherRecord();
+----
+
+We're soon going to spend a lot of time learning about constructors, but here are the takeaways for now: the identifier is exactly the same as the class name, and it's followed by parentheses.
+
+NOTE: We've already learned that parentheses in Java *always* means we're referring to a method. A constructor is a special method called when instantiating an object.
+
+Just like with variables, we often combine those two statements into one line of code:
+
+`WeatherRecord day1 = new WeatherRecord();`
+
+Now that we have an object, we can call its instance methods using _dot notation_, which means we put the object name (*not* the class name!), followed by a dot, followed by the method call:
+
+.Instance method calls using dot notation.
+[source,java]
+----
+WeatherRecord day1 = new WeatherRecord();
+day1.setHighTemperature(87);
+System.out.println("High temperature on day 1:" + day1.getHighTemperature());
+----
+
+In this example, we're setting the `highTemperature` field of `day1` to 87 degrees, and then we're retrieving the high temperature and outputting the returned value.
+This is a good test of the _set_ and _get_ methods for the `highTemperature` field.
+
+It's easy for beginners to forget to use that dot notation.
+To see why it's necessary, consider the following example.
+
+.An instance method call using dot notation with multiple objects.
+[source,java]
+----
+WeatherRecord day1 = new WeatherRecord();
+WeatherRecord day2 = new WeatherRecord();
+
+day1.setHighTemperature(87);
+----
+
+If we left off the `day1.` part of the call, the compiler would not know which `setHighTemperature()` method to use, `day1` or `day2`.
+Even when we only have one instance, the compiler needs to know where to find that method, so the dot notation is required every time we call an instance method.
+
+===== Object Classes vs. Driver Classes
+
+Ok, time for another convention that seems only intended to be nitpicky and pointless, but is important and is expected on assignments in this course.
+OOP nerds value keeping parts of our programs compartmentalized, and that includes separating the class definition and the code that uses the class.
+A class definition goes in its own file, which must have a filename exactly match the name of the class (with _.java_ as an extension)--and that one's not a convention, that's a syntax rule for the compiler.
+A class we definte for use as object can be called an *object class* or a *user-defined class*. 
+
+The code that uses the _object class_ should be in its own file, and is often called a *driver class*.
+The driver class contains the `main()` method, which is the entry point for the program.
+A driver class actually goes by several different names. 
+Some people call it a _main class_ because, well, it's the class with the `main()` method; I don't hear that term a lot, but it is out there.
+I often use the terms _demo class_ or _test class_ because, as learners, we're often making a class just to try a specific concept or skill, and the only thing our program really does is show that the object class is working. 
+And in those cases, we often see "test" or "demo"; so a driver class for our `WeatherRecord` object class might be called `WeatherRecordDemo` or `TestWeatherRecord`, or something similar.
+
+The point here is that, if we've created an object class called `WeatherRecord`, we're not going to put our `main()` method in that same class/file.
+We're going to make a separate class--a driver, or demo class, or test class.
+I don't much care what term you use, as long as it's separate.
+
+Your pitchforks are already sharpened, but here's the part where you light your torches.
+*All of your input and output should be in the driver class.*
+That is, you generally can't have any `print()` or `println()` statements, any dialog popups (if you know how to use `JOptionPane` or similar), or any `Scanner` input calls in your object classes.
+My examples always demonstrate this _separation of concerns_, so you'll have plenty of examples of what I mean.
+
+.Interesting
+====
+I asked an AI platform to give me an image of an angry mob with pitchforks and torches, and the AI spit out link:images/creepy_mob.png[nightmare fuel].
+I decided it was too creepy to display in the text. If a mob like that comes for me, I'll let them put `print()` statements wherever they want!
+====
+
+Why can't we put input/output in our object classes?
+* To "decouple" the UI from the _business logic_ or guts of our program. This makes our code reusable in a variety of projects, such as web pages, mobile apps, and GUI applications--none of which are friendly to console input and output. Look up MVC and MVVM for all kinds of information about that.
+* To keep our code more readable by keeping the parts clearly identifiable.
+* Because I just don't care much about input and output. I care about the classes you create, so I want to look at (and grade) that work separately. If your input and output don't work but your object class looks good, you're still going to get a good grade--if I'm able to separate out those mistakes.
+
+Unfortunately, this is one of those things that boils down to, "because I said so" and "you'll thank me later."
+Sorry, I can't do much better than that for now.
+
+
+
+
+
+
+''''
+
+Here's an example of a driver class that uses the `WeatherRecord` class:
+
+.`WeatherRecordDriver.java`. A driver class that uses the `WeatherRecord` class.
+[source,java]
+----
+public class WeatherRecordDriver {
+    public static void main(String[] args) {
+        WeatherRecord record = new WeatherRecord();
+        record.setDate("2023-10-01");
+        record.setHighTemperature(75);
+        record.setAverageWindSpeed(10.5);
+
+        System.out.println("Date: " + record.getDate());
+        System.out.println("High Temperature: " + record.getHighTemperature());
+        System.out.println("Average Wind Speed: " + record.getAverageWindSpeed());
+    }
+}
+----
+
+
 
 // At this point, students can complete lab assignments in Canvas. The rest of this content is needed for the programming project.
 
