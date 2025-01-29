@@ -82,9 +82,9 @@ With an order, we might send it to the kitchen, print the bill, or close the bil
 We'll learn more about the symbols and conventions of UML as we go along, but for now the important part is that we can use class diagrams to help us plan our programs--and to talk about OOP concepts without bogging down on code details.
 
 .Interesting
-****
+====
 Your Canvas course includes access to *Lucid (Whiteboard)*, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar in Canvas, you'll have access to the premium features for free.
-****
+====
 
 Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
 Diagrams are also useful for sharing information about a class for other programmers who might need to use it.
