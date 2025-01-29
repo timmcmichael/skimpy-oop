@@ -56,10 +56,10 @@ Remember that a computer can execute commands super fast.
 Each command, or *instruction* (like a football play), is represented by a number--a binary number, since that's the number system the computer uses.
 The collection of these instructions the computer understands is called *machine language*.
 
-.Interesting
-====
+.Interesting!
+****
 Just like people in different cultures use different languages, different CPU types use different languages. There are lots of different machine languages out there.
-====
+****
 
 You could give the computer a set of instructions (aka, a program) if you just looked up the binary number for each instruction you wanted to use. 
 Of course, even a simple program requires a lot of instructions, so you're going to be looking up a *lot* of stuff.
@@ -243,10 +243,10 @@ In the same way, the next output statement will continue on the same line in the
 A `println()` statement works exactly the same way, but it advances the cursor to the next line when it's finished.
 Basically, it hits enter, and the next output statement will be on a new line.
 
-.Interesting
-====
+.Interesting!
+****
 println() works by outputting the text inside the parentheses and then outputting a special character called a _newline_. The newline isn't visible, but it moves the cursor to the next line.
-====
+****
 
 To understand the difference between `print()` and `println()`, consider this program.
 

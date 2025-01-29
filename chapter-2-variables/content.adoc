@@ -122,10 +122,10 @@ These different types exist because they use different amounts of memory. `byte`
 The impact of these different memory sizes (or memory *allocations*) is that the types can store values of different sizes.
 For example, a `byte` uses 8 bits of memory and can store a number between -128 and 127 (inclusive), while an `int` takes 32 bits and can store a value between -2,147,483,648 and 2,147,483,647 (inclusive).
 
-.Interesting
-====
+.Interesting!
+****
 This all goes back to binary numbers. An 8-bit number has 8 digits, and we use the first digit to specify whether the number is positive or negative. That leaves 7 digits, and we can make 128 different combinations of 1s and 0s in 7 digits: `0000000`, `0000001`, `0000002`, and so on, all the way up to `1111111`. Those 128 possibilities give us the `byte` range of -128 to 127 (keeping in mind that we do need one of those combinations to represent zero).
-====
+****
 
 The other floating-point data type in Java is called `float`. 
 It's called "single" in some programming languages, which helps understand where the name `double` comes from: `double` uses twice as much memory (64 bits) as a `float` or "single" (32 bits)--and therefore its range of values is twice as big. Be aware that to make a `float` number in Java, you have to add the letter F (in capital or lowercase form) at the end of the number.
@@ -257,10 +257,10 @@ There are a few different reasons to use constants in your code. For now:
 * Constants make code easier to maintain/update.
 * In some situations, constants are more efficient than variables.
 
-.Interesting
-====
+.Interesting!
+****
 The naming convention used for Java constants is called *snake case*. More specifically, since it's all caps, people refer to it as *screaming snake case*. Snake case with lowercase letters is the standard convention for variables in Python, among other languages.
-====
+****
 
 === Outputting Variable (and Constant) Values
 
