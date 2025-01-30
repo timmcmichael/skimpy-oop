@@ -32,6 +32,39 @@ This diagram now gives us a nice visual representation of our CellCustomer class
 
 To begin, we'll right-click and create a new file. The file name is exactly the same as the class name, with .java added onto the end.
 
+We'll start with a quick header block to identify the purpose of the class..
+
+And the first line of code is a class header. Our class should be public, and again the class name and file name have to be identical. Add a code block with a little space to work.
+
+We'll organize our code in same way as our class diagram, so we'll declare our fields right up at the top. Each one should be private, and I'm just looking at the class diagram to see what I have designed. <span style="background-color: #FFFFE0;">[inset image of diagram, fields highlighted]</span>
+
+Next up is our accessors, or getters. As a new programmer you should just get in the habit of making a getter for each field. And these just follow a basic pattern: It has to be public, because the point is to give access. The method's return type will be the same as the field's data type--so this is for the name field, which is a String. And the name is the work get plus the field name, so getName. And the parentheses will be empty, there are no parameters for getters.
+
+A basic getter has one line of code--return and the field. Now, I encourage the habit of using dot notation with all field references. I'm going to put this-dot-name. The `this` keyword referces to the current object. We don't have to put this-dot, it'll still work if we just put `name`. The idea here is to get us used to dot notation, which we'll need elsewhere. It's a good habit because we're going to see some situations where `this` is actually necessary. And also, it's just a good reminder that we're looking at an field rather than a regular local variable.
+
+All that said, there are plenty of coders who only use this-dot when it's necessary, so this isn't a convention that's universal.
+
+Okay, so that's it for a getter. Since I have four fields I'm going to have four getters, so I'll just use the same pattern to create the other three.
+
+The next group of methods on our class diagram is the set methods. Our set methods will get much more interesting as we learn more, but for now they are also going to follow a pattern. A set method has to be public. You should be making all of your fields private and your methods public. As usual, we'll eventually see some exceptions, but this is how we implement encapsulation--we're hiding the fields and giving access to them through public methods.
+
+So, public and then void. Setters do not return anything, their job is to set a value. The name is set plus the field, so in this case setName. And in order to set a value for the field, we need to know what value to set--and we need a parameter for that. The data type of the parameter matches the field, so for the name field it's a String. and the parameter name can be anything, but I'm going to use cName, which is short for customer name. I'm intentionally not calling it just name because I don't want to confuse it with my field--we we're going to come back to parameter names pretty soon.
+
+Like a getter, a setter has one line of code. It's going to be an assignment statement. I'm just setting the value of this.name to the parameter value--so, cName.
+
+So again, this is just a pattern and we'll repeat it for phoneNumber and monthlyData.
+
+[other two setters]
+
+Now, I'm going to go ahead and create setMonthlyData. [type that]. But before I move on, I'm going to stop and think. Next up with be the data that's remaining, but I'm not sure I really need a setter for that. When we set the monthly data amount, that can also just set the remaining data to the same value, right. I'm assuming we're using this method to initialize the data plan when the account is first created, so they won't have used any data yet. So instead of writing a whole other set method, I'm just going to have this method set both of those values.
+
+It's not really a problem if we were to make a separate setter for the remaining data, but I want to point out that we don't *always* need a setter for each field.
+
+
+
+
+
+
 
 
 
