@@ -158,8 +158,8 @@ Access modifier:: The `public` keyword means that the class can be accessed from
 `class` keyword:: The keyword that tells Java we're defining a class. It's required. We'll eventually be able to create different kinds of classes and OOP structures, but for now we're just creating regular classes.
 *Class name* (or _identifier_):: The name of the class, which should be a noun that describes the object the class represents--and is singular, so there's no _s_ at the end. The identifier should start with a capital, with the first letter of each word capitalized (like `WeatherRecord`). This is similar to the _camelCase_ naming convention we've been using for variables and methods; it's called _PascalCase_.
 
-The class code block is where we define the different components that make up the class, which we call the *class members*. 
-To begin with, we'll focus on two types of class members: *fields* and *methods*.
+The class code block is where we define the different components that make up the class, which we call the *instance members*. 
+To begin with, we'll focus on two types of instance members: *fields* and *methods*.
 
 ==== Fields
 
@@ -472,10 +472,10 @@ Coming soon!
 // * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
 ****
 
-// At this point, students can complete lab assignments in Canvas. The rest of this content is needed for the programming project.
+IMPORTANT: The Lab Assignments in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the Programming Project.
 
 === Constructors
-#This section is not finished, but in the meantime this content is covered in section 4.6 (page 130) in the textbook.#
+#This section is finished in rough-draft form but doesn't yet have a video (coming soon!). In the meantime this content is covered in section 4.6 (page 130) in the textbook.#
 
 When we instantiate a new object, the syntax includes a call to a method, immediately following the `new` keyword:
 
@@ -550,113 +550,69 @@ In this case, the parameter is a _local variable_ to the constructor, and it's _
 We can also https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_overloading_a_method[overload] constructors, which means we can have multiple constructors with different parameters--just like we can with any other method.
 That can include having a parameterless constructor and one or more constructors with parameters, or having multiple constructors with different numbers of parameters.
 
-.'WeatherRecord.java'. Updated to include constructor overloading.
-[source,java]
-----
-public class WeatherRecord {
-    // Constructors
-    public WeatherRecord() { 
-        date = "2025-01-01";
-        highTemperature = 0;
-        averageWindSpeed = 0.0;
-    }
+NOTE: To see a complete example of the `WeatherRecord` class with constructors, fields, and methods, as well as a driver class to deomnstrate it, visit the_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects[GitHub repository for this chapter^].
 
-    public WeatherRecord(String date) {
-        this.date = date;
-        this.highTemperature = 0;
-        this.averageWindSpeed = 0.0;
-    }
-
-    public WeatherRecord(String date, int highTemperature, double averageWindSpeed) {
-        this.date = date;
-        this.highTemperature = highTemperature;
-        this.averageWindSpeed = averageWindSpeed;
-    }
-
-    // Fields
-    private String date;
-    private int highTemperature;
-    private double averageWindSpeed;
-    
-    // Getters
-    public String getDate() {
-        return date;
-    }
-
-    public int getHighTemperature() {
-        return highTemperature;
-    }
-
-    public double getAverageWindSpeed() {
-        return averageWindSpeed;
-    }
-
-    // Setters and Mutators
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public void setHighTemperature(int highTemperature) {
-        this.highTemperature = highTemperature;
-    }
-
-    public void setAverageWindSpeed(double averageWindSpeed) {
-        this.averageWindSpeed = averageWindSpeed;
-    }
-}
-----
-
-.`WeatherRecordDemo.java`. Updated to demonstrate constructor overloading.
-[source,java]
-----
-public class WeatherRecordDemo {
-    public static void main(String[] args) {
-        // Instantiate two objects
-        WeatherRecord day1 = new WeatherRecord();
-        WeatherRecord day2 = new WeatherRecord("1998-01-25");
-        WeatherRecord day3 = new WeatherRecord("2024-10-03", 65, 5.0);
-
-
-
-        // Set field values for both instances
-        day1.setDate("2024-10-01");
-        day1.setHighTemperature(87);
-        day1.setAverageWindSpeed(1.5);
-
-        day2.setHighTemperature(75);
-        day2.setAverageWindSpeed(8.25);
-
-        // Output field values for both instances
-
-        System.out.println("Date: " + day1.getDate());
-        System.out.println("High Temperature: " + day1.getHighTemperature());
-        System.out.println("Average Wind Speed: " + day1.getAverageWindSpeed());
-
-        System.out.println("------------------------------");
-
-        System.out.println("Date: " + day2.getDate());
-        System.out.println("High Temperature: " + day2.getHighTemperature());
-        System.out.println("Average Wind Speed: " + day2.getAverageWindSpeed());
-
-        System.out.println("------------------------------");
-
-        System.out.println("Date: " + day3.getDate());
-        System.out.println("High Temperature: " + day3.getHighTemperature());
-        System.out.println("Average Wind Speed: " + day3.getAverageWindSpeed());
-    }
-}
-----
-
-.Interesting!
+.Time To Watch!
 ****
+Constructors in Java #*Coming soon!*#
+
+// video::xxxxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+****
+
+==== Constructors and Encapsulation
+
 Constructors allow us to be stricter with our encapsulation since now we don't have to have setters to put data into our objects. We can provide a constructor to accept all the data the object needs, decide if we give access to change a field after the object has been instantiated.
 
 For example, if we're making a bank account object, we'd need to provide an account number when we create the account, but we probably shouldn't allow the account number to be changed after the account is created. In that case, our constructor would accept the account number, but we wouldn't provide a setter for the account number.
-****
 
 === `static` Constants and Methods
-#This section is not finished, but in the meantime this content is covered in section 4.8 (page 139) in the textbook.#
 
+Since our first `Hello World` program, we've been using the `static` keyword to create methods--beginning with the `main()` method that is the starting point for every Java program.
+However, we haven't had enough context to understand what that keyword means.
+
+We've learned about _instance members_, which are the fields and methods that belong to a class, and _instance members_, which are the fields and methods that belong to an object.
+Fields are instance members, which means that each object has its own copy of the field that can be changed without affecting other objects.
+Instance methods are the code that an object can run, and they can access and change the fields of the object.
+Instance members are defined without using the `static` keyword, so we refer to them as _nonstatic_ members.
+
+When we use the `static` keyword, we're creating a _class member_--a field or method that belongs to the class itself, not to any object created from the class.
+Put another way, a class member is shared by all objects created from the class, and it can be accessed without creating an object.
+
+`System` is a class that includes the print() and println() methods we've been using, and those methods are static.
+Since they're static, we can call them without creating a `System` object:
+
+`System.out.println("Hello, World!");`
+
+If `println()` were an instance method, we'd have to create a `System` object before we could call it:
+
+`System mySystem = new System();`
+`mySystem.println("Hello, World!");`
+
+That would be a pain, so we're glad that `println()` is static.
+
+NOTE: The `print()` and `println()` are slightly more complicated than that, since they're actually _instance methods_ of the `PrintStream` class, which is a class that `System.out` is an instance of. But for our purposes, we can think of them as static methods of the `System` class. You don't need to know that right now, but if I don't mention it then somebody will claim I'm an idiot. I probably _am_ an idiot, but not for this reason.
+
+Throughout our learning, we'll learn more about using static in our programs and classes, but an important one to known about for now is the `static` constant.
+When we put a `static` constant in an object class (which would also use the keyword `final`), we're creating a value that is shared by all objects created from the class.
+If we have a savings account class, a common example when learning OOP, we might have a `static final double INTEREST_RATE` constant. This would mean that every savings account would earn the same interest rate, which is often how banks work.
+
+.`SavingsAccount.java`. A class with a static constant.
+[source,java]
+----
+public class SavingsAccount {
+    private static final double INTEREST_RATE = 0.02;
+
+    // other fields and methods go here. See the repository for the complete code.
+
+    public void addInterest() {
+        balance += balance * INTEREST_RATE;
+    }
+
+}   
+----
 
 
 // === Check Your Learning
