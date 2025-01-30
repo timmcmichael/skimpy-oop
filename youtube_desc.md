@@ -4,6 +4,10 @@ The truth is, you're getting too mature to simply think about your programs from
 
 This video is here to help. Learn about classes and objects, and how attributes and behaviors become fields and methods. 
 
+----
+
+This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 

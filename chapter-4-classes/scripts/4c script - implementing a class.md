@@ -85,13 +85,13 @@ The body of this one is pretty straightforward; I'm just going to subtract amoun
 
 Let's jump over to our driver class and test this method. I'm going to add a call to useData() for customer1, and I'll pass in a number. Then I'll need to output the remaining data again to see if it's changed. I'll run that and see if it's working.
 
-Okay, we're almost finished. The last two methods are really similar to each other. The idea is that there are two ways for the customer to increase their data. They can buy more, which is the addData() method, or they can have their plan reset at the beginning of the month, which is the topUpData() method. And of course I'm just now realizing that I should have called the method resetData(), but I'll have to live with it!
+Okay, we're almost finished. The last two methods are really similar to each other. The idea is that there are two ways for the customer to increase their data. They can buy more, which is the addData() method, or they can have their plan reset at the beginning of the month, which is the resetData() method. 
 
 Okay, addData(). This is the same as useData(), but it adds instead of subtracts. So that'll just be += here.
 
 And since that's pretty simple I'll go ahead and do the other method before we test.
 
-topUpData() doesn't really add onto the remaining data, it just sets it to the monthly data amount. So this one is public void. And no parameters, since the amount it gets topped up to is the monthly data they get with their plan. So the body just sets remainingData to monthlyData.
+resetData() doesn't really add onto the remaining data, it just sets it to the monthly data amount. So this one is public void. And no parameters, since the amount it gets topped up to is the monthly data they get with their plan. So the body just sets remainingData to monthlyData.
 
 Okay, let's go test both of those.
 
