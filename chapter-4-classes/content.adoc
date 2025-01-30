@@ -477,6 +477,8 @@ Coming soon!
 === Constructors
 #This section is not finished, but in the meantime this content is covered in section 4.6 (page 130) in the textbook.#
 
+// Allow us to be stricter with our encapsulation since now we don't have to have setters to put data into our objects. We can decide if we give access to change a field after the object has been instantiated.
+
 === `static` Constants and Methods
 #This section is not finished, but in the meantime this content is covered in section 4.8 (page 139) in the textbook.#
 

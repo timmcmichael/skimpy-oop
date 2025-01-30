@@ -35,6 +35,13 @@ public class CellCustomer {
         this.remainingData = cMonthlyData;
     }
 
+    public void useData(double dataUsed) {
+        this.remainingData -= dataUsed;
+    }
+
+    public void topUpData() {
+        this.remainingData = this.monthlyData;
+    }
 
     
 }
