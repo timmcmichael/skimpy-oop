@@ -7,6 +7,13 @@ ifeval::["{docname}" == "index"]
 endif::[]
 == 0001 - Computers and Coding (Chapter 1)
 
+.Help Make These Materials Better!
+****
+I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:
+
+https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google Form)^]
+****
+
 === What's the Point?
 * Understand the role of programming languages
 * Get to know a little about Object-Oriented Programming (OOP)
