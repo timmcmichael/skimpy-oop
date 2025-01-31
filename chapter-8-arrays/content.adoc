@@ -12,6 +12,13 @@ endif::[]
 === #Content coming soon!#
 // === #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
 
+.Help Make These Materials Better!
+****
+I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:
+
+https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google Form)^]
+****
+
 // === What's the Point?
 // * 
 
@@ -20,7 +27,14 @@ _Source code examples from this chapter and associated videos are available on h
 // ''''
 // #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
 
-// === What's the Point?
+// .Help Make These Materials Better!
+****
+I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:
+
+https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google Form)^]
+****
+
+=== What's the Point?
 // * Understand the role of arrays
 // * Create and use arrays
 // * Write loops to traverse arrays

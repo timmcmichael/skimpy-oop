@@ -13,8 +13,15 @@ endif::[]
 // TODO: Canvas - update/remove embedded video to new version.
 
 
-// === What's the Point?
-// * 
+.Help Make These Materials Better!
+****
+I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:
+
+https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google Form)^]
+****
+
+=== What's the Point?
+* 
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects[GitHub^]._
 
@@ -45,7 +52,7 @@ Intro to OOP: Classes and Objects
 
 video::Hnzm4sVsIAI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 ****
-
+==== Class Diagrams
 In OOP, our planning for a program starts by deciding what objects--and therefore, what classes--we'll need in order to implement the functionality we want.
 To help organize our thinking, we'll use a tool called a *class diagram*, which gives a visual representation of the classes and their relationships in our program.
 The format programmers use for class diagrams is called UML (Unified Modeling Language). 
@@ -72,7 +79,7 @@ class Order {
 @enduml
 ----
 
-The top section of the digram has the name of the class, which is `Order`.
+The top section of the diagram has the name of the class, which is `Order`.
 The next section is for the attributes of the class--the information the class will store. This example has attributes for the server's name, the table number, the items ordered, and the total price.
 The bottom section is for the beahviors of the class, which are the actions the class can perform (or that we can do with the class).
 With an order, we might send it to the kitchen, print the bill, or close the bill.
@@ -81,15 +88,14 @@ We'll learn more about the symbols and conventions of UML as we go along, but fo
 
 NOTE: Your Canvas course includes access to *Lucid (Whiteboard)*, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar in Canvas, you'll have access to the premium features for free.
 
-Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
-Diagrams are also useful for sharing information about a class for other programmers who might need to use it.
+// Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
+// Diagrams are also useful for sharing information about a class for other programmers who might need to use it.
 
-Classes in and of themselves can't really be used in a program; they're just the blueprints for objects.
-To use a class, we create an object--or _instance_--of the class, which is a specific version of the class with its own attributes and behaviors.
-A recipe analogy also works here: a class is like a recipe for a cake, and an object is a specific cake made from that recipe.
-One class can be used to make as many instances as we need, which is part of what makes OOP so powerful.
+// To use a class, we create an object--or _instance_--of the class, which is a specific version of the class with its own attributes and behaviors.
+// A recipe analogy also works here: a class is like a recipe for a cake, and an object is a specific cake made from that recipe.
+// One class can be used to make as many instances as we need, which is part of what makes OOP so powerful.
 
-In our Pac-Man example, we could create one Ghost class and use it to create all four Ghost objects we'll need in the game.
+// In our Pac-Man example, we could create one Ghost class and use it to create all four Ghost objects we'll need in the game.
 
 === Encapsulation
 
@@ -151,22 +157,22 @@ Access modifier:: The `public` keyword means that the class can be accessed from
 `class` keyword:: The keyword that tells Java we're defining a class. It's required. We'll eventually be able to create different kinds of classes and OOP structures, but for now we're just creating regular classes.
 *Class name* (or _identifier_):: The name of the class, which should be a noun that describes the object the class represents--and is singular, so there's no _s_ at the end. The identifier should start with a capital, with the first letter of each word capitalized (like `WeatherRecord`). This is similar to the _camelCase_ naming convention we've been using for variables and methods; it's called _PascalCase_.
 
-The class code block is where we define the different components that make up the class, which we call the *class members*. 
-To begin with, we'll focus on two types of class members: *fields* and *methods*.
+The class code block is where we define the different components that make up the class, which we call the *instance members*. 
+To begin with, we'll focus on two types of instance members: *fields* and *methods*.
 
 ==== Fields
 
 Fields are the implementation of the attributes of the class.
 The are also known as *instance variables* because they similar to the variables we've been using in our programs, but their scope is the object created from the class, not the method where they're defined.
 A field is unique to the object; if we make two objects from our `WeatherRecord` class, each object will have its own date, high temperature, and average temperature.
-If we change the hig temperature for one object, it won't affect the high temperature for the other object.
+// If we change the hig temperature for one object, it won't affect the high temperature for the other object.
 
 Fields are declared like our other variables, but they are encapsulated using the `private` access modifier.
 This means that the fields can only be accessed and changed by the methods of the class, not by other classes--which controls how the data is used and prevents accidental or invalid changes.
 
-WARNING: Since a class will compile and run even if we leave off the `private` access modifier, it's easy to forget to use it. But don't worry, I'll help you remember by taking huge points off your assignments if you don't make your fields `private`. As I mentioned, you're not really doing OOP if you don't encapsulate your fields, and we're learning OOP.
+WARNING: Since a class will compile and run even if we leave off the `private` access modifier, it's easy to forget to use it. But don't worry, I'll help you remember by taking huge points off your assignments if you don't make your fields `private`. As I've mentioned, you're not really doing OOP if you don't encapsulate your fields, and we're learning OOP.
 
-Fields are declared at the top of the class using the same naming conventions we've been using for variables: a descriptive name formatted in camelCase.
+// Fields are declared at the top of the class using the same naming conventions we've been using for variables: a descriptive name formatted in camelCase.
 
 .`WeatherRecord.java`. Fields added to the `WeatherRecord` class.
 [source,java]
@@ -184,7 +190,7 @@ image::WeatherRecordDiagram.png["Class diagram for the `WeatherRecord` class"]
 
 image::SadPuppy.png["Sad puppy", width=200, float=right] 
 
-You might remember from https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope[the section on variable scope in Chapter 0011] that using global variables is terrible, and every time we create a global variable, a puppy loses one of its toys. 
+You might remember from https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope[the section on variable scope in Chapter 0011] that using global variables is terrible, and every time we create a global variable, a puppy loses its favorite toy. 
 And these fields look an awful lot like global variables.
 But fields in a class are *not* global variables; they're *instance* variables, and they're a good thing.
 The fields are *encapsulated*, so they can only be accessed and changed by the methods of the class--which is a good thing.
@@ -313,6 +319,16 @@ public class WeatherRecord {
 Sometimes mutator methods don't follow the exact pattern and purpose of setters (simply setting a field's value).
 For example, a method might perform a series of calculations and changes to multiple fields, or it might change a field based on the value of another field.
 These methods are still mutators, and we might even still refer to them as _setters_, but they don't always follow the `setFieldName` naming convention.
+
+
+.Time To Watch!
+****
+Designing an OOP Class
+
+video::rwiAV-R5EEI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/rwiAV-R5EEI
+****
+
 
 ==== Using the Class
 #This subsection, coming up! See section 4.4 in the book in the meantime.#
@@ -455,24 +471,156 @@ In general, I ask students to create at least two instances of each class they a
 
 .Time To Watch!
 ****
-Defining and Using a Class in Java
+Implementing and Using a Class in Java
 
 Coming soon!
-
 // video::xxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // File from video:
 
 // * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
 ****
 
-// At this point, students can complete lab assignments in Canvas. The rest of this content is needed for the programming project.
+IMPORTANT: The Lab Assignments in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the Programming Project.
 
 === Constructors
-#This section is not finished, but in the meantime this content is covered in section 4.6 (page 130) in the textbook.#
+#This section is finished in rough-draft form but doesn't yet have a video (coming soon!). In the meantime this content is covered in section 4.6 (page 130) in the textbook.#
+
+When we instantiate a new object, the syntax includes a call to a method, immediately following the `new` keyword:
+
+`WeatherRecord day1 = new *WeatherRecord()*;`
+
+This is a call to a special method called a *constructor*.
+A constructor runs when an object is instantiated, and it's used to set up the object with any initial values or behaviors.
+A constructor's primary job is to initialize the fields of the object--to give each instance variable a value.
+If we don't write a constructor, the compiler will create one for us; it's called a default constructor, and it will set all fields to their default values.
+For example, numeric fields like `int` and `double` will be set to `zero, and `String` fields will be set to `null`.
+We've been using setters to change those initial values to what we want, but we can also write our own constructors to set those values when the object is created.
+
+Constructors are a special kind of method, so their syntax is a little different from other methods.
+A constructor is always public, it has no return type (not even `void`), and its name is the same as the class name.
+A definition for a constructor for the `WeatherRecord` class would look like this:
+
+.Example of a constructor for the `WeatherRecord` class.
+[source,java]
+----
+public WeatherRecord() {
+    // code to initialize fields goes here
+}
+----
+
+The most important job of a constructor is setting values for each field of the object.
+As a beginner, our rule of thumb is to just make a simple assignment statement for each field.
+
+.Example of a constructor that initializes fields.
+[source,java]
+----
+public WeatherRecord() {
+    date = "2025-01-01";
+    highTemperature = 0;
+    averageWindSpeed = 0.0;
+}
+----
+
+Since our WeatherRecord class has three fields, we've got three assignment statements in our constructor.
+We can initialize those fields to any value we want, but we should choose values that make sense for the object; whatever we put there will be the default values that each object gets when it is instantiated.
+
+Constructors should be written at the top of the class, before the fields and methods.
+
+NOTE: This constructor is called a *parameterless* constructor because it doesn't have any parameters in the parentheses. It's technically *not* a default constructor, because we wrote it ourselves rather than letting the compiler do it, but so many people call it a default constructor that the term is used more often than _parameterless constructor_.
+
+Constructors can also have parameters, which allows us to pass values to the constructor when we instantiate an object.
+This is useful when we want to set the initial values of the fields to something specific, rather than the default values.
+We add parameters to our constructor just like we do with any other method, by listing the data type and identifier in the parentheses.
+
+.Example of a constructor with parameters.
+[source,java]
+----
+public WeatherRecord(String date) {
+    this.date = date;
+    this.highTemperature = 0;
+    this.averageWindSpeed = 0.0;
+}
+----
+
+To use this constructor, we pass a `String` value when we instantiate the object:
+
+`WeatherRecord day1 = new WeatherRecord("1998-01-25");`
+
+There are a couple of important things to note about this example:
+
+1. This constructor only has one parameter but it still has three assignment statements. All fields need values, so if we don't have a parameter to get a field's value, we need to set it to a default value.
+
+2. The parameter has the same name as the field: `date`. This is a common practice, but it's potentially confusing.
+And it also violates guidance I gave you when we learned about https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope[variable scope]. 
++ 
+In this case, the parameter is a _local variable_ to the constructor, and it's _shadowing_ the field. Our assignment statement needs to be carefully written: `this.date` refers to the field, and `date` refers to the parameter.
+
+We can also https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_overloading_a_method[overload] constructors, which means we can have multiple constructors with different parameters--just like we can with any other method.
+That can include having a parameterless constructor and one or more constructors with parameters, or having multiple constructors with different numbers of parameters.
+
+NOTE: To see a complete example of the `WeatherRecord` class with constructors, fields, and methods, as well as a driver class to deomnstrate it, visit the_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects[GitHub repository for this chapter^].
+
+.Time To Watch!
+****
+Constructors in Java #*Coming soon!*#
+
+// video::xxxxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+****
+
+==== Constructors and Encapsulation
+
+Constructors allow us to be stricter with our encapsulation since now we don't have to have setters to put data into our objects. We can provide a constructor to accept all the data the object needs, decide if we give access to change a field after the object has been instantiated.
+
+For example, if we're making a bank account object, we'd need to provide an account number when we create the account, but we probably shouldn't allow the account number to be changed after the account is created. In that case, our constructor would accept the account number, but we wouldn't provide a setter for the account number.
 
 === `static` Constants and Methods
-#This section is not finished, but in the meantime this content is covered in section 4.8 (page 139) in the textbook.#
 
+Since our first `Hello World` program, we've been using the `static` keyword to create methods--beginning with the `main()` method that is the starting point for every Java program.
+However, we haven't had enough context to understand what that keyword means.
+
+We've learned about _instance members_, which are the fields and methods that belong to a class, and _instance members_, which are the fields and methods that belong to an object.
+Fields are instance members, which means that each object has its own copy of the field that can be changed without affecting other objects.
+Instance methods are the code that an object can run, and they can access and change the fields of the object.
+Instance members are defined without using the `static` keyword, so we refer to them as _nonstatic_ members.
+
+When we use the `static` keyword, we're creating a _class member_--a field or method that belongs to the class itself, not to any object created from the class.
+Put another way, a class member is shared by all objects created from the class, and it can be accessed without creating an object.
+
+`System` is a class that includes the print() and println() methods we've been using, and those methods are static.
+Since they're static, we can call them without creating a `System` object:
+
+`System.out.println("Hello, World!");`
+
+If `println()` were an instance method, we'd have to create a `System` object before we could call it:
+
+`System mySystem = new System();`
+`mySystem.println("Hello, World!");`
+
+That would be a pain, so we're glad that `println()` is static.
+
+NOTE: The `print()` and `println()` are slightly more complicated than that, since they're actually _instance methods_ of the `PrintStream` class, which is a class that `System.out` is an instance of. But for our purposes, we can think of them as static methods of the `System` class. You don't need to know that right now, but if I don't mention it then somebody will claim I'm an idiot. I probably _am_ an idiot, but not for this reason.
+
+Throughout our learning, we'll learn more about using static in our programs and classes, but an important one to known about for now is the `static` constant.
+When we put a `static` constant in an object class (which would also use the keyword `final`), we're creating a value that is shared by all objects created from the class.
+If we have a savings account class, a common example when learning OOP, we might have a `static final double INTEREST_RATE` constant. This would mean that every savings account would earn the same interest rate, which is often how banks work.
+
+.`SavingsAccount.java`. A class with a static constant.
+[source,java]
+----
+public class SavingsAccount {
+    private static final double INTEREST_RATE = 0.02;
+
+    // other fields and methods go here. See the repository for the complete code.
+
+    public void addInterest() {
+        balance += balance * INTEREST_RATE;
+    }
+
+}   
+----
 
 
 // === Check Your Learning
