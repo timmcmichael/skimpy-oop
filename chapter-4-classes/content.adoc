@@ -330,8 +330,8 @@ These methods are still mutators, and we might even still refer to them as _sett
 ****
 Designing an OOP Class
 
-video::rwiAV-R5EEI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// https://youtu.be/rwiAV-R5EEI
+video::xcdLgbwtYdc[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/xcdLgbwtYdc
 ****
 
 
@@ -478,11 +478,12 @@ In general, I ask students to create at least two instances of each class they a
 ****
 Implementing and Using a Class in Java
 
-Coming soon!
-// video::xxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// File from video:
+video::WzsJEZGtBHA[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
-// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+Files from video:
+
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/CellCustomer.java[CellCustomer.java]
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/CellCustomerDemo.java[CellCustomerDemo.java]
 ****
 
 IMPORTANT: The Lab Assignments in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the Programming Project.
