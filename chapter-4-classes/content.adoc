@@ -52,7 +52,7 @@ Intro to OOP: Classes and Objects
 
 video::Hnzm4sVsIAI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 ****
-
+==== Class Diagrams
 In OOP, our planning for a program starts by deciding what objects--and therefore, what classes--we'll need in order to implement the functionality we want.
 To help organize our thinking, we'll use a tool called a *class diagram*, which gives a visual representation of the classes and their relationships in our program.
 The format programmers use for class diagrams is called UML (Unified Modeling Language). 
@@ -79,7 +79,7 @@ class Order {
 @enduml
 ----
 
-The top section of the digram has the name of the class, which is `Order`.
+The top section of the diagram has the name of the class, which is `Order`.
 The next section is for the attributes of the class--the information the class will store. This example has attributes for the server's name, the table number, the items ordered, and the total price.
 The bottom section is for the beahviors of the class, which are the actions the class can perform (or that we can do with the class).
 With an order, we might send it to the kitchen, print the bill, or close the bill.
@@ -88,15 +88,14 @@ We'll learn more about the symbols and conventions of UML as we go along, but fo
 
 NOTE: Your Canvas course includes access to *Lucid (Whiteboard)*, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar in Canvas, you'll have access to the premium features for free.
 
-Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
-Diagrams are also useful for sharing information about a class for other programmers who might need to use it.
+// Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
+// Diagrams are also useful for sharing information about a class for other programmers who might need to use it.
 
-Classes in and of themselves can't really be used in a program; they're just the blueprints for objects.
-To use a class, we create an object--or _instance_--of the class, which is a specific version of the class with its own attributes and behaviors.
-A recipe analogy also works here: a class is like a recipe for a cake, and an object is a specific cake made from that recipe.
-One class can be used to make as many instances as we need, which is part of what makes OOP so powerful.
+// To use a class, we create an object--or _instance_--of the class, which is a specific version of the class with its own attributes and behaviors.
+// A recipe analogy also works here: a class is like a recipe for a cake, and an object is a specific cake made from that recipe.
+// One class can be used to make as many instances as we need, which is part of what makes OOP so powerful.
 
-In our Pac-Man example, we could create one Ghost class and use it to create all four Ghost objects we'll need in the game.
+// In our Pac-Man example, we could create one Ghost class and use it to create all four Ghost objects we'll need in the game.
 
 === Encapsulation
 
@@ -166,14 +165,14 @@ To begin with, we'll focus on two types of instance members: *fields* and *metho
 Fields are the implementation of the attributes of the class.
 The are also known as *instance variables* because they similar to the variables we've been using in our programs, but their scope is the object created from the class, not the method where they're defined.
 A field is unique to the object; if we make two objects from our `WeatherRecord` class, each object will have its own date, high temperature, and average temperature.
-If we change the hig temperature for one object, it won't affect the high temperature for the other object.
+// If we change the hig temperature for one object, it won't affect the high temperature for the other object.
 
 Fields are declared like our other variables, but they are encapsulated using the `private` access modifier.
 This means that the fields can only be accessed and changed by the methods of the class, not by other classes--which controls how the data is used and prevents accidental or invalid changes.
 
-WARNING: Since a class will compile and run even if we leave off the `private` access modifier, it's easy to forget to use it. But don't worry, I'll help you remember by taking huge points off your assignments if you don't make your fields `private`. As I mentioned, you're not really doing OOP if you don't encapsulate your fields, and we're learning OOP.
+WARNING: Since a class will compile and run even if we leave off the `private` access modifier, it's easy to forget to use it. But don't worry, I'll help you remember by taking huge points off your assignments if you don't make your fields `private`. As I've mentioned, you're not really doing OOP if you don't encapsulate your fields, and we're learning OOP.
 
-Fields are declared at the top of the class using the same naming conventions we've been using for variables: a descriptive name formatted in camelCase.
+// Fields are declared at the top of the class using the same naming conventions we've been using for variables: a descriptive name formatted in camelCase.
 
 .`WeatherRecord.java`. Fields added to the `WeatherRecord` class.
 [source,java]
@@ -191,7 +190,7 @@ image::WeatherRecordDiagram.png["Class diagram for the `WeatherRecord` class"]
 
 image::SadPuppy.png["Sad puppy", width=200, float=right] 
 
-You might remember from https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope[the section on variable scope in Chapter 0011] that using global variables is terrible, and every time we create a global variable, a puppy loses one of its toys. 
+You might remember from https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope[the section on variable scope in Chapter 0011] that using global variables is terrible, and every time we create a global variable, a puppy loses its favorite toy. 
 And these fields look an awful lot like global variables.
 But fields in a class are *not* global variables; they're *instance* variables, and they're a good thing.
 The fields are *encapsulated*, so they can only be accessed and changed by the methods of the class--which is a good thing.
@@ -462,10 +461,17 @@ In general, I ask students to create at least two instances of each class they a
 
 .Time To Watch!
 ****
-Defining and Using a Class in Java
+Designing a Class in Java
 
 Coming soon!
 
+// video::xxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+
+Implementing and Using a Class in Java
+
+Coming soon!
 // video::xxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // File from video:
 
