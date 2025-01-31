@@ -21,7 +21,12 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 ****
 
 === What's the Point?
-* 
+* Understand the basics of object-oriented programming (OOP).
+* Use a class diagram to plan a program.
+* Create a class in accordance with OOP principles.
+* Create a driver class and use objects.
+* Define and use constructors.
+* Understand the role of `static` in Java.
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects[GitHub^]._
 
@@ -331,7 +336,7 @@ video::rwiAV-R5EEI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 
 ==== Using the Class
-#This subsection, coming up! See section 4.4 in the book in the meantime.#
+#This subsection doesn't have a video yet. What it does have is typos. In the meantime, consider reading section 4.4 in the book instead.#
 
 As we've learned, defining a class establishes a blueprint; to make use of a class in a program, we need to use that blueprint to create an object. 
 We can as many objects from a class as we need, and each object is known as an *instance* of the class.
