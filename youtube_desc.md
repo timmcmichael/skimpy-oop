@@ -2,7 +2,7 @@ Buckle up! We're going to take a look at a real live class, just like what you'l
 
 This quick video walks through the design of an object class for a simple program. We'll discuss the UML diagram, including fields and methods. The next video in the series will show how to implement the class in Java.
 
-The follow up video is here: https://youtu.be/
+The follow up video is here: https://youtu.be/WzsJEZGtBHA
 
 ----
 
@@ -27,7 +27,7 @@ Ugh, there's nothing worse than taking a college programming class and findint o
 
 In this video, we'll take the amazing cell phone customer class from the previous video and implement it in Java. We'll create a new class, write the fields and methods, and then test it out in a simple driver class.
 
-The previous video (sans crayons) is here: https://youtu.be/
+The previous video (sans crayons) is here: https://youtu.be/xcdLgbwtYdc
 
 ----
 
@@ -39,4 +39,4 @@ GitHub Page: https://timmcmichael.github.io/
 Files used in videos:
 * GitHub: https://github.com/timmcmichael/EMCCTimFiles
 
-#java #coding #oop #classes #UML #objects #getters #setters #encapsulation
+#java #coding #oop #classes #UML #objects #getters #setters #encapsulation`
