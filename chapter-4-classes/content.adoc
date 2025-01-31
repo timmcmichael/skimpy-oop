@@ -124,7 +124,7 @@ And that's what we're here to learn.
 
 === Defining and Using a Class
 
-#This section is missing a video and probably has typos, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.#
+#This section probably has typos, but in the meantime this content is covered in section 4.2 (page 117) through 4.5 in the textbook.#
 
 We'll look at a program to keep rudimentary weather records; for a single day's weather data, we'll have a class called `WeatherRecord`.
 
@@ -336,7 +336,7 @@ video::xcdLgbwtYdc[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 
 ==== Using the Class
-#This subsection doesn't have a video yet. What it does have is typos. In the meantime, consider reading section 4.4 in the book instead.#
+#This section is probably full of typos. If that bothers you, consider reading section 4.4 in the book instead.#
 
 As we've learned, defining a class establishes a blueprint; to make use of a class in a program, we need to use that blueprint to create an object. 
 We can as many objects from a class as we need, and each object is known as an *instance* of the class.
