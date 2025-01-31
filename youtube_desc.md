@@ -1,8 +1,6 @@
-You're old enough now that we to have The Talk. You're probably starting to have strange feelings when you notice a method. Maybe you have variables appearing in places you've never noticed variables before.
+Buckle up, little buddy. We're going to take a look at a real live class, just like what you'll have to do on assignments. What's the matter--you scared? Don't worry, we'll get through this together. 
 
-The truth is, you're getting too mature to simply think about your programs from a procedural perspective. You need to start learning about object-oriented programming. 
-
-This video is here to help. Learn about classes and objects, and how attributes and behaviors become fields and methods. 
+This quick video walks through the design of an object class for a simple program. We'll discuss the UML diagram, including fields and methods. The next video in the series will show how to implement the class in Java.
 
 ----
 
