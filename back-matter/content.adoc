@@ -165,3 +165,15 @@ In Java, a parameter is a variable defined in the method declaration that acts a
 
 *Why is it generally better to return values from methods rather than printing them directly within the method? How does this practice improve the modularity and reusability of code?*::
 It is generally better to return values from methods rather than printing them directly within the method because returning values allows the method to be more versatile and reusable. When a method returns a value, it can be used in various contexts, such as in calculations, assignments, or further processing, without being tied to a specific output format. This practice improves modularity by keeping the method focused on a single task (e.g., performing a calculation) and leaving the decision of how to use the result to the calling code. It also enhances reusability, as the method can be used in different parts of the program or even in different programs without modification.
+
+==== Classes and Objects (Chapter 4)
+
+[qanda]
+*What is the primary difference between procedural programming and object-oriented programming (OOP)?*::
+Procedural programming organizes programs as a collection of tasks or methods that need to be performed in a specific order. In contrast, OOP organizes programs as a collection of interacting objects, each representing a real-world entity with attributes (data) and behaviors (methods).
+
+*Explain the concept of a class and how it relates to objects in OOP.*::
+A class is a blueprint or template for creating objects. It defines the attributes and behaviors that the objects created from the class will have. An object is an instance of a class, meaning it is created with the fields and methods implemented in the class.
+
+*What is encapsulation, and why is it important in OOP? Provide an example.*::
+Encapsulation is the concept of hiding the internal state of an object and requiring all interaction to be performed through the object's methods. This is important because it protects the object's data from unintended or harmful modifications. For example, in a bank account class, the balance field is private and can only be accessed or modified through a public getter method, and modified through public deposit and withdraw methods.

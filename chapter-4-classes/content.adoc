@@ -628,14 +628,14 @@ public class SavingsAccount {
 ----
 
 
-// === Check Your Learning
+=== Check Your Learning
 
-// ==== Can you answer these questions?
+==== Can you answer these questions?
 
-// ****
+****
+1. What is the primary difference between procedural programming and object-oriented programming (OOP)?
 
-// 1. 
+2. Explain the concept of a class and how it relates to objects in OOP.
 
-// 2. 
-
-// ****
+3. What is encapsulation, and why is it important in OOP? Provide an example.
+****
