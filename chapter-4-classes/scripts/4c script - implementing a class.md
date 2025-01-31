@@ -1,5 +1,8 @@
 <span style="background-color: #FFFFE0;">Switch to VS Code clips</span>
 
+We're going to take the class diagram we created in the last video and implement it as a class in Java. We'll also create a driver class to test our object class. If you haven't watched the very brief previous video, you should probably take a look at at first.
+
+
 To begin, we'll right-click and create a new file. The file name is exactly the same as the class name, with .java added onto the end.
 
 We'll start with a quick header block to identify the purpose of the class.
@@ -40,7 +43,7 @@ Despite how frustrating this can be for some people, it's a good habit to get in
 
 So the bottom line is that we're going to create a separate class that will have a main() method, and that's where we'll test our object class. That driver class will have any input and output we need.
 
-Incidentally, we're not really making a program out of this, we're just focusing on the design of an object class. So my driver class isn't much of a program, it's job is just to test or demonstrate the object class. For that reason, you'll often hear me refer to the driver as a _demo class_ or _test class_, and I name those programs with that in mind. This is pretty common in my course, since we're focusing on the object-oriented design and not on creating full programs.
+Incidentally, we're not really making a program out of this, we're just focusing on the design of an object class. So my driver class isn't much of a program, it's job is just to test or demonstrate the object class. For that reason, you'll often hear me refer to the driver as a _demo class_ or _test class_, and I name those programs with that in mind. This is pretty common in my course, since we're focusing on the object-oriented design and not on creating full programs. It's not even going to have any user input.
 
 Okay, I'll get off my soapbox now and create a new file for our driver class. I'm going to call it CellCustomerDemo.java. 
 And I'll start with a comment block to identify the purpose of the class, and add a class header. This class will be public, and the name will be CellCustomerDemo. And I'll add a code block to work in.
@@ -55,7 +58,8 @@ I'll start with a println statement that just outputs the object variable, and r
 
 I did get some output, but it's not very useful. The output is the name of the class, followed by an @ symbol and a hexadecimal number. We've asked it to output the whole object, and this is what Java does by default. That number is the memory address of the object, which is interesting but not really very helpful.
 
-What I really want to do is output some of the fields in the class. So let's start with the remaining data. To do that, I'll just add a call to getRemainingData using dot notation. I'll run that and see what I get.
+What I really want to do is output some of the fields in the class. So let's start with the remaining data. 
+But it doesn't let me refer directly to remainingData, because we've encapsulated that. To get it, I'll needto use the getRemainingData method. I'll run that and see what I get.
 
 Okay, I got a zero, which is what I expected. I haven't set any values for the fields, so they're all at their default values--which is zero for a numeric field. Let's do the same thing for the customer's name on the line above using the getName() method.
 
