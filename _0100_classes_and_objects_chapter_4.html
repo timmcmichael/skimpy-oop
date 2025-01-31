@@ -539,6 +539,8 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <ul class="sectlevel2">
 <li><a href="_0100_classes_and_objects_chapter_4.html#_content_for_this_module_is_under_construction_where_its_not_finished_the_section_headers_direct_you_to_the_corresponding_chapter_in_our_required_textbook_so_that_you_dont_have_to_wait_for_me_to_finish"><mark>Content for this module is under construction. Where it&#8217;s not finished, the section headers direct you to the corresponding chapter in our required textbook so that you don&#8217;t have to wait for me to finish.</mark></a>
 </li>
+<li><a href="_0100_classes_and_objects_chapter_4.html#_whats_the_point_5">What&#8217;s the Point?</a>
+</li>
 <li><a href="_0100_classes_and_objects_chapter_4.html#_oop_basics">OOP Basics</a>
 </li>
 <li><a href="_0100_classes_and_objects_chapter_4.html#_encapsulation">Encapsulation</a>
@@ -574,6 +576,23 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_content_for_this_module_is_under_construction_where_its_not_finished_the_section_headers_direct_you_to_the_corresponding_chapter_in_our_required_textbook_so_that_you_dont_have_to_wait_for_me_to_finish"><mark>Content for this module is under construction. Where it&#8217;s not finished, the section headers direct you to the corresponding chapter in our required textbook so that you don&#8217;t have to wait for me to finish.</mark></h3>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Help Make These Materials Better!</div>
+<div class="paragraph">
+<p>I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://forms.gle/4173pZ1yPuNX7pku6" target="_blank" rel="noopener">CIS150AB Course Materials Feedback (Google Form)</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_whats_the_point_5">What&#8217;s the Point?</h3>
+<div class="paragraph">
+<p>*</p>
+</div>
 <div class="paragraph">
 <p><em>Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects" target="_blank" rel="noopener">GitHub</a>.</em></p>
 </div>
@@ -615,6 +634,8 @@ A class defines the <strong>attributes</strong> and <strong>behaviors</strong> o
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_class_diagrams">Class Diagrams</h4>
 <div class="paragraph">
 <p>In OOP, our planning for a program starts by deciding what objects&#8212;&#8203;and therefore, what classes&#8212;&#8203;we&#8217;ll need in order to implement the functionality we want.
 To help organize our thinking, we&#8217;ll use a tool called a <strong>class diagram</strong>, which gives a visual representation of the classes and their relationships in our program.
@@ -631,7 +652,7 @@ The UML standards are extensive, but we&#8217;ll be using a simplified version i
 <div class="title">Figure 6. Example of a class diagram for a restaurant order</div>
 </div>
 <div class="paragraph">
-<p>The top section of the digram has the name of the class, which is <code>Order</code>.
+<p>The top section of the diagram has the name of the class, which is <code>Order</code>.
 The next section is for the attributes of the class&#8212;&#8203;the information the class will store. This example has attributes for the server&#8217;s name, the table number, the items ordered, and the total price.
 The bottom section is for the beahviors of the class, which are the actions the class can perform (or that we can do with the class).
 With an order, we might send it to the kitchen, print the bill, or close the bill.</p>
@@ -651,18 +672,6 @@ Your Canvas course includes access to <strong>Lucid (Whiteboard)</strong>, which
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>Many programs will have multiple classes, and diagramming those before we start coding helps us work out details and find potential problems.
-Diagrams are also useful for sharing information about a class for other programmers who might need to use it.</p>
-</div>
-<div class="paragraph">
-<p>Classes in and of themselves can&#8217;t really be used in a program; they&#8217;re just the blueprints for objects.
-To use a class, we create an object&#8212;&#8203;or <em>instance</em>--of the class, which is a specific version of the class with its own attributes and behaviors.
-A recipe analogy also works here: a class is like a recipe for a cake, and an object is a specific cake made from that recipe.
-One class can be used to make as many instances as we need, which is part of what makes OOP so powerful.</p>
-</div>
-<div class="paragraph">
-<p>In our Pac-Man example, we could create one Ghost class and use it to create all four Ghost objects we&#8217;ll need in the game.</p>
 </div>
 </div>
 <div class="sect2">
@@ -735,16 +744,15 @@ The class header is followed by a code block, enclosed in curly braces.</p>
 </dl>
 </div>
 <div class="paragraph">
-<p>The class code block is where we define the different components that make up the class, which we call the <strong>class members</strong>.
-To begin with, we&#8217;ll focus on two types of class members: <strong>fields</strong> and <strong>methods</strong>.</p>
+<p>The class code block is where we define the different components that make up the class, which we call the <strong>instance members</strong>.
+To begin with, we&#8217;ll focus on two types of instance members: <strong>fields</strong> and <strong>methods</strong>.</p>
 </div>
 <div class="sect3">
 <h4 id="_fields">Fields</h4>
 <div class="paragraph">
 <p>Fields are the implementation of the attributes of the class.
 The are also known as <strong>instance variables</strong> because they similar to the variables we&#8217;ve been using in our programs, but their scope is the object created from the class, not the method where they&#8217;re defined.
-A field is unique to the object; if we make two objects from our <code>WeatherRecord</code> class, each object will have its own date, high temperature, and average temperature.
-If we change the hig temperature for one object, it won&#8217;t affect the high temperature for the other object.</p>
+A field is unique to the object; if we make two objects from our <code>WeatherRecord</code> class, each object will have its own date, high temperature, and average temperature.</p>
 </div>
 <div class="paragraph">
 <p>Fields are declared like our other variables, but they are encapsulated using the <code>private</code> access modifier.
@@ -757,13 +765,10 @@ This means that the fields can only be accessed and changed by the methods of th
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-Since a class will compile and run even if we leave off the <code>private</code> access modifier, it&#8217;s easy to forget to use it. But don&#8217;t worry, I&#8217;ll help you remember by taking huge points off your assignments if you don&#8217;t make your fields <code>private</code>. As I mentioned, you&#8217;re not really doing OOP if you don&#8217;t encapsulate your fields, and we&#8217;re learning OOP.
+Since a class will compile and run even if we leave off the <code>private</code> access modifier, it&#8217;s easy to forget to use it. But don&#8217;t worry, I&#8217;ll help you remember by taking huge points off your assignments if you don&#8217;t make your fields <code>private</code>. As I&#8217;ve mentioned, you&#8217;re not really doing OOP if you don&#8217;t encapsulate your fields, and we&#8217;re learning OOP.
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>Fields are declared at the top of the class using the same naming conventions we&#8217;ve been using for variables: a descriptive name formatted in camelCase.</p>
 </div>
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code>. Fields added to the <code>WeatherRecord</code> class.</div>
@@ -789,7 +794,7 @@ Since a class will compile and run even if we leave off the <code>private</code>
 </div>
 </div>
 <div class="paragraph">
-<p>You might remember from <a href="https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope">the section on variable scope in Chapter 0011</a> that using global variables is terrible, and every time we create a global variable, a puppy loses one of its toys.
+<p>You might remember from <a href="https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope">the section on variable scope in Chapter 0011</a> that using global variables is terrible, and every time we create a global variable, a puppy loses its favorite toy.
 And these fields look an awful lot like global variables.
 But fields in a class are <strong>not</strong> global variables; they&#8217;re <strong>instance</strong> variables, and they&#8217;re a good thing.
 The fields are <strong>encapsulated</strong>, so they can only be accessed and changed by the methods of the class&#8212;&#8203;which is a good thing.
@@ -941,6 +946,19 @@ But for now, this is just another one of those frustrating rules that you just h
 <p>Sometimes mutator methods don&#8217;t follow the exact pattern and purpose of setters (simply setting a field&#8217;s value).
 For example, a method might perform a series of calculations and changes to multiple fields, or it might change a field based on the value of another field.
 These methods are still mutators, and we might even still refer to them as <em>setters</em>, but they don&#8217;t always follow the <code>setFieldName</code> naming convention.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Designing an OOP Class</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/rwiAV-R5EEI?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1120,12 +1138,24 @@ In general, I ask students to create at least two instances of each class they a
 <div class="content">
 <div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p>Defining and Using a Class in Java</p>
+<p>Implementing and Using a Class in Java</p>
 </div>
 <div class="paragraph">
 <p>Coming soon!</p>
 </div>
 </div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The Lab Assignments in Canvas can be completed using what we&#8217;ve covered to this point. You might choose to complete that work now, then move onto the next section&#8212;&#8203;which you&#8217;ll need for the Programming Project.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -1133,13 +1163,204 @@ In general, I ask students to create at least two instances of each class they a
 <div class="sect2">
 <h3 id="_constructors">Constructors</h3>
 <div class="paragraph">
-<p><mark>This section is not finished, but in the meantime this content is covered in section 4.6 (page 130) in the textbook.</mark></p>
+<p><mark>This section is finished in rough-draft form but doesn&#8217;t yet have a video (coming soon!). In the meantime this content is covered in section 4.6 (page 130) in the textbook.</mark></p>
+</div>
+<div class="paragraph">
+<p>When we instantiate a new object, the syntax includes a call to a method, immediately following the <code>new</code> keyword:</p>
+</div>
+<div class="paragraph">
+<p><code>WeatherRecord day1 = new <strong>WeatherRecord()</strong>;</code></p>
+</div>
+<div class="paragraph">
+<p>This is a call to a special method called a <strong>constructor</strong>.
+A constructor runs when an object is instantiated, and it&#8217;s used to set up the object with any initial values or behaviors.
+A constructor&#8217;s primary job is to initialize the fields of the object&#8212;&#8203;to give each instance variable a value.
+If we don&#8217;t write a constructor, the compiler will create one for us; it&#8217;s called a default constructor, and it will set all fields to their default values.
+For example, numeric fields like <code>int</code> and <code>double</code> will be set to <code>zero, and `String</code> fields will be set to <code>null</code>.
+We&#8217;ve been using setters to change those initial values to what we want, but we can also write our own constructors to set those values when the object is created.</p>
+</div>
+<div class="paragraph">
+<p>Constructors are a special kind of method, so their syntax is a little different from other methods.
+A constructor is always public, it has no return type (not even <code>void</code>), and its name is the same as the class name.
+A definition for a constructor for the <code>WeatherRecord</code> class would look like this:</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a constructor for the <code>WeatherRecord</code> class.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-nf">WeatherRecord</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-c1">// code to initialize fields goes here</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The most important job of a constructor is setting values for each field of the object.
+As a beginner, our rule of thumb is to just make a simple assignment statement for each field.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a constructor that initializes fields.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-nf">WeatherRecord</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">date</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;2025-01-01&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-n">highTemperature</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-n">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">0.0</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Since our WeatherRecord class has three fields, we&#8217;ve got three assignment statements in our constructor.
+We can initialize those fields to any value we want, but we should choose values that make sense for the object; whatever we put there will be the default values that each object gets when it is instantiated.</p>
+</div>
+<div class="paragraph">
+<p>Constructors should be written at the top of the class, before the fields and methods.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This constructor is called a <strong>parameterless</strong> constructor because it doesn&#8217;t have any parameters in the parentheses. It&#8217;s technically <strong>not</strong> a default constructor, because we wrote it ourselves rather than letting the compiler do it, but so many people call it a default constructor that the term is used more often than <em>parameterless constructor</em>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Constructors can also have parameters, which allows us to pass values to the constructor when we instantiate an object.
+This is useful when we want to set the initial values of the fields to something specific, rather than the default values.
+We add parameters to our constructor just like we do with any other method, by listing the data type and identifier in the parentheses.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a constructor with parameters.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-nf">WeatherRecord</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">date</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">0.0</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To use this constructor, we pass a <code>String</code> value when we instantiate the object:</p>
+</div>
+<div class="paragraph">
+<p><code>WeatherRecord day1 = new WeatherRecord("1998-01-25");</code></p>
+</div>
+<div class="paragraph">
+<p>There are a couple of important things to note about this example:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>This constructor only has one parameter but it still has three assignment statements. All fields need values, so if we don&#8217;t have a parameter to get a field&#8217;s value, we need to set it to a default value.</p>
+</li>
+<li>
+<p>The parameter has the same name as the field: <code>date</code>. This is a common practice, but it&#8217;s potentially confusing.
+And it also violates guidance I gave you when we learned about <a href="https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope">variable scope</a>.</p>
+<div class="paragraph">
+<p>In this case, the parameter is a <em>local variable</em> to the constructor, and it&#8217;s <em>shadowing</em> the field. Our assignment statement needs to be carefully written: <code>this.date</code> refers to the field, and <code>date</code> refers to the parameter.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>We can also <a href="https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_overloading_a_method">overload</a> constructors, which means we can have multiple constructors with different parameters&#8212;&#8203;just like we can with any other method.
+That can include having a parameterless constructor and one or more constructors with parameters, or having multiple constructors with different numbers of parameters.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+To see a complete example of the <code>WeatherRecord</code> class with constructors, fields, and methods, as well as a driver class to deomnstrate it, visit the_Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects" target="_blank" rel="noopener">GitHub repository for this chapter</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Constructors in Java <mark><strong>Coming soon!</strong></mark></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_constructors_and_encapsulation">Constructors and Encapsulation</h4>
+<div class="paragraph">
+<p>Constructors allow us to be stricter with our encapsulation since now we don&#8217;t have to have setters to put data into our objects. We can provide a constructor to accept all the data the object needs, decide if we give access to change a field after the object has been instantiated.</p>
+</div>
+<div class="paragraph">
+<p>For example, if we&#8217;re making a bank account object, we&#8217;d need to provide an account number when we create the account, but we probably shouldn&#8217;t allow the account number to be changed after the account is created. In that case, our constructor would accept the account number, but we wouldn&#8217;t provide a setter for the account number.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_static_constants_and_methods"><code>static</code> Constants and Methods</h3>
 <div class="paragraph">
-<p><mark>This section is not finished, but in the meantime this content is covered in section 4.8 (page 139) in the textbook.</mark></p>
+<p>Since our first <code>Hello World</code> program, we&#8217;ve been using the <code>static</code> keyword to create methods&#8212;&#8203;beginning with the <code>main()</code> method that is the starting point for every Java program.
+However, we haven&#8217;t had enough context to understand what that keyword means.</p>
+</div>
+<div class="paragraph">
+<p>We&#8217;ve learned about <em>instance members</em>, which are the fields and methods that belong to a class, and <em>instance members</em>, which are the fields and methods that belong to an object.
+Fields are instance members, which means that each object has its own copy of the field that can be changed without affecting other objects.
+Instance methods are the code that an object can run, and they can access and change the fields of the object.
+Instance members are defined without using the <code>static</code> keyword, so we refer to them as <em>nonstatic</em> members.</p>
+</div>
+<div class="paragraph">
+<p>When we use the <code>static</code> keyword, we&#8217;re creating a <em>class member</em>--a field or method that belongs to the class itself, not to any object created from the class.
+Put another way, a class member is shared by all objects created from the class, and it can be accessed without creating an object.</p>
+</div>
+<div class="paragraph">
+<p><code>System</code> is a class that includes the print() and println() methods we&#8217;ve been using, and those methods are static.
+Since they&#8217;re static, we can call them without creating a <code>System</code> object:</p>
+</div>
+<div class="paragraph">
+<p><code>System.out.println("Hello, World!");</code></p>
+</div>
+<div class="paragraph">
+<p>If <code>println()</code> were an instance method, we&#8217;d have to create a <code>System</code> object before we could call it:</p>
+</div>
+<div class="paragraph">
+<p><code>System mySystem = new System();</code>
+<code>mySystem.println("Hello, World!");</code></p>
+</div>
+<div class="paragraph">
+<p>That would be a pain, so we&#8217;re glad that <code>println()</code> is static.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The <code>print()</code> and <code>println()</code> are slightly more complicated than that, since they&#8217;re actually <em>instance methods</em> of the <code>PrintStream</code> class, which is a class that <code>System.out</code> is an instance of. But for our purposes, we can think of them as static methods of the <code>System</code> class. You don&#8217;t need to know that right now, but if I don&#8217;t mention it then somebody will claim I&#8217;m an idiot. I probably <em>am</em> an idiot, but not for this reason.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Throughout our learning, we&#8217;ll learn more about using static in our programs and classes, but an important one to known about for now is the <code>static</code> constant.
+When we put a <code>static</code> constant in an object class (which would also use the keyword <code>final</code>), we&#8217;re creating a value that is shared by all objects created from the class.
+If we have a savings account class, a common example when learning OOP, we might have a <code>static final double INTEREST_RATE</code> constant. This would mean that every savings account would earn the same interest rate, which is often how banks work.</p>
+</div>
+<div class="listingblock">
+<div class="title"><code>SavingsAccount.java</code>. A class with a static constant.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">SavingsAccount</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">INTEREST_RATE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">0.02</span><span class="tok-p">;</span>
+
+<span class="tok-w">    </span><span class="tok-c1">// other fields and methods go here. See the repository for the complete code.</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">addInterest</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">balance</span><span class="tok-w"> </span><span class="tok-o">+=</span><span class="tok-w"> </span><span class="tok-n">balance</span><span class="tok-w"> </span><span class="tok-o">*</span><span class="tok-w"> </span><span class="tok-n">INTEREST_RATE</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -1150,7 +1371,7 @@ In general, I ask students to create at least two instances of each class they a
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-28 22:23:36 -0700
+Last updated 2025-01-29 15:05:39 -0700
 </div>
 </div>
 </body>
