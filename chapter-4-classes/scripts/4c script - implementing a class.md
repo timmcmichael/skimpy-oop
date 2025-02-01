@@ -1,22 +1,28 @@
 <span style="background-color: #FFFFE0;">Switch to VS Code clips</span>
 
+Let's take the CellCustomer class we designed in the last video and implement it in Java. We'll also create a driver class to test test it out. If you haven't watched the previous video, it's really quick and you should probably take a look at at first.
+
+
 To begin, we'll right-click and create a new file. The file name is exactly the same as the class name, with .java added onto the end.
 
 We'll start with a quick header block to identify the purpose of the class.
 
 And the first line of code is a class header. Our class should be public, and again the class name and file name have to be identical. Add a code block with a little space to work.
 
+[GRAPHICS]
+
+
 We'll organize our code in the same way as our class diagram, so we'll declare our fields right up at the top. Each one should be private, and I'm just looking at the class diagram to see what I have designed. <span style="background-color: #FFFFE0;">[inset image of diagram, fields highlighted]</span>
 
-Next up is our accessors, or getters. As a new programmer you should just get in the habit of making a getter for each field. And these just follow a basic pattern: It has to be public, because the point is to give access. The method's return type will be the same as the field's data type--so this is for the name field, which is a String. And the name is the word get plus the field name, so getName. And the parentheses will be empty, there are no parameters for getters.
+Next up is our accessors, or getters. As a new programmer you should just get in the habit of making a getter for each field. And these just follow a basic pattern: It has to be public, because the point of it is to give access. The method's return type will be the same as the field's data type--so this is for the name field, which is a String. And the identifier is the word get plus the field name, so getName. And the parentheses will be empty, there are no parameters for getters.
 
-A basic getter has one line of code--return and the field. Now, I encourage the habit of using dot notation with all field references. I'm going to put this-dot-name. The `this` keyword refers to the current object. We don't have to put this-dot, it'll still work if we just put `name`. The idea here is to get us used to dot notation, which we'll need elsewhere. It's a good habit because we're going to see some situations where `this` is actually necessary. And also, it's just a good reminder that we're looking at a field rather than a regular local variable.
+A basic getter has one line of code--return and the field. Now, I encourage the habit of using dot notation with all field references. I'm going to put this-dot-name. The `this` keyword refers to the current object. We don't have to put this-dot, it'll still work if we just put `name`. The idea here is to get us used to dot notation, which we'll need elsewhere. It's a good habit because we're going to see some situations where `this.` is actually necessary. And also, it's just a good reminder that we're looking at a field rather than a regular local variable.
 
 All that said, there are plenty of coders who only use this-dot when it's necessary, so this isn't a convention that's universal.
 
 Okay, so that's it for a getter. Since I have four fields I'm going to have four getters, so I'll just use the same pattern to create the other three.
 
-The next group of methods on our class diagram is the set methods. Our set methods will get much more interesting as we learn more, but for now they are also going to follow a pattern. A set method has to be public. You should be making all of your fields private and your methods public. As usual, we'll eventually see some exceptions, but this is how we implement encapsulation--we're hiding the fields and giving access to them through public methods.
+The next few methods on our class diagram are the set methods. Our setters will get much more interesting as we learn more, but for now they are also going to follow a pattern. A set method has to be public. For now, you should be making all of your fields private and your methods public. As usual, we'll eventually see some exceptions, but this is how we implement encapsulation--we're hiding the fields and giving access to them through public methods.
 
 So, public and then void. Setters do not return anything, their job is to set a value. The name is set plus the field, so in this case setName. And in order to set a value for the field, we need to know what value to set--and we need a parameter for that. The data type of the parameter matches the field, so for the name field it's a String. and the parameter name can be anything, but I'm going to use cName, which is short for customer name. I'm intentionally not calling it just name because I don't want to confuse it with my field--we we're going to come back to parameter names soon.
 
@@ -26,21 +32,23 @@ So again, this is just a pattern and we'll repeat it for phoneNumber and monthly
 
 [other two setters]
 
-Now, I'm going to go ahead and create setMonthlyData. [type that]. But before I move on, I'm going to stop and think. Next up with be the data that's remaining, but I'm not sure I really need a setter for that. When we set the monthly data amount, that can also just set the remaining data to the same value, right. I'm assuming we're using this method to initialize the data plan when the account is first created, so they won't have used any data yet. So instead of writing a whole other set method, I'm just going to have this method set both of those values.
+My last setter would be for remaining data. [type that]. But before I do that, I'm going to stop and think. I'm not sure I really need a setter for that. I'm assuming we're using this method to initialize the data plan when the account is first created, so they won't have used any data yet. That means instead of writing a whole other set method, I'm just going to have this method set both of those values.
 
-It's not really a problem if we were to make a separate setter for the remaining data, but I wanted to point out that we don't *always* need a setter for each field.
+There's really nothing wrong with making a separate setter for the remaining data, but I wanted to point out that we don't *always* need a setter for each field.
 
 Okay, we are not really finished with this class just yet, but as a rule I don't like to go a long time without testing my code. So we're going to pause here and turn our attention to a driver class.
 
-And we're once again touching on one of those topics that frustrates some students. This CellCustomer class is what I would call an _object class_, meaning its purpose is to create objects--it's not a program in and of itself.  We're going to have a completely separate file with the program that uses our class, and we're *not* just going to stick a main() method in this file. The bigger frustration is that and object class like this should *not* have any user interface elements--no print statements, no Scanner objects, no dialog boxes, nothing like that. That stuff is all part of the program itself, which goes in what we call a _driver class_. 
+[Graphics]
 
-The analogy I like for this is the employees at a restaurant, where roles are very strictly defined and separated. In fact, they're separated so much that the food service industry has a pair of expressions for this: front of house and back of house. The front of house staff are the ones who interact with the customers, and the back of house staff are the ones who prepare the food. The front of house staff don't cook, and the back of house staff don't serve. And that's how we're going to treat our object classes and driver classes. The object class is the back of house and it never interacts with a user, and the driver class is the front of house that deals with the user and uses the object class as necessary.
+This is another one of those topics that frustrates some students. This CellCustomer class is what I would call an _object class_, meaning its purpose is to get used to make objects--it's not a program in and of itself.  We're going to have a completely separate file with the program that uses our class, and we're *not* just going to stick a main() method in this file--that really seems to bug some people. The bigger frustration is that an object class like this should *not* have any user interface elements--no print statements, no Scanner objects, no dialog boxes, nothing like that. That stuff is all part of the program itself, which goes in what we call a _driver class_. 
+
+The analogy I like for this is the employees at a restaurant, where roles are very strictly defined and separated. In fact, they're separated so much that the food service industry has a pair of expressions for this: front of house and back of house. The front of house staff are the ones who interact with the customers, like servers and bartenders, and the back of house staff are the ones who prepare the food. The front of house staff don't cook, and the back of house staff don't go talk to the customers. And that's how we're going to treat our object classes and driver classes. The object class is the back of house and it never interacts with a user. The driver class is the front of house that deals with the user and uses the object class as necessary.
 
 Despite how frustrating this can be for some people, it's a good habit to get into. It's going to make our code more modular and easier to maintain, and it's also going to make it easier to test our code. It's another case of a best practice that I enforce in my classes.
 
 So the bottom line is that we're going to create a separate class that will have a main() method, and that's where we'll test our object class. That driver class will have any input and output we need.
 
-Incidentally, we're not really making a program out of this, we're just focusing on the design of an object class. So my driver class isn't much of a program, it's job is just to test or demonstrate the object class. For that reason, you'll often hear me refer to the driver as a _demo class_ or _test class_, and I name those programs with that in mind. This is pretty common in my course, since we're focusing on the object-oriented design and not on creating full programs.
+Incidentally, we're not really making a program out of this, we're just focusing on the design of an object class. So my driver class isn't much of a program, it's job is just to test or demonstrate the object class. For that reason, you'll often hear me refer to the driver as a _demo class_ or _test class_, and I name those programs with that in mind. This is pretty common in my course, since we're focusing on the object-oriented design and not on creating full programs. It's not even going to have any user input.
 
 Okay, I'll get off my soapbox now and create a new file for our driver class. I'm going to call it CellCustomerDemo.java. 
 And I'll start with a comment block to identify the purpose of the class, and add a class header. This class will be public, and the name will be CellCustomerDemo. And I'll add a code block to work in.
@@ -55,7 +63,8 @@ I'll start with a println statement that just outputs the object variable, and r
 
 I did get some output, but it's not very useful. The output is the name of the class, followed by an @ symbol and a hexadecimal number. We've asked it to output the whole object, and this is what Java does by default. That number is the memory address of the object, which is interesting but not really very helpful.
 
-What I really want to do is output some of the fields in the class. So let's start with the remaining data. To do that, I'll just add a call to getRemainingData using dot notation. I'll run that and see what I get.
+What I really want to do is output some of the fields in the class. So let's start with the remaining data. 
+But it doesn't let me refer directly to remainingData, because we've encapsulated that. To get it, I'll needto use the getRemainingData method. I'll run that and see what I get.
 
 Okay, I got a zero, which is what I expected. I haven't set any values for the fields, so they're all at their default values--which is zero for a numeric field. Let's do the same thing for the customer's name on the line above using the getName() method.
 
@@ -79,7 +88,9 @@ Now we can go back over to our object class and finish up the remaining
 
 These last couple methods are what I would call "mutators". They don't just directly set a value like our setters do, but they do end up changing the object's data--and "mutate" means "change".
 
-First up is a method for when the customer uses some of their data. It's public, so we can actually use it, and it's void because I'm not asking for any information back--we're just going to reduce the amount of data the customer has left. We could do both. Our method could reduce the data and then return how much is left, for example--and that might be a good way to write this. But I'm trying to keep things clear for our beginners by just having a void return type. Our parameter is just the amount of data that's been used.
+First up is a method for when the customer uses some of their data. It's public, so we can actually use it, and it's void because I'm not asking for any information back--we're just going to reduce the amount of data the customer has left. 
+
+We could do both. Our method could reduce the data and then return how much is left, for example--and that might be a good way to write this. But I'm trying to keep things clear for our beginners by just having a void return type. Our parameter is just the amount of data that's been used.
 
 The body of this one is pretty straightforward; I'm just going to subtract amount from the remaining data. And that's it.
 

@@ -1,19 +1,19 @@
 /*
- * CellCustomerDemo
- * Tests and demonstrates functionality of the CellCustomer class by instantiating objects and using instance methods.
+ * MobileCustomerDemo
+ * Tests and demonstrates functionality of the MobileCustomer class by instantiating objects and using instance methods.
  */
 
-public class CellCustomerDemo {
+public class PhoneCustomerDemo {
    
     public static void main(String[] args) {
-        CellCustomer customer1;
-        customer1 = new CellCustomer();
-        CellCustomer customer2 = new CellCustomer();
+        PhoneCustomer customer1;
+        customer1 = new PhoneCustomer("Deadpool", "800-867-5309", 20.0);
+        PhoneCustomer customer2 = new PhoneCustomer("Ryan Reynolds", "123-456-7890", 10.0);
 
-        customer1.setName("Deadpool");
-        customer1.setPhoneNumber("800-867-5309");
-        customer1.setMonthlyData(20.0);
-        customer2.setName("Ryan Reynolds");
+        // customer1.setName("Deadpool");
+        // customer1.setPhoneNumber("800-867-5309");
+        // customer1.setMonthlyData(20.0);
+        // customer2.setName("Ryan Reynolds");
 
         System.out.println(customer1.getName());
         System.out.println(customer1.getPhoneNumber());

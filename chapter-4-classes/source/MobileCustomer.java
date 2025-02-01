@@ -3,7 +3,7 @@
  * This class represents a customer of a cell phone service company, focusing on the customer's data plan and usage.
  */
 
-public class CellCustomer {
+public class MobileCustomer {
 
     // Fields (instance variables)
     private String name;
