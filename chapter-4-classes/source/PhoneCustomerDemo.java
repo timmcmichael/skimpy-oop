@@ -7,13 +7,13 @@ public class PhoneCustomerDemo {
    
     public static void main(String[] args) {
         PhoneCustomer customer1;
-        customer1 = new PhoneCustomer();
-        PhoneCustomer customer2 = new PhoneCustomer();
+        customer1 = new PhoneCustomer("Deadpool", "800-867-5309", 20.0);
+        PhoneCustomer customer2 = new PhoneCustomer("Ryan Reynolds", "123-456-7890", 10.0);
 
-        customer1.setName("Deadpool");
-        customer1.setPhoneNumber("800-867-5309");
-        customer1.setMonthlyData(20.0);
-        customer2.setName("Ryan Reynolds");
+        // customer1.setName("Deadpool");
+        // customer1.setPhoneNumber("800-867-5309");
+        // customer1.setMonthlyData(20.0);
+        // customer2.setName("Ryan Reynolds");
 
         System.out.println(customer1.getName());
         System.out.println(customer1.getPhoneNumber());

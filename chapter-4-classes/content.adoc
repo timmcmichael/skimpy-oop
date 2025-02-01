@@ -334,7 +334,6 @@ video::xcdLgbwtYdc[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // https://youtu.be/xcdLgbwtYdc
 ****
 
-
 ==== Using the Class
 #This section is probably full of typos. If that bothers you, consider reading section 4.4 in the book instead.#
 
@@ -478,7 +477,7 @@ In general, I ask students to create at least two instances of each class they a
 ****
 Implementing and Using a Class in Java
 
-video::WzsJEZGtBHA[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::E0HFACqWgP4[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Files from video:
 

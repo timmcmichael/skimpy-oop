@@ -2,7 +2,6 @@
  * CellCustomer
  * This class represents a customer of a cell phone service company, focusing on the customer's data plan and usage.
  */
-
 public class PhoneCustomer {
 
     // Fields (instance variables)
@@ -10,6 +9,21 @@ public class PhoneCustomer {
     private String phoneNumber;
     private double monthlyData;
     private double remainingData;
+
+    // Constructors
+    public PhoneCustomer(String name, String phoneNumber, double monthlyData) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.monthlyData = monthlyData;
+        this.remainingData = monthlyData;
+    }
+
+    public PhoneCustomer(String name, String phoneNumber) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.monthlyData = 8.0;
+        this.monthlyData = 8.0;
+    }
 
     // Getters
     public String getName() {
