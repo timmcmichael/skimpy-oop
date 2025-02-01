@@ -33,6 +33,76 @@ _Source code examples from this chapter and associated videos are available on h
 
 // ''''
 
+=== if Statements
+
+
+=== Adding an else Block
+
+// .Time To Watch!
+// ****
+// if and if-else Statements in Java
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+// ****
+
+=== Nested if-else Statements
+
+
+// .Time To Watch!
+// ****
+// Nested if-else Statements in Java
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+// ****
+
+
+=== Logical Operators
+
+// .Time To Watch!
+// ****
+// Logical Operators in Java
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+// ****
+
+=== OPTIONAL: The Ternary Operator
+
+
+// .Time To Watch!
+// ****
+// The Ternary Operator in Java
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+// ****
+
+
+
+=== OPTIONAL: switch Statements
+
+
+// .Time To Watch!
+// ****
+// switch Statements in Java
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+// ****
+
+
 // === Check Your Learning
 //
 // ==== Can you answer these questions?
