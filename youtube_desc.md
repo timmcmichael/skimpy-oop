@@ -1,3 +1,5 @@
+
+
 Buckle up! We're going to take a look at a real live class, just like what you'll have to do on assignments. What's the matter--you scared? Don't worry, we'll get through this together. 
 
 This quick video walks through the design of an object class for a simple program. We'll discuss the UML diagram, including fields and methods. The next video in the series will show how to implement the class in Java.

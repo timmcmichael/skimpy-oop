@@ -2,10 +2,12 @@ Over the past two videos, we've designed and implemented a class that represents
 
 There's one topic that we kinda glossed over, and learning more about it can really simplify working with classes. That topic is constructors. 
 
-I'm starting out with the code from the previous video, but I have changed the class name from CellCustomer to MobileCustomer, with a similar change to the demo class. Because I store all of these examples in a GitHub repository that I want beginners to easily access, I wanted to keep this version separate. If you haven't watched those previous two videos, you probably should do that before we dive in and add constructors to our class.
+I'm starting out with the code from the previous video, but I've changed the class name from CellCustomer to MobileCustomer, with a similar change to the demo class. Because I store all of these examples in a GitHub repository that I want to be easy for beginners to access, I wanted to keep this version separate. 
 
-Let's start in our driver class, MobileCustomerDemo. 
-When we create an object, the assignment statement includes the `new` keyword, then MobileCustomer with parentheses. It has to be a method call because of the parentheses, but it's odd that it has the same name as our class--and we didn't write that method, so where did it come from?
+If you haven't watched those previous two videos, you probably should do that before we dive in and add constructors to our class.
+
+Let's start in our driver class, MobileCustomerDemo, which is on the right side of my screen. 
+When we create an object, the assignment statement includes the `new` keyword, then MobileCustomer with parentheses. That has to be a method call because we know that parentheses always indicate a method, but it's odd that it has the same name as our class--and we didn't write that method, so where did it come from?
 
 This is a special kind of method called a constructor, and it runs whenever an object is created. Its job is to initialize the object's data so that every field has a value. If the compiler doesn't find a constructor in a class at compile time, it adds a *default constructor* that initializes all fields to their default values. So, when we first instantiate our customer, the name and phone number are null--the default value for a String--and the two double fields are 0.0. Then we use the setters to assign the values we want.
 
