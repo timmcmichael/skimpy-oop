@@ -54,6 +54,6 @@ Let's go back to our MobileCustomer class and add a second constructor. This one
 
 Name and phone number will be assigned from the parameters, but the data fields will be initialized to 8.0, since 8 gigabytes is the standard plan our company will offer.
 
-With that second constructor in place, we now have two options when we instantiate a MobileCustomer object. We always have to provide the name and phone number, but we can choose to specify the monthly data quota or leave that argument out, which means the object will just get the default.
+With that second constructor in place, we now have two options when we instantiate a MobileCustomer object. We always have to provide the name and phone number, but we can choose to specify the monthly data quota or leave that argument out, which means the object will just get the default. With overloading, we can provide as many different constructors as we want, which gives us a lot of flexibility in how we create objects. 
 
-With overloading, we can provide as many different constructors as we want, which gives us a lot of flexibility in how we create objects. It'll be up to you to decide what combination of constructors and setters makes the most sense for the class you're developing.
+That really covers the basics of constructors. They simplify object creation and give us more control over encapsulation, and going forward you can decide how best to design your constructors and setters.
