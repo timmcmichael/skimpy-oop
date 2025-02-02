@@ -1,3 +1,7 @@
+/*
+ * This program demonstrates various uses of the if statement.
+ */
+
 public class SimpleIfExamples {
 
     public static void main(String[] args) {

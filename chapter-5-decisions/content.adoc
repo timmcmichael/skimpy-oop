@@ -93,6 +93,35 @@ boolean isNegative = number < 0;
 
 These assignment statements work like any other: the expression to the right of the equals symbol is evaluated, and the result is stored in the variable on the left.
 
+==== Testing a String for Equality
+
+In Java, you can't use the `==` operator to compare two strings.
+The following code will not work as you might expect:
+
+.Example of an incorrect `String` comparison.
+[source,java]
+----
+// Should output "true", but (sometimes) doesn't
+String name = "Paul McCartney";
+System.out.print("Is this person Paul McCartney?");
+System.out.println(name == "Paul McCartney");   // DON'T DO THIS!
+----
+
+The `==` operator does not compare the contents of the strings, but rather the memory addresses where the strings are stored.
+Due to the nuances of how the Java runtime handles `String` objects, this code will work sometimes, by coincidence, but it's not reliable.
+
+Instead, you'll need to use the `equals()` method, which is a method of the `String` class and gets called using dot notation.
+This method will examine the contents of the strings and return `true` if they are the same, and `false` if they are different.
+
+.Example of a correct `String` comparison.
+[source,java]
+----
+// Outputs "true"
+String name = "Paul McCartney";
+System.out.print("Is this person Paul McCartney? ");
+System.out.println(name.equals("Paul McCartney"));
+----
+
 === if Statements
 
 The `if` statement is the most basic decision-making structure in Java.
