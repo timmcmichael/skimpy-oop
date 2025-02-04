@@ -481,8 +481,8 @@ video::E0HFACqWgP4[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Files from video:
 
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/CellCustomer.java[CellCustomer.java]
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/CellCustomerDemo.java[CellCustomerDemo.java]
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/CellCustomer.java[`CellCustomer.java`]
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/CellCustomerDemo.java[`CellCustomerDemo.java`]
 ****
 
 IMPORTANT: The Lab Assignments in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the Programming Project.
@@ -569,12 +569,13 @@ NOTE: To see a complete example of the `WeatherRecord` class with constructors, 
 ****
 Constructors in Java
 
-// video::zHxssPU1_Hw[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// https://youtu.be/zHxssPU1_Hw
+video::zHxssPU1_Hw[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+https://youtu.be/zHxssPU1_Hw
 
-// File from video:
+Files from video:
 
-// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/MobileCustomer.java[`MobileCustomer.java`]
+* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/MobileCustomerDemo.java[`MobileCustomerDemo.java`]
 ****
 
 ==== Constructors and Encapsulation

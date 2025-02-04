@@ -435,6 +435,78 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
@@ -468,6 +540,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="_0101_decisions_chapter_5.html"><span class="toc-current">0101 - Decisions (Chapter 5)</span></a>
 <ul class="sectlevel2">
 <li><a href="_0101_decisions_chapter_5.html#_content_coming_soon"><mark>Content coming soon!</mark></a>
+</li>
+<li><a href="_0101_decisions_chapter_5.html#_boolean_expressions">Boolean Expressions</a>
+</li>
+<li><a href="_0101_decisions_chapter_5.html#_if_statements">if Statements</a>
+</li>
+<li><a href="_0101_decisions_chapter_5.html#_adding_an_else_block">Adding an <code>else</code> Block</a>
+</li>
+<li><a href="_0101_decisions_chapter_5.html#_the_if_else_if_structure">The <code>if else if</code> Structure</a>
+</li>
+<li><a href="_0101_decisions_chapter_5.html#_nested_if_else_statements">Nested if-else Statements</a>
+</li>
+<li><a href="_0101_decisions_chapter_5.html#_logical_operators">Logical Operators</a>
+</li>
+<li><a href="_0101_decisions_chapter_5.html#_optional_the_ternary_operator">OPTIONAL: The Ternary Operator</a>
+</li>
+<li><a href="_0101_decisions_chapter_5.html#_optional_switch_statements">OPTIONAL: switch Statements</a>
 </li>
 </ul>
 </li>
@@ -506,6 +594,275 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p><em>Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions" target="_blank" rel="noopener">GitHub</a>.</em></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_boolean_expressions">Boolean Expressions</h3>
+<div class="paragraph">
+<p>Until now, our programs have all executed very sequentially and predictably&#8212;&#8203;one line of code after another.
+How boring!
+To give our programs the ability to <em>branch</em> and execute different code based on different conditions, we need to introduce the concept of <em>decisions</em>.</p>
+</div>
+<div class="paragraph">
+<p>In computer programming, a decision is made based on a <strong>boolean expression</strong>, which is an expression that evaluates to either <code>true</code> or <code>false</code>.
+Think of them as questions that can be answered with a simple "yes" or "no".
+<em>Is this student&#8217;s GPA high enough to qualify for the scholarship? Has this cell phone customer used all of their data? Did the user enter "exit"?</em></p>
+</div>
+<div class="paragraph">
+<p>The <code>true</code> or <code>false</code> value of a boolean expression can be used to determine which code block will execute next, so it&#8217;s important to understand how they work.</p>
+</div>
+<div class="sect3">
+<h4 id="_boolean_values">Boolean Values</h4>
+<div class="paragraph">
+<p>The simplest boolean expressions are the values <code>true</code> and <code>false</code>.
+These can be assigned to variables of type <code>boolean</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isTimAmazing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isClassBoring</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_relational_operations">Relational Operations</h4>
+<div class="paragraph">
+<p>Also known as <em>comparison operations</em>, relational operations are expressions that compare two values.
+You will remember them from math class.<em>Is <code>x</code> greater than <code>y</code>? Is <code>a</code> less than or equal to <code>10</code>? Is <code>c</code> equal to <code>d</code>?</em>
+Relational operators, like arithmetic operators, are <em>binary</em> operators that require two operands.
+In other words, you need two values to compare.
+In your math class, you could draw symbols that aren&#8217;t on your keyboard, like a &#8805; for "greater than or equal to."
+In Java, where we have to stick with stuff on our keyboard, we use the following symbols:</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even" style="width: 50%;">
+<caption class="title">Table 3. Java arithmetic operators</caption>
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>==</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equality (checks if two values are equal)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>!=</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inequality (checks if two values are not equal)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Less-than</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Greater-than</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;&#61;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Less-than-or-equal-to</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&gt;=</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Greater-than-or-equal-to operator.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>A relational operation will alway evaluate to either <code>true</code> or <code>false</code>.
+We can store that result in a <code>boolean</code> variable, as shown below, and we&#8217;ll also learn how to use these expressions in <code>if</code> statements later in this chapter.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">canBuyAlcohol</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isNegative</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">number</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>These assignment statements work like any other: the expression to the right of the equals symbol is evaluated, and the result is stored in the variable on the left.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testing_a_string_for_equality">Testing a String for Equality</h4>
+<div class="paragraph">
+<p>In Java, you can&#8217;t use the <code>==</code> operator to compare two strings.
+The following code will not work as you might expect:</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of an incorrect <code>String</code> comparison.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-c1">// Should output &quot;true&quot;, but (sometimes) doesn&#39;t</span>
+<span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Paul McCartney&quot;</span><span class="tok-p">;</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;Is this person Paul McCartney?&quot;</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">==</span><span class="tok-w"> </span><span class="tok-s">&quot;Paul McCartney&quot;</span><span class="tok-p">);</span><span class="tok-w">   </span><span class="tok-c1">// DON&#39;T DO THIS!</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>==</code> operator does not compare the contents of the strings, but rather the memory addresses where the strings are stored.
+Due to the nuances of how the Java runtime handles <code>String</code> objects, this code will work sometimes, by coincidence, but it&#8217;s not reliable.</p>
+</div>
+<div class="paragraph">
+<p>Instead, you&#8217;ll need to use the <code>equals()</code> method, which is a method of the <code>String</code> class and gets called using dot notation.
+This method will examine the contents of the strings and return <code>true</code> if they are the same, and <code>false</code> if they are different.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a correct <code>String</code> comparison.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-c1">// Outputs &quot;true&quot;</span>
+<span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Paul McCartney&quot;</span><span class="tok-p">;</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;Is this person Paul McCartney? &quot;</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">name</span><span class="tok-p">.</span><span class="tok-na">equals</span><span class="tok-p">(</span><span class="tok-s">&quot;Paul McCartney&quot;</span><span class="tok-p">));</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_if_statements">if Statements</h3>
+<div class="paragraph">
+<p>The <code>if</code> statement is the most basic decision-making structure in Java.
+It allows you to execute a block of code only if a certain condition is true.</p>
+</div>
+<div class="paragraph">
+<p>The syntax of an <code>if</code> statement is the keyword <code>if</code>, followed by a boolean expression in parentheses, followed by a block of code in curly braces.
+If the boolean expression evaluates to <code>true</code>, the block of code will execute.
+If the boolean expression evaluates to <code>false</code>, the block of code will be skipped.
+In either case the program will continue executing the next line of code after the <code>if</code>-block.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of an <code>if</code> Statement.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">;</span>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Keep that in mind when you go to the store!&quot;</span><span class="tok-p">);</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the <code>if</code> statement checks if the variable <code>age</code> is less than <code>21</code>.
+Since <code>20</code> is less than <code>21</code>, the boolean expression evaluates to <code>true</code>, and the block of code inside the <code>if</code> statement is executed&#8212;&#8203;and it prints "You can&#8217;t buy alcohol."
+The program then continues to the next line of code, which prints "Keep that in mind when you go to the store!"</p>
+</div>
+<div class="paragraph">
+<p>If the value of <code>age</code> were <code>22</code>, the boolean expression would evaluate to <code>false</code>, and the block of code inside the <code>if</code> statement would be skipped.
+The program would then continue to the next line of code, which prints "Keep that in mind when you go to the store!"</p>
+</div>
+<div class="paragraph">
+<p>Keep in mind, the parentheses after the <code>if</code> keyword can contain any boolean expression&#8212;&#8203;not just this simple example.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adding_an_else_block">Adding an <code>else</code> Block</h3>
+<div class="paragraph">
+<p>An <code>if</code> statement simply determines whether or not to execute a single block of code.
+If you want choose between two blocks of code, you can add an <code>else</code> block to the <code>if</code> statement.
+The syntax is simple: after the <code>if</code> block, add the keyword <code>else</code>, followed by a block of code in curly braces.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of an <code>if-else</code> Statement.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">;</span>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Keep that in mind when you go to the store!&quot;</span><span class="tok-p">);</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An <code>if-else</code> statement will always execute one block of code or the other, but never both.
+Basically, it&#8217;s an either-or situation.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_if_else_if_structure">The <code>if else if</code> Structure</h3>
+<div class="paragraph">
+<p>The <code>if-else</code> structure is great for choosing between two blocks of code, but what if you have more than two options?
+To handle this, you can chain multiple <code>if-else</code> statements together.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of an <code>if-else if</code> Statement.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">;</span>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t vote.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can vote, but you can&#39;t buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can vote and buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the program will print "You can&#8217;t vote." if the age is less than <code>18</code>, "You can vote, but you can&#8217;t buy alcohol." if the age is less than <code>21</code>, and "You can vote and buy alcohol." if the age is <code>21</code> or older.</p>
+</div>
+<div class="paragraph">
+<p>Basically, the program checks each boolean expression until one evaluates to <code>true</code>, and then executes the corresponding block of code.
+Once it was executed a code block, it will skip the rest of the <code>if-else</code> structure.
+If it never finds a <code>true</code> condition, it will execute the block of code in the <code>else</code> block, if one is present.</p>
+</div>
+<div class="paragraph">
+<p>An <code>if-else if</code> structure can execute, at most, one block of code.
+If an <code>else</code> block is included at the end, that guarantees that exactly one block of code will execute.</p>
+</div>
+<div class="paragraph">
+<p>Compare that to a series of <code>if</code> statements without any else blocks.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a Series of <code>if</code> Statements.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t vote.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can vote.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, each <code>if</code> statement is independent of the others and they all will be evaluated. regardless of the outcome of the previous <code>if</code> statement.
+Since <code>20</code> is greater than <code>18</code>, the first <code>if</code> block will be skipped, but the second <code>if</code> block will execute.
+Since <code>20</code> is less than <code>21</code>, the third <code>if</code> block will execute, but the fourth <code>if</code> block will be skipped.
+The output will be:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code><span></span>You can vote.
+You can&#39;t buy alcohol.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>With a series of separate `if statements, it&#8217;s possible that no blocks of code will execute, and it&#8217;s possible that every block of code will execute.
+And any combination in between is possible, as well.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nested_if_else_statements">Nested if-else Statements</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_logical_operators">Logical Operators</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_optional_the_ternary_operator">OPTIONAL: The Ternary Operator</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_optional_switch_statements">OPTIONAL: switch Statements</h3>
+
 </div>
 </div>
 </div>
