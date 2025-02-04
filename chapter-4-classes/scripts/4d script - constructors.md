@@ -1,4 +1,4 @@
-Over the past two videos, we've designed and implemented a class that represents a cell phone customer with a data usage plan. The class is fully functional--at least, as functional as beginners need it to be.
+Over the past two videos, we've designed and implemented a class that represents a cell phone customer with a data usage plan. The class is now fully functional--at least, as functional as beginners need it to be.
 
 There's one topic that we kinda glossed over, and learning more about it can really simplify working with classes. That topic is constructors. 
 
@@ -13,7 +13,7 @@ This is a special kind of method called a constructor, and it runs whenever an o
 
 Instead of letting the compiler create a constructor that initializes our fields to default values, we can write our own constructor that assigns the values we want. Let's go over to the MobileCustomer class and give that a shot.
 
-A constructor goes right beneath the fields and above the methods, and its header is a little different than regular methods. A constructor is always public, otherwise it wouldn't do us much good. It has the same name as the class, and it doesn't have a return type. It can have parameters, but we won't add any right now.
+A constructor goes right beneath the fields and above our regular methods, and its header is a little different than regular methods. A constructor is always public, otherwise it wouldn't do us much good. It has the same name as the class, and it doesn't have a return type. It can have parameters, but we won't add any right now.
 
 The body of the constructor has one job: make sure each field gets assigned a value. So our pattern here is that we're going to have an assignment statement for each of our fields. We can assign whatever values we want, but whatever we put here is what every instance is going to get for initial values.
 
@@ -31,7 +31,7 @@ As you watched me type that, hopefully there was as little alarm going off in th
 
 But we do have a solution. I've been encouraging you to use the `this` keyword to refer to fields. When we do that, the compiler can distinguish between the field and the parameter. So, this.name = name assigns the value of the parameter to the field. Just be aware that name = name compiles but does not work--it assigns the value of the parameter back to itself.
 
-Let's go ahead and update the rest of these assignments, remembering that to assign the monthly data value to the remaining data field as well.
+Let's go ahead and update the rest of these assignments, remembering  to assign the monthly data value to the remaining data field as well.
 
 When we switch back over to our driver class, we see that we've suddenly got a problem--our object creation statements won't compile any more. Remember that the compiler will create a default constructor if we don't define a constructor ourselves. But if we DO define a constructor, the compiler doesn't add the default. So now the only way we can create an object is by using the constructor we wrote.
 
@@ -58,4 +58,4 @@ Name and phone number will be assigned from the parameters, but the data fields 
 
 With that second constructor in place, we now have two options when we instantiate a MobileCustomer object. We always have to provide the name and phone number, but we can choose to specify the monthly data quota or leave that argument out, which means the object will just get the default. With overloading, we can provide as many different constructors as we want, which gives us a lot of flexibility in how we create objects. 
 
-That really covers the basics of constructors. They simplify object creation and give us more control over encapsulation, and going forward you can decide how best to design your constructors and setters.
+That really covers the basics of constructors. They simplify object creation and give us more control over encapsulation, and going forward you can decide how best to design your clasees using setters and constructors together.
