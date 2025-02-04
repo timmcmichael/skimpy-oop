@@ -567,9 +567,11 @@ NOTE: To see a complete example of the `WeatherRecord` class with constructors, 
 
 .Time To Watch!
 ****
-Constructors in Java #*Coming soon!*#
+Constructors in Java
 
-// video::xxxxxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// video::zHxssPU1_Hw[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/zHxssPU1_Hw
+
 // File from video:
 
 // * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
