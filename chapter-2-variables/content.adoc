@@ -310,15 +310,15 @@ In Java, there are five arithmetic operators:
 [cols="1,5", %header, stripes=even,width="50%"]
 |===
 |Operator |Description
-| +
+| `+`
 | Addition
-| -
+| `-`
 | Subtraction
-| * 
+| `*` 
 | Multiplication
-| /
+| `/`
 | Division (quotient)
-| %
+| `%`
 | Modulo (remainder)
 |===
 
@@ -344,7 +344,6 @@ Files from video:
 
 * https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/Operations.java/[`Operations.java`]
 * https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/OutputtingVariables.java['OutputtingVariables.java']
-
 
 ****
 
