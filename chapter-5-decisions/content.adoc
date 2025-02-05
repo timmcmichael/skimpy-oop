@@ -45,9 +45,20 @@ _Is this student's GPA high enough to qualify for the scholarship? Has this cell
 
 The `true` or `false` value of a boolean expression can be used to determine which code block will execute next, so it's important to understand how they work. 
 
+
+// .Time To Watch!
+// ****
+// Boolean Logic in Java
+
+// video::xxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+// * N/A
+// ****
+
 ==== Boolean Values
 
-The simplest boolean expressions are the values `true` and `false`.
+The simplest way to use boolean in Java are the keywords `true` and `false`.
 These can be assigned to variables of type `boolean`:
 
 [source,java]

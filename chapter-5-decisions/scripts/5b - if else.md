@@ -1,4 +1,6 @@
-In this video, we' wi'll take a look at if and if-else statements. These conditional statements give us the ability to write run different blocks of code based on a true or false espression. In order to jump right in, we're stepping away from our OOP perspective for a moment and just working within a main() method. But don't worry, we'll be back to OOP in one of the next videos on this topic.
+In this video, we' wi'll take a look at if and if-else statements. These conditional statements give us the ability to run different blocks of code based on a Boolean espression--so if you're not familiar with those, be sure to watch the previous video. 
+
+In order to jump right in to these examples, we're stepping away from our OOP perspective for a moment and just working within a main() method. But don't worry, we'll be back to OOP in one of the next videos on this topic.
 
 If you know me, you know that I really do love my teaching job. But I also love money, and the rest of my family loves fancy name brand clothe--and that's a problem. To solve that problem, I think I'll start selling some of my hilarious jokes. I'm going to write a program that calculates a total purchase price based on the number of jokes purchased. I'll also give a discount if the customer buys more than 10 jokes. Let's get started.
 
