@@ -92,6 +92,26 @@ Last up is the logical NOT operator, which is an exclamation point. It inverts t
 
 There's actually another logical operator called "exclusive or, but we don't use that and we'll ignore it for now since this chart is probably confusing enough already. As I said, we'll make sense out of these once we're able to start using them in our code.
 
+[Next Slide - strings]
+
+We often want to test the equality of strings, like when we ask the user to enter a password. 
+[Print variable assignment]
+We'll need to check if what they entered matches the password we have stored. 
+
+If these variables were numbers, we could just use the == operator
+
+[Next == ]  
+
+But in Java, we can't use == to compare strings. Actually, we _can_ use == to compare strings, but it doesn't work the way you'd expect--and it's not going to give you the results you expect. In short, don't do it.
+
+[Next - red line]
+
+Instead, we have to use a String method called `equals`, and we pass in the value we want to compare to.
+
+[Next - .equals]
+
+Incidentally, it doesn't matter which string use use to call the `equals` method and which we compare to. The result will be the same, so you could also write `password.equals(userPassword)`.
+
 [Next - last slide]
 
 It might not be clear yet why we're spending time on this, but understanding Boolean logic is going to make it possible to write code that makes decisions. And that's what we'll look at next...
