@@ -1,10 +1,10 @@
-In this video, we' wi'll take a look at if and if-else statements. These conditional statements give us the ability to run different blocks of code based on a Boolean espression.Iif you're not familiar with those, be sure to watch the previous video. 
+In this video, we will take a look at if and if-else statements. These conditional statements give us the ability to run different blocks of code based on a Boolean espression. If you're not familiar with Boolean expressions, be sure to watch the previous video first. 
 
 In order to jump right in to these examples, we're stepping away from our OOP perspective for a moment and just working within a main() method. But don't worry, we'll be back to OOP in one of the next videos on this topic.
 
-If you know me, you know that I really do love my teaching job. But I also love money, and the rest of my family loves fancy name brand clothes--and that's a problem. To solve that problem, I think I'll start selling some of my hilarious jokes. I'm going to write a program that calculates a total purchase price based on the number of jokes the customer wants to buy. I'll also give a discount if the customer buys more than 10 jokes. Let's get started.
+If you know me, you know that I really do love my teaching job. But I also love money, and the rest of my family loves fancy name brand clothes--and that's a problem. To solve that problem, I think I'll start selling some of my hilarious jokes. I'm going to write a program that calculates a total purchase price based on the number of jokes the customer wants to buy. I'll also give a discount if the customer buys 10 or more jokes. Let's get started.
 
-Jokes sell for $30 each, which sounds expensive--but I know my worth. If a customer buys more than 10 jokes, they get a 10% discount. Through the magic of video editing, I'll add a header with test cases and I'll get the Scanner stuff ready to go.
+Jokes sell for $30 each, which sounds expensive--but I know my worth. If a customer buys 10 or more jokes, they get a 10% discount. Through the magic of video editing, I'll add a header with test cases and I'll get the Scanner stuff ready to go.
 
 It's easy to forget those test cases, so keep building the habit of adding them right at the start. They are worth points, and if you consistently leave them out--our magician friend can predict your future. 
 
@@ -28,7 +28,7 @@ It looks good. Notice that the price only "kinda" looks like a currency value. A
 
 To make sure it is working correctly, I'll run this a few more times with my other test cases.
 
-They all work until I get to 10 or more jokes, because obviously I haven't written the code to a discount yet. But because I did those test cases, I already know how the math works. If they buy enough for the 10% discount, it means they're really just paying 90% of the total. 90% as a decimal is 0.9, so I'll multiply the total price by 0.9 to get the discounted price.
+They all work until I get to 10 or more jokes, because obviously I haven't written the code to a discount yet. But because I did those test cases, I have already worked out how the math works. If they buy enough for the 10% discount, it means they're really just paying 90% of the total. 90% as a decimal is 0.9, so I'll multiply the total price by 0.9 to get the discounted price.
 
 And for now I'll just add that code and try it out.
 
@@ -42,7 +42,7 @@ if (numJokes > 10)
 
 and a code block. I'll move my discount calculation into that code block so that it only runs if the boolean expression is true. And let's test that.
 
-We're really close, but when they buy exactly 10 jokes, they don't get the discount. This is where it's good to have thoughtful test cases. Calculation changes when they buy ten jokes, so we call that an edge case. It's important to test edge cases to make sure our decision locations are correct.
+We're really close, but when they buy exactly 10 jokes, they don't get the discount. This is where it's good to have thoughtful test cases. Calculation changes when they buy ten jokes, so we call that an edge case. It's important to test edge cases to make sure our decision logic is correct.
 
 I've made a really common mistake. My boolean expression is `numJokes > 10`, but I need to use `numJokes >= 10` to include the edge case. I could also write it `numJokes > 9`, but I think the greater-than-or-equal-to syntax is more clear.
 

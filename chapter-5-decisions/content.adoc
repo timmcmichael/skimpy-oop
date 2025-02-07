@@ -8,7 +8,8 @@ endif::[]
 
 == 0101 - Decisions (Chapter 5)
 
-=== #Content coming soon!#
+=== #The content in this chapter is in progress.# 
+#It is incomplete and likely full of typos. In each section, I've referenced the corresponding section in the required textbook (see Canvas). If you don't want to deal with any of that, you can choose to just read Chapter 5 in that book.#
 
 
 // Example: two buttons on a food scale. On/Zero/Off button and switch between oz and grams. Multifunction button could be written a couple different ways (logical operators or nested if statements)
@@ -261,6 +262,7 @@ With a series of separate `if statements, it's possible that no blocks of code w
 And any combination in between is possible, as well.
 
 === Nested if-else Statements
+==== #The video for this section is in progress. In the meantime, you can read section 5.4 (starting page 172) in the required textbook.#
 
 If we want a block of code to execute only if two different conditions are met, we can place `if` statements inside of each other--which is called _nesting_.
 Nested if statements check multiple conditions in a hierarchical way: if one condition is met, it will proceed and check the next condition; if the first condition is not met, it will skip the inner `if` block.
@@ -316,7 +318,13 @@ else {
 // ****
 
 
-=== Logical Operators
+=== Using Logical Operators
+
+==== #The text and video for this section is in progress. In the meantime, you can read section 5.5 (starting page 174) in the required textbook.#
+
+// TODO: Cover range checking with logical operators
+
+
 
 // .Time To Watch!
 // ****
@@ -329,7 +337,7 @@ else {
 // ****
 
 === OPTIONAL: The Ternary Operator
-
+==== #This section will include an optional topic. It's not required for any assignments or quiz questions, but will be provided for students wanting to learn this topic.#
 
 // .Time To Watch!
 // ****
@@ -344,7 +352,7 @@ else {
 
 
 === OPTIONAL: switch Statements
-
+==== #This section will cover an optional topic. It's not needed for any coursework, but is a useful structure. If you are interested in the meantime, you can read section 5.7 (starting page 181) in the required textbook.#
 
 // .Time To Watch!
 // ****
