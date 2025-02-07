@@ -539,7 +539,7 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </li>
 <li><a href="_0101_decisions_chapter_5.html"><span class="toc-current">0101 - Decisions (Chapter 5)</span></a>
 <ul class="sectlevel2">
-<li><a href="_0101_decisions_chapter_5.html#_content_coming_soon"><mark>Content coming soon!</mark></a>
+<li><a href="_0101_decisions_chapter_5.html#_the_content_in_this_chapter_is_in_progress"><mark>The content in this chapter is in progress.</mark></a>
 </li>
 <li><a href="_0101_decisions_chapter_5.html#_boolean_expressions">Boolean Expressions</a>
 </li>
@@ -551,7 +551,7 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </li>
 <li><a href="_0101_decisions_chapter_5.html#_nested_if_else_statements">Nested if-else Statements</a>
 </li>
-<li><a href="_0101_decisions_chapter_5.html#_logical_operators">Logical Operators</a>
+<li><a href="_0101_decisions_chapter_5.html#_using_logical_operators">Using Logical Operators</a>
 </li>
 <li><a href="_0101_decisions_chapter_5.html#_optional_the_ternary_operator">OPTIONAL: The Ternary Operator</a>
 </li>
@@ -579,7 +579,10 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <h2 id="_0101_decisions_chapter_5">0101 - Decisions (Chapter 5)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_content_coming_soon"><mark>Content coming soon!</mark></h3>
+<h3 id="_the_content_in_this_chapter_is_in_progress"><mark>The content in this chapter is in progress.</mark></h3>
+<div class="paragraph">
+<p><mark>It is incomplete and likely full of typos. In each section, I&#8217;ve referenced the corresponding section in the required textbook (see Canvas). If you don&#8217;t want to deal with any of that, you can choose to just read Chapter 5 in that book.</mark></p>
+</div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Help Make These Materials Better!</div>
@@ -610,10 +613,23 @@ Think of them as questions that can be answered with a simple "yes" or "no".
 <div class="paragraph">
 <p>The <code>true</code> or <code>false</code> value of a boolean expression can be used to determine which code block will execute next, so it&#8217;s important to understand how they work.</p>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Boolean Logic in Java</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/npMQkQ2oCAU?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
 <div class="sect3">
 <h4 id="_boolean_values">Boolean Values</h4>
 <div class="paragraph">
-<p>The simplest boolean expressions are the values <code>true</code> and <code>false</code>.
+<p>The simplest way to use boolean in Java are the keywords <code>true</code> and <code>false</code>.
 These can be assigned to variables of type <code>boolean</code>:</p>
 </div>
 <div class="listingblock">
@@ -777,6 +793,29 @@ The syntax is simple: after the <code>if</code> block, add the keyword <code>els
 <p>An <code>if-else</code> statement will always execute one block of code or the other, but never both.
 Basically, it&#8217;s an either-or situation.</p>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>if and if-else Statements in Java</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/OS-RqvV8UAc?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph">
+<p>File from video:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/MadJokes.java"><code>MadJokes.java</code></a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_the_if_else_if_structure">The <code>if else if</code> Structure</h3>
@@ -850,19 +889,71 @@ And any combination in between is possible, as well.</p>
 </div>
 <div class="sect2">
 <h3 id="_nested_if_else_statements">Nested if-else Statements</h3>
-
+<div class="sect3">
+<h4 id="_the_video_for_this_section_is_in_progress_in_the_meantime_you_can_read_section_5_4_starting_page_172_in_the_required_textbook"><mark>The video for this section is in progress. In the meantime, you can read section 5.4 (starting page 172) in the required textbook.</mark></h4>
+<div class="paragraph">
+<p>If we want a block of code to execute only if two different conditions are met, we can place <code>if</code> statements inside of each other&#8212;&#8203;which is called <em>nesting</em>.
+Nested if statements check multiple conditions in a hierarchical way: if one condition is met, it will proceed and check the next condition; if the first condition is not met, it will skip the inner <code>if</code> block.</p>
+</div>
+<div class="listingblock">
+<div class="title">Basic structure of a nested <code>if-else</code> statement.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">condition1</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">condition2</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-c1">// executes if both condition1 and condition2 are true</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-w">    </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-c1">// executes if condition1 is true and condition2 is false</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span>
+<span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-c1">// executes if condition1 is false</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the example below, the program will print "You can vote and buy alcohol." if the age is <code>21</code> or older and the person is a U.S. citizen.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a Nested <code>if-else</code> Statement.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isCitizen</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">isCitizen</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can vote and buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-w">    </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can buy alcohol, but you can&#39;t vote.&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span>
+<span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t vote or buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_logical_operators">Logical Operators</h3>
+<h3 id="_using_logical_operators">Using Logical Operators</h3>
+<div class="sect3">
+<h4 id="_the_text_and_video_for_this_section_is_in_progress_in_the_meantime_you_can_read_section_5_5_starting_page_174_in_the_required_textbook"><mark>The text and video for this section is in progress. In the meantime, you can read section 5.5 (starting page 174) in the required textbook.</mark></h4>
 
+</div>
 </div>
 <div class="sect2">
 <h3 id="_optional_the_ternary_operator">OPTIONAL: The Ternary Operator</h3>
+<div class="sect3">
+<h4 id="_this_section_will_include_an_optional_topic_its_not_required_for_any_assignments_or_quiz_questions_but_will_be_provided_for_students_wanting_to_learn_this_topic"><mark>This section will include an optional topic. It&#8217;s not required for any assignments or quiz questions, but will be provided for students wanting to learn this topic.</mark></h4>
 
+</div>
 </div>
 <div class="sect2">
 <h3 id="_optional_switch_statements">OPTIONAL: switch Statements</h3>
+<div class="sect3">
+<h4 id="_this_section_will_cover_an_optional_topic_its_not_needed_for_any_coursework_but_is_a_useful_structure_if_you_are_interested_in_the_meantime_you_can_read_section_5_7_starting_page_181_in_the_required_textbook"><mark>This section will cover an optional topic. It&#8217;s not needed for any coursework, but is a useful structure. If you are interested in the meantime, you can read section 5.7 (starting page 181) in the required textbook.</mark></h4>
 
+</div>
 </div>
 </div>
 </div>

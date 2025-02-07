@@ -1,72 +1,117 @@
 Until now, our programs have all executed sequentially.
+[Start animation]
 When the first line of code is finished, we move to the second; when that's done, we go on to the third line. When there are no more lines to execute, the program stops.
 And every time we run the program, it's going to flow through the same sequence of steps in the same order.
 
 In order to give our programs some flexibility in how they execute, we need to introduce the concept of decisions, which allow the program to run blocks of code based on certain conditions. 
 
-In order to make decisions, our programs will use Boolean logic. Boolean logic is all based on the idea of true or false, which means that our program can make decisions based on yes or no questions only--there's no "maybe" in Boolean logic.
+[Advance to conditional statements]
 
-At the heart of Boolean logic are Boolean variables, which can store `true` or `false`, and Boolean expressions, which are expressions that evaluate to either true or false.   
+To make decisions, our programs will use Boolean logic. Boolean logic is all based on the idea of true or false, which means that our program can make decisions based on yes or no questions only--there's no "maybe" in Boolean logic.
 
+Is the amount the user entered greater than 10? That's either true or false. If it's true, we can execute a block of code. [CLICK]
 
+If it's not true, we'll skip that block and move on with the program.
 
+[CLICK]
 
+At the heart of Boolean logic are Boolean variables and Boolean expressions.
 
+[Next slide]
 
+A Boolean variable can only have one of two values: true or false. In Java, we use the data type boolean to store these values.
 
+[Click to show code]
 
+`boolean` variables are generally named with a question or a statement that can be answered with true or false. `hasCar` is true or false, right? The valid values you can put in a boolean variable are `true` or `false`, in all lowercase and no quotes.
 
-1. **Introduction to Boolean Logic**:
-   Boolean logic is a fundamental concept in computer science and programming. It is based on Boolean algebra, which deals with true or false values. In Java, the `boolean` data type is used to represent these values. A boolean variable can only have one of two possible values: `true` or `false`. Boolean logic is essential for controlling the flow of a program through conditional statements and loops.
+We'll see uses for `boolean` variables as we go along.
 
-2. **Boolean Operators**:
-   Java provides several operators to perform boolean logic operations. The primary boolean operators are:
-   - **AND (`&&`)**: This operator returns `true` if both operands are true. For example, `true && true` evaluates to `true`, while `true && false` evaluates to `false`.
-   - **OR (`||`)**: This operator returns `true` if at least one of the operands is true. For example, `true || false` evaluates to `true`.
-   - **NOT (`!`)**: This operator inverts the value of a boolean expression. For example, `!true` evaluates to `false`.
+[Next slide]
 
-3. **Conditional Statements**:
-   Boolean logic is often used in conditional statements to control the flow of a program. The `if` statement is the most common conditional statement in Java. It executes a block of code if a specified boolean expression evaluates to `true`. For example:
-   ```java
-   boolean isRaining = true;
-   if (isRaining) {
-       System.out.println("Take an umbrella.");
-   }
-   ```
-   In this example, the message "Take an umbrella." will be printed because `isRaining` is `true`.
+The other common structure in Java that can be used for decisions is a Boolean expression. A Boolean expression is a statement that evaluates to true or false. Like arithmetic expressions, Boolean expressions use binary operators--operators that work on two operands. The most common boolean operations are comparisons, and you'll be familiar with these from your math classes.
 
-4. **Combining Boolean Expressions**:
-   Boolean expressions can be combined using the boolean operators to form more complex conditions. For example:
-   ```java
-   boolean isRaining = true;
-   boolean isCold = false;
-   if (isRaining && isCold) {
-       System.out.println("Wear a raincoat.");
-   } else if (isRaining || isCold) {
-       System.out.println("Take precautions.");
-   } else {
-       System.out.println("Enjoy your day.");
-   }
-   ```
-   In this example, different messages are printed based on the combination of `isRaining` and `isCold` values.
+The addition operation takes two operands to find a sum.
 
-5. **Boolean Logic in Loops**:
-   Boolean logic is also used in loops to determine how many times a loop should execute. The `while` loop, for example, continues to execute as long as its boolean condition is `true`. For example:
-   ```java
-   int count = 0;
-   while (count < 5) {
-       System.out.println("Count is: " + count);
-       count++;
-   }
-   ```
-   This loop will print the count from 0 to 4 because the condition `count < 5` is `true` until `count` reaches 5.
+[Next slide]
 
-6. **Short-Circuit Evaluation**:
-   Java uses short-circuit evaluation for the `&&` and `||` operators. This means that the second operand is not evaluated if the first operand determines the result. For example:
-   ```java
-   boolean result = (5 > 3) || (10 / 0 == 0);
-   System.out.println(result);
-   ```
-   In this example, the second part of the expression `(10 / 0 == 0)` is not evaluated because the first part `(5 > 3)` is `true`, and the `||` operator short-circuits, resulting in `true` without causing a division by zero error.
+"Relational operators" also take two operands, but they evaluate to a Boolean value. For example, 15 > 25 evaluates to false--15 is not greater than 25.
 
-Understanding boolean logic is crucial for writing effective and efficient Java programs. It allows you to make decisions, control the flow of execution, and create complex conditions for various programming scenarios.
+[Next slide]
+
+There are six relational operators in Java. For our examples, we'll assume we have a couple of int variables defined.
+
+[Chart enter]
+
+The first operator is the equality operator, `==`. 
+
+[Next highlight]
+
+It checks if two values are equal. For example, age is equal to 17, which evaluates to false. This operator leads to a really common beginner mistake: using `=` instead of `==`. 
+
+[Next - arrow]
+
+A single = symbol *always* assigns a value to a variable, and a double == symbol *always* checks for equality. When I speak code out loud, I alway pronounce == as "is equal to" instead of "equals" to make it clear which one I mean.
+
+[Next highlight]
+
+The next operator is the not equal operator, `!=`. It checks if two values are not equal. For example, age is not equal to 17, which evaluates to true.
+
+[Next highlight]
+
+Less than and greater than work as you'd expect. These examples show that the two operands can be variables, literal values, or a combination of both.
+
+And the last two operators are less than or equal to and greater than or equal to. Again, they work as you'd expect--but notice the symbols we use. In math, we got used to drawing specific symbols for these operations
+
+[Next animation - symbols]
+
+But we don't have characters like that on our keyboard, so we type them the way we'd speak them: "less than or equal to" is a less than symbol and the equals symbol. "Greater than or equal to" is a greater than symbol and the equals symbol.
+
+[Next slide]
+
+There are a few more operators we use in boolean logic, which we call "logical operators." These operators allow us to combine multiple boolean expressions into a single, more complex expression. We'll look at these closer when we start writing decision-making code, but for now, here they are:
+
+[Next - drop table]
+
+Two ampersands, or what you probably think of as two "and" symbols, is the logical AND operator.
+[Next highlight]
+
+ It returns true only if both operands are true. This example evaluates to true if age is greater than or equal to 18 AND age is less than or equal to 21. If age is too low or too high, the expression evaluates to false. It basically checks to see if age is between 18 and 21.
+
+[Next - highlight]
+
+The operator for "OR" is two vertical lines. These characters are called "pipe lines", or just "pipes". They're just above the return or enter key on your keyboard.
+
+Logical OR returns true if at least one of the operands is true. This example evaluates to true if age is less than 18 OR the isRegistered variable is false. This expression checks to see if the user is either too young or not registered to vote.
+
+[Next - highlight]
+
+Last up is the logical NOT operator, which is an exclamation point. It inverts the value of a boolean expression. If the expression is true, NOT makes it false. If the expression is false, NOT makes it true.
+
+[Next - remove highlight]
+
+There's actually another logical operator called "exclusive or, but we don't use that and we'll ignore it for now since this chart is probably confusing enough already. As I said, we'll make sense out of these once we're able to start using them in our code.
+
+[Next Slide - strings]
+
+We often want to test the equality of strings, like when we ask the user to enter a password. 
+[Print variable assignment]
+We'll need to check if what they entered matches the password we have stored. 
+
+If these variables were numbers, we could just use the == operator
+
+[Next == ]  
+
+But in Java, we can't use == to compare strings. Actually, we _can_ use == to compare strings, but it doesn't work the way you'd expect--and it's not going to give you the results you expect. In short, don't do it.
+
+[Next - red line]
+
+Instead, we have to use a String method called `equals`, and we pass in the value we want to compare to.
+
+[Next - .equals]
+
+Incidentally, it doesn't matter which string use use to call the `equals` method and which we compare to. The result will be the same, so you could also write `password.equals(userPassword)`.
+
+[Next - last slide]
+
+It might not be clear yet why we're spending time on this, but understanding Boolean logic is going to make it possible to write code that makes decisions. And that's what we'll look at next...
