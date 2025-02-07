@@ -20,11 +20,9 @@ GitHub Page: https://timmcmichael.github.io/
 
 # 5B - If-Else Statements
 
+Look, we've all seen it. Your programs are feeling weighed down by life's tough decisions. They've reached a fork in the road, and they're just not sure which way to go. They need a little guidance, a little structure, a little... if-else goodness.
 
-
-Setters are great, but they just require So. Much. Typing. My precious little fingers can hardly take it! I just wish there was a way to jam all the values I want into an object at once.
-
-Constructors, to the rescue! Learn how a default constructor initializes an object when we don't create a constructor of your own. Then, learn how to create a constructor of your own. You'll have so much fun making a constructor that you'll then learn to override it so you can have even more fun!
+if-statements are not joking matter, so we won't be joking around in this video. See how to write an if statement that uses boolean logic to determine whether or not a block of code executes. Then see how to add an else block to make a structure that decides between two chunks of code.
 
 ----
 
@@ -36,8 +34,7 @@ GitHub Page: https://timmcmichael.github.io/
 Files used in videos:
 * GitHub: https://github.com/timmcmichael/EMCCTimFiles
 
-#java #coding #oop #classes #UML #objects #constructors
-
+#java #coding #if #if-else #decisions #branching #boolean #logic #relational-operators #comparison-operators 
 
 ---------------------
 
