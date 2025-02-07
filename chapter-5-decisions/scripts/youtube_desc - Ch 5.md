@@ -20,9 +20,9 @@ GitHub Page: https://timmcmichael.github.io/
 
 # 5B - If-Else Statements
 
-Look, we've all seen it. Your programs are feeling weighed down by life's tough decisions. They've reached a fork in the road, and they're just not sure which way to go. They need a little guidance, a little structure, a little... if-else goodness.
+Look, we've all seen it. Your programs are feeling weighed down by life's tough decisions. They've reached a fork in the road, and they're just not sure which way to go. They need a little guidance, a little structure, a little...if-elsey goodness.
 
-if-statements are not joking matter, so we won't be joking around in this video. See how to write an if statement that uses boolean logic to determine whether or not a block of code executes. Then see how to add an else block to make a structure that decides between two chunks of code.
+if-statements are no laughing matter, so we won't be joking around in this video. See how to write an if statement that uses boolean logic to determine whether or not a block of code executes. Then see how to add an else block to make a structure that decides between two chunks of code.
 
 ----
 
