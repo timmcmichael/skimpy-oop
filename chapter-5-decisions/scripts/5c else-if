@@ -1,0 +1,4 @@
+It might seem like if-else statements are pretty limited. After all, the only thing they can do is respond to yes or no questions. But we're going to learn a few tricks to make them more powerful. One of those tricks is the else-if statement. An else-if statement is a way to ask multiple questions in a single if-else statement. 
+
+We want to start integrating decisions into our OOP code, so for this video we're going to work with a class that represents a K-12 student.
+
