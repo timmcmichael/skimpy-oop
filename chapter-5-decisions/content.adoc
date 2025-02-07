@@ -46,15 +46,17 @@ _Is this student's GPA high enough to qualify for the scholarship? Has this cell
 The `true` or `false` value of a boolean expression can be used to determine which code block will execute next, so it's important to understand how they work. 
 
 
-// .Time To Watch!
-// ****
-// Boolean Logic in Java
+.Time To Watch!
+****
+Boolean Logic in Java
 
-// video::xxxx[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/npMQkQ2oCAU
+
+video::npMQkQ2oCAU[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // File from video:
 
 // * N/A
-// ****
+****
 
 ==== Boolean Values
 
@@ -242,8 +244,6 @@ if (age >= 21) {
 }
 ----
 
-
-
 In this example, each `if` statement is independent of the others and they all will be evaluated. regardless of the outcome of the previous `if` statement.
 Since `20` is greater than `18`, the first `if` block will be skipped, but the second `if` block will execute.
 Since `20` is less than `21`, the third `if` block will execute, but the fourth `if` block will be skipped.
@@ -259,6 +259,48 @@ With a series of separate `if statements, it's possible that no blocks of code w
 And any combination in between is possible, as well.
 
 === Nested if-else Statements
+
+If we want a block of code to execute only if two different conditions are met, we can place `if` statements inside of each other--which is called _nesting_.
+Nested if statements check multiple conditions in a hierarchical way: if one condition is met, it will proceed and check the next condition; if the first condition is not met, it will skip the inner `if` block.
+
+.Basic structure of a nested `if-else` statement.
+[source,java]
+----
+if (condition1) {
+    if (condition2) {
+        // executes if both condition1 and condition2 are true
+    }
+    else {
+        // executes if condition1 is true and condition2 is false
+    }
+}
+else {
+    // executes if condition1 is false
+}
+----
+
+In the example below, the program will print "You can vote and buy alcohol." if the age is `21` or older and the person is a U.S. citizen.
+
+.Example of a Nested `if-else` Statement.
+[source,java]
+----
+int age = 20;
+boolean isCitizen = true;
+if (age >= 21) {
+    if (isCitizen) {
+        System.out.println("You can vote and buy alcohol.");
+    }
+    else {
+        System.out.println("You can buy alcohol, but you can't vote.");
+    }
+}
+else {
+    System.out.println("You can't vote or buy alcohol.");
+}
+----
+
+
+
 
 
 // .Time To Watch!

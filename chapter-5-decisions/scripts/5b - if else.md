@@ -1,12 +1,10 @@
-In this video, we' wi'll take a look at if and if-else statements. These conditional statements give us the ability to run different blocks of code based on a Boolean espression--so if you're not familiar with those, be sure to watch the previous video. 
+In this video, we' wi'll take a look at if and if-else statements. These conditional statements give us the ability to run different blocks of code based on a Boolean espression.Iif you're not familiar with those, be sure to watch the previous video. 
 
 In order to jump right in to these examples, we're stepping away from our OOP perspective for a moment and just working within a main() method. But don't worry, we'll be back to OOP in one of the next videos on this topic.
 
-If you know me, you know that I really do love my teaching job. But I also love money, and the rest of my family loves fancy name brand clothe--and that's a problem. To solve that problem, I think I'll start selling some of my hilarious jokes. I'm going to write a program that calculates a total purchase price based on the number of jokes purchased. I'll also give a discount if the customer buys more than 10 jokes. Let's get started.
+If you know me, you know that I really do love my teaching job. But I also love money, and the rest of my family loves fancy name brand clothes--and that's a problem. To solve that problem, I think I'll start selling some of my hilarious jokes. I'm going to write a program that calculates a total purchase price based on the number of jokes the customer wants to buy. I'll also give a discount if the customer buys more than 10 jokes. Let's get started.
 
 Jokes sell for $30 each, which sounds expensive--but I know my worth. If a customer buys more than 10 jokes, they get a 10% discount. Through the magic of video editing, I'll add a header with test cases and I'll get the Scanner stuff ready to go.
-
-[Galdalf graphic]
 
 It's easy to forget those test cases, so keep building the habit of adding them right at the start. They are worth points, and if you consistently leave them out--our magician friend can predict your future. 
 
@@ -30,7 +28,7 @@ It looks good. Notice that the price only "kinda" looks like a currency value. A
 
 To make sure it is working correctly, I'll run this a few more times with my other test cases.
 
-They all work until I get to 10 or more jokes, because obviously I haven't written the code to a discount yet. But because I did thos test cases, I already know how the math works. If they buy enough for the 10% discount, it means they're really just paying 90% of the total. 90% as a decimal is 0.9, so I'll multiply the total price by 0.9 to get the discounted price.
+They all work until I get to 10 or more jokes, because obviously I haven't written the code to a discount yet. But because I did those test cases, I already know how the math works. If they buy enough for the 10% discount, it means they're really just paying 90% of the total. 90% as a decimal is 0.9, so I'll multiply the total price by 0.9 to get the discounted price.
 
 And for now I'll just add that code and try it out.
 
