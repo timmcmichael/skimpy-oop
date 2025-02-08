@@ -58,7 +58,7 @@ public class VinylRecord {
         if (this.genre.equals("Rock")) {
             if (this.subgenre.equals("Classic Rock")) {
                 this.price = 20.0;
-            } else if (this.subgenre.equals("Hard Rock")) {
+            } else if (this.subgenre.equals("Grunge")) {
                 this.price = 25.0;
             } else {
                 this.price = 15.0;

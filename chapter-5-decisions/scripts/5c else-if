@@ -1,7 +1,36 @@
-Change example to temperature--or modify the weather record class. If-else for "hot", "moderate", "cold", etc. And setter checks for a valid temp.
+It might seem like if-else statements are pretty limited. After all, the only thing they can do is pick between two possible options. But we're going to learn a few tricks to make them more powerful. One of those tricks is the *if-else if* statement. An *if-else if* statement is a way to choose one code block from a bunch of options.
+
+We want to start integrating decisions into our OOP code, so for this video we're going to work with a class called VinylRecord, with a demo program called VinylRecordDemo. The code for both files is available from the GitHub repository for this course, which is linked in description and in the eBook.
+
+This is going to be a class for an inventory and pricing application for a record store. The shop prices albums based on their genre
+
+[Show price chart]
+
+This chart shows a few genres and their corresponding prices. General "Rock" albums are $15, but "Classic Rock" and "Grunge" cost a little more, at $20 and $25. And while general Blues albums are $25, Chicago Blues and Delta Blues are priced higher.
+
+And anything that's not a Rock or Blues album gets a price of $10.
+
+To develop a system to manage this inventory, we could create a class called VinylRecord, and we'll use that class to try out some if-else if statements.
+
+Here's a diagram of the class. First, notice that there are a couple methods on the diagram that aren't in our code: we're missing the constructor and the `setGenre()` method. 
+
+And there are a couple other things to point out. The `setGenre()` method doesn't follow our usual pattern--it's one setter for two different fields. And there's no `setPrice()` method at all, so there's no way to get a value into that field.
+
+I've designed it that way because, since the price is determined by the genre and subgenre, there's no need to set the price directly. In fact, if we let someone set the price directly they might price it wrong. So we'll take care of setting the price in the `setGenre()` method.
+
+Okay, let's go ahead and create the header for `setGenre()`. It's a void method with parameters for the genre and subgenre. The body will be like other setters, but with two assignments statements instead of one.
+
+Once we've set those fields, we can set the price. First up, we'll create an if block to check if the genre is "Rock". If it is, we'll set the price to 15. 
+
+If it's not a Rock album, we need to keep checking, so I'll add an else statement. But a regular else statement won't work here. If-else let's us make one choice out of two options, but after Rock we still have two options left: Blues and everything else. So instead of adding a block after the else keyword, we'll go right into another if statement that checks to see if the genre is "Blues". This is called an *if-else if* statement. In the body of this second choice, let's set the price to 
 
 
-It might seem like if-else statements are pretty limited. After all, the only thing they can do is respond to yes or no questions. But we're going to learn a few tricks to make them more powerful. One of those tricks is the else-if statement. An else-if statement is a way to ask multiple questions in a single if-else statement. 
 
-We want to start integrating decisions into our OOP code, so for this video we're going to work with a class that represents a K-12 student.
+
+
+
+
+
+
+
 
