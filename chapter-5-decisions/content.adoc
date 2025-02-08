@@ -199,67 +199,71 @@ File from video:
 * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/MadJokes.java[`MadJokes.java`]
 ****
 
-=== The `if else if` Structure
+=== The `if-else if` Structure
+==== #The video for this section is in progress.#
 
 The `if-else` structure is great for choosing between two blocks of code, but what if you have more than two options?
 To handle this, you can chain multiple `if-else` statements together.
 
-.Example of an `if-else if` Statement.
+.`WeatherRecord.java` (excerpt). Example of an `if-else if` statement. See https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions[GitHub^] for the full file.
 [source,java]
 ----
-int age = 20;
-if (age < 18) {
-    System.out.println("You can't vote.");
-}
-else if (age < 21) {
-    System.out.println("You can vote, but you can't buy alcohol.");
-}
-else {
-    System.out.println("You can vote and buy alcohol.");
-}
-----
+public class WeatherRecord {
+    // Fields
+    private String date;
+    private int highTemperature;
+    private double averageWindSpeed;
 
-In this example, the program will print "You can't vote." if the age is less than `18`, "You can vote, but you can't buy alcohol." if the age is less than `21`, and "You can vote and buy alcohol." if the age is `21` or older.
-
-Basically, the program checks each boolean expression until one evaluates to `true`, and then executes the corresponding block of code.
-Once it was executed a code block, it will skip the rest of the `if-else` structure.
-If it never finds a `true` condition, it will execute the block of code in the `else` block, if one is present.
-
-An `if-else if` structure can execute, at most, one block of code. 
-If an `else` block is included at the end, that guarantees that exactly one block of code will execute.
-
-Compare that to a series of `if` statements without any else blocks.
-
-.Example of a Series of `if` Statements.
-[source,java]
-----
-if (age < 18) {
-    System.out.println("You can't vote.");
-}
-if (age >= 18) {
-    System.out.println("You can vote.");
-}
-if (age < 21) {
-    System.out.println("You can't buy alcohol.");
-}
-if (age >= 21) {
-    System.out.println("You can buy alcohol.");
+    public String getTempDescription() {
+        if (this.highTemperature > 90) {
+            return "Hot";
+        } else if (this.highTemperature > 70) {
+            return "Warm";
+        } else if (this.highTemperature > 50) {
+            return "Cool";
+        } else {
+            return "Cold";
+        }
+    }
 }
 ----
 
-In this example, each `if` statement is independent of the others and they all will be evaluated. regardless of the outcome of the previous `if` statement.
-Since `20` is greater than `18`, the first `if` block will be skipped, but the second `if` block will execute.
-Since `20` is less than `21`, the third `if` block will execute, but the fourth `if` block will be skipped.
-The output will be:
+In this example, the `getDescription()` method will return a `String` that describes the weather based on the high temperature of the day.
 
-[source]
-----
-You can vote.
-You can't buy alcohol.
-----
+* If the high temperature is greater than `90`, the method will return "Hot".
+* If the high temperature is greater than `70`, the method will return "Warm".
+* If the high temperature is greater than `50`, the method will return "Cool".
+* If the high temperature is `50` or less, the method will return "Cold".
 
-With a series of separate `if statements, it's possible that no blocks of code will execute, and it's possible that every block of code will execute. 
-And any combination in between is possible, as well.
+The code begins with the first statement, and if it evaluates to `true`, the corresponding block of code will execute.
+If the first statement evaluates to `false`, the program will move on to the next `else if` statement, and so on.
+Once a code block is executed, it will hit a `return` statement, which will exit the method and not evaluate any other blocks of code.
+Therefore, only one block of code will execute.
+If the program gets through the entire structure without finding a `true` condition, it will execute the block of code in the `else` block, if one is present.
+
+If you're looking at that code critically, you might notice that the `else` block is not strictly necessary. 
+You could just put the `return "Cold";` statement at the end of the method, and it would work the same way. 
+However, that depends on the logic of the `if-else if` structure and whether or not you're using `return` statements in the blocks of code.
+
+.Interesting!
+****
+The above example shows one clever use of decisions in an object class. You'd think that a `getDescription()` method would return return the value of a field called `description`, but there is no field. Instead, it just uses a decision structure to return a description based on the `highTemperature` field.
+****
+
+In summary, An `if-else if` structure can execute, at most, one block of code. 
+If an `else` block is included at the end, it guarantees that exactly one block of code will execute.
+
+.Time To Watch!
+****
+`if-else if` Statements in Java [COMING SOON]
+
+// https://youtu.be/YytQwS4F6fE
+
+// video::YytQwS4F6fE[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// File from video:
+
+// * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/MadJokes.java[`MadJokes.java`]
+****
 
 === Nested if-else Statements
 ==== #The video for this section is in progress. In the meantime, you can read section 5.4 (starting page 172) in the required textbook.#
@@ -283,39 +287,49 @@ else {
 }
 ----
 
-In the example below, the program will print "You can vote and buy alcohol." if the age is `21` or older and the person is a U.S. citizen.
+In the example below, the outermost if-else structure checks the high temperature of the day. The if-else structures within those blocks checks the average wind speed and returns an appropriate description.
 
-.Example of a Nested `if-else` Statement.
+.`WeatherRecord.java` (excerpt). Example of a nested `if-else` statement. See https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions[GitHub^] for the full file.
 [source,java]
 ----
-int age = 20;
-boolean isCitizen = true;
-if (age >= 21) {
-    if (isCitizen) {
-        System.out.println("You can vote and buy alcohol.");
+public String getFullDescription() {
+        if (this.highTemperature > 90) {
+            if (this.averageWindSpeed > 10) {
+                return "Hot and Windy";
+            } else {
+                return "Hot";
+            }
+        } else if (this.highTemperature > 70) {
+            if (this.averageWindSpeed > 10) {
+                return "Warm and Windy";
+            } else {
+                return "Warm";
+            }
+        } else if (this.highTemperature > 50) {
+            if (this.averageWindSpeed > 10) {
+                return "Cool and Windy";
+            } else {
+                return "Cool";
+            }
+        } else {
+            if (this.averageWindSpeed > 10) {
+                return "Cold and Windy";
+            } else {
+                return "Cold";
+            }
+        }
     }
-    else {
-        System.out.println("You can buy alcohol, but you can't vote.");
-    }
-}
-else {
-    System.out.println("You can't vote or buy alcohol.");
-}
 ----
 
-
-
-
-
-// .Time To Watch!
-// ****
-// Nested if-else Statements in Java
+.Time To Watch!
+****
+Nested if-else Statements in Java [COMING SOON!]
 
 // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // File from video:
 
 // * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
-// ****
+****
 
 
 === Using Logical Operators

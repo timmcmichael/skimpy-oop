@@ -2,6 +2,8 @@
  * This class represents a weather record for a specific date, logging the 
  * high temperature and average wind speed.
  * 
+ * NOTE: This class appears in multiple sections of the eBook and/or accompanying videos. This version demonstrates concepts from the _Decisions_ chapter.
+ * 
  */
 public class WeatherRecord {
     // Constructors
@@ -41,7 +43,7 @@ public class WeatherRecord {
         return averageWindSpeed;
     }
 
-    public String getDescription() {
+    public String getTempDescription() {
         if (this.highTemperature > 90) {
             return "Hot";
         } else if (this.highTemperature > 70) {
@@ -53,6 +55,34 @@ public class WeatherRecord {
         }
     }
 
+    public String getFullDescription() {
+        if (this.highTemperature > 90) {
+            if (this.averageWindSpeed > 10) {
+                return "Hot and Windy";
+            } else {
+                return "Hot";
+            }
+        } else if (this.highTemperature > 70) {
+            if (this.averageWindSpeed > 10) {
+                return "Warm and Windy";
+            } else {
+                return "Warm";
+            }
+        } else if (this.highTemperature > 50) {
+            if (this.averageWindSpeed > 10) {
+                return "Cool and Windy";
+            } else {
+                return "Cool";
+            }
+        } else {
+            if (this.averageWindSpeed > 10) {
+                return "Cold and Windy";
+            } else {
+                return "Cold";
+            }
+        }
+    }
+
     // Setters and Mutators
     public void setDate(String date) {
         this.date = date;
@@ -60,6 +90,12 @@ public class WeatherRecord {
 
     public void setHighTemperature(int highTemperature) {
         this.highTemperature = highTemperature;
+        if (this.highTemperature < -20) {
+            this.highTemperature = -20;
+        }
+        if (this.highTemperature > 130) {
+            this.highTemperature = 130;
+        }
     }
 
     public void setAverageWindSpeed(double averageWindSpeed) {
