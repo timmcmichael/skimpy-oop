@@ -24,6 +24,12 @@ Look, we've all seen it. Your programs are feeling weighed down by life's tough 
 
 if-statements are no laughing matter, so we won't be joking around in this video. See how to write an if statement that uses boolean logic to determine whether or not a block of code executes. Then see how to add an else block to make a structure that decides between two chunks of code.
 
+0:00 Intro
+0:58 Test Cases
+2:30 Basic calculation
+3:52 First if statement
+5:05 Correcting a mistake
+5:37 else block
 ----
 
 This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
@@ -34,7 +40,7 @@ GitHub Page: https://timmcmichael.github.io/
 Files used in videos:
 * GitHub: https://github.com/timmcmichael/EMCCTimFiles
 
-#java #coding #if #if-else #decisions #branching #boolean #logic #relational-operators #comparison-operators 
+#java #coding #if #if-else #decisions #branching #boolean #logic #relational-operators #comparison-operators
 
 ---------------------
 
