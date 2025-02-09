@@ -11,6 +11,8 @@ endif::[]
 === #The content in this chapter is in progress.# 
 #It is incomplete and likely full of typos. In each section, I've referenced the corresponding section in the required textbook (see Canvas). If you don't want to deal with any of that, you can choose to just read Chapter 5 in that book.#
 
+//TODO: Need this "video has more" disclaimer elsewhere?
+_*Note: the videos in this chapter go a little beyond the content in the corresponding sections--they show how to write the code, but also so how to apply some things to our class and object design. If you skip the videos, you might miss information needed for the assignments and/or quiz.*_
 
 // Example: two buttons on a food scale. On/Zero/Off button and switch between oz and grams. Multifunction button could be written a couple different ways (logical operators or nested if statements)
 
@@ -255,7 +257,9 @@ If an `else` block is included at the end, it guarantees that exactly one block 
 
 .Time To Watch!
 ****
-`if-else if` Statements in Java [COMING SOON]
+`if-else if` Statements in Java [COMING SOON (5c)]
+
+_Note: This video also shows how to use `if` statements in an OOP context, specifically to help with encapsulation._
 
 // https://youtu.be/YytQwS4F6fE
 
@@ -323,9 +327,12 @@ public String getFullDescription() {
 
 .Time To Watch!
 ****
-Nested if-else Statements in Java [COMING SOON!]
+Nested if-else Statements in Java [COMING SOON! 5d]
 
 // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+_Note: This video also shows how to use `if` statements in an OOP context, specifically to help with encapsulation._
+
 // File from video:
 
 // * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]

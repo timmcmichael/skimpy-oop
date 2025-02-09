@@ -1,18 +1,20 @@
-We've learn a couple ways to use if statements to add some flexibility to our decisions. Sometimes we need to make what we might call a "hierarchical" decision, where we make one big decision, and once we've done that we drill down into a more specific choice. For example, when the server hands you a menu at a restaurant, you first have to choose if you're going to order from the breakfast, lunch, or dinner options. Once you've made that decision, you can look at the specific choices for that meal. In coding, we can make this kind of hierarchical decision with a nested if statement.
+We've learned a couple ways to use if statements to add some flexibility to our decisions. Sometimes we need to make what we might call a "hierarchical" decision, where we make one big decision, and once we've done that we drill down into a more specific choice. 
+
+For example, when the server hands you a menu at a restaurant, you first have to decide if you're going to order from the breakfast, lunch, or dinner options. Once you've made that decision, you can look at the specific choices for that meal. In coding, we can make this kind of hierarchical decision with a nested if statement.
 
 I'm an old fashioned guy. Well, I'm an old guy, but I'm also old fashioned. When I was young and there was no Spotify, we'd go to the record store to get music we wanted. Like everyone else my age, I always thought it'd be cool to own a record store. So we're going to consider a simple record store inventory system to learn about nested if statements.
 
-We're going to work with a class called VinylRecord, with a demo program called VinylRecordDemo. The code for both files is available from the GitHub repository for this course, which is linked in description and in the eBook.
+We're going to work with a class called `VinylRecord`, with a demo program called `VinylRecordDemo`. The code for both files is available from the GitHub repository for this course, which is linked in description and in the eBook.
 
-This is going to be a class for an inventory and pricing application for a record store. The shop prices albums based on their genre
+This is going to be a class for an inventory and pricing application for a record store. The shop prices albums based on their genre.
 
 [Show price chart]
 
-This chart shows a few genres and their corresponding prices. General "Rock" albums are $15, but "Classic Rock" and "Grunge" cost a little more, at $20 and $25. And while general Blues albums are $25, Chicago Blues and Delta Blues are priced higher.
+This chart shows a few genres and their corresponding prices. General "Rock" albums are $15, but "Classic Rock" and "Grunge" cost a little more, at 20 and 25 dollars. And while general Blues albums are $25, Chicago Blues and Delta Blues are priced higher.
 
 And anything that's not a Rock or Blues album gets a price of $10.
 
-Just like our restaurant menu example, this is a hierarchical decision. We first need to decide if the album is Rock, Blues, or something else. Once we've made that decision, we can make a more specific decision to establish the price.
+Just like our restaurant menu example, determining the price of a specific record is a hierarchical decision. We first need to decide if the album is Rock, Blues, or something else. Once we've made that decision, we can make a more specific decision to establish the price.
 
 Here's a diagram of the class we'll use. First, notice that there are a couple methods on the diagram that aren't in our code: we're missing the constructor and the `setGenre()` method. 
 
@@ -39,7 +41,7 @@ This is a good place to go over to the demo class and make sure it's working so 
 Inside the block for our Rock albums, we need to make another decision. My if statement will check to see if it's Classic Rock. And let's go ahead and set the price to 
 
 
-If it's not a Rock album, we need to keep checking, so I'll add an else statement. But a regular else statement won't work here. If-else let's us make one choice out of two options, but after Rock we still have two options left: Blues and everything else. So instead of adding a block after the else keyword, we'll go right into another if statement that checks to see if the genre is "Blues". This is called an *if-else if* statement. In the body of this second choice, let's set the price to 
+If it's not a Rock album, we need to keep checking, so I'll add an else statement. But a regular else statement won't work here. If-else let's us make one choice out of two options, but after Rock we still have two options left: Blues and everything else. So instead of adding a block after the else keyword, we'll go right into another if statement that checks to see if the genre is "Blues". This is called an *if-else if* statement. In the body of this second choice, let's set the price to 25.0
 
 
 
