@@ -12,6 +12,8 @@ But before we get to that, we're going to apply what we already know about if st
 
 Our getters have been fine, since all they are supposed to do is return the current value of the field. Until now, though, our setters have just assigned whatever value they receive to the field. That's not very effective encapsulation, since it still allows other code to mangle our data. But with if statements, we can make our setters a little smarter and a little more secure.
 
+A quick peek at the Demo class shows that we've got code to create an instance and set some values, then output some values to show that everything is working. I've commented out a chunk of code to create and test a few other objects with diffent values; that way we can just uncomment it later as we add more functionality. But for now, I'll let that code commented out.
+
 Let's start with the gradeLevel field. The grade level is determined the student's age, so we don't want a situation where those two don't match. If the student is 16, we don't want some other code to come along and set the grade level to 3. So we're not going to have a setter for gradeLevel--we'll just set that value in our setAge() method.
 
 Speaking of setAge(), we're allowing the age to be set to any int value, but if we're talking about a K-12 student, we know that the age should be between about 5 or 6 years old and about 18. If the value passed in is outside that range, we'll need to address it.
