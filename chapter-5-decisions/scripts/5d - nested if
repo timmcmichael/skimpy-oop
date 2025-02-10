@@ -26,11 +26,11 @@ Okay, let's go ahead and create the header for `setGenre()`. It's a void method 
 
 Once we've set those fields, we can set the price. First up, we'll create an if block to check if the genre is "Rock". Remember that we can't use the `==` operator to compare strings; we'll use the `equals()` method.
 
-If it is a Rock album, we still need to check the subgenre, so for now, I'll leave the code block empty and get the rest of this "top level" decision in place.
+If it is a Rock album, we still need to check the subgenre, so for now, I'll just set the price to $15, which is the default for a rock album, and get the rest of this "top level" decision in place.
 
-If it's not a Rock album, we need to check if it's a Blues album. That means adding an else-if statement with another equals() call. Again, the body can be empty for now.
+If it's not a Rock album, we need to check if it's a Blues album. That means adding an else-if statement with another equals() call. The default for a Blues album is $25, so we'll set the price to that.
 
-And finally, we need a catch-all else block for anything that's not Rock or Blues. We'll set the price to $10 in this block, since there are no other decisions to make.
+And finally, we need a catch-all else block for anything that's not Rock or Blues. We'll set the price to $10 in this block.
 
 If we think of that idea of a hierachical decision, this would be the top-level decision--it's the decision we have to make first, like breakfast, lunch, or dinner.
 
@@ -38,18 +38,24 @@ This is a good place to go over to the demo class and make sure it's working so 
 
 // Create a three records, Rock, Blues, and Hip-Hop.
 
-Inside the block for our Rock albums, we need to make another decision. My if statement will check to see if it's Classic Rock. And let's go ahead and set the price to 
+This shows that our top-level decision structure is working, so now we can focus on the next level of decisions.
 
+Inside the block for our Rock albums, we need to look at the subgenre of the record. My if statement will check to see if it's Classic Rock; if so, we'll set the price to $20.0.
 
-If it's not a Rock album, we need to keep checking, so I'll add an else statement. But a regular else statement won't work here. If-else let's us make one choice out of two options, but after Rock we still have two options left: Blues and everything else. So instead of adding a block after the else keyword, we'll go right into another if statement that checks to see if the genre is "Blues". This is called an *if-else if* statement. In the body of this second choice, let's set the price to 25.0
+We'll need an else-if statement to check for Grunge albums, and set the price to $25.0.
 
+And we'll need an else block to catch any other Rock albums, which is that $15.0 default.
 
+Let's give that a shot and see how we're doing.
 
+Okay, so now it's just a matter of applying the same kind of structure to our Blues genre. The first if block will check for Chicago Blues, and set the price to $30.0.
 
+The else-if block will check for Delta Blues, and set the price to $35.0.
 
+And the else block will set the price to $25.0.
 
+All of this is followed by our else statement that sets the price to $10.0, but if we had more genres, we could just keep adding else-if blocks and then if-else statements within those for subgenre pricing.
 
+We should be ready for our final test now.
 
-
-
-
+And that's how we can use nested if statements. This gives us a way to make broad decisions first, and then drill down into more specific decisions. This is a common pattern in programming, and it's a good way to structure our code when we have a series of related decisions to make.

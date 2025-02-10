@@ -504,13 +504,14 @@ public class AverageAge {
 
 In "solution walkthrough" videos, I give a problem/prompt that is similar to the kinds of work I assign, and then I record myself writing a solution. It's not absolutely mandatory to watch this video, but students report that these videos are particularly helpful.
 
-// TODO: Check audio levels on this old video.
+// TODO: Change link to new channel
 
 .Time To Watch!
 ****
 Methods with Parameters and Returns
 
-video::-ubNZHNV-go[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::f08bKXVqxZk[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://www.youtube.com/watch?v=f08bKXVqxZk&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=18
 Solution file from video:
 
 * https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/Percentages.java[`Percentages.java`]
@@ -518,8 +519,8 @@ Solution file from video:
 
 
 
-// TODO: Ch 3 check your learning
-=== Check Your Learning
+// TODO: Ch 3 Check Yourself Before You Wreck Yourself (on the assignments)
+=== Check Yourself Before You Wreck Yourself (on the assignments)
 
 Can you answer these questions?
 

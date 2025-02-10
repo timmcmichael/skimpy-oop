@@ -349,7 +349,7 @@ TIP: Many IDEs have a keyboard shortcut for commenting out code. In Visual Studi
 
 // TODO: Use Co-pilot to create better questions
 
-=== Check Your Learning
+=== Check Yourself Before You Wreck Yourself (on the assignments)
 
 ==== Can you answer these questions?
 

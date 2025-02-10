@@ -1,3 +1,8 @@
+/* 
+ * This class represents a K-12 student. It uses if and else if statements to determine the grade level of the student based on age. It also demonstrates the use of if statements 
+ * 
+ */
+
 public class K12Student {
     private String name;
     private int age;

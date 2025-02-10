@@ -6,7 +6,7 @@ This is going to be a class that just keeps track of a student's age and grade l
 
 [Show diagram of K12Student class]
 
-There's no constructor yet, and we'll save that until close to the end. There's are a couple other inconsistencies here: get have a getSchoolType() method, which should return "elementary school," "middle school," or "high school", but we don't have a schoolType field to go with it. And with gradeLevel(), we have kind of the opposite--we're missing a set method for that field. These are all intentional and we'll talk about them as we go.
+There's no constructor yet, and we'll save that until close to the end. There are a couple other inconsistencies here: we have a getSchoolType() method, which should return "elementary school," "middle school," or "high school", but we don't have a schoolType field to go with it. And with gradeLevel(), we have kind of the opposite--we're missing a set method for that field. These are all intentional and we'll talk about them as we go.
 
 But before we get to that, we're going to apply what we already know about if statements to our understanding of encapsulation. Remember that encapsulation is the idea that we should keep our fields private and only allow access to them through methods. 
 
