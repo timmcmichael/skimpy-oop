@@ -62,6 +62,7 @@ public class VinylRecordDemo {
      * This demonstrates that you can pass an object to a method, and the method can access the object's fields.
      */
     private static void displayRecord(VinylRecord record) {
+        System.out.println("[------Vinyl Record Information------]");
         System.out.println("Title: " + record.getTitle());
         System.out.println("Artist: " + record.getArtist());
         System.out.println("Genre: " + record.getGenre());
