@@ -1,6 +1,8 @@
 /*
  * This class represents a simplified K-12 student record, with a name, age, grade level (1-12), and school type (elementary, middle school, or high school).
  * 
+ * It demonstrates the use of if-else statements in an object-oriented context, including encapsulation and data validation.
+ * 
  */
 public class K12Student {
     private String name;
