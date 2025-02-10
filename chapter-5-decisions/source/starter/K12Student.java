@@ -19,7 +19,7 @@ public class K12Student {
     }
 
     public String getSchoolType() {
-        return "unknown";
+        return "[unknown]";
     }
 
     // Setters
