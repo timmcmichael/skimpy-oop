@@ -8,7 +8,7 @@ endif::[]
 
 == Stuff That's Tacked on the End
 
-=== Answers to _Check Your Learning_ questions
+=== Answers to _Check Yourself Before You Wreck Yourself (on the assignments)_ questions
 
 ==== Getting Started Chapter
 
@@ -177,3 +177,18 @@ A class is a blueprint or template for creating objects. It defines the attribut
 
 *What is encapsulation, and why is it important in OOP? Provide an example.*::
 Encapsulation is the concept of hiding the internal state of an object and requiring all interaction to be performed through the object's methods. This is important because it protects the object's data from unintended or harmful modifications. For example, in a bank account class, the balance field is private and can only be accessed or modified through a public getter method, and modified through public deposit and withdraw methods.
+
+==== Decisions (Chapter 5)
+
+[qanda]
+*Explain what Boolean expressions are and how they are used to make decisions in Java.*::
+Boolean expressions are statements that evaluate to either true or false. In Java, they are used to make decisions by determining which blocks of code to execute based on the evaluation of these expressions.
+
+*Explain the difference between a relational operator and a logical operator.*::
+Relational operators compare two values and determine their relationship, such as equality (==), inequality (!=), less than (<), and greater than (>). Logical operators, on the other hand, combine multiple Boolean expressions to form a single, more complex expression, such as AND (&&), OR (||), and NOT (!).
+
+*What is the difference between an `if` statement and an `if-else` statement?*::
+An if statement allows you to execute a block of code only if a certain condition is true. An if-else statement extends this by providing an alternative block of code to execute if the condition is false, allowing you to choose between two possible actions.
+
+*How can you write code that runs one code block from multiple options?*:: 
+You can use a switch statement to run one code block from multiple options based on the value of an expression. Alternatively, you can use an if-else if structure to chain multiple if-else statements together, allowing you to handle more than two options.
