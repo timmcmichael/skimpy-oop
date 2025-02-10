@@ -541,21 +541,25 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <ul class="sectlevel2">
 <li><a href="_0101_decisions_chapter_5.html#_the_content_in_this_chapter_is_in_progress"><mark>The content in this chapter is in progress.</mark></a>
 </li>
+<li><a href="_0101_decisions_chapter_5.html#_whats_the_point_6">What&#8217;s the Point?</a>
+</li>
 <li><a href="_0101_decisions_chapter_5.html#_boolean_expressions">Boolean Expressions</a>
 </li>
 <li><a href="_0101_decisions_chapter_5.html#_if_statements">if Statements</a>
 </li>
 <li><a href="_0101_decisions_chapter_5.html#_adding_an_else_block">Adding an <code>else</code> Block</a>
 </li>
-<li><a href="_0101_decisions_chapter_5.html#_the_if_else_if_structure">The <code>if else if</code> Structure</a>
+<li><a href="_0101_decisions_chapter_5.html#_the_if_else_if_structure">The <code>if-else if</code> Structure</a>
 </li>
 <li><a href="_0101_decisions_chapter_5.html#_nested_if_else_statements">Nested if-else Statements</a>
 </li>
 <li><a href="_0101_decisions_chapter_5.html#_using_logical_operators">Using Logical Operators</a>
 </li>
-<li><a href="_0101_decisions_chapter_5.html#_optional_the_ternary_operator">OPTIONAL: The Ternary Operator</a>
+<li><a href="_0101_decisions_chapter_5.html#_switch_statements"><code>switch</code> Statements</a>
 </li>
-<li><a href="_0101_decisions_chapter_5.html#_optional_switch_statements">OPTIONAL: switch Statements</a>
+<li><a href="_0101_decisions_chapter_5.html#_solution_walkthrough_2">Solution Walkthrough</a>
+</li>
+<li><a href="_0101_decisions_chapter_5.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_6">Check Yourself Before You Wreck Yourself (on the assignments)</a>
 </li>
 </ul>
 </li>
@@ -583,6 +587,9 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <div class="paragraph">
 <p><mark>It is incomplete and likely full of typos. In each section, I&#8217;ve referenced the corresponding section in the required textbook (see Canvas). If you don&#8217;t want to deal with any of that, you can choose to just read Chapter 5 in that book.</mark></p>
 </div>
+<div class="paragraph">
+<p><strong><em>Note: the videos in this chapter go a little beyond the content in the corresponding sections&#8212;&#8203;they show how to write the code, but also show how to apply some things to our class and object design. If you skip the videos, you might miss information needed for the assignments and/or quiz.</em></strong></p>
+</div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Help Make These Materials Better!</div>
@@ -594,9 +601,29 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </div>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_whats_the_point_6">What&#8217;s the Point?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Understand Boolean expressions</p>
+</li>
+<li>
+<p>Implement <code>if</code> and <code>if-else</code> statements</p>
+</li>
+<li>
+<p>Use <code>else if</code> and nested <code>if-else</code> statements</p>
+</li>
+<li>
+<p>Apply decision structures to object-oriented programming</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><em>Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions" target="_blank" rel="noopener">GitHub</a>.</em></p>
 </div>
+<hr>
 </div>
 <div class="sect2">
 <h3 id="_boolean_expressions">Boolean Expressions</h3>
@@ -606,12 +633,12 @@ How boring!
 To give our programs the ability to <em>branch</em> and execute different code based on different conditions, we need to introduce the concept of <em>decisions</em>.</p>
 </div>
 <div class="paragraph">
-<p>In computer programming, a decision is made based on a <strong>boolean expression</strong>, which is an expression that evaluates to either <code>true</code> or <code>false</code>.
+<p>In computer programming, a decision is made based on a <strong>Boolean expression</strong>, which is an expression that evaluates to either <code>true</code> or <code>false</code>.
 Think of them as questions that can be answered with a simple "yes" or "no".
 <em>Is this student&#8217;s GPA high enough to qualify for the scholarship? Has this cell phone customer used all of their data? Did the user enter "exit"?</em></p>
 </div>
 <div class="paragraph">
-<p>The <code>true</code> or <code>false</code> value of a boolean expression can be used to determine which code block will execute next, so it&#8217;s important to understand how they work.</p>
+<p>The <code>true</code> or <code>false</code> value of a Boolean expression can be used to determine which code block will execute next, so it&#8217;s important to understand how they work.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -629,7 +656,7 @@ Think of them as questions that can be answered with a simple "yes" or "no".
 <div class="sect3">
 <h4 id="_boolean_values">Boolean Values</h4>
 <div class="paragraph">
-<p>The simplest way to use boolean in Java are the keywords <code>true</code> and <code>false</code>.
+<p>The simplest way to use Boolean in Java is with the keywords <code>true</code> and <code>false</code>.
 These can be assigned to variables of type <code>boolean</code>:</p>
 </div>
 <div class="listingblock">
@@ -643,22 +670,22 @@ These can be assigned to variables of type <code>boolean</code>:</p>
 <h4 id="_relational_operations">Relational Operations</h4>
 <div class="paragraph">
 <p>Also known as <em>comparison operations</em>, relational operations are expressions that compare two values.
-You will remember them from math class.<em>Is <code>x</code> greater than <code>y</code>? Is <code>a</code> less than or equal to <code>10</code>? Is <code>c</code> equal to <code>d</code>?</em>
+You will remember them from math class. <em>Is <code>x</code> greater than <code>y</code>? Is <code>a</code> less than or equal to <code>10</code>? Is <code>c</code> equal to <code>d</code>?</em>
 Relational operators, like arithmetic operators, are <em>binary</em> operators that require two operands.
 In other words, you need two values to compare.
 In your math class, you could draw symbols that aren&#8217;t on your keyboard, like a &#8805; for "greater than or equal to."
 In Java, where we have to stick with stuff on our keyboard, we use the following symbols:</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even" style="width: 50%;">
-<caption class="title">Table 3. Java arithmetic operators</caption>
+<caption class="title">Table 3. Java relational operators</caption>
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 83.3334%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Operator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Operator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>==</code></p></td>
@@ -687,7 +714,7 @@ In Java, where we have to stick with stuff on our keyboard, we use the following
 </tbody>
 </table>
 <div class="paragraph">
-<p>A relational operation will alway evaluate to either <code>true</code> or <code>false</code>.
+<p>A relational operation will always evaluate to either <code>true</code> or <code>false</code>.
 We can store that result in a <code>boolean</code> variable, as shown below, and we&#8217;ll also learn how to use these expressions in <code>if</code> statements later in this chapter.</p>
 </div>
 <div class="listingblock">
@@ -741,9 +768,9 @@ This method will examine the contents of the strings and return <code>true</code
 It allows you to execute a block of code only if a certain condition is true.</p>
 </div>
 <div class="paragraph">
-<p>The syntax of an <code>if</code> statement is the keyword <code>if</code>, followed by a boolean expression in parentheses, followed by a block of code in curly braces.
-If the boolean expression evaluates to <code>true</code>, the block of code will execute.
-If the boolean expression evaluates to <code>false</code>, the block of code will be skipped.
+<p>The syntax of an <code>if</code> statement is the keyword <code>if</code>, followed by a Boolean expression in parentheses, followed by a block of code in curly braces.
+If the Boolean expression evaluates to <code>true</code>, the block of code will execute.
+If the Boolean expression evaluates to <code>false</code>, the block of code will be skipped.
 In either case the program will continue executing the next line of code after the <code>if</code>-block.</p>
 </div>
 <div class="listingblock">
@@ -758,22 +785,22 @@ In either case the program will continue executing the next line of code after t
 </div>
 <div class="paragraph">
 <p>In this example, the <code>if</code> statement checks if the variable <code>age</code> is less than <code>21</code>.
-Since <code>20</code> is less than <code>21</code>, the boolean expression evaluates to <code>true</code>, and the block of code inside the <code>if</code> statement is executed&#8212;&#8203;and it prints "You can&#8217;t buy alcohol."
+Since <code>20</code> is less than <code>21</code>, the Boolean expression evaluates to <code>true</code>, and the block of code inside the <code>if</code> statement is executed&#8212;&#8203;and it prints "You can&#8217;t buy alcohol."
 The program then continues to the next line of code, which prints "Keep that in mind when you go to the store!"</p>
 </div>
 <div class="paragraph">
-<p>If the value of <code>age</code> were <code>22</code>, the boolean expression would evaluate to <code>false</code>, and the block of code inside the <code>if</code> statement would be skipped.
+<p>If the value of <code>age</code> were <code>22</code>, the Boolean expression would evaluate to <code>false</code>, and the block of code inside the <code>if</code> statement would be skipped.
 The program would then continue to the next line of code, which prints "Keep that in mind when you go to the store!"</p>
 </div>
 <div class="paragraph">
-<p>Keep in mind, the parentheses after the <code>if</code> keyword can contain any boolean expression&#8212;&#8203;not just this simple example.</p>
+<p>Keep in mind, the parentheses after the <code>if</code> keyword can contain any Boolean expression&#8212;&#8203;not just this simple example.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_adding_an_else_block">Adding an <code>else</code> Block</h3>
 <div class="paragraph">
 <p>An <code>if</code> statement simply determines whether or not to execute a single block of code.
-If you want choose between two blocks of code, you can add an <code>else</code> block to the <code>if</code> statement.
+If you want to choose between two blocks of code, you can add an <code>else</code> block to the <code>if</code> statement.
 The syntax is simple: after the <code>if</code> block, add the keyword <code>else</code>, followed by a block of code in curly braces.</p>
 </div>
 <div class="listingblock">
@@ -816,81 +843,109 @@ Basically, it&#8217;s an either-or situation.</p>
 </div>
 </div>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Interesting!</div>
+<div class="paragraph">
+<p>Java includes a shorthand form of an if-else statement called the <em>ternary operator</em>, which uses the question mark symbol. It&#8217;s a useful little trick, but it can be confusing for beginner&#8212;&#8203;and for the people reading your code later. We won&#8217;t look at them in this course, but a web search should turn up plenty of examples if you are curious.</p>
+</div>
+<div class="paragraph">
+<p>Assignments in my course require you to actually use if-else statements, so you shouldn&#8217;t use the ternary operator in code you submit to me.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_the_if_else_if_structure">The <code>if else if</code> Structure</h3>
+<h3 id="_the_if_else_if_structure">The <code>if-else if</code> Structure</h3>
+<div class="sect3">
+<h4 id="_the_video_for_this_section_is_currently_in_progress_and_will_be_available_soon"><mark>The video for this section is currently in progress and will be available soon.</mark></h4>
 <div class="paragraph">
 <p>The <code>if-else</code> structure is great for choosing between two blocks of code, but what if you have more than two options?
 To handle this, you can chain multiple <code>if-else</code> statements together.</p>
 </div>
 <div class="listingblock">
-<div class="title">Example of an <code>if-else if</code> Statement.</div>
+<div class="title"><code>WeatherRecord.java</code> (excerpt). Example of an <code>if-else if</code> statement. See <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions" target="_blank" rel="noopener">GitHub</a> for the full file.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">;</span>
-<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t vote.&quot;</span><span class="tok-p">);</span>
-<span class="tok-p">}</span>
-<span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can vote, but you can&#39;t buy alcohol.&quot;</span><span class="tok-p">);</span>
-<span class="tok-p">}</span>
-<span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can vote and buy alcohol.&quot;</span><span class="tok-p">);</span>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-c1">// Fields</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getTempDescription</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">90</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Hot&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">70</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Warm&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">50</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cool&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cold&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-p">}</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
 <span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>In this example, the program will print "You can&#8217;t vote." if the age is less than <code>18</code>, "You can vote, but you can&#8217;t buy alcohol." if the age is less than <code>21</code>, and "You can vote and buy alcohol." if the age is <code>21</code> or older.</p>
+<p>In this example, the <code>getDescription()</code> method will return a <code>String</code> that describes the weather based on the high temperature of the day.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If the high temperature is greater than <code>90</code>, the method will return "Hot".</p>
+</li>
+<li>
+<p>If the high temperature is greater than <code>70</code>, the method will return "Warm".</p>
+</li>
+<li>
+<p>If the high temperature is greater than <code>50</code>, the method will return "Cool".</p>
+</li>
+<li>
+<p>If the high temperature is <code>50</code> or less, the method will return "Cold".</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Basically, the program checks each boolean expression until one evaluates to <code>true</code>, and then executes the corresponding block of code.
-Once it was executed a code block, it will skip the rest of the <code>if-else</code> structure.
-If it never finds a <code>true</code> condition, it will execute the block of code in the <code>else</code> block, if one is present.</p>
+<p>The code begins with the first statement, and if it evaluates to <code>true</code>, the corresponding block of code will execute.
+If the first statement evaluates to <code>false</code>, the program will move on to the next <code>else if</code> statement, and so on.
+Once a code block is executed, it will hit a <code>return</code> statement, which will exit the method and not evaluate any other blocks of code.
+Therefore, only one block of code will execute.
+If the program gets through the entire structure without finding a <code>true</code> condition, it will execute the block of code in the <code>else</code> block, if one is present.</p>
 </div>
 <div class="paragraph">
-<p>An <code>if-else if</code> structure can execute, at most, one block of code.
-If an <code>else</code> block is included at the end, that guarantees that exactly one block of code will execute.</p>
+<p>If you&#8217;re looking at that code critically, you might notice that the <code>else</code> block is not strictly necessary.
+You could just put the <code>return "Cold";</code> statement at the end of the method, and it would work the same way.
+However, that depends on the logic of the <code>if-else if</code> structure and whether or not you&#8217;re using <code>return</code> statements in the blocks of code.</p>
 </div>
-<div class="paragraph">
-<p>Compare that to a series of <code>if</code> statements without any else blocks.</p>
-</div>
-<div class="listingblock">
-<div class="title">Example of a Series of <code>if</code> Statements.</div>
+<div class="sidebarblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t vote.&quot;</span><span class="tok-p">);</span>
-<span class="tok-p">}</span>
-<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can vote.&quot;</span><span class="tok-p">);</span>
-<span class="tok-p">}</span>
-<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t buy alcohol.&quot;</span><span class="tok-p">);</span>
-<span class="tok-p">}</span>
-<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can buy alcohol.&quot;</span><span class="tok-p">);</span>
-<span class="tok-p">}</span></code></pre>
+<div class="title">Interesting!</div>
+<div class="paragraph">
+<p>The above example shows one clever use of decisions in an object class. You&#8217;d think that a <code>getDescription()</code> method would return the value of a field called <code>description</code>, but there is no field. Instead, it just uses a decision structure to return a description based on the <code>highTemperature</code> field.</p>
+</div>
 </div>
 </div>
 <div class="paragraph">
-<p>In this example, each <code>if</code> statement is independent of the others and they all will be evaluated. regardless of the outcome of the previous <code>if</code> statement.
-Since <code>20</code> is greater than <code>18</code>, the first <code>if</code> block will be skipped, but the second <code>if</code> block will execute.
-Since <code>20</code> is less than <code>21</code>, the third <code>if</code> block will execute, but the fourth <code>if</code> block will be skipped.
-The output will be:</p>
+<p>In summary, An <code>if-else if</code> structure can execute, at most, one block of code.
+If an <code>else</code> block is included at the end, it guarantees that exactly one block of code will execute.</p>
 </div>
-<div class="listingblock">
+<div class="sidebarblock">
 <div class="content">
-<pre class="pygments highlight"><code><span></span>You can vote.
-You can&#39;t buy alcohol.</code></pre>
-</div>
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p><code>if-else if</code> Statements in Java [COMING SOON (5c)]</p>
 </div>
 <div class="paragraph">
-<p>With a series of separate `if statements, it&#8217;s possible that no blocks of code will execute, and it&#8217;s possible that every block of code will execute.
-And any combination in between is possible, as well.</p>
+<p><em>Note: This video also shows how to use <code>if</code> statements in an OOP context, specifically to help with encapsulation.</em></p>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_nested_if_else_statements">Nested if-else Statements</h3>
 <div class="sect3">
-<h4 id="_the_video_for_this_section_is_in_progress_in_the_meantime_you_can_read_section_5_4_starting_page_172_in_the_required_textbook"><mark>The video for this section is in progress. In the meantime, you can read section 5.4 (starting page 172) in the required textbook.</mark></h4>
+<h4 id="_the_video_for_this_section_is_currently_in_progress_and_will_be_available_soon_in_the_meantime_you_can_read_section_5_4_starting_page_172_in_the_required_textbook"><mark>The video for this section is currently in progress and will be available soon. In the meantime, you can read section 5.4 (starting page 172) in the required textbook.</mark></h4>
 <div class="paragraph">
 <p>If we want a block of code to execute only if two different conditions are met, we can place <code>if</code> statements inside of each other&#8212;&#8203;which is called <em>nesting</em>.
 Nested if statements check multiple conditions in a hierarchical way: if one condition is met, it will proceed and check the next condition; if the first condition is not met, it will skip the inner <code>if</code> block.</p>
@@ -912,47 +967,297 @@ Nested if statements check multiple conditions in a hierarchical way: if one con
 </div>
 </div>
 <div class="paragraph">
-<p>In the example below, the program will print "You can vote and buy alcohol." if the age is <code>21</code> or older and the person is a U.S. citizen.</p>
+<p>In the example below, the outermost if-else structure checks the high temperature of the day.
+The if-else structures within those blocks checks the average wind speed and returns an appropriate description.</p>
 </div>
 <div class="listingblock">
-<div class="title">Example of a Nested <code>if-else</code> Statement.</div>
+<div class="title"><code>WeatherRecord.java</code> (excerpt). Example of a nested <code>if-else</code> statement. See <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions" target="_blank" rel="noopener">GitHub</a> for the full file.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">;</span>
-<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isCitizen</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
-<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">isCitizen</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can vote and buy alcohol.&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-p">}</span>
-<span class="tok-w">    </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can buy alcohol, but you can&#39;t vote.&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-p">}</span>
-<span class="tok-p">}</span>
-<span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t vote or buy alcohol.&quot;</span><span class="tok-p">);</span>
-<span class="tok-p">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getFullDescription</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">90</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Hot and Windy&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Hot&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">70</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Warm and Windy&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Warm&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">50</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cool and Windy&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cool&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cold and Windy&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cold&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span>
+<span class="tok-w">        </span><span class="tok-p">}</span>
+<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Nested if-else Statements in Java [COMING SOON! 5d]</p>
+</div>
+<div class="paragraph">
+<p><em>Note: This video also shows how to use <code>if</code> statements in an OOP context, specifically to help with encapsulation.</em></p>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_using_logical_operators">Using Logical Operators</h3>
+<div class="paragraph">
+<p>In addition to the relational operators, Java also includes logical operators we can use to make more complex Boolean expressions.
+A logical operator is a binary operation, so it takes two operands&#8212;&#8203;but the operands are Boolean expressions instead of numbers.</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even" style="width: 75%;">
+<caption class="title">Table 4. Java logical operators</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 71.4286%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Operator</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&amp;&amp;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AND</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evaluates to <code>true</code> if <strong>both</strong> operands are <code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>||</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evaluates to <code>true</code> if <strong>either</strong> operand is <code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>!</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NOT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evaluates to <code>true</code> if the operand is <code>false</code>; evaluates to <code>false</code> if the operand is <code>true</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>These operators can be used to combine multiple Boolean expressions into a single, more complex expression.
+For example, you could check if a student is eligible for a scholarship based on both their GPA (3.5 or better) and their age (younger than 25).</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a decision using a logical AND operation.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">gpa</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mf">3.5</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">25</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You qualify for the scholarship!&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the <code>&amp;&amp;</code> operator is used to combine two Boolean expressions.
+The <code>if</code> statement will only execute the block of code if both expressions are <code>true</code>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Often, the logic you create using an AND operation can be implemented using nested if-else statements, and vice versa.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The OR operation is similar, but only one of the expressions needs to be <code>true</code> for the entire expression to be <code>true</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a decision using a logical OR operation.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">isTimAmazing</span><span class="tok-w"> </span><span class="tok-o">||</span><span class="tok-w"> </span><span class="tok-n">isJavaFun</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You should take this class!&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Both operands in an AND or OR operation have to be complete Boolean expressions.
+Put another way, each side of the <code>&amp;&amp;</code> or <code>||</code> operator must be able to evaluate to <code>true</code> or <code>false</code> on its own.
+The following code is a very common beginner mistake and will <strong>not</strong> compile:</p>
+</div>
+<div class="paragraph">
+<p><code>if (percentage &gt;= 80 &amp;&amp; &lt; 90) { &#8230;&#8203; }</code></p>
+</div>
+<div class="paragraph">
+<p>This reads like "if the percentage is greater than or equal to 80 and less than 90," but the second part of the expression is not a complete Boolean expression.
+You need to include the variable name and the comparison operator on both sides of the <code>&amp;&amp;</code> operator.</p>
+</div>
+<div class="paragraph">
+<p>The NOT operation is a little different, as it only takes one operand (making it a <em>unary</em> operator_, if you&#8217;ve nerdy about words, like I am).
+It simply inverts the value of the operand.
+If the operand is <code>true</code>, the NOT operation will evaluate to <code>false</code>.
+If the operand is <code>false</code>, the NOT operation will evaluate to <code>true</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a decision using a logical NOT operation.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-o">!</span><span class="tok-n">isTimAmazing</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;At least his mom still loves him!&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
 <div class="sect3">
-<h4 id="_the_text_and_video_for_this_section_is_in_progress_in_the_meantime_you_can_read_section_5_5_starting_page_174_in_the_required_textbook"><mark>The text and video for this section is in progress. In the meantime, you can read section 5.5 (starting page 174) in the required textbook.</mark></h4>
-
+<h4 id="_range_checking">Range Checking</h4>
+<div class="paragraph">
+<p>There are a lot of situations where you might need to combine multiple conditions to make a decision, but one of the most common is <em>range checking</em>.
+Range checking means you want to see if a value is within a certain range.</p>
+</div>
+<div class="paragraph">
+<p>A common example of range checking is to convert a percentage grade to a letter grade.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of range checking using logical operators.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getLetterGrade</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">90</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&lt;=</span><span class="tok-w"> </span><span class="tok-mi">100</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;A&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">80</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">90</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;B&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">70</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">80</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;C&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">60</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">70</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;D&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">60</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;F&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Invalid percentage&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The AND operator <code>&amp;&amp;</code> used in this example means that in order to return <code>"B"</code>, for example, the percentage must be greater than or equal to <code>80</code> <em>and</em> less than <code>90</code>.
+If either of those conditions is not met, the program will move on to the next <code>else if</code> statement.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_optional_the_ternary_operator">OPTIONAL: The Ternary Operator</h3>
-<div class="sect3">
-<h4 id="_this_section_will_include_an_optional_topic_its_not_required_for_any_assignments_or_quiz_questions_but_will_be_provided_for_students_wanting_to_learn_this_topic"><mark>This section will include an optional topic. It&#8217;s not required for any assignments or quiz questions, but will be provided for students wanting to learn this topic.</mark></h4>
-
+<h3 id="_switch_statements"><code>switch</code> Statements</h3>
+<div class="paragraph">
+<p>Java includes a structure called a <code>switch</code> statement that can be used to choose between multiple options.
+It is essentially another way to write an <code>if-else if</code> structure, but it can be more readable and easier to write in some situations.
+I generally consider <code>switch</code> structures to be optional&#8212;&#8203;you can complete all of the assignments in this course without using them&#8212;&#8203;but they are a useful tool to have in your programming toolbox.
+And since you see them often in code written by others, it&#8217;s good to know how they work.</p>
+</div>
+<div class="paragraph">
+<p>The basic structure of a <code>switch</code> statement is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">switch</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">expression</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-n">value1</span><span class="tok-p">:</span>
+<span class="tok-w">        </span><span class="tok-c1">// Code to be executed if expression equals value1</span>
+<span class="tok-w">        </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-n">value2</span><span class="tok-p">:</span>
+<span class="tok-w">        </span><span class="tok-c1">// Code to be executed if expression equals value2</span>
+<span class="tok-w">        </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-n">value3</span><span class="tok-p">:</span>
+<span class="tok-w">        </span><span class="tok-c1">// Code to be executed if expression equals value3</span>
+<span class="tok-w">        </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">default</span><span class="tok-p">:</span>
+<span class="tok-w">        </span><span class="tok-c1">// Code to be executed if expression doesn&#39;t match any case</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>expression</code> in the parentheses after the <code>switch</code> keyword is evaluated, and then the program will jump to the <code>case</code> that matches the value of the expression.
+If there is no match, the program will execute the <code>default</code> block, if it is present.</p>
+</div>
+<div class="paragraph">
+<p>The <code>break</code> statement is used to exit the <code>switch</code> block due to a behavior of <code>switch</code> that can be confusing to beginners, known as <em>fall-through</em>.
+If you don&#8217;t include a <code>break</code> statement at the end of a <code>case</code> block, the program will continue executing the code in the next <code>case</code> block, even if the value of the expression doesn&#8217;t match the <code>case</code>.
+This can be useful in some situations, but it&#8217;s generally not what you want, so you&#8217;ll usually see a <code>break</code> statement at the end of each <code>case</code> block.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a <code>switch</code> statement.</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">trafficInstructions</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">lightColor</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">switch</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">lightColor</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-s">&quot;red&quot;</span><span class="tok-p">:</span>
+<span class="tok-w">            </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Stop!&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">            </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-s">&quot;yellow&quot;</span><span class="tok-p">:</span>
+<span class="tok-w">            </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Slow down!&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">            </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-s">&quot;green&quot;</span><span class="tok-p">:</span>
+<span class="tok-w">            </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Go!&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">            </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-k">default</span><span class="tok-p">:</span>
+<span class="tok-w">            </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Invalid light color.&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_optional_switch_statements">OPTIONAL: switch Statements</h3>
+<h3 id="_solution_walkthrough_2">Solution Walkthrough</h3>
+<div class="paragraph">
+<p>In "solution walkthrough" videos, I give a problem/prompt that is similar to the kinds of work I assign, and then I record myself writing a solution. It&#8217;s not absolutely mandatory to watch this video, but students report that these videos are particularly helpful.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Decisions - Java Solution Walkthrough</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/7khBJXDXirs?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph">
+<p>Solution file from video:</p>
+</div>
+<div class="paragraph">
+<p><em>Not yet available!</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_check_yourself_before_you_wreck_yourself_on_the_assignments_6">Check Yourself Before You Wreck Yourself (on the assignments)</h3>
 <div class="sect3">
-<h4 id="_this_section_will_cover_an_optional_topic_its_not_needed_for_any_coursework_but_is_a_useful_structure_if_you_are_interested_in_the_meantime_you_can_read_section_5_7_starting_page_181_in_the_required_textbook"><mark>This section will cover an optional topic. It&#8217;s not needed for any coursework, but is a useful structure. If you are interested in the meantime, you can read section 5.7 (starting page 181) in the required textbook.</mark></h4>
-
+<h4 id="_can_you_answer_these_questions_5">Can you answer these questions?</h4>
+<div class="sidebarblock">
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Explain what Boolean expressions are and how they are used to make decisions in Java.</p>
+</li>
+<li>
+<p>Explain the difference between a relational operator and a logical operator.</p>
+</li>
+<li>
+<p>What is the difference between an <code>if</code> statement and an <code>if-else</code> statement?</p>
+</li>
+<li>
+<p>How can you write code that runs one code block from multiple options?</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
