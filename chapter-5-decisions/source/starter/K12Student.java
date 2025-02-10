@@ -1,3 +1,7 @@
+/*
+ * This class represents a simplified K-12 student record, with a name, age, grade level (1-12), and school type (elementary, middle school, or high school).
+ * 
+ */
 public class K12Student {
     private String name;
     private int age;
