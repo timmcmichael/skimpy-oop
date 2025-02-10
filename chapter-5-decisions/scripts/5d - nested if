@@ -54,7 +54,7 @@ We'll need an else-if statement to check for Grunge albums, and set the price to
 
 And we'll need an else block to catch any other Rock albums, which is that $15.0 default.
 
-Let's give that a shot and see how we're doing.
+Let's give that a shot and see how we're doing. We'll need to uncomment the code that sets the genre and subgenre for the each album first.
 
 Okay, so now it's just a matter of applying the same kind of structure to our Blues genre. The first if block will check for Chicago Blues, and set the price to $30.0.
 
@@ -64,6 +64,19 @@ And the else block will set the price to $25.0.
 
 All of this is followed by our else statement that sets the price to $10.0, but if we had more genres, we could just keep adding else-if blocks and then if-else statements within those for subgenre pricing.
 
-We should be ready for our final test now.
+We should be ready for our final test of the pricing now.
+
+
+Okay, so all of that looks good. As another example of using all that code in setGenre(), I'll add a constructor that accepts artist, title, genre, and subgenre as parameters. 
+Title and artist just get simple assignments statements. Since the setGenre() method handles pricing, I don't want to assign those fields directly in the constructor. Instead, I'll call setGenre() and pass in the genre and subgenre parameters.
+
+And this has broken my Demo class. Instead of fixing all of those, I'll just add another constructor with no parameters. I have to set values for all fields, so I'm just going to put generic placeholder data in there.
+
+Now over in my Demo class, the code is still working fine, but not using that new constructor. I'll just do that with the first album to make sure it's working.
+
+And then to see how our parameterless constructor works, I'll comment out the setters for one of the other albums and see if we get that placeholder text.
+
+Okay, everything is looking good.
+
 
 And that's how we can use nested if statements. This gives us a way to make broad decisions first, and then drill down into more specific decisions. This is a common pattern in programming, and it's a good way to structure our code when we have a series of related decisions to make.
