@@ -40,31 +40,38 @@ That's obviously not a perfect system, but it's an improvement over just having 
 
 And now we can move on to the getSchoolType() method. 
 
-There's no field for schoolType, because that is completely tied to the grade level. For our purposes, students attend elementary school until 5th grade, then they go to middle school for 6th through 8th, and then high school for 9 through 12.
+There's no field for schoolType, because that is completely tied to the grade level. For our purposes, students in grade 0 attend kindergarten, then attend elementary school until 5th grade, then they go to middle school for 6th through 8th, and then high school for 9 through 12.
 
-Let's add an if statement to check if the grade level is less than 6. We could also say less than or equal to 5, it really amounts to the same thing in this case. If that expression is true, we'll return "elementary school". Again, no need for a field to store that, we'll just figure it out any time this getter gets called. The code has to run each time, but the benefit is that we don't have to worry about keeping the field in sync with the grade level.
+Let's add an if statement to check if the grade level is 0, and if it is, we'll return "kindergarten". Let's go over and test that out.
 
-And we'll test that out to see how we're doing so far.
+Okay, with that part working, we can now add our else statement. But here's where we have a problem. An if-else structure lets us choose between two options, but we have three options here. If I put "elementary school" here, then I don't have a way to address the middle and high school students.
 
-Okay, with that part working, we can now add our else statement. But here's where we have a problem. An if-else structure lets us choose between two options, but we have three options here. If I put "middle school" here, then I don't have a way to address the high school students.
+So what we can do is just tack another if statement onto the else keyword, and this will check if the gradeLevel is less than 6. This is called an *if-else if* statement. If the first condition is false, it will check this one. If this one is false, it will check the else block, if there is one.
 
-So what we can do is just tack another if statement onto the else keyword, and this will check if the gradeLevel is less than 9. This is called an *if-else if* statement. If the first condition is false, it will check this one. If this one is false, it will check the else block, if there is one.
+So in this body we'll return "elementary school." 
 
-So in this body we'll return "middle school." 
+And we still have two to go, so we'll add another else if to check if the grade level is less than 9, which is middle school
+And if the student isn't in any of those that we've checked, they must be in high school, so now we'll just have an else block that returns "high school". This makes "high school" the default, essentially. 
 
-And if the student isn't in elementary or middle school, they must be in high school, so now we'll just have an else block that returns "high school". This makes "high school" the default, essentially. If for some reason a student had a gradeLevel of 0, they'd be in high school. So that's not great, but it reminds us why encapsulation is so important.
+When I added that else statement with a return, I got an error on this return statement that's outside of my if-else if block. That's because the compiler knows that this can never execute--the final else means that one of the code blocks is guaranteed to run, and all of the code blocks have return statements already. It's impossible to ever reach this line, and the compiler doesn't like that. So we'll just delete it.
 
-Let's run our demo program again to see how we did.
+Let's go over to our demo program and uncomment all these other test cases. VS Code has a shortcut for this. Just highlight all of the commented code, then press `Ctrl` + `/` to toggle the comments. On a Mac, that will be `Cmd` + `/`.
+
+That keystroke will toggle the highlighted code between commented and uncommented, and it's really handy.
+
+And no run this to see if the grade level and school type are working correctly.
 
 Alright, with the tricky part of the code working, the last thing I want to look at is the constructor. Let's create a constructor with parameters for the name and age. Remember, as long as we have the age, we can figure out the grade level, and as long as we have the grade level, we can figure out the school type--so these two are the only pieces we need.
 
 Name is no big deal, since it doesn't have any restrictions--we we'll just assign that. Our age does have restrictions though, so we need to make sure it's not out of range. It's tempting to just copy and paste that code from our setter because I don't want to type it all out again. But any time we find ourselves copying and pasting code, we should ask if there's a better way. In this case, we can just call the setAge() method, which will take care of all that for us. And it means that if we ever change the way we handle age, we only have to change it in one place.
 
-So instead of an assignment statement, we'll just call this.setAge() and pass in the are parameter.
+So instead of an assignment statement, we'll just call this.setAge() and pass in the age parameter.
 
 We've broken our demo class--remember that the compiler won't make a default constructor any more since I've defined a constructor of my own. So we'll just go over to that file and comment out the default constructor calls, and then replace them with instantiations that use our new constructor. 
 
-And we'll go ahead and run that.ß
+I'll just use the same data for each object, including the last one, which assigns an age that's out of range. Then there are some lines of code to change that and output it again.
+
+And we'll go ahead and run that.
 
 Okay, so this class is now wrapped up. We've seen how we can use decisions to improve our encapsulation, and we've also seen how we can use if-else if statements to choose from more than two options. I've still got a couple decision tricks left, but we'll keep going in the next video.
 
