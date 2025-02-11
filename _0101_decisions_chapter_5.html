@@ -1119,7 +1119,10 @@ Often, the logic you create using an AND operation can be implemented using nest
 <div class="listingblock">
 <div class="title">Example of a decision using a logical OR operation.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">isTimAmazing</span><span class="tok-w"> </span><span class="tok-o">||</span><span class="tok-w"> </span><span class="tok-n">isJavaFun</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isTimAmazing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isClassFun</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
+
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">isTimAmazing</span><span class="tok-w"> </span><span class="tok-o">||</span><span class="tok-w"> </span><span class="tok-n">isClassFun</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 <span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You should take this class!&quot;</span><span class="tok-p">);</span>
 <span class="tok-p">}</span></code></pre>
 </div>
@@ -1145,7 +1148,9 @@ If the operand is <code>false</code>, the NOT operation will evaluate to <code>t
 <div class="listingblock">
 <div class="title">Example of a decision using a logical NOT operation.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-o">!</span><span class="tok-n">isTimAmazing</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isTimAmazing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span>
+
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-o">!</span><span class="tok-n">isTimAmazing</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 <span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;At least his mom still loves him!&quot;</span><span class="tok-p">);</span>
 <span class="tok-p">}</span></code></pre>
 </div>
