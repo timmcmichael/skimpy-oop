@@ -390,7 +390,10 @@ The OR operation is similar, but only one of the expressions needs to be `true` 
 .Example of a decision using a logical OR operation.
 [source,java]
 ----
-if (isTimAmazing || isJavaFun) {
+boolean isTimAmazing = false;
+boolean isClassFun = true;
+
+if (isTimAmazing || isClassFun) {
     System.out.println("You should take this class!");
 }
 ----
@@ -412,6 +415,8 @@ If the operand is `false`, the NOT operation will evaluate to `true`.
 .Example of a decision using a logical NOT operation.
 [source,java]
 ----
+boolean isTimAmazing = false;
+
 if (!isTimAmazing) {
     System.out.println("At least his mom still loves him!");
 }
