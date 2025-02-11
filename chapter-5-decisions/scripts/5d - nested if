@@ -4,7 +4,7 @@ For example, when the server hands you a menu at a restaurant, you first have to
 
 I'm an old fashioned guy. Well, I'm an old guy, but I'm also old fashioned. When I was young and there was no Spotify, we'd go to the record store to get music we wanted. Like everyone else my age, I always thought it'd be cool to own a record store. So we're going to consider a simple record store inventory system to learn about nested if statements.
 
-We're going to work with a class called `VinylRecord`, with a demo program called `VinylRecordDemo`. The code for both files is available from the GitHub repository for this course, which is linked in description and in the eBook.
+We're going to work with a class called `VinylRecord`, and a demo program called `VinylRecordDemo`. The code for both files is available from the GitHub repository for this course, which is linked in description and in the eBook.
 
 This is going to be a class for an inventory and pricing application for a record store. The shop prices albums based on their genre.
 
@@ -66,4 +66,4 @@ All of this is followed by our else statement that sets the price to $10.0, but 
 
 We should be ready for our final test now.
 
-And that's how we can use nested if statements. This gives us a way to make broad decisions first, and then drill down into more specific decisions. This is a common pattern in programming, and it's a good way to structure our code when we have a series of related decisions to make.
+And that's how we can use nested if statements. This gives us a way to make broad decisions first, and then drill down into more specific decisions. This is a common pattern in programming, and it's a good way to structure our code when we have a series of related decisions to make. Combined with the strategies we've already learned, we have a good set of tools for making just about any kind of decision we'll need in our code.
