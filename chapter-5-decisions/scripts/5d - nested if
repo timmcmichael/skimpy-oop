@@ -4,7 +4,7 @@ For example, when the server hands you a menu at a restaurant, you first have to
 
 I'm an old fashioned guy. Well, I'm an old guy, but I'm also old fashioned. When I was young and there was no Spotify, we'd go to the record store to get music we wanted. Like everyone else my age, I always thought it'd be cool to own a record store. So we're going to consider a simple record store inventory system to learn about nested if statements.
 
-We're going to work with a class called `VinylRecord`, with a demo program called `VinylRecordDemo`. The code for both files is available from the GitHub repository for this course, which is linked in description and in the eBook.
+We're going to work with a class called `VinylRecord`, and a demo program called `VinylRecordDemo`. The code for both files is available from the GitHub repository for this course, which is linked in description and in the eBook.
 
 This is going to be a class for an inventory and pricing application for a record store. The shop prices albums based on their genre.
 
@@ -22,7 +22,15 @@ And there are a couple other things to point out. The `setGenre()` method doesn'
 
 I've designed it that way because, since the price is determined by the genre and subgenre, there's no need to set the price directly. In fact, if we let someone set the price directly they might price it wrong. So we'll take care of setting the price in the `setGenre()` method.
 
-Okay, let's go ahead and create the header for `setGenre()`. It's a void method with parameters for the genre and subgenre. The body will be like other setters, but with two assignments statements instead of one.
+Let's take a quick look at the Demo class, because I have some test code in place there already. This create four albums and uses setters to put the data in--and then there's commented out code to use the constructor, once we have that done.
+
+But more interesting is that I created a method called displayRecord() that outputs all of the data for a VinylRecord object. It order to make sure the class is working, I end up having all kinds of println() statements. As a general rule, if you find yourself copy/pasting code, you should probably be using a method instead.
+
+We call this a helper method, because it really just helps us test the class and doesn't have a role outside of this context. And for that reason, I made it private. It accepts a VinylRecord object as a parameter, and then prints out all of the data for that object. Remember this code when you need an example of how you can pass an object into a method.
+
+Incidentally, there is another way to solve this problem of displaying all the data--but we'll save that for a future video.
+
+Okay, let's go back to our object class and create the header for `setGenre()`. It's a void method with parameters for the genre and subgenre. The body will be like other setters, but with two assignments statements instead of one.
 
 Once we've set those fields, we can set the price. First up, we'll create an if block to check if the genre is "Rock". Remember that we can't use the `==` operator to compare strings; we'll use the `equals()` method.
 
@@ -58,4 +66,4 @@ All of this is followed by our else statement that sets the price to $10.0, but 
 
 We should be ready for our final test now.
 
-And that's how we can use nested if statements. This gives us a way to make broad decisions first, and then drill down into more specific decisions. This is a common pattern in programming, and it's a good way to structure our code when we have a series of related decisions to make.
+And that's how we can use nested if statements. This gives us a way to make broad decisions first, and then drill down into more specific decisions. This is a common pattern in programming, and it's a good way to structure our code when we have a series of related decisions to make. Combined with the strategies we've already learned, we have a good set of tools for making just about any kind of decision we'll need in our code.

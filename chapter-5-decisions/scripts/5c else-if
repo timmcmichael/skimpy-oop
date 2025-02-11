@@ -1,4 +1,4 @@
-It might seem like if-else statements are pretty limited. After all, the only thing they can do is pick between two possible options. But we're going to learn a few tricks to make them more powerful. One of those tricks is the *if-else if* statement. An *if-else if* statement is a way to choose one code block from a bunch of options.
+It might seem like if-else statements are pretty limited. After all, the only thing they can do is pick between two possible options. But we're going to learn a few tricks to make them more powerful. One of those tricks is the *if-else if* statement. An *if-else if* statement is a way to choose one code block from a bunch of options. 
 
 We want to start integrating decisions into our OOP code, so for this video we're going to work with a class called K12Student, with a demo program called K12StudentDemo. The code for both files is available from the GitHub repository for this course, which is linked in description and in the eBook.
 
@@ -6,17 +6,23 @@ This is going to be a class that just keeps track of a student's age and grade l
 
 [Show diagram of K12Student class]
 
+Here's the class design, and you can see that it's pretty base. When you compare the diagram to the code we're starting with, you're going to see some differences.
+
 There's no constructor yet, and we'll save that until close to the end. There are a couple other inconsistencies here: we have a getSchoolType() method, which should return "elementary school," "middle school," or "high school", but we don't have a schoolType field to go with it. And with gradeLevel(), we have kind of the opposite--we're missing a set method for that field. These are all intentional and we'll talk about them as we go.
 
-But before we get to that, we're going to apply what we already know about if statements to our understanding of encapsulation. Remember that encapsulation is the idea that we should keep our fields private and only allow access to them through methods. 
+A quick peek at the Demo class shows that we've got code to create an instance and set some values, then output some values to show that everything is working. I've commented out a chunk of code to create and test a few other objects with diffent values; that way we can just uncomment it later as we add more functionality. But for now, I'll let that code commented out.
+
+
+But before we get to that, we're going to take what we already know about if statements and apply it to our understanding of encapsulation. Remember that encapsulation is the idea that we should keep our fields private and only allow access to them through methods. 
 
 Our getters have been fine, since all they are supposed to do is return the current value of the field. Until now, though, our setters have just assigned whatever value they receive to the field. That's not very effective encapsulation, since it still allows other code to mangle our data. But with if statements, we can make our setters a little smarter and a little more secure.
+
 
 Let's start with the gradeLevel field. The grade level is determined the student's age, so we don't want a situation where those two don't match. If the student is 16, we don't want some other code to come along and set the grade level to 3. So we're not going to have a setter for gradeLevel--we'll just set that value in our setAge() method.
 
 Speaking of setAge(), we're allowing the age to be set to any int value, but if we're talking about a K-12 student, we know that the age should be between about 5 or 6 years old and about 18. If the value passed in is outside that range, we'll need to address it.
 
-Let's just add an if statement below that assignment to see if our age is below 6--and to keep things simple, we'll say that the student needs to be 6 or older. 
+Let's just add an if statement below that assignment to see if our age is too low--and to keep things simple, we'll say that the student needs to be 6 or older. 
 
 [this.age < 6]
 
@@ -28,41 +34,55 @@ And now after that if block, I'll add a similar one to check if the age is above
 
 Notice that our code is setting the value to the parameter passed in, then is making an adjustment if necessary. We could also write decision statements before the assignment, if that's what we prefer.
 
-Let's test this out by trying to set the age out of range and seeing what happens.
+Let's test this out. The Demo class sets the age to 4, which is out of range, so we'll look at the output with the getGradeLevel() method to see if it corrected our value when we use the setter.
+
+It did bump that four up to a 6, so it's doing what it's supposed to do.
 
 Now, before we move on from this, we mentioned that we can use the age to determine the grave level--and that's why we don't have a setGradeLevel() method. Let's just set the grade level to the age minus 6. I know that in reality it's not quite that simple, but it demonstrates the point that our setter can be a little more complex than just assigning a value.
 
-And we'll test that out as well by outputting that getGradeLevel() method.
+And we'll test that out. 
 
-That's obviously not a perfect system, but it's an improvement over just having a bunch of setters that don't check anything.
+That's obviously not a perfect system for protecting that age field and for setting the grade level, but it's an improvement over just having a bunch of setters that don't check anything.
 
 And now we can move on to the getSchoolType() method. 
 
-There's no field for schoolType, because that is completely tied to the grade level. For our purposes, students attend elementary school until 5th grade, then they go to middle school for 6th through 8th, and then high school for 9 through 12.
 
-Let's add an if statement to check if the grade level is less than 6. We could also say less than or equal to 5, it really amounts to the same thing in this case. If that expression is true, we'll return "elementary school". Again, no need for a field to store that, we'll just figure it out any time this getter gets called. The code has to run each time, but the benefit is that we don't have to worry about keeping the field in sync with the grade level.
 
-And we'll test that out to see how we're doing so far.
 
-Okay, with that part working, we can now add our else statement. But here's where we have a problem. An if-else structure lets us choose between two options, but we have three options here. If I put "middle school" here, then I don't have a way to address the high school students.
+There's no field for schoolType, because that is completely tied to the grade level. For our purposes, students in grade 0 attend kindergarten, then attend elementary school until 5th grade, then they go to middle school for 6th through 8th, and then high school for 9 through 12.
 
-So what we can do is just tack another if statement onto the else keyword, and this will check if the gradeLevel is less than 9. This is called an *if-else if* statement. If the first condition is false, it will check this one. If this one is false, it will check the else block, if there is one.
+Let's add an if statement to check if the grade level is 0, and if it is, we'll return "kindergarten". Let's go over and test that out.
 
-So in this body we'll return "middle school." 
+Okay, with that part working, we can now add our else statement. But here's where we have a problem. An if-else structure lets us choose between two options, but we have three options here. If I put "elementary school" here, then I don't have a way to address the middle and high school students.
 
-And if the student isn't in elementary or middle school, they must be in high school, so now we'll just have an else block that returns "high school". This makes "high school" the default, essentially. If for some reason a student had a gradeLevel of 0, they'd be in high school. So that's not great, but it reminds us why encapsulation is so important.
+So what we can do is just tack another if statement onto the else keyword, and this one will check if the gradeLevel is less than 6, for an elementary student. This is called an *if-else if* structure. If the first condition is false, it will check this one. If this one is false, it will check the else block, if there is one.
 
-Let's run our demo program again to see how we did.
+So in this body we'll return "elementary school." 
 
-Alright, with the tricky part of the code working, the last thing I want to look at is the constructor. Let's create a constructor with parameters for the name and age. Remember, as long as we have the age, we can figure out the grade level, and as long as we have the grade level, we can figure out the school type--so these two are the only pieces we need.
+And we still have two to go, so we'll add another else if to check if the grade level is less than 9, which is middle school
+And if the student isn't in any of those that we've checked, they must be in high school, so now we'll just have an else block that returns "high school". This makes "high school" the default, essentially. 
+
+When I added that else statement with a return, I got an error on this return statement that's outside of my if-else if block. That's because the compiler knows that this can never execute--the final else means that one of the code blocks is guaranteed to run, and all of the code blocks have return statements already. It's impossible to ever reach this line, and the compiler doesn't like that. So we'll just delete it.
+
+Let's go over to our demo program and uncomment all these other test cases. VS Code has a shortcut for this. Just highlight all of the commented code, then press `Ctrl` + `/` to toggle the comments. On a Mac, that will be `Cmd` + `/`.
+
+That keystroke will toggle the highlighted code between commented and uncommented, and it's really handy.
+
+And no run this to see if the grade level and school type are working correctly.
+
+
+
+Alright, with the tricky part of the code working, the last thing I want to look at is the constructor. Let's create a constructor with parameters for the name and age. Remember, as long as we have the age, we can figure out the grade level, and as long as we have the grade level, we can figure out the school type--so these two are the only pieces of data we need.
 
 Name is no big deal, since it doesn't have any restrictions--we we'll just assign that. Our age does have restrictions though, so we need to make sure it's not out of range. It's tempting to just copy and paste that code from our setter because I don't want to type it all out again. But any time we find ourselves copying and pasting code, we should ask if there's a better way. In this case, we can just call the setAge() method, which will take care of all that for us. And it means that if we ever change the way we handle age, we only have to change it in one place.
 
-So instead of an assignment statement, we'll just call this.setAge() and pass in the are parameter.
+So instead of an assignment statement, we'll just call this.setAge() and pass in the age parameter.
 
 We've broken our demo class--remember that the compiler won't make a default constructor any more since I've defined a constructor of my own. So we'll just go over to that file and comment out the default constructor calls, and then replace them with instantiations that use our new constructor. 
 
-And we'll go ahead and run that.ß
+I'll just use the same data for each object, including the last one, which assigns an age that's out of range. Then there are some lines of code to change that and output it again.
+
+And we'll go ahead and run that.
 
 Okay, so this class is now wrapped up. We've seen how we can use decisions to improve our encapsulation, and we've also seen how we can use if-else if statements to choose from more than two options. I've still got a couple decision tricks left, but we'll keep going in the next video.
 

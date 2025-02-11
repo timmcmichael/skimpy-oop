@@ -1,9 +1,14 @@
 /*
- * This class represents a single record sold in a record store. It uses nested if statements to determine the price of the record based on genre and subgenre.
+ * This class represents a single record sold in a record store. with pricing based on genre and subgenre.
+ * 
+ * It demonstrates nested if statements to determine the price of the record.
+ * 
+ * NOTE: This is the code that was completed by the end of the video and is not the starter file. Because it's been renamed, it doesn't compile. See VinylRecord.java for the starter file.
  * 
  */
+package module05;
 
-public class VinylRecord {
+public class VinylRecord { // This is NOT the starter file!
     private String title;
     private String artist;
     private String genre;
@@ -14,10 +19,13 @@ public class VinylRecord {
     public VinylRecord(String title, String artist, String genre, String subgenre) {
         this.title = title;
         this.artist = artist;
-        // this.genre = genre;
-        // this.subgenre = subgenre;
-        setGenre(genre, subgenre);
+        this.setGenre(genre, subgenre);
+    }
 
+    public VinylRecord() {
+        this.title = "[No Title]";
+        this.artist = "[No Artist]";
+        this.setGenre("unknown", "unknown");
     }
 
     // Getters
@@ -55,6 +63,7 @@ public class VinylRecord {
     public void setGenre(String genre, String subgenre) {
         this.genre = genre;
         this.subgenre = subgenre;
+
         if (this.genre.equals("Rock")) {
             if (this.subgenre.equals("Classic Rock")) {
                 this.price = 20.0;
@@ -74,5 +83,7 @@ public class VinylRecord {
         } else {
             this.price = 10.0;
         }
+
     }
+
 }

@@ -1,5 +1,7 @@
 /*
- * This class represents a single record sold in a record store. It uses nested if statements to determine the price of the record based on genre and subgenre.
+ * This class represents a single record sold in a record store. with pricing based on genre and subgenre.
+ * 
+ * It demonstrates nested if statements to determine the price of the record.
  * 
  */
 
@@ -9,6 +11,8 @@ public class VinylRecord {
     private String genre;
     private String subgenre;
     private double price;
+
+    // Constructors
 
     // Getters
 
