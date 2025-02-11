@@ -50,7 +50,7 @@ I can remember when my programs were just tiny little applications, full of hope
 
 This video will show you how to use your newfangled if-else expertise to encapsulate your objects a little better, but they we'll jump right into if-else if structures that let our code choose from multiple options.
 
-0:06 Intro
+0:00 Intro
 1:49 Improving encapsulation 
 4:25 Setting the gradeLevel field
 5:11 Getting the School Type with if-else if
@@ -69,4 +69,33 @@ Files used in videos:
 #java #coding #if #if-else #if-else-if #decisions #branching #boolean #logic #oop #encapsulation #constructors
 
 ---------------------
+
+# 5D - Nested if Statements
+
+With our programs growing up so fast, making decisive and complex decisions, you might be starting to worry--what happens when your programs go out on their own? Will you end up an empty nester, with nothing but a few lines of code to remember them by?
+
+This video will show you how to keep your nest full. Full of if statement, of course. We'll look at nested if statements, which are if statements inside of if statements. It's like a Russian nesting doll of decisions! And they let us make hierarchical decisions, where one decision depends on another.
+
+0:00 Intro
+2:01 Class diagram for VinylRecord
+3:00 Helper method
+3:57 setGenre() method
+4:29 Top-level if statement
+5:41 Second level if statements
+6:37 Watch me make a mistake
+----
+
+This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+
+Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
+GitHub Page: https://timmcmichael.github.io/
+
+Files used in videos:
+* GitHub: https://github.com/timmcmichael/EMCCTimFiles
+
+#java #coding #if #if-else #if-else-if #decisions #branching #boolean #logic #oop #encapsulation #nested-if
+
+---------------------
+
+
 
