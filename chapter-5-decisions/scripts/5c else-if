@@ -55,7 +55,7 @@ Let's add an if statement to check if the grade level is 0, and if it is, we'll 
 
 Okay, with that part working, we can now add our else statement. But here's where we have a problem. An if-else structure lets us choose between two options, but we have three options here. If I put "elementary school" here, then I don't have a way to address the middle and high school students.
 
-So what we can do is just tack another if statement onto the else keyword, and this will check if the gradeLevel is less than 6. This is called an *if-else if* statement. If the first condition is false, it will check this one. If this one is false, it will check the else block, if there is one.
+So what we can do is just tack another if statement onto the else keyword, and this one will check if the gradeLevel is less than 6, for an elementary student. This is called an *if-else if* structure. If the first condition is false, it will check this one. If this one is false, it will check the else block, if there is one.
 
 So in this body we'll return "elementary school." 
 
@@ -70,7 +70,9 @@ That keystroke will toggle the highlighted code between commented and uncommente
 
 And no run this to see if the grade level and school type are working correctly.
 
-Alright, with the tricky part of the code working, the last thing I want to look at is the constructor. Let's create a constructor with parameters for the name and age. Remember, as long as we have the age, we can figure out the grade level, and as long as we have the grade level, we can figure out the school type--so these two are the only pieces we need.
+
+
+Alright, with the tricky part of the code working, the last thing I want to look at is the constructor. Let's create a constructor with parameters for the name and age. Remember, as long as we have the age, we can figure out the grade level, and as long as we have the grade level, we can figure out the school type--so these two are the only pieces of data we need.
 
 Name is no big deal, since it doesn't have any restrictions--we we'll just assign that. Our age does have restrictions though, so we need to make sure it's not out of range. It's tempting to just copy and paste that code from our setter because I don't want to type it all out again. But any time we find ourselves copying and pasting code, we should ask if there's a better way. In this case, we can just call the setAge() method, which will take care of all that for us. And it means that if we ever change the way we handle age, we only have to change it in one place.
 

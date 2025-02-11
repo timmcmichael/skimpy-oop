@@ -44,3 +44,29 @@ Files used in videos:
 
 ---------------------
 
+# 5C - if-else if Statements
+
+I can remember when my programs were just tiny little applications, full of hope and dreams--but unable to make anything but the most basic decisions. But now they're like obnosxious teenagers, and they're no longer satisfied with simple yes-or-no answers. They crave nuance, they demand options. Eventually, you have to let your programs go out and make tricky decisions. 
+
+This video will show you how to use your newfangled if-else expertise to encapsulate your objects a little better, but they we'll jump right into if-else if structures that let our code choose from multiple options.
+
+0:06 Intro
+1:49 Improving encapsulation 
+4:25 Setting the gradeLevel field
+5:11 Getting the School Type with if-else if
+6:54 "Unreachable Code" error
+7:49 Constructor
+----
+
+This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+
+Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
+GitHub Page: https://timmcmichael.github.io/
+
+Files used in videos:
+* GitHub: https://github.com/timmcmichael/EMCCTimFiles
+
+#java #coding #if #if-else #if-else-if #decisions #branching #boolean #logic #oop #encapsulation #constructors
+
+---------------------
+
