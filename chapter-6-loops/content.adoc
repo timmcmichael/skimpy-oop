@@ -46,7 +46,7 @@ To create the kind of repetition that leverages this processing power, programme
 A loop is a structure that repeats a block of code as long as a certain condition is true.
 Each time the loop repeats, it's called an _iteration_.
 
-Java provides several different ways to to create loops and iterate over a block of code.
+Java provides several different ways to create loops and iterate over a block of code.
 
 === Defininte vs Indefinite Loops
 Loops fall into two broad categories: definite and indefinite.
