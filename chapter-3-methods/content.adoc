@@ -88,9 +88,9 @@ video::hAxUD7xV7h8[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Files from video:
 
-* Start: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/SimpleMethod.java[`SimpleMethod.java`]
+* Starter code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/SimpleMethod.java[`SimpleMethod.java`^]
 
-* Finished: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/SimpleMethodFinished.java[`SimpleMethodFinished.java`]
+* Completed code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/SimpleMethodFinished.java[`SimpleMethodFinished.java`^]
 ****
 
 === Variable Scope
@@ -264,10 +264,11 @@ Passing Data to a Method in Java
 video::DNJjyKykPvE[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 File from video:
 
-* Start: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfCircle.java[`AreaOfCircle.java`]
-* Finished: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfCircleFinished.java[`AreaOfCircleFinished.java`]
-* Start: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfOval.java[`AreaOfOval.java`]
-* Finished: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfOvalFinished.java[`AreaOfOval.java`]
+* Starter code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfCircle.java[`AreaOfCircle.java`^]
+* Starter code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfOval.java[`AreaOfOval.java`^]
+
+* Completed code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfCircleFinished.java[`AreaOfCircleFinished.java`^]
+* Completed code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfOvalFinished.java[`AreaOfOval.java`^]
 ****
 
 === Returning Values
@@ -389,7 +390,7 @@ Returning Data from a Method in Java
 video::JI0e0vVONmM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 File from video:
 
-* Finished: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfOvalFinished.java[`AreaOfOval.java`]
+* Completed code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfOvalFinished.java[`AreaOfOval.java`^]
 ****
 
 === Overloading a Method
@@ -514,7 +515,7 @@ video::f08bKXVqxZk[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // https://www.youtube.com/watch?v=f08bKXVqxZk&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=18
 Solution file from video:
 
-* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/Percentages.java[`Percentages.java`]
+* Completed code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/Percentages.java[`Percentages.java`^]
 ****
 
 '''

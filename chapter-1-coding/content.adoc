@@ -205,7 +205,7 @@ Java File Structure and First Program
 video::zYDdJzs24rs[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=4]
 File from video:
 
-* link:https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding/HelloWorld.java[HelloWorld.java]
+* Completed code: link:https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding/HelloWorld.java[`HelloWorld.java`^]
 ****
 
 
