@@ -6,7 +6,7 @@ ifeval::["{docname}" == "index"]
 :sourcedir: chapter-10-gui/source
 endif::[]
 
-== 1010 - Graphical User Interfaces with Swing (Chapter 10)
+== 1010 - Graphical User Interfaces with Swing
 
 .Help Make These Materials Better!
 ****
@@ -18,7 +18,7 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 === What's the Point?
 * 
 
-''''
+'''
 
 
 

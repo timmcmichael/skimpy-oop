@@ -19,7 +19,7 @@ Java Development Kit
 *What is an example of an Integrated Development Environment?*::
 Visual Studio Code, eclipse, IntelliJ, and many others.
 
-==== Computers and Coding (Chapter 1)
+==== Computers and Coding
 
 // [qanda]
 // What tool converts your programming into something the computer can run?::
@@ -61,7 +61,7 @@ The primary role of a programming language is to act as a bridge between human l
 
 
 
-==== Variables (Chapter 2)
+==== Variables
 
 // [qanda]
 // Explain the difference between a declaration and an assignment.::
@@ -154,7 +154,7 @@ int b = 15;
 b %= 6; // Equivalent to b = b % 6; b is now 3
 ----
 
-==== Methods (Chapter 3)
+==== Methods
 
 [qanda]
 *What is the main purpose of using methods in Java, and how do they contribute to code maintainability?*::
@@ -166,7 +166,7 @@ In Java, a parameter is a variable defined in the method declaration that acts a
 *Why is it generally better to return values from methods rather than printing them directly within the method? How does this practice improve the modularity and reusability of code?*::
 It is generally better to return values from methods rather than printing them directly within the method because returning values allows the method to be more versatile and reusable. When a method returns a value, it can be used in various contexts, such as in calculations, assignments, or further processing, without being tied to a specific output format. This practice improves modularity by keeping the method focused on a single task (e.g., performing a calculation) and leaving the decision of how to use the result to the calling code. It also enhances reusability, as the method can be used in different parts of the program or even in different programs without modification.
 
-==== Classes and Objects (Chapter 4)
+==== Classes and Objects
 
 [qanda]
 *What is the primary difference between procedural programming and object-oriented programming (OOP)?*::
@@ -178,7 +178,7 @@ A class is a blueprint or template for creating objects. It defines the attribut
 *What is encapsulation, and why is it important in OOP? Provide an example.*::
 Encapsulation is the concept of hiding the internal state of an object and requiring all interaction to be performed through the object's methods. This is important because it protects the object's data from unintended or harmful modifications. For example, in a bank account class, the balance field is private and can only be accessed or modified through a public getter method, and modified through public deposit and withdraw methods.
 
-==== Decisions (Chapter 5)
+==== Decisions
 
 [qanda]
 *Explain what Boolean expressions are and how they are used to make decisions in Java.*::

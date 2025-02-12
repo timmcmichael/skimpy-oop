@@ -6,12 +6,10 @@ ifeval::["{docname}" == "index"]
 :sourcedir: chapter-5-decisions/source
 endif::[]
 
-== 0101 - Decisions (Chapter 5)
+== 0101 - Decisions
 
 //TODO: Need this "video has more" disclaimer elsewhere?
 *_Note: the videos in this chapter go a little beyond the content in the corresponding sections--they show how to write the code, but also show how to apply some things to our class and object design. If you skip the videos, you might miss information needed for the assignments and/or quiz._*
-
-// TODO: Upload source files to GitHub archive
 
 .Help Make These Materials Better!
 ****
@@ -20,6 +18,7 @@ I am actively working to complete and revise this eBook and the accompanying vid
 https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google Form)^]
 ****
 
+:sectnums!:
 === What's the Point?
 * Understand Boolean expressions
 * Implement `if` and `if-else` statements
@@ -29,7 +28,12 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions[GitHub^]._
 
-''''
+:sectnums:
+'''
+
+Decisions, or _branching_ gives our programs the ability to execute different code depending on what's happening as it runs.
+At the core of decisions is the concept of Boolean logic, which is named after a 19th-century mathematician named George Boole.
+Boolean logic is the foundation of the `if` statements that will be the foundation of our branching code.
 
 === Boolean Expressions
 
@@ -522,7 +526,7 @@ video::7khBJXDXirs[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 // https://www.youtube.com/watch?v=7khBJXDXirs
 
-// TODO: Rebuild the solution file
+// TODO: Rebuild the solution walkthrough file
 
 Solution file from video:
 
@@ -530,7 +534,9 @@ _Not yet available!_
 // * https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/Percentages.java[`Percentages.java`]
 ****
 
+'''
 
+:sectnums!:
 === Check Yourself Before You Wreck Yourself (on the assignments)
 
 ==== Can you answer these questions?
@@ -546,3 +552,4 @@ _Not yet available!_
 4. How can you write code that runs one code block from multiple options?
 
 ****
+:sectnums:

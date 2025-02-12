@@ -6,11 +6,10 @@ ifeval::["{docname}" == "index"]
 :sourcedir: chapter-6-loops/source
 endif::[]
 
-== 0110 - Loops (Chapter 6)
+== 0110 - Loops
 // TODO: Upload source files to GitHub archive
 
-=== #Content coming soon!#
-// === #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
+=== #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
 
 // #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
 
@@ -24,16 +23,60 @@ I am actively working to complete and revise this eBook and the accompanying vid
 https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google Form)^]
 ****
 
+// TODO: Chapter 6 objectives
+
+:sectnums!:
 // === What's the Point?
 // * 
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/06%20Loops[GitHub^]._
 
-// ''''
+:sectnums:
+'''
+A computer is designed to execute a series of instructions, in order, very quickly. 
+Now that we understand how to use Boolean expressions to control the flow of our programs, we can use that concept for a programming structure that really unlocks the power of the computer: repetition.
+Many of the tasks we think of as "computer tasks" are repetitive in nature.
+Processing data involve performing the same operation on each piece of information, one after the other, until we reach the end of the data.
+A computer game has to draw the screen, check for collisions, check what the user is doing with the gamepad, and update the positions of all the objects on the screen, over and over again.
+When you use a search engine on the web, that search engine has scanned the web one page at a time, indexing what it finds and then moving on to the next page.
 
-// === while Loops
+Computers are great for these kinds of tasks: they don't get bored, they don't get tired, and they don't make mistakes--other than the mistakes we make when programming them!
 
-// === do-while Loops
+To create the kind of repetition that leverages this processing power, programmer use _loops_.
+A loop is a structure that repeats a block of code as long as a certain condition is true.
+Each time the loop repeats, it's called an _iteration_.
+
+Java provides several different ways to to create loops and iterate over a block of code.
+
+=== Defininte vs Indefinite Loops
+Loops fall into two broad categories: definite and indefinite.
+
+A _definite loop_ is one that repeats a specific number of times. 
+At the time the loop starts the program knows exactly how many times it will repeat.
+The _programmer_ might not know at the time of writing the program--for example, if the number of times the loop repeats is based on user input--but the program itself knows how many times it will repeat before the loop starts.
+
+And example of a definite loop a loop that prints out the name of every student on a roster. 
+The program checks the number of students on the roster, and that count is the number of times the loop will repeat.
+Definite loops are also called _counter controlled loops_ because the programmer uses a counter variable to keep track of how many times the loop has repeated.
+
+An _indefinite loop_ is one that repeats until a certain condition is met.
+The program doesn't know how many times the loop will repeat until it's actually running.
+The loop begins it's first iteration, and the condition that determines whether the loop will repeat is checked.
+That condition might be based on user input, the state of the program, or some other factor that can't be determined until the program is running.
+
+An example of an indefinite loop is a prompt that asks the user to input their password, and keeps repeating until the user's input is correct.
+The user might input the correct password the first time, it might take 3 tries, or it might take 100 tries.
+The program doesn't know and is just going to repeat until the user gets it right.
+This type of loop is sometimes called a _sentinel controlled loop_ because the loop repeats until a "sentinel" value is encountered--a signal that the loop should stop.
+
+Any of the Java loop structures can be used to create either a definite or an indefinite loop.
+However, some of the loop structures are better suited to one type of loop or the other, so it's good to think about what kind of loop you need before you start writing your code.
+
+=== `while` Loops
+==== #This section is not finished, but in the meantime this content is covered in section 6.2 (page 202) in the textbook.#
+
+=== `do-while` Loops
+==== #This section is not finished, but in the meantime this content is covered in section 6.3 (page 206) in the textbook.#
 
 // .Time To Watch!
 // ****
@@ -45,9 +88,11 @@ _Source code examples from this chapter and associated videos are available on h
 // * https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[HelloWorld.java]
 // ****
 
+=== `do-while` Loops
+==== #This section is not finished, but in the meantime this content is covered in section 6.5 (page 217) in the textbook.#
 
-
-// === for Loops
+=== `for` Loops
+==== #This section is not finished, but in the meantime this content is covered in section 6.4 (page 214) in the textbook.#
 
 // .Time To Watch!
 // ****
@@ -66,8 +111,16 @@ _Source code examples from this chapter and associated videos are available on h
 
 
 
-// === OPTIONAL: Recursion
+// === JUST FOR FUN: Recursion
+****
+Content labelled as *Just for Fun* is not required for the course, but is included for students who are interested in learning more about the topic. If you're struggling to learn the material in this course, please skip this--maybe you can return when you have more time.
+****
 
+==== #This section is not finished, and is not covered in the textbook. IF your _really_ can't wait, search for the topic on the internet.#
+
+'''
+
+:sectnums!:
 // === Check Yourself Before You Wreck Yourself (on the assignments)
 //
 // ==== Can you answer these questions?
@@ -79,3 +132,4 @@ _Source code examples from this chapter and associated videos are available on h
 // 2. 
 //
 // ****
+:sectnums:

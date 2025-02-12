@@ -457,41 +457,51 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="_0000_getting_started_chapter_0.html">0000 - Getting Started (Chapter 0)</a>
 </li>
-<li><a href="_0001_computers_and_coding_chapter_1.html">0001 - Computers and Coding (Chapter 1)</a>
+<li><a href="_0001_computers_and_coding.html">1. 0001 - Computers and Coding</a>
 </li>
-<li><a href="_0010_variables_chapter_2.html">0010 - Variables (Chapter 2)</a>
+<li><a href="_0010_variables_chapter_2.html">2. 0010 - Variables (Chapter 2)</a>
 </li>
-<li><a href="_0011_methods_chapter_3.html">0011 - Methods (Chapter 3)</a>
+<li><a href="_0011_methods_chapter_3.html">3. 0011 - Methods (Chapter 3)</a>
 </li>
-<li><a href="_0100_classes_and_objects_chapter_4.html">0100 - Classes and Objects (Chapter 4)</a>
+<li><a href="_0100_classes_and_objects_chapter_4.html">4. 0100 - Classes and Objects (Chapter 4)</a>
 </li>
-<li><a href="_0101_decisions_chapter_5.html">0101 - Decisions (Chapter 5)</a>
+<li><a href="_0101_decisions_chapter_5.html">5. 0101 - Decisions (Chapter 5)</a>
 </li>
-<li><a href="_0110_loops_chapter_6.html"><span class="toc-current">0110 - Loops (Chapter 6)</span></a>
+<li><a href="_0110_loops_chapter_6.html"><span class="toc-current">6. 0110 - Loops (Chapter 6)</span></a>
 <ul class="sectlevel2">
-<li><a href="_0110_loops_chapter_6.html#_content_coming_soon"><mark>Content coming soon!</mark></a>
+<li><a href="_0110_loops_chapter_6.html#_content_for_this_module_is_under_construction_for_now_the_section_headers_below_direct_you_to_the_corresponding_chapter_in_our_required_textbook_so_that_you_can_start_right_away">6.1. <mark>Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.</mark></a>
+</li>
+<li><a href="_0110_loops_chapter_6.html#_defininte_vs_indefinite_loops">6.2. Defininte vs Indefinite Loops</a>
+</li>
+<li><a href="_0110_loops_chapter_6.html#_while_loops">6.3. <code>while</code> Loops</a>
+</li>
+<li><a href="_0110_loops_chapter_6.html#_do_while_loops">6.4. <code>do-while</code> Loops</a>
+</li>
+<li><a href="_0110_loops_chapter_6.html#_do_while_loops_2">6.5. <code>do-while</code> Loops</a>
+</li>
+<li><a href="_0110_loops_chapter_6.html#_for_loops">6.6. <code>for</code> Loops</a>
 </li>
 </ul>
 </li>
-<li><a href="_0111_debugging_chapter_7.html">0111 - Debugging (Chapter 7)</a>
+<li><a href="_0111_debugging_chapter_7.html">7. 0111 - Debugging (Chapter 7)</a>
 </li>
-<li><a href="_1000_arrays_chapter_8.html">1000 - Arrays (Chapter 8)</a>
+<li><a href="_1000_arrays_chapter_8.html">8. 1000 - Arrays (Chapter 8)</a>
 </li>
-<li><a href="_1001_inheritance_chapter_9.html">1001 - Inheritance (Chapter 9)</a>
+<li><a href="_1001_inheritance_chapter_9.html">9. 1001 - Inheritance (Chapter 9)</a>
 </li>
-<li><a href="_1010_graphical_user_interfaces_with_swing_chapter_10.html">1010 - Graphical User Interfaces with Swing (Chapter 10)</a>
+<li><a href="_1010_graphical_user_interfaces_with_swing_chapter_10.html">10. 1010 - Graphical User Interfaces with Swing (Chapter 10)</a>
 </li>
-<li><a href="_stuff_thats_tacked_on_the_end.html">Stuff That&#8217;s Tacked on the End</a>
+<li><a href="_stuff_thats_tacked_on_the_end.html">11. Stuff That&#8217;s Tacked on the End</a>
 </li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_0110_loops_chapter_6">0110 - Loops (Chapter 6)</h2>
+<h2 id="_0110_loops_chapter_6">6. 0110 - Loops (Chapter 6)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_content_coming_soon"><mark>Content coming soon!</mark></h3>
+<h3 id="_content_for_this_module_is_under_construction_for_now_the_section_headers_below_direct_you_to_the_corresponding_chapter_in_our_required_textbook_so_that_you_can_start_right_away">6.1. <mark>Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.</mark></h3>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Help Make These Materials Better!</div>
@@ -506,6 +516,96 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p><em>Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/06%20Loops" target="_blank" rel="noopener">GitHub</a>.</em></p>
 </div>
+<hr>
+<div class="paragraph">
+<p>A computer is designed to execute a series of instructions, in order, very quickly.
+Now that we understand how to use Boolean expressions to control the flow of our programs, we can use that concept for a programming structure that really unlocks the power of the computer: repetition.
+Many of the tasks we think of as "computer tasks" are repetitive in nature.
+Processing data involve performing the same operation on each piece of information, one after the other, until we reach the end of the data.
+A computer game has to draw the screen, check for collisions, check what the user is doing with the gamepad, and update the positions of all the objects on the screen, over and over again.
+When you use a search engine on the web, that search engine has scanned the web one page at a time, indexing what it finds and then moving on to the next page.</p>
+</div>
+<div class="paragraph">
+<p>Computers are great for these kinds of tasks: they don&#8217;t get bored, they don&#8217;t get tired, and they don&#8217;t make mistakes&#8212;&#8203;other than the mistakes we make when programming them!</p>
+</div>
+<div class="paragraph">
+<p>To create the kind of repetition that leverages this processing power, programmer use <em>loops</em>.
+A loop is a structure that repeats a block of code as long as a certain condition is true.
+Each time the loop repeats, it&#8217;s called an <em>iteration</em>.</p>
+</div>
+<div class="paragraph">
+<p>Java provides several different ways to to create loops and iterate over a block of code.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_defininte_vs_indefinite_loops">6.2. Defininte vs Indefinite Loops</h3>
+<div class="paragraph">
+<p>Loops fall into two broad categories: definite and indefinite.</p>
+</div>
+<div class="paragraph">
+<p>A <em>definite loop</em> is one that repeats a specific number of times.
+At the time the loop starts the program knows exactly how many times it will repeat.
+The <em>programmer</em> might not know at the time of writing the program&#8212;&#8203;for example, if the number of times the loop repeats is based on user input&#8212;&#8203;but the program itself knows how many times it will repeat before the loop starts.</p>
+</div>
+<div class="paragraph">
+<p>And example of a definite loop a loop that prints out the name of every student on a roster.
+The program checks the number of students on the roster, and that count is the number of times the loop will repeat.
+Definite loops are also called <em>counter controlled loops</em> because the programmer uses a counter variable to keep track of how many times the loop has repeated.</p>
+</div>
+<div class="paragraph">
+<p>An <em>indefinite loop</em> is one that repeats until a certain condition is met.
+The program doesn&#8217;t know how many times the loop will repeat until it&#8217;s actually running.
+The loop begins it&#8217;s first iteration, and the condition that determines whether the loop will repeat is checked.
+That condition might be based on user input, the state of the program, or some other factor that can&#8217;t be determined until the program is running.</p>
+</div>
+<div class="paragraph">
+<p>An example of an indefinite loop is a prompt that asks the user to input their password, and keeps repeating until the user&#8217;s input is correct.
+The user might input the correct password the first time, it might take 3 tries, or it might take 100 tries.
+The program doesn&#8217;t know and is just going to repeat until the user gets it right.
+This type of loop is sometimes called a <em>sentinel controlled loop</em> because the loop repeats until a "sentinel" value is encountered&#8212;&#8203;a signal that the loop should stop.</p>
+</div>
+<div class="paragraph">
+<p>Any of the Java loop structures can be used to create either a definite or an indefinite loop.
+However, some of the loop structures are better suited to one type of loop or the other, so it&#8217;s good to think about what kind of loop you need before you start writing your code.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_while_loops">6.3. <code>while</code> Loops</h3>
+<div class="sect3">
+<h4 id="_this_section_is_not_finished_but_in_the_meantime_this_content_is_covered_in_section_6_2_page_202_in_the_textbook">6.3.1. <mark>This section is not finished, but in the meantime this content is covered in section 6.2 (page 202) in the textbook.</mark></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="_do_while_loops">6.4. <code>do-while</code> Loops</h3>
+<div class="sect3">
+<h4 id="_this_section_is_not_finished_but_in_the_meantime_this_content_is_covered_in_section_6_3_page_206_in_the_textbook">6.4.1. <mark>This section is not finished, but in the meantime this content is covered in section 6.3 (page 206) in the textbook.</mark></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="_do_while_loops_2">6.5. <code>do-while</code> Loops</h3>
+<div class="sect3">
+<h4 id="_this_section_is_not_finished_but_in_the_meantime_this_content_is_covered_in_section_6_5_page_217_in_the_textbook">6.5.1. <mark>This section is not finished, but in the meantime this content is covered in section 6.5 (page 217) in the textbook.</mark></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="_for_loops">6.6. <code>for</code> Loops</h3>
+<div class="sect3">
+<h4 id="_this_section_is_not_finished_but_in_the_meantime_this_content_is_covered_in_section_6_4_page_214_in_the_textbook">6.6.1. <mark>This section is not finished, but in the meantime this content is covered in section 6.4 (page 214) in the textbook.</mark></h4>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p>Content labelled as <strong>Just for Fun</strong> is not required for the course, but is included for students who are interested in learning more about the topic. If you&#8217;re struggling to learn the material in this course, please skip this&#8212;&#8203;maybe you can return when you have more time.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_this_section_is_not_finished_and_is_not_covered_in_the_textbook_if_your_really_cant_wait_search_for_the_topic_on_the_internet">6.6.2. <mark>This section is not finished, and is not covered in the textbook. IF your <em>really</em> can&#8217;t wait, search for the topic on the internet.</mark></h4>
+<hr>
+</div>
 </div>
 </div>
 </div>
@@ -515,7 +615,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-29 15:05:39 -0700
+Last updated 2025-02-11 18:45:53 -0700
 </div>
 </div>
 </body>

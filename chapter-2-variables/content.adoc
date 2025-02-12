@@ -8,7 +8,7 @@ ifeval::["{docname}" == "index"]
 :sourcedir: chapter-2-variables/source
 endif::[]
 
-== 0010 - Variables (Chapter 2)
+== 0010 - Variables
 
 .Help Make These Materials Better!
 ****
@@ -17,6 +17,7 @@ I am actively working to complete and revise this eBook and the accompanying vid
 https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google Form)^]
 ****
 
+:sectnums!:
 === What's the Point?
 * Know how to select a data type
 * Write code to declare variables and assign values
@@ -24,6 +25,7 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/02%20Variables[GitHub^]._
 
+:sectnums:
 '''
 It's fun to create programs that display stuff on the screen, but that's pretty limited.
 To start doing things that are more interesting--and useful--we'll need to keep track of some information.
@@ -448,24 +450,18 @@ The `Scanner` class includes a variety methods for working with input "streams" 
 
 WARNING: As a reminder, there's a weird quirk that happens when you get numeric input from a user and then ask for `String` input using `next()` or `nextLine()`. If your program seems to skip that `next()` or `nextLine()`, review that part of the video!
 
-// TODO: Use Co-pilot to create better questions
+'''
+
+:sectnums!:
 === Check Yourself Before You Wreck Yourself (on the assignments)
 
 ==== Can you answer these questions?
 
 ****
 
-// 1. Explain the difference between a declaration and an assignment.
-
-// 2. Identify a data type you could use for each of the following:
-// ** A complete mailing address
-// ** A speed limit
-// ** The average number of students in classes at EMCC
-
-// 3. What kind of object can you use to get keyboard input from the user?
-
 1. **What is the difference between a constant and a variable in Java? Provide an example of each.**
 2. **Explain the purpose of the `Scanner` class in Java and provide an example of how it is used to get user input.**
 3. **Describe the difference between integer division and floating-point division in Java. Why is it important to be aware of this distinction?**
 4. **What are compound assignment operators in Java? Provide examples of how they are used in arithmetic operations.**
 ****
+:sectnums:
