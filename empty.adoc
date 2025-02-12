@@ -6,12 +6,12 @@ ifeval::["{docname}" == "index"]
 :sourcedir: chapter-1/source
 endif::[]
 
-= 0010 - Variables (Chapter 2)
+= 0010 - Variables
 
 == What' the Point?
 * ----- Objectives -----
 
-''''
+'''
 
 
 .Example: Class Diagram

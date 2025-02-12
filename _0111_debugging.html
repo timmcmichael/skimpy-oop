@@ -435,84 +435,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-pre.pygments .hll { background-color: #ffffcc }
-pre.pygments { background: #f8f8f8; }
-pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
-pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
-pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
-pre.pygments .tok-o { color: #666666 } /* Operator */
-pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
-pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
-pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
-pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
-pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
-pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
-pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
-pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
-pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
-pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
-pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
-pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
-pre.pygments .tok-go { color: #717171 } /* Generic.Output */
-pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
-pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
-pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
-pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
-pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
-pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
-pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
-pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
-pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
-pre.pygments .tok-m { color: #666666 } /* Literal.Number */
-pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
-pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
-pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
-pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
-pre.pygments .tok-no { color: #880000 } /* Name.Constant */
-pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
-pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
-pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
-pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
-pre.pygments .tok-nl { color: #767600 } /* Name.Label */
-pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
-pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
-pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
-pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
-pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
-pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
-pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
-pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
-pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
-pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
-pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
-pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
-pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
-pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
-pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
-pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
-pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
-pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
-pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
-pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
-pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
-pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
-pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
-pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
-pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
-pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
-pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
-pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
-pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
-</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_stuff_thats_tacked_on_the_end" class="book toc2 toc-left">
+<body id="_0111_debugging" class="book toc2 toc-left">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
 <div class="details">
@@ -541,7 +469,15 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </li>
 <li><a href="_0110_loops.html">6. 0110 - Loops</a>
 </li>
-<li><a href="_0111_debugging.html">7. 0111 - Debugging</a>
+<li><a href="_0111_debugging.html"><span class="toc-current">7. 0111 - Debugging</span></a>
+<ul class="sectlevel2">
+<li><a href="_0111_debugging.html#_content_coming_soon">7.1. <mark>Content coming soon!</mark></a>
+</li>
+<li><a href="_0111_debugging.html#_whats_the_point_7">What&#8217;s the Point?</a>
+</li>
+<li><a href="_0111_debugging.html#_types_of_errors">7.2. Types of Errors</a>
+</li>
+</ul>
 </li>
 <li><a href="_1000_arrays.html">8. 1000 - Arrays</a>
 </li>
@@ -549,292 +485,54 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </li>
 <li><a href="_1010_graphical_user_interfaces_with_swing.html">10. 1010 - Graphical User Interfaces with Swing</a>
 </li>
-<li><a href="_stuff_thats_tacked_on_the_end.html"><span class="toc-current">11. Stuff That&#8217;s Tacked on the End</span></a>
-<ul class="sectlevel2">
-<li><a href="_stuff_thats_tacked_on_the_end.html#_answers_to_check_yourself_before_you_wreck_yourself_on_the_assignments_questions">11.1. Answers to <em>Check Yourself Before You Wreck Yourself (on the assignments)</em> questions</a>
-</li>
-</ul>
+<li><a href="_stuff_thats_tacked_on_the_end.html">11. Stuff That&#8217;s Tacked on the End</a>
 </li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_stuff_thats_tacked_on_the_end">11. Stuff That&#8217;s Tacked on the End</h2>
+<h2 id="_0111_debugging">7. 0111 - Debugging</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_answers_to_check_yourself_before_you_wreck_yourself_on_the_assignments_questions">11.1. Answers to <em>Check Yourself Before You Wreck Yourself (on the assignments)</em> questions</h3>
-<div class="sect3">
-<h4 id="_getting_started_chapter">11.1.1. Getting Started Chapter</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>What does JDK stand for?</strong></em></p>
-<p>Java Development Kit</p>
-</li>
-<li>
-<p><em><strong>What is an example of an Integrated Development Environment?</strong></em></p>
-<p>Visual Studio Code, eclipse, IntelliJ, and many others.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_computers_and_coding">11.1.2. Computers and Coding</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>What is the primary role of a programming language in the context of computer programming?</strong></em></p>
-<p>The primary role of a programming language is to act as a bridge between human language and machine language. It allows humans to write instructions in a way that is easier for them to understand and use, which can then be accurately translated into machine language that a computer can execute.</p>
-</li>
-<li>
-<p><em><strong>Explain the difference between compiled and interpreted programming languages. Provide an example of each.</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Compiled languages</strong> are those where the source code is translated into machine language by a compiler before the program is run. This machine language file can then be executed directly by the computer. An example of a compiled language is C.</p>
-</li>
-<li>
-<p><strong>Interpreted languages</strong> are those where the source code is translated into machine language on the fly, as the program is running, by an interpreter. An example of an interpreted language is Python.</p>
-</li>
-<li>
-<p><strong>Java</strong> is a unique case as it is both compiled and interpreted. The source code is first compiled into an intermediate language called bytecode, which is then interpreted by the Java Runtime Environment (JRE) at runtime.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><em><strong>Describe the basic structure of a simple Java program, such as the "Hello World" example provided in the chapter.</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p>A simple Java program, like the "Hello World" example, consists of:</p>
-</li>
-<li>
-<p><strong>Class declaration</strong>: This defines the class, which is a blueprint for objects. In the example, the class is named <code>HelloWorld</code>.</p>
-</li>
-<li>
-<p><strong>main() method</strong>: This is the entry point of the program where execution begins. It is declared as <code>public static void main(String[] args)</code>.</p>
-</li>
-<li>
-<p><strong>println() statement</strong>: This is used to output text to the console. In the example, <code>System.out.println("Hello World!");</code> prints "Hello World!" to the console.</p>
-</li>
-<li>
-<p><strong>Code blocks</strong>: These are enclosed in curly braces <code>{}</code> to define the scope of the class and the main method.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><em><strong>What are the key steps in the software development process as outlined in the chapter? Why is it important to follow these steps?</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p>The key steps in the software development process are:</p>
-</li>
-<li>
-<p><strong>Analysis</strong>: Identifying the goals and scope of the program. This step ensures that you understand what the program needs to do.</p>
-</li>
-<li>
-<p><strong>Testing Plan</strong>: Determining how the final program will be tested. This step ensures that you have a clear understanding of how to verify that the program works correctly.</p>
-</li>
-<li>
-<p><strong>Implementation</strong>: Writing and testing the code iteratively. This step involves developing the program piece by piece, testing each part to ensure it works before moving on to the next.</p>
-</li>
-<li>
-<p><strong>Revise or Maintain</strong>: Updating the program as needed based on changing requirements or ensuring it continues to perform as expected over time.</p>
-</li>
-<li>
-<p>Following these steps is important because it helps keep the development process organized and focused, ensures efficient use of time, and makes complex programming tasks more approachable.</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_variables">11.1.3. Variables</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>What is the difference between a constant and a variable in Java? Provide an example of each.</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p>A <strong>constant</strong> is a piece of data that cannot change during program execution. It is declared using the <code>final</code> keyword and must be assigned a value when it is declared. For example:</p>
-<div class="listingblock">
+<h3 id="_content_coming_soon">7.1. <mark>Content coming soon!</mark></h3>
+<div class="sidebarblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">SALES_TAX_RATE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">8.7</span><span class="tok-p">;</span></code></pre>
+<div class="title">Help Make These Materials Better!</div>
+<div class="paragraph">
+<p>I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://forms.gle/4173pZ1yPuNX7pku6" target="_blank" rel="noopener">CIS150AB Course Materials Feedback (Google Form)</a></p>
 </div>
 </div>
-</li>
-<li>
-<p>A <strong>variable</strong> is a piece of data that can change (or "vary") during program execution. It is declared by specifying a data type and an identifier, and can be assigned different values throughout the program. For example:</p>
-<div class="listingblock">
+</div>
+<div class="paragraph">
+<p><em>Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/07%20Debugging" target="_blank" rel="noopener">GitHub</a>.</em></p>
+</div>
+<div class="sidebarblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">;</span>
-<span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">22</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// The value of age can be changed</span></code></pre>
+<div class="paragraph">
+<p>I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://forms.gle/4173pZ1yPuNX7pku6" target="_blank" rel="noopener">CIS150AB Course Materials Feedback (Google Form)</a></p>
 </div>
 </div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><em><strong>Explain the purpose of the <code>Scanner</code> class in Java and provide an example of how it is used to get user input.</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p>The <code>Scanner</code> class in Java is used to get input from the user through the keyboard. It provides methods to read different types of input, such as strings, integers, and doubles. To use the <code>Scanner</code> class, you need to import it and create an instance of the class. Here is an example:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-nn">java.util.Scanner</span><span class="tok-p">;</span>
-
-<span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">InputDemo</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">  </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">Scanner</span><span class="tok-w"> </span><span class="tok-n">input</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">Scanner</span><span class="tok-p">(</span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">in</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-p">;</span>
-<span class="tok-w">    </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-p">;</span>
-
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;Enter your name: &quot;</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">input</span><span class="tok-p">.</span><span class="tok-na">nextLine</span><span class="tok-p">();</span>
-
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;Enter your age: &quot;</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">input</span><span class="tok-p">.</span><span class="tok-na">nextInt</span><span class="tok-p">();</span>
-
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello, &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot;. You are &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot; years old.&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">  </span><span class="tok-p">}</span>
-<span class="tok-p">}</span></code></pre>
 </div>
 </div>
-</li>
-</ul>
+<div class="sect2">
+<h3 id="_whats_the_point_7">What&#8217;s the Point?</h3>
+<hr>
 </div>
-</li>
-<li>
-<p><em><strong>Describe the difference between integer division and floating-point division in Java. Why is it important to be aware of this distinction?</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Integer division</strong> in Java occurs when both operands are integers. The result is also an integer, and any fractional part is truncated (i.e., discarded). For example:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// result is 3, not 3.33</span></code></pre>
-</div>
-</div>
-</li>
-<li>
-<p><strong>Floating-point division</strong> occurs when at least one of the operands is a floating-point number (e.g., <code>float</code> or <code>double</code>). The result is a floating-point number, and the fractional part is preserved. For example:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">result</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">10.0</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// result is 3.333333...</span></code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>It is important to be aware of this distinction because using integer division when you expect a floating-point result can lead to incorrect calculations and unexpected behavior in your programs.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><em><strong>What are compound assignment operators in Java? Provide examples of how they are used in arithmetic operations.</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Compound assignment operators in Java are shorthand ways of writing common arithmetic operations that update the value of a variable. They combine an arithmetic operator with the assignment operator (<code>=</code>). Here are some examples:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">x</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">5</span><span class="tok-p">;</span>
-<span class="tok-n">x</span><span class="tok-w"> </span><span class="tok-o">+=</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// Equivalent to x = x + 3; x is now 8</span>
-
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">y</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">;</span>
-<span class="tok-n">y</span><span class="tok-w"> </span><span class="tok-o">-=</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// Equivalent to y = y - 2; y is now 8</span>
-
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">z</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-p">;</span>
-<span class="tok-n">z</span><span class="tok-w"> </span><span class="tok-o">*=</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// Equivalent to z = z * 2; z is now 8</span>
-
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">a</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">;</span>
-<span class="tok-n">a</span><span class="tok-w"> </span><span class="tok-o">/=</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// Equivalent to a = a / 4; a is now 5</span>
-
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">b</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">15</span><span class="tok-p">;</span>
-<span class="tok-n">b</span><span class="tok-w"> </span><span class="tok-o">%=</span><span class="tok-w"> </span><span class="tok-mi">6</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// Equivalent to b = b % 6; b is now 3</span></code></pre>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_methods_2">11.1.4. Methods</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>What is the main purpose of using methods in Java, and how do they contribute to code maintainability?</strong></em></p>
-<p>The main purpose of using methods in Java is to organize code into reusable blocks that perform specific tasks. Methods help in breaking down complex programs into smaller, manageable pieces, making the code easier to read, understand, and maintain. By encapsulating functionality within methods, changes can be made in one place without affecting other parts of the program. This improves maintainability because if a bug is found or a change is needed, it can be addressed within the method itself, rather than having to update multiple instances of the same code throughout the program.</p>
-</li>
-<li>
-<p><em><strong>Explain the difference between a parameter and an argument in the context of Java methods. Provide an example to illustrate your explanation.</strong></em></p>
-<p>In Java, a parameter is a variable defined in the method declaration that acts as a placeholder for the value that will be passed to the method. An argument, on the other hand, is the actual value that is passed to the method when it is called. For example, in the method definition <code>public static void printArea(double radius)</code>, <code>radius</code> is a parameter. When the method is called with <code>printArea(5.0)</code>, the value <code>5.0</code> is the argument passed to the method.</p>
-</li>
-<li>
-<p><em><strong>Why is it generally better to return values from methods rather than printing them directly within the method? How does this practice improve the modularity and reusability of code?</strong></em></p>
-<p>It is generally better to return values from methods rather than printing them directly within the method because returning values allows the method to be more versatile and reusable. When a method returns a value, it can be used in various contexts, such as in calculations, assignments, or further processing, without being tied to a specific output format. This practice improves modularity by keeping the method focused on a single task (e.g., performing a calculation) and leaving the decision of how to use the result to the calling code. It also enhances reusability, as the method can be used in different parts of the program or even in different programs without modification.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_classes_and_objects">11.1.5. Classes and Objects</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>What is the primary difference between procedural programming and object-oriented programming (OOP)?</strong></em></p>
-<p>Procedural programming organizes programs as a collection of tasks or methods that need to be performed in a specific order. In contrast, OOP organizes programs as a collection of interacting objects, each representing a real-world entity with attributes (data) and behaviors (methods).</p>
-</li>
-<li>
-<p><em><strong>Explain the concept of a class and how it relates to objects in OOP.</strong></em></p>
-<p>A class is a blueprint or template for creating objects. It defines the attributes and behaviors that the objects created from the class will have. An object is an instance of a class, meaning it is created with the fields and methods implemented in the class.</p>
-</li>
-<li>
-<p><em><strong>What is encapsulation, and why is it important in OOP? Provide an example.</strong></em></p>
-<p>Encapsulation is the concept of hiding the internal state of an object and requiring all interaction to be performed through the object&#8217;s methods. This is important because it protects the object&#8217;s data from unintended or harmful modifications. For example, in a bank account class, the balance field is private and can only be accessed or modified through a public getter method, and modified through public deposit and withdraw methods.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_decisions">11.1.6. Decisions</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>Explain what Boolean expressions are and how they are used to make decisions in Java.</strong></em></p>
-<p>Boolean expressions are statements that evaluate to either true or false. In Java, they are used to make decisions by determining which blocks of code to execute based on the evaluation of these expressions.</p>
-</li>
-<li>
-<p><em><strong>Explain the difference between a relational operator and a logical operator.</strong></em></p>
-<p>Relational operators compare two values and determine their relationship, such as equality (==), inequality (!=), less than (&lt;), and greater than (&gt;). Logical operators, on the other hand, combine multiple Boolean expressions to form a single, more complex expression, such as AND (&amp;&amp;), OR (||), and NOT (!).</p>
-</li>
-<li>
-<p><em><strong>What is the difference between an <code>if</code> statement and an <code>if-else</code> statement?</strong></em></p>
-<p>An if statement allows you to execute a block of code only if a certain condition is true. An if-else statement extends this by providing an alternative block of code to execute if the condition is false, allowing you to choose between two possible actions.</p>
-</li>
-<li>
-<p><em><strong>How can you write code that runs one code block from multiple options?</strong></em></p>
-<p>You can use a switch statement to run one code block from multiple options based on the value of an expression. Alternatively, you can use an if-else if structure to chain multiple if-else statements together, allowing you to handle more than two options.</p>
-</li>
-</ol>
-</div>
-</div>
+<div class="sect2">
+<h3 id="_types_of_errors">7.2. Types of Errors</h3>
+<hr>
 </div>
 </div>
 </div>
 <div class="paragraph nav-footer">
-<p>← Previous: <a href="_1010_graphical_user_interfaces_with_swing.html">1010 - Graphical User Interfaces with Swing</a> | ↑ Up: <a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a></p>
+<p>← Previous: <a href="_0110_loops.html">0110 - Loops</a> | ↑ Up: <a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a> | Next: <a href="_1000_arrays.html">1000 - Arrays</a> →</p>
 </div>
 </div>
 <div id="footer">

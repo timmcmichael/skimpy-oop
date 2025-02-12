@@ -512,7 +512,7 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_stuff_thats_tacked_on_the_end" class="book toc2 toc-left">
+<body id="_0001_computers_and_coding" class="book toc2 toc-left">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
 <div class="details">
@@ -529,7 +529,25 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </li>
 <li><a href="_0000_getting_started.html">0. 0000 - Getting Started</a>
 </li>
-<li><a href="_0001_computers_and_coding.html">1. 0001 - Computers and Coding</a>
+<li><a href="_0001_computers_and_coding.html"><span class="toc-current">1. 0001 - Computers and Coding</span></a>
+<ul class="sectlevel2">
+<li><a href="_0001_computers_and_coding.html#_whats_the_point_2">What&#8217;s the Point?</a>
+</li>
+<li><a href="_0001_computers_and_coding.html#_programming_languages">1.1. Programming Languages</a>
+</li>
+<li><a href="_0001_computers_and_coding.html#_programming_paradigms">1.2. Programming Paradigms</a>
+</li>
+<li><a href="_0001_computers_and_coding.html#_software_development_process">1.3. Software Development Process</a>
+</li>
+<li><a href="_0001_computers_and_coding.html#_first_java_program">1.4. First Java Program</a>
+</li>
+<li><a href="_0001_computers_and_coding.html#_basic_output">1.5. Basic Output</a>
+</li>
+<li><a href="_0001_computers_and_coding.html#_code_comments">1.6. Code Comments</a>
+</li>
+<li><a href="_0001_computers_and_coding.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_2">Check Yourself Before You Wreck Yourself (on the assignments)</a>
+</li>
+</ul>
 </li>
 <li><a href="_0010_variables.html">2. 0010 - Variables</a>
 </li>
@@ -549,292 +567,572 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </li>
 <li><a href="_1010_graphical_user_interfaces_with_swing.html">10. 1010 - Graphical User Interfaces with Swing</a>
 </li>
-<li><a href="_stuff_thats_tacked_on_the_end.html"><span class="toc-current">11. Stuff That&#8217;s Tacked on the End</span></a>
-<ul class="sectlevel2">
-<li><a href="_stuff_thats_tacked_on_the_end.html#_answers_to_check_yourself_before_you_wreck_yourself_on_the_assignments_questions">11.1. Answers to <em>Check Yourself Before You Wreck Yourself (on the assignments)</em> questions</a>
-</li>
-</ul>
+<li><a href="_stuff_thats_tacked_on_the_end.html">11. Stuff That&#8217;s Tacked on the End</a>
 </li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_stuff_thats_tacked_on_the_end">11. Stuff That&#8217;s Tacked on the End</h2>
+<h2 id="_0001_computers_and_coding">1. 0001 - Computers and Coding</h2>
 <div class="sectionbody">
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Help Make These Materials Better!</div>
+<div class="paragraph">
+<p>I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://forms.gle/4173pZ1yPuNX7pku6" target="_blank" rel="noopener">CIS150AB Course Materials Feedback (Google Form)</a></p>
+</div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="_answers_to_check_yourself_before_you_wreck_yourself_on_the_assignments_questions">11.1. Answers to <em>Check Yourself Before You Wreck Yourself (on the assignments)</em> questions</h3>
-<div class="sect3">
-<h4 id="_getting_started_chapter">11.1.1. Getting Started Chapter</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>What does JDK stand for?</strong></em></p>
-<p>Java Development Kit</p>
-</li>
-<li>
-<p><em><strong>What is an example of an Integrated Development Environment?</strong></em></p>
-<p>Visual Studio Code, eclipse, IntelliJ, and many others.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_computers_and_coding">11.1.2. Computers and Coding</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>What is the primary role of a programming language in the context of computer programming?</strong></em></p>
-<p>The primary role of a programming language is to act as a bridge between human language and machine language. It allows humans to write instructions in a way that is easier for them to understand and use, which can then be accurately translated into machine language that a computer can execute.</p>
-</li>
-<li>
-<p><em><strong>Explain the difference between compiled and interpreted programming languages. Provide an example of each.</strong></em></p>
+<h3 id="_whats_the_point_2">What&#8217;s the Point?</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Compiled languages</strong> are those where the source code is translated into machine language by a compiler before the program is run. This machine language file can then be executed directly by the computer. An example of a compiled language is C.</p>
+<p>Understand the role of programming languages</p>
 </li>
 <li>
-<p><strong>Interpreted languages</strong> are those where the source code is translated into machine language on the fly, as the program is running, by an interpreter. An example of an interpreted language is Python.</p>
+<p>Get to know a little about Object-Oriented Programming (OOP)</p>
 </li>
 <li>
-<p><strong>Java</strong> is a unique case as it is both compiled and interpreted. The source code is first compiled into an intermediate language called bytecode, which is then interpreted by the Java Runtime Environment (JRE) at runtime.</p>
+<p>Use <code>print()</code> and <code>println()</code> to produce text output</p>
 </li>
 </ul>
 </div>
-</li>
-<li>
-<p><em><strong>Describe the basic structure of a simple Java program, such as the "Hello World" example provided in the chapter.</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p>A simple Java program, like the "Hello World" example, consists of:</p>
-</li>
-<li>
-<p><strong>Class declaration</strong>: This defines the class, which is a blueprint for objects. In the example, the class is named <code>HelloWorld</code>.</p>
-</li>
-<li>
-<p><strong>main() method</strong>: This is the entry point of the program where execution begins. It is declared as <code>public static void main(String[] args)</code>.</p>
-</li>
-<li>
-<p><strong>println() statement</strong>: This is used to output text to the console. In the example, <code>System.out.println("Hello World!");</code> prints "Hello World!" to the console.</p>
-</li>
-<li>
-<p><strong>Code blocks</strong>: These are enclosed in curly braces <code>{}</code> to define the scope of the class and the main method.</p>
-</li>
-</ul>
+<div class="paragraph">
+<p><em>Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding" target="_blank" rel="noopener">GitHub</a>.</em></p>
 </div>
-</li>
-<li>
-<p><em><strong>What are the key steps in the software development process as outlined in the chapter? Why is it important to follow these steps?</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p>The key steps in the software development process are:</p>
-</li>
-<li>
-<p><strong>Analysis</strong>: Identifying the goals and scope of the program. This step ensures that you understand what the program needs to do.</p>
-</li>
-<li>
-<p><strong>Testing Plan</strong>: Determining how the final program will be tested. This step ensures that you have a clear understanding of how to verify that the program works correctly.</p>
-</li>
-<li>
-<p><strong>Implementation</strong>: Writing and testing the code iteratively. This step involves developing the program piece by piece, testing each part to ensure it works before moving on to the next.</p>
-</li>
-<li>
-<p><strong>Revise or Maintain</strong>: Updating the program as needed based on changing requirements or ensuring it continues to perform as expected over time.</p>
-</li>
-<li>
-<p>Following these steps is important because it helps keep the development process organized and focused, ensures efficient use of time, and makes complex programming tasks more approachable.</p>
-</li>
-</ul>
+<hr>
+<div class="paragraph">
+<p>A computer is basically a device that executes a set of commands&#8212;&#8203;and does so very quickly.
+Because the guts of a computer (a CPU) are kinda like a bunch of light switches&#8212;&#8203;and I mean a <strong>BUNCH</strong> of light switches&#8212;&#8203;it can only deal with zeros and ones: a switch that is off is "zero," and a switch that&#8217;s on is "one."</p>
 </div>
-</li>
-</ol>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Never has the concept of a modern computer been so recklessly simplified. I feel shame.
+</td>
+</tr>
+</table>
 </div>
+<div class="paragraph">
+<p>All of the information a computer handles ultimately has to be represented by some combination of 1s and 0s, which we call a <strong>binary</strong> (or "base-two") number system.
+ The chapters of this eBook are numbered using binary to show basic examples of the numbering system: 0001 is, well, 1 in decimal.
+And 0100 is 4 in decimal. We won&#8217;t get into binary numbers, but it&#8217;s not very complicated and is kind of interesting if you&#8217;re a nerd.</p>
 </div>
-<div class="sect3">
-<h4 id="_variables">11.1.3. Variables</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>What is the difference between a constant and a variable in Java? Provide an example of each.</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p>A <strong>constant</strong> is a piece of data that cannot change during program execution. It is declared using the <code>final</code> keyword and must be assigned a value when it is declared. For example:</p>
-<div class="listingblock">
+<div class="sidebarblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">SALES_TAX_RATE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">8.7</span><span class="tok-p">;</span></code></pre>
+<div class="title">Learn More</div>
+<div class="paragraph">
+<p>The amazing <a href="https://code.org">code.org</a> project has a playlist of great, short videos on how computers work&#8212;&#8203;including binary numbers&#8212;&#8203;if you want to know a little more without going too crazy:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.youtube.com/playlist?list=PLzdnOPI1iJNcsRwJhvksEo1tJqjIqWbN-">How Computers Work</a></p>
 </div>
 </div>
-</li>
-<li>
-<p>A <strong>variable</strong> is a piece of data that can change (or "vary") during program execution. It is declared by specifying a data type and an identifier, and can be assigned different values throughout the program. For example:</p>
-<div class="listingblock">
+</div>
+<div class="paragraph">
+<p>Imagine that your BFF is in your object-oriented programming class, but that cruel professor won&#8217;t let you sit together.
+When the professor turns his back, you can use your fingers to send a quick message to your BFF.
+Holding up your index finger might mean, "meet me in the library after class;" two fingers could mean, "send me a copy of your homework."
+As long as you agree on what each number means, you could pass along commands or information&#8212;&#8203;it would be like your own little language.</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re a sports fan, I have a better analogy.
+A quarterback and a coach could have a language based completely on numbers.
+The coach tells the QB "22" and the QB knows which play to run, because they&#8217;ve agreed on what instruction (play) the number 22 means&#8212;&#8203;and there are football teams that do exactly this.</p>
+</div>
+<div class="paragraph">
+<p>Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of 22) and the QB would have to know binary numbers (or have them written on his wrist-band thing as a cheatsheet).</p>
+</div>
+<div class="paragraph">
+<p>Want to take the analogy one step further?
+A player standing on the sideline with his helmet on could represent a 1, and a player with his helmet off could represent a 0.
+Now the coach could just line up five players and tell the 2nd and 5th ones to take their helmets off.
+The QB could look over, see the pattern of helmets (10110) and run play 22.</p>
+</div>
+<div class="paragraph">
+<p>Okay, that would be the nerdiest football team in history.
+And how is that relevant?
+Let&#8217;s see&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p>Remember that a computer can execute commands super fast.
+Each command, or <strong>instruction</strong> (like a football play), is represented by a number&#8212;&#8203;a binary number, since that&#8217;s the number system the computer uses.
+The collection of these instructions the computer understands is called <strong>machine language</strong>.</p>
+</div>
+<div class="sidebarblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">;</span>
-<span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">22</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// The value of age can be changed</span></code></pre>
+<div class="title">Interesting!</div>
+<div class="paragraph">
+<p>Just like people in different cultures use different languages, different CPU types use different languages. There are lots of different machine languages out there.</p>
 </div>
 </div>
-</li>
-</ul>
 </div>
-</li>
-<li>
-<p><em><strong>Explain the purpose of the <code>Scanner</code> class in Java and provide an example of how it is used to get user input.</strong></em></p>
+<div class="paragraph">
+<p>You could give the computer a set of instructions (aka, a program) if you just looked up the binary number for each instruction you wanted to use.
+Of course, even a simple program requires a lot of instructions, so you&#8217;re going to be looking up a <strong>lot</strong> of stuff.</p>
+</div>
+<div class="paragraph">
+<p>Few people actually <em>want</em> to do that, so the rest of us use programming languages instead.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_programming_languages">1.1. Programming Languages</h3>
+<div class="paragraph">
+<p>A programming language is something that&#8217;s easier for humans to use than machine language, but is capable of being accurately translated to machine language.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+There are many, many programming languages. <a href="https://en.wikipedia.org/wiki/List_of_programming_languages">Seriously, there are a lot</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The instructions you write using a programming language are called <strong>source code</strong>.
+Translating source code file to a machine language file that can be executed is called <strong>compiling</strong>, and is done by an application called a compiler.
+When the computer runs the program, it&#8217;s using that machine language translation created by the compiler.
+Clicking on the icon to open Microsoft Word runs a file that&#8217;s been compiled from source code.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Coding and Compiling</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/yR939VDXPaM?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=3" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Some programming languages don&#8217;t get translated ahead of time&#8212;&#8203;they get translated "on the fly," as the program is running.
+That&#8217;s called <strong>interpreting</strong> instead of compiling.</p>
+</div>
+<div class="paragraph">
+<p>The C programming language is an example of a compiled language, and Python is an example of an interpreted language.</p>
+</div>
+<div class="paragraph">
+<p>Java is an interesting case, because it&#8217;s both compiled <strong>and</strong> interpreted.
+The JDK compiles your source code into an intermediate language called <strong>bytecode</strong>.
+To execute the program, you use the Java Runtime Environment to interpret that bytecode file as it executes.</p>
+</div>
+<div class="paragraph">
+<p>Bytecode is very close to machine language.
+In fact, it&#8217;s basically a "virtual machine language"--a machine language for a CPU that doesn&#8217;t actually exist.
+This approach allows Java to be cross-platform (runnable on many different machines).
+A compiled machine language file only works on a computer that "speaks" the same machine language, but if you compile your program to a bytecode file, it&#8217;ll run on any computer that has the Java Runtime Environment installed&#8212;&#8203;and that will interpret the bytecode as it executes.
+This "write once, run anywhere" ability contributes greatly to Java&#8217;s popularity.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_programming_paradigms">1.2. Programming Paradigms</h3>
+<div class="paragraph">
+<p>A paradigm is a model or example, or maybe better described as a way of seeing things&#8212;&#8203;which is helpful to think about, since we can all have different ways of seeing how a problem could be solved.</p>
+</div>
+<div class="paragraph">
+<p>Imagine that your crazy uncle wants to pay you to go through the junk in his garage and organize his giant collection of vinyl records.
+Or imagine it&#8217;s a collection of books, if that&#8217;s what you prefer.
+How would you organize the collection?
+You could group them by artist and then arrange them alphabetically, from <a href="https://youtu.be/xFrGuyw1V8s?si=2N4W5250-YP5Pdth">ABBA</a> to <a href="https://youtu.be/F2HH7J-Sx80?si=ByL5Vr4VVYmDA8Rv">Warren Zevon</a>.
+Or you could group them by genres (keeping disco separate from rock \'n' roll), or just put them in the order they were released.</p>
+</div>
+<div class="paragraph">
+<p>There are tons of different ways to do it.
+None of them are really right or wrong, it just depends on what you prefer&#8212;&#8203;or maybe on how you plan to find things later.
+Coding is similar, in that we all have different ways we imagine organizing a program or solving a problem.
+That&#8217;s kinda the idea of a programming paradigm: how do you think about the program you&#8217;re creating?
+How do you picture it being organized?</p>
+</div>
+<div class="paragraph">
+<p>Just like programming languages, paradigms are numerous.
+In fact, some languages were created specifically to work well with a certain paradigm, and that&#8217;s one reason there are so many languages.
+But when someone is going to learn to code, there are often two paradigms we consider:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>The <code>Scanner</code> class in Java is used to get input from the user through the keyboard. It provides methods to read different types of input, such as strings, integers, and doubles. To use the <code>Scanner</code> class, you need to import it and create an instance of the class. Here is an example:</p>
-<div class="listingblock">
+<p>Procedural Programming</p>
+</li>
+<li>
+<p>Object-Oriented Programming (OOP)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>They have a lot in common, and in fact, OOP is actually a type of procedural programming.
+Programmers love to argue why one approach is better than the other, in the same way some of my friends might argue about Ford trucks vs. Chevy trucks.
+And just like Ford vs. Chevy, there&#8217;s nothing inherently better about one paradigm or the other&#8212;&#8203;sorry friends, but Ford and Chevy trucks are basically the same.
+Growing up, my own first coding experiences were exclusively with procedural programming, and I stayed in that world until I began teaching Java&#8212;&#8203;now I very much prefer OOP, both for my own programming and for teaching beginning coders.
+But that really is a personal preference, and I wouldn&#8217;t argue that OOP is <em>better</em> than procedural programming.</p>
+</div>
+<div class="paragraph">
+<p>Well, I wouldn&#8217;t argue <em>much</em>.</p>
+</div>
+<div class="sect3">
+<h4 id="_comparing_procedural_programming_and_oop">1.2.1. Comparing Procedural Programming and OOP</h4>
+<div class="paragraph">
+<p>In procedural programming, we break up a program into the tasks we need to complete.
+Each individual task is handled by a set of statements that we call a <strong>procedure</strong>.
+If you need to calculate a student&#8217;s overall course grade, for example, you write a procedure to do it.</p>
+</div>
+<div class="paragraph">
+<p>The data for your program&#8212;&#8203;the stuff you&#8217;re keeping track of&#8212;&#8203;is stored somewhere else.
+If a procedure needs something to complete its task, that data is sent to the procedure, which then sends back a result.
+In short, information is kept separate from the code that uses it and is passed back and forth as necessary.</p>
+</div>
+<div class="imageblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-nn">java.util.Scanner</span><span class="tok-p">;</span>
+<img src="chapter-1-coding/images/ProceduralProgramming.png" alt="Diagram of data passing in procedural programming" width="400">
+</div>
+<div class="title">Figure 1. Passing data in procedural programming</div>
+</div>
+<div class="paragraph">
+<p>Many programming languages (including Python) refer to procedures as <strong>functions</strong>, and the term <strong>subroutines</strong> is also used in some cases; if you&#8217;ve done some programming in any language, you&#8217;ve almost certainly used procedures in some form.</p>
+</div>
+<div class="paragraph">
+<p>In OOP, the focus shifts from procedures to <strong>objects</strong>, which are programming elements that bundle data with the procedures that use it, instead of keeping them separate.
+We&#8217;ll explore the nature of objects in great detail going forward, so we won&#8217;t worry about describing it too much for now.</p>
+</div>
+<div class="paragraph">
+<p>I have my own biases about the topic.
+I tend to think OOP lends itself especially well to things like graphical user interfaces (GUIs) and games, as well as large projects developed by teams of programmers.</p>
+</div>
+<div class="paragraph">
+<p>The bottom line is that, when faced with a programming task or project, my brain immediately starts thinking in terms of the <em>objects</em> the program will need.
+But that&#8217;s probably just a matter of habit; as I mentioned, I spent much of my life (including all of the time I spent as a professional programmer) seeing programs as a bunch of procedures.</p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s important that you&#8217;re aware of procedural programming, and the code we&#8217;ll write in the next couple of chapters is really written from a procedural perspective, but our overall focus in this book and course is really on OOP.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_software_development_process">1.3. Software Development Process</h3>
+<div class="paragraph">
+<p>Learning to write code means creating a lot of programs&#8212;&#8203;mostly small, straightforward programs at first.
+Remember those awful word problems where a train leaves Chicago traveling 40 mph, and another train leaves Denver at 35 mph?
+That kind of stuff; but in my course, we don&#8217;t get too caught up in the math part of it.
+But we care <strong>a lot</strong> about understanding the requirements of a program and implementing it successfully.</p>
+</div>
+<div class="paragraph">
+<p>As your programs become bigger and more complex, you&#8217;ll need to work within a deliberate design and implementation process in order to keep yourself organized and focused.
+Even the smaller programs you&#8217;ll develop while learning the basics will benefit from a thoughtful approach beyond just opening a new file and starting to type.
+It ensures that you use your time efficiently.
+And when you are faced with solving a programming problem that really intimidates you, the process will help make the task more approachable.</p>
+</div>
+<div class="paragraph">
+<p>For big or small projects, a good general approach to software development is:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Analysis</dt>
+<dd>
+<p>Identify the goals and scope of the program. As a rule, keep it small and focused&#8212;&#8203;you can always add features later. <strong>Ask yourself, <em>What does this program need to do?</em></strong></p>
+</dd>
+<dt class="hdlist1">Testing Plan</dt>
+<dd>
+<p>Determine how the final program will be tested. The testing plan will be useful, but most importantly, taking the time to establish a specific testing plan ensures that you thoroughly understand the program before you begin writing code. If you don&#8217;t know how the program will work, you&#8217;re not yet ready to begin coding. <strong>Ask yourself, <em>How will I make sure the program works correctly?</em></strong></p>
+</dd>
+<dt class="hdlist1">Implementation</dt>
+<dd>
+<p>Write and test the code. We say that this is an <em>iterative</em> (or "repeating") process, meaning you&#8217;ll write and test one small piece, staying with it until you know it&#8217;s good. Then you&#8217;ll move on to the next piece and repeat. <strong>Ask yourself, <em>What code do I need in order to get the next part of the program working?</em></strong></p>
+</dd>
+<dt class="hdlist1">Revise or maintain</dt>
+<dd>
+<p>If your needs or program requirements change, you&#8217;ll need to go back to the first step and begin planning the next version. If not, you&#8217;ll need to monitor that the program continues to perform as expected over time. <strong>Ask yourself, <em>What&#8217;s next for this program?</em></strong></p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll flesh out this process as we go&#8212;&#8203;and as our programs become more advanced.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_first_java_program">1.4. First Java Program</h3>
+<div class="paragraph">
+<p>Enough of that, let&#8217;s try writing some code.</p>
+</div>
+<div class="paragraph">
+<p>One of the (valid) criticisms of Java as a choice for beginners is that it&#8217;s a little complicated to create your first program.
+In Python, you just open a file and write your first command; in recent versions, C# has added that ability as well.
+But Java puts OOP front and center, and you can&#8217;t start writing statements until you first define a class.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Java File Structure and First Program</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/zYDdJzs24rs?rel=0&amp;list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=4" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph">
+<p>File from video:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/01%20Computers%20and%20Coding/HelloWorld.java">HelloWorld.java</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Take a look at the code for a basic "Hello World" program; we&#8217;ll learn what all of these pieces are as we go, but we should at least identify them now.</p>
+</div>
+<div class="listingblock">
+<div class="title">HelloWorld.java - Hello World program in Java</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 
-<span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">InputDemo</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">  </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">Scanner</span><span class="tok-w"> </span><span class="tok-n">input</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">Scanner</span><span class="tok-p">(</span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">in</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-p">;</span>
-<span class="tok-w">    </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
 
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;Enter your name: &quot;</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">input</span><span class="tok-p">.</span><span class="tok-na">nextLine</span><span class="tok-p">();</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello World!&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="3"></i><b>(3)</b>
 
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;Enter your age: &quot;</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">input</span><span class="tok-p">.</span><span class="tok-na">nextInt</span><span class="tok-p">();</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><i class="conum" data-value="4"></i><b>(4)</b>
 
-<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello, &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot;. You are &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot; years old.&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">  </span><span class="tok-p">}</span>
+<span class="tok-p">}</span><span class="tok-w"> </span><i class="conum" data-value="5"></i><b>(5)</b></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here are the parts of the program:</p>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Class declaration and start of a code block. This is a publicly accessible class called <code>HelloWorld</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td><code>main()</code> method declaration and start of a code block. <code>main()</code> is where a Java program starts running.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td><code>println()</code> statement to output the message.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>End of the <code>main()</code> method code block, as indicated by the indenting and closing curly brace.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>End of the class code block.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You&#8217;ll learn about all of these components as we go.
+But for now, you&#8217;re off and running!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_basic_output">1.5. Basic Output</h3>
+<div class="paragraph">
+<p>The first programs we create in Java are <em>console</em> programs&#8212;&#8203;they are text-based programs that can&#8217;t really display any graphics.
+Start start with, we&#8217;ll use two basic ways to output text to the console: <code>System.out.print()</code> and <code>System.out.println()</code> statements.
+<code>print()</code> outputs whatever is in the parentheses, and we&#8217;ll need to put that text in quotation marks:</p>
+</div>
+<div class="paragraph">
+<p><code>System.out.print("Mick Jagger");</code></p>
+</div>
+<div class="paragraph">
+<p>This line of code outputs <strong>Mick Jagger</strong> to the console window.
+After <code>print()</code> outputs the text in parentheses, the cursor remains at the end of the output.
+This is just like if you type something in a word processor but don&#8217;t hit enter; the next time you start typing, the characters resume on the same line.
+In the same way, the next output statement will continue on the same line in the console.</p>
+</div>
+<div class="paragraph">
+<p>A <code>println()</code> statement works exactly the same way, but it advances the cursor to the next line when it&#8217;s finished.
+Basically, it hits enter, and the next output statement will be on a new line.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Interesting!</div>
+<div class="paragraph">
+<p>println() works by outputting the text inside the parentheses and then outputting a special character called a <em>newline</em>. The newline isn&#8217;t visible, but it moves the cursor to the next line.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>To understand the difference between <code>print()</code> and <code>println()</code>, consider this program.</p>
+</div>
+<div class="listingblock">
+<div class="title">OutputExample.java - Simple console output in Java</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">OutputExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;As the Rolling Stones might say,&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;you can&#39;t always&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;get what you want.&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
 <span class="tok-p">}</span></code></pre>
 </div>
 </div>
-</li>
-</ul>
+<div class="paragraph">
+<p>The program produces the following output:</p>
 </div>
-</li>
-<li>
-<p><em><strong>Describe the difference between integer division and floating-point division in Java. Why is it important to be aware of this distinction?</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Integer division</strong> in Java occurs when both operands are integers. The result is also an integer, and any fractional part is truncated (i.e., discarded). For example:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// result is 3, not 3.33</span></code></pre>
+<pre class="pygments highlight"><code><span></span>As the Rolling Stones might say,you can&#39;t always
+get what you want</code></pre>
 </div>
 </div>
-</li>
-<li>
-<p><strong>Floating-point division</strong> occurs when at least one of the operands is a floating-point number (e.g., <code>float</code> or <code>double</code>). The result is a floating-point number, and the fractional part is preserved. For example:</p>
+<div class="paragraph">
+<p>After the <code>print()</code> statement executes, the cursor is still sitting right after the comma following <strong>say</strong>, so when the next line of code outputs <em>*you can&#8217;t always*</em>, that output just gets jammed onto the end.
+Notice that it doesn&#8217;t even add a space; if we want a space there, we have to include it within our quotation marks.</p>
+</div>
+<div class="paragraph">
+<p>Because <em>*you can&#8217;t always*</em> is in a <code>println()</code> statement, the cursor advances and <em>*get what you want*</em> is on a new line.</p>
+</div>
+<div class="paragraph">
+<p>You&#8217;ll use <code>print()</code> and <code>println()</code> in every Java program you write for quite a while, so it&#8217;s important to take time to experiment with them on your own to make sure you understand how they work.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_code_comments">1.6. Code Comments</h3>
+<div class="paragraph">
+<p>The Java compiler goes through your source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn&#8217;t understand, which causes it to stop and output an error message).
+It there&#8217;s something in our source code we don&#8217;t want the compiler to process, we can identify it as a <em>code comment</em> and the compiler will ignore it.
+Code comments are generally used to provide information for any humans who might be looking at the code.
+And since it&#8217;s ignored by the compiler, it can be written however we want; so your code comments should be written in plain human language (english, if you&#8217;re submitting it to me).
+To indicate a comment, use two slashes:</p>
+</div>
+<div class="paragraph">
+<p><code>// This is a comment!</code></p>
+</div>
+<div class="paragraph">
+<p>Once the compiler sees two slashses, it just ignores the rest of the line.
+We can add a comment onto the end of a line of code:</p>
+</div>
+<div class="paragraph">
+<p><code>System.out.println("Hello World"); // this outputs text to the console</code></p>
+</div>
+<div class="paragraph">
+<p>The <code>println()</code> statement still gets processed and will execute when we run out program, but everything after the slashes gets ignored.</p>
+</div>
+<div class="paragraph">
+<p>If you want to make a comment that takes up multiple lines, start the comment block with <code>/<strong></code> (that&#8217;s a slash and an asterisk) and end it with <code></strong>/</code> (asterisk and a slash).
+When the compiler sees <code>/<strong></code> it will ignore everything until it finds <code></strong>/</code>, and then it will resume processing as usual.</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">result</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">10.0</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// result is 3.333333...</span></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-cm">/*</span>
+<span class="tok-cm">This program shows the difference between print() and println().</span>
+<span class="tok-cm">It is referring to an old Rolling Stones song.</span>
+
+<span class="tok-cm">Everything in this comment block will be ignored</span>
+<span class="tok-cm">*/</span>
+<span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">OutputExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;As the Rolling Stones might say,&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;you can&#39;t always&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;get what you want.&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
-</li>
-<li>
-<p>It is important to be aware of this distinction because using integer division when you expect a floating-point result can lead to incorrect calculations and unexpected behavior in your programs.</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>In general, code comments are used to explain or provide context for our code.
+Programming often involves going back to old code to make updates or corrections.
+Sometimes it&#8217;s been a long time and you might not remember what the code is supposed to do, or it not be someone different looking at the code and trying to figure it out.
+So code comments should be descriptive, especially when code might be confusing.</p>
 </div>
-</li>
-<li>
-<p><em><strong>What are compound assignment operators in Java? Provide examples of how they are used in arithmetic operations.</strong></em></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Compound assignment operators in Java are shorthand ways of writing common arithmetic operations that update the value of a variable. They combine an arithmetic operator with the assignment operator (<code>=</code>). Here are some examples:</p>
-<div class="listingblock">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Code comments don&#8217;t cost anything, so use lots of them!
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>We often add a multiline comment block at the top of a file to provide information about the overall program or class.</p>
+</div>
+<div class="sect3">
+<h4 id="_commenting_out_code">1.6.1. "Commenting Out" Code</h4>
+<div class="paragraph">
+<p>Coding is all about trial and error, and programmers spend a lot of time writing code in different ways until they get it working the way they want.
+In a process like that, it&#8217;s not unusual to delete something only to regret it and wish we could have that old code back.</p>
+</div>
+<div class="paragraph">
+<p>Code commenting gives us a life hack to help prevent that regret.
+Instead of deleting code that&#8217;s not working the way you want, you can just mark it as a comment.
+As far as the compiler is concerned, you&#8217;ve deleted the code.
+But if you want to see or use the code again down the road, it&#8217;s still there.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Code, highlight a section of code and press <strong>alt-/</strong> (or <strong>&#x2318;-/</strong> on macOS) and VS Code will add <code>//</code> at the start of each line. Highlighting a comment and pressing the shortcut again will "uncomment" it and remove the slashes. Other IDEs provide similar functionality.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_check_yourself_before_you_wreck_yourself_on_the_assignments_2">Check Yourself Before You Wreck Yourself (on the assignments)</h3>
+<div class="sect3">
+<h4 id="_can_you_answer_these_questions_2">Can you answer these questions?</h4>
+<div class="sidebarblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">x</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">5</span><span class="tok-p">;</span>
-<span class="tok-n">x</span><span class="tok-w"> </span><span class="tok-o">+=</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// Equivalent to x = x + 3; x is now 8</span>
-
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">y</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">;</span>
-<span class="tok-n">y</span><span class="tok-w"> </span><span class="tok-o">-=</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// Equivalent to y = y - 2; y is now 8</span>
-
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">z</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-p">;</span>
-<span class="tok-n">z</span><span class="tok-w"> </span><span class="tok-o">*=</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// Equivalent to z = z * 2; z is now 8</span>
-
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">a</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">;</span>
-<span class="tok-n">a</span><span class="tok-w"> </span><span class="tok-o">/=</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// Equivalent to a = a / 4; a is now 5</span>
-
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">b</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">15</span><span class="tok-p">;</span>
-<span class="tok-n">b</span><span class="tok-w"> </span><span class="tok-o">%=</span><span class="tok-w"> </span><span class="tok-mi">6</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-c1">// Equivalent to b = b % 6; b is now 3</span></code></pre>
-</div>
-</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>What is the primary role of a programming language in the context of computer programming?</p>
 </li>
-</ul>
-</div>
+<li>
+<p>Explain the difference between compiled and interpreted programming languages. Provide an example of each.</p>
+</li>
+<li>
+<p>Describe the basic structure of a simple Java program, such as the "Hello World" example provided in the chapter.</p>
+</li>
+<li>
+<p>What are the key steps in the software development process as outlined in the chapter? Why is it important to follow these steps?</p>
 </li>
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_methods_2">11.1.4. Methods</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>What is the main purpose of using methods in Java, and how do they contribute to code maintainability?</strong></em></p>
-<p>The main purpose of using methods in Java is to organize code into reusable blocks that perform specific tasks. Methods help in breaking down complex programs into smaller, manageable pieces, making the code easier to read, understand, and maintain. By encapsulating functionality within methods, changes can be made in one place without affecting other parts of the program. This improves maintainability because if a bug is found or a change is needed, it can be addressed within the method itself, rather than having to update multiple instances of the same code throughout the program.</p>
-</li>
-<li>
-<p><em><strong>Explain the difference between a parameter and an argument in the context of Java methods. Provide an example to illustrate your explanation.</strong></em></p>
-<p>In Java, a parameter is a variable defined in the method declaration that acts as a placeholder for the value that will be passed to the method. An argument, on the other hand, is the actual value that is passed to the method when it is called. For example, in the method definition <code>public static void printArea(double radius)</code>, <code>radius</code> is a parameter. When the method is called with <code>printArea(5.0)</code>, the value <code>5.0</code> is the argument passed to the method.</p>
-</li>
-<li>
-<p><em><strong>Why is it generally better to return values from methods rather than printing them directly within the method? How does this practice improve the modularity and reusability of code?</strong></em></p>
-<p>It is generally better to return values from methods rather than printing them directly within the method because returning values allows the method to be more versatile and reusable. When a method returns a value, it can be used in various contexts, such as in calculations, assignments, or further processing, without being tied to a specific output format. This practice improves modularity by keeping the method focused on a single task (e.g., performing a calculation) and leaving the decision of how to use the result to the calling code. It also enhances reusability, as the method can be used in different parts of the program or even in different programs without modification.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_classes_and_objects">11.1.5. Classes and Objects</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>What is the primary difference between procedural programming and object-oriented programming (OOP)?</strong></em></p>
-<p>Procedural programming organizes programs as a collection of tasks or methods that need to be performed in a specific order. In contrast, OOP organizes programs as a collection of interacting objects, each representing a real-world entity with attributes (data) and behaviors (methods).</p>
-</li>
-<li>
-<p><em><strong>Explain the concept of a class and how it relates to objects in OOP.</strong></em></p>
-<p>A class is a blueprint or template for creating objects. It defines the attributes and behaviors that the objects created from the class will have. An object is an instance of a class, meaning it is created with the fields and methods implemented in the class.</p>
-</li>
-<li>
-<p><em><strong>What is encapsulation, and why is it important in OOP? Provide an example.</strong></em></p>
-<p>Encapsulation is the concept of hiding the internal state of an object and requiring all interaction to be performed through the object&#8217;s methods. This is important because it protects the object&#8217;s data from unintended or harmful modifications. For example, in a bank account class, the balance field is private and can only be accessed or modified through a public getter method, and modified through public deposit and withdraw methods.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_decisions">11.1.6. Decisions</h4>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em><strong>Explain what Boolean expressions are and how they are used to make decisions in Java.</strong></em></p>
-<p>Boolean expressions are statements that evaluate to either true or false. In Java, they are used to make decisions by determining which blocks of code to execute based on the evaluation of these expressions.</p>
-</li>
-<li>
-<p><em><strong>Explain the difference between a relational operator and a logical operator.</strong></em></p>
-<p>Relational operators compare two values and determine their relationship, such as equality (==), inequality (!=), less than (&lt;), and greater than (&gt;). Logical operators, on the other hand, combine multiple Boolean expressions to form a single, more complex expression, such as AND (&amp;&amp;), OR (||), and NOT (!).</p>
-</li>
-<li>
-<p><em><strong>What is the difference between an <code>if</code> statement and an <code>if-else</code> statement?</strong></em></p>
-<p>An if statement allows you to execute a block of code only if a certain condition is true. An if-else statement extends this by providing an alternative block of code to execute if the condition is false, allowing you to choose between two possible actions.</p>
-</li>
-<li>
-<p><em><strong>How can you write code that runs one code block from multiple options?</strong></em></p>
-<p>You can use a switch statement to run one code block from multiple options based on the value of an expression. Alternatively, you can use an if-else if structure to chain multiple if-else statements together, allowing you to handle more than two options.</p>
-</li>
-</ol>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="paragraph nav-footer">
-<p>← Previous: <a href="_1010_graphical_user_interfaces_with_swing.html">1010 - Graphical User Interfaces with Swing</a> | ↑ Up: <a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a></p>
+<p>← Previous: <a href="_0000_getting_started.html">0000 - Getting Started</a> | ↑ Up: <a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a> | Next: <a href="_0010_variables.html">0010 - Variables</a> →</p>
 </div>
 </div>
 <div id="footer">

@@ -6,7 +6,7 @@ ifeval::["{docname}" == "index"]
 :sourcedir: chapter-10-gui/source
 endif::[]
 
-== 1010 - Graphical User Interfaces with Swing (Chapter 10)
+== 1010 - Graphical User Interfaces with Swing
 // TODO: Upload source files to GitHub archive 
 
 === #Content coming soon!#
@@ -19,18 +19,20 @@ I am actively working to complete and revise this eBook and the accompanying vid
 https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google Form)^]
 ****
 
+:sectnums!:
 // === What's the Point?
 // * 
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs[GitHub^]._
 
-// ''''
-
+:sectnums:
+'''
+=== Graphical User Interfaces
 
 // #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
 
-
-
+'''
+:sectnums!:
 // === Check Yourself Before You Wreck Yourself (on the assignments)
 //
 // ==== Can you answer these questions?
@@ -42,6 +44,7 @@ _Source code examples from this chapter and associated videos are available on h
 // 2. 
 //
 // ****
+:sectnums:
 
 // NOTES: 
 // options for JFrame.setDefaultCloseOperation() (video only uses EXIT)

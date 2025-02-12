@@ -7,6 +7,8 @@
 :icons: font
 :source-highlighter: pygments
 :multipage-level: 1
+:chapter-number: -1
+:sectnums:
 
 // TODO: Add link to feedback form in each chapter (and in frontal matter)
 // https://forms.gle/4173pZ1yPuNX7pku6
@@ -56,6 +58,7 @@ Okay, there are a few reasons I use Java to teach OOP:
 If I'm doing this right, what you're mostly learning here is a good foundation of OOP (and general programming) skills and concepts.
 We happen to be using Java to do that, but these skills transfer to pretty much any other language you want to learn.
 
+:sectnums!:
 == How to Use This Book
 
 Before starting a chapter, review the relevant information on the "overview" page in Canvas.
@@ -81,6 +84,8 @@ If you have trouble finding something (or using the GitHub site), please contact
 * GitHub: https://github.com/timmcmichael/EMCCTimFiles[https://github.com/timmcmichael/EMCCTimFiles]
 
 _Note: Files are generally linked in Canvas as well_.
+
+:sectnums:
 
 include::chapter-0/content.adoc[]
 
