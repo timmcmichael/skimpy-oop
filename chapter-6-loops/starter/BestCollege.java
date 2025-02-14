@@ -16,7 +16,7 @@ public class BestCollege {
         System.out.print("What is the best community college? ");
         userResponse = input.nextLine();
 
-        while (!userResponse.equalsIgnoreCase(BEST_COMMUNITY_COLLEGE)) {
+        if (userResponse.equals(BEST_COMMUNITY_COLLEGE)) {
             System.out.print("Wrong, try again! What is the best community college? ");
             userResponse = input.nextLine();
         }
