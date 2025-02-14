@@ -435,6 +435,78 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
@@ -544,8 +616,8 @@ Each time the loop repeats, it&#8217;s called an <em>iteration</em>.</p>
 </div>
 <div class="paragraph">
 <p>A <em>definite loop</em> is one that repeats a specific number of times.
-At the time the loop starts the program knows exactly how many times it will repeat.
-The <em>programmer</em> might not know at the time of writing the program&#8212;&#8203;for example, if the number of times the loop repeats is based on user input&#8212;&#8203;but the program itself knows how many times it will repeat before the loop starts.</p>
+At the time the loop starts, it has already been determined exactly how many times it will repeat.
+The <em>programmer</em> might not know at the time of writing the program&#8212;&#8203;for example, if the number of times the loop repeats is based on user input&#8212;&#8203;but the condition that determines how many times the loop will repeat is known before the loop starts.</p>
 </div>
 <div class="paragraph">
 <p>And example of a definite loop a loop that prints out the name of every student on a roster.
@@ -554,7 +626,7 @@ Definite loops are also called <em>counter controlled loops</em> because the pro
 </div>
 <div class="paragraph">
 <p>An <em>indefinite loop</em> is one that repeats until a certain condition is met.
-The program doesn&#8217;t know how many times the loop will repeat until it&#8217;s actually running.
+It can&#8217;t be known how many times the loop will repeat until it&#8217;s actually running.
 The loop begins it&#8217;s first iteration, and the condition that determines whether the loop will repeat is checked.
 That condition might be based on user input, the state of the program, or some other factor that can&#8217;t be determined until the program is running.</p>
 </div>
@@ -573,22 +645,142 @@ However, some of the loop structures are better suited to one type of loop or th
 <h3 id="_while_loops">6.3. <code>while</code> Loops</h3>
 <div class="sect3">
 <h4 id="_this_section_is_not_finished_but_in_the_meantime_this_content_is_covered_in_section_6_2_page_202_in_the_textbook">6.3.1. <mark>This section is not finished, but in the meantime this content is covered in section 6.2 (page 202) in the textbook.</mark></h4>
-
+<div class="paragraph">
+<p>The first structure Java provides for creating loops is the <code>while</code> loop.
+The <code>while</code> loop repeats a block of code as long as a certain condition is true.
+The condition is checked before the block of code is executed, so the block of code might not execute at all if the condition is false the first time it&#8217;s checked.</p>
+</div>
+<div class="paragraph">
+<p>A <code>while</code> loop is exactly like an <code>if</code> statement: a Boolean expression is checked, and if it&#8217;s true, the block of code is executed.
+The only difference is that, after the block of code is executed, the program jumps back to the beginning of the loop and checks the condition again.
+If the condition is still true, the block of code is executed again.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a <code>while</code> loop</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-k">while</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Count is: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-n">count</span><span class="tok-o">++</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the Boolean expression <code>count &lt; 10</code> is checked; if it&#8217;s true, the block of code is executed.
+The block of code prints out the value of <code>count</code>, then increments <code>count</code> by 1.
+The program then jumps back to the beginning of the loop and checks the condition again.
+This process repeats until the expression <code>count &lt; 10</code> is false.</p>
+</div>
+<div class="paragraph">
+<p>The result of this loop is that the program prints out the value of <code>count</code> 10 times, starting with 0 and ending with 9.
+It is a definite loop because, before the loop staarts, it&#8217;s already known that the loop will repeat 10 times.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_infinite_loops">6.3.2. Infinite Loops</h4>
+<div class="paragraph">
+<p>One thing to be careful of when using a <code>while</code> loop is the possibility of creating an <em>infinite loop</em>.
+An infinite loop is a loop that repeats forever, because the condition that determines whether the loop should repeat is never false.
+Infinite loops are a common mistake for new programmers, and they can cause your program to hang or crash.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of an infinite loop</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-k">while</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Count is: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, we&#8217;ve forgotten to increment <code>count</code> by 1 after printing it out.
+<code>count</code> will always be <code>0</code>, so the condition <code>count &lt; 10</code> will always be true.
+The program will print out "Count is: 0" over and over again, forever.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Your IDE will have a way to stop the program if it&#8217;s stuck in an infinite loop. Often, this is a square button&#8212;&#8203;essentially the symbol for "stop". In VS Code, you can also kill the terminal window that&#8217;s running the program by clicking the trash can icon in the terminal window. Finally, in many cases you can press <code>Ctrl+C</code> to stop the program.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The simplest infinite loop you can create in Java is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">while</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kc">true</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-c1">// hey, there&#39;s nothing to stop this loop!</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This loop will repeat forever, because the condition <code>true</code> is always true.
+Some programmers use this to start a loop and then use an if statement to break out of the loop when a certain condition is met, but that&#8217;s not really an infinite loop&#8212;&#8203;it just puts the boolean expression that controls the loop in an <code>if</code> statement instead of the <code>while</code> statement.
+I personally consider it less readable than using a clear condition in the <code>while</code> statement, so I don&#8217;t write loops like that.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_do_while_loops">6.4. <code>do-while</code> Loops</h3>
 <div class="sect3">
-<h4 id="_this_section_is_not_finished_but_in_the_meantime_this_content_is_covered_in_section_6_3_page_206_in_the_textbook">6.4.1. <mark>This section is not finished, but in the meantime this content is covered in section 6.3 (page 206) in the textbook.</mark></h4>
-
+<h4 id="_the_videos_for_this_section_are_not_finished_but_in_the_meantime_this_content_is_covered_in_section_6_5_page_217_in_the_textbook">6.4.1. <mark>The videos for this section are not finished, but in the meantime this content is covered in section 6.5 (page 217) in the textbook.</mark></h4>
+<div class="paragraph">
+<p>As we&#8217;ve seen, a <code>while</code> loop checks the condition before executing the block of code.
+A <code>do-while</code> loop is similar, but it checks the condition after executing the block of code.
+This means that the block of code will always execute at least once, even if the condition is false the first time it&#8217;s checked.
+Other than that, a <code>do-while</code> loop is exactly the same as a <code>while</code> loop.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a <code>do-while</code> loop</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-k">do</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Count is: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-n">count</span><span class="tok-o">++</span><span class="tok-p">;</span>
+<span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">while</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">);</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This is the same loop as the <code>while</code> loop we looked at earlier, but the condition is checked after the block of code is executed.
+The <code>while</code> statement is at the end of the loop; the <code>do</code> statement at the beginning indicates the block of code that should iterate.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_choosing_between_while_and_do_while_loops">6.4.2. Choosing Between <code>while</code> and <code>do-while</code> Loops</h4>
+<div class="paragraph">
+<p>Both <code>while</code> and <code>do-while</code> loops work well for <em>indefinite loops</em> (though they can be used for definite loops as well).
+There&#8217;s nothing in the structure of these loops that requires a counter or other control variable, so they can be used for loops that repeat until a certain condition is met.</p>
+</div>
+<div class="paragraph">
+<p>In many cases, it doesn&#8217;t matter whether you use a <code>while</code> or a <code>do-while</code> loop.
+They&#8217;re functionally equivalent, and you can use either one to create the same loop.
+However, in some cases, one might be a better choice than the other.
+If you need to guarantee that the block of code will execute at least once, you should use a <code>do-while</code> loop.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-6-loops/images/while_do-while.jpg" alt="while do while" width="400">
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>while and do-while Loops in Java [COMING SOON!]</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_do_while_loops_2">6.5. <code>do-while</code> Loops</h3>
-<div class="sect3">
-<h4 id="_this_section_is_not_finished_but_in_the_meantime_this_content_is_covered_in_section_6_5_page_217_in_the_textbook">6.5.1. <mark>This section is not finished, but in the meantime this content is covered in section 6.5 (page 217) in the textbook.</mark></h4>
 
-</div>
 </div>
 <div class="sect2">
 <h3 id="_for_loops">6.6. <code>for</code> Loops</h3>
@@ -615,7 +807,7 @@ However, some of the loop structures are better suited to one type of loop or th
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-02-11 19:30:54 -0700
+Last updated 2025-02-13 19:34:43 -0700
 </div>
 </div>
 </body>

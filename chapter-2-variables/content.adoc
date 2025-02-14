@@ -103,7 +103,7 @@ Files from video:
 * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariablesFinished.java[`DeclaringVariablesFinished.java`^]
 ****
 
-==== Java Identifiers
+=== Java Identifiers
 Variable names (more properly called variable _identifiers_) are the character sequences that identify a variable.
 There are a few rules that determine whether or not an identifier is valid:
 * The first character must be an uppercase or lowercase letter, an underscore (_), or a dollar sign ($).

@@ -535,21 +535,23 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <ul class="sectlevel2">
 <li><a href="_0010_variables.html#_whats_the_point_3">What&#8217;s the Point?</a>
 </li>
-<li><a href="_0010_variables.html#_numeric_data_types">2.1. Numeric Data Types</a>
+<li><a href="_0010_variables.html#_java_identifiers">2.1. Java Identifiers</a>
 </li>
-<li><a href="_0010_variables.html#_boolean_data_type_and_boolean_logic">2.2. <code>boolean</code> Data Type (and Boolean Logic)</a>
+<li><a href="_0010_variables.html#_numeric_data_types">2.2. Numeric Data Types</a>
 </li>
-<li><a href="_0010_variables.html#_char_data_type">2.3. <code>char</code> Data Type</a>
+<li><a href="_0010_variables.html#_boolean_data_type_and_boolean_logic">2.3. <code>boolean</code> Data Type (and Boolean Logic)</a>
 </li>
-<li><a href="_0010_variables.html#_strings">2.4. Strings</a>
+<li><a href="_0010_variables.html#_char_data_type">2.4. <code>char</code> Data Type</a>
 </li>
-<li><a href="_0010_variables.html#_declaring_constants">2.5. Declaring Constants</a>
+<li><a href="_0010_variables.html#_strings">2.5. Strings</a>
 </li>
-<li><a href="_0010_variables.html#_outputting_variable_and_constant_values">2.6. Outputting Variable (and Constant) Values</a>
+<li><a href="_0010_variables.html#_declaring_constants">2.6. Declaring Constants</a>
 </li>
-<li><a href="_0010_variables.html#_math_calculations">2.7. Math Calculations</a>
+<li><a href="_0010_variables.html#_outputting_variable_and_constant_values">2.7. Outputting Variable (and Constant) Values</a>
 </li>
-<li><a href="_0010_variables.html#_getting_user_input">2.8. Getting User Input</a>
+<li><a href="_0010_variables.html#_math_calculations">2.8. Math Calculations</a>
+</li>
+<li><a href="_0010_variables.html#_getting_user_input">2.9. Getting User Input</a>
 </li>
 <li><a href="_0010_variables.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_3">Check Yourself Before You Wreck Yourself (on the assignments)</a>
 </li>
@@ -751,8 +753,9 @@ If you have programming experience in Python or JavaScript, the idea of a data t
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_java_identifiers">2..1. Java Identifiers</h4>
+</div>
+<div class="sect2">
+<h3 id="_java_identifiers">2.1. Java Identifiers</h3>
 <div class="paragraph">
 <p>Variable names (more properly called variable <em>identifiers</em>) are the character sequences that identify a variable.
 There are a few rules that determine whether or not an identifier is valid:
@@ -764,9 +767,8 @@ Single-letter variable names, like <code>x</code> for a number, are fine in your
 The expectation in my course is that your code will align with those conventions&#8212;&#8203;because that&#8217;s what industry people expect&#8212;&#8203;and you will lose points if you don&#8217;t.</p>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_numeric_data_types">2.1. Numeric Data Types</h3>
+<h3 id="_numeric_data_types">2.2. Numeric Data Types</h3>
 <div class="paragraph">
 <p>Variables for storing numbers come in two flavors: <strong>integers</strong> and <strong>floating-point</strong> numbers.
 As you may remember from your math class, an integer is a whole number; that is, a number that doesn&#8217;t include any decimal places or fractional values.
@@ -815,7 +817,7 @@ It&#8217;s called "single" in some programming languages, which helps understand
 </table>
 </div>
 <div class="sect3">
-<h4 id="_who_cares_about_variable_size">2.1.1. Who Cares About Variable Size?</h4>
+<h4 id="_who_cares_about_variable_size">2.2.1. Who Cares About Variable Size?</h4>
 <div class="paragraph">
 <p>The general rule in programming is to be as efficient with your resources (memory, storage, processing speed, network bandwidth, etc.) as possible.
 If you&#8217;re storing a person&#8217;s age, you don&#8217;t really need an <code>int</code>; nobody is going to be two million years old!
@@ -855,7 +857,7 @@ Just know that you&#8217;ll get fired if you do that at your job with the bank.
 </div>
 </div>
 <div class="sect2">
-<h3 id="_boolean_data_type_and_boolean_logic">2.2. <code>boolean</code> Data Type (and Boolean Logic)</h3>
+<h3 id="_boolean_data_type_and_boolean_logic">2.3. <code>boolean</code> Data Type (and Boolean Logic)</h3>
 <div class="paragraph">
 <p>A <code>boolean</code> variable has only two possible values: <code>true</code> and <code>false</code>.
 It&#8217;s useful for tracking information that is only one thing or the other.
@@ -881,7 +883,7 @@ We&#8217;ll look at this "Boolean logic" in the <a href="#">chapter on decisions
 </div>
 </div>
 <div class="sect2">
-<h3 id="_char_data_type">2.3. <code>char</code> Data Type</h3>
+<h3 id="_char_data_type">2.4. <code>char</code> Data Type</h3>
 <div class="paragraph">
 <p>If you want to store a single character, like a student&#8217;s letter grade or their first initial, you can use the <code>char</code> data type.
 Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol&#8212;&#8203;or some other weird stuff, too.</p>
@@ -924,7 +926,7 @@ Lowercase letters are considered different characters, so 97 is 'a' and 98 is 'b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_strings">2.4. Strings</h3>
+<h3 id="_strings">2.5. Strings</h3>
 <div class="paragraph">
 <p>A <code>char</code> is pretty limited since it can only hold a single character.
 If we want to put a collection of characters together to make words and sentences, we need multiple <code>char</code>s grouped into a single variable.
@@ -969,7 +971,7 @@ Always remember that, in Java, single quotes mean a <code>char</code> and double
 </div>
 </div>
 <div class="sect2">
-<h3 id="_declaring_constants">2.5. Declaring Constants</h3>
+<h3 id="_declaring_constants">2.6. Declaring Constants</h3>
 <div class="paragraph">
 <p>A constant is similar to a variable, with two rules:</p>
 </div>
@@ -1012,7 +1014,7 @@ So that people looking at your code can easily tell it&#8217;s a constant rather
 </div>
 </div>
 <div class="sect2">
-<h3 id="_outputting_variable_and_constant_values">2.6. Outputting Variable (and Constant) Values</h3>
+<h3 id="_outputting_variable_and_constant_values">2.7. Outputting Variable (and Constant) Values</h3>
 <div class="paragraph">
 <p>Assigning a value to a variable or constant does not produce any output.
 If you want to display the output of a variable&#8212;&#8203;or a constant&#8212;&#8203;you just put the identifier in a <code>print()</code> or <code>println()</code> statement without any quotation marks:</p>
@@ -1048,7 +1050,7 @@ Be thoughtful when concatenating, because the `</code> symbol is also used to do
 </div>
 </div>
 <div class="sect2">
-<h3 id="_math_calculations">2.7. Math Calculations</h3>
+<h3 id="_math_calculations">2.8. Math Calculations</h3>
 <div class="paragraph">
 <p>To start doing some calculations, we&#8217;ll use <em>operators</em>.
 You can think of an operator as a symbol that performs a calculation or other action.
@@ -1140,7 +1142,7 @@ Each operator acts on the value to either side:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_order_of_operations">2.7.1. Order of Operations</h4>
+<h4 id="_order_of_operations">2.8.1. Order of Operations</h4>
 <div class="paragraph">
 <p>Early on in your math studies you learned about <em>order of operations</em> when an arithmetic expression has more than one calculation, and it works the same in Java.
 We call this <em>operator precedence</em>, and here are the guidlines:</p>
@@ -1187,7 +1189,7 @@ We call this <em>operator precedence</em>, and here are the guidlines:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_more_arithmetic_with_less_typing">2.7.2. More Arithmetic with Less Typing!</h4>
+<h4 id="_more_arithmetic_with_less_typing">2.8.2. More Arithmetic with Less Typing!</h4>
 <div class="paragraph">
 <p>There&#8217;s a pretty consistent rule of thumb in coding that says programmers want to type as little as possible, so programming languages often provide shorthand ways of writing code that&#8217;s used frequently.
 <em>Compound assignment operators</em> (also called <em>shorthand operators</em>) simplify the syntax when you need to change a variable&#8217;s value relative to it&#8217;s existing value.
@@ -1261,7 +1263,7 @@ There are two forms to the increment and decrement operators: <strong>prefix</st
 </div>
 </div>
 <div class="sect2">
-<h3 id="_getting_user_input">2.8. Getting User Input</h3>
+<h3 id="_getting_user_input">2.9. Getting User Input</h3>
 <div class="paragraph">
 <p>Until now, our code hasn&#8217;t been interactive&#8212;&#8203;each execution of a program results in the exact same output, and the user never has the chance to input anything.
 To produce output, we&#8217;ve been using <code>System.out</code> to send text to the "standard output device"--your monitor.
@@ -1371,7 +1373,7 @@ As a reminder, there&#8217;s a weird quirk that happens when you get numeric inp
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-02-11 19:30:54 -0700
+Last updated 2025-02-13 19:34:43 -0700
 </div>
 </div>
 </body>

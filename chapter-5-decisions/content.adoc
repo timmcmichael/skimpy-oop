@@ -137,6 +137,8 @@ System.out.print("Is this person Paul McCartney? ");
 System.out.println(name.equals("Paul McCartney"));
 ----
 
+NOTE: The `equals()` method is case-sensitive, so `"Paul McCartney"` is not the same as `"paul mccartney"`. The String class also has a `equalsIgnoreCase()` method that will compare two strings without regard to case.
+
 === if Statements
 
 The `if` statement is the most basic decision-making structure in Java.
