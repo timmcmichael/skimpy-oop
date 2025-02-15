@@ -156,12 +156,12 @@ The `while` statement is at the end of the loop; the `do` statement at the begin
 
 ==== Choosing Between `while` and `do-while` Loops
 Both `while` and `do-while` loops work well for _indefinite loops_ (though they can be used for definite loops as well).
-There's nothing in the structure of these loops that requires a counter or other control variable, so they can be used for loops that repeat until a certain condition is met.
+There's nothing in the structure of these loops that requires a counter or other control variable, so they can be used for loops that repeat until a certain condition is met, however many iterations that requires.
 
 In many cases, it doesn't matter whether you use a `while` or a `do-while` loop.
-They're functionally equivalent, and you can use either one to create the same loop.
+You really can use either one to create the same loop.
 However, in some cases, one might be a better choice than the other.
-If you need to guarantee that the block of code will execute at least once, you should use a `do-while` loop.
+The simple rule of thumb for now is: if you need to guarantee that the block of code will execute at least once, you should use a `do-while` loop; if you need to check the condition before executing the block of code, you should use a `while` loop.
 
 image::while_do-while.jpg[width=400]
 
@@ -196,7 +196,7 @@ while and do-while Loops in Java [COMING SOON!]
 // === OPTIONAL: Nested Loops
 
 
-
+// TODO: Solution walkthrough with data validation? Maybe select a tip amount from a menu?
 
 // === JUST FOR FUN: Recursion
 ****

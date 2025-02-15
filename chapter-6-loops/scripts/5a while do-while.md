@@ -27,3 +27,59 @@ This is a great example of an _indefinite loop_, which is when the number of tim
 To make this if-statement into a loop, all we have to do is change that if keyword to the `while` keyword. `while` evaluates the expression and, if it's true, runs the block of code. But at the end of the block of code it doesn't keep going; it jumps back up to the condition and checks again.
 
 Let's try it out. I'll enter an incorrect answer a couple of times to see what happens, and then I'll get it right.
+
+That's looking pretty good. The only thing I don't really like about this is the repetition of the code to get the user's input. Since we're checking the condition before the loop runs, I have to set up that condition ahead of time, and that's why I ask for the user's input before the loop.
+
+In this situation, it's probably better to check the condition at the bottom of the loop, then jump back to the top if necessary. We can do that with a `do-while` loop. I'm going to rewrite this code with a `do-while` loop, but I'll first comment out this version so we can compare them side by side--and in case we want to look back at it later, like when we're doing our assignments. So I'll make a copy first, then comment out the original code.
+
+The difference with this do-while structure is that our check is at the bottom, so I'll move that while statement right after the end of the block.
+
+Now, the compiler needs to know why we've suddenly got a code block stuck here in the middle of our method, so we need the `do` keyword to indicate what's going on.
+
+And now the last detail is to add a semicolon at the end of the while statement. This is because the `do-while` loop is a single statement, and in Java, every statement ends with a semicolon.
+
+Let's try it out. I'll enter an incorrect answer a couple of times to see what happens, and then I'll get it right.
+
+The loop works great. Our user interface is a little awkward, since it starts by telling us we're wrong. So I'll just delete that part of the prompt. If we really want that message, we could put it in an if statement after the user input.
+
+It's up to you if that's important enough to worry about., but let's run it and test it out again.
+
+One last detail we can add to this program is to count the number of tries it takes for the user to get the right answer. `while` and `do-while` loops don't keep track of how many times they've run, so we have to do that ourselves.
+
+ For that, we'll need a variable to keep track of the count. Not, surprisingly, we call this a _counter_. It'll be an `int`, and we should declare it at the top of the method with our other variables. `count` is a good name for this variable, and I'll initialize to zero since, at the start of the program, the user has made zero attempts.
+
+And the appropriate place to increment the counter is right after the user input. So I'll add `count++` right after the `nextLine()` call.
+
+This counter variable is tracking the number of times the loop runs, or what we call the number of _iterations_. No matter what kind of loop we're creating, uteration is the nerdy word for one trip through a loop's code block. 
+
+And I'll edit my final message to show the number of iterations.
+
+The last thing we'll point out here is that, with this idea of a counter, we can also write a pretty simple definite loop--a loop that runs a specific number of times.
+
+We'll make a loop that counts to ten. In order to keep it separate from the first loop, I'll use a new counter variable. Even though I hate one-character variable names, in this case I'll call it `i` and initialize it to zero. The 
+
+ I'll declare it at the top of the method, and I'll initialize it to zero. The reason I'm okay with this is because `i` is the standard variable name that programmers use for a counter in a loop. It stands for "iteration" for now, though later on we'll see it used for "index".
+
+This will work with either a `while` or a `do-while` loop, but I'll use a `while` loop for this example. I'll set up condition so the loop runs as long as `i` is less than 10. And I'll output the value of `i` in each iteration.
+
+Let's run the program and see what happens.
+
+We've got a problem, and it's one that beginning programmers often run into. I print out the value of `i`, but I never do anything to change it. That means `i` will always be zero, and the loop will run forever. This is called an _infinite loop_, and it's really easier to do. I can stop execution by typing Ctrl-C, or using the trash can to kill the terminal, or by clicking the Stop button up at the top.
+
+So, inside my loop, I need to increment `i` by one. I'll add `i++` at the end of the block. and try it again.
+
+The loop stops, and we're close--but this isn't quite right. The loop counts from 0 to 9, but we want it to count from 1 to 10. Notice that the loop is iterating ten times, which is what we want, it's just our output that's off.
+
+There are a couple of ways to address this. For example, I could initialize the counter to 1 instead of 0. Or, I could output `i + 1` instead of `i`. Another option is to just move the increment statement to the top of the block, so it runs before the output.
+
+All of those options are fine depending on the situation, but to mean it makes most sense to just more the increment statement up to the top.
+
+There is a clever trick we can use with that increment operator. What I mean by that is that we can put that inside a statement. In my output, instead of printing `i`, I can print `i++`. This will print the value of `i`, and  increment it by one.
+
+When we run this, we're back to our output issue, printing 0 to 9. Putting the `++` on the end of `i` is called a postfix increment. Java retrieves the value of i, plugs that into the println() statement, and then increments it.
+
+But if I move the `++` to the front of `i`, it's called a prefix increment. When I do that, Java retrieves the value of `i`, increments it, and *then* plugs it into the println() statement.
+
+Again, any of these solutions for handling the increment and output statements are fine, and ultimately they are just a matter of style. But I want you to know the different options so that you can read other people's code and understand what they're doing.
+
+That's it for `while` and `do-while` loops. We've seen how to use them for input, how to use a counter to track the number of iterations, and how to create a definite loop that runs a specific number of times. We've also learned about infinite loops. Any loop you'll ever need to create can be done with a `while` or `do-while` loop, but we will go on and learn at least one more type of loop.
