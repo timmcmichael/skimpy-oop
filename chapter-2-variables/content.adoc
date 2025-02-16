@@ -99,11 +99,11 @@ Using Variables in Java
 video::At0vquefCuo[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=5 ]
 Files from video:
 
-* link:https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[DeclaringVariables.java]
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariablesFinished.java[`DeclaringVariablesFinished.java`]
+* Completed code: link:https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`DeclaringVariables.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariablesFinished.java[`DeclaringVariablesFinished.java`^]
 ****
 
-==== Java Identifiers
+=== Java Identifiers
 Variable names (more properly called variable _identifiers_) are the character sequences that identify a variable.
 There are a few rules that determine whether or not an identifier is valid:
 * The first character must be an uppercase or lowercase letter, an underscore (_), or a dollar sign ($).
@@ -344,8 +344,8 @@ Arithmetic Operations in Java
 video::kfVVgFMuR3A[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 Files from video:
 
-* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/Operations.java/[`Operations.java`]
-* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/OutputtingVariables.java['OutputtingVariables.java']
+* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/Operations.java/[`Operations.java`^]
+* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/OutputtingVariables.java[`OutputtingVariables.java`^]
 
 ****
 
@@ -429,7 +429,7 @@ User Input in Java
 video::8y430BQktYQ[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 File from video:
 
-* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/InputDemo.java[`InputDemo.java`]
+* https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/InputDemo.java[`InputDemo.java`^]
 ****
 
 The `Scanner` class includes a variety methods for working with input "streams" (including input sources other than a keyboard), but the ones you'll need for our work are shown below.

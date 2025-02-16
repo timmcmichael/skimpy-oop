@@ -195,7 +195,7 @@ image::WeatherRecordDiagram.png["Class diagram for the `WeatherRecord` class"]
 
 image::SadPuppy.png["Sad puppy", width=200, float=right] 
 
-You might remember from https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope[the section on variable scope in Chapter 0011] that using global variables is terrible, and every time we create a global variable, a puppy loses its favorite toy. 
+You might remember from https://timmcmichael.github.io/skimpy-oop/_0011_methods.html#_variable_scope[the section on variable scope in Chapter 0011] that using global variables is terrible, and every time we create a global variable, a puppy loses its favorite toy. 
 And these fields look an awful lot like global variables.
 But fields in a class are *not* global variables; they're *instance* variables, and they're a good thing.
 The fields are *encapsulated*, so they can only be accessed and changed by the methods of the class--which is a good thing.
@@ -479,8 +479,8 @@ video::E0HFACqWgP4[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Files from video:
 
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/CellCustomer.java[`CellCustomer.java`]
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/CellCustomerDemo.java[`CellCustomerDemo.java`]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/CellCustomer.java[`CellCustomer.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/CellCustomerDemo.java[`CellCustomerDemo.java`^]
 ****
 
 IMPORTANT: The Lab Assignments in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the Programming Project.
@@ -552,11 +552,11 @@ There are a couple of important things to note about this example:
 1. This constructor only has one parameter but it still has three assignment statements. All fields need values, so if we don't have a parameter to get a field's value, we need to set it to a default value.
 
 2. The parameter has the same name as the field: `date`. This is a common practice, but it's potentially confusing.
-And it also violates guidance I gave you when we learned about https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_variable_scope[variable scope]. 
+And it also violates guidance I gave you when we learned about https://timmcmichael.github.io/skimpy-oop/_0011_methods.html#_variable_scope[variable scope]. 
 + 
 In this case, the parameter is a _local variable_ to the constructor, and it's _shadowing_ the field. Our assignment statement needs to be carefully written: `this.date` refers to the field, and `date` refers to the parameter.
 
-We can also https://timmcmichael.github.io/skimpy-oop/_0011_methods_chapter_3.html#_overloading_a_method[overload] constructors, which means we can have multiple constructors with different parameters--just like we can with any other method.
+We can also https://timmcmichael.github.io/skimpy-oop/_0011_methods.html#_overloading_a_method[overload] constructors, which means we can have multiple constructors with different parameters--just like we can with any other method.
 That can include having a parameterless constructor and one or more constructors with parameters, or having multiple constructors with different numbers of parameters.
 
 NOTE: To see a complete example of the `WeatherRecord` class with constructors, fields, and methods, as well as a driver class to deomnstrate it, visit the_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects[GitHub repository for this chapter^].
@@ -570,8 +570,8 @@ https://youtu.be/zHxssPU1_Hw
 
 Files from video:
 
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/MobileCustomer.java[`MobileCustomer.java`]
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/MobileCustomerDemo.java[`MobileCustomerDemo.java`]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/MobileCustomer.java[`MobileCustomer.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects/MobileCustomerDemo.java[`MobileCustomerDemo.java`^]
 ****
 
 ==== Constructors and Encapsulation

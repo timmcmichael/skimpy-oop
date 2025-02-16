@@ -41,6 +41,13 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 '''
 === Arrays and Indexes
 
+
+
+// Already have videos in old account
+
+
+
+
 '''
 :sectnums!:
 // === Check Yourself Before You Wreck Yourself (on the assignments)

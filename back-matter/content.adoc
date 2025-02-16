@@ -192,3 +192,17 @@ An if statement allows you to execute a block of code only if a certain conditio
 
 *How can you write code that runs one code block from multiple options?*:: 
 You can use a switch statement to run one code block from multiple options based on the value of an expression. Alternatively, you can use an if-else if structure to chain multiple if-else statements together, allowing you to handle more than two options.
+
+==== Loops
+
+[qanda]
+*Describe the difference between a while loop and a do-while loop.*::
+A while loop checks the condition before executing the block of code, meaning the code might not execute at all if the condition is false initially. A do-while loop, on the other hand, checks the condition after executing the block of code, ensuring that the code is executed at least once.
+
+*What is a control variable, and how is it used in loops?*::
+A control variable is a variable used to control the execution of a loop. It is typically initialized before the loop starts, checked in the loop's condition to determine whether the loop should continue, and updated within the loop to eventually meet the condition that stops the loop.
+
+*Give an example of an indefinite loop.*::
+An example of an indefinite loop is a program that asks the user to guess a number and keeps prompting the user until they guess correctly. The loop repeats until the user's input matches the target number.
+Another example is a loop that reads user input until a specific sentinel value is entered, indicating the end of input.
+

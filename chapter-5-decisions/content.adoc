@@ -137,6 +137,8 @@ System.out.print("Is this person Paul McCartney? ");
 System.out.println(name.equals("Paul McCartney"));
 ----
 
+NOTE: The `equals()` method is case-sensitive, so `"Paul McCartney"` is not the same as `"paul mccartney"`. The String class also has a `equalsIgnoreCase()` method that will compare two strings without regard to case.
+
 === if Statements
 
 The `if` statement is the most basic decision-making structure in Java.
@@ -197,7 +199,7 @@ if and if-else Statements in Java
 video::YytQwS4F6fE[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 File from video:
 
-* https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/MadJokes.java[`MadJokes.java`]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/MadJokes.java[`MadJokes.java`^]
 
 ****
 
@@ -272,11 +274,11 @@ _Note: This video also shows how to use `if` statements in an OOP context, speci
 video::ismb63p4N4A[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 Files from video:
 
-* Starter file: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/K12Student.java[`K12Student.java`]
-* Starter file: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/K12StudentDemo.java[`K12StudentDemo`]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/K12Student.java[`K12Student.java`^]
+* Starter file: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/K12StudentDemo.java[`K12StudentDemo.java`^]
 
-* Finished code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/K12StudentFinished.java[`K12StudentFinished`]
-* Finished code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/K12StudentDemoFinished.java[`K12StudentDemo`]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/K12StudentFinished.java[`K12StudentFinished.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/K12StudentDemoFinished.java[`K12StudentDemo.java`^]
 ****
 
 === Nested if-else Statements
@@ -346,11 +348,11 @@ _Note: This video also shows how to use `if` statements in an OOP context, speci
 
 Files from video:
 
-* Starter file: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/VinylRecord.java[`VinylRecord.java`]
-* Starter file: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/VinylRecordDemo.java[`VinylRecordDemo.java`]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/VinylRecord.java[`VinylRecord.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/VinylRecordDemo.java[`VinylRecordDemo.java`^]
 
-* Finished code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/VinylRecordFinished.java[`VinylRecordFinished.java`]
-* Finished code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/VinylRecordDemoFinished.java[`VinylRecordDemoFinished.java`]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/VinylRecordFinished.java[`VinylRecordFinished.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/VinylRecordDemoFinished.java[`VinylRecordDemoFinished.java`^]
 ****
 
 
@@ -531,7 +533,7 @@ video::7khBJXDXirs[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 Solution file from video:
 
 _Not yet available!_
-// * https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/Percentages.java[`Percentages.java`]
+// * Completed code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/Percentages.java[`Percentages.java`^]
 ****
 
 '''
