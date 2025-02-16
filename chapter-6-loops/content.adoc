@@ -114,15 +114,15 @@ I personally consider it less readable than using a clear condition in the `whil
 .Time To Watch!
 ****
 `while` Loops in Java [COMING SOON!]
+// https://youtu.be/wMbpslAjDDc
 
-// Link is correct, just needs to be published
+video::wMbpslAjDDc[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
-// https://www.youtube.com/watch?v=wph3waZN10w
+Files from video:
 
-// video::wph3waZN10w[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// File from video:
-
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/WhileLoopDemo1.java[`WhileLoopDemo1.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/WhileLoopDemo2.java[`WhileLoopDemo2.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/WhileLoopDemo3.java[`WhileLoopDemo3.java`^]
 ****
 
 
@@ -152,13 +152,13 @@ The `while` statement is at the end of the loop; the `do` statement at the begin
 
 // link is correct, just needs to be published
 
-// https://www.youtube.com/watch?v=yjdsal-OW34
+https://youtu.be/urwIMiEqGBw
 
+video::urwIMiEqGBw[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+Files from video:
 
-// video::yjdsal-OW34[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// File from video:
-
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/DoWhileLoopDemo1.java[`DoWhileLoopDemo1.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/DoWhileLoopDemo2.java[`DoWhileLoopDemo2.java`^]
 ****
 
 ==== Choosing Between `while` and `do-while` Loops
