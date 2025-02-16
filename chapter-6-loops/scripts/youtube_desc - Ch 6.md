@@ -22,12 +22,18 @@ GitHub Page: https://timmcmichael.github.io/
 
 # 6B - while Loops in Java
 
-It's been a while since I first learned about loops. In fact, it would have been back in the 1980s, when music could really throw you for a loop: "Round and Round" by Ratt, "Here I Go Again" by Whitesnake, "Time After Time" by Cyndi Lauper. But we're not here to reminisce about the fabulous 80s.
+It's been a while since I first learned about loops. In fact, it would have been back in the 1980s, when music could really throw you for a loop: "Round and Round" by Ratt, "Here I Go Again" by Whitesnake, "Time After Time" by Cyndi Lauper. But we're not here to keep repeating our time in the fabulous 80s.
 
-In this video, we'll talk about the while loop. Definite, indefinte, and everything in between. Well, there is no in between, so really just those two. The examples here are meant to align to the assignments so those don't throw you for a loop.
+In this video, we'll talk about the while loop: definite, indefinite, and everything in between. Well, there is no in between, so really just those two. The examples here are meant to align to the assignments so those don't throw you for a loop.
 
 0:00 Intro
-0:
+0:50 Indefinite Loop (input validation)
+3:07 Infinite Loop
+8:24 Other Common Mistakes
+10:38 Definite Loop (counting)
+14:41 Logic Problems
+17:13 Different Increment Strategies
+20:15 Performing a Calculation in a Loop
 
 ----
 
@@ -45,16 +51,17 @@ Files used in videos:
 
 # 6C - do-while Loops in Java
 
-Even at my age, my mom's always ordering me around. "Do this, do that." But I'm a grown man and I'll do what I want. I mean, as long as it's okay with my wife. But when it comes to coding, I really am the boss and get to tell the computer what to do.
+Even at my age, my mom's always ordering me around. "Do this, do that." But I'm a grown man and I'll do what I want. I mean, as long as it's okay with my wife. But when it comes to coding, I really AM the boss and get to tell the computer what to do.
 
-It's time to learn the do-while loop, which is a variation of the while loop. Check yourself before you wreck yourself, and check your condition before you run your block.
+It's time to learn the do-while loop, which is a variation of the while loop. Check yourself before you wreck yourself, and check your condition before you run your block. In fact, check the user's input while you're at it, which is a good use of a do-while loop. And maybe even learn a little trick with the printf() method.
 
 0:00 Intro
-1:49 Improving encapsulation 
-4:25 Setting the gradeLevel field
-5:11 Getting the School Type with if-else if
-6:54 "Unreachable Code" error
-7:49 Constructor
+2:07 Indefinite Loop (input validation)
+5:39 Adding a Counter
+6:11 Bonus! printf() method
+8:44 Definite Loop and Variable Bounds 
+18:00 Conclusion
+
 ----
 
 This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
@@ -65,7 +72,7 @@ GitHub Page: https://timmcmichael.github.io/
 Files used in videos:
 * GitHub: https://github.com/timmcmichael/EMCCTimFiles
 
-#java #coding #if #if-else #if-else-if #decisions #branching #boolean #logic #oop #encapsulation #constructors
+#java #coding #loops #while #do-while #repetition #boolean-logic #conditionals #beginner #input-validation
 
 ---------------------
 
