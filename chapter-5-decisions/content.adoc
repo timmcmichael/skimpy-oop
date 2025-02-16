@@ -139,7 +139,7 @@ System.out.println(name.equals("Paul McCartney"));
 
 NOTE: The `equals()` method is case-sensitive, so `"Paul McCartney"` is not the same as `"paul mccartney"`. The String class also has a `equalsIgnoreCase()` method that will compare two strings without regard to case.
 
-=== if Statements
+=== `if` Statements
 
 The `if` statement is the most basic decision-making structure in Java.
 It allows you to execute a block of code only if a certain condition is true.
@@ -192,7 +192,7 @@ Basically, it's an either-or situation.
 
 .Time To Watch!
 ****
-if and if-else Statements in Java
+`if` and `if-else` Statements in Java
 
 // https://youtu.be/YytQwS4F6fE
 
@@ -281,7 +281,7 @@ Files from video:
 * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/05%20Decisions/K12StudentDemoFinished.java[`K12StudentDemo.java`^]
 ****
 
-=== Nested if-else Statements
+=== Nested `if-else` Statements
 
 If we want a block of code to execute only if two different conditions are met, we can place `if` statements inside of each other--which is called _nesting_.
 Nested if statements check multiple conditions in a hierarchical way: if one condition is met, it will proceed and check the next condition; if the first condition is not met, it will skip the inner `if` block.
@@ -339,7 +339,7 @@ public String getFullDescription() {
 
 .Time To Watch!
 ****
-Nested if-else Statements in Java
+Nested `if-else` Statements in Java
 
 // https://youtu.be/bKqlmhtaKd8
 video::bKqlmhtaKd8[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
