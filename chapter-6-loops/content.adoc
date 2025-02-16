@@ -286,7 +286,7 @@ If you want to explore them, the textbook addresses nested loops in section 6.6 
 Content labelled as *Just for Fun* is not required for the course, but is included for students who are interested in learning more about the topic. If you're struggling to learn the material in this course, please skip this--maybe you can return when you have more time.
 ****
 
-#I plan to record a brief video on recursion, but it's not a high priority. This topic is not covered in the textbook. I your _really_ can't wait, search for the topic on the internet.#
+#I plan to record a brief video on recursion, but it's not a high priority. This topic is not covered in the textbook, so if you _really_ can't wait, search for the topic on the internet.#
 
 === Solution Walkthroughs
 
