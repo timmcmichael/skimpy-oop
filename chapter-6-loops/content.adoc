@@ -116,7 +116,11 @@ I personally consider it less readable than using a clear condition in the `whil
 ****
 `while` Loops in Java [COMING SOON!]
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Link is correct, just needs to be published
+
+// https://www.youtube.com/watch?v=wph3waZN10w
+
+// video::wph3waZN10w[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // File from video:
 
 // * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
@@ -147,7 +151,12 @@ The `while` statement is at the end of the loop; the `do` statement at the begin
 ****
 `do-while` Loops in Java [COMING SOON!]
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// link is correct, just needs to be published
+
+// https://www.youtube.com/watch?v=yjdsal-OW34
+
+
+// video::yjdsal-OW34[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // File from video:
 
 // * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
@@ -224,7 +233,11 @@ Once you get the hang of the syntax, the `for` loop is a really convenient way t
 ****
 `for` Loops in Java [COMING SOON!]
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Link is correct, just needs to be published
+
+// https://www.youtube.com/watch?v=920hoHdcCHc
+
+// video::920hoHdcCHc[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // File from video:
 
 // * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
@@ -249,7 +262,11 @@ When the `continue` statement is executed, the program stops executing the loop'
 ****
 `break` and `continue` in Java [COMING SOON!]
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Link is correct, just needs to be published
+
+// https://www.youtube.com/watch?v=yUVpucaR2IU
+
+// video::yUVpucaR2IU[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // File from video:
 
 // * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
@@ -284,6 +301,8 @@ In "solution walkthrough" videos, I give a problem/prompt that is similar to the
 
 .Time To Watch!
 ****
+// TODO: Remaster Loops solution walkthroughs
+
 *Loops Practice Solution A (Performing a Calculation)*
 
 video::9PCFX5ttJK8[youtube]
