@@ -1,8 +1,8 @@
 # 6A - Intro to Loops
 
-Look, you can have your roller coasters and drop towes. You know what theme park ride everyone loves? A merry-go-round, of course. But you know what theme park ride everyone hates? A merry-go-round that never stops. If you're going to do something over and over again, you gotta know when to say "when."
+Look, you can have your roller coasters and drop towers. You know what theme park ride everyone loves? A merry-go-round, of course. But you know what theme park ride everyone hates? A merry-go-round that never stops. If you're going to do something over and over again, you gotta know when to say "when."
 
-In this video, you'll learn the value of restraint as we talk about repetition in programm. We'll introduce the concept of loops, which are structures that let you repeat a block of code multiple times. Definite loops, indefinite loops, check-first, or run-first--we'll cover it all. The possibilities are infinite, but our loops won't be.
+In this video, you'll learn the value of restraint as we talk about repetition in programming. We'll introduce the concept of loops, which are structures that let you repeat a block of code multiple times. Definite loops, indefinite loops, check-first, or run-first--we'll cover it all. The possibilities are infinite, but our loops won't be.
 
 0:00 Intro
 1:12 Loop Basics
