@@ -76,7 +76,7 @@ The program then jumps back to the beginning of the loop and checks the conditio
 This process repeats until the expression `count < 10` is false.
 
 The result of this loop is that the program prints out the value of `count` 10 times, starting with 0 and ending with 9.
-It is a definite loop because, before the loop staarts, it's already known that the loop will repeat 10 times.
+It is a definite loop because, before the loop starts, it's already known that the loop will repeat 10 times.
 
 ==== Infinite Loops
 One thing to be careful of when using a `while` loop is the possibility of creating an _infinite loop_.
@@ -234,16 +234,15 @@ Once you get the hang of the syntax, the `for` loop is a really convenient way t
 
 // Link is correct, just needs to be published
 
-// https://www.youtube.com/watch?v=920hoHdcCHc
+// https://youtu.be/uRoLVgHkWbA
 
-// video::920hoHdcCHc[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// File from video:
-
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+video::uRoLVgHkWbA[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+File from video:
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/ForLoopDemo1.java[`ForLoopDemo1.java`^]
 ****
 
 === OPTIONAL: `break` and `continue` Statements
-I believe that `while`, `do-while`, and `for` loops written with clear Boolean expressions are the most readable loops, and any loop a coder will need in their career can be written with those structures.
+I believe that `while`, `do-while`, and `for` loops, when written with clear Boolean expressions, are the most readable loops, and any loop a coder will need in their career can be written with those structures.
 A well-written loop will execute the block of code as many times as necessary, and then stop when the condition is false, without any additional help from the programmer.
 However, Java provides two statements that can be used to control the flow of a loop: the `break` statement and the `continue` statement.
 
@@ -261,14 +260,14 @@ When the `continue` statement is executed, the program stops executing the loop'
 ****
 `break` and `continue` in Java [COMING SOON!]
 
-// Link is correct, just needs to be published
+// https://youtu.be/gc4D-7UhxR0
 
-// https://www.youtube.com/watch?v=yUVpucaR2IU
-
-// video::yUVpucaR2IU[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::gc4D-7UhxR0[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // File from video:
 
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/BreakContinueDemo1.java[`BreakDemo1.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/BreakContinueDemo2.java[`BreakDemo2.java`^]
+
 ****
 
 
@@ -286,7 +285,7 @@ If you want to explore them, the textbook addresses nested loops in section 6.6 
 Content labelled as *Just for Fun* is not required for the course, but is included for students who are interested in learning more about the topic. If you're struggling to learn the material in this course, please skip this--maybe you can return when you have more time.
 ****
 
-#I plan to record a brief video on recursion, but it's not a high priority. This topic is not covered in the textbook. I your _really_ can't wait, search for the topic on the internet.#
+#I plan to record a brief video on recursion, but it's not a high priority. This topic is not covered in the textbook, so if you _really_ can't wait, search for the topic on the internet.#
 
 === Solution Walkthroughs
 

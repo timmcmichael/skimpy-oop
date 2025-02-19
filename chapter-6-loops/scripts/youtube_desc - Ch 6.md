@@ -76,19 +76,17 @@ Files used in videos:
 
 ---------------------
 
-# 5D - Nested if Statements
+# 6D - `for` Loops in Java
 
-With our programs growing up so fast, making decisive and complex decisions, you might be starting to worry--what happens when your programs go out on their own? Will you end up an empty nester, with nothing but a few lines of code to remember them by?
+You know how programmers are, always looking for a shortcut--always finding ways to type less. Java's got you covered! for statements are a definite improvement over while statements when you need to make a definite loop. Why write three separate lines of code when you can cram all that into one line?
 
-This video will show you how to keep your nest full. Full of if statement, of course. We'll look at nested if statements, which are if statements inside of if statements. It's like a Russian nesting doll of decisions! And they let us make hierarchical decisions, where one decision depends on another.
+See how to take the three components of a loop (initializing a variable, checking a condition, and changing the variable) and combine them all into a for loop. Count up, count down, count any way you like. And learn a thing or two about increment operators while you're at it.
 
 0:00 Intro
-2:01 Class diagram for VinylRecord
-3:00 Helper method
-3:57 setGenre() method
-4:29 Top-level if statement
-5:41 Second level if statements
-6:37 Watch me make a mistake
+2:18 for Loop Syntax
+3:08 First example
+5:42 Different Loop Behavior
+7:38 Conclusion
 ----
 
 This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
@@ -99,9 +97,30 @@ GitHub Page: https://timmcmichael.github.io/
 Files used in videos:
 * GitHub: https://github.com/timmcmichael/EMCCTimFiles
 
-#java #coding #if #if-else #if-else-if #decisions #branching #boolean #logic #oop #encapsulation #nested-if
+#java #coding #loops #for #while #repetition #boolean-logic #conditionals #beginner #definite-loops
 
 ---------------------
+https://youtu.be/gc4D-7UhxR0
 
+# 6e - `break` and `continue` in Java
+
+Some people are rule-followers and some are rule-breakers. If you're tired of my ridiculously overbearing rules, this video is your change to break free from the shackles that bind you. Or, you know, just break out of a loop.
+
+In this video, I rant about how terrible you are if you use break and continue startments, then proceed to show you how to use them. Break out of a loop early, or skip the rest of the loop and start the next iteration. It's like a get-out-of-jail-free card for loops. Only, instead of passing go and collecting $200, you'll just drive your instructor crazy--and it's tough to put a price on that.
+
+0:00 Intro
+1:12 Save a Baby Jedi!
+4:17 break and continue
+7:55 "Infinite" Loops with break Statements
+10:21 Pure Evil
+12:42 Conclusion
+----
+
+This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+
+Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
+GitHub Page: https://timmcmichael.github.io/
+
+#java #coding #loops #boolean-logic #program-flow #repetition #while-loops #do-while-loops #beginners
 
 
