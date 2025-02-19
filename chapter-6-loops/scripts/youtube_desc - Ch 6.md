@@ -101,5 +101,24 @@ Files used in videos:
 
 ---------------------
 
+# 6e - `break` and `continue` in Java
+
+Some people are rule-followers and some are rule-breakers. If you're tired of my ridiculously overbearing rules, this video is your change to break free from the shackles that bind you. Or, you know, just break out of a loop.
+
+In this video, I rant about how terrible you are if you use break and continue startments, then proceed to show you how to use them. Break out of a loop early, or skip the rest of the loop and start the next iteration. It's like a get-out-of-jail-free card for loops. Only, instead of passing go and collecting $200, you'll just drive your instructor crazy--and it's tough to put a price on that.
+
+0:00 Intro
+1:12 Loop Basics
+4:31 Definite and Indefinite Loops
+7:08 Counters and Control Variables
+
+----
+
+This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+
+Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
+GitHub Page: https://timmcmichael.github.io/
+
+#java #coding #loops #boolean-logic #program-flow #repetition #while-loops #do-while-loops #beginners
 
 
