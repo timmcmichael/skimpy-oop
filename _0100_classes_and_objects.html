@@ -1363,8 +1363,8 @@ Instance members are defined without using the <code>static</code> keyword, so w
 Put another way, a class member is shared by all objects created from the class, and it can be accessed without creating an object.</p>
 </div>
 <div class="paragraph">
-<p><code>System</code> is a class that includes the print() and println() methods we&#8217;ve been using, and those methods are static.
-Since they&#8217;re static, we can call them without creating a <code>System</code> object:</p>
+<p><code>System</code> is a class that includes the print() and println() methods we&#8217;ve been using, and those methods are <code>static</code>.
+Since they&#8217;re <code>static</code>, we can call them without creating a <code>System</code> object:</p>
 </div>
 <div class="paragraph">
 <p><code>System.out.println("Hello, World!");</code></p>
@@ -1377,7 +1377,7 @@ Since they&#8217;re static, we can call them without creating a <code>System</co
 <code>mySystem.println("Hello, World!");</code></p>
 </div>
 <div class="paragraph">
-<p>That would be a pain, so we&#8217;re glad that <code>println()</code> is static.</p>
+<p>That would be a pain, so we&#8217;re glad that <code>println()</code> is <code>static</code>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1386,18 +1386,18 @@ Since they&#8217;re static, we can call them without creating a <code>System</co
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The <code>print()</code> and <code>println()</code> are slightly more complicated than that, since they&#8217;re actually <em>instance methods</em> of the <code>PrintStream</code> class, which is a class that <code>System.out</code> is an instance of. But for our purposes, we can think of them as static methods of the <code>System</code> class. You don&#8217;t need to know that right now, but if I don&#8217;t mention it then somebody will claim I&#8217;m an idiot. I probably <em>am</em> an idiot, but not for this reason.
+The <code>print()</code> and <code>println()</code> are slightly more complicated than that, since they&#8217;re actually <em>instance methods</em> of the <code>PrintStream</code> class, which is a class that <code>System.out</code> is an instance of. But for our purposes, we can think of them as <code>static</code> methods of the <code>System</code> class. You don&#8217;t need to know that right now, but if I don&#8217;t mention it then somebody will claim I&#8217;m an idiot. I probably <em>am</em> an idiot, but not for this reason.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Throughout our learning, we&#8217;ll learn more about using static in our programs and classes, but an important one to known about for now is the <code>static</code> constant.
+<p>Throughout our learning, we&#8217;ll learn more about using <code>static</code> in our programs and classes, but an important one to known about for now is the <code>static</code> constant.
 When we put a <code>static</code> constant in an object class (which would also use the keyword <code>final</code>), we&#8217;re creating a value that is shared by all objects created from the class.
 If we have a savings account class, a common example when learning OOP, we might have a <code>static final double INTEREST_RATE</code> constant. This would mean that every savings account would earn the same interest rate, which is often how banks work.</p>
 </div>
 <div class="listingblock">
-<div class="title"><code>SavingsAccount.java</code>. A class with a static constant.</div>
+<div class="title"><code>SavingsAccount.java</code>. A class with a <code>static</code> constant.</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">SavingsAccount</span><span class="tok-w"> </span><span class="tok-p">{</span>
 <span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">INTEREST_RATE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">0.02</span><span class="tok-p">;</span>
