@@ -76,7 +76,7 @@ The program then jumps back to the beginning of the loop and checks the conditio
 This process repeats until the expression `count < 10` is false.
 
 The result of this loop is that the program prints out the value of `count` 10 times, starting with 0 and ending with 9.
-It is a definite loop because, before the loop staarts, it's already known that the loop will repeat 10 times.
+It is a definite loop because, before the loop starts, it's already known that the loop will repeat 10 times.
 
 ==== Infinite Loops
 One thing to be careful of when using a `while` loop is the possibility of creating an _infinite loop_.
