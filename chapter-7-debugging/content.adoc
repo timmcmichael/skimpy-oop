@@ -6,28 +6,12 @@ ifeval::["{docname}" == "index"]
 :sourcedir: chapter-7-debugging/source
 endif::[]
 
-== 0111 - Debugging
+== 0111 - Debugging and Generative AI
 // TODO: Upload source files to GitHub archive
 
-=== #Content coming soon!#
-// === #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
+// === #Content for this module is under construction.#
 
 .Help Make These Materials Better!
-****
-I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:
-
-https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google Form)^]
-****
-
-// === What's the Point?
-// * 
-
-_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/07%20Debugging[GitHub^]._
-
-// '''
-// #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
-
-// .Help Make These Materials Better!
 ****
 I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:
 
@@ -43,48 +27,115 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 :sectnums:
 '''
 
+
+_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/07%20Debugging[GitHub^]._
+
+'''
+
+=== Debugging
+
+A _bug_ is an error in your code that causes it to behave in an unexpected way.
+This is different from a syntax error, like forgetting a semicolon or misspelling a keyword--those kinds of mistakes will prevent your code from compiling, so you can't even run it.
+A bug is when your code runs, but it doesn't do what you want it to do.
+
+Bugs are frustrating, but they are a part of programming.
+Like Thanos, they are inevitable.
+And like Thanos, you can use ludicrous time traveling to fix (decapitate?) your bugs.
+Well, you can't do that last part, but you can fix them in the present; and hopefully, you can do it without too much frustration.
+
+Finding and fixing bugs is called _debugging_, and without realing it, you've been developing your own strategies for debugging since you started writing code.
+But as your code becomes more complex, you'll benefit from a more systematic approach to debugging--and you'll want to take advantage of the tools available in your IDE to help you.
+
 === Types of Errors
-// As soon as you start writing your first lines of code, you'll be writing code with bugs in it.
-// Like Thanos, it's inevitable.
-// And like Thanos, you can use ludicrous time traveling to fix (decapitate?) your bugs.
-// Well, you can't do that last part, but you can fix them in the present; and hopefully, you can do it without too much frustration.
 
-// ****
-// Link to intro to debugging video
-// ****
+We categorize bugs into two general types:
 
-// We categorize bugs into two general types:
+Compile-time errors:: Errors that prevent the compiler from fully processing your source code. These are generally the result of incorrect syntax--in other words, breaking the rules of the language.
+Runtime errors:: Errors in which your code compiles, but it does not execute as intended. Crashes are obvious runtime errors, but making an incorrect calculation is also an example of a runtime error.
 
-// Compile-time errors:: Errors that prevent the compiler from fully processing your source code. These are generally the result of incorrect syntax--in other words, breaking the rules of the language.
-// Runtime errors:: Errors in which your code compiles, but it does not execute as intended. Crashes are obvious runtime errors, but making an incorrect calculation is also an example of a runtime error.
+Fixing compile-time errors is just a matter of looking over your code and correcting the mistake.
+That's not always as easy as it sounds--especially for beginners--but at least the compiler and/or your IDE can give you feedback about what and where the mistake is.
 
-// Fixing compile-time errors is just a matter of looking over your code and correcting the mistake.
-// That's not always as easy as it sounds--especially for beginners--but at least the compiler and/or your IDE can give you feedback about what and where the mistake is.
+Runtime errors can be especially frustrating, especially since we can't always tell at what point the actual error is occurring.
+Did I make the mistake at the start of the program when I calculated the answer, is the mistake at the very end where I output it? 
+Or did I do something in the middle that accidentally changed the result?
+Who knows! And if you're like me, you might have done all three...
 
-// Runtime errors can be especially frustrating, especially since we can't always tell at what point the actual error is occurring.
-// Did I make the mistake at the start of the program when I calculated the answer, is the mistake at the very end where I output it? 
-// Or did I do something in the middle that accidentally changed the result?
-// Who knows! And if you're like me, you might have done all three...
+.Time To Watch!
+****
+Intro to Debugging [COMING SOON!]
 
-// === Finding Runtime Errors
-// The single most important thing to you is see what actually going on while your program is running.
-// Use output statements frequently.
 
-// .DebuggingOutput.java - Output statements to help with debugging
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
 
-// [source,java]
-// ----
-// include::source/DebuggingOutput.java[]
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
 
-// ----
+=== Debugging Tools in Your IDE
 
-// The numbered lines identify output statements added to observe the program's behavior.
+Most modern IDEs have built-in tools to help you debug your code.
+These tools allow you monitor the variables in your program, step through your code line-by-line, and set breakpoints to pause your program at a specific point.
+The more you know about programming, the more useful these tools become.
+But even as beginners, these tools can be helpful in finding and fixing bugs in your code.
 
-// Your IDE likely includes tools to help see what's happening in your code by stepping through program execution.
+The most common debugging tools you'll use are:
+Watch window:: A window that displays the values of variables in your program.
+Breakpoints:: A marker that tells your program to pause at a specific point in your code.
+Step Into:: A command that tells your program to execute the next line of code.
+Step Over:: A command that tells your program to execute the next line of code, but not to step into any methods that are called.
+Step Out:: A command that tells your program to execute the rest of the current method and then pause.
+Resume:: A command that tells your program to continue running until it hits the next breakpoint.
 
-// ****
-// Link to intro to VS Code debugging video
-// ****
+These functions are available in most IDEs, but the specifics of how they work can vary.
+Even if you're not using Visual Studio Code, the concepts are the same, so you should be able to apply what you learn here to your IDE of choice.
+
+.Time To Watch!
+****
+Debugging in Java with VS Code [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
+=== Generative AI in Coding
+
+Generative Artificial Intelligence is a type of AI that can generate new content based on existing data.
+Tools like ChatGPT and Copilot are well-known examples of generative AI.
+
+Artificial Intelligence is a broad field, and generative AI is just one part of it--and the topic is well beyond the scope of this course.
+But generative AI has important implications for the field of software development, so we'll focus on just that aspect of the technology.
+
+==== The Role of Generative AI in Education
+
+Like many teachers, I'm actively wrestling with the role of generative AI in a coding course.
+I have many ethical concerns about AI in general, and about generative AI to create code in particular. Simply put, these tools can be used in ways that are indisputably unethical. Most obviously, students can easily use these tools generate code that is then submitted as the student's own work.
+
+I would like to think it goes without saying, but based on the number of students who deny this, I guess I need to say it: using AI to generate code that you submit as your own is cheating.
+It is no different than copying someone else's code and submitting it as your own.
+
+Beyond the context of the classroom, I have concerns that coders will use generated code without understanding it.
+It's difficult to properly test code that you don't understand, and it's even more difficult to debug and maintain code that you don't understand.
+The implications of this are serious, and I worry that the use of generative AI in software development will lead to a decrease in the quality of software.
+
+But the impact this technology has had--and will continue to have--on the field of software development is undeniable, and I would be doing you a disservice if we didn't learn a little about it.
+
+.Time To Watch!
+****
+Intro to Generative AI for Coders [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
+
 
 '''
 :sectnums!:
