@@ -124,6 +124,44 @@ The implications of this are serious, and I worry that the use of generative AI 
 
 But the impact this technology has had--and will continue to have--on the field of software development is undeniable, and I would be doing you a disservice if we didn't learn a little about it.
 
+==== The Promise of Generative AI in Coding
+
+Aritificial Intelligence has the potential to revolutionize the way we write code.
+Generative AI can help us write code faster, more accurately, and with fewer bugs.
+It can help us generate code that is more efficient, more secure, and more maintainable.
+What does that all mean to someone learning to code and considering a career in software development?
+
+The short answer is: I don't know.
+The long answer is: I don't know, but I'm excited to find out.
+
+To start with, what can generative AI do for you right now?
+
+Here are a few of the current and near-future applications of generative AI in coding:
+
+* Code completion:: Many IDEs already have code completion features that suggest code as you type.
+Generative AI can take this a step further by suggesting entire lines of code, or even entire functions.
+* Code generation:: Generative AI can generate code based on a description of what you want the code to do.
+* Code refactoring:: _Refactoring_ is the process of rewriting code without changing the task the code performs. Once we get code working, we can refactor it to make it more efficient, more secure, or more maintainable. In other words, we can make it better. AI can look at our existing code and recommend changes that make it better.
+* Debugging:: Generative AI can help us find and fix bugs in our code--often, before we even run it.
+* Documentation:: Writing good documentation is an important part of software development, but many programmers hate doing it. Generative AI can help us write documentation that is clear, concise, and accurate.
+
+And that's just a few of the obvious applications of generative AI in coding.
+
+What does that mean for the coding profession?
+All I can do is guess, but here are some things I *hope* AI does for us:
+* Better software:: If AI can help us write better code, that should lead to better software.
+* Faster development and update cycles:: Again, if AI makes us more efficient, we should be able to develop and update software faster.
+* Improved security:: Hopefully, AI will help us indentify and address security vulnerabilities in our code.
+* More time for high-level effort:: If AI can take on some of the more tedious and boring coding tasks, that should free up mental bandwidth to focus on the more interesting and creative.
+
+My most optimistic hope is that AI will free up programmers to focus on creative applications and problem-solving--and ultimately allow us to create software that improves the world around us.
+
+==== The Negative Impacts of AI on Coding
+
+
+
+
+
 .Time To Watch!
 ****
 Intro to Generative AI for Coders [COMING SOON!]
