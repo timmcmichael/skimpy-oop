@@ -204,6 +204,7 @@ It essentially acts as a very advanced code completion tool--or like the "autoco
 
 At this time, GitHub Copilot requires a subscription, but you can use it for free for a limited number of lines of code; and students get an expanded free tier.
 
+*And yes, I used Copilot to help me prepare the content on AI in this chapter...*
 
 .Time To Watch!
 ****
@@ -215,6 +216,7 @@ Intro to GitHub Copilot in VS Code [COMING SOON!]
 // * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
 // * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
 ****
+
 
 
 
