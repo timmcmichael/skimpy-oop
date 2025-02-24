@@ -163,7 +163,7 @@ My most optimistic hope is that AI will free up programmers to focus on creative
 ==== Potential Negative Impacts of AI on Coding
 
 However, I worry that AI will lead to some negative impacts on the programming profession, as well.
-Again, I can only guess, but here are some things I *fear* AI will do to us:
+Again, I can only guess, but here are some things I *fear* might happen due to AI:
 
 * *Decreased job opportunities:* If AI can write code faster and more accurately than humans, that could lead to fewer job opportunities for human programmers. I think this will be especially true for junior programmers, whose workload will be most easily automated.
 * *Loss of institutional knowledge:* Every programming team relies on veteran coders who have been around and have a deep understanding of the codebase. When there's a question about what a module does, or why an algorithm was implemented a certain way, those veterans are the ones who have the answers. If AI is generating code, we may lose that institutional knowledge.
