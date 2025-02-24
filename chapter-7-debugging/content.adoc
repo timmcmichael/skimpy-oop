@@ -104,9 +104,9 @@ Debugging in Java with VS Code [COMING SOON!]
 
 === Generative AI in Coding
 
-:!sectnum:
+:!sectnums:
 ==== #The AI content is under construction. Check back soon for updates!#
-:sectnum:
+:sectnums:
 
 Generative Artificial Intelligence is a type of AI that can generate new content based on existing data.
 Tools like ChatGPT and Copilot are well-known examples of generative AI.
