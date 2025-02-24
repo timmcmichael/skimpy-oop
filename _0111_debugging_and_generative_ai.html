@@ -440,7 +440,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_1000_arrays" class="book toc2 toc-left">
+<body id="_0111_debugging_and_generative_ai" class="book toc2 toc-left">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
 <div class="details">
@@ -469,17 +469,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="_0110_loops.html">6. 0110 - Loops</a>
 </li>
-<li><a href="_0111_debugging_and_generative_ai.html">7. 0111 - Debugging and Generative AI</a>
-</li>
-<li><a href="_1000_arrays.html"><span class="toc-current">8. 1000 - Arrays</span></a>
+<li><a href="_0111_debugging_and_generative_ai.html"><span class="toc-current">7. 0111 - Debugging and Generative AI</span></a>
 <ul class="sectlevel2">
-<li><a href="_1000_arrays.html#_content_coming_soon">8.1. <mark>Content coming soon!</mark></a>
+<li><a href="_0111_debugging_and_generative_ai.html#_whats_the_point_8">What&#8217;s the Point?</a>
 </li>
-<li><a href="_1000_arrays.html#_whats_the_point_9">What&#8217;s the Point?</a>
+<li><a href="_0111_debugging_and_generative_ai.html#_debugging">7.1. Debugging</a>
 </li>
-<li><a href="_1000_arrays.html#_arrays_and_indexes">8.2. Arrays and Indexes</a>
+<li><a href="_0111_debugging_and_generative_ai.html#_types_of_errors">7.2. Types of Errors</a>
+</li>
+<li><a href="_0111_debugging_and_generative_ai.html#_debugging_tools_in_your_ide">7.3. Debugging Tools in Your IDE</a>
+</li>
+<li><a href="_0111_debugging_and_generative_ai.html#_generative_ai_in_coding">7.4. Generative AI in Coding</a>
 </li>
 </ul>
+</li>
+<li><a href="_1000_arrays.html">8. 1000 - Arrays</a>
 </li>
 <li><a href="_1001_inheritance.html">9. 1001 - Inheritance</a>
 </li>
@@ -492,10 +496,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_1000_arrays">8. 1000 - Arrays</h2>
+<h2 id="_0111_debugging_and_generative_ai">7. 0111 - Debugging and Generative AI</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_content_coming_soon">8.1. <mark>Content coming soon!</mark></h3>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Help Make These Materials Better!</div>
@@ -507,33 +509,240 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_whats_the_point_9">What&#8217;s the Point?</h3>
+<h3 id="_whats_the_point_8">What&#8217;s the Point?</h3>
+<hr>
 <div class="paragraph">
-<p><em>Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/08%20Arrays" target="_blank" rel="noopener">GitHub</a>.</em></p>
+<p><em>Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/07%20Debugging" target="_blank" rel="noopener">GitHub</a>.</em></p>
 </div>
 <hr>
+</div>
+<div class="sect2">
+<h3 id="_debugging">7.1. Debugging</h3>
+<div class="paragraph">
+<p>A <em>bug</em> is an error in your code that causes it to behave in an unexpected way.
+This is different from a syntax error, like forgetting a semicolon or misspelling a keyword&#8212;&#8203;those kinds of mistakes will prevent your code from compiling, so you can&#8217;t even run it.
+A bug is when your code runs, but it doesn&#8217;t do what you want it to do.</p>
+</div>
+<div class="paragraph">
+<p>Bugs are frustrating, but they are a part of programming.
+Like Thanos, they are inevitable.
+And like Thanos, you can use ludicrous time traveling to fix (decapitate?) your bugs.
+Well, you can&#8217;t do that last part, but you can fix them in the present; and hopefully, you can do it without too much frustration.</p>
+</div>
+<div class="paragraph">
+<p>Finding and fixing bugs is called <em>debugging</em>, and without realing it, you&#8217;ve been developing your own strategies for debugging since you started writing code.
+But as your code becomes more complex, you&#8217;ll benefit from a more systematic approach to debugging&#8212;&#8203;and you&#8217;ll want to take advantage of the tools available in your IDE to help you.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_types_of_errors">7.2. Types of Errors</h3>
+<div class="paragraph">
+<p>We categorize bugs into two general types:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Compile-time errors</dt>
+<dd>
+<p>Errors that prevent the compiler from fully processing your source code. These are generally the result of incorrect syntax&#8212;&#8203;in other words, breaking the rules of the language.</p>
+</dd>
+<dt class="hdlist1">Runtime errors</dt>
+<dd>
+<p>Errors in which your code compiles, but it does not execute as intended. Crashes are obvious runtime errors, but making an incorrect calculation is also an example of a runtime error.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Fixing compile-time errors is just a matter of looking over your code and correcting the mistake.
+That&#8217;s not always as easy as it sounds&#8212;&#8203;especially for beginners&#8212;&#8203;but at least the compiler and/or your IDE can give you feedback about what and where the mistake is.</p>
+</div>
+<div class="paragraph">
+<p>Runtime errors can be especially frustrating, especially since we can&#8217;t always tell at what point the actual error is occurring.
+Did I make the mistake at the start of the program when I calculated the answer, is the mistake at the very end where I output it?
+Or did I do something in the middle that accidentally changed the result?
+Who knows! And if you&#8217;re like me, you might have done all three&#8230;&#8203;</p>
+</div>
 <div class="sidebarblock">
 <div class="content">
+<div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p>I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:</p>
-</div>
-<div class="paragraph">
-<p><a href="https://forms.gle/4173pZ1yPuNX7pku6" target="_blank" rel="noopener">CIS150AB Course Materials Feedback (Google Form)</a></p>
+<p>Intro to Debugging [COMING SOON!]</p>
 </div>
 </div>
 </div>
-<hr>
 </div>
 <div class="sect2">
-<h3 id="_arrays_and_indexes">8.2. Arrays and Indexes</h3>
+<h3 id="_debugging_tools_in_your_ide">7.3. Debugging Tools in Your IDE</h3>
+<div class="paragraph">
+<p>Most modern IDEs have built-in tools to help you debug your code.
+These tools allow you monitor the variables in your program, step through your code line-by-line, and set breakpoints to pause your program at a specific point.
+The more you know about programming, the more useful these tools become.
+But even as beginners, these tools can be helpful in finding and fixing bugs in your code.</p>
+</div>
+<div class="paragraph">
+<p>The most common debugging tools you&#8217;ll use are:
+Watch window:: A window that displays the values of variables in your program.
+Breakpoints:: A marker that tells your program to pause at a specific point in your code.
+Step Into:: A command that tells your program to execute the next line of code.
+Step Over:: A command that tells your program to execute the next line of code, but not to step into any methods that are called.
+Step Out:: A command that tells your program to execute the rest of the current method and then pause.
+Resume:: A command that tells your program to continue running until it hits the next breakpoint.</p>
+</div>
+<div class="paragraph">
+<p>These functions are available in most IDEs, but the specifics of how they work can vary.
+Even if you&#8217;re not using Visual Studio Code, the concepts are the same, so you should be able to apply what you learn here to your IDE of choice.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Debugging in Java with VS Code [COMING SOON!]</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_generative_ai_in_coding">7.4. Generative AI in Coding</h3>
+<div class="sect3">
+<h4 id="_this_section_is_under_construction_check_back_soon">7.4.1. <mark>This section is under construction. Check back soon!</mark></h4>
+<div class="paragraph">
+<p>Generative Artificial Intelligence is a type of AI that can generate new content based on existing data.
+Tools like ChatGPT and Copilot are well-known examples of generative AI.
+You can ask a generative AI tool to write song lyrics about about Java programming, for example, and it will producte a new song for you.</p>
+</div>
+<div class="paragraph">
+<p>Artificial Intelligence is a broad field, and the topic is well beyond the scope of this course.
+But generative AI has important implications for the field of software development, so we&#8217;ll focus on just that aspect of the technology.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_role_of_generative_ai_in_education">7.4.2. The Role of Generative AI in Education</h4>
+<div class="paragraph">
+<p>Like many teachers, I&#8217;m actively wrestling with the role of generative AI in a coding course.
+I have many ethical concerns about AI in general, and about generative AI to create code in particular.
+Simply put, these tools can be used in ways that are indisputably unethical.
+Most obviously, students can easily use these tools generate code that is then submitted as the student&#8217;s own work.</p>
+</div>
+<div class="paragraph">
+<p>I would like to think it goes without saying, but based on the number of students who deny this, I guess I need to say it: using AI to generate code that you submit as your own is cheating.
+It is no different than copying someone else&#8217;s code and submitting it as your own.</p>
+</div>
+<div class="paragraph">
+<p>It presents a real challenge for teachers trying to assess student learning, and a real temptation for students struggling to learn&#8212;&#8203;and able to simply let AI do the work for them.</p>
+</div>
+<div class="paragraph">
+<p>But the impact this technology has had&#8212;&#8203;and will continue to have&#8212;&#8203;on the field of software development is undeniable, and I would be doing you a disservice if we didn&#8217;t learn a little about it.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_promise_of_generative_ai_in_coding">7.4.3. The Promise of Generative AI in Coding</h4>
+<div class="paragraph">
+<p>What does this AI revolution look like for coders?
+What does it mean to someone learning to code?
+How does it change the job outlook for someone considering a career in software development?</p>
+</div>
+<div class="paragraph">
+<p>The short answer is: I don&#8217;t know.
+The longer answer is: I don&#8217;t know, but I&#8217;m excited to find out.</p>
+</div>
+<div class="paragraph">
+<p>For now, we can look at what generative AI can do for us today.
+Here are a few of the current and near-future applications of generative AI in coding:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Code completion:: Many IDEs already have code completion features that suggest code as you type.
+Generative AI can take this a step further by suggesting entire lines of code, or even entire methods.</p>
+</li>
+<li>
+<p>Code generation:: Generative AI can generate code based on a description of what you want the code to do.</p>
+</li>
+<li>
+<p>Code refactoring:: <em>Refactoring</em> is the process of rewriting code without changing the task the code performs. Once we get code working, we can refactor it to make it more efficient, more secure, or more maintainable. In other words, we can make it better. AI can look at our existing code and recommend changes that make it better.</p>
+</li>
+<li>
+<p>Debugging:: Generative AI can help us find and fix bugs in our code&#8212;&#8203;often, before we even run it.</p>
+</li>
+<li>
+<p>Documentation:: Writing good documentation is an important part of software development, but many programmers hate doing it. Generative AI can help us write documentation that is clear, concise, and accurate.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>And that&#8217;s just a few of the obvious applications of generative AI in coding.</p>
+</div>
+<div class="paragraph">
+<p>What does that mean for the coding profession?
+All I can do is guess, but here are some things I <strong>hope</strong> AI does for us:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Better software:: If AI can help us write better code, that should lead to better software.</p>
+</li>
+<li>
+<p>Faster development and update cycles:: Again, if AI makes us more efficient, we should be able to develop and update software faster.</p>
+</li>
+<li>
+<p>Improved security:: Hopefully, AI will help us indentify and address security vulnerabilities in our code.</p>
+</li>
+<li>
+<p>More time for high-level effort:: If AI can take on some of the more tedious and boring coding tasks, that should free up mental bandwidth to focus on the more interesting and creative.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>My most optimistic hope is that AI will free up programmers to focus on creative applications and problem-solving&#8212;&#8203;and ultimately allow us to create software that improves the world around us.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_potential_negative_impacts_of_ai_on_coding">7.4.4. Potential Negative Impacts of AI on Coding</h4>
+<div class="paragraph">
+<p>However, I worry that AI will lead to some negative impacts on the programming profession, as well.
+Again, I can only guess, but here are some things I <strong>fear</strong> AI will do to us:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Decreased job opportunities:: If AI can write code faster and more accurately than humans, that could lead to fewer job opportunities for human programmers. I think this will be especially true for junior programmers, whose workload will be most easily automated.</p>
+</li>
+<li>
+<p>Loss of institutional knowledge:: Every programming team relies on veteran coders who have been around and have a deep understanding of the codebase. When there&#8217;s a question about what a module does, or why an algorithm was implemented a certain way, those veterans are the ones who have the answers. If AI is generating code, we may lose that institutional knowledge.</p>
+</li>
+<li>
+<p>Decreased quality of entry-level programmers:: If AI can generate code for us, it&#8217;s possible that we&#8217;ll see a decrease in the quality of entry-level programmers. People who rely heavily on AI while learning to code may not develop the same problem-solving skills as those who learn to code without AI.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_what_does_that_all_mean_for_you">7.4.5. What Does That All Mean for You?</h4>
+<div class="paragraph">
+<p>I don&#8217;t know.
+As excited as I am to see AI reach this tipping point in software development, it&#8217;s kind of a scary time to be a programming teacher.
+Until recently, I&#8217;ve always</p>
+</div>
+<div class="paragraph">
+<p>Coders who rely heavily on artificial intelligence tools to solve problems may be able to pass themselves off as more skilled than they actually are&#8212;&#8203;indeed, they might even believe themselves to be more skilled than they actually are.
+But such coders will be less skilled at testing, debugging and maintaining code, and that could lead to a decrease in the quality of software.
+Putting code into production (releasing it in software that people actually use) without understanding it well enough to regiorously test it is a recipe for disaster.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Time To Watch!</div>
+<div class="paragraph">
+<p>Intro to Generative AI for Coders [COMING SOON!]</p>
+</div>
+</div>
+</div>
 <hr>
+</div>
 </div>
 </div>
 </div>
 <div class="paragraph nav-footer">
-<p>← Previous: <a href="_0111_debugging_and_generative_ai.html">0111 - Debugging and Generative AI</a> | ↑ Up: <a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a> | Next: <a href="_1001_inheritance.html">1001 - Inheritance</a> →</p>
+<p>← Previous: <a href="_0110_loops.html">0110 - Loops</a> | ↑ Up: <a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a> | Next: <a href="_1000_arrays.html">1000 - Arrays</a> →</p>
 </div>
 </div>
 <div id="footer">

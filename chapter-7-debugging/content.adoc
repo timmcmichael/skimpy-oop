@@ -104,42 +104,43 @@ Debugging in Java with VS Code [COMING SOON!]
 
 === Generative AI in Coding
 
+==== #This section is under construction. Check back soon!#
+
 Generative Artificial Intelligence is a type of AI that can generate new content based on existing data.
 Tools like ChatGPT and Copilot are well-known examples of generative AI.
+You can ask a generative AI tool to write song lyrics about about Java programming, for example, and it will producte a new song for you.
 
-Artificial Intelligence is a broad field, and generative AI is just one part of it--and the topic is well beyond the scope of this course.
+Artificial Intelligence is a broad field, and the topic is well beyond the scope of this course.
 But generative AI has important implications for the field of software development, so we'll focus on just that aspect of the technology.
 
 ==== The Role of Generative AI in Education
 
 Like many teachers, I'm actively wrestling with the role of generative AI in a coding course.
-I have many ethical concerns about AI in general, and about generative AI to create code in particular. Simply put, these tools can be used in ways that are indisputably unethical. Most obviously, students can easily use these tools generate code that is then submitted as the student's own work.
+I have many ethical concerns about AI in general, and about generative AI to create code in particular. 
+Simply put, these tools can be used in ways that are indisputably unethical. 
+Most obviously, students can easily use these tools generate code that is then submitted as the student's own work.
 
 I would like to think it goes without saying, but based on the number of students who deny this, I guess I need to say it: using AI to generate code that you submit as your own is cheating.
 It is no different than copying someone else's code and submitting it as your own.
 
-Beyond the context of the classroom, I have concerns that coders will use generated code without understanding it.
-It's difficult to properly test code that you don't understand, and it's even more difficult to debug and maintain code that you don't understand.
-The implications of this are serious, and I worry that the use of generative AI in software development will lead to a decrease in the quality of software.
+It presents a real challenge for teachers trying to assess student learning, and a real temptation for students struggling to learn--and able to simply let AI do the work for them.
 
 But the impact this technology has had--and will continue to have--on the field of software development is undeniable, and I would be doing you a disservice if we didn't learn a little about it.
 
 ==== The Promise of Generative AI in Coding
 
-Aritificial Intelligence has the potential to revolutionize the way we write code.
-Generative AI can help us write code faster, more accurately, and with fewer bugs.
-It can help us generate code that is more efficient, more secure, and more maintainable.
-What does that all mean to someone learning to code and considering a career in software development?
+What does this AI revolution look like for coders?
+What does it mean to someone learning to code?
+How does it change the job outlook for someone considering a career in software development?
 
 The short answer is: I don't know.
-The long answer is: I don't know, but I'm excited to find out.
+The longer answer is: I don't know, but I'm excited to find out.
 
-To start with, what can generative AI do for you right now?
-
+For now, we can look at what generative AI can do for us today.
 Here are a few of the current and near-future applications of generative AI in coding:
 
 * Code completion:: Many IDEs already have code completion features that suggest code as you type.
-Generative AI can take this a step further by suggesting entire lines of code, or even entire functions.
+Generative AI can take this a step further by suggesting entire lines of code, or even entire methods.
 * Code generation:: Generative AI can generate code based on a description of what you want the code to do.
 * Code refactoring:: _Refactoring_ is the process of rewriting code without changing the task the code performs. Once we get code working, we can refactor it to make it more efficient, more secure, or more maintainable. In other words, we can make it better. AI can look at our existing code and recommend changes that make it better.
 * Debugging:: Generative AI can help us find and fix bugs in our code--often, before we even run it.
@@ -149,6 +150,7 @@ And that's just a few of the obvious applications of generative AI in coding.
 
 What does that mean for the coding profession?
 All I can do is guess, but here are some things I *hope* AI does for us:
+
 * Better software:: If AI can help us write better code, that should lead to better software.
 * Faster development and update cycles:: Again, if AI makes us more efficient, we should be able to develop and update software faster.
 * Improved security:: Hopefully, AI will help us indentify and address security vulnerabilities in our code.
@@ -156,7 +158,26 @@ All I can do is guess, but here are some things I *hope* AI does for us:
 
 My most optimistic hope is that AI will free up programmers to focus on creative applications and problem-solving--and ultimately allow us to create software that improves the world around us.
 
-==== The Negative Impacts of AI on Coding
+==== Potential Negative Impacts of AI on Coding
+
+However, I worry that AI will lead to some negative impacts on the programming profession, as well.
+Again, I can only guess, but here are some things I *fear* AI will do to us:
+
+* Decreased job opportunities:: If AI can write code faster and more accurately than humans, that could lead to fewer job opportunities for human programmers. I think this will be especially true for junior programmers, whose workload will be most easily automated.
+* Loss of institutional knowledge:: Every programming team relies on veteran coders who have been around and have a deep understanding of the codebase. When there's a question about what a module does, or why an algorithm was implemented a certain way, those veterans are the ones who have the answers. If AI is generating code, we may lose that institutional knowledge.
+* Decreased quality of entry-level programmers:: If AI can generate code for us, it's possible that we'll see a decrease in the quality of entry-level programmers. People who rely heavily on AI while learning to code may not develop the same problem-solving skills as those who learn to code without AI. 
+
+==== What Does That All Mean for You?
+
+I don't know. 
+As excited as I am to see AI reach this tipping point in software development, it's kind of a scary time to be a programming teacher.
+Until recently, I've always
+
+Coders who rely heavily on artificial intelligence tools to solve problems may be able to pass themselves off as more skilled than they actually are--indeed, they might even believe themselves to be more skilled than they actually are.
+But such coders will be less skilled at testing, debugging and maintaining code, and that could lead to a decrease in the quality of software.
+Putting code into production (releasing it in software that people actually use) without understanding it well enough to regiorously test it is a recipe for disaster.
+
+
 
 
 
