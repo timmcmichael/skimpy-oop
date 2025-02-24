@@ -110,7 +110,7 @@ Debugging in Java with VS Code [COMING SOON!]
 
 Generative Artificial Intelligence is a type of AI that can generate new content based on existing data.
 Tools like ChatGPT and Copilot are well-known examples of generative AI.
-You can ask a generative AI tool to write song lyrics about about Java programming, for example, and it will producte a new song for you.
+You can ask a generative AI tool to write song lyrics about about Java programming, for example, and it will producte a https://timmcmichael.github.io/skimpy-oop/chapter-7-debugging/ai_song.html[new song for you].
 
 Artificial Intelligence is a broad field, and the topic is well beyond the scope of this course.
 But generative AI has important implications for the field of software development, so we'll focus on just that aspect of the technology.
