@@ -179,22 +179,44 @@ Coders who rely heavily on artificial intelligence tools to solve problems may b
 But such coders will be less skilled at testing, debugging and maintaining code, and that could lead to a decrease in the quality of software.
 Putting code into production (releasing it in software that people actually use) without understanding it well enough to regiorously test it is a recipe for disaster.
 
+I think there is still a bright future for programmers, but the landscape will be different.
+Coders will need to have a deeper understanding of the code they write, and they will need to be able to solve problems that AI can't.
+They'll need to be able to evaluate the code that AI generates, and they'll need to be able to maintain and update that code.
 
+Students will need to have the discipline to learn to code without relying on AI tools, and they'll need to develop the problem-solving skills that AI can't provide.
+Testing and debugging skills will be more important than ever, and those can really only be developed through practice--and that practice comes from the coding process: writing code, testing it to find errors, and fixing those problems.
 
+==== Using Generative AI Tools
 
+Online tools like ChatGPT and Microsoft's Copilot can help you generate code without any specialized software. 
+Simply enter a description of what you want the code to do, and the AI will generate code for you.
+You can then copy and paste that code into your IDE and work with it from there.
 
+But IDEs are also beginning to integrate generative AI tools focused on coding.
+For example, Visual Studio Code now includes a feature called *GitHub Copilot* that has been trained on billions of lines of code.
+The user interface provides a chat window where you can describe what you want the code to do, and Copilot will generate code for you.
+You can choose to accept that suggestions, or you can refine your prompt to get a different suggestion.
 
+Additionally, Copilot can generate code as you type.
+It will analyze the code you've already written and suggest the next line of code.
+You can accept that suggestion, or you can ignore it and keep typing.
+It essentially acts as a very advanced code completion tool--or like the "autocomplete" feature on your phone's keyboard, but for code.
 
-// .Time To Watch!
-// ****
-// Intro to Generative AI for Coders [COMING SOON!]
+At this time, GitHub Copilot requires a subscription, but you can use it for free for a limited number of lines of code; and students get an expanded free tier.
 
-// // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// // Files from video:
+*And yes, I used Copilot to help me prepare the content on AI in this chapter...*
 
-// // * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
-// // * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
-// ****
+.Time To Watch!
+****
+Intro to GitHub Copilot in VS Code [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
 
 
 
