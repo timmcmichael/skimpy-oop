@@ -63,10 +63,12 @@ Who knows! And if you're like me, you might have done all three...
 
 .Time To Watch!
 ****
-Intro to Debugging [COMING SOON!]
+Intro to Debugging
+
+// https://youtu.be/jcslOC6-cbk
 
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::jcslOC6-cbk[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // Files from video:
 
 // * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
@@ -93,13 +95,16 @@ Even if you're not using Visual Studio Code, the concepts are the same, so you s
 
 .Time To Watch!
 ****
-Debugging in Java with VS Code [COMING SOON!]
+Debugging in Java with VS Code
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// Files from video:
+// https://youtu.be/t4whOTYQ10k
 
-// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+video::t4whOTYQ10k[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+Files from video:
+
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/07%20Debugging/MethodDebugging.java[`MethodDebugging.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/07%20Debugging/MethodDebuggingFinal.java[`MethodDebuggingFinal.java`^]
+
 ****
 
 === Generative AI in Coding
