@@ -4,8 +4,11 @@ It takes a humble man to admit that his code is not perfect. I am not a humble m
 
 This video is here to get you pumped up about debugging. Learn a little debugging trivia to astound your friends and family. Learn about the different types of bugs. Learn some strategies to tracking down those bugs and setting the world right.
 
-0:00 Intro
-
+0:00 Intro (and "bug" trivia!)
+1:52 Types of Bugs
+7:30 A "Debugging Mindset"
+11:09 Debugging Tips
+22:07 Outro
 
 ----
 
@@ -25,7 +28,17 @@ It turns out that there are a bunch of tools in VS Code that can help you track 
 Don't worry, grasshopper. It's time for you to dig into those debugging tools and learn some more efficient ways to see what's happening in your code and identify bugs. We'll look at setting breakpoints, stepping through code, and examining variable values.
 
 0:00 Intro
-
+2:42 Buggy Code Example
+3:37 Setting Breakpoints
+5:08 Launching in Debug Mode
+8:18 The Debug Toolbar
+9:46 Stepping Over a Line of Code
+12:36 Stepping Into a Method
+15:06 Stepping Out of a Method
+17:00 Tracing for Loop Execution
+20:35 Identifying an Infinite Loop
+26:36 Using Multiple Breakpoints
+31.47 Outro
 
 ----
 
