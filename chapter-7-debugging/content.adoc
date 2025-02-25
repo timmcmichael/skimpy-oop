@@ -95,7 +95,7 @@ Even if you're not using Visual Studio Code, the concepts are the same, so you s
 
 .Time To Watch!
 ****
-Debugging in Java with VS Code [COMING SOON!]
+Debugging in Java with VS Code
 
 // https://youtu.be/t4whOTYQ10k
 
