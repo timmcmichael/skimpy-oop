@@ -182,9 +182,10 @@ Putting code into production (releasing it in software that people actually use)
 I think there is still a bright future for programmers, but the landscape will be different.
 Coders will need to have a deeper understanding of the code they write, and they will need to be able to solve problems that AI can't.
 They'll need to be able to evaluate the code that AI generates, and they'll need to be able to maintain and update that code.
+The role of software architect--the person who designs the overall structure of a software project--will become even more important, as will the role of the software tester.
 
 Students will need to have the discipline to learn to code without relying on AI tools, and they'll need to develop the problem-solving skills that AI can't provide.
-Testing and debugging skills will be more important than ever, and those can really only be developed through practice--and that practice comes from the coding process: writing code, testing it to find errors, and fixing those problems.
+Testing and debugging skills will be more important than ever, and those can really only be developed through practice--and that practice comes from writing code, testing it to find errors, and fixing problems.
 
 ==== Using Generative AI Tools
 
