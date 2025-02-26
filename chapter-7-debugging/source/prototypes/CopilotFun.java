@@ -22,6 +22,4 @@ public class CopilotFun {
         System.out.println(a + b); // This line prints the sum of a and b
     }
 
-
-
-}`
+}
