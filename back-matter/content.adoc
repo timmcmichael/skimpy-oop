@@ -206,3 +206,14 @@ A control variable is a variable used to control the execution of a loop. It is 
 An example of an indefinite loop is a program that asks the user to guess a number and keeps prompting the user until they guess correctly. The loop repeats until the user's input matches the target number.
 Another example is a loop that reads user input until a specific sentinel value is entered, indicating the end of input.
 
+==== Debugging and Generative AI
+
+[qanda]
+*What is the difference between a compile-time error and a runtime error?*::
+*Compile-time errors* occur when the compiler cannot translate the source code into machine code due to syntax or semantic issues. These errors must be fixed before the program can run. *Runtime errors*, on the other hand, occur during the execution of the program and are often due to logic errors, causing the program to behave unexpectedly or crash.
+
+*How can using output statements help in debugging a program?*::
+Output statements, such as `print()` statements, allow you to monitor the values of variables and the flow of execution in your program. This visibility helps you pinpoint where things are going wrong, making it easier to identify and correct errors.
+
+*What are some strategies you can use when you're frustrated by a bug in your code?*::
+When you're frustrated by a bug in your code, take a break to clear your mind and return with fresh eyes. Use output statements to track variables and execution flow, clean up your code for better readability, and break down the problem into smaller parts. If needed, seek help from others and stay patient, knowing that debugging is a valuable part of the learning process.
