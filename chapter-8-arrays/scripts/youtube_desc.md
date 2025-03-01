@@ -15,7 +15,7 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #csharp #python #coding #beginners #debugging #bugs #errors #frustration
+#java #csharp #python #coding #beginners #arrays #data-structures
 
 ---------------------
 
@@ -32,7 +32,7 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #csharp #python #coding #beginners #debugging #bugs #errors #frustration
+#java #coding #beginners #arrays #array-indexing #data-structures
 
 ---------------------
 
@@ -51,7 +51,7 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #csharp #python #coding #beginners #debugging #bugs #errors #frustration
+#java #coding #beginners #arrays #array-indexing #data-structures
 
 ---------------------
 
@@ -69,7 +69,7 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #csharp #python #coding #beginners #debugging #bugs #errors #frustration
+#java #coding #beginners #arrays #array-indexing #data-structures
 
 ---------------------
 
@@ -87,7 +87,7 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #csharp #python #coding #beginners #debugging #bugs #errors #frustration
+#java #coding #beginners #arrays #array-indexing #data-structures
 
 ---------------------
 
