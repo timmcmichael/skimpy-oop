@@ -214,7 +214,7 @@ At this time, GitHub Copilot requires a subscription, but you can use it for fre
 
 .Time To Watch!
 ****
-Intro to GitHub Copilot in VS Code [COMING SOON!]
+Intro to GitHub Copilot in VS Code
 
 // https://youtu.be/gHuJgnpG7pI
 
