@@ -29,22 +29,119 @@ _Source code examples from this chapter and associated videos are available on h
 
 :sectnums:
 '''
-// #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
-
-// .Help Make These Materials Better!
-****
-I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:
-
-https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google Form)^]
-****
-
-'''
 === Arrays and Indexes
 
+.Time to Watch!
+****
+Introduction to Arrays [COMING SOON]
+
+// video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
+=== Defining and Using Arrays
+
+.Time to Watch!
+****
+Array Syntax in Java [COMING SOON]
+
+// video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
 
 
-// Already have videos in old account
+=== Traversing Arrays
 
+Working with individual elements in an array can be useful, but to really see the power of arrays, you need loops.
+With a loop, we can easily move through an array and perform some task or operation on each element.
+For example, if we have an array of quiz scores, we could use a loop to add up all the scores and calculate the average.
+
+When we use a loop to go through an array, we are _traversing_ the array.
+We can use a traversal to put values into an array (which we call _populating_ the array), to modify values in an array, or to read values from an array.
+We can also use a traversal to search for something within an array.
+
+Most of the time, we'll use a simple `for` loop to traverse an array.
+The syntax for a `for` traversal is:
+
+.Example of a `for` loop to traverse an array
+[source,java]
+----
+int scores[] = {90, 85, 95, 88, 92};
+int sum = 0;
+for (int i = 0; i < scores.length; i++) {
+    sum += scores[i];
+}
+System.out.println("The sum of the scores is " + sum);
+----
+
+In this example, we have an array of quiz scores.
+We use a `for` loop to go through each element of the array and add it to the `sum` variable.
+Using a variable like `sum` to accumulate a value is a common pattern in programming, and we refer to such as variable as an _accumulator_.
+Notice that we declare and initialize it before the loop, and then we update it inside the loop.
+If we declare it inside the loop, it will be reset to zero each time the loop runs, and we won't get the correct sum. 
+It also wouldn't be accessible outside of the loop due to its scope.
+
+NOTE: At this point, clever students point out that we could get the sum of the scores without using a loop at all, using the `Arrays` class from the `java.util` package. Sure, but since we're learning about loops, that would defeat the point. My assignments for this chapter assess your ability to write loops, so you won't get any points for code that doesn't at least try to traverse the array.
+
+In the example, notice that we use the `length` property of the array to set the loop condition.
+That way, this same loop will work for any array of any size.
+If we hard-coded the size of the array into the loop, we would have to change our code every time we changed the size of the array.
+
+.Example of a hard-coded loop
+[source,java]
+----
+int scores[] = {90, 85, 95, 88, 92};
+int sum = 0;
+for (int i = 0; i < 5; i++) { // Uh oh! What if we add another score?
+    sum += scores[i];
+}
+System.out.println("The sum of the scores is " + sum);
+----
+
+
+.Time to Watch!
+****
+Loops and Arrays in Java [COMING SOON]
+
+// video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+// Files from video:
+
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
+=== Putting Objects in Arrays
+
+.Time to Watch!
+****
+Putting Objects in Arrays [COMING SOON]
+
+// video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+// Files from video:
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
+=== "For-Each" Loops
+
+.Time to Watch!
+****
+"For-Each" Loops in Java [COMING SOON]
+
+// video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+// Files from video:
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
 
 
 
