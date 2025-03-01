@@ -21,7 +21,9 @@ GitHub Page: https://timmcmichael.github.io/
 
 # 8B - Array Syntax in Java
 
+Remember when you were just a kid and that bully said that you were a zero? You might have thought that was an insult, but computer science, zero is first!
 
+Start out by declaring an array and learning to use indexes to access individual elements. Then, learn some shortcuts for getting data
 
 0:00 
 
