@@ -50,3 +50,27 @@ GitHub Page: https://timmcmichael.github.io/
 #java #coding #beginners #debugging #bugs #errors #frustration #vs-code #breakpoints
 
 ---------------------
+
+# 7C - Intro to GitHub Copilot in VS Code
+
+If an artificial intelligence ever asks, "shall we play a game?" the answer is always "no." Just ask Ferris Bueller. But what if an AI offers to help you write code? As Ferris would say, "Life moves pretty fast. If you don't stop and look around once in a while, you could miss it." So, it's time to stop and look around at some of these fancy schmancy AI tools everyone is so excited about.
+
+We're going to check out the GitHub Copilot extension for Visual Studio Code. We'll see how it can offer AI-powered code suggestions, or write code based on natural language prompts. We'll even sneak in some thoughts about ethical use of AI. After all, we don't want to accidentally start a global thermo-nuclear war. This is a Wargame, it's a YouTube video...
+
+0:00 Intro
+1:46 Installing GitHub Copilot
+2:54 AI Code Suggestions
+5:59 Copilot chatbot
+7:14 Turning Off Code Suggestions
+7:44 Code Completion with a Web-based AI
+8:58 Cheating Concerns with Copilot
+----
+
+This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+
+Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
+GitHub Page: https://timmcmichael.github.io/
+
+#java #coding #beginners #ai #generative-ai #github-copilot #copilot #vs-code #ai-ethics
+
+---------------------

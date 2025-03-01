@@ -216,7 +216,9 @@ At this time, GitHub Copilot requires a subscription, but you can use it for fre
 ****
 Intro to GitHub Copilot in VS Code [COMING SOON!]
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/gHuJgnpG7pI
+
+video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // Files from video:
 
 // * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
