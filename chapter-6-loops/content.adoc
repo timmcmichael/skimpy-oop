@@ -291,12 +291,6 @@ Content labelled as *Just for Fun* is not required for the course, but is includ
 
 In "solution walkthrough" videos, I give a problem/prompt that is similar to the kinds of work I assign, and then I record myself writing a solution. It's not absolutely mandatory to watch this video, but students report that these videos are particularly helpful.
 
-These particular videos were recorded several years ago, so the quality is not as high as my current videos, but the content is still helpful. One video shows an example of a loop that performs a calculation, and the other shows an example of a loop that validates user input.
-
-=== Solution Walkthroughs
-
-In "solution walkthrough" videos, I give a problem/prompt that is similar to the kinds of work I assign, and then I record myself writing a solution. It's not absolutely mandatory to watch this video, but students report that these videos are particularly helpful.
-
 .Time To Watch!
 ****
 // TODO: Remaster Loops solution walkthroughs
