@@ -47,8 +47,6 @@ GitHub Page: https://timmcmichael.github.io/
 
 ---------------------
 
-
-
 # 8C - Loops and Arrays in Java
 
 
