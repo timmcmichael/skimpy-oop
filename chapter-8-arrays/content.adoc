@@ -33,9 +33,11 @@ _Source code examples from this chapter and associated videos are available on h
 
 .Time to Watch!
 ****
-Introduction to Arrays [COMING SOON]
+Introduction to Arrays
 
-// video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/08IJJod4O3o
+
+video::08IJJod4O3o[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // Files from video:
 
 // * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
@@ -46,9 +48,11 @@ Introduction to Arrays [COMING SOON]
 
 .Time to Watch!
 ****
-Array Syntax in Java [COMING SOON]
+Array Syntax in Java
 
-// video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/RBY8zz7f-bU
+
+// video::RBY8zz7f-bU[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // Files from video:
 
 // * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]

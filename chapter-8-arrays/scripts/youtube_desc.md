@@ -6,8 +6,12 @@ This video introduces you to arrays. See how they're different than regular old 
 
 Array we go!
 
-0:00 
-
+0:00 Intro
+1:19 What is an Array?
+4:07 Visualizing an Array
+5:35 Array Indexes 
+7:45 Array Immutability
+10:40 Arrays and Loops
 ----
 
 This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
@@ -23,9 +27,14 @@ GitHub Page: https://timmcmichael.github.io/
 
 Remember when you were just a kid and that bully said that you were a zero? You might have thought that was an insult, but computer science, zero is first!
 
-Start out by declaring an array and learning to use indexes to access individual elements. Then, learn some shortcuts for getting data
+Start out by declaring an array and learning to use indexes to access individual elements. Then, learn some shortcuts for getting data into your array. Finally, see how array elements are really just variables grouped together.
 
-0:00 
+0:00 Intro
+0:56 Creating an Array
+6:22 Accessing Array Elements
+10:32 Initialization List
+13:02 Array of Numeric Data
+16:13 Outro
 
 ----
 
