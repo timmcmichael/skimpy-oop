@@ -49,11 +49,18 @@ GitHub Page: https://timmcmichael.github.io/
 
 # 8C - Loops and Arrays in Java
 
-Have arrays been throwing you for a loop? We're going to start from nothing--well, from zero--and make our way through this topic. But be sure to stay in bounds!
+Have arrays been throwing you for a loop? We're going to start from nothing--well, from zero--and make our way through this topic. But be sure to step out of bounds!
 
 In this video, we explore the use of arrays in Java, particularly focusing on how to process them using loops. We cover various types of traversals, including output, accumulation, and modifier traversals, and demonstrate how to handle arrays dynamically by taking user input for array size and elements. Additionally, we discuss techniques for searching within arrays and modifying array elements, as well as iterating through arrays in reverse order or with custom step sizes.
 
 0:00 Intro
+2:45 Basic Output Traversal
+6:25 Accumulation Traversal
+12:40 Search Traversal
+18:40 Array Based on Input
+21:05 Input Traversal
+23:42 Different Kinds of Traversals
+27:55 Outro
 
 ----
 
