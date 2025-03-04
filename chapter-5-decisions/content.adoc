@@ -8,9 +8,6 @@ endif::[]
 
 == 0101 - Decisions
 
-//TODO: Need this "video has more" disclaimer elsewhere?
-*_Note: the videos in this chapter go a little beyond the content in the corresponding sections--they show how to write the code, but also show how to apply some things to our class and object design. If you skip the videos, you might miss information needed for the assignments and/or quiz._*
-
 .Help Make These Materials Better!
 ****
 I am actively working to complete and revise this eBook and the accompanying videos. Please consider using the following link to provide feedback and notify me of typos, mistakes, and suggestions for either the eBook or videos:

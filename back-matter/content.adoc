@@ -6,9 +6,13 @@ ifeval::["{docname}" == "index"]
 :sourcedir: chapter-1/source
 endif::[]
 
+
 == Stuff That's Tacked on the End
 
+:sectnums!:
+
 === Answers to _Check Yourself Before You Wreck Yourself (on the assignments)_ questions
+
 
 ==== Getting Started Chapter
 
@@ -241,3 +245,5 @@ System.out.println("The sum of the scores is " + sum);
 ----
 +
 In this example, the for loop iterates through each element of the scores array, adding each element's value to the sum variable. After the loop completes, the total sum of the array elements is printed.
+
+:sectnums:
