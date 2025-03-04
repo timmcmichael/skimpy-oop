@@ -7,9 +7,6 @@ ifeval::["{docname}" == "index"]
 endif::[]
 
 == 0111 - Debugging and Generative AI
-// TODO: Upload source files to GitHub archive
-
-// === #Content for this module is under construction.#
 
 .Help Make These Materials Better!
 ****
@@ -19,6 +16,7 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 ****
 
 :sectnums!:
+
 === What's the Point?
 
 * Distinguish between compile-time and runtime errors
