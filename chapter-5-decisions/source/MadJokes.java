@@ -8,10 +8,11 @@
  * 10 -> 270.0
  * 11 -> 297.0
  * 
+ * NOTE: This is the completed code at the end of the video.
+ * 
  */
 
 package module04;
-
 
 import java.util.Scanner;
 
@@ -30,9 +31,9 @@ public class MadJokes {
         if (numJokes >= 10) {
             totalPrice = totalPrice * .9; // totalPrice *= .9 - same thing!
         } else {
-            System.out.println("Did you know that if you buy 10 or more jokes, you get a 10% discount? Keep that in mind for your next purchase!");
+            System.out.println(
+                    "Did you know that if you buy 10 or more jokes, you get a 10% discount? Keep that in mind for your next purchase!");
         }
-
 
         System.out.println("The total cost of you joke purchase is $" + totalPrice);
     }

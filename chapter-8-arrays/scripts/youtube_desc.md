@@ -81,6 +81,11 @@ These primitive arrays are a lot of fun and all, but we're fancy-schmancy object
 This video explains using arrays that hold objects in Java, specifically focusing on a custom Dog class. It highlights common challenges new programmers face when dealing with arrays of objects and emphasizes that arrays of objects are similar to arrays of primitive types. The video demonstrates how to instantiate objects and add them to an array, perform traversals, and use getter methods to access object properties. It also covers initialization lists with objects.
 
 0:00 Intro
+1:05 Defining and Populating an Object Array
+3:30 Traversing the Object Array
+5:17 Using an Array Initialization List
+7:08 Calling Instance Methods
+8:50 Outro
 
 ----
 
@@ -100,7 +105,13 @@ I've been wearing my precious little fingers down the bone writing all of these 
 
 In this video, we explore \the "for-each" loop in Java, which traverses a loop without making us use an index. We compare the "for-each" loop with traditional "for" loops, highlighting its advantages and limitations. 
 
-0:00 
+0:00 Intro
+1:13 "For-Each" Syntax
+4:03 Calling Instance Methods
+5:33 Limitations of "For-Each" Loops
+7:32 Using an Accumulator
+8:02 Iterating Through an Array of Primitives
+9:20 Outro
 
 ----
 
