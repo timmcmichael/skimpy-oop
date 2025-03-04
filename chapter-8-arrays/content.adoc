@@ -7,10 +7,6 @@ ifeval::["{docname}" == "index"]
 endif::[]
 
 == 1000 - Arrays
-// TODO: Upload source files to GitHub archive
-
-=== #Content coming soon!#
-// === #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
 
 .Help Make These Materials Better!
 ****
@@ -166,12 +162,14 @@ System.out.println("The sum of the scores is " + sum);
 ****
 Loops and Arrays in Java
 
-// video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/s48mWBeLkuY
 
-// Files from video:
+video::s48mWBeLkuY[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
-// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/ArrayLoops.java[`ArrayLoops.java`^]
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/ArrayLoopsFinished.java[`ArrayLoopsFinished.java`^]
+Files from video:
+
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/ArrayLoops.java[`ArrayLoops.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/ArrayLoopsFinished.java[`ArrayLoopsFinished.java`^]
 
 ****
 
@@ -199,14 +197,17 @@ Our array can hold multiple objects, and each object can have multiple fields--t
 
 .Time to Watch!
 ****
-Putting Objects in Arrays [COMING SOON]
+Putting Objects in Arrays
 
-// video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/S2ufDoBKWx4
 
-// Files from video:
-// * Starter code: // * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/Dog.java[`Dog.java`^]
+video::S2ufDoBKWx4[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/ArrayOfObjects.java[`ArrayOfObjects.java`^]
+Files from video:
+
+* Starter code: // * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/Dog.java[`Dog.java`^]
+
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/ArrayOfObjects.java[`ArrayOfObjects.java`^]
 
 ****
 
@@ -221,13 +222,16 @@ NOTE: The for-each loop is optional. You can always use a traditional for loop t
 
 .Time to Watch!
 ****
-"For-Each" Loops in Java [COMING SOON]
+"For-Each" Loops in Java
 
-// video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/GXVSXNhX2O0
 
-// Files from video:
-// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/ForEachLoop.java[`ForEachLoop.java`^]
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/ForEachLoopFinished.java[`ForEachLoopFinished.java`^]
+video::GXVSXNhX2O0[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+Files from video:
+
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/ForEachLoop.java[`ForEachLoop.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/ForEachLoopFinished.java[`ForEachLoopFinished.java`^]
 ****
 
 
