@@ -69,7 +69,7 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #arrays #array-indexing #data-structures #loops #traverals #algorithms
+#java #coding #beginners #arrays #array-indexing #data-structures #loops #traversals #algorithms
 
 ---------------------
 
@@ -94,7 +94,7 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #arrays #array-indexing #data-structures
+#java #coding #beginners #arrays #array-indexing #data-structures #oop
 
 ---------------------
 
@@ -103,7 +103,7 @@ GitHub Page: https://timmcmichael.github.io/
 
 I've been wearing my precious little fingers down the bone writing all of these traversal loops. I mean, those 'for' loops are just sooooo long. I don't have time to write all of that code! I need a shortcut! Fortunately, lots of programmers want shortcuts, and the Java development team heard our cries. 
 
-In this video, we explore \the "for-each" loop in Java, which traverses a loop without making us use an index. We compare the "for-each" loop with traditional "for" loops, highlighting its advantages and limitations. 
+In this video, we explore the "for-each" loop in Java, which traverses a loop without making us use an index. We compare the "for-each" loop with traditional "for" loops, highlighting its advantages and limitations. 
 
 0:00 Intro
 1:13 "For-Each" Syntax
@@ -120,7 +120,7 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #arrays #array-indexing #data-structures
+#java #coding #beginners #arrays #array-indexing #data-structures #oop
 
 ---------------------
 
