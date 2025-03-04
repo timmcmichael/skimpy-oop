@@ -869,6 +869,38 @@ Another example is a loop that reads user input until a specific sentinel value 
 </ol>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_arrays">11.1.9. Arrays</h4>
+<div class="qlist qanda">
+<ol>
+<li>
+<p><em><strong>What is an array and how does it differ from a single variable?</strong></em></p>
+<p>An array is a data structure that allows you to store multiple pieces of data in a single collection. Unlike a single variable, which can only store one piece of data at a time, an array can hold multiple values, each of which is referred to as an element. Each element in an array is accessed using its unique index, which starts at 0 for the first element and increments by 1 for each subsequent element.</p>
+</li>
+<li>
+<p><em><strong>What is an ArrayIndexOutOfBoundsException and when does it occur?</strong></em></p>
+<p>An <code>ArrayIndexOutOfBoundsException</code> is a runtime error that occurs when you try to access an element at an index that is outside the bounds of the array. This means you are trying to access an index that is either less than 0 or greater than or equal to the length of the array. For example, if an array has 10 elements, valid indices are 0 through 9. Attempting to access the element at index 10 or higher will result in this exception.</p>
+</li>
+<li>
+<p><em><strong>How can loops be used to traverse an array? Provide an example of a for loop that sums the elements of an integer array.</strong></em></p>
+<p>Loops can be used to traverse an array by iterating through each element, performing operations such as reading, modifying, or accumulating values. Here is an example of a for loop that sums the elements of an integer array:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">scores</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-mi">90</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">85</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">95</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">88</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">92</span><span class="tok-p">};</span>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-k">for</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">i</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-n">i</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-n">scores</span><span class="tok-p">.</span><span class="tok-na">length</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-n">i</span><span class="tok-o">++</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">+=</span><span class="tok-w"> </span><span class="tok-n">scores</span><span class="tok-o">[</span><span class="tok-n">i</span><span class="tok-o">]</span><span class="tok-p">;</span>
+<span class="tok-p">}</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;The sum of the scores is &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-p">);</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the for loop iterates through each element of the scores array, adding each element&#8217;s value to the sum variable. After the loop completes, the total sum of the array elements is printed.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
 </div>
 </div>
 </div>
