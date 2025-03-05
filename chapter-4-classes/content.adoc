@@ -74,7 +74,7 @@ Consider a program to handle orders at a restaurant. A simple class to represent
 skinparam classAttributeIconSize 0
 class Order {
    -serverName:String
-   -tableNumber:int
+   -tableNum:int
    -appetizer:String
    -entree:String
    -dessert:String
