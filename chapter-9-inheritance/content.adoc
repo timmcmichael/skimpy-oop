@@ -201,17 +201,23 @@ Arrays of Subclasses in Java [COMING SOON!]
 
 
 '''
-// === Check Yourself Before You Wreck Yourself (on the assignments)
-//
-// ==== Can you answer these questions?
 
-// ****
-// 
-// 1. 
-//
-// 2. 
-//
-// ****
+:sectnums!:
+
+=== Check Yourself Before You Wreck Yourself (on the assignments)
+
+==== Can you answer these questions?
+
+****
+1. What is inheritance in object-oriented programming, and what are its benefits 
+
+2. How do you override a method in a subclass, and why might you want to do this?
+
+3. Explain how to use the `super` keyword in a constructor.
+
+4. Explain how different subclasses can be managed in a single array.
+
+****
 :sectnums:
 // . inheritance overview
 // . overriding
