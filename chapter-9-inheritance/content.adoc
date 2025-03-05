@@ -21,7 +21,11 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 
 :sectnums!:
 === What's the Point?
-* 
+* Design classes using inheritance
+* Use the `extends` keyword to create a subclass
+* Override methods in a subclass
+* Implement constructors in a subclass
+* Use polymorphism to create arrays of subclass objects
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance[GitHub^]._
 
