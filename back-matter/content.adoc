@@ -246,4 +246,17 @@ System.out.println("The sum of the scores is " + sum);
 +
 In this example, the for loop iterates through each element of the scores array, adding each element's value to the sum variable. After the loop completes, the total sum of the array elements is printed.
 
+
+==== Inheritance
+// TODO: Need answers, then copy questions to chapter content
+[qanda]
+*What is inheritance in object-oriented programming, and what are its benefits*::
+
+*How do you override a method in a subclass, and why might you want to do this?*::
+
+*Explain how to use the `super` keyword in a constructor.*::
+
+*Explain how different subclasses can be managed in a single array.*::
+
+
 :sectnums:
