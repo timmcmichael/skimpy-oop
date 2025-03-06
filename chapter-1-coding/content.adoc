@@ -53,7 +53,7 @@ The coach tells the QB "22" and the QB knows which play to run, because they've 
 Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of 22) and the QB would have to know binary numbers (or have them written on his wrist-band thing as a cheatsheet).
 
 Want to take the analogy one step further?
-A player standing on the sideline with his helmet on could represent a 1, and a player with his helmet off could represent a 0.
+A player standing on the sideline with their helmet on could represent a 1, and a player with their helmet off could represent a 0.
 Now the coach could just line up five players and tell the 2nd and 5th ones to take their helmets off.
 The QB could look over, see the pattern of helmets (10110) and run play 22.
 
@@ -144,9 +144,9 @@ Well, I wouldn't argue _much_.
 
 In procedural programming, we break up a program into the tasks we need to complete. 
 Each individual task is handled by a set of statements that we call a *procedure*. 
-If you need to calculate a student's overall course grade, for example, you write a procedure to do it.
+If we need to calculate a student's overall course grade, for example, we write a procedure to do it.
 
-The data for your program--the stuff you're keeping track of--is stored somewhere else. 
+The data for our program--the stuff we're keeping track of--is stored somewhere else. 
 If a procedure needs something to complete its task, that data is sent to the procedure, which then sends back a result. 
 In short, information is kept separate from the code that uses it and is passed back and forth as necessary.
 
@@ -173,10 +173,10 @@ Remember those awful word problems where a train leaves Chicago traveling 40 mph
 That kind of stuff; but in my course, we don't get too caught up in the math part of it.
 But we care *a lot* about understanding the requirements of a program and implementing it successfully.
 
-As your programs become bigger and more complex, you'll need to work within a deliberate design and implementation process in order to keep yourself organized and focused.
-Even the smaller programs you'll develop while learning the basics will benefit from a thoughtful approach beyond just opening a new file and starting to type.
-It ensures that you use your time efficiently.
-And when you are faced with solving a programming problem that really intimidates you, the process will help make the task more approachable.
+As our programs become bigger and more complex, we'll need to work within a deliberate design and implementation process in order to keep ourselves organized and focused.
+Even the smaller programs we'll develop while learning the basics will benefit from a thoughtful approach beyond just opening a new file and starting to type.
+It ensures that we use our time efficiently.
+And when we are faced with solving a programming problem that really intimidates us, the process will help make the task more approachable.
 
 For big or small projects, a good general approach to software development is:
 
@@ -191,9 +191,9 @@ We'll flesh out this process as we go--and as our programs become more advanced.
 
 Enough of that, let's try writing some code.
 
-One of the (valid) criticisms of Java as a choice for beginners is that it's a little complicated to create your first program. 
-In Python, you just open a file and write your first command; in recent versions, C# has added that ability as well.
-But Java puts OOP front and center, and you can't start writing statements until you first define a class.
+One of the (valid) criticisms of Java as a choice for beginners is that it's a little complicated to create our first program. 
+In Python, we just open a file and write our first command; in recent versions, C# has added that ability as well.
+But Java puts OOP front and center, and we can't start writing statements until we first define a class.
 
 
 .Time To Watch!
@@ -233,8 +233,8 @@ Here are the parts of the program:
 <.> End of the `main()` method code block, as indicated by the indenting and closing curly brace.
 <.> End of the class code block.
 
-You'll learn about all of these components as we go.
-But for now, you're off and running!
+We'll learn about all of these components as we go.
+But for now, we're off and running!
 
 === Basic Output
 
@@ -246,7 +246,7 @@ Start start with, we'll use two basic ways to output text to the console: `Syste
 
 This line of code outputs *Mick Jagger* to the console window.
 After `print()` outputs the text in parentheses, the cursor remains at the end of the output.
-This is just like if you type something in a word processor but don't hit enter; the next time you start typing, the characters resume on the same line.
+This is just like if we type something in a word processor but don't hit enter; the next time we start typing, the characters resume on the same line.
 In the same way, the next output statement will continue on the same line in the console.
 
 A `println()` statement works exactly the same way, but it advances the cursor to the next line when it's finished.
@@ -286,26 +286,26 @@ Notice that it doesn't even add a space; if we want a space there, we have to in
 
 Because _*you can't always*_ is in a `println()` statement, the cursor advances and _*get what you want*_ is on a new line.
 
-You'll use `print()` and `println()` in every Java program you write for quite a while, so it's important to take time to experiment with them on your own to make sure you understand how they work.
+We'll use `print()` and `println()` in every Java program we write for quite a while, so it's important to take time to experiment with them on our own to make sure we understand how they work.
 
 === Code Comments
 
-The Java compiler goes through your source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn't understand, which causes it to stop and output an error message).
-It there's something in our source code we don't want the compiler to process, we can identify it as a _code comment_ and the compiler will ignore it.
+The Java compiler goes through our source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn't understand, which causes it to stop and output an error message).
+If there's something in our source code we don't want the compiler to process, we can identify it as a _code comment_ and the compiler will ignore it.
 Code comments are generally used to provide information for any humans who might be looking at the code.
-And since it's ignored by the compiler, it can be written however we want; so your code comments should be written in plain human language (english, if you're submitting it to me).
+And since it's ignored by the compiler, it can be written however we want; so our code comments should be written in plain human language (english, if we're submitting it to me).
 To indicate a comment, use two slashes:
 
 `// This is a comment!`
 
-Once the compiler sees two slashses, it just ignores the rest of the line.
+Once the compiler sees two slashes, it just ignores the rest of the line.
 We can add a comment onto the end of a line of code:
 
 `System.out.println("Hello World"); // this outputs text to the console`
 
-The `println()` statement still gets processed and will execute when we run out program, but everything after the slashes gets ignored.
+The `println()` statement still gets processed and will execute when we run our program, but everything after the slashes gets ignored.
 
-If you want to make a comment that takes up multiple lines, start the comment block with `/*` (that's a slash and an asterisk) and end it with `*/` (asterisk and a slash).
+To make a comment that takes up multiple lines, start the comment block with `/*` (that's a slash and an asterisk) and end it with `*/` (asterisk and a slash).
 When the compiler sees `/*` it will ignore everything until it finds `*/`, and then it will resume processing as usual.
 
 [source,java]
@@ -329,7 +329,7 @@ public class OutputExample {
 
 In general, code comments are used to explain or provide context for our code.
 Programming often involves going back to old code to make updates or corrections.
-Sometimes it's been a long time and you might not remember what the code is supposed to do, or it not be someone different looking at the code and trying to figure it out.
+Maybe it's been a long time and we might not remember what the code is supposed to do, or maybe it's someone different looking at the code and trying to figure it out.
 So code comments should be descriptive, especially when code might be confusing.
 
 TIP: Code comments don't cost anything, so use lots of them!
@@ -342,11 +342,11 @@ Coding is all about trial and error, and programmers spend a lot of time writing
 In a process like that, it's not unusual to delete something only to regret it and wish we could have that old code back.
 
 Code commenting gives us a life hack to help prevent that regret.
-Instead of deleting code that's not working the way you want, you can just mark it as a comment. 
-As far as the compiler is concerned, you've deleted the code.
-But if you want to see or use the code again down the road, it's still there.
+Instead of deleting code that's not working the way we want, we can just mark it as a comment. 
+As far as the compiler is concerned, we've deleted the code.
+But if we want to see or use the code again down the road, it's still there.
 
-TIP: Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Code, highlight a section of code and press *alt-/* (or *&#x2318;-/* on macOS) and VS Code will add `//` at the start of each line. Highlighting a comment and pressing the shortcut again will "uncomment" it and remove the slashes. Other IDEs provide similar functionality.
+TIP: Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Code, highlight a section of code and press *alt-/* (or *⌘-/* on macOS) and VS Code will add `//` at the start of each line. Highlighting a comment and pressing the shortcut again will "uncomment" it and remove the slashes. Other IDEs provide similar functionality.
 
 '''
 

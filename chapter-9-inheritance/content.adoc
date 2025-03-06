@@ -78,11 +78,11 @@ In this example, the `FootballPlayer` class inherits the fields and methods of t
 
 .Time To Watch!
 ****
-Introduction to Inheritance [COMING SOON!]
+Introduction to Inheritance
 
 // https://www.youtube.com/watch?v=LXKXWT0y3oQ
 
-// video::LXKXWT0y3oQ[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::LXKXWT0y3oQ[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 ****
 
 === Implementing Inheritance
@@ -129,18 +129,13 @@ public class FootballPlayer extends Athlete {
 
 .Time To Watch!
 ****
-Extending a Class in Java [COMING SOON!]
+Extending a Class in Java
 
 // https://www.youtube.com/watch?v=HjI19TvQkII
 
-// video::HjI19TvQkII[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::HjI19TvQkII[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Files from video:
-
-
-// Starters: BankAccount and TestAccounts
-// Completed: CheckingAccount and SavingsAccount
-
 
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/BankAccount.java[`BankAccount.java`^]
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/TestAccounts.java[`TestAccounts.java`^]
@@ -245,18 +240,13 @@ For example, we use the `equals()` method when we check if two strings are the s
 
 .Time To Watch!
 ****
-Method Overriding in Java [COMING SOON!]
+Method Overriding in Java
 
 // https://www.youtube.com/watch?v=NFi4uhXK8FM
 
-// video::NFi4uhXK8FM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::NFi4uhXK8FM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Files from video:
-
-// Sample code: Friend, CloseFriend, BestFriend, TestFriends
-
-// Starter code: BankAccount, CheckingAccount, SavingsAccount, TestAccounts
-// Completed code: VIPCheckingAccount
 
 * Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/Friend.java[`Friend.java`^]
 * Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/CloseFriend.java[`CloseFriend.java`^]
@@ -312,15 +302,13 @@ If we don't provide a call to the superclass constructor, Java will automaticall
 
 .Time To Watch!
 ****
-Constructors and Inheritance in Java [COMING SOON!]
+Constructors and Inheritance in Java
 
 // https://www.youtube.com/watch?v=IFTod6pc7Go
 
-// video::IFTod6pc7Go[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// Files from video:
+video::IFTod6pc7Go[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
-// Starters: BankAccount, CheckingAccount, SavingsAccount, TestAccounts
-// Completed: CheckingAccountFinished
+Files from video:
 
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/BankAccount.java[`BankAccount.java`^]
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/CheckingAccount.java[`CheckingAccount.java`^]
@@ -351,14 +339,13 @@ This means that we can call the `run()` method on any object in the array, but w
 
 .Time To Watch!
 ****
-Arrays of Subclasses in Java [COMING SOON!]
+Arrays of Subclasses in Java
 
 // https://www.youtube.com/watch?v=7sBbGqkEr0Q
 
-// video::7sBbGqkEr0Q[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// Files from video:
+video::7sBbGqkEr0Q[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
-// Starters: BankAccount, CheckingAccount, SavingsAccount, InheritanceArrays.java
+Files from video:
 
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/BankAccount.java[`BankAccount.java`^]
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/CheckingAccount.java[`CheckingAccount.java`^]
