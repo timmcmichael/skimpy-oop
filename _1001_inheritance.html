@@ -547,19 +547,17 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </li>
 <li><a href="_1001_inheritance.html"><span class="toc-current">9. 1001 - Inheritance</span></a>
 <ul class="sectlevel2">
-<li><a href="_1001_inheritance.html#_content_coming_soon">9.1. <mark>Content coming soon!</mark></a>
-</li>
 <li><a href="_1001_inheritance.html#_whats_the_point_10">What&#8217;s the Point?</a>
 </li>
-<li><a href="_1001_inheritance.html#_inheritance_overview">9.2. Inheritance Overview</a>
+<li><a href="_1001_inheritance.html#_inheritance_overview">9.1. Inheritance Overview</a>
 </li>
-<li><a href="_1001_inheritance.html#_implementing_inheritance">9.3. Implementing Inheritance</a>
+<li><a href="_1001_inheritance.html#_implementing_inheritance">9.2. Implementing Inheritance</a>
 </li>
-<li><a href="_1001_inheritance.html#_inheritance_hierarchies_and_overriding">9.4. Inheritance Hierarchies and Overriding</a>
+<li><a href="_1001_inheritance.html#_inheritance_hierarchies_and_overriding">9.3. Inheritance Hierarchies and Overriding</a>
 </li>
-<li><a href="_1001_inheritance.html#_constructors_inheritance">9.5. Constructors &amp; Inheritance</a>
+<li><a href="_1001_inheritance.html#_constructors_inheritance">9.4. Constructors &amp; Inheritance</a>
 </li>
-<li><a href="_1001_inheritance.html#_introduction_to_polymorphism">9.6. Introduction to Polymorphism</a>
+<li><a href="_1001_inheritance.html#_introduction_to_polymorphism">9.5. Introduction to Polymorphism</a>
 </li>
 <li><a href="_1001_inheritance.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_10">Check Yourself Before You Wreck Yourself (on the assignments)</a>
 </li>
@@ -576,8 +574,6 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <div class="sect1">
 <h2 id="_1001_inheritance">9. 1001 - Inheritance</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_content_coming_soon">9.1. <mark>Content coming soon!</mark></h3>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Help Make These Materials Better!</div>
@@ -586,7 +582,6 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </div>
 <div class="paragraph">
 <p><a href="https://forms.gle/4173pZ1yPuNX7pku6" target="_blank" rel="noopener">CIS150AB Course Materials Feedback (Google Form)</a></p>
-</div>
 </div>
 </div>
 </div>
@@ -617,14 +612,14 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_inheritance_overview">9.2. Inheritance Overview</h3>
+<h3 id="_inheritance_overview">9.1. Inheritance Overview</h3>
 <div class="paragraph">
-<p>Inheritance is a core object-oriented programming concept that allows you reuse code from one class&#8212;&#8203;known as a <em>parent class</em>--in a new class, which we call a <em>child class</em>.
+<p>Inheritance is a core object-oriented programming concept that allows us to reuse code from one class&#8212;&#8203;known as a <em>parent class</em>--in a new class, which we call a <em>child class</em>.
 In the same way that people can inherit traits from their parents, child classes inherit the attributes and behaviors of their parent classes.
 This means that a child class automatically has all of the fields and methods of a parent class, and just like people, a child class can also have its own unique fields and methods.</p>
 </div>
 <div class="paragraph">
-<p>Though there are other ways to think about inheritance, I encourage students to think of it as a way to create a class that is a more specific version of another class. For example, if you have a class called <code>Athlete</code>, you could create a child class called <code>FootballPlayer</code>.
+<p>Though there are other ways to think about inheritance, I encourage students to think of it as a way to create a class that is a more specific version of another class. For example, if we have a class called <code>Athlete</code>, we can create a child class called <code>FootballPlayer</code>.
 A <code>FootballPlayer</code> is a type of <code>Athlete</code>, and there might be other types of athletes that are not football players: gymnasts, tennis players, and so on.</p>
 </div>
 <div class="admonitionblock tip">
@@ -661,12 +656,12 @@ We can think of inheritance as an "is-a" relationship: a <code>House</code> <em>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_implementing_inheritance">9.3. Implementing Inheritance</h3>
+<h3 id="_implementing_inheritance">9.2. Implementing Inheritance</h3>
 <div class="paragraph">
 <p>When we move from a design in UML to writing actual code&#8212;&#8203;which we refer to as <em>implementation</em>--we use different terms to describe the relationships between classes.</p>
 </div>
 <div class="paragraph">
-<p>A parent class becomes a <em>superclass</em>, and a child class becomes a <em>subclass</em>. You also hear the terms <em>base class</em> and <em>derived class</em> to describe the same relationship, especially in other programming languages.</p>
+<p>A parent class becomes a <em>superclass</em>, and a child class becomes a <em>subclass</em>. You may also hear the terms <em>base class</em> and <em>derived class</em> to describe the same relationship, especially in other programming languages.</p>
 </div>
 <div class="paragraph">
 <p>In Java, we use the <code>extends</code> keyword to indicate that one class is a subclass of another class. Here&#8217;s an example of a <code>FootballPlayer</code> class that extends the <code>Athlete</code> class:</p>
@@ -715,7 +710,7 @@ We can think of inheritance as an "is-a" relationship: a <code>House</code> <em>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_inheritance_hierarchies_and_overriding">9.4. Inheritance Hierarchies and Overriding</h3>
+<h3 id="_inheritance_hierarchies_and_overriding">9.3. Inheritance Hierarchies and Overriding</h3>
 <div class="paragraph">
 <p>When we extend a class, we are building an <em>inheritance hierarchy</em>.
 This is a tree-like structure where each class has only one parent class (such as our <code>Athlete</code> class), but can have multiple child classes (like <code>FootballPlayer</code> and <code>TennisPlayer</code>).</p>
@@ -727,10 +722,10 @@ This is a tree-like structure where each class has only one parent class (such a
 <div class="title">Figure 9. Inheritance hierarchy for the <code>Athlete</code> class</div>
 </div>
 <div class="paragraph">
-<p>When a method is called on an object, java begins by looking for that method in the object&#8217;s class.
+<p>When a method is called on an object, Java begins by looking for that method in the object&#8217;s class.
 If it doesn&#8217;t find the method there, it looks in the superclass.
-If there&#8217;s no method in there it goes to <strong>that</strong> class&#8217;s superclass, and so on up the hierarchy.
-If it gets to the top of the hierarchy and still hasn&#8217;t found the method, the code won&#8217;t compile.</p>
+If there&#8217;s no method in there, it goes to <strong>that</strong> class&#8217;s superclass, and so on up the hierarchy.
+If it gets to the top of the hierarchy and still hasn&#8217;t found the method, the code will not compile.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -752,11 +747,11 @@ If it gets to the top of the hierarchy and still hasn&#8217;t found the method, 
 </table>
 </div>
 <div class="paragraph">
-<p>In some cases, you might want to provide a different implementation of a method in a subclass. This is called <em>method overriding</em>. Because the compiler starts at the bottom of the inheritance hierarchy and works its way up, it will use the overridden method in the subclass instead of the method in the superclass.</p>
+<p>In some cases, we might want to provide a different implementation of a method in a subclass. This is called <em>method overriding</em>. Because the compiler starts at the bottom of the inheritance hierarchy and works its way up, it will use the overridden method in the subclass instead of the method in the superclass.</p>
 </div>
 <div class="paragraph">
-<p>If a <code>TennisPlayer</code> has a specific way of running that is different from the way an <code>Athlete</code> runs, you can override the <code>run()</code> method in the <code>TennisPlayer</code> class.
-The <code>FootballPlayer</code> class will still use the <code>run()</code> method from the <code>Athlete</code> class, unless you override it in the <code>FootballPlayer</code> class as well.</p>
+<p>If a <code>TennisPlayer</code> has a specific way of running that is different from the way an <code>Athlete</code> runs, we can override the <code>run()</code> method in the <code>TennisPlayer</code> class.
+The <code>FootballPlayer</code> class will still use the <code>run()</code> method from the <code>Athlete</code> class, unless we override it in the <code>FootballPlayer</code> class as well.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -792,7 +787,7 @@ The <code>@Override</code> annotation is optional, but it&#8217;s a good idea to
 </table>
 </div>
 <div class="sect3">
-<h4 id="_the_object_class">9.4.1. The <code>Object</code> Class</h4>
+<h4 id="_the_object_class">9.3.1. The <code>Object</code> Class</h4>
 <div class="paragraph">
 <p>In Java, every class is a subclass of the <code>Object</code> class.
 This means that every class that does not explicitly extend another class is a subclass of <code>Object</code>.
@@ -803,7 +798,7 @@ The result is that <code>Object</code> is at the top of the inheritance hierarch
 This method returns a <code>String</code> representation of the object.</p>
 </div>
 <div class="paragraph">
-<p>The compiler will automatically call the <code>toString()</code> method when you try to print an object:</p>
+<p>The compiler will automatically call the <code>toString()</code> method when we try to print an object:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -834,7 +829,7 @@ A common practice is to return a string that includes the values of the object&#
 </div>
 <div class="paragraph">
 <p>Now when we print a <code>TennisPlayer</code> object, we will see a string that looks something like this: <code>TennisPlayer{dominantHand='right', rank=1}</code>.
-However, you can return any information you want in the <code>toString()</code> method, so you can customize it to fit your needs.</p>
+However, we can return any information we want in the <code>toString()</code> method, so we can customize it to fit our needs.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -850,7 +845,7 @@ The <code>toString()</code> method is used in many places in Java, so it&#8217;s
 </div>
 <div class="paragraph">
 <p>The <code>Object</code> class also provides other methods, such as <code>equals()</code>, which is used to compare two objects for equality.
-For example, you use the <code>equals()</code> method when you check if two strings are the same, like this: <code>if (bestSchool.equals("EMCC"))</code>.</p>
+For example, we use the <code>equals()</code> method when we check if two strings are the same, like this: <code>if (bestSchool.equals("EMCC"))</code>.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -863,16 +858,16 @@ For example, you use the <code>equals()</code> method when you check if two stri
 </div>
 </div>
 <div class="sect2">
-<h3 id="_constructors_inheritance">9.5. Constructors &amp; Inheritance</h3>
+<h3 id="_constructors_inheritance">9.4. Constructors &amp; Inheritance</h3>
 <div class="paragraph">
-<p>As we&#8217;ve seen, when you create an object of a class, Java automatically calls the class&#8217;s constructor to initialize the object.
-When you create an object of a subclass, Java will call the constructor of the superclass first, and then the constructor of the subclass.
-Remember that the compiler will create default constructors for you if you don&#8217;t provide any, but if you do provide a constructor, the compiler will not create a default constructor.
-Things work pretty smoothly when using default or parameterless constructors.</p>
+<p>As we&#8217;ve seen, when we create an object of a class, Java automatically calls the class&#8217;s constructor to initialize the object.
+When we create an object of a subclass, Java will call the constructor of the superclass first, and then the constructor of the subclass.
+Remember that the compiler will create default constructors for us if we don&#8217;t provide any, but if we do provide a constructor, the compiler will not create a default constructor.
+Things are pretty straightforward when using default or parameterless constructors.</p>
 </div>
 <div class="paragraph">
-<p>However, if you provide a constructor with parameters in the superclass, you need to make sure that the subclass constructor calls the superclass constructor and provides values for the parameters.
-To <em>explicitly</em> call the superclass constructor, you use the <code>super</code> keyword.</p>
+<p>However, if we provide a constructor with parameters in the superclass, we need to make sure that the subclass constructor calls the superclass constructor and provides values for the parameters.
+To <em>explicitly</em> call the superclass constructor, use the <code>super</code> keyword.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -909,8 +904,8 @@ To <em>explicitly</em> call the superclass constructor, you use the <code>super<
 </table>
 </div>
 <div class="paragraph">
-<p>The superclass constructor call must be the first statement in the subclass constructor, so you can&#8217;t have any other code before it.
-If you don&#8217;t provide a call to the superclass constructor, Java will automatically call the superclass&#8217;s default/parameterless constructor, which may not be what you want.</p>
+<p>The superclass constructor call must be the first statement in the subclass constructor, so we can&#8217;t have any other code before it.
+If we don&#8217;t provide a call to the superclass constructor, Java will automatically call the superclass&#8217;s default/parameterless constructor, which may not be what we want.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -922,9 +917,9 @@ If you don&#8217;t provide a call to the superclass constructor, Java will autom
 </div>
 </div>
 <div class="sect2">
-<h3 id="_introduction_to_polymorphism">9.6. Introduction to Polymorphism</h3>
+<h3 id="_introduction_to_polymorphism">9.5. Introduction to Polymorphism</h3>
 <div class="paragraph">
-<p>Polymorphism is a powerful concept in object-oriented programming that allows you to treat objects of different classes as if they were objects of a common superclass.
+<p>Polymorphism is a powerful concept in object-oriented programming that allows us to treat objects of different classes as if they were objects of a common superclass.
 It can be difficult for inexperienced programmers to recognize all of the ways that polymorphism can be used, but one of the most common uses is to create arrays of objects of different subclasses.</p>
 </div>
 <div class="paragraph">
@@ -940,8 +935,8 @@ This is possible because every <code>FootballPlayer</code> <em>is an</em> <code>
 </div>
 </div>
 <div class="paragraph">
-<p>When we access an object in the array, we can only use the methods that are available in the <code>Athlete</code> class (unless you use something called <em>casting</em>, which is beyond our scope here).
-This means that we can call the <code>run()</code> method on any object in the array, but we can&#8217;t call and anyclass methods like <code>tackle()</code> in the <code>FootballPlayer</code> class or <code>serve()</code> in the <code>TennisPlayer</code> class.</p>
+<p>When we access an object in the array, we can only use the methods that are available in the <code>Athlete</code> class (unless we use something called <em>casting</em>, which is beyond our scope here).
+This means that we can call the <code>run()</code> method on any object in the array, but we can&#8217;t call and any subclassclass methods like <code>tackle()</code> in  <code>FootballPlayer</code> or <code>serve()</code> in <code>TennisPlayer</code>.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -987,7 +982,7 @@ This means that we can call the <code>run()</code> method on any object in the a
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-04 05:58:06 -0700
+Last updated 2025-03-05 19:44:56 -0700
 </div>
 </div>
 </body>

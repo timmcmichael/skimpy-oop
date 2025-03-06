@@ -7,7 +7,6 @@ ifeval::["{docname}" == "index"]
 endif::[]
 
 == 1001 - Inheritance
-// TODO: Upload source files to GitHub archive
 
 .Help Make These Materials Better!
 ****
