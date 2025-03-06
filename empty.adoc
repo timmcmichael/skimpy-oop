@@ -15,6 +15,7 @@ endif::[]
 
 
 .Example: Class Diagram
+// Image rendered at plantuml.com with the following code:
 [plantuml, format=svg]
 ----
 @startuml

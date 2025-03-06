@@ -68,23 +68,25 @@ The UML standards are extensive, but we'll be using a simplified version in this
 Consider a program to handle orders at a restaurant. A simple class to represent on person's order might look like this:
 
 .Example of a class diagram for a restaurant order
-[plantuml, target="OrderDiagram", format=png]
-----
-@startuml
-skinparam classAttributeIconSize 0
-class Order {
-   -serverName:String
-   -tableNum:int
-   -appetizer:String
-   -entree:String
-   -dessert:String
-   -totalPrice:double
-   +void sendToKitchen()
-   +void printBill()
-   +double closeBill()
-}
-@enduml
-----
+image::OrderDiagram.png["Class diagram for the `Order` class"]
+// Image rendered at plantuml.com with the following code:
+// [plantuml, target="OrderDiagram", format=png]
+// ----
+// @startuml
+// skinparam classAttributeIconSize 0
+// class Order {
+//    -serverName:String
+//    -tableNum:int
+//    -appetizer:String
+//    -entree:String
+//    -dessert:String
+//    -totalPrice:double
+//    +void sendToKitchen()
+//    +void printBill()
+//    +double closeBill()
+// }
+// @enduml
+// ----
 
 The top section of the diagram has the name of the class, which is `Order`.
 The next section is for the attributes of the class--the information the class will store. This example has attributes for the server's name, the table number, the items ordered, and the total price.
@@ -129,21 +131,23 @@ And that's what we're here to learn.
 We'll look at a program to keep rudimentary weather records; for a single day's weather data, we'll have a class called `WeatherRecord`.
 
 .Class diagram for the `WeatherRecord` class
-[plantuml, target="WeatherRecordDiagram", format=png]
-----
-@startuml
-skinparam classAttributeIconSize 0
-class WeatherRecord {
-   -date:String
-   -highTemp:int
-   -avgWindspeed:int
-   +setDate(String):void
-   +setHighTemp(int):void
-   +setAvgWindspeed(int):void
-   +displayData():void
-}
-@enduml
-----
+image::WeatherRecordDiagram.png["Class diagram for the `WeatherRecord` class"]
+// Image rendered at plantuml.com with the following code:
+// [plantuml, target="WeatherRecordDiagram", format=png]
+// ----
+// @startuml
+// skinparam classAttributeIconSize 0
+// class WeatherRecord {
+//    -date:String
+//    -highTemp:int
+//    -avgWindspeed:int
+//    +setDate(String):void
+//    +setHighTemp(int):void
+//    +setAvgWindspeed(int):void
+//    +displayData():void
+// }
+// @enduml
+// ----
 
 To implement this class in code, we'll start with a class header. The class header always follows the same pattern: an *access modifier*, the keyword `class`, and the name of the class.
 The class header is followed by a code block, enclosed in curly braces.
