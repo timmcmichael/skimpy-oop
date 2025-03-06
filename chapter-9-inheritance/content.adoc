@@ -27,7 +27,6 @@ _Source code examples from this chapter and associated videos are available on h
 
 :sectnums:
 '''
-// #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
 
 === Inheritance Overview
 
@@ -82,10 +81,6 @@ In this example, the `FootballPlayer` class inherits the fields and methods of t
 Introduction to Inheritance [COMING SOON!]
 
 // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// Files from video:
-
-// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
 ****
 
 === Implementing Inheritance
@@ -128,20 +123,25 @@ public class FootballPlayer extends Athlete {
         System.out.println("Passing!");
     }
 }
-----    
+----
 
 .Time To Watch!
 ****
 Extending a Class in Java [COMING SOON!]
 
 // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// Files from video:
+
+Files from video:
 
 
 // Starters: BankAccount and TestAccounts
 // Completed: CheckingAccount and SavingsAccount
-// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+
+
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/BankAccount.java[`BankAccount.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/TestAccounts.java[`TestAccounts.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/CheckingAccount.java[`CheckingAccount.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/SavingsAccount.java[`SavingsAccount.java`^]
 ****
 
 === Inheritance Hierarchies and Overriding
@@ -244,16 +244,24 @@ For example, we use the `equals()` method when we check if two strings are the s
 Method Overriding in Java [COMING SOON!]
 
 // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
-// Files from video:
 
+Files from video:
 
 // Sample code: Friend, CloseFriend, BestFriend, TestFriends
 
 // Starter code: BankAccount, CheckingAccount, SavingsAccount, TestAccounts
-// Completed code: VIPCheckingAccount 
+// Completed code: VIPCheckingAccount
 
-// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/Friend.java[`Friend.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/CloseFriend.java[`CloseFriend.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/BestFriend.java[`BestFriend.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/TestFriend.java[`TestFriend.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/BankAccount.java[`BankAccount.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/CheckingAccount.java[`CheckingAccount.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/SavingsAccount.java[`SavingsAccount.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/TestAccounts.java[`TestAccounts.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/VIPCheckingAccount.java[`VIPCheckingAccount.java`^]
+
 ****
 
 === Constructors & Inheritance
@@ -306,8 +314,11 @@ Constructors and Inheritance in Java [COMING SOON!]
 // Starters: BankAccount, CheckingAccount, SavingsAccount, TestAccounts
 // Completed: CheckingAccountFinished
 
-// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/BankAccount.java[`BankAccount.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/CheckingAccount.java[`CheckingAccount.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/SavingsAccount.java[`SavingsAccount.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/TestAccounts.java[`TestAccounts.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/CheckingAccountFinished.java[`CheckingAccountFinished.java`^]
 ****
 
 === Introduction to Polymorphism
@@ -338,8 +349,12 @@ Arrays of Subclasses in Java [COMING SOON!]
 // Files from video:
 
 // Starters: BankAccount, CheckingAccount, SavingsAccount, InheritanceArrays.java
-// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/BankAccount.java[`BankAccount.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/CheckingAccount.java[`CheckingAccount.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/SavingsAccount.java[`SavingsAccount.java`^]
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance/InheritanceArrays.java[`InheritanceArrays.java`^]
+
 ****
 
 
