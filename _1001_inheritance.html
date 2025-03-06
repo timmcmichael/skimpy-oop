@@ -720,6 +720,12 @@ We can think of inheritance as an "is-a" relationship: a <code>House</code> <em>
 <p>When we extend a class, we are building an <em>inheritance hierarchy</em>.
 This is a tree-like structure where each class has only one parent class (such as our <code>Athlete</code> class), but can have multiple child classes (like <code>FootballPlayer</code> and <code>TennisPlayer</code>).</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="chapter-9-inheritance/images/AthleteDiagram.png" alt="Inheritance hierarchy for the `Athlete` class" width="]">
+</div>
+<div class="title">Figure 9. Inheritance hierarchy for the <code>Athlete</code> class</div>
+</div>
 <div class="paragraph">
 <p>When a method is called on an object, java begins by looking for that method in the object&#8217;s class.
 If it doesn&#8217;t find the method there, it looks in the superclass.
@@ -746,10 +752,106 @@ If it gets to the top of the hierarchy and still hasn&#8217;t found the method, 
 </table>
 </div>
 <div class="paragraph">
-<p>When a subclass has a method with the same name as a method in the superclass, we say that the subclass <em>overrides</em> the method.</p>
+<p>In some cases, you might want to provide a different implementation of a method in a subclass. This is called <em>method overriding</em>. Because the compiler starts at the bottom of the inheritance hierarchy and works its way up, it will use the overridden method in the subclass instead of the method in the superclass.</p>
+</div>
+<div class="paragraph">
+<p>If a <code>TennisPlayer</code> has a specific way of running that is different from the way an <code>Athlete</code> runs, you can override the <code>run()</code> method in the <code>TennisPlayer</code> class.
+The <code>FootballPlayer</code> class will still use the <code>run()</code> method from the <code>Athlete</code> class, unless you override it in the <code>FootballPlayer</code> class as well.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">TennisPlayer</span><span class="tok-w"> </span><span class="tok-kd">extends</span><span class="tok-w"> </span><span class="tok-n">Athlete</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">dominantHand</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">rank</span><span class="tok-p">;</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">serve</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Serving!&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">volley</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Volleying!&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+
+<span class="tok-w">    </span><span class="tok-nd">@Override</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">run</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Running like a tennis player!&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The <code>@Override</code> annotation is optional, but it&#8217;s a good idea to use it. It tells the compiler that you intend to override a method from the superclass. If you make a mistake in the method signature, the compiler will let you know.
+</td>
+</tr>
+</table>
 </div>
 <div class="sect3">
-<h4 id="_the_object_class">9.4.1. The Object Class</h4>
+<h4 id="_the_object_class">9.4.1. The <code>Object</code> Class</h4>
+<div class="paragraph">
+<p>In Java, every class is a subclass of the <code>Object</code> class.
+This means that every class that does not explicitly extend another class is a subclass of <code>Object</code>.
+The result is that <code>Object</code> is at the top of the inheritance hierarchy for all Java classes&#8212;&#8203;and every object inherits the methods in the <code>Object</code> class.</p>
+</div>
+<div class="paragraph">
+<p>The <code>Object</code> class provides a handful of methods, but there is one that is particularly useful at this stage of our learning: the <code>toString()</code> method.
+This method returns a <code>String</code> representation of the object.</p>
+</div>
+<div class="paragraph">
+<p>The compiler will automatically call the <code>toString()</code> method when you try to print an object:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">TennisPlayer</span><span class="tok-w"> </span><span class="tok-n">serena</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">TennisPlayer</span><span class="tok-p">();</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">serena</span><span class="tok-p">);</span>
+<span class="tok-c1">// Compiler changes this to: System.out.println(serena.toString());</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Since <code>TennisPlayer</code> does not have an implementation of the <code>toString()</code> method, the compiler will work up the inheritance hierarchy until it finds an implementation in the <code>Object</code> class.
+The default implementation of <code>toString()</code> in the <code>Object</code> class returns a string that includes the class name and the memory address of the object, which looks something like this: <code>TennisPlayer@15db9742</code>.</p>
+</div>
+<div class="paragraph">
+<p>This is probably not very useful to us, but we can override the <code>toString()</code> method in our <code>TennisPlayer</code> class to provide a more meaningful representation of the object.
+A common practice is to return a string that includes the values of the object&#8217;s fields.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of overriding the <code>toString()</code> method in the <code>TennisPlayer</code> class</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-nd">@Override</span>
+<span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">toString</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;TennisPlayer{&quot;</span><span class="tok-w"> </span><span class="tok-o">+</span>
+<span class="tok-w">            </span><span class="tok-s">&quot;dominantHand=&#39;&quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">dominantHand</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-sc">&#39;\&#39;&#39;</span><span class="tok-w"> </span><span class="tok-o">+</span>
+<span class="tok-w">            </span><span class="tok-s">&quot;, rank=&quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">rank</span><span class="tok-w"> </span><span class="tok-o">+</span>
+<span class="tok-w">            </span><span class="tok-sc">&#39;}&#39;</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now when we print a <code>TennisPlayer</code> object, we will see a string that looks something like this: <code>TennisPlayer{dominantHand='right', rank=1}</code>.
+However, you can return any information you want in the <code>toString()</code> method, so you can customize it to fit your needs.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The <code>toString()</code> method is used in many places in Java, so it&#8217;s a good idea to override it in your classes to provide a more meaningful representation of your objects.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The <code>Object</code> class also provides other methods, such as <code>equals()</code>, which is used to compare two objects for equality.
+For example, you use the <code>equals()</code> method when you check if two strings are the same, like this: <code>if (bestSchool.equals("EMCC"))</code>.</p>
+</div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Time To Watch!</div>
@@ -762,6 +864,54 @@ If it gets to the top of the hierarchy and still hasn&#8217;t found the method, 
 </div>
 <div class="sect2">
 <h3 id="_constructors_inheritance">9.5. Constructors &amp; Inheritance</h3>
+<div class="paragraph">
+<p>As we&#8217;ve seen, when you create an object of a class, Java automatically calls the class&#8217;s constructor to initialize the object.
+When you create an object of a subclass, Java will call the constructor of the superclass first, and then the constructor of the subclass.
+Remember that the compiler will create default constructors for you if you don&#8217;t provide any, but if you do provide a constructor, the compiler will not create a default constructor.
+Things work pretty smoothly when using default or parameterless constructors.</p>
+</div>
+<div class="paragraph">
+<p>However, if you provide a constructor with parameters in the superclass, you need to make sure that the subclass constructor calls the superclass constructor and provides values for the parameters.
+To <em>explicitly</em> call the superclass constructor, you use the <code>super</code> keyword.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">Athlete</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">athleteName</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">weight</span><span class="tok-p">;</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-nf">Athlete</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">athleteName</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">weight</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">athleteName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">athleteName</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">weight</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">weight</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span>
+
+<span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">FootballPlayer</span><span class="tok-w"> </span><span class="tok-kd">extends</span><span class="tok-w"> </span><span class="tok-n">Athlete</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">teamName</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">position</span><span class="tok-p">;</span>
+
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-nf">FootballPlayer</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">athleteName</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">weight</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">teamName</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">position</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-kd">super</span><span class="tok-p">(</span><span class="tok-n">athleteName</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-n">weight</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">teamName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">teamName</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">position</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">position</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The <code>super</code> keyword is used to call the superclass constructor. Since the <code>Athlete</code> class constructor requires three parameters, we need to provide values for those parameters here.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The superclass constructor call must be the first statement in the subclass constructor, so you can&#8217;t have any other code before it.
+If you don&#8217;t provide a call to the superclass constructor, Java will automatically call the superclass&#8217;s default/parameterless constructor, which may not be what you want.</p>
+</div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Time To Watch!</div>
@@ -773,6 +923,26 @@ If it gets to the top of the hierarchy and still hasn&#8217;t found the method, 
 </div>
 <div class="sect2">
 <h3 id="_introduction_to_polymorphism">9.6. Introduction to Polymorphism</h3>
+<div class="paragraph">
+<p>Polymorphism is a powerful concept in object-oriented programming that allows you to treat objects of different classes as if they were objects of a common superclass.
+It can be difficult for inexperienced programmers to recognize all of the ways that polymorphism can be used, but one of the most common uses is to create arrays of objects of different subclasses.</p>
+</div>
+<div class="paragraph">
+<p>This means that we can create an array of <code>Athlete</code> objects, and we can use it to store objects of the <code>Athlete</code> class, the <code>FootballPlayer</code> class, and the <code>TennisPlayer</code> class.
+This is possible because every <code>FootballPlayer</code> <em>is an</em> <code>Athlete</code>, and every <code>TennisPlayer</code> <em>is an</em> <code>Athlete</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">Athlete</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">athletes</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">Athlete</span><span class="tok-o">[</span><span class="tok-mi">3</span><span class="tok-o">]</span><span class="tok-p">;</span>
+<span class="tok-n">athletes</span><span class="tok-o">[</span><span class="tok-mi">0</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">Athlete</span><span class="tok-p">(</span><span class="tok-s">&quot;Alice&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">25</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">150</span><span class="tok-p">);</span>
+<span class="tok-n">athletes</span><span class="tok-o">[</span><span class="tok-mi">1</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">FootballPlayer</span><span class="tok-p">(</span><span class="tok-s">&quot;Bob&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">30</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">200</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-s">&quot;Broncos&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-s">&quot;Quarterback&quot;</span><span class="tok-p">);</span>
+<span class="tok-n">athletes</span><span class="tok-o">[</span><span class="tok-mi">2</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">TennisPlayer</span><span class="tok-p">(</span><span class="tok-s">&quot;Charlie&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">175</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-s">&quot;right&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">1</span><span class="tok-p">);</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When we access an object in the array, we can only use the methods that are available in the <code>Athlete</code> class (unless you use something called <em>casting</em>, which is beyond our scope here).
+This means that we can call the <code>run()</code> method on any object in the array, but we can&#8217;t call and anyclass methods like <code>tackle()</code> in the <code>FootballPlayer</code> class or <code>serve()</code> in the <code>TennisPlayer</code> class.</p>
+</div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Time To Watch!</div>

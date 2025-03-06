@@ -6,6 +6,12 @@ public class Athlete {
     private int age;
     private int weight;
 
+    public Athlete(String athleteName, int age, int weight) {
+        this.athleteName = athleteName;
+        this.age = age;
+        this.weight = weight;
+    }
+
     public void run() {
         System.out.println("Running!");
     }

@@ -1,5 +1,5 @@
 /*
- * This subclass of Athlete represents a tennis player. It implements two specific fields, two new methods, and overrides the run() method.
+ * This subclass of Athlete represents a tennis player. It implements two specific fields, two new methods, and overrides the run() and toString() methods.
  */
 public class TennisPlayer extends Athlete {
     private String dominantHand;
@@ -16,5 +16,13 @@ public class TennisPlayer extends Athlete {
     @Override
     public void run() {
         System.out.println("Running like a tennis player!");
+    }
+
+    @Override
+    public String toString() {
+        return "TennisPlayer{" +
+                "dominantHand='" + dominantHand + '\'' +
+                ", rank=" + rank +
+                '}';
     }
 }
