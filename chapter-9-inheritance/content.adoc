@@ -7,10 +7,6 @@ ifeval::["{docname}" == "index"]
 endif::[]
 
 == 1001 - Inheritance
-// TODO: Upload source files to GitHub archive
-
-=== #Content coming soon!#
-// === #Content for this module is under construction. For now, the section headers below direct you to the corresponding chapter in our required textbook so that you can start right away.#
 
 .Help Make These Materials Better!
 ****
@@ -21,7 +17,11 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 
 :sectnums!:
 === What's the Point?
-* 
+* Design classes using inheritance
+* Use the `extends` keyword to create a subclass
+* Override methods in a subclass
+* Implement constructors in a subclass
+* Use polymorphism to create arrays of subclass objects
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/09%20Inheritance[GitHub^]._
 
@@ -29,29 +29,336 @@ _Source code examples from this chapter and associated videos are available on h
 '''
 // #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
 
-=== Inheritance Design
+=== Inheritance Overview
+
+Inheritance is a core object-oriented programming concept that allows us to reuse code from one class--known as a _parent class_--in a new class, which we call a _child class_.
+In the same way that people can inherit traits from their parents, child classes inherit the attributes and behaviors of their parent classes. 
+This means that a child class automatically has all of the fields and methods of a parent class, and just like people, a child class can also have its own unique fields and methods.
+
+Though there are other ways to think about inheritance, I encourage students to think of it as a way to create a class that is a more specific version of another class. For example, if we have a class called `Athlete`, we can create a child class called `FootballPlayer`.
+A `FootballPlayer` is a type of `Athlete`, and there might be other types of athletes that are not football players: gymnasts, tennis players, and so on.
+
+TIP: We can think of inheritance as an "is-a" relationship: a `House` _is a_ `Building`, for example. When deciding whether to use inheritance, ask yourself if the child class _is a_ type of the parent class. We call this the _is-a test_.
+
+When we design classes in UML, we use an arrow to indicate inheritance. The arrow points from the child class to the parent class.
+
+.Example of an `Athlete` parent class with two child classes, `FootballPlayer` and `TennisPlayer`
+image::AthleteDiagram.png["Class diagram for the `Athlete` class and two child classes, `FootballPlayer` and `TennisPlayer`"]
+
+// Image rendered at plantuml.com with the following code:
+// [plantuml, target="AthleteDiagram", format=png]
+// ----
+// @startuml
+// skinparam classAttributeIconSize 0
+// class Athlete {
+//    -athleteName:String
+//    -age:int
+//    -weight:int
+//    +void run()
+//    +void jump()
+//    +void throwBall()
+// }
+// class FootballPlayer {
+//    -teamName:String
+//    -position:String
+//    +void tackle()
+//    +void pass()
+// }
+// class TennisPlayer {
+//     -dominantHand:String
+//     -rank:int
+//     +void serve()
+//     +void volley()
+// }
+// Athlete <|-- FootballPlayer
+// Athlete <|-- TennisPlayer
+// @enduml
+// ----
+
+In this example, the `FootballPlayer` class inherits the fields and methods of the `Athlete` class, so we don't have to rewrite those, and then it adds on its own unique fields and methods, like `teamName` and `position`.
+
+.Time To Watch!
+****
+Introduction to Inheritance [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
+=== Implementing Inheritance
+
+When we move from a design in UML to writing actual code--which we refer to as _implementation_--we use different terms to describe the relationships between classes.
+
+A parent class becomes a _superclass_, and a child class becomes a _subclass_. You may also hear the terms _base class_ and _derived class_ to describe the same relationship, especially in other programming languages.
+
+In Java, we use the `extends` keyword to indicate that one class is a subclass of another class. Here's an example of a `FootballPlayer` class that extends the `Athlete` class:
+
+[source,java]
+----
+public class Athlete {
+    private String athleteName;
+    private int age;
+    private int weight;
+
+    public void run() {
+        System.out.println("Running!");
+    }
+
+    public void jump() {
+        System.out.println("Jumping!");
+    }
+
+    public void throwBall() {
+        System.out.println("Throwing!");
+    }
+}
+
+public class FootballPlayer extends Athlete {
+    private String teamName;
+    private String position;
+
+    public void tackle() {
+        System.out.println("Tackling!");
+    }
+
+    public void pass() {
+        System.out.println("Passing!");
+    }
+}
+----    
+
+.Time To Watch!
+****
+Extending a Class in Java [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+
+// Starters: BankAccount and TestAccounts
+// Completed: CheckingAccount and SavingsAccount
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
+=== Inheritance Hierarchies and Overriding
+
+When we extend a class, we are building an _inheritance hierarchy_. 
+This is a tree-like structure where each class has only one parent class (such as our `Athlete` class), but can have multiple child classes (like `FootballPlayer` and `TennisPlayer`).
+
+.Inheritance hierarchy for the `Athlete` class
+image::AthleteDiagram.png["Inheritance hierarchy for the `Athlete` class"]]
+
+When a method is called on an object, Java begins by looking for that method in the object's class. 
+If it doesn't find the method there, it looks in the superclass.
+If there's no method in there, it goes to *that* class's superclass, and so on up the hierarchy.
+If it gets to the top of the hierarchy and still hasn't found the method, the code will not compile.
+
+[source,java]
+----
+TennisPlayer serena = new TennisPlayer();
+serena.serve(); <.>
+serena.run(); <.>
+----
+
+<.> The compiler checks the `TennisPlayer` class for the `serve()` method. Since it finds an implementation there, it will execute that code.
+<.> The compiler checks the `TennisPlayer` class for the `run()` method. Since it doesn't find an implementation there, it will check the superclass, `Athlete`. Since it finds the `run()` method there, it will execute that code.
+
+In some cases, we might want to provide a different implementation of a method in a subclass. This is called _method overriding_. Because the compiler starts at the bottom of the inheritance hierarchy and works its way up, it will use the overridden method in the subclass instead of the method in the superclass.
+
+If a `TennisPlayer` has a specific way of running that is different from the way an `Athlete` runs, we can override the `run()` method in the `TennisPlayer` class.
+The `FootballPlayer` class will still use the `run()` method from the `Athlete` class, unless we override it in the `FootballPlayer` class as well.
+
+[source,java]
+----
+public class TennisPlayer extends Athlete {
+    private String dominantHand;
+    private int rank;
+
+    public void serve() {
+        System.out.println("Serving!");
+    }
+
+    public void volley() {
+        System.out.println("Volleying!");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("Running like a tennis player!");
+    }
+}
+----
+
+TIP: The `@Override` annotation is optional, but it's a good idea to use it. It tells the compiler that you intend to override a method from the superclass. If you make a mistake in the method signature, the compiler will let you know.
+
+==== The `Object` Class
+
+In Java, every class is a subclass of the `Object` class. 
+This means that every class that does not explicitly extend another class is a subclass of `Object`.
+The result is that `Object` is at the top of the inheritance hierarchy for all Java classes--and every object inherits the methods in the `Object` class.
+
+The `Object` class provides a handful of methods, but there is one that is particularly useful at this stage of our learning: the `toString()` method.
+This method returns a `String` representation of the object.
+
+The compiler will automatically call the `toString()` method when we try to print an object:
+
+[source,java]
+----
+TennisPlayer serena = new TennisPlayer();
+System.out.println(serena);
+// Compiler changes this to: System.out.println(serena.toString());
+----
+
+Since `TennisPlayer` does not have an implementation of the `toString()` method, the compiler will work up the inheritance hierarchy until it finds an implementation in the `Object` class.
+The default implementation of `toString()` in the `Object` class returns a string that includes the class name and the memory address of the object, which looks something like this: `TennisPlayer@15db9742`.
+
+This is probably not very useful to us, but we can override the `toString()` method in our `TennisPlayer` class to provide a more meaningful representation of the object.
+A common practice is to return a string that includes the values of the object's fields.
+
+.Example of overriding the `toString()` method in the `TennisPlayer` class
+[source,java]
+----
+@Override
+public String toString() {
+    return "TennisPlayer{" +
+            "dominantHand='" + dominantHand + '\'' +
+            ", rank=" + rank +
+            '}';
+}
+----
+
+Now when we print a `TennisPlayer` object, we will see a string that looks something like this: `TennisPlayer{dominantHand='right', rank=1}`.
+However, we can return any information we want in the `toString()` method, so we can customize it to fit our needs.
+
+TIP: The `toString()` method is used in many places in Java, so it's a good idea to override it in your classes to provide a more meaningful representation of your objects.
+
+The `Object` class also provides other methods, such as `equals()`, which is used to compare two objects for equality.
+For example, we use the `equals()` method when we check if two strings are the same, like this: `if (bestSchool.equals("EMCC"))`.
+
+.Time To Watch!
+****
+Method Overriding in Java [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+
+// Sample code: Friend, CloseFriend, BestFriend, TestFriends
+
+// Starter code: BankAccount, CheckingAccount, SavingsAccount, TestAccounts
+// Completed code: VIPCheckingAccount 
+
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
+=== Constructors & Inheritance
+
+As we've seen, when we create an object of a class, Java automatically calls the class's constructor to initialize the object.
+When we create an object of a subclass, Java will call the constructor of the superclass first, and then the constructor of the subclass.
+Remember that the compiler will create default constructors for us if we don't provide any, but if we do provide a constructor, the compiler will not create a default constructor. 
+Things are pretty straightforward when using default or parameterless constructors.
+
+However, if we provide a constructor with parameters in the superclass, we need to make sure that the subclass constructor calls the superclass constructor and provides values for the parameters.
+To _explicitly_ call the superclass constructor, use the `super` keyword.
+
+[source,java]
+----
+public class Athlete {
+    private String athleteName;
+    private int age;
+    private int weight;
+
+    public Athlete(String athleteName, int age, int weight) {
+        this.athleteName = athleteName;
+        this.age = age;
+        this.weight = weight;
+    }
+}
+
+public class FootballPlayer extends Athlete {
+    private String teamName;
+    private String position;
+
+    public FootballPlayer(String athleteName, int age, int weight, String teamName, String position) {
+        super(athleteName, age, weight); <.>
+        this.teamName = teamName;
+        this.position = position;
+    }
+}
+----
+<.> The `super` keyword is used to call the superclass constructor. Since the `Athlete` class constructor requires three parameters, we need to provide values for those parameters here.
+
+The superclass constructor call must be the first statement in the subclass constructor, so we can't have any other code before it.
+If we don't provide a call to the superclass constructor, Java will automatically call the superclass's default/parameterless constructor, which may not be what we want.
+
+.Time To Watch!
+****
+Constructors and Inheritance in Java [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+// Starters: BankAccount, CheckingAccount, SavingsAccount, TestAccounts
+// Completed: CheckingAccountFinished
+
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
+=== Introduction to Polymorphism
+
+Polymorphism is a powerful concept in object-oriented programming that allows us to treat objects of different classes as if they were objects of a common superclass.
+It can be difficult for inexperienced programmers to recognize all of the ways that polymorphism can be used, but one of the most common uses is to create arrays of objects of different subclasses.
+
+This means that we can create an array of `Athlete` objects, and we can use it to store objects of the `Athlete` class, the `FootballPlayer` class, and the `TennisPlayer` class.
+This is possible because every `FootballPlayer` _is an_ `Athlete`, and every `TennisPlayer` _is an_ `Athlete`.
+
+[source,java]
+----
+Athlete[] athletes = new Athlete[3];
+athletes[0] = new Athlete("Alice", 25, 150);
+athletes[1] = new FootballPlayer("Bob", 30, 200, "Broncos", "Quarterback");
+athletes[2] = new TennisPlayer("Charlie", 20, 175, "right", 1);
+----
+
+When we access an object in the array, we can only use the methods that are available in the `Athlete` class (unless we use something called _casting_, which is beyond our scope here). 
+This means that we can call the `run()` method on any object in the array, but we can't call and any subclassclass methods like `tackle()` in  `FootballPlayer` or `serve()` in `TennisPlayer`.
+
+
+.Time To Watch!
+****
+Arrays of Subclasses in Java [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+// Starters: BankAccount, CheckingAccount, SavingsAccount, InheritanceArrays.java
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
 
 
 '''
-// === Check Yourself Before You Wreck Yourself (on the assignments)
-//
-// ==== Can you answer these questions?
 
-// ****
-// 
-// 1. 
-//
-// 2. 
-//
-// ****
+:sectnums!:
+
+=== Check Yourself Before You Wreck Yourself (on the assignments)
+
+==== Can you answer these questions?
+
+****
+1. What is inheritance in object-oriented programming, and what are its benefits 
+
+2. How do you override a method in a subclass, and why might you want to do this?
+
+3. Explain how to use the `super` keyword in a constructor.
+
+4. Explain how different subclasses can be managed in a single array.
+
+****
 :sectnums:
-// . inheritance overview
-// . overriding
-// . constructors
-// . arrays of subclass objects
-// . the Object class
-// . more polymorphism?
-
-
-
-
