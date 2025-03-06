@@ -2,29 +2,14 @@
 
 I was recently shocked to learn that my inheritance is going to be my mom's old clothes and a few rusty screwdrivers. Turns out, may parent don't actually have any money. You can imagine my disappointment! But I can still have inheritance when I'm coding, and it is really helpful for programmers like me who don't like to type the same code multiple times.
 
-We're going to take a look at how inheritance 
-
+We're going to take a look at how inheritance relationships work from an OOP design perspective. We'll discuss the concept of inheritance, explore the terminology used to describe inheritance relationships, and introduce the "is a" test to determine if inheritance is appropriate for a given scenario. We'll also examine a simple example of inheritance using a BankAccount class. 
 
 0:00 Intro
 1:22 What is Inheritance?
-
-
-----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
-
-Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
-
-#java #csharp #python #coding #beginners #arrays #data-structures
-
----------------------
-
-# 8B - Extending a Class in Java
-
-
-
-0:00 
+2:41 BankAccount Example
+4:34 Inheritance Terminology
+6:09 The "is a" Test
+7:47 Outro
 
 ----
 
@@ -33,24 +18,24 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #arrays #array-indexing #data-structures
+#java #csharp #python #coding #beginners #oop #inheritance #classes #objects
 
 ---------------------
 
-# 8C - Loops and Arrays in Java
+# 9B - Extending a Class in Java
 
-Have arrays been throwing you for a loop? We're going to start from nothing--well, from zero--and make our way through this topic. But be sure to step out of bounds!
+Time to take our classes to the next level! Those boring old bank accounts are just so... generic. Let's extend a helping hand to our classes and give them some new features.
 
-In this video, we explore the use of arrays in Java, particularly focusing on how to process them using loops. We cover various types of traversals, including output, accumulation, and modifier traversals, and demonstrate how to handle arrays dynamically by taking user input for array size and elements. Additionally, we discuss techniques for searching within arrays and modifying array elements, as well as iterating through arrays in reverse order or with custom step sizes.
+In this video, we learn how to extend a class in Java, setting up an inheritance relationship between a superclass and a subclass. We'll see the syntax for a simple inheritance relationship
 
 0:00 Intro
-2:45 Basic Output Traversal
-6:25 Accumulation Traversal
-12:40 Search Traversal
-18:40 Array Based on Input
-21:05 Input Traversal
-23:42 Different Kinds of Traversals
-27:55 Outro
+2:35 Creating a CheckingAccount Subclass
+5:21 Adding CheckingAccount Fields
+9:58 Encapsulation in Inheritance Relationships
+11:57 The 'protected' Access Modifier
+14:07 Calling a Superclass Method
+18:09 Adding a SavingsAccount Subclass
+20:22 Outro
 
 ----
 
@@ -59,7 +44,37 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #arrays #array-indexing #data-structures #loops #traversals #algorithms
+#java #coding #beginners #oop #inheritance #extending-classes #superclass #subclass #encapsulation
+
+---------------------
+
+# 9C - Method Overriding in Java
+
+Overriding is no big deal to me. My wife overrides my ideas and decisions all the time. That's okay, because my judgement is... suspect. 
+
+We need to take a look at the "inheritance hierarchy" and learn how method calls work in a subclass. Armed with that knowledge, we'll change how a method works in a subclass by overriding it. We'll revisit our BankAccount example and try some overriding. We'll also introduce the 'super' keyword and the 'toString()' method.
+
+0:00 Intro
+1:27 "Multiple Inheritance"
+3:00 Inheritance Hierarchies
+4:50 Method Calls in a Subclass
+7:00 Changing a Method in a Subclass
+8:05 Revisiting our BankAccount Example
+10:20 Implementation Example (Friends, but not the TV show)
+14:04 Overriding BankAccount Methods
+18:05 Troubleshooting a Method Call
+20:16 Using the 'super' Keyword
+22:11 The 'toString()' Method
+24:34 One Class to Rule Them All!
+
+----
+
+This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+
+Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
+GitHub Page: https://timmcmichael.github.io/
+
+#java #coding #beginners #oop #inheritance #overriding #methods #subclasses #superclasses
 
 ---------------------
 
