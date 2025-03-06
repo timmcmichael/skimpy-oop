@@ -79,18 +79,19 @@ GitHub Page: https://timmcmichael.github.io/
 ---------------------
 
 
-# 8D - Arrays of Objects in Java
+# 9D - Constructors and Inheritance in Java
 
-These primitive arrays are a lot of fun and all, but we're fancy-schmancy object-oriented programmers. Time to step up our game and start adding some real live objects to our arrays.
+My last few video descriptions have been a little negative, so I need to focus on being constructive. Inheritance relationships are important, and I vow to stop being more of a SUPERclass.
 
-This video explains using arrays that hold objects in Java, specifically focusing on a custom Dog class. It highlights common challenges new programmers face when dealing with arrays of objects and emphasizes that arrays of objects are similar to arrays of primitive types. The video demonstrates how to instantiate objects and add them to an array, perform traversals, and use getter methods to access object properties. It also covers initialization lists with objects.
+In this video, we'll see how constructors work their way through the inheritance hierarchy. We'll add constructors to our BankAccount example, and we'll see how constructors are called in a subclass. We'll also discuss the 'super' keyword and how (and why) it can be used to call a superclass constructor.
 
 0:00 Intro
-1:05 Defining and Populating an Object Array
-3:30 Traversing the Object Array
-5:17 Using an Array Initialization List
-7:08 Calling Instance Methods
-8:50 Outro
+1:22 Constructor Behavior in Inheritance
+2:22 Seeing Constructor Behavior in Action
+5:08 The Challenge with Parameters
+7:40 Calling a Superclass Constructor
+9:07 Passing Parameters
+10:36 Outro
 
 ----
 
@@ -99,24 +100,23 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #arrays #array-indexing #data-structures #oop
+#java #coding #beginners #oop #inheritance #constructors #subclasses #superclasses
 
 ---------------------
 
 
-# 8E - "For-Each" Loops in Java
+# 9E - Arrays of Subclasses in Java
 
-I've been wearing my precious little fingers down the bone writing all of these traversal loops. I mean, those 'for' loops are just sooooo long. I don't have time to write all of that code! I need a shortcut! Fortunately, lots of programmers want shortcuts, and the Java development team heard our cries. 
-
-In this video, we explore the "for-each" loop in Java, which traverses a loop without making us use an index. We compare the "for-each" loop with traditional "for" loops, highlighting its advantages and limitations. 
+ 
 
 0:00 Intro
-1:13 "For-Each" Syntax
-4:03 Calling Instance Methods
-5:33 Limitations of "For-Each" Loops
-7:32 Using an Accumulator
-8:02 Iterating Through an Array of Primitives
-9:20 Outro
+0:55 What is Polymorphism?
+1:39 Arrays of Subclasses
+3:01 Creating an Array of BankAccounts
+5:05 Calling Methods on Subclass Objects
+6:16 Determining an Object's Class
+8:56 Overriding and Polymorphism
+11:07 Outro
 
 ----
 
@@ -125,7 +125,7 @@ This video is part my course materials for CIS150AB at EMCC, and it's intended t
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #arrays #array-indexing #data-structures #oop
+#java #coding #beginners #inheritance #polymorphism #overriding #oop
 
 ---------------------
 
