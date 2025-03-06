@@ -107,7 +107,9 @@ GitHub Page: https://timmcmichael.github.io/
 
 # 9E - Arrays of Subclasses in Java
 
- 
+I got a little freaked out when my wife mentioned being a fan of polymorphism. I mean, I'm not sure I want to be treated like my parents. But she has convinced me that polymorphism opens up a whole new world and can even be fun!
+
+In this video, we'll dip our toes in the world of polymorphism with arrays that can hold subclasses that extend the same superclass. We'll see how polymorphism allows us to call methods on subclass objects, and we'll learn how to determine an object's class. We'll also see how overriding works in the context of polymorphism.
 
 0:00 Intro
 0:55 What is Polymorphism?
