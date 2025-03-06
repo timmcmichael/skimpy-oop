@@ -80,7 +80,9 @@ In this example, the `FootballPlayer` class inherits the fields and methods of t
 ****
 Introduction to Inheritance [COMING SOON!]
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://www.youtube.com/watch?v=LXKXWT0y3oQ
+
+// video::LXKXWT0y3oQ[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 ****
 
 === Implementing Inheritance
@@ -129,7 +131,9 @@ public class FootballPlayer extends Athlete {
 ****
 Extending a Class in Java [COMING SOON!]
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://www.youtube.com/watch?v=HjI19TvQkII
+
+// video::HjI19TvQkII[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Files from video:
 
@@ -243,7 +247,9 @@ For example, we use the `equals()` method when we check if two strings are the s
 ****
 Method Overriding in Java [COMING SOON!]
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://www.youtube.com/watch?v=NFi4uhXK8FM
+
+// video::NFi4uhXK8FM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Files from video:
 
@@ -308,7 +314,9 @@ If we don't provide a call to the superclass constructor, Java will automaticall
 ****
 Constructors and Inheritance in Java [COMING SOON!]
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://www.youtube.com/watch?v=IFTod6pc7Go
+
+// video::IFTod6pc7Go[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // Files from video:
 
 // Starters: BankAccount, CheckingAccount, SavingsAccount, TestAccounts
@@ -345,7 +353,9 @@ This means that we can call the `run()` method on any object in the array, but w
 ****
 Arrays of Subclasses in Java [COMING SOON!]
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://www.youtube.com/watch?v=7sBbGqkEr0Q
+
+// video::7sBbGqkEr0Q[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // Files from video:
 
 // Starters: BankAccount, CheckingAccount, SavingsAccount, InheritanceArrays.java

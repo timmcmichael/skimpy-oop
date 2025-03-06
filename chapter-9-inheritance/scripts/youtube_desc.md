@@ -1,8 +1,13 @@
 # 9A - Introduction to Inheritance
 
+I was recently shocked to learn that my inheritance is going to be my mom's old clothes and a few rusty screwdrivers. Turns out, may parent don't actually have any money. You can imagine my disappointment! But I can still have inheritance when I'm coding, and it is really helpful for programmers like me who don't like to type the same code multiple times.
+
+We're going to take a look at how inheritance 
 
 
-0:00 
+0:00 Intro
+1:22 What is Inheritance?
+
 
 ----
 
