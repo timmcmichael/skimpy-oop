@@ -112,6 +112,7 @@ include::chapter-10-swing/content.adoc[]
 include::back-matter/content.adoc[]
 
 // TODO: Search for "you" (whole word) and replace with "we"
+// TODO: Check all GitHub file links
 // TODO: Canvas - update overview competencies to match book/videos
 // TODO: Canvas - When finished, Update required textbook to recommended; update Module Overview references to match.
 // TODO: Set theme for plantUML renderings: https://the-lum.github.io/puml-themes-gallery/diagrams/Class.html
