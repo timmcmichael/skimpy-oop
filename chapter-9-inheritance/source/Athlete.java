@@ -1,3 +1,6 @@
+/* 
+ * This class represents an athlete. It has three fields and three methods. It is designed to be a superclass for other more specific types of athletes.
+ */
 public class Athlete {
     private String athleteName;
     private int age;

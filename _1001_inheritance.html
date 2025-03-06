@@ -716,6 +716,38 @@ We can think of inheritance as an "is-a" relationship: a <code>House</code> <em>
 </div>
 <div class="sect2">
 <h3 id="_inheritance_hierarchies_and_overriding">9.4. Inheritance Hierarchies and Overriding</h3>
+<div class="paragraph">
+<p>When we extend a class, we are building an <em>inheritance hierarchy</em>.
+This is a tree-like structure where each class has only one parent class (such as our <code>Athlete</code> class), but can have multiple child classes (like <code>FootballPlayer</code> and <code>TennisPlayer</code>).</p>
+</div>
+<div class="paragraph">
+<p>When a method is called on an object, java begins by looking for that method in the object&#8217;s class.
+If it doesn&#8217;t find the method there, it looks in the superclass.
+If there&#8217;s no method in there it goes to <strong>that</strong> class&#8217;s superclass, and so on up the hierarchy.
+If it gets to the top of the hierarchy and still hasn&#8217;t found the method, the code won&#8217;t compile.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">TennisPlayer</span><span class="tok-w"> </span><span class="tok-n">serena</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">TennisPlayer</span><span class="tok-p">();</span>
+<span class="tok-n">serena</span><span class="tok-p">.</span><span class="tok-na">serve</span><span class="tok-p">();</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-n">serena</span><span class="tok-p">.</span><span class="tok-na">run</span><span class="tok-p">();</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The compiler checks the <code>TennisPlayer</code> class for the <code>serve()</code> method. Since it finds an implementation there, it will execute that code.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>The compiler checks the <code>TennisPlayer</code> class for the <code>run()</code> method. Since it doesn&#8217;t find an implementation there, it will check the superclass, <code>Athlete</code>. Since it finds the <code>run()</code> method there, it will execute that code.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When a subclass has a method with the same name as a method in the superclass, we say that the subclass <em>overrides</em> the method.</p>
+</div>
 <div class="sect3">
 <h4 id="_the_object_class">9.4.1. The Object Class</h4>
 <div class="sidebarblock">

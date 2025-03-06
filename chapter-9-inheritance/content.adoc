@@ -147,11 +147,67 @@ Extending a Class in Java [COMING SOON!]
 
 === Inheritance Hierarchies and Overriding
 
+When we extend a class, we are building an _inheritance hierarchy_. 
+This is a tree-like structure where each class has only one parent class (such as our `Athlete` class), but can have multiple child classes (like `FootballPlayer` and `TennisPlayer`).
+
+.Inheritance hierarchy for the `Athlete` class
+image::AthleteDiagram.png["Inheritance hierarchy for the `Athlete` class"]]
+
+When a method is called on an object, java begins by looking for that method in the object's class. 
+If it doesn't find the method there, it looks in the superclass.
+If there's no method in there it goes to *that* class's superclass, and so on up the hierarchy.
+If it gets to the top of the hierarchy and still hasn't found the method, the code won't compile.
+
+[source,java]
+----
+TennisPlayer serena = new TennisPlayer();
+serena.serve(); <.>
+serena.run(); <.>
+----
+
+<.> The compiler checks the `TennisPlayer` class for the `serve()` method. Since it finds an implementation there, it will execute that code.
+<.> The compiler checks the `TennisPlayer` class for the `run()` method. Since it doesn't find an implementation there, it will check the superclass, `Athlete`. Since it finds the `run()` method there, it will execute that code.
+
+In some cases, you might want to provide a different implementation of a method in a subclass. This is called _method overriding_. Because the compiler starts at the bottom of the inheritance hierarchy and works its way up, it will use the overridden method in the subclass instead of the method in the superclass.
+
+If a `TennisPlayer` has a specific way of running that is different from the way an `Athlete` runs, you can override the `run()` method in the `TennisPlayer` class.
+The `FootballPlayer` class will still use the `run()` method from the `Athlete` class, unless you override it in the `FootballPlayer` class as well.
+
+[source,java]
+----
+public class TennisPlayer extends Athlete {
+    private String dominantHand;
+    private int rank;
+
+    public void serve() {
+        System.out.println("Serving!");
+    }
+
+    public void volley() {
+        System.out.println("Volleying!");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("Running like a tennis player!");
+    }
+}
+----
+
+TIP: The `@Override` annotation is optional, but it's a good idea to use it. It tells the compiler that you intend to override a method from the superclass. If you make a mistake in the method signature, the compiler will let you know.
+
+==== The `Object` Class
+
+In Java, every class is a subclass of the `Object` class. 
+This means that every class that does not explicitly extend another class is a subclass of `Object`.
+The result is that `Object` is at the top of the inheritance hierarchy for all Java classes--and every object inherits the methods in the `Object` class.
+
+The `Object` class provides a handful of methods, but there is one that is particularly useful at this stage of our learning: the `toString()` method.
+This method returns a `String` representation of the object. 
+
+// TODO: RESUME HERE
 
 
-
-
-==== The Object Class
 
 .Time To Watch!
 ****
