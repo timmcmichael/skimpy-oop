@@ -1,6 +1,6 @@
 # 9A - Introduction to Inheritance
 
-I was recently shocked to learn that my inheritance is going to be my mom's old clothes and a few rusty screwdrivers. Turns out, may parent don't actually have any money. You can imagine my disappointment! But I can still have inheritance when I'm coding, and it is really helpful for programmers like me who don't like to type the same code multiple times.
+I was recently shocked to learn that my inheritance is going to be my mom's old clothes and a few rusty screwdrivers. Turns out, my parent don't actually have any money. You can imagine my disappointment! But I can still have inheritance when I'm coding, and it is really helpful for programmers like me who don't like to type the same code multiple times.
 
 We're going to take a look at how inheritance relationships work from an OOP design perspective. We'll discuss the concept of inheritance, explore the terminology used to describe inheritance relationships, and introduce the "is a" test to determine if inheritance is appropriate for a given scenario. We'll also examine a simple example of inheritance using a BankAccount class. 
 
@@ -13,7 +13,7 @@ We're going to take a look at how inheritance relationships work from an OOP des
 
 ----
 
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
@@ -39,7 +39,7 @@ In this video, we learn how to extend a class in Java, setting up an inheritance
 
 ----
 
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
@@ -50,7 +50,7 @@ GitHub Page: https://timmcmichael.github.io/
 
 # 9C - Method Overriding in Java
 
-Overriding is no big deal to me. My wife overrides my ideas and decisions all the time. That's okay, because my judgement is... suspect. 
+Overriding is no big deal to me. My wife overrides my ideas and decisions all the time. That's okay, because my judgment is... suspect. 
 
 We need to take a look at the "inheritance hierarchy" and learn how method calls work in a subclass. Armed with that knowledge, we'll change how a method works in a subclass by overriding it. We'll revisit our BankAccount example and try some overriding. We'll also introduce the 'super' keyword and the 'toString()' method.
 
@@ -69,7 +69,7 @@ We need to take a look at the "inheritance hierarchy" and learn how method calls
 
 ----
 
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
@@ -81,7 +81,7 @@ GitHub Page: https://timmcmichael.github.io/
 
 # 9D - Constructors and Inheritance in Java
 
-My last few video descriptions have been a little negative, so I need to focus on being constructive. Inheritance relationships are important, and I vow to stop being more of a SUPERclass.
+My last few video descriptions have been a little negative, so I need to focus on being constructive. Inheritance relationships are important, and I vow to start being more of a SUPERclass.
 
 In this video, we'll see how constructors work their way through the inheritance hierarchy. We'll add constructors to our BankAccount example, and we'll see how constructors are called in a subclass. We'll also discuss the 'super' keyword and how (and why) it can be used to call a superclass constructor.
 
@@ -95,7 +95,7 @@ In this video, we'll see how constructors work their way through the inheritance
 
 ----
 
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
@@ -120,7 +120,7 @@ GitHub Page: https://timmcmichael.github.io/
 
 ----
 
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/

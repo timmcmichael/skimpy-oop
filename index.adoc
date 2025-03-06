@@ -111,6 +111,7 @@ include::chapter-10-swing/content.adoc[]
 
 include::back-matter/content.adoc[]
 
+// TODO: typo in published Youtube videos "part my course"
 // TODO: Search for "you" (whole word) and replace with "we"
 // TODO: Check all GitHub file links
 // TODO: Canvas - update overview competencies to match book/videos
