@@ -13,10 +13,12 @@ We're going to take a look at how inheritance relationships work from an OOP des
 
 ----
 
-This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
+
+GitHub landing page: https://timmcmichael.github.io/
 
 #java #csharp #python #coding #beginners #oop #inheritance #classes #objects
 
