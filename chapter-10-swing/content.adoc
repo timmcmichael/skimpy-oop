@@ -29,7 +29,77 @@ _Source code examples from this chapter and associated videos are available on h
 '''
 === Graphical User Interfaces
 
-// #This section is not finished, but in the meantime this content is covered in section x.x (page xxx) in the textbook.#
+[ADD SOME STUFF]
+
+.Time To Watch!
+****
+Intro to GUIs [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+****
+
+=== The Swing Library
+
+[ADD SOME STUFF]
+
+.Time To Watch
+****
+Intro to Swing in Java [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+****
+
+=== Event-Driven Programming
+
+[ADD SOME STUFF]
+
+.Time To Watch
+****
+Swing Event Handling [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+****
+
+=== Processing User Input with Swing
+
+[ADD SOME STUFF]
+
+.Time To Watch
+****
+Calculations in Swing [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+****
+
+=== Widgets
+
+[ADD SOME STUFF]
+
+.Time To Watch
+****
+More Swing Widgets [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+****
+
+=== Layouts with Swing
+
+[ADD SOME STUFF]
+
+.Time To Watch
+****
+Swing Layouts [COMING SOON!]
+
+// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+
+****
+
+
 
 '''
 :sectnums!:
