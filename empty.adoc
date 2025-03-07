@@ -15,6 +15,7 @@ endif::[]
 
 
 .Example: Class Diagram
+// Image rendered at plantuml.com with the following code:
 [plantuml, format=svg]
 ----
 @startuml
@@ -28,6 +29,7 @@ class Car {
 @enduml
 ----
 
+IMPORTANT: The Lab Assignments in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the Programming Project.
 
 
 .Time To Watch!

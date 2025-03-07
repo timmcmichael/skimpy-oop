@@ -477,7 +477,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="_0111_debugging_and_generative_ai.html#_types_of_errors">7.2. Types of Errors</a>
 </li>
-<li><a href="_0111_debugging_and_generative_ai.html#_debugging_tools_in_your_ide">7.3. Debugging Tools in Your IDE</a>
+<li><a href="_0111_debugging_and_generative_ai.html#_debugging_tools_in_our_ide">7.3. Debugging Tools in Our IDE</a>
 </li>
 <li><a href="_0111_debugging_and_generative_ai.html#_generative_ai_in_coding">7.4. Generative AI in Coding</a>
 </li>
@@ -519,10 +519,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Distinguish between compile-time and runtime errors</p>
 </li>
 <li>
-<p>Learn some strategies for debugging your code</p>
+<p>Learn some strategies for debugging our code</p>
 </li>
 <li>
-<p>Use the debugging tools available in your IDE</p>
+<p>Use the debugging tools available in our IDE</p>
 </li>
 <li>
 <p>Understand the basics of generative AI in coding</p>
@@ -541,15 +541,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_debugging">7.1. Debugging</h3>
 <div class="paragraph">
-<p>A <em>bug</em> is an error in your code that causes it to behave in an unexpected way.
-This is different from a syntax error, like forgetting a semicolon or misspelling a keyword&#8212;&#8203;those kinds of mistakes will prevent your code from compiling, so you can&#8217;t even run it.
-A bug is when your code runs, but it doesn&#8217;t do what you want it to do.</p>
+<p>A <em>bug</em> is an error in our code that causes it to behave in an unexpected way.
+This is different from a syntax error, like forgetting a semicolon or misspelling a keyword&#8212;&#8203;those kinds of mistakes will prevent our code from compiling, so we can&#8217;t even run it.
+A bug is when our code runs, but it doesn&#8217;t do what we want it to do.</p>
 </div>
 <div class="paragraph">
 <p>Bugs are frustrating, but they are a part of programming.
 Like Thanos, they are inevitable.
-And like Thanos, you can use ludicrous time traveling to fix (decapitate?) your bugs.
-Well, you can&#8217;t do that last part, but you can fix them in the present; and hopefully, you can do it without too much frustration.</p>
+And like Thanos, we can use ludicrous time traveling to fix (decapitate?) our bugs.
+Well, we can&#8217;t do that last part, but we can fix them in the present; and hopefully, we can do it without too much frustration.</p>
 </div>
 <div class="paragraph">
 <p>Finding and fixing bugs is called <em>debugging</em>, and without realing it, you&#8217;ve been developing your own strategies for debugging since you started writing code.
@@ -565,21 +565,21 @@ But as your code becomes more complex, you&#8217;ll benefit from a more systemat
 <dl>
 <dt class="hdlist1">Compile-time errors</dt>
 <dd>
-<p>Errors that prevent the compiler from fully processing your source code. These are generally the result of incorrect syntax&#8212;&#8203;in other words, breaking the rules of the language.</p>
+<p>Errors that prevent the compiler from fully processing our source code. These are generally the result of incorrect syntax&#8212;&#8203;in other words, breaking the rules of the language.</p>
 </dd>
 <dt class="hdlist1">Runtime errors</dt>
 <dd>
-<p>Errors in which your code compiles, but it does not execute as intended. Crashes are obvious runtime errors, but making an incorrect calculation is also an example of a runtime error.</p>
+<p>Errors in which our code compiles, but it does not execute as intended. Crashes are obvious runtime errors, but making an incorrect calculation is also an example of a runtime error.</p>
 </dd>
 </dl>
 </div>
 <div class="paragraph">
-<p>Fixing compile-time errors is just a matter of looking over your code and correcting the mistake.
-That&#8217;s not always as easy as it sounds&#8212;&#8203;especially for beginners&#8212;&#8203;but at least the compiler and/or your IDE can give you feedback about what and where the mistake is.</p>
+<p>Fixing compile-time errors is just a matter of looking over our code and correcting the mistake.
+That&#8217;s not always as easy as it sounds&#8212;&#8203;especially for beginners&#8212;&#8203;but at least the compiler and/or our IDE can give us feedback about what and where the mistake is.</p>
 </div>
 <div class="paragraph">
 <p>Runtime errors can be especially frustrating, especially since we can&#8217;t always tell at what point the actual error is occurring.
-Did I make the mistake at the start of the program when I calculated the answer, is the mistake at the very end where I output it?
+Did I make the mistake at the start of the program when I calculated the answer, or is the mistake at the very end where I output it?
 Or did I do something in the middle that accidentally changed the result?
 Who knows! And if you&#8217;re like me, you might have done all three&#8230;&#8203;</p>
 </div>
@@ -598,21 +598,21 @@ Who knows! And if you&#8217;re like me, you might have done all three&#8230;&#82
 </div>
 </div>
 <div class="sect2">
-<h3 id="_debugging_tools_in_your_ide">7.3. Debugging Tools in Your IDE</h3>
+<h3 id="_debugging_tools_in_our_ide">7.3. Debugging Tools in Our IDE</h3>
 <div class="paragraph">
-<p>Most modern IDEs have built-in tools to help you debug your code.
-These tools allow you monitor the variables in your program, step through your code line-by-line, and set breakpoints to pause your program at a specific point.
+<p>Most modern IDEs have built-in tools to help us debug our code.
+These tools allow us to monitor the variables in our program, step through our code line-by-line, and set breakpoints to pause our program at a specific point.
 The more you know about programming, the more useful these tools become.
-But even as beginners, these tools can be helpful in finding and fixing bugs in your code.</p>
+But even as beginners, these tools can be helpful in finding and fixing bugs in our code.</p>
 </div>
 <div class="paragraph">
-<p>The most common debugging tools you&#8217;ll use are:
-Watch window:: A window that displays the values of variables in your program.
-Breakpoints:: A marker that tells your program to pause at a specific point in your code.
-Step Into:: A command that tells your program to execute the next line of code.
-Step Over:: A command that tells your program to execute the next line of code, but not to step into any methods that are called.
-Step Out:: A command that tells your program to execute the rest of the current method and then pause.
-Resume:: A command that tells your program to continue running until it hits the next breakpoint.</p>
+<p>The most common debugging tools we&#8217;ll use are:
+Watch window:: A window that displays the values of variables in our program.
+Breakpoints:: A marker that tells our program to pause at a specific point in our code.
+Step Into:: A command that tells our program to execute the next line of code.
+Step Over:: A command that tells our program to execute the next line of code, but not to step into any methods that are called.
+Step Out:: A command that tells our program to execute the rest of the current method and then pause.
+Resume:: A command that tells our program to continue running until it hits the next breakpoint.</p>
 </div>
 <div class="paragraph">
 <p>These functions are available in most IDEs, but the specifics of how they work can vary.
@@ -644,6 +644,18 @@ Even if you&#8217;re not using Visual Studio Code, the concepts are the same, so
 </div>
 </div>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The first Lab Assignment in Canvas can be completed using what we&#8217;ve covered to this point. You might choose to complete that work now, then move onto the next section&#8212;&#8203;which you&#8217;ll need for the second Lab Assignment.
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_generative_ai_in_coding">7.4. Generative AI in Coding</h3>
@@ -652,7 +664,7 @@ Even if you&#8217;re not using Visual Studio Code, the concepts are the same, so
 <div class="paragraph">
 <p>Generative Artificial Intelligence is a type of AI that can generate new content based on existing data.
 Tools like ChatGPT and Copilot are well-known examples of generative AI.
-You can ask a generative AI tool to write song lyrics about about Java programming, for example, and it will producte a <a href="https://timmcmichael.github.io/skimpy-oop/chapter-7-debugging/ai_song.html" target="_blank" rel="noopener">new song for you</a>.</p>
+We can ask a generative AI tool to write song lyrics about Java programming, for example, and it will produce a <a href="https://timmcmichael.github.io/skimpy-oop/chapter-7-debugging/ai_song.html" target="_blank" rel="noopener">new song for us</a>.</p>
 </div>
 <div class="paragraph">
 <p>Artificial Intelligence is a broad field, and the topic is well beyond the scope of this course.
@@ -665,7 +677,7 @@ But generative AI has important implications for the field of software developme
 <p>Like many teachers, I&#8217;m actively wrestling with the role of generative AI in a coding course.
 I have many ethical concerns about AI in general, and about generative AI to create code in particular.
 Simply put, these tools can be used in ways that are indisputably unethical.
-Most obviously, students can easily use these tools generate code that is then submitted as the student&#8217;s own work.</p>
+Most obviously, students can easily use these tools to generate code that is then submitted as the student&#8217;s own work.</p>
 </div>
 <div class="paragraph">
 <p>I would like to think it goes without saying, but based on the number of students who deny this, I guess I need to say it: using AI to generate code that you submit as your own is cheating.
@@ -729,7 +741,7 @@ All I can do is guess, but here are some things I <strong>hope</strong> AI does 
 <p><strong>Faster development and update cycles:</strong> Again, if AI makes us more efficient, we should be able to develop and update software faster.</p>
 </li>
 <li>
-<p><strong>Improved security:</strong> Hopefully, AI will help us indentify and address security vulnerabilities in our code.</p>
+<p><strong>Improved security:</strong> Hopefully, AI will help us identify and address security vulnerabilities in our code.</p>
 </li>
 <li>
 <p><strong>More time for high-level effort:</strong> If AI can take on some of the more tedious and boring coding tasks, that should free up mental bandwidth to focus on the more interesting and creative.</p>
@@ -761,7 +773,7 @@ Again, I can only guess, but here are some things I <strong>fear</strong> might 
 </div>
 </div>
 <div class="sect3">
-<h4 id="_what_does_that_all_mean_for_you">7.4.4. What Does That All Mean for You?</h4>
+<h4 id="_what_does_that_all_mean_for_us">7.4.4. What Does That All Mean for Us?</h4>
 <div class="paragraph">
 <p>I don&#8217;t know.
 As excited as I am to see AI reach this tipping point in software development, it&#8217;s kind of a scary time to be a programming teacher.
@@ -770,7 +782,7 @@ Until recently, I&#8217;ve always</p>
 <div class="paragraph">
 <p>Coders who rely heavily on artificial intelligence tools to solve problems may be able to pass themselves off as more skilled than they actually are&#8212;&#8203;indeed, they might even believe themselves to be more skilled than they actually are.
 But such coders will be less skilled at testing, debugging and maintaining code, and that could lead to a decrease in the quality of software.
-Putting code into production (releasing it in software that people actually use) without understanding it well enough to regiorously test it is a recipe for disaster.</p>
+Putting code into production (releasing it in software that people actually use) without understanding it well enough to rigorously test it is a recipe for disaster.</p>
 </div>
 <div class="paragraph">
 <p>I think there is still a bright future for programmers, but the landscape will be different.
@@ -786,24 +798,24 @@ Testing and debugging skills will be more important than ever, and those can rea
 <div class="sect3">
 <h4 id="_using_generative_ai_tools">7.4.5. Using Generative AI Tools</h4>
 <div class="paragraph">
-<p>Online tools like ChatGPT and Microsoft&#8217;s Copilot can help you generate code without any specialized software.
+<p>Online tools like ChatGPT and Microsoft&#8217;s Copilot can help us generate code without any specialized software.
 Simply enter a description of what you want the code to do, and the AI will generate code for you.
 You can then copy and paste that code into your IDE and work with it from there.</p>
 </div>
 <div class="paragraph">
 <p>But IDEs are also beginning to integrate generative AI tools focused on coding.
 For example, Visual Studio Code now includes a feature called <strong>GitHub Copilot</strong> that has been trained on billions of lines of code.
-The user interface provides a chat window where you can describe what you want the code to do, and Copilot will generate code for you.
-You can choose to accept that suggestions, or you can refine your prompt to get a different suggestion.</p>
+The user interface provides a chat window where we can describe what we want the code to do, and Copilot will generate code for us.
+We can choose to accept that suggestions, or we can refine our prompt to get a different suggestion.</p>
 </div>
 <div class="paragraph">
-<p>Additionally, Copilot can generate code as you type.
-It will analyze the code you&#8217;ve already written and suggest the next line of code.
-You can accept that suggestion, or you can ignore it and keep typing.
-It essentially acts as a very advanced code completion tool&#8212;&#8203;or like the "autocomplete" feature on your phone&#8217;s keyboard, but for code.</p>
+<p>Additionally, Copilot can generate code as we type.
+It will analyze the code we&#8217;ve already written and suggest the next line of code.
+We can accept that suggestion, or we can ignore it and keep typing.
+It essentially acts as a very advanced code completion tool&#8212;&#8203;or like the "autocomplete" feature on our phone&#8217;s keyboard, but for code.</p>
 </div>
 <div class="paragraph">
-<p>At this time, GitHub Copilot requires a subscription, but you can use it for free for a limited number of lines of code; and students get an expanded free tier.</p>
+<p>At this time, GitHub Copilot requires a subscription, but we can use it for free for a limited number of lines of code; and students get an expanded free tier.</p>
 </div>
 <div class="paragraph">
 <p><strong>And yes, I used Copilot to help me prepare the content on AI in this chapter&#8230;&#8203;</strong></p>
@@ -855,7 +867,7 @@ It essentially acts as a very advanced code completion tool&#8212;&#8203;or like
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-05 19:44:56 -0700
+Last updated 2025-03-06 21:29:40 -0700
 </div>
 </div>
 </body>

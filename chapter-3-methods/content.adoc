@@ -44,23 +44,23 @@ In Python, we use functions, and in other languages we use procedures or subrout
 All of those terms pretty much mean the same thing, but in Java they're called methods.
 And really, they're generally called methods whenever we're using object-oriented programming, so even in Python we sometimes call them methods.
 
-There are a variety of reasons to break your code into methods, but an important advantage for now is *reusability*. 
-Once you create a method, you can use it as often as you'd like.
-That means you don't have to type the same code over and over.
-In turn, that improves your code's *maintainability*. 
-If you have to perform some calculation ten times in your program and have written out that calculation all ten times, a change to the calculation means updating it in all ten places.
-But if you put that calculation in a method and use that method ten times, you can just update the method and your changes will automatically be used all ten times.
-You'll see additional advantages to methods as you learn more about programming.
+There are a variety of reasons to break our code into methods, but an important advantage for now is *reusability*. 
+Once we create a method, we can use it as often as we'd like.
+That means we don't have to type the same code over and over.
+In turn, that improves our code's *maintainability*. 
+If we have to perform some calculation ten times in our program and have written out that calculation all ten times, a change to the calculation means updating it in all ten places.
+But if we put that calculation in a method and use that method ten times, we can just update the method and our changes will automatically be used all ten times.
+We'll see additional advantages to methods as we learn more about programming.
 
-Once you define a method, you *invoke* the method each time you want it to execute.
+Once we define a method, we *invoke* the method each time we want it to execute.
 We also say that we _call_ a method, which sounds a little cooler than _invoke_ but means the same thing.
 
-=== Defining Your Own Methods
+=== Defining Our Own Methods
 
-You've been defining a method from the start.
-Each program you write includes a method called `main`, which the Java runtime invokes when you run the program.
+We've been defining a method from the start.
+Each program we write includes a method called `main`, which the Java runtime invokes when we run the program.
 
-You've also been calling (_invoking_) methods from the start.
+We've also been calling (_invoking_) methods from the start.
 To output text, we've been calling the `println()` and `print()` methods.
 
 TIP: In Java, parentheses *always* indicate a method, whether or not there is anything inside of the parentheses. Anytime you see parentheses in Java code, you're looking at either a method definition or a method call.
@@ -73,11 +73,11 @@ public static void displayCopyright() {
 }
 ----
 
-- The `public` keyword is an _access modifier_. Defining the method as `public` makes it possible to call the method from anywhere. More on this later, but for now all of your methods will be `public`.
-- The `static` keyword basically means that the method belongs to the class and not an object. That will make more sense in the next chapter, but for now your methods will be `static`.
+- The `public` keyword is an _access modifier_. Defining the method as `public` makes it possible to call the method from anywhere. More on this later, but for now all of our methods will be `public`.
+- The `static` keyword basically means that the method belongs to the class and not an object. That will make more sense in the next chapter, but for now our methods will be `static`.
 - The `void` keyword indicates that this method will not return anything. This is called the method's _return type_, and we'll learn about this shortly.
 - `displayCopyright` is the identifier for the method, in the same way variables have identifiers. Like variable identifiers, use camelCase to make the name readable--and make the name descriptive. The convention is that the name of a method should describe what it does; usually, that means the identifier is (or includes) a verb.
-- The parentheses indicate to the compiler that this is a method, as opposed to a variable or some other fancy thing. You'll see what you can put in the parentheses shortly.
+- The parentheses indicate to the compiler that this is a method, as opposed to a variable or some other fancy thing. You'll see what we can put in the parentheses shortly.
 
 
 .Time To Watch!
@@ -113,9 +113,9 @@ Many IDEs, including https://code.visualstudio.com[Visual Studio Code] use color
 image::Blocks.png[A screenshot of Java source code with blocks indicated by bracketing]
 
 A variable can only be used or accessed inside the block in which it was declared; that block is the variable's `scope`.
-When you refer to a variable, the compiler checks within that code block, or scope, do see if the variable has has been declared.
+When we refer to a variable, the compiler checks within that code block, or scope, to see if the variable has been declared.
 If it doesn't find a variable with that identifier within the current scope, it will stop compiling.
-Basically, referring to a variable that is declared in a different scope is the same as referring to a variable you never declared at all.
+Basically, referring to a variable that is declared in a different scope is the same as referring to a variable we never declared at all.
 Trying to use a variable in a different code block is referred to as an _out of scope_ reference.
 
 .`ScopeExample.java`. An example of code with an out-of-scope variable reference.
@@ -255,7 +255,7 @@ public class ParameterExample {
 In the above example, "Tim" is passed to the `outputGreeting()` method as an argument.
 Within that method, the parameter `name` stores the argument, so when this code runs, `name` is equal to "Tim".
 
-TIP: The actual value passed in when you call a method is referred to as an _argument_. The variable that receives that value within the method is referred to as a _parameter_.
+TIP: The actual value passed in when we call a method is referred to as an _argument_. The variable that receives that value within the method is referred to as a _parameter_.
 
 .Time To Watch!
 ****
@@ -303,7 +303,7 @@ IMPORTANT: If a method has a return type of anything other than `void`, it will 
 This means that methods themselves essentially have data types.
 `printFavNum()` has a data type of `void`. 
 `getFavNum()` has a data type of `int`.
-Since methods have types, you can use them in statements just as you'd use a literal or variable of that type. 
+Since methods have types, we can use them in statements just as we'd use a literal or variable of that type. 
 For example, the following line of code is valid:
 
 `int answer = 18 + getFavNum();`
@@ -319,7 +319,7 @@ public static void shortCircuit() {
    return;
    System.out.print(“This can never run!”);
 }
----- 
+----
 
 The second print() statement won't execute because the return statement ends the method. The compiler doesn't like these kinds of _unreachable statements_, though, so it will not compile.
 
@@ -331,7 +331,7 @@ NOTE: A Java method can only return one piece of data, so it can only have one r
 
 Generally speaking, it's better to return values from a method rather than outputting values.
 There are a few reasons for this, but consider an obvious one. 
-If you use a `print()` method, your code is limited to only working in a console application. 
+If we use a `print()` method, our code is limited to only working in a console application. 
 That's fine for now, because it's the only kind of application we know how to make!
 But what if we want to use that same code in a web application, or a mobile app? 
 That `print()` statement won't work--rather, the user will never see the result, because they won't have a console window.
@@ -381,7 +381,7 @@ I rarely want students to create methods that produce output, and when I do I al
 When I refer to _returning_ something, I mean just that. 
 The rule of thumb is, *all input and output statements should be in the `main()` method* and data should be passed around as necessary.
 
-TIP: I strongly penalize input and output statements outside of the `main()` method because I'm trying to build habits that will serve you well as you learn more about programming.
+TIP: I strongly penalize input and output statements outside of the `main()` method because I'm trying to build habits that will serve us well as we learn more about programming.
 
 .Time To Watch!
 ****
@@ -392,6 +392,8 @@ File from video:
 
 * Completed code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/AreaOfOvalFinished.java[`AreaOfOval.java`^]
 ****
+
+IMPORTANT: The Lab Assignments in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the Programming Project.
 
 === Overloading a Method
 

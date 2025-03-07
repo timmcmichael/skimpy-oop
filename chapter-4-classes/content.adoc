@@ -65,30 +65,32 @@ To help organize our thinking, we'll use a tool called a *class diagram*, which 
 The format programmers use for class diagrams is called UML (Unified Modeling Language). 
 The UML standards are extensive, but we'll be using a simplified version in this course. 
 
-Consider a program to handle orders at a restaurant. A simple class to represent on person's order might look like this:
+Consider a program to handle orders at a restaurant. A simple class to represent one person's order might look like this:
 
 .Example of a class diagram for a restaurant order
-[plantuml, target="OrderDiagram", format=png]
-----
-@startuml
-skinparam classAttributeIconSize 0
-class Order {
-   -serverName:String
-   -tableNum:int
-   -appetizer:String
-   -entree:String
-   -dessert:String
-   -totalPrice:double
-   +void sendToKitchen()
-   +void printBill()
-   +double closeBill()
-}
-@enduml
-----
+image::OrderDiagram.png["Class diagram for the `Order` class"]
+// Image rendered at plantuml.com with the following code:
+// [plantuml, target="OrderDiagram", format=png]
+// ----
+// @startuml
+// skinparam classAttributeIconSize 0
+// class Order {
+//    -serverName:String
+//    -tableNum:int
+//    -appetizer:String
+//    -entree:String
+//    -dessert:String
+//    -totalPrice:double
+//    +void sendToKitchen()
+//    +void printBill()
+//    +double closeBill()
+// }
+// @enduml
+// ----
 
 The top section of the diagram has the name of the class, which is `Order`.
 The next section is for the attributes of the class--the information the class will store. This example has attributes for the server's name, the table number, the items ordered, and the total price.
-The bottom section is for the beahviors of the class, which are the actions the class can perform (or that we can do with the class).
+The bottom section is for the behaviors of the class, which are the actions the class can perform (or that we can do with the class).
 With an order, we might send it to the kitchen, print the bill, or close the bill.
 
 We'll learn more about the symbols and conventions of UML as we go along, but for now the important part is that we can use class diagrams to help us plan our programs--and to talk about OOP concepts without bogging down on code details.
@@ -110,18 +112,18 @@ Object-oriented programming is all about creating objects that can interact with
 Since the objects will be interacting, we need to think about how to keep them from interfering with each other in ways we don't want.
 If we have an `Order` class in a program used by a restaurant, we don't want some other class to change attributes in a way that disrupts the program--like changing the entree selection to something that's not on the menu, or setting the price to a negative number, for example.
 
-To prevent this kind of tampering, whether it's intention or accidental, OOP relies on a concept called *encapsulation*.
+To prevent this kind of tampering, whether it's intentional or accidental, OOP relies on a concept called *encapsulation*.
 Encapsulation of a class means that attributes are hidden from the outside world, and only the behaviors of the class can access and change them.
-As an analogy, consider the counter at a fast food restaurant. You can't just reach over and grab a handful of fries; you have to ask the employee behind the counter to get them for you.
-In this analogy, the food is encapsulated and you can only access it by using a behavior, like "order food".
+As an analogy, consider the counter at a fast food restaurant. We can't just reach over and grab a handful of fries; we have to ask the employee behind the counter to get them for us.
+In this analogy, the food is encapsulated and we can only access it by using a behavior, like "order food".
 
-Another way to think of encapsulation is the way we interacte with other people in social situations.
+Another way to think of encapsulation is the way we interact with other people in social situations.
 When we encounter a stranger, they don't automatically know our name and phone number; they have to ask us for that information.
 We've encapsulated our personal information, and we only share it when and how we choose to.
 
 In Java, encapsulation is not a strict requirement, and our code will still work if we don't use it.
 But it's a best practice--and an important one--so we will encapsulate all of our classes in this course.
-In fact, I would argue that if you don't encapsulate your classes, you're not really doing object-oriented programming. 
+In fact, I would argue that if we don't encapsulate our classes, we're not really doing object-oriented programming. 
 And that's what we're here to learn.
 
 === Defining and Using a Class
@@ -129,21 +131,23 @@ And that's what we're here to learn.
 We'll look at a program to keep rudimentary weather records; for a single day's weather data, we'll have a class called `WeatherRecord`.
 
 .Class diagram for the `WeatherRecord` class
-[plantuml, target="WeatherRecordDiagram", format=png]
-----
-@startuml
-skinparam classAttributeIconSize 0
-class WeatherRecord {
-   -date:String
-   -highTemp:int
-   -avgWindspeed:int
-   +setDate(String):void
-   +setHighTemp(int):void
-   +setAvgWindspeed(int):void
-   +displayData():void
-}
-@enduml
-----
+image::WeatherRecordDiagram.png["Class diagram for the `WeatherRecord` class"]
+// Image rendered at plantuml.com with the following code:
+// [plantuml, target="WeatherRecordDiagram", format=png]
+// ----
+// @startuml
+// skinparam classAttributeIconSize 0
+// class WeatherRecord {
+//    -date:String
+//    -highTemp:int
+//    -avgWindspeed:int
+//    +setDate(String):void
+//    +setHighTemp(int):void
+//    +setAvgWindspeed(int):void
+//    +displayData():void
+// }
+// @enduml
+// ----
 
 To implement this class in code, we'll start with a class header. The class header always follows the same pattern: an *access modifier*, the keyword `class`, and the name of the class.
 The class header is followed by a code block, enclosed in curly braces.
@@ -158,7 +162,7 @@ public class WeatherRecord {
 }
 ----
 
-Access modifier:: The `public` keyword means that the class can be accessed from any other class. Though this is technically optional, you should always use `public` for now.
+Access modifier:: The `public` keyword means that the class can be accessed from any other class. Though this is technically optional, we should always use `public` for now.
 `class` keyword:: The keyword that tells Java we're defining a class. It's required. We'll eventually be able to create different kinds of classes and OOP structures, but for now we're just creating regular classes.
 *Class name* (or _identifier_):: The name of the class, which should be a noun that describes the object the class represents--and is singular, so there's no _s_ at the end. The identifier should start with a capital, with the first letter of each word capitalized (like `WeatherRecord`). This is similar to the _camelCase_ naming convention we've been using for variables and methods; it's called _PascalCase_.
 
@@ -168,14 +172,14 @@ To begin with, we'll focus on two types of instance members: *fields* and *metho
 ==== Fields
 
 Fields are the implementation of the attributes of the class.
-The are also known as *instance variables* because they similar to the variables we've been using in our programs, but their scope is the object created from the class, not the method where they're defined.
+They are also known as *instance variables* because they are similar to the variables we've been using in our programs, but their scope is the object created from the class, not the method where they're defined.
 A field is unique to the object; if we make two objects from our `WeatherRecord` class, each object will have its own date, high temperature, and average temperature.
-// If we change the hig temperature for one object, it won't affect the high temperature for the other object.
+// If we change the high temperature for one object, it won't affect the high temperature for the other object.
 
 Fields are declared like our other variables, but they are encapsulated using the `private` access modifier.
 This means that the fields can only be accessed and changed by the methods of the class, not by other classes--which controls how the data is used and prevents accidental or invalid changes.
 
-WARNING: Since a class will compile and run even if we leave off the `private` access modifier, it's easy to forget to use it. But don't worry, I'll help you remember by taking huge points off your assignments if you don't make your fields `private`. As I've mentioned, you're not really doing OOP if you don't encapsulate your fields, and we're learning OOP.
+WARNING: Since a class will compile and run even if we leave off the `private` access modifier, it's easy to forget to use it. But don't worry, I'll help you remember by taking huge points off your assignments if you don't make your fields `private`. As I've mentioned, you're not really doing OOP if you don't encapsulate your fields, and we're learning OOP here.
 
 // Fields are declared at the top of the class using the same naming conventions we've been using for variables: a descriptive name formatted in camelCase.
 
@@ -200,7 +204,7 @@ And these fields look an awful lot like global variables.
 But fields in a class are *not* global variables; they're *instance* variables, and they're a good thing.
 The fields are *encapsulated*, so they can only be accessed and changed by the methods of the class--which is a good thing.
 And the fields are unique to each object, so we can have multiple objects with different values for the fields--which is also a good thing.
-And so no puppies toys will be harmed as long as we use *private* fields correctly.
+And so no puppies' toys will be harmed as long as we use *private* fields correctly.
 
 ==== Methods
 
@@ -210,7 +214,7 @@ So far, our methods have included the keyword `static`; we'll learn more about t
 These _nonstatic_ methods are called *instance methods*, and they are otherwise very similar to the `static` methods we've been using.
 
 Though there are exceptions, most of these instance methods will be `public`, so they can be accessed from other classes.
-Remember, the foundation of encapsulation is having `private` fields and public methods to to permit interactions with that data.
+Remember, the foundation of encapsulation is having `private` fields and public methods to permit interactions with that data.
 
 In broad terms, we can categorize instance methods into two types: *accessor* methods and *mutator* methods.
 
@@ -219,7 +223,7 @@ In broad terms, we can categorize instance methods into two types: *accessor* me
 Accessor methods give access to the fields of the class, but they don't change the fields.
 Think of them as "read only" methods, and often all they do is return the value of a field.
 Java naming conventions specify that accessor methods should start with `get` and then the name of the field they access, formatted in camelCase. 
-Because of that convention, another name for accessors methods is *getters*.
+Because of that convention, another name for accessor methods is *getters*.
 
 .Example of an accessor method (or "getter")
 [source,java]
@@ -229,7 +233,7 @@ public int getHighTemperature() {
     }
 ----
 
-The return type of an accessor method is the same as the type of the field it accesses; in this case `highTemperature` is an `int`, so the return type of our getting is `int`.
+The return type of an accessor method is the same as the type of the field it accesses; in this case `highTemperature` is an `int`, so the return type of our getter is `int`.
 
 A getter allows other classes to be able to read the value of a field; if they don't need to know the value, we just don't write a getter for that field.
 But read-only access usually does no harm, so often we'll have getters for all of our fields.
@@ -277,7 +281,7 @@ All this method does is accept a new value and assign it to the field.
 Choosing to write setters isn't quite as straightforward as with getters, where there's generally no harm in exposing read-only access to everything.
 But we really should only write setters for fields that we want to be able to change from outside the class.
 
-TIP: As a rule of thumb for beginners, create getters for all of your fields when you first write your class, and then add setters only as you need them. Because this is sometimes tricky for beginners to determine, I don't deduct points for writing unnecessary setters--but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
+TIP: As a rule of thumb for beginners, create *getters* for all of your fields when you first write your class, and then add *setters* only as you need them. Because this is sometimes tricky for beginners to determine, I don't deduct points for writing unnecessary setters--but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
 
 If you're paaying attention to what we're doing here, you might be thinking that these setters really just give public access to the fields, which seems to go against the whole idea of encapsulation.
 That's true for now, but only because we don't know enough Java yet to do anything about it.
@@ -403,7 +407,7 @@ Even when we only have one instance, the compiler needs to know where to find th
 Ok, time for another convention that seems only intended to be nitpicky and pointless, but is important and is expected on assignments in this course.
 OOP nerds value keeping parts of our programs compartmentalized, and that includes separating the class definition and the code that uses the class.
 A class definition goes in its own file, which must have a filename exactly match the name of the class (with _.java_ as an extension)--and that one's not a convention, that's a syntax rule for the compiler.
-A class we definte for use as object can be called an *object class* or a *user-defined class*. 
+A class we define for use as object can be called an *object class* or a *user-defined class*. 
 
 The code that uses the _object class_ should be in its own file, and is often called a *driver class*.
 The driver class contains the `main()` method, which is the entry point for the program.
@@ -414,7 +418,7 @@ And in those cases, we often see "test" or "demo"; so a driver class for our `We
 
 The point here is that, if we've created an object class called `WeatherRecord`, we're not going to put our `main()` method in that same class/file.
 We're going to make a separate class--a driver, or demo class, or test class.
-I don't much care what term you use, as long as it's separate.
+I don't much care what term you use, as long as it's a separate class and file.
 
 Your pitchforks are already sharpened, but here's the part where you light your torches.
 *All of your input and output should be in the driver class.*
@@ -424,7 +428,7 @@ My examples always demonstrate this _separation of concerns_, so you'll have ple
 .Interesting!
 ****
 I asked an AI platform to give me an image of an angry mob with pitchforks and torches (coming after me because I make them separate their input and output), and the AI spit out this https://github.com/timmcmichael/skimpy-oop/blob/5c16f73bd0e71a33b94727618d3097f503eb27a6/chapter-4-classes/images/creepy_mob.png?raw=true[nightmare fuel^].
-I decided it was too creepy to display in the text, but the crime against nature should be preserved for posterity. If a mob like that comes for me, I'll let them put `print()` statements wherever they want!
+I decided it was too creepy to display in the text, but this crime against nature should be preserved for posterity. If a mob like that comes for me, I'll let them put `print()` statements wherever they want!
 ****
 
 Why can't we put input/output in our object classes?
@@ -559,7 +563,7 @@ In this case, the parameter is a _local variable_ to the constructor, and it's _
 We can also https://timmcmichael.github.io/skimpy-oop/_0011_methods.html#_overloading_a_method[overload] constructors, which means we can have multiple constructors with different parameters--just like we can with any other method.
 That can include having a parameterless constructor and one or more constructors with parameters, or having multiple constructors with different numbers of parameters.
 
-NOTE: To see a complete example of the `WeatherRecord` class with constructors, fields, and methods, as well as a driver class to deomnstrate it, visit the_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects[GitHub repository for this chapter^].
+NOTE: To see a complete example of the `WeatherRecord` class with constructors, fields, and methods, as well as a driver class to demonstrate it, visit the_Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects[GitHub repository for this chapter^].
 
 .Time To Watch!
 ****

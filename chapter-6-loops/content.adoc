@@ -32,11 +32,11 @@ Now that we understand how to use Boolean expressions to control the flow of our
 Many of the tasks we think of as "computer tasks" are repetitive in nature.
 Processing data often involves performing the same operation on each piece of information, one after the other, until everything is processed.
 A computer game has to draw the screen, check for collisions, check what the user is doing with the gamepad, and update the positions of all the objects on the screen, over and over again, until the game ends.
-When you use a search engine on the web, that search engine has scanned the web one page at a time, indexing what it finds and then moving on to the next page, until it's scanned all of the pages in its database.
+When we use a search engine on the web, that search engine has scanned the web one page at a time, indexing what it finds and then moving on to the next page, until it's scanned all of the pages in its database.
 
 Computers are great for these kinds of tasks: they don't get bored, they don't get tired, and they don't make mistakes--other than the mistakes we make when programming them!
 
-To create the kind of repetition that leverages this processing power, programmer use _loops_.
+To create the kind of repetition that leverages this processing power, programmers use _loops_.
 A loop is a structure that repeats a block of code as long as a certain condition is true.
 Each time the loop repeats, it's called an _iteration_.
 
@@ -80,7 +80,7 @@ It is a definite loop because, before the loop starts, it's already known that t
 ==== Infinite Loops
 One thing to be careful of when using a `while` loop is the possibility of creating an _infinite loop_.
 An infinite loop is a loop that repeats forever, because the condition that determines whether the loop should repeat is never false.
-Infinite loops are a common mistake for new programmers, and they can cause your program to hang or crash.
+Infinite loops are a common mistake for new programmers, and they can cause our program to hang or crash.
 
 .Example of an infinite loop
 [source,java]
@@ -97,7 +97,7 @@ The program will print out "Count is: 0" over and over again, forever.
 
 NOTE: Your IDE will have a way to stop the program if it's stuck in an infinite loop. Often, this is a square button--essentially the symbol for "stop". In VS Code, you can also kill the terminal window that's running the program by clicking the trash can icon in the terminal window. Finally, in many cases you can press `Ctrl+C` to stop the program.
 
-The simplest infinite loop you can create in Java is:
+The simplest infinite loop we can create in Java is:
 
 [source,java]
 ----
@@ -164,10 +164,10 @@ Files from video:
 Both `while` and `do-while` loops work well for _indefinite loops_ (though they can be used for definite loops as well).
 There's nothing in the structure of these loops that requires a counter or other control variable, so they can be used for loops that repeat until a certain condition is met, however many iterations that requires.
 
-In many cases, it doesn't matter whether you use a `while` or a `do-while` loop.
-You really can use either one to create the same loop.
+In many cases, it doesn't matter whether we use a `while` or a `do-while` loop.
+We really can use either one to create the same loop.
 However, in some cases, one might be a better choice than the other.
-The simple rule of thumb for now is: if you need to guarantee that the block of code will execute at least once, you should use a `do-while` loop; if you need to check the condition before executing the block of code, you should use a `while` loop.
+The simple rule of thumb for now is: if we need to guarantee that the block of code will execute at least once, we should use a `do-while` loop; if we need to check the condition before executing the block of code, we should use a `while` loop.
 
 image::while_do-while.jpg[width=400]
 
@@ -178,7 +178,7 @@ A common use for indefinite loops is _input validation_.
 Input validation is the process of checking the data that a user inputs into a program to make sure it's valid.
 For example, if a program displays a menu with three options, a loop could keep asking for a selection until the user enters one of the three choices.
 
-There are more advanced techniques we'll eventually use for input validation, but indefinite loops are a simple and effective way to make sure the user's input is what you expect.
+There are more advanced techniques we'll eventually use for input validation, but indefinite loops are a simple and effective way to make sure the user's input is what we expect.
 
 .Example of input validation with a `do-while` loop
 [source,java]
@@ -209,8 +209,8 @@ This snippet of a program will keep displaying the menu and asking for the user'
 
 === `for` Loops
 
-Definite loops are really common, especially when we learn about things like _arrays_ later on, so Java provides a keyword that allows for a compacy way to create that kind of loop: the `for` loop.
-The syntax of a `for` loop can be a little intimidating for new coders, but it really just combines into one line of code all three of the pieces you need for a loop: initializing a counter, checking the counter, and changing the counter.
+Definite loops are really common, especially when we learn about things like _arrays_ later on, so Java provides a keyword that allows for a compact way to create that kind of loop: the `for` loop.
+The syntax of a `for` loop can be a little intimidating for new coders, but it really just combines into one line of code all three of the pieces we need for a loop: initializing a counter, checking the counter, and changing the counter.
 
 .`for` loop syntax
 [source,java]
@@ -222,8 +222,8 @@ for (int count = 0; count < 10; count++) {
 
 The `for` loop has three parts, separated by semicolons:
 1. Initialize a counter. _Example:_ `int count = 0`.
-2. A Boolean expression that determines if the loop should repea. _Example:_ `count < 10`.
-3. Change the counter at the end of the iteration. _Example:_: `count++`.
+2. A Boolean expression that determines if the loop should repeat. _Example:_ `count < 10`.
+3. Change the counter at the end of the iteration. _Example:_ `count++`.
 
 Once you get the hang of the syntax, the `for` loop is a really convenient way to create a definite loop.
 
@@ -271,7 +271,7 @@ video::gc4D-7UhxR0[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 
 === A Word About Nested Loops
-You can put a loop inside another loop, and that's called a _nested loop_. They are useful in some situations, and studying them can improve your ability think through loop-based algorithms.
+We can put a loop inside another loop, and that's called a _nested loop_. They are useful in some situations, and studying them can improve our ability to think through loop-based algorithms.
 
 However, they are beyond the scope of this course, which focuses on the fundamentals of object-oriented programming.
 

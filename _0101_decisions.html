@@ -666,8 +666,8 @@ These can be assigned to variables of type <code>boolean</code>:</p>
 <p>Also known as <em>comparison operations</em>, relational operations are expressions that compare two values.
 You will remember them from math class. <em>Is <code>x</code> greater than <code>y</code>? Is <code>a</code> less than or equal to <code>10</code>? Is <code>c</code> equal to <code>d</code>?</em>
 Relational operators, like arithmetic operators, are <em>binary</em> operators that require two operands.
-In other words, you need two values to compare.
-In your math class, you could draw symbols that aren&#8217;t on your keyboard, like a &#8805; for "greater than or equal to."
+In other words, we need two values to compare.
+In our math class, we could draw symbols that aren&#8217;t on our keyboard, like a &#8805; for "greater than or equal to."
 In Java, where we have to stick with stuff on our keyboard, we use the following symbols:</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even" style="width: 50%;">
@@ -724,8 +724,8 @@ We can store that result in a <code>boolean</code> variable, as shown below, and
 <div class="sect3">
 <h4 id="_testing_a_string_for_equality">5.1.3. Testing a String for Equality</h4>
 <div class="paragraph">
-<p>In Java, you can&#8217;t use the <code>==</code> operator to compare two strings.
-The following code will not work as you might expect:</p>
+<p>In Java, we can&#8217;t use the <code>==</code> operator to compare two strings.
+The following code will not work as we might expect:</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of an incorrect <code>String</code> comparison.</div>
@@ -741,7 +741,7 @@ The following code will not work as you might expect:</p>
 Due to the nuances of how the Java runtime handles <code>String</code> objects, this code will work sometimes, by coincidence, but it&#8217;s not reliable.</p>
 </div>
 <div class="paragraph">
-<p>Instead, you&#8217;ll need to use the <code>equals()</code> method, which is a method of the <code>String</code> class and gets called using dot notation.
+<p>Instead, we&#8217;ll need to use the <code>equals()</code> method, which is a method of the <code>String</code> class and gets called using dot notation.
 This method will examine the contents of the strings and return <code>true</code> if they are the same, and <code>false</code> if they are different.</p>
 </div>
 <div class="listingblock">
@@ -771,7 +771,7 @@ The <code>equals()</code> method is case-sensitive, so <code>"Paul McCartney"</c
 <h3 id="_if_statements">5.2. <code>if</code> Statements</h3>
 <div class="paragraph">
 <p>The <code>if</code> statement is the most basic decision-making structure in Java.
-It allows you to execute a block of code only if a certain condition is true.</p>
+It allows us to execute a block of code only if a certain condition is true.</p>
 </div>
 <div class="paragraph">
 <p>The syntax of an <code>if</code> statement is the keyword <code>if</code>, followed by a Boolean expression in parentheses, followed by a block of code in curly braces.
@@ -806,7 +806,7 @@ The program would then continue to the next line of code, which prints "Keep tha
 <h3 id="_adding_an_else_block">5.3. Adding an <code>else</code> Block</h3>
 <div class="paragraph">
 <p>An <code>if</code> statement simply determines whether or not to execute a single block of code.
-If you want to choose between two blocks of code, you can add an <code>else</code> block to the <code>if</code> statement.
+If we want to choose between two blocks of code, we can add an <code>else</code> block to the <code>if</code> statement.
 The syntax is simple: after the <code>if</code> block, add the keyword <code>else</code>, followed by a block of code in curly braces.</p>
 </div>
 <div class="listingblock">
@@ -853,7 +853,7 @@ Basically, it&#8217;s an either-or situation.</p>
 <div class="content">
 <div class="title">Interesting!</div>
 <div class="paragraph">
-<p>Java includes a shorthand form of an if-else statement called the <em>ternary operator</em>, which uses the question mark symbol. It&#8217;s a useful little trick, but it can be confusing for beginner&#8212;&#8203;and for the people reading your code later. We won&#8217;t look at them in this course, but a web search should turn up plenty of examples if you are curious.</p>
+<p>Java includes a shorthand form of an if-else statement called the <em>ternary operator</em>, which uses the question mark symbol. It&#8217;s a useful little trick, but it can be confusing for beginners&#8212;&#8203;and for the people reading our code later. We won&#8217;t look at them in this course, but a web search should turn up plenty of examples if we are curious.</p>
 </div>
 <div class="paragraph">
 <p>Assignments in my course require you to actually use if-else statements, so you shouldn&#8217;t use the ternary operator in code you submit to me.</p>
@@ -864,8 +864,8 @@ Basically, it&#8217;s an either-or situation.</p>
 <div class="sect2">
 <h3 id="_the_if_else_if_structure">5.4. The <code>if-else if</code> Structure</h3>
 <div class="paragraph">
-<p>The <code>if-else</code> structure is great for choosing between two blocks of code, but what if you have more than two options?
-To handle this, you can chain multiple <code>if-else</code> statements together.</p>
+<p>The <code>if-else</code> structure is great for choosing between two blocks of code, but what if we have more than two options?
+To handle this, we can chain multiple <code>if-else</code> statements together.</p>
 </div>
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code> (excerpt). Example of an <code>if-else if</code> statement. See <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions" target="_blank" rel="noopener">GitHub</a> for the full file.</div>
@@ -917,9 +917,9 @@ Therefore, only one block of code will execute.
 If the program gets through the entire structure without finding a <code>true</code> condition, it will execute the block of code in the <code>else</code> block, if one is present.</p>
 </div>
 <div class="paragraph">
-<p>If you&#8217;re looking at that code critically, you might notice that the <code>else</code> block is not strictly necessary.
-You could just put the <code>return "Cold";</code> statement at the end of the method, and it would work the same way.
-However, that depends on the logic of the <code>if-else if</code> structure and whether or not you&#8217;re using <code>return</code> statements in the blocks of code.</p>
+<p>If we&#8217;re looking at that code critically, we might notice that the <code>else</code> block is not strictly necessary.
+We could just put the <code>return "Cold";</code> statement at the end of the method, and it would work the same way.
+However, that depends on the logic of the <code>if-else if</code> structure and whether or not we&#8217;re using <code>return</code> statements in the blocks of code.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -993,7 +993,7 @@ Nested if statements check multiple conditions in a hierarchical way: if one con
 </div>
 <div class="paragraph">
 <p>In the example below, the outermost if-else structure checks the high temperature of the day.
-The if-else structures within those blocks checks the average wind speed and returns an appropriate description.</p>
+The if-else structures within those blocks check the average wind speed and return an appropriate description.</p>
 </div>
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code> (excerpt). Example of a nested <code>if-else</code> statement. See <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions" target="_blank" rel="noopener">GitHub</a> for the full file.</div>
@@ -1101,7 +1101,7 @@ A logical operator is a binary operation, so it takes two operands&#8212;&#8203;
 </table>
 <div class="paragraph">
 <p>These operators can be used to combine multiple Boolean expressions into a single, more complex expression.
-For example, you could check if a student is eligible for a scholarship based on both their GPA (3.5 or better) and their age (younger than 25).</p>
+For example, we could check if a student is eligible for a scholarship based on both their GPA (3.5 or better) and their age (younger than 25).</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of a decision using a logical AND operation.</div>
@@ -1122,7 +1122,7 @@ The <code>if</code> statement will only execute the block of code if both expres
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Often, the logic you create using an AND operation can be implemented using nested if-else statements, and vice versa.
+Often, the logic we create using an AND operation can be implemented using nested if-else statements, and vice versa.
 </td>
 </tr>
 </table>
@@ -1151,10 +1151,10 @@ The following code is a very common beginner mistake and will <strong>not</stron
 </div>
 <div class="paragraph">
 <p>This reads like "if the percentage is greater than or equal to 80 and less than 90," but the second part of the expression is not a complete Boolean expression.
-You need to include the variable name and the comparison operator on both sides of the <code>&amp;&amp;</code> operator.</p>
+We need to include the variable name and the comparison operator on both sides of the <code>&amp;&amp;</code> operator.</p>
 </div>
 <div class="paragraph">
-<p>The NOT operation is a little different, as it only takes one operand (making it a <em>unary</em> operator_, if you&#8217;ve nerdy about words, like I am).
+<p>The NOT operation is a little different, as it only takes one operand (making it a <em>unary</em> operator_, if you&#8217;re nerdy about words, like I am).
 It simply inverts the value of the operand.
 If the operand is <code>true</code>, the NOT operation will evaluate to <code>false</code>.
 If the operand is <code>false</code>, the NOT operation will evaluate to <code>true</code>.</p>
@@ -1172,8 +1172,8 @@ If the operand is <code>false</code>, the NOT operation will evaluate to <code>t
 <div class="sect3">
 <h4 id="_range_checking">5.6.1. Range Checking</h4>
 <div class="paragraph">
-<p>There are a lot of situations where you might need to combine multiple conditions to make a decision, but one of the most common is <em>range checking</em>.
-Range checking means you want to see if a value is within a certain range.</p>
+<p>There are a lot of situations where we might need to combine multiple conditions to make a decision, but one of the most common is <em>range checking</em>.
+Range checking means we want to see if a value is within a certain range.</p>
 </div>
 <div class="paragraph">
 <p>A common example of range checking is to convert a percentage grade to a letter grade.</p>
@@ -1238,7 +1238,7 @@ If there is no match, the program will execute the <code>default</code> block, i
 </div>
 <div class="paragraph">
 <p>The <code>break</code> statement is used to exit the <code>switch</code> block due to a behavior of <code>switch</code> that can be confusing to beginners, known as <em>fall-through</em>.
-If you don&#8217;t include a <code>break</code> statement at the end of a <code>case</code> block, the program will continue executing the code in the next <code>case</code> block, even if the value of the expression doesn&#8217;t match the <code>case</code>.
+If we don&#8217;t include a <code>break</code> statement at the end of a <code>case</code> block, the program will continue executing the code in the next <code>case</code> block, even if the value of the expression doesn&#8217;t match the <code>case</code>.
 This can be useful in some situations, but it&#8217;s generally not what you want, so you&#8217;ll usually see a <code>break</code> statement at the end of each <code>case</code> block.</p>
 </div>
 <div class="listingblock">
@@ -1322,7 +1322,7 @@ This can be useful in some situations, but it&#8217;s generally not what you wan
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-05 19:44:56 -0700
+Last updated 2025-03-06 21:29:40 -0700
 </div>
 </div>
 </body>
