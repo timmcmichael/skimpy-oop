@@ -260,6 +260,8 @@ Files from video:
 
 ****
 
+IMPORTANT: The Lab Assignments in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the Programming Project.
+
 === Constructors & Inheritance
 
 As we've seen, when we create an object of a class, Java automatically calls the class's constructor to initialize the object.

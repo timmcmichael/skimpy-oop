@@ -20,14 +20,13 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 === What's the Point?
 
 * Distinguish between compile-time and runtime errors
-* Learn some strategies for debugging your code
-* Use the debugging tools available in your IDE
+* Learn some strategies for debugging our code
+* Use the debugging tools available in our IDE
 * Understand the basics of generative AI in coding
 * Use a generative AI tool to generate source code
 
 :sectnums:
 '''
-
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/07%20Debugging[GitHub^]._
 
@@ -35,14 +34,14 @@ _Source code examples from this chapter and associated videos are available on h
 
 === Debugging
 
-A _bug_ is an error in your code that causes it to behave in an unexpected way.
-This is different from a syntax error, like forgetting a semicolon or misspelling a keyword--those kinds of mistakes will prevent your code from compiling, so you can't even run it.
-A bug is when your code runs, but it doesn't do what you want it to do.
+A _bug_ is an error in our code that causes it to behave in an unexpected way.
+This is different from a syntax error, like forgetting a semicolon or misspelling a keyword--those kinds of mistakes will prevent our code from compiling, so we can't even run it.
+A bug is when our code runs, but it doesn't do what we want it to do.
 
 Bugs are frustrating, but they are a part of programming.
 Like Thanos, they are inevitable.
-And like Thanos, you can use ludicrous time traveling to fix (decapitate?) your bugs.
-Well, you can't do that last part, but you can fix them in the present; and hopefully, you can do it without too much frustration.
+And like Thanos, we can use ludicrous time traveling to fix (decapitate?) our bugs.
+Well, we can't do that last part, but we can fix them in the present; and hopefully, we can do it without too much frustration.
 
 Finding and fixing bugs is called _debugging_, and without realing it, you've been developing your own strategies for debugging since you started writing code.
 But as your code becomes more complex, you'll benefit from a more systematic approach to debugging--and you'll want to take advantage of the tools available in your IDE to help you.
@@ -51,14 +50,14 @@ But as your code becomes more complex, you'll benefit from a more systematic app
 
 We categorize bugs into two general types:
 
-Compile-time errors:: Errors that prevent the compiler from fully processing your source code. These are generally the result of incorrect syntax--in other words, breaking the rules of the language.
-Runtime errors:: Errors in which your code compiles, but it does not execute as intended. Crashes are obvious runtime errors, but making an incorrect calculation is also an example of a runtime error.
+Compile-time errors:: Errors that prevent the compiler from fully processing our source code. These are generally the result of incorrect syntax--in other words, breaking the rules of the language.
+Runtime errors:: Errors in which our code compiles, but it does not execute as intended. Crashes are obvious runtime errors, but making an incorrect calculation is also an example of a runtime error.
 
-Fixing compile-time errors is just a matter of looking over your code and correcting the mistake.
-That's not always as easy as it sounds--especially for beginners--but at least the compiler and/or your IDE can give you feedback about what and where the mistake is.
+Fixing compile-time errors is just a matter of looking over our code and correcting the mistake.
+That's not always as easy as it sounds--especially for beginners--but at least the compiler and/or our IDE can give us feedback about what and where the mistake is.
 
 Runtime errors can be especially frustrating, especially since we can't always tell at what point the actual error is occurring.
-Did I make the mistake at the start of the program when I calculated the answer, is the mistake at the very end where I output it? 
+Did I make the mistake at the start of the program when I calculated the answer, or is the mistake at the very end where I output it? 
 Or did I do something in the middle that accidentally changed the result?
 Who knows! And if you're like me, you might have done all three...
 
@@ -73,20 +72,20 @@ video::jcslOC6-cbk[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 ****
 
-=== Debugging Tools in Your IDE
+=== Debugging Tools in Our IDE
 
-Most modern IDEs have built-in tools to help you debug your code.
-These tools allow you monitor the variables in your program, step through your code line-by-line, and set breakpoints to pause your program at a specific point.
+Most modern IDEs have built-in tools to help us debug our code.
+These tools allow us to monitor the variables in our program, step through our code line-by-line, and set breakpoints to pause our program at a specific point.
 The more you know about programming, the more useful these tools become.
-But even as beginners, these tools can be helpful in finding and fixing bugs in your code.
+But even as beginners, these tools can be helpful in finding and fixing bugs in our code.
 
-The most common debugging tools you'll use are:
-Watch window:: A window that displays the values of variables in your program.
-Breakpoints:: A marker that tells your program to pause at a specific point in your code.
-Step Into:: A command that tells your program to execute the next line of code.
-Step Over:: A command that tells your program to execute the next line of code, but not to step into any methods that are called.
-Step Out:: A command that tells your program to execute the rest of the current method and then pause.
-Resume:: A command that tells your program to continue running until it hits the next breakpoint.
+The most common debugging tools we'll use are:
+Watch window:: A window that displays the values of variables in our program.
+Breakpoints:: A marker that tells our program to pause at a specific point in our code.
+Step Into:: A command that tells our program to execute the next line of code.
+Step Over:: A command that tells our program to execute the next line of code, but not to step into any methods that are called.
+Step Out:: A command that tells our program to execute the rest of the current method and then pause.
+Resume:: A command that tells our program to continue running until it hits the next breakpoint.
 
 These functions are available in most IDEs, but the specifics of how they work can vary.
 Even if you're not using Visual Studio Code, the concepts are the same, so you should be able to apply what you learn here to your IDE of choice.
@@ -105,6 +104,8 @@ Files from video:
 
 ****
 
+IMPORTANT: The first Lab Assignment in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the second Lab Assignment.
+
 === Generative AI in Coding
 
 :!sectnums:
@@ -113,7 +114,7 @@ Files from video:
 
 Generative Artificial Intelligence is a type of AI that can generate new content based on existing data.
 Tools like ChatGPT and Copilot are well-known examples of generative AI.
-You can ask a generative AI tool to write song lyrics about about Java programming, for example, and it will producte a https://timmcmichael.github.io/skimpy-oop/chapter-7-debugging/ai_song.html[new song for you^].
+We can ask a generative AI tool to write song lyrics about Java programming, for example, and it will produce a https://timmcmichael.github.io/skimpy-oop/chapter-7-debugging/ai_song.html[new song for us^].
 
 Artificial Intelligence is a broad field, and the topic is well beyond the scope of this course.
 But generative AI has important implications for the field of software development, so we'll focus on just that aspect of the technology.
@@ -123,7 +124,7 @@ But generative AI has important implications for the field of software developme
 Like many teachers, I'm actively wrestling with the role of generative AI in a coding course.
 I have many ethical concerns about AI in general, and about generative AI to create code in particular. 
 Simply put, these tools can be used in ways that are indisputably unethical. 
-Most obviously, students can easily use these tools generate code that is then submitted as the student's own work.
+Most obviously, students can easily use these tools to generate code that is then submitted as the student's own work.
 
 I would like to think it goes without saying, but based on the number of students who deny this, I guess I need to say it: using AI to generate code that you submit as your own is cheating.
 It is no different than copying someone else's code and submitting it as your own.
@@ -158,7 +159,7 @@ All I can do is guess, but here are some things I *hope* AI does for us:
 
 * *Better software:* If AI can help us write better code, that should lead to better software.
 * *Faster development and update cycles:* Again, if AI makes us more efficient, we should be able to develop and update software faster.
-* *Improved security:* Hopefully, AI will help us indentify and address security vulnerabilities in our code.
+* *Improved security:* Hopefully, AI will help us identify and address security vulnerabilities in our code.
 * *More time for high-level effort:* If AI can take on some of the more tedious and boring coding tasks, that should free up mental bandwidth to focus on the more interesting and creative.
 
 My most optimistic hope is that AI will free up programmers to focus on creative applications and problem-solving--and ultimately allow us to create software that improves the world around us.
@@ -172,7 +173,7 @@ Again, I can only guess, but here are some things I *fear* might happen due to A
 * *Loss of institutional knowledge:* Every programming team relies on veteran coders who have been around and have a deep understanding of the codebase. When there's a question about what a module does, or why an algorithm was implemented a certain way, those veterans are the ones who have the answers. If AI is generating code, we may lose that institutional knowledge.
 * *Decreased quality of entry-level programmers:* If AI can generate code for us, it's possible that we'll see a decrease in the quality of entry-level programmers. People who rely heavily on AI while learning to code may not develop the same problem-solving skills as those who learn to code without AI. 
 
-==== What Does That All Mean for You?
+==== What Does That All Mean for Us?
 
 I don't know. 
 As excited as I am to see AI reach this tipping point in software development, it's kind of a scary time to be a programming teacher.
@@ -180,7 +181,7 @@ Until recently, I've always
 
 Coders who rely heavily on artificial intelligence tools to solve problems may be able to pass themselves off as more skilled than they actually are--indeed, they might even believe themselves to be more skilled than they actually are.
 But such coders will be less skilled at testing, debugging and maintaining code, and that could lead to a decrease in the quality of software.
-Putting code into production (releasing it in software that people actually use) without understanding it well enough to regiorously test it is a recipe for disaster.
+Putting code into production (releasing it in software that people actually use) without understanding it well enough to rigorously test it is a recipe for disaster.
 
 I think there is still a bright future for programmers, but the landscape will be different.
 Coders will need to have a deeper understanding of the code they write, and they will need to be able to solve problems that AI can't.
@@ -192,21 +193,21 @@ Testing and debugging skills will be more important than ever, and those can rea
 
 ==== Using Generative AI Tools
 
-Online tools like ChatGPT and Microsoft's Copilot can help you generate code without any specialized software. 
+Online tools like ChatGPT and Microsoft's Copilot can help us generate code without any specialized software. 
 Simply enter a description of what you want the code to do, and the AI will generate code for you.
 You can then copy and paste that code into your IDE and work with it from there.
 
 But IDEs are also beginning to integrate generative AI tools focused on coding.
 For example, Visual Studio Code now includes a feature called *GitHub Copilot* that has been trained on billions of lines of code.
-The user interface provides a chat window where you can describe what you want the code to do, and Copilot will generate code for you.
-You can choose to accept that suggestions, or you can refine your prompt to get a different suggestion.
+The user interface provides a chat window where we can describe what we want the code to do, and Copilot will generate code for us.
+We can choose to accept that suggestions, or we can refine our prompt to get a different suggestion.
 
-Additionally, Copilot can generate code as you type.
-It will analyze the code you've already written and suggest the next line of code.
-You can accept that suggestion, or you can ignore it and keep typing.
-It essentially acts as a very advanced code completion tool--or like the "autocomplete" feature on your phone's keyboard, but for code.
+Additionally, Copilot can generate code as we type.
+It will analyze the code we've already written and suggest the next line of code.
+We can accept that suggestion, or we can ignore it and keep typing.
+It essentially acts as a very advanced code completion tool--or like the "autocomplete" feature on our phone's keyboard, but for code.
 
-At this time, GitHub Copilot requires a subscription, but you can use it for free for a limited number of lines of code; and students get an expanded free tier.
+At this time, GitHub Copilot requires a subscription, but we can use it for free for a limited number of lines of code; and students get an expanded free tier.
 
 *And yes, I used Copilot to help me prepare the content on AI in this chapter...*
 

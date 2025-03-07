@@ -65,15 +65,15 @@ I encourage beginning students to think of a variable like a container, such as 
 image::important_mug.jpeg[A coffee mug that says "Nerds Rule", width=300]
 
 The container can hold one thing at a time.
-I can put coffee in it, or I can put water in it--but I can't put both.
-If I start with coffee and decide I want to put water in there, the coffee gets dumped out and is gone forever.
-That's fine, but I better make sure I don't want the coffee anymore before I put something else in the mug.
+We can put coffee in it, or we can put water in it--but we can't put both.
+If we start with coffee and decide we want to put water in there, the coffee gets dumped out and is gone forever.
+That's fine, but we better make sure we don't want the coffee anymore before we put something else in the mug.
 
 A variable works the same way.
 It can hold one value, and that value can vary--remember, that's where the name comes from--but once it's changed, that old value is lost.
 
-I guess I could mix coffee and water, but then that's really a new substance and I can't get back my plain coffee (or my water).
-If I want to store coffee *and* water, I can do that by using two different containers. 
+We guess we could mix coffee and water, but then that's really a new substance and we can't get back our plain coffee (or our water).
+If we want to store coffee *and* water, we can do that by using two different containers. 
 
 From a programming perspective--rather than a coffee perspective--a variable is a location in the computer's memory where we can store a value.
 In order to use that value, we have to know where to find it, so we give the memory location a name, technically called an *identifier*.
@@ -193,7 +193,7 @@ boolean hasCar = false;
 We'll look at this "Boolean logic" in the xref:chapter-5-decisions/content.adoc[chapter on decisions].
 
 === `char` Data Type
-If you want to store a single character, like a student's letter grade or their first initial, you can use the `char` data type.
+If we want to store a single character, like a student's letter grade or their first initial, we can use the `char` data type.
 Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol--or some other weird stuff, too.
 
 .Examples of character variable declarations
@@ -272,7 +272,7 @@ The naming convention used for Java constants is called *snake case*. More speci
 === Outputting Variable (and Constant) Values
 
 Assigning a value to a variable or constant does not produce any output.
-If you want to display the output of a variable--or a constant--you just put the identifier in a `print()` or `println()` statement without any quotation marks:
+If we want to display the output of a variable--or a constant--we just put the identifier in a `print()` or `println()` statement without any quotation marks:
 
 [source,java]
 ----
@@ -411,7 +411,6 @@ If we're counting down the number of days until our next birthday, we could exec
 Increment and decrement only require one operand, so we call them _unary_ operators.
 
 NOTE: There are two forms to the increment and decrement operators: *prefix* and *postfix*. These examples use the postfix form, putting the operator after the variable name, whereas a prefix form would have the operator before the variable name: `++age`. There's a subtle difference in how postfix and prefix operations work, but for now you can use them interchangeably. I mention it here only because you might see code examples online using the prefix form.
-
 
 === Getting User Input
 

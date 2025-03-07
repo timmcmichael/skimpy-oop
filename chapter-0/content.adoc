@@ -22,7 +22,7 @@ These two tools can be used on pretty much any laptop or desktop computer, even 
 
 .Heads Up!
 ****
-Java development on a chromebook or iPad is tricky and not recommended for beginners. Use a different computer if at all possible.
+Java development on a Chromebook or iPad is tricky and not recommended for beginners. Use a different computer if at all possible.
 ****
 
 The Canvas course includes some options for students who don't have a computer capable of running the necessary software.
@@ -62,7 +62,7 @@ You're going to want Visual Studio Code (aka "VS Code") for your Java coding.
 
 Once you've installed the JDK above, install the IDE you are going to use to learn Java. 
 There's nothing wrong with trying out multiple IDEs to find out which one you prefer.
-Other popular options include https://eclipseide.org/[eclipse], https://www.jetbrains.com/idea/[IntelliJ IDEA], and https://netbeans.apache.ord[Apache Netbeans], and they all have free versions that are great for learning Java.
+Other popular options include https://eclipseide.org/[eclipse], https://www.jetbrains.com/idea/[IntelliJ IDEA], and https://netbeans.apache.org[Apache NetBeans], and they all have free versions that are great for learning Java.
 
 But my recommendation is to install VS Code.
 
