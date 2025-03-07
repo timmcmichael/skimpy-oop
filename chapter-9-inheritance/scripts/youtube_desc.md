@@ -10,15 +10,13 @@ We're going to take a look at how inheritance relationships work from an OOP des
 4:34 Inheritance Terminology
 6:09 The "is a" Test
 7:47 Outro
-
 ----
-
-This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of the course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #csharp #python #coding #beginners #oop #inheritance #classes #objects
+#java #csharp #python #coding #beginners #oop #inheritance #classes #objects #emcc #cis150ab
 
 ---------------------
 
@@ -36,15 +34,13 @@ In this video, we learn how to extend a class in Java, setting up an inheritance
 14:07 Calling a Superclass Method
 18:09 Adding a SavingsAccount Subclass
 20:22 Outro
-
 ----
-
-This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of the course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #oop #inheritance #extending-classes #superclass #subclass #encapsulation
+#java #coding #beginners #oop #inheritance #superclass #subclass #encapsulation #emcc #cis150ab
 
 ---------------------
 
@@ -66,15 +62,13 @@ We need to take a look at the "inheritance hierarchy" and learn how method calls
 20:16 Using the 'super' Keyword
 22:11 The 'toString()' Method
 24:34 One Class to Rule Them All!
-
 ----
-
 This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #oop #inheritance #overriding #methods #subclasses #superclasses
+#java #coding #beginners #oop #inheritance #overriding #methods #subclasses #superclasses #emcc #cis150ab
 
 ---------------------
 
@@ -92,15 +86,13 @@ In this video, we'll see how constructors work their way through the inheritance
 7:40 Calling a Superclass Constructor
 9:07 Passing Parameters
 10:36 Outro
-
 ----
-
 This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #oop #inheritance #constructors #subclasses #superclasses
+#java #coding #beginners #oop #inheritance #constructors #subclasses #superclasses #emcc #cis150ab
 
 ---------------------
 
@@ -119,15 +111,13 @@ In this video, we'll dip our toes in the world of polymorphism with arrays that 
 6:16 Determining an Object's Class
 8:56 Overriding and Polymorphism
 11:07 Outro
-
 ----
-
 This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #beginners #inheritance #polymorphism #overriding #oop
+#java #coding #beginners #inheritance #polymorphism #overriding #oop #emcc #cis150ab
 
 ---------------------
 

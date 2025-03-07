@@ -5,12 +5,13 @@ You're old enough now that we need to have The Talk. You're probably starting to
 The truth is, you're getting too mature to simply think about your programs from a procedural perspective. You need to start learning about object-oriented programming. 
 
 This video is here to help. Learn about classes and objects, and how attributes and behaviors become fields and methods. 
+----
+This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-Files used in videos:
-* GitHub: https://github.com/timmcmichael/EMCCTimFiles
+GitHub landing page: https://timmcmichael.github.io/
 
 #java #coding #beginner #oop #classes #UML #objects #emcc #cis150ab #cis162ad #cis156 #cis256
 ----------------
@@ -29,14 +30,12 @@ The follow up video is here: https://www.youtube.com/watch?v=E0HFACqWgP4&list=PL
 3:08 Behaviors
 4:52 Outro
 ----
-
-This video is part my of course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-Files used in videos:
-* GitHub: https://github.com/timmcmichael/EMCCTimFiles
+GitHub landing page: https://timmcmichael.github.io/
 
 #java #coding #oop #classes #UML #objects #emcc #cis150ab #cis162ad #cis156 #cis256
 
@@ -61,14 +60,12 @@ The class from this video is further developed here: https://www.youtube.com/wat
 12:21 Mutator Methods
 14:58 Outro
 ----
-
-This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-Files used in videos:
-* GitHub: https://github.com/timmcmichael/EMCCTimFiles
+GitHub landing page: https://timmcmichael.github.io/
 
 #java #coding #oop #classes #UML #objects #getters #setters #encapsulation #emcc #cis150ab
 
@@ -80,7 +77,6 @@ Setters are great, but they just require So. Much. Typing. My precious little fi
 
 Constructors, to the rescue! Learn how a default constructor initializes an object when we don't create a constructor of your own. Then, learn how to create a constructor of your own. You'll have so much fun making a constructor that you'll then learn to override it so you can have even more fun!
 
-
 This video builds on a class created here: https://www.youtube.com/watch?v=E0HFACqWgP4&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=14
 
 0:00 Intro
@@ -91,14 +87,12 @@ This video builds on a class created here: https://www.youtube.com/watch?v=E0HFA
 6:35 Overloading Constructors
 7:45 Outro
 ----
-
-This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-Files used in videos:
-* GitHub: https://github.com/timmcmichael/EMCCTimFiles
+GitHub landing page: https://timmcmichael.github.io/
 
 #java #coding #oop #classes #UML #objects #constructors #encapsulation
 
@@ -112,13 +106,11 @@ This quick video walks through the design of an object class for a simple progra
 The follow up video is here: https://youtu.be/WzsJEZGtBHA
 
 ----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-Files used in videos:
-* GitHub: https://github.com/timmcmichael/EMCCTimFiles
+GitHub landing page: https://timmcmichael.github.io/
 
 #java #coding #oop #classes #UML #objects
