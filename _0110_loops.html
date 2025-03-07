@@ -622,13 +622,13 @@ Now that we understand how to use Boolean expressions to control the flow of our
 Many of the tasks we think of as "computer tasks" are repetitive in nature.
 Processing data often involves performing the same operation on each piece of information, one after the other, until everything is processed.
 A computer game has to draw the screen, check for collisions, check what the user is doing with the gamepad, and update the positions of all the objects on the screen, over and over again, until the game ends.
-When you use a search engine on the web, that search engine has scanned the web one page at a time, indexing what it finds and then moving on to the next page, until it&#8217;s scanned all of the pages in its database.</p>
+When we use a search engine on the web, that search engine has scanned the web one page at a time, indexing what it finds and then moving on to the next page, until it&#8217;s scanned all of the pages in its database.</p>
 </div>
 <div class="paragraph">
 <p>Computers are great for these kinds of tasks: they don&#8217;t get bored, they don&#8217;t get tired, and they don&#8217;t make mistakes&#8212;&#8203;other than the mistakes we make when programming them!</p>
 </div>
 <div class="paragraph">
-<p>To create the kind of repetition that leverages this processing power, programmer use <em>loops</em>.
+<p>To create the kind of repetition that leverages this processing power, programmers use <em>loops</em>.
 A loop is a structure that repeats a block of code as long as a certain condition is true.
 Each time the loop repeats, it&#8217;s called an <em>iteration</em>.</p>
 </div>
@@ -683,7 +683,7 @@ It is a definite loop because, before the loop starts, it&#8217;s already known 
 <div class="paragraph">
 <p>One thing to be careful of when using a <code>while</code> loop is the possibility of creating an <em>infinite loop</em>.
 An infinite loop is a loop that repeats forever, because the condition that determines whether the loop should repeat is never false.
-Infinite loops are a common mistake for new programmers, and they can cause your program to hang or crash.</p>
+Infinite loops are a common mistake for new programmers, and they can cause our program to hang or crash.</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of an infinite loop</div>
@@ -712,7 +712,7 @@ Your IDE will have a way to stop the program if it&#8217;s stuck in an infinite 
 </table>
 </div>
 <div class="paragraph">
-<p>The simplest infinite loop you can create in Java is:</p>
+<p>The simplest infinite loop we can create in Java is:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -815,10 +815,10 @@ The <code>while</code> statement is at the end of the loop; the <code>do</code> 
 There&#8217;s nothing in the structure of these loops that requires a counter or other control variable, so they can be used for loops that repeat until a certain condition is met, however many iterations that requires.</p>
 </div>
 <div class="paragraph">
-<p>In many cases, it doesn&#8217;t matter whether you use a <code>while</code> or a <code>do-while</code> loop.
-You really can use either one to create the same loop.
+<p>In many cases, it doesn&#8217;t matter whether we use a <code>while</code> or a <code>do-while</code> loop.
+We really can use either one to create the same loop.
 However, in some cases, one might be a better choice than the other.
-The simple rule of thumb for now is: if you need to guarantee that the block of code will execute at least once, you should use a <code>do-while</code> loop; if you need to check the condition before executing the block of code, you should use a <code>while</code> loop.</p>
+The simple rule of thumb for now is: if we need to guarantee that the block of code will execute at least once, we should use a <code>do-while</code> loop; if we need to check the condition before executing the block of code, we should use a <code>while</code> loop.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -835,7 +835,7 @@ Input validation is the process of checking the data that a user inputs into a p
 For example, if a program displays a menu with three options, a loop could keep asking for a selection until the user enters one of the three choices.</p>
 </div>
 <div class="paragraph">
-<p>There are more advanced techniques we&#8217;ll eventually use for input validation, but indefinite loops are a simple and effective way to make sure the user&#8217;s input is what you expect.</p>
+<p>There are more advanced techniques we&#8217;ll eventually use for input validation, but indefinite loops are a simple and effective way to make sure the user&#8217;s input is what we expect.</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of input validation with a <code>do-while</code> loop</div>
@@ -869,8 +869,8 @@ For example, if a program displays a menu with three options, a loop could keep 
 <div class="sect2">
 <h3 id="_for_loops">6.4. <code>for</code> Loops</h3>
 <div class="paragraph">
-<p>Definite loops are really common, especially when we learn about things like <em>arrays</em> later on, so Java provides a keyword that allows for a compacy way to create that kind of loop: the <code>for</code> loop.
-The syntax of a <code>for</code> loop can be a little intimidating for new coders, but it really just combines into one line of code all three of the pieces you need for a loop: initializing a counter, checking the counter, and changing the counter.</p>
+<p>Definite loops are really common, especially when we learn about things like <em>arrays</em> later on, so Java provides a keyword that allows for a compact way to create that kind of loop: the <code>for</code> loop.
+The syntax of a <code>for</code> loop can be a little intimidating for new coders, but it really just combines into one line of code all three of the pieces we need for a loop: initializing a counter, checking the counter, and changing the counter.</p>
 </div>
 <div class="listingblock">
 <div class="title"><code>for</code> loop syntax</div>
@@ -883,8 +883,8 @@ The syntax of a <code>for</code> loop can be a little intimidating for new coder
 <div class="paragraph">
 <p>The <code>for</code> loop has three parts, separated by semicolons:
 1. Initialize a counter. <em>Example:</em> <code>int count = 0</code>.
-2. A Boolean expression that determines if the loop should repea. <em>Example:</em> <code>count &lt; 10</code>.
-3. Change the counter at the end of the iteration. <em>Example:</em>: <code>count++</code>.</p>
+2. A Boolean expression that determines if the loop should repeat. <em>Example:</em> <code>count &lt; 10</code>.
+3. Change the counter at the end of the iteration. <em>Example:</em> <code>count++</code>.</p>
 </div>
 <div class="paragraph">
 <p>Once you get the hang of the syntax, the <code>for</code> loop is a really convenient way to create a definite loop.</p>
@@ -954,7 +954,7 @@ When the <code>continue</code> statement is executed, the program stops executin
 <div class="sect2">
 <h3 id="_a_word_about_nested_loops">6.6. A Word About Nested Loops</h3>
 <div class="paragraph">
-<p>You can put a loop inside another loop, and that&#8217;s called a <em>nested loop</em>. They are useful in some situations, and studying them can improve your ability think through loop-based algorithms.</p>
+<p>We can put a loop inside another loop, and that&#8217;s called a <em>nested loop</em>. They are useful in some situations, and studying them can improve our ability to think through loop-based algorithms.</p>
 </div>
 <div class="paragraph">
 <p>However, they are beyond the scope of this course, which focuses on the fundamentals of object-oriented programming.</p>
@@ -1047,7 +1047,7 @@ When the <code>continue</code> statement is executed, the program stops executin
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-05 20:14:27 -0700
+Last updated 2025-03-06 21:29:40 -0700
 </div>
 </div>
 </body>

@@ -537,7 +537,7 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <ul class="sectlevel2">
 <li><a href="_0011_methods.html#_whats_the_point_4">What&#8217;s the Point?</a>
 </li>
-<li><a href="_0011_methods.html#_defining_your_own_methods">3.1. Defining Your Own Methods</a>
+<li><a href="_0011_methods.html#_defining_our_own_methods">3.1. Defining Our Own Methods</a>
 </li>
 <li><a href="_0011_methods.html#_variable_scope">3.2. Variable Scope</a>
 </li>
@@ -635,27 +635,27 @@ All of those terms pretty much mean the same thing, but in Java they&#8217;re ca
 And really, they&#8217;re generally called methods whenever we&#8217;re using object-oriented programming, so even in Python we sometimes call them methods.</p>
 </div>
 <div class="paragraph">
-<p>There are a variety of reasons to break your code into methods, but an important advantage for now is <strong>reusability</strong>.
-Once you create a method, you can use it as often as you&#8217;d like.
-That means you don&#8217;t have to type the same code over and over.
-In turn, that improves your code&#8217;s <strong>maintainability</strong>.
-If you have to perform some calculation ten times in your program and have written out that calculation all ten times, a change to the calculation means updating it in all ten places.
-But if you put that calculation in a method and use that method ten times, you can just update the method and your changes will automatically be used all ten times.
-You&#8217;ll see additional advantages to methods as you learn more about programming.</p>
+<p>There are a variety of reasons to break our code into methods, but an important advantage for now is <strong>reusability</strong>.
+Once we create a method, we can use it as often as we&#8217;d like.
+That means we don&#8217;t have to type the same code over and over.
+In turn, that improves our code&#8217;s <strong>maintainability</strong>.
+If we have to perform some calculation ten times in our program and have written out that calculation all ten times, a change to the calculation means updating it in all ten places.
+But if we put that calculation in a method and use that method ten times, we can just update the method and our changes will automatically be used all ten times.
+We&#8217;ll see additional advantages to methods as we learn more about programming.</p>
 </div>
 <div class="paragraph">
-<p>Once you define a method, you <strong>invoke</strong> the method each time you want it to execute.
+<p>Once we define a method, we <strong>invoke</strong> the method each time we want it to execute.
 We also say that we <em>call</em> a method, which sounds a little cooler than <em>invoke</em> but means the same thing.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_defining_your_own_methods">3.1. Defining Your Own Methods</h3>
+<h3 id="_defining_our_own_methods">3.1. Defining Our Own Methods</h3>
 <div class="paragraph">
-<p>You&#8217;ve been defining a method from the start.
-Each program you write includes a method called <code>main</code>, which the Java runtime invokes when you run the program.</p>
+<p>We&#8217;ve been defining a method from the start.
+Each program we write includes a method called <code>main</code>, which the Java runtime invokes when we run the program.</p>
 </div>
 <div class="paragraph">
-<p>You&#8217;ve also been calling (<em>invoking</em>) methods from the start.
+<p>We&#8217;ve also been calling (<em>invoking</em>) methods from the start.
 To output text, we&#8217;ve been calling the <code>println()</code> and <code>print()</code> methods.</p>
 </div>
 <div class="admonitionblock tip">
@@ -683,10 +683,10 @@ In Java, parentheses <strong>always</strong> indicate a method, whether or not t
 <div class="ulist">
 <ul>
 <li>
-<p>The <code>public</code> keyword is an <em>access modifier</em>. Defining the method as <code>public</code> makes it possible to call the method from anywhere. More on this later, but for now all of your methods will be <code>public</code>.</p>
+<p>The <code>public</code> keyword is an <em>access modifier</em>. Defining the method as <code>public</code> makes it possible to call the method from anywhere. More on this later, but for now all of our methods will be <code>public</code>.</p>
 </li>
 <li>
-<p>The <code>static</code> keyword basically means that the method belongs to the class and not an object. That will make more sense in the next chapter, but for now your methods will be <code>static</code>.</p>
+<p>The <code>static</code> keyword basically means that the method belongs to the class and not an object. That will make more sense in the next chapter, but for now our methods will be <code>static</code>.</p>
 </li>
 <li>
 <p>The <code>void</code> keyword indicates that this method will not return anything. This is called the method&#8217;s <em>return type</em>, and we&#8217;ll learn about this shortly.</p>
@@ -695,7 +695,7 @@ In Java, parentheses <strong>always</strong> indicate a method, whether or not t
 <p><code>displayCopyright</code> is the identifier for the method, in the same way variables have identifiers. Like variable identifiers, use camelCase to make the name readable&#8212;&#8203;and make the name descriptive. The convention is that the name of a method should describe what it does; usually, that means the identifier is (or includes) a verb.</p>
 </li>
 <li>
-<p>The parentheses indicate to the compiler that this is a method, as opposed to a variable or some other fancy thing. You&#8217;ll see what you can put in the parentheses shortly.</p>
+<p>The parentheses indicate to the compiler that this is a method, as opposed to a variable or some other fancy thing. You&#8217;ll see what we can put in the parentheses shortly.</p>
 </li>
 </ul>
 </div>
@@ -754,9 +754,9 @@ Many IDEs, including <a href="https://code.visualstudio.com">Visual Studio Code<
 </div>
 <div class="paragraph">
 <p>A variable can only be used or accessed inside the block in which it was declared; that block is the variable&#8217;s <code>scope</code>.
-When you refer to a variable, the compiler checks within that code block, or scope, do see if the variable has has been declared.
+When we refer to a variable, the compiler checks within that code block, or scope, to see if the variable has been declared.
 If it doesn&#8217;t find a variable with that identifier within the current scope, it will stop compiling.
-Basically, referring to a variable that is declared in a different scope is the same as referring to a variable you never declared at all.
+Basically, referring to a variable that is declared in a different scope is the same as referring to a variable we never declared at all.
 Trying to use a variable in a different code block is referred to as an <em>out of scope</em> reference.</p>
 </div>
 <div class="listingblock">
@@ -976,7 +976,7 @@ Within that method, the parameter <code>name</code> stores the argument, so when
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-The actual value passed in when you call a method is referred to as an <em>argument</em>. The variable that receives that value within the method is referred to as a <em>parameter</em>.
+The actual value passed in when we call a method is referred to as an <em>argument</em>. The variable that receives that value within the method is referred to as a <em>parameter</em>.
 </td>
 </tr>
 </table>
@@ -1070,7 +1070,7 @@ If a method has a return type of anything other than <code>void</code>, it will 
 <p>This means that methods themselves essentially have data types.
 <code>printFavNum()</code> has a data type of <code>void</code>.
 <code>getFavNum()</code> has a data type of <code>int</code>.
-Since methods have types, you can use them in statements just as you&#8217;d use a literal or variable of that type.
+Since methods have types, we can use them in statements just as we&#8217;d use a literal or variable of that type.
 For example, the following line of code is valid:</p>
 </div>
 <div class="paragraph">
@@ -1114,7 +1114,7 @@ A Java method can only return one piece of data, so it can only have one return 
 <div class="paragraph">
 <p>Generally speaking, it&#8217;s better to return values from a method rather than outputting values.
 There are a few reasons for this, but consider an obvious one.
-If you use a <code>print()</code> method, your code is limited to only working in a console application.
+If we use a <code>print()</code> method, our code is limited to only working in a console application.
 That&#8217;s fine for now, because it&#8217;s the only kind of application we know how to make!
 But what if we want to use that same code in a web application, or a mobile app?
 That <code>print()</code> statement won&#8217;t work&#8212;&#8203;rather, the user will never see the result, because they won&#8217;t have a console window.</p>
@@ -1176,7 +1176,7 @@ The rule of thumb is, <strong>all input and output statements should be in the <
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-I strongly penalize input and output statements outside of the <code>main()</code> method because I&#8217;m trying to build habits that will serve you well as you learn more about programming.
+I strongly penalize input and output statements outside of the <code>main()</code> method because I&#8217;m trying to build habits that will serve us well as we learn more about programming.
 </td>
 </tr>
 </table>
@@ -1203,6 +1203,18 @@ I strongly penalize input and output statements outside of the <code>main()</cod
 </ul>
 </div>
 </div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The Lab Assignments in Canvas can be completed using what we&#8217;ve covered to this point. You might choose to complete that work now, then move onto the next section&#8212;&#8203;which you&#8217;ll need for the Programming Project.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -1405,7 +1417,7 @@ The method signature must be unique so the compiler can identify which method co
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-05 20:14:27 -0700
+Last updated 2025-03-06 21:29:40 -0700
 </div>
 </div>
 </body>

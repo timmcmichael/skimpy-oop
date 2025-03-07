@@ -654,7 +654,7 @@ The coach tells the QB "22" and the QB knows which play to run, because they&#82
 </div>
 <div class="paragraph">
 <p>Want to take the analogy one step further?
-A player standing on the sideline with his helmet on could represent a 1, and a player with his helmet off could represent a 0.
+A player standing on the sideline with their helmet on could represent a 1, and a player with their helmet off could represent a 0.
 Now the coach could just line up five players and tell the 2nd and 5th ones to take their helmets off.
 The QB could look over, see the pattern of helmets (10110) and run play 22.</p>
 </div>
@@ -789,10 +789,10 @@ But that really is a personal preference, and I wouldn&#8217;t argue that OOP is
 <div class="paragraph">
 <p>In procedural programming, we break up a program into the tasks we need to complete.
 Each individual task is handled by a set of statements that we call a <strong>procedure</strong>.
-If you need to calculate a student&#8217;s overall course grade, for example, you write a procedure to do it.</p>
+If we need to calculate a student&#8217;s overall course grade, for example, we write a procedure to do it.</p>
 </div>
 <div class="paragraph">
-<p>The data for your program&#8212;&#8203;the stuff you&#8217;re keeping track of&#8212;&#8203;is stored somewhere else.
+<p>The data for our program&#8212;&#8203;the stuff we&#8217;re keeping track of&#8212;&#8203;is stored somewhere else.
 If a procedure needs something to complete its task, that data is sent to the procedure, which then sends back a result.
 In short, information is kept separate from the code that uses it and is passed back and forth as necessary.</p>
 </div>
@@ -831,10 +831,10 @@ That kind of stuff; but in my course, we don&#8217;t get too caught up in the ma
 But we care <strong>a lot</strong> about understanding the requirements of a program and implementing it successfully.</p>
 </div>
 <div class="paragraph">
-<p>As your programs become bigger and more complex, you&#8217;ll need to work within a deliberate design and implementation process in order to keep yourself organized and focused.
-Even the smaller programs you&#8217;ll develop while learning the basics will benefit from a thoughtful approach beyond just opening a new file and starting to type.
-It ensures that you use your time efficiently.
-And when you are faced with solving a programming problem that really intimidates you, the process will help make the task more approachable.</p>
+<p>As our programs become bigger and more complex, we&#8217;ll need to work within a deliberate design and implementation process in order to keep ourselves organized and focused.
+Even the smaller programs we&#8217;ll develop while learning the basics will benefit from a thoughtful approach beyond just opening a new file and starting to type.
+It ensures that we use our time efficiently.
+And when we are faced with solving a programming problem that really intimidates us, the process will help make the task more approachable.</p>
 </div>
 <div class="paragraph">
 <p>For big or small projects, a good general approach to software development is:</p>
@@ -869,9 +869,9 @@ And when you are faced with solving a programming problem that really intimidate
 <p>Enough of that, let&#8217;s try writing some code.</p>
 </div>
 <div class="paragraph">
-<p>One of the (valid) criticisms of Java as a choice for beginners is that it&#8217;s a little complicated to create your first program.
-In Python, you just open a file and write your first command; in recent versions, C# has added that ability as well.
-But Java puts OOP front and center, and you can&#8217;t start writing statements until you first define a class.</p>
+<p>One of the (valid) criticisms of Java as a choice for beginners is that it&#8217;s a little complicated to create our first program.
+In Python, we just open a file and write our first command; in recent versions, C# has added that ability as well.
+But Java puts OOP front and center, and we can&#8217;t start writing statements until we first define a class.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -941,8 +941,8 @@ But Java puts OOP front and center, and you can&#8217;t start writing statements
 </table>
 </div>
 <div class="paragraph">
-<p>You&#8217;ll learn about all of these components as we go.
-But for now, you&#8217;re off and running!</p>
+<p>We&#8217;ll learn about all of these components as we go.
+But for now, we&#8217;re off and running!</p>
 </div>
 </div>
 <div class="sect2">
@@ -958,7 +958,7 @@ Start start with, we&#8217;ll use two basic ways to output text to the console: 
 <div class="paragraph">
 <p>This line of code outputs <strong>Mick Jagger</strong> to the console window.
 After <code>print()</code> outputs the text in parentheses, the cursor remains at the end of the output.
-This is just like if you type something in a word processor but don&#8217;t hit enter; the next time you start typing, the characters resume on the same line.
+This is just like if we type something in a word processor but don&#8217;t hit enter; the next time we start typing, the characters resume on the same line.
 In the same way, the next output statement will continue on the same line in the console.</p>
 </div>
 <div class="paragraph">
@@ -1007,33 +1007,33 @@ Notice that it doesn&#8217;t even add a space; if we want a space there, we have
 <p>Because <em>*you can&#8217;t always*</em> is in a <code>println()</code> statement, the cursor advances and <em>*get what you want*</em> is on a new line.</p>
 </div>
 <div class="paragraph">
-<p>You&#8217;ll use <code>print()</code> and <code>println()</code> in every Java program you write for quite a while, so it&#8217;s important to take time to experiment with them on your own to make sure you understand how they work.</p>
+<p>We&#8217;ll use <code>print()</code> and <code>println()</code> in every Java program we write for quite a while, so it&#8217;s important to take time to experiment with them on our own to make sure we understand how they work.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_code_comments">1.6. Code Comments</h3>
 <div class="paragraph">
-<p>The Java compiler goes through your source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn&#8217;t understand, which causes it to stop and output an error message).
-It there&#8217;s something in our source code we don&#8217;t want the compiler to process, we can identify it as a <em>code comment</em> and the compiler will ignore it.
+<p>The Java compiler goes through our source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn&#8217;t understand, which causes it to stop and output an error message).
+If there&#8217;s something in our source code we don&#8217;t want the compiler to process, we can identify it as a <em>code comment</em> and the compiler will ignore it.
 Code comments are generally used to provide information for any humans who might be looking at the code.
-And since it&#8217;s ignored by the compiler, it can be written however we want; so your code comments should be written in plain human language (english, if you&#8217;re submitting it to me).
+And since it&#8217;s ignored by the compiler, it can be written however we want; so our code comments should be written in plain human language (english, if we&#8217;re submitting it to me).
 To indicate a comment, use two slashes:</p>
 </div>
 <div class="paragraph">
 <p><code>// This is a comment!</code></p>
 </div>
 <div class="paragraph">
-<p>Once the compiler sees two slashses, it just ignores the rest of the line.
+<p>Once the compiler sees two slashes, it just ignores the rest of the line.
 We can add a comment onto the end of a line of code:</p>
 </div>
 <div class="paragraph">
 <p><code>System.out.println("Hello World"); // this outputs text to the console</code></p>
 </div>
 <div class="paragraph">
-<p>The <code>println()</code> statement still gets processed and will execute when we run out program, but everything after the slashes gets ignored.</p>
+<p>The <code>println()</code> statement still gets processed and will execute when we run our program, but everything after the slashes gets ignored.</p>
 </div>
 <div class="paragraph">
-<p>If you want to make a comment that takes up multiple lines, start the comment block with <code>/<strong></code> (that&#8217;s a slash and an asterisk) and end it with <code></strong>/</code> (asterisk and a slash).
+<p>To make a comment that takes up multiple lines, start the comment block with <code>/<strong></code> (that&#8217;s a slash and an asterisk) and end it with <code></strong>/</code> (asterisk and a slash).
 When the compiler sees <code>/<strong></code> it will ignore everything until it finds <code></strong>/</code>, and then it will resume processing as usual.</p>
 </div>
 <div class="listingblock">
@@ -1058,7 +1058,7 @@ When the compiler sees <code>/<strong></code> it will ignore everything until it
 <div class="paragraph">
 <p>In general, code comments are used to explain or provide context for our code.
 Programming often involves going back to old code to make updates or corrections.
-Sometimes it&#8217;s been a long time and you might not remember what the code is supposed to do, or it not be someone different looking at the code and trying to figure it out.
+Maybe it&#8217;s been a long time and we might not remember what the code is supposed to do, or maybe it&#8217;s someone different looking at the code and trying to figure it out.
 So code comments should be descriptive, especially when code might be confusing.</p>
 </div>
 <div class="admonitionblock tip">
@@ -1084,9 +1084,9 @@ In a process like that, it&#8217;s not unusual to delete something only to regre
 </div>
 <div class="paragraph">
 <p>Code commenting gives us a life hack to help prevent that regret.
-Instead of deleting code that&#8217;s not working the way you want, you can just mark it as a comment.
-As far as the compiler is concerned, you&#8217;ve deleted the code.
-But if you want to see or use the code again down the road, it&#8217;s still there.</p>
+Instead of deleting code that&#8217;s not working the way we want, we can just mark it as a comment.
+As far as the compiler is concerned, we&#8217;ve deleted the code.
+But if we want to see or use the code again down the road, it&#8217;s still there.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1095,7 +1095,7 @@ But if you want to see or use the code again down the road, it&#8217;s still the
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Code, highlight a section of code and press <strong>alt-/</strong> (or <strong>&#x2318;-/</strong> on macOS) and VS Code will add <code>//</code> at the start of each line. Highlighting a comment and pressing the shortcut again will "uncomment" it and remove the slashes. Other IDEs provide similar functionality.
+Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Code, highlight a section of code and press <strong>alt-/</strong> (or <strong>⌘-/</strong> on macOS) and VS Code will add <code>//</code> at the start of each line. Highlighting a comment and pressing the shortcut again will "uncomment" it and remove the slashes. Other IDEs provide similar functionality.
 </td>
 </tr>
 </table>
@@ -1137,7 +1137,7 @@ Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Cod
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-05 20:14:27 -0700
+Last updated 2025-03-06 21:29:40 -0700
 </div>
 </div>
 </body>

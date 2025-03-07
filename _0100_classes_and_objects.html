@@ -665,7 +665,7 @@ The format programmers use for class diagrams is called UML (Unified Modeling La
 The UML standards are extensive, but we&#8217;ll be using a simplified version in this course.</p>
 </div>
 <div class="paragraph">
-<p>Consider a program to handle orders at a restaurant. A simple class to represent on person&#8217;s order might look like this:</p>
+<p>Consider a program to handle orders at a restaurant. A simple class to represent one person&#8217;s order might look like this:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -676,7 +676,7 @@ The UML standards are extensive, but we&#8217;ll be using a simplified version i
 <div class="paragraph">
 <p>The top section of the diagram has the name of the class, which is <code>Order</code>.
 The next section is for the attributes of the class&#8212;&#8203;the information the class will store. This example has attributes for the server&#8217;s name, the table number, the items ordered, and the total price.
-The bottom section is for the beahviors of the class, which are the actions the class can perform (or that we can do with the class).
+The bottom section is for the behaviors of the class, which are the actions the class can perform (or that we can do with the class).
 With an order, we might send it to the kitchen, print the bill, or close the bill.</p>
 </div>
 <div class="paragraph">
@@ -704,20 +704,20 @@ Since the objects will be interacting, we need to think about how to keep them f
 If we have an <code>Order</code> class in a program used by a restaurant, we don&#8217;t want some other class to change attributes in a way that disrupts the program&#8212;&#8203;like changing the entree selection to something that&#8217;s not on the menu, or setting the price to a negative number, for example.</p>
 </div>
 <div class="paragraph">
-<p>To prevent this kind of tampering, whether it&#8217;s intention or accidental, OOP relies on a concept called <strong>encapsulation</strong>.
+<p>To prevent this kind of tampering, whether it&#8217;s intentional or accidental, OOP relies on a concept called <strong>encapsulation</strong>.
 Encapsulation of a class means that attributes are hidden from the outside world, and only the behaviors of the class can access and change them.
-As an analogy, consider the counter at a fast food restaurant. You can&#8217;t just reach over and grab a handful of fries; you have to ask the employee behind the counter to get them for you.
-In this analogy, the food is encapsulated and you can only access it by using a behavior, like "order food".</p>
+As an analogy, consider the counter at a fast food restaurant. We can&#8217;t just reach over and grab a handful of fries; we have to ask the employee behind the counter to get them for us.
+In this analogy, the food is encapsulated and we can only access it by using a behavior, like "order food".</p>
 </div>
 <div class="paragraph">
-<p>Another way to think of encapsulation is the way we interacte with other people in social situations.
+<p>Another way to think of encapsulation is the way we interact with other people in social situations.
 When we encounter a stranger, they don&#8217;t automatically know our name and phone number; they have to ask us for that information.
 We&#8217;ve encapsulated our personal information, and we only share it when and how we choose to.</p>
 </div>
 <div class="paragraph">
 <p>In Java, encapsulation is not a strict requirement, and our code will still work if we don&#8217;t use it.
 But it&#8217;s a best practice&#8212;&#8203;and an important one&#8212;&#8203;so we will encapsulate all of our classes in this course.
-In fact, I would argue that if you don&#8217;t encapsulate your classes, you&#8217;re not really doing object-oriented programming.
+In fact, I would argue that if we don&#8217;t encapsulate our classes, we&#8217;re not really doing object-oriented programming.
 And that&#8217;s what we&#8217;re here to learn.</p>
 </div>
 </div>
@@ -730,7 +730,7 @@ And that&#8217;s what we&#8217;re here to learn.</p>
 <div class="content">
 <img src="chapter-4-classes/images/WeatherRecordDiagram.png" alt="Class diagram for the `WeatherRecord` class">
 </div>
-<div class="title">Figure 7. Class diagram for the <code>WeatherRecord</code> class.</div>
+<div class="title">Figure 7. Class diagram for the <code>WeatherRecord</code> class</div>
 </div>
 <div class="paragraph">
 <p>To implement this class in code, we&#8217;ll start with a class header. The class header always follows the same pattern: an <strong>access modifier</strong>, the keyword <code>class</code>, and the name of the class.
@@ -750,7 +750,7 @@ The class header is followed by a code block, enclosed in curly braces.</p>
 <dl>
 <dt class="hdlist1">Access modifier</dt>
 <dd>
-<p>The <code>public</code> keyword means that the class can be accessed from any other class. Though this is technically optional, you should always use <code>public</code> for now.</p>
+<p>The <code>public</code> keyword means that the class can be accessed from any other class. Though this is technically optional, we should always use <code>public</code> for now.</p>
 </dd>
 <dt class="hdlist1"><code>class</code> keyword</dt>
 <dd>
@@ -770,7 +770,7 @@ To begin with, we&#8217;ll focus on two types of instance members: <strong>field
 <h4 id="_fields">4.3.1. Fields</h4>
 <div class="paragraph">
 <p>Fields are the implementation of the attributes of the class.
-The are also known as <strong>instance variables</strong> because they similar to the variables we&#8217;ve been using in our programs, but their scope is the object created from the class, not the method where they&#8217;re defined.
+They are also known as <strong>instance variables</strong> because they are similar to the variables we&#8217;ve been using in our programs, but their scope is the object created from the class, not the method where they&#8217;re defined.
 A field is unique to the object; if we make two objects from our <code>WeatherRecord</code> class, each object will have its own date, high temperature, and average temperature.</p>
 </div>
 <div class="paragraph">
@@ -784,7 +784,7 @@ This means that the fields can only be accessed and changed by the methods of th
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-Since a class will compile and run even if we leave off the <code>private</code> access modifier, it&#8217;s easy to forget to use it. But don&#8217;t worry, I&#8217;ll help you remember by taking huge points off your assignments if you don&#8217;t make your fields <code>private</code>. As I&#8217;ve mentioned, you&#8217;re not really doing OOP if you don&#8217;t encapsulate your fields, and we&#8217;re learning OOP.
+Since a class will compile and run even if we leave off the <code>private</code> access modifier, it&#8217;s easy to forget to use it. But don&#8217;t worry, I&#8217;ll help you remember by taking huge points off your assignments if you don&#8217;t make your fields <code>private</code>. As I&#8217;ve mentioned, you&#8217;re not really doing OOP if you don&#8217;t encapsulate your fields, and we&#8217;re learning OOP here.
 </td>
 </tr>
 </table>
@@ -818,7 +818,7 @@ And these fields look an awful lot like global variables.
 But fields in a class are <strong>not</strong> global variables; they&#8217;re <strong>instance</strong> variables, and they&#8217;re a good thing.
 The fields are <strong>encapsulated</strong>, so they can only be accessed and changed by the methods of the class&#8212;&#8203;which is a good thing.
 And the fields are unique to each object, so we can have multiple objects with different values for the fields&#8212;&#8203;which is also a good thing.
-And so no puppies toys will be harmed as long as we use <strong>private</strong> fields correctly.</p>
+And so no puppies' toys will be harmed as long as we use <strong>private</strong> fields correctly.</p>
 </div>
 </div>
 <div class="sect3">
@@ -831,7 +831,7 @@ These <em>nonstatic</em> methods are called <strong>instance methods</strong>, a
 </div>
 <div class="paragraph">
 <p>Though there are exceptions, most of these instance methods will be <code>public</code>, so they can be accessed from other classes.
-Remember, the foundation of encapsulation is having <code>private</code> fields and public methods to to permit interactions with that data.</p>
+Remember, the foundation of encapsulation is having <code>private</code> fields and public methods to permit interactions with that data.</p>
 </div>
 <div class="paragraph">
 <p>In broad terms, we can categorize instance methods into two types: <strong>accessor</strong> methods and <strong>mutator</strong> methods.</p>
@@ -842,7 +842,7 @@ Remember, the foundation of encapsulation is having <code>private</code> fields 
 <p>Accessor methods give access to the fields of the class, but they don&#8217;t change the fields.
 Think of them as "read only" methods, and often all they do is return the value of a field.
 Java naming conventions specify that accessor methods should start with <code>get</code> and then the name of the field they access, formatted in camelCase.
-Because of that convention, another name for accessors methods is <strong>getters</strong>.</p>
+Because of that convention, another name for accessor methods is <strong>getters</strong>.</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of an accessor method (or "getter")</div>
@@ -853,7 +853,7 @@ Because of that convention, another name for accessors methods is <strong>getter
 </div>
 </div>
 <div class="paragraph">
-<p>The return type of an accessor method is the same as the type of the field it accesses; in this case <code>highTemperature</code> is an <code>int</code>, so the return type of our getting is <code>int</code>.</p>
+<p>The return type of an accessor method is the same as the type of the field it accesses; in this case <code>highTemperature</code> is an <code>int</code>, so the return type of our getter is <code>int</code>.</p>
 </div>
 <div class="paragraph">
 <p>A getter allows other classes to be able to read the value of a field; if they don&#8217;t need to know the value, we just don&#8217;t write a getter for that field.
@@ -913,7 +913,7 @@ But we really should only write setters for fields that we want to be able to ch
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-As a rule of thumb for beginners, create getters for all of your fields when you first write your class, and then add setters only as you need them. Because this is sometimes tricky for beginners to determine, I don&#8217;t deduct points for writing unnecessary setters&#8212;&#8203;but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
+As a rule of thumb for beginners, create <strong>getters</strong> for all of your fields when you first write your class, and then add <strong>setters</strong> only as you need them. Because this is sometimes tricky for beginners to determine, I don&#8217;t deduct points for writing unnecessary setters&#8212;&#8203;but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
 </td>
 </tr>
 </table>
@@ -1073,7 +1073,7 @@ Even when we only have one instance, the compiler needs to know where to find th
 <p>Ok, time for another convention that seems only intended to be nitpicky and pointless, but is important and is expected on assignments in this course.
 OOP nerds value keeping parts of our programs compartmentalized, and that includes separating the class definition and the code that uses the class.
 A class definition goes in its own file, which must have a filename exactly match the name of the class (with <em>.java</em> as an extension)--and that one&#8217;s not a convention, that&#8217;s a syntax rule for the compiler.
-A class we definte for use as object can be called an <strong>object class</strong> or a <strong>user-defined class</strong>.</p>
+A class we define for use as object can be called an <strong>object class</strong> or a <strong>user-defined class</strong>.</p>
 </div>
 <div class="paragraph">
 <p>The code that uses the <em>object class</em> should be in its own file, and is often called a <strong>driver class</strong>.
@@ -1086,7 +1086,7 @@ And in those cases, we often see "test" or "demo"; so a driver class for our <co
 <div class="paragraph">
 <p>The point here is that, if we&#8217;ve created an object class called <code>WeatherRecord</code>, we&#8217;re not going to put our <code>main()</code> method in that same class/file.
 We&#8217;re going to make a separate class&#8212;&#8203;a driver, or demo class, or test class.
-I don&#8217;t much care what term you use, as long as it&#8217;s separate.</p>
+I don&#8217;t much care what term you use, as long as it&#8217;s a separate class and file.</p>
 </div>
 <div class="paragraph">
 <p>Your pitchforks are already sharpened, but here&#8217;s the part where you light your torches.
@@ -1099,7 +1099,7 @@ My examples always demonstrate this <em>separation of concerns</em>, so you&#821
 <div class="title">Interesting!</div>
 <div class="paragraph">
 <p>I asked an AI platform to give me an image of an angry mob with pitchforks and torches (coming after me because I make them separate their input and output), and the AI spit out this <a href="https://github.com/timmcmichael/skimpy-oop/blob/5c16f73bd0e71a33b94727618d3097f503eb27a6/chapter-4-classes/images/creepy_mob.png?raw=true" target="_blank" rel="noopener">nightmare fuel</a>.
-I decided it was too creepy to display in the text, but the crime against nature should be preserved for posterity. If a mob like that comes for me, I&#8217;ll let them put <code>print()</code> statements wherever they want!</p>
+I decided it was too creepy to display in the text, but this crime against nature should be preserved for posterity. If a mob like that comes for me, I&#8217;ll let them put <code>print()</code> statements wherever they want!</p>
 </div>
 </div>
 </div>
@@ -1302,7 +1302,7 @@ That can include having a parameterless constructor and one or more constructors
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-To see a complete example of the <code>WeatherRecord</code> class with constructors, fields, and methods, as well as a driver class to deomnstrate it, visit the_Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects" target="_blank" rel="noopener">GitHub repository for this chapter</a>.
+To see a complete example of the <code>WeatherRecord</code> class with constructors, fields, and methods, as well as a driver class to demonstrate it, visit the_Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects" target="_blank" rel="noopener">GitHub repository for this chapter</a>.
 </td>
 </tr>
 </table>
@@ -1444,7 +1444,7 @@ If we have a savings account class, a common example when learning OOP, we might
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-05 20:14:27 -0700
+Last updated 2025-03-06 21:29:40 -0700
 </div>
 </div>
 </body>
