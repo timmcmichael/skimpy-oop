@@ -1,22 +1,29 @@
 # 5A - Boolean Logic
 
-You've heard of faulty logic. You've heard of circular logic. You've even heard of logic puzzles. But have you heard of Boolean logic? Stop being wishy-washy and dealing with gray areas--start dealing with simple true or false!
+You've heard of faulty logic. You've heard of circular logic. You've even heard of logic puzzles. But have you heard of Boolean logic? Stop being wishy-washy and dealing with gray areas--start dealing with simple true or false conditions!
 
-Learn a little about boolean variables; learn about relational or comparison operators like equal to, or greater than; and learn about logical operators like AND, OR, and NOT. Well, not very much about those last ones, but you'll at least learn what symbols they use. Also, learn a fun new name for an exclamation point! Just try not to offend people with it.
+Learn a little about boolean variables; learn about relational or comparison operators like "equal to" or "greater than"; and learn about logical operators like AND, OR, and NOT. Well, not very much about those last ones, but you'll at least learn what symbols they use. Also, learn a fun new name for an exclamation point! Just try not to offend people with it.
 
 Pop quiz: Boolean logic is the best kind of logic. True or False?
 
+0:00 Intro
+0:38 What is Boolean Logic?
+2:31 Relational Operators
+4:40 Logical Operators
+6:25 String Equality
+7:18 Outro
 ----
 
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 GitHub Page: https://timmcmichael.github.io/
 
-#java #coding #boolean #boolean-logic #if-else #decisions #conditionals #comparison-operators #logical-operators
-
+#java #coding #boolean #booleanlogic #ifelse #decisions #conditionals #branching #emcc #cis150ab #cis162ad #cis156 #cis256
 
 ---------------------
+
+# RESUME HERE!
 
 # 5B - If-Else Statements
 
