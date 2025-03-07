@@ -51,7 +51,7 @@ Intro to Swing in Java [COMING SOON!]
 
 ****
 
-=== Event-Driven Programming
+=== Event-Driven Programming with Swing
 
 [ADD SOME STUFF]
 
@@ -87,7 +87,7 @@ More Swing Widgets [COMING SOON!]
 
 ****
 
-=== Layouts with Swing
+=== GUI Layouts with Swing
 
 [ADD SOME STUFF]
 
