@@ -24,7 +24,6 @@ GitHub landing page: https://timmcmichael.github.io/
 
 ---------------------
 
-# RESUME HERE!
 
 # 5B - If-Else Statements
 

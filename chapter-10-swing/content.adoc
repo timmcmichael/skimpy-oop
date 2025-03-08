@@ -50,11 +50,11 @@ Intro to GUIs [COMING SOON!]
 
 === The Swing Library
 
-The code required to create GUI widgets is complex and far beyond our current skills, but we can use pre-built GUI widgets written by other developers.
+The code required to create and display a functioning GUI is complex and far beyond our current skills, but we can use pre-built GUI widgets written by other developers.
 These are typically bundled into _libraries_, or _frameworks_, that we can use in our own programs.
-The two most common GUI frameworks for Java are called _Swing_ and _JavaFX_; we'll use Swing in this course because it's a little simpler for beginners.
+The two most common GUI frameworks for Java are called _Swing_ and _JavaFX_; we'll use Swing in this course because it's a little simpler for beginners and does not require any additional installations.
 
-NOTE: JavaFX is newer and more powerful than Swing, but it's also more complex and has a steeper learning curve. The concepts learned in Swing will transfer to JavaFX, so learning Swing first is a good idea.
+NOTE: JavaFX is newer and more powerful than Swing, but it's also more complex and has a steeper learning curve. The concepts learned in Swing will transfer to JavaFX, so learning Swing is a great place to start.
 
 To use Swing classes, we simply need to add an `import` statement at the top of our Java file:
 
