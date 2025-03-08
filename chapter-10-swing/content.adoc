@@ -42,9 +42,11 @@ These GUI elements are called _widgets_ or _controls_. Mobile applications have 
 
 .Time To Watch!
 ****
-Intro to GUIs [COMING SOON!]
+Intro to GUIs
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/ghe5TA1qA28
+
+video::ghe5TA1qA28[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 ****
 
@@ -95,9 +97,11 @@ As you can see, the code to create a simple GUI is is a little more complex than
 
 .Time To Watch!
 ****
-Intro to Swing in Java [COMING SOON!]
+Intro to Swing in Java
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/djh5Cd0cPmA
+
+video::djh5Cd0cPmA[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 Files from video:
 
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/SimpleGUI.java[`SimpleGUI.java`^]
@@ -118,9 +122,11 @@ Once we've added an event listener to a widger, the event handler is like any ot
 
 .Time To Watch!
 ****
-Swing Event Handling [COMING SOON!]
+Swing Event Handling
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/rsZ6f-twWfI
+
+video::rsZ6f-twWfI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Files from video:
 
@@ -136,9 +142,11 @@ Once we've learned how to work with widgets and add event listeners, we can put 
 
 .Time To Watch!
 ****
-Calculations in Swing [COMING SOON!]
+Calculations in Swing
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/dJfuwUfRczI
+
+video::dJfuwUfRczI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 Files from video:
 
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/GUICalculations.java[`GUICalculations.java`^]
@@ -180,9 +188,11 @@ The most important thing is to be consistent in your naming so that anyone readi
 
 .Time To Watch!
 ****
-More Swing Widgets [COMING SOON!]
+More Swing Widgets
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/2HlIsvtYTec
+
+video::2HlIsvtYTec[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 Files from video:
 
 * Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/JCheckBoxDemo.java[`JCheckBoxDemo.java`^]
@@ -220,9 +230,11 @@ NOTE: There are tools that allow us to create GUIs visually, by dragging and dro
 
 .Time To Watch!
 ****
-Swing Layouts [COMING SOON!]
+Swing Layouts
 
-// video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// https://youtu.be/kM3p7V_3UOk
+
+video::kM3p7V_3UOk[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 Files from video:
 
 * Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/FlowLayoutDemo.java[`FlowLayoutDemo.java`^]
@@ -250,6 +262,3 @@ Files from video:
 //
 // ****
 :sectnums:
-
-// NOTES: 
-// Quick note about the role of AWT (in the context of layout, especially);
