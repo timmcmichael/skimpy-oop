@@ -20,8 +20,11 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 ****
 
 :sectnums!:
-// === What's the Point?
-// * 
+=== What's the Point?
+* Identify the characteristics of a GUI
+* Understand the role of the Swing library
+* Create a GUI using Swing widgets
+* Create event handlers
 
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs[GitHub^]._
 
@@ -53,14 +56,14 @@ The two most common GUI frameworks for Java are called _Swing_ and _JavaFX_; we'
 
 NOTE: JavaFX is newer and more powerful than Swing, but it's also more complex and has a steeper learning curve. The concepts learned in Swing will transfer to JavaFX, so learning Swing first is a good idea.
 
-The use Swing classes, you simply need to add an `import` statement at the top of your Java file:
+To use Swing classes, we simply need to add an `import` statement at the top of our Java file:
 
 `import javax.swing.*;`
 
-You'll begin by instantiating a `JFrame` object, which is the main window of your application.
-You can use setters on the `JFrame` object to set attributes like the title and size of the window; you'll also want to set the attribute that determines what happens when the user closes the window.
-You can then add other widgets to the frame, like buttons, text fields, and labels.
-Finally, you'll set the frame to be visible, which will cause the window to appear on the screen.
+We'll begin by instantiating a `JFrame` object, which is the main window of our application.
+We can use setters on the `JFrame` object to set attributes like the title and size of the window; we'll also want to set the attribute that determines what happens when the user closes the window.
+We can then add other widgets to the frame, like buttons, text fields, and labels.
+Finally, we'll set the frame to be visible, which will cause the window to appear on the screen.
 
 .Example of a simple GUI using Swing
 [source,java]
@@ -83,12 +86,14 @@ public class BasicGUI {
 
 This code creates a window with the title "Hello, World!" and a label that says "It's so gooey!".
 
+NOTE: The `JFrame.EXIT_ON_CLOSE` attribute tells the program to exit when the user closes the window. If we don't set this attribute, the program will continue running in the background after the window is closed. There are a few other options for this attribute, but `EXIT_ON_CLOSE` is the most common.
+
 .Screenshot of `BasicGUI.java` in action on macOS
 image::basic-gui.png[Basic GUI,width=200]
 
-As you can see, the code to create a simple GUI is not much more complex than creating a console application, which is why we've waited until now to introduce GUIs.
+As you can see, the code to create a simple GUI is is a little more complex than the single `println()` statement of an equivalent console application, which is why we've waited until now to learn it.
 
-.Time To Watch
+.Time To Watch!
 ****
 Intro to Swing in Java [COMING SOON!]
 
@@ -101,9 +106,17 @@ Files from video:
 
 === Event-Driven Programming with Swing
 
-[ADD SOME STUFF]
+A GUI application offers a lot more flexibility than a console application, since the user can interact with the program in many ways.
+In a console application, the program runs from top to bottom, and the user can only interact by typing text.
+In a GUI application, the user can click buttons, type in text fields, and select items from drop-down lists.
+This means that the program must be able to respond to these events; we call this _event-driven programming_, and it is a key concept in GUI programming.
 
-.Time To Watch
+In Swing, we can add _event listeners_ to widgets, which are objects that respond to events.
+For example, we can add an event listener to a button that will run a method when the button is clicked.
+The method that runs in response to an event is called an _event handler_.
+Once we've added an event listener to a widger, the event handler is like any other method in our program, and we can write it to do whatever we want.
+
+.Time To Watch!
 ****
 Swing Event Handling [COMING SOON!]
 
@@ -115,14 +128,13 @@ Files from video:
 
 _Note: there is no starter code for this video._
 
-
 ****
 
 === Processing User Input with Swing
 
-[ADD SOME STUFF]
+Once we've learned how to work with widgets and add event listeners, we can put everything together to create a GUI application that gets input from the user, performs actions or calculations with that data, and displays the results.
 
-.Time To Watch
+.Time To Watch!
 ****
 Calculations in Swing [COMING SOON!]
 
@@ -136,9 +148,37 @@ Files from video:
 
 === Widgets
 
-[ADD SOME STUFF]
+Using `JLabel` and `JTextField`, we've been about to create GUI programs that function much like console applications, but that doesn't really take advantage of the power of GUIs.
+A well-designed GUI application utilizes specialized widgets that are designed for specific types of user input and output.
 
-.Time To Watch
+Here are some common widgets and their purposes:
+
+JLabel:: Displays text or an image.
+JTextField:: Allows the user to type in a single line of text.
+JTextArea:: Allows the user to type in multiple lines of text.
+JButton:: A clickable button that can run a method when clicked.
+JCheckBox:: A checkbox that can be checked or unchecked.
+JRadioButton:: A radio button that can be selected or deselected, and can be grouped with other radio buttons to limit the user to selecting only one.
+JComboBox:: A drop-down list that allows the user to select one item from a list.
+
+There are many more widgets in the Swing framework, but these will cover most of what you'll need for basic GUI applications. 
+There is a great deal of documentation available online for the Swing framework, so you can always look up how to use a specific widget.
+
+TIP: Use widgets as they are intended, even if they are able to be used in other ways, such as displaying output in a text field. Users are accustomed to certain behaviors from widgets, and using them in unexpected ways can make the application harder to use.
+
+==== Widget Naming Conventions
+
+When naming widgets, it's a good idea to use a consistent naming convention that makes it clear what type of widget it is.
+There are a variety of conventions for naming widgets, but two are most common:
+
+* Prefix the name to identify the widget type, like `lbl` for a label, `txt` for a text field, or `btn` for a button.
+* Append the type of widget to the end of the name, like `helloLabel`, `nameTextField`, or `submitButton`.
+
+I use the prefix method in my code, mostly because I'm used to that from C# programming (where that's the preferred style), but you can use either method in my class.
+The most important thing is to be consistent in your naming so that anyone reading your code can easily understand what each widget is for.
+
+
+.Time To Watch!
 ****
 More Swing Widgets [COMING SOON!]
 
@@ -152,11 +192,33 @@ Files from video:
 
 ****
 
-=== GUI Layouts with Swing
+=== GUI Layouts
 
-[ADD SOME STUFF]
+As we add more widgets to our GUI, we'll need to consider how they are arranged on the screen.
+While we can set the position of each widget manually, this is tedious and doesn't work well when the window is resized.
+Instead, we should use _layout managers_, which are objects that arrange widgets in a specific way and respond to window and screen sizes in predictable ways. 
+Think of a layout manager as a set of rules that determine how widgets are arranged in a window.
 
-.Time To Watch
+The Swing framework is itself built on top of *another* framework called the _Abstract Window Toolkit_, or _AWT_.
+Swing hides most of that from us by implementing classes that extend the AWT classes.
+For example, the `JLabel` class is a Swing widget that extends the `Label` class from AWT.
+So we don't directly use AWT very often, but the exception to that is layout managers.
+Layout managers are part of AWT, so we'll have to import them from the `java.awt` package:
+
+`import java.awt.*;`
+
+There are several layout managers available in AWT, each with its own strengths and weaknesses.
+The most common layout managers are:
+
+FlowLayout:: Widgets are arranged in a single row or column, and wrap to the next row or column when the window is resized.
+GridLayout:: Widgets are arranged in a grid, with a specified number of rows and columns.
+BorderLayout:: Widgets are arranged in five regions: north, south, east, west, and center.
+
+To create more complex layouts, we can nest layout managers, which means that we can put a layout manager inside another layout manager.
+
+NOTE: There are tools that allow us to create GUIs visually, by dragging and dropping widgets onto a window, and then generating the code that will produce the GUI. But our goal is to learn how layout managers work, so we'll be creating our GUIs by writing the code ourselves. For GUI designs that don't have to be turned into an obnoxious professor for a grade, you're welcome to take advantage of these tools.
+
+.Time To Watch!
 ****
 Swing Layouts [COMING SOON!]
 
@@ -190,6 +252,4 @@ Files from video:
 :sectnums:
 
 // NOTES: 
-// options for JFrame.setDefaultCloseOperation() (video only uses EXIT)
-// naming convention. (prefix like in C#, appending widget type on the end "helloLabel"). Make sure it's descriptive.
 // Quick note about the role of AWT (in the context of layout, especially);
