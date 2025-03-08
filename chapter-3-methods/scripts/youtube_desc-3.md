@@ -11,7 +11,7 @@ This video shows how to define and call simple methods in Java.
 9:57 Calling a Method from a Method
 10:40 Outro
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -36,7 +36,7 @@ We'll take a look at how to use parameters in a method definition, and how to ca
 6:08 Multiple Parameters
 6:38 Outro
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -58,7 +58,7 @@ In this video, we'll look at how to define a method that returns a value, and ho
 1:53 Handling the Return Value 
 2:56 Outro
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -83,7 +83,7 @@ Watch in amazement as a middle-aged college professor creates a solution to a sa
 24:52 Running Test Cases
 26:58 Outro
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 

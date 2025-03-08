@@ -10,7 +10,7 @@ In this video, you'll learn the value of restraint as we talk about repetition i
 7:08 Counters and Control Variables
 
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -37,7 +37,7 @@ In this video, we'll talk about the while loop: definite, indefinite, and everyt
 20:15 Performing a Calculation in a Loop
 
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -62,7 +62,7 @@ It's time to learn the do-while loop, which is a variation of the while loop. Ch
 18:00 Conclusion
 
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -85,7 +85,7 @@ See how to take the three components of a loop (initializing a variable, checkin
 5:42 Different Loop Behavior
 7:38 Conclusion
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -111,7 +111,7 @@ In this video, I rant about how terrible you are if you use break and continue s
 12:42 Conclusion
 
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 

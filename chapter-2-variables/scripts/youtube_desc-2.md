@@ -13,7 +13,7 @@ I...declare...VARIABLES!
 7:42 Changing a Variable's Value
 8:52 Outro
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -41,7 +41,7 @@ Learn how to create basic arithmetic expressions in Java.
 8:25 Modulo
 9:35 Outro
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -71,7 +71,7 @@ In this video, we'll learn how accept keyboard input in Java using the Scanner c
 9:22 Clearing the Buffer
 10:06 Outro
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 

@@ -11,7 +11,7 @@ This video is here to get you pumped up about debugging. Learn a little debuggin
 22:07 Outro
 
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -42,7 +42,7 @@ Don't worry, grasshopper--you can become a ninja, too. It's time for you to dig 
 31.47 Outro
 
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -67,7 +67,7 @@ We're going to check out the GitHub Copilot extension for Visual Studio Code. We
 7:44 Code Completion with a Web-based AI
 8:58 Cheating Concerns with Copilot
 ----
-This video is part of the course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of the course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 

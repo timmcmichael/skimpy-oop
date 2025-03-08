@@ -13,7 +13,7 @@ Pop quiz: Boolean logic is the best kind of logic. True or False?
 6:25 String Equality
 7:18 Outro
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -39,7 +39,7 @@ if-statements are no laughing matter, so we won't be joking around in this video
 5:05 Correcting a mistake
 5:37 else block
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -63,7 +63,7 @@ This video will show you how to use your newfangled if-else expertise to encapsu
 6:54 "Unreachable Code" error
 7:49 Constructor
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
@@ -87,7 +87,7 @@ This video will show you how to keep your nest full. Full of if statements, of c
 5:41 Second level if statements
 6:37 Watch me make a mistake
 ----
-This video is part of my course materials for my Object-Oriented Programming Fundamentals course (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
