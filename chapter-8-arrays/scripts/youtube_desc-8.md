@@ -2,7 +2,7 @@
 
 We've been spending a lot of time working with variables, and you know what? I think they're getting a little full of themselves. Variables, variables, variables. I'm just so sick of them. I mean, they can only hold one piece of data at a time! I've got big ideas, and I want to store a bunch of pieces of data that are related to each other! It's time to put variables in their place and learn about arrays. 
 
-This video introduces you to arrays. See how they're different than regular old variables. Learn how indexes refer to individual elements in an array, and some of the limitations of arrays.
+This video introduces you to arrays. See how they're different than regular old variables. Learn how indexes refer to individual elements in an array, and learn some of the limitations of arrays.
 
 Array we go!
 
@@ -13,19 +13,20 @@ Array we go!
 7:45 Array Immutability
 10:40 Arrays and Loops
 ----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of the course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-#java #csharp #python #coding #beginners #arrays #data-structures
+GitHub landing page: https://timmcmichael.github.io/
+
+#java #csharp #python #coding #beginners #arrays #datastructures #emcc #cis150ab #cis162ad #oop #cis156 #cis256
 
 ---------------------
 
 # 8B - Array Syntax in Java
 
-Remember when you were just a kid and that bully said that you were a zero? You might have thought that was an insult, but computer science, zero is first!
+Remember when you were just a kid and that bully said that you were a zero? You might have thought that was an insult, but in computer science, zero is first!
 
 Start out by declaring an array and learning to use indexes to access individual elements. Then, learn some shortcuts for getting data into your array. Finally, see how array elements are really just variables grouped together.
 
@@ -35,21 +36,21 @@ Start out by declaring an array and learning to use indexes to access individual
 10:32 Initialization List
 13:02 Array of Numeric Data
 16:13 Outro
-
 ----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of the course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-#java #coding #beginners #arrays #array-indexing #data-structures
+GitHub landing page: https://timmcmichael.github.io/
+
+#java #coding #beginners #arrays #datastructures #emcc #cis150ab
 
 ---------------------
 
 # 8C - Loops and Arrays in Java
 
-Have arrays been throwing you for a loop? We're going to start from nothing--well, from zero--and make our way through this topic. But be sure to step out of bounds!
+Have arrays been throwing you for a loop? We're going to start from nothing--well, from zero--and traverse our way through this topic. But be sure not to step out of bounds!
 
 In this video, we explore the use of arrays in Java, particularly focusing on how to process them using loops. We cover various types of traversals, including output, accumulation, and modifier traversals, and demonstrate how to handle arrays dynamically by taking user input for array size and elements. Additionally, we discuss techniques for searching within arrays and modifying array elements, as well as iterating through arrays in reverse order or with custom step sizes.
 
@@ -61,15 +62,15 @@ In this video, we explore the use of arrays in Java, particularly focusing on ho
 21:05 Input Traversal
 23:42 Different Kinds of Traversals
 27:55 Outro
-
 ----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of the course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-#java #coding #beginners #arrays #array-indexing #data-structures #loops #traversals #algorithms
+GitHub landing page: https://timmcmichael.github.io/
+
+#java #coding #beginners #arrays #datastructures #loops #traversals #algorithms #emcc #cis150ab
 
 ---------------------
 
@@ -86,15 +87,15 @@ This video explains using arrays that hold objects in Java, specifically focusin
 5:17 Using an Array Initialization List
 7:08 Calling Instance Methods
 8:50 Outro
-
 ----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of the course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-#java #coding #beginners #arrays #array-indexing #data-structures #oop
+GitHub landing page: https://timmcmichael.github.io/
+
+#java #coding #beginners #arrays #datastructures #oop #emcc #cis150ab
 
 ---------------------
 
@@ -112,15 +113,15 @@ In this video, we explore the "for-each" loop in Java, which traverses a loop wi
 7:32 Using an Accumulator
 8:02 Iterating Through an Array of Primitives
 9:20 Outro
-
 ----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of the course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-#java #coding #beginners #arrays #array-indexing #data-structures #oop
+GitHub landing page: https://timmcmichael.github.io/
+
+#java #coding #beginners #arrays #datastructures #oop #emcc #cis150ab
 
 ---------------------
 

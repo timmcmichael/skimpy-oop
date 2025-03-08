@@ -20,7 +20,6 @@ The bottom section in the diagram is for our class's behaviors, which we will im
 
 The purpose of a get method is to return the value in a field, so the name is "get" plus the field. Since I have four fields, I have four getters. 
 
-[RESUME HERE]
 And in order to return the value, the return type of the get method will need to match the data type of the field. phoneNumber is a String, so getPhoneNumber returns a String. monthlyData is a double, so getMonthlyData returns a double.
 
 So, adding getters is pretty much automatic and not something we need to think much about. A set method gives "write" access to a field--it allows a new value to be assigned to that field. Soon we'll learn another option for getting data into our objects, but for now we need setters--so again we'll have a set method for each field.<span style="background-color: #FFFFE0;">[CLICK]</span>

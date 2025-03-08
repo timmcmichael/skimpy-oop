@@ -20,8 +20,8 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 === What's the Point?
 
 * Distinguish between compile-time and runtime errors
-* Learn some strategies for debugging our code
-* Use the debugging tools available in our IDE
+* Learn some strategies for debugging your code
+* Use the debugging tools available in your IDE
 * Understand the basics of generative AI in coding
 * Use a generative AI tool to generate source code
 
@@ -43,8 +43,8 @@ Like Thanos, they are inevitable.
 And like Thanos, we can use ludicrous time traveling to fix (decapitate?) our bugs.
 Well, we can't do that last part, but we can fix them in the present; and hopefully, we can do it without too much frustration.
 
-Finding and fixing bugs is called _debugging_, and without realing it, you've been developing your own strategies for debugging since you started writing code.
-But as your code becomes more complex, you'll benefit from a more systematic approach to debugging--and you'll want to take advantage of the tools available in your IDE to help you.
+Finding and fixing bugs is called _debugging_, and without realizing it, we've been developing our own strategies for debugging since we started writing code.
+But as our code becomes more complex, we'll benefit from a more systematic approach to debugging--and we'll want to take advantage of the tools available in our IDE to help us.
 
 === Types of Errors
 
@@ -57,7 +57,7 @@ Fixing compile-time errors is just a matter of looking over our code and correct
 That's not always as easy as it sounds--especially for beginners--but at least the compiler and/or our IDE can give us feedback about what and where the mistake is.
 
 Runtime errors can be especially frustrating, especially since we can't always tell at what point the actual error is occurring.
-Did I make the mistake at the start of the program when I calculated the answer, or is the mistake at the very end where I output it? 
+Did I make the mistake at the start of the program when I calculated the answer, is the mistake at the very end where I output it? 
 Or did I do something in the middle that accidentally changed the result?
 Who knows! And if you're like me, you might have done all three...
 
@@ -76,7 +76,7 @@ video::jcslOC6-cbk[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
 Most modern IDEs have built-in tools to help us debug our code.
 These tools allow us to monitor the variables in our program, step through our code line-by-line, and set breakpoints to pause our program at a specific point.
-The more you know about programming, the more useful these tools become.
+The more we know about programming, the more useful these tools become.
 But even as beginners, these tools can be helpful in finding and fixing bugs in our code.
 
 The most common debugging tools we'll use are:
@@ -173,15 +173,15 @@ Again, I can only guess, but here are some things I *fear* might happen due to A
 * *Loss of institutional knowledge:* Every programming team relies on veteran coders who have been around and have a deep understanding of the codebase. When there's a question about what a module does, or why an algorithm was implemented a certain way, those veterans are the ones who have the answers. If AI is generating code, we may lose that institutional knowledge.
 * *Decreased quality of entry-level programmers:* If AI can generate code for us, it's possible that we'll see a decrease in the quality of entry-level programmers. People who rely heavily on AI while learning to code may not develop the same problem-solving skills as those who learn to code without AI. 
 
-==== What Does That All Mean for Us?
+==== What Does That All Mean for You?
 
 I don't know. 
 As excited as I am to see AI reach this tipping point in software development, it's kind of a scary time to be a programming teacher.
 Until recently, I've always
 
-Coders who rely heavily on artificial intelligence tools to solve problems may be able to pass themselves off as more skilled than they actually are--indeed, they might even believe themselves to be more skilled than they actually are.
+Coders who rely heavily on artificial intelligence tools to solve problems may be able to pass themselves off as more skilled than they actually are--indeed, they might even *believe* themselves to be more skilled than they actually are.
 But such coders will be less skilled at testing, debugging and maintaining code, and that could lead to a decrease in the quality of software.
-Putting code into production (releasing it in software that people actually use) without understanding it well enough to rigorously test it is a recipe for disaster.
+Putting code into production (releasing it in software that people actually use) without understanding it well enough to regiorously test it is a recipe for disaster.
 
 I think there is still a bright future for programmers, but the landscape will be different.
 Coders will need to have a deeper understanding of the code they write, and they will need to be able to solve problems that AI can't.
@@ -193,21 +193,21 @@ Testing and debugging skills will be more important than ever, and those can rea
 
 ==== Using Generative AI Tools
 
-Online tools like ChatGPT and Microsoft's Copilot can help us generate code without any specialized software. 
+Online tools like ChatGPT and Microsoft's Copilot can help you generate code without any specialized software. 
 Simply enter a description of what you want the code to do, and the AI will generate code for you.
 You can then copy and paste that code into your IDE and work with it from there.
 
 But IDEs are also beginning to integrate generative AI tools focused on coding.
 For example, Visual Studio Code now includes a feature called *GitHub Copilot* that has been trained on billions of lines of code.
-The user interface provides a chat window where we can describe what we want the code to do, and Copilot will generate code for us.
-We can choose to accept that suggestions, or we can refine our prompt to get a different suggestion.
+The user interface provides a chat window where you can describe what you want the code to do, and Copilot will generate code for you.
+You can choose to accept that suggestions, or you can refine your prompt to get a different suggestion.
 
-Additionally, Copilot can generate code as we type.
-It will analyze the code we've already written and suggest the next line of code.
-We can accept that suggestion, or we can ignore it and keep typing.
-It essentially acts as a very advanced code completion tool--or like the "autocomplete" feature on our phone's keyboard, but for code.
+Additionally, Copilot can generate code as you type.
+It will analyze the code you've already written and suggest the next line of code.
+You can accept that suggestion, or you can ignore it and keep typing.
+It essentially acts as a very advanced code completion tool--or like the "autocomplete" feature on your phone's keyboard, but for code.
 
-At this time, GitHub Copilot requires a subscription, but we can use it for free for a limited number of lines of code; and students get an expanded free tier.
+At this time, GitHub Copilot requires a subscription, but you can use it for free for a limited number of lines of code; and students get an expanded free tier.
 
 *And yes, I used Copilot to help me prepare the content on AI in this chapter...*
 

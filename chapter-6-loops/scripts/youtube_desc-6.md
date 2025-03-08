@@ -10,13 +10,14 @@ In this video, you'll learn the value of restraint as we talk about repetition i
 7:08 Counters and Control Variables
 
 ----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-#java #coding #loops #boolean-logic #program-flow #repetition #while-loops #do-while-loops #beginners
+GitHub landing page: https://timmcmichael.github.io/
+
+#java #csharp #python #coding #loops #repetition #beginners #emcc #cis150ab #cis162ad #cis156 #cis256
 
 ---------------------
 
@@ -36,16 +37,14 @@ In this video, we'll talk about the while loop: definite, indefinite, and everyt
 20:15 Performing a Calculation in a Loop
 
 ----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-Files used in videos:
-* GitHub: https://github.com/timmcmichael/EMCCTimFiles
+GitHub landing page: https://timmcmichael.github.io/
 
-#java #coding #while #loops #while-loops #beginners #program-flow #repetition #boolean-logic
+#java #coding #while #loops #beginners#repetition #emcc #cis150ab 
 
 ---------------------
 
@@ -63,22 +62,20 @@ It's time to learn the do-while loop, which is a variation of the while loop. Ch
 18:00 Conclusion
 
 ----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-Files used in videos:
-* GitHub: https://github.com/timmcmichael/EMCCTimFiles
+GitHub landing page: https://timmcmichael.github.io/
 
-#java #coding #loops #while #do-while #repetition #boolean-logic #conditionals #beginner #input-validation
+#java #coding #loops #while #repetition #conditionals #beginner #emcc #cis150ab
 
 ---------------------
 
 # 6D - `for` Loops in Java
 
-You know how programmers are, always looking for a shortcut--always finding ways to type less. Java's got you covered! for statements are a definite improvement over while statements when you need to make a definite loop. Why write three separate lines of code when you can cram all that into one line?
+You know how programmers are, always looking for a shortcut--always finding ways to type less. Java's got you covered! for statements are a definite improvement over while statements when you need to make a definite loop. Why write three separate lines of code when you can cram it all into one line?
 
 See how to take the three components of a loop (initializing a variable, checking a condition, and changing the variable) and combine them all into a for loop. Count up, count down, count any way you like. And learn a thing or two about increment operators while you're at it.
 
@@ -88,16 +85,14 @@ See how to take the three components of a loop (initializing a variable, checkin
 5:42 Different Loop Behavior
 7:38 Conclusion
 ----
-
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-Files used in videos:
-* GitHub: https://github.com/timmcmichael/EMCCTimFiles
+GitHub landing page: https://timmcmichael.github.io/
 
-#java #coding #loops #for #while #repetition #boolean-logic #conditionals #beginner #definite-loops
+#java #coding #loops #for #while #repetition #beginner #emcc #cis150ab
 
 ---------------------
 https://youtu.be/gc4D-7UhxR0
@@ -114,13 +109,13 @@ In this video, I rant about how terrible you are if you use break and continue s
 7:55 "Infinite" Loops with break Statements
 10:21 Pure Evil
 12:42 Conclusion
-----
 
-This video is part my course materials for CIS150AB at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
+----
+This video is part of my course materials for my Object-Oriented Programming Fundamentals class (CIS150AB) at EMCC, and it's intended to accompany a free eBook: https://timmcmichael.github.io/skimpy-oop/index.html
 
 Playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
-GitHub Page: https://timmcmichael.github.io/
+Files from videos: https://github.com/timmcmichael/EMCCTimFiles 
 
-#java #coding #loops #boolean-logic #program-flow #repetition #while-loops #do-while-loops #beginners
+GitHub landing page: https://timmcmichael.github.io/
 
-
+#java #coding #loops  #repetition #beginners #break #continue #pureevil #emcc #cis150ab
