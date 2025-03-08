@@ -29,7 +29,13 @@ _Source code examples from this chapter and associated videos are available on h
 '''
 === Graphical User Interfaces
 
-[ADD SOME STUFF]
+Until now, we've been creating _console applications_, in which the entire user interface is text-based. 
+Though many utility applications are text-based, those are generally used by "power users," software developers, and system administrators.
+End users are used to applications that rely graphical elements to interact with the user.
+This is called a _graphical user interface_, which is abbreviated as _GUI_ and pronounced "gooey."
+
+GUIs on desktop and laptop computers have elements like windows, buttons, text fields, and checkboxes, and the user interacts using a mouse or touchpad.
+These GUI elements are called _widgets_ or _controls_. Mobile applications have similar widgets, but they are designed for touchscreens and are generally more simplified than desktop applications.
 
 .Time To Watch!
 ****
@@ -41,7 +47,46 @@ Intro to GUIs [COMING SOON!]
 
 === The Swing Library
 
-[ADD SOME STUFF]
+The code required to create GUI widgets is complex and far beyond our current skills, but we can use pre-built GUI widgets written by other developers.
+These are typically bundled into _libraries_, or _frameworks_, that we can use in our own programs.
+The two most common GUI frameworks for Java are called _Swing_ and _JavaFX_; we'll use Swing in this course because it's a little simpler for beginners.
+
+NOTE: JavaFX is newer and more powerful than Swing, but it's also more complex and has a steeper learning curve. The concepts learned in Swing will transfer to JavaFX, so learning Swing first is a good idea.
+
+The use Swing classes, you simply need to add an `import` statement at the top of your Java file:
+
+`import javax.swing.*;`
+
+You'll begin by instantiating a `JFrame` object, which is the main window of your application.
+You can use setters on the `JFrame` object to set attributes like the title and size of the window; you'll also want to set the attribute that determines what happens when the user closes the window.
+You can then add other widgets to the frame, like buttons, text fields, and labels.
+Finally, you'll set the frame to be visible, which will cause the window to appear on the screen.
+
+.Example of a simple GUI using Swing
+[source,java]
+----
+import javax.swing.*;
+
+public class BasicGUI {
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Hello, World!");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JLabel lblHello = new JLabel("It's so gooey!");
+        frame.add(lblHello);
+        frame.setVisible(true);
+    }
+
+}
+----
+
+This code creates a window with the title "Hello, World!" and a label that says "It's so gooey!".
+
+.Screenshot of `BasicGUI.java` in action on macOS
+image::basic-gui.png[Basic GUI,width=200]
+
+As you can see, the code to create a simple GUI is not much more complex than creating a console application, which is why we've waited until now to introduce GUIs.
 
 .Time To Watch
 ****
