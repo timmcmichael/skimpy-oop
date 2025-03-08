@@ -20,8 +20,8 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 === What's the Point?
 
 * Distinguish between compile-time and runtime errors
-* Learn some strategies for debugging our code
-* Use the debugging tools available in our IDE
+* Learn some strategies for debugging your code
+* Use the debugging tools available in your IDE
 * Understand the basics of generative AI in coding
 * Use a generative AI tool to generate source code
 
@@ -57,8 +57,8 @@ Fixing compile-time errors is just a matter of looking over our code and correct
 That's not always as easy as it sounds--especially for beginners--but at least the compiler and/or our IDE can give us feedback about what and where the mistake is.
 
 Runtime errors can be especially frustrating, especially since we can't always tell at what point the actual error is occurring.
-Did we make the mistake at the start of the program when we calculated the answer, or is the mistake at the very end where we output it? 
-Or did we do something in the middle that accidentally changed the result?
+Did I make the mistake at the start of the program when I calculated the answer, is the mistake at the very end where I output it? 
+Or did I do something in the middle that accidentally changed the result?
 Who knows! And if you're like me, you might have done all three...
 
 .Time To Watch!
@@ -88,7 +88,7 @@ Step Out:: A command that tells our program to execute the rest of the current m
 Resume:: A command that tells our program to continue running until it hits the next breakpoint.
 
 These functions are available in most IDEs, but the specifics of how they work can vary.
-Even if we're not using Visual Studio Code, the concepts are the same, so we should be able to apply what we learn here to our IDE of choice.
+Even if you're not using Visual Studio Code, the concepts are the same, so you should be able to apply what you learn here to your IDE of choice.
 
 .Time To Watch!
 ****
@@ -104,7 +104,7 @@ Files from video:
 
 ****
 
-IMPORTANT: The first Lab Assignment in Canvas can be completed using what we've covered to this point. We might choose to complete that work now, then move onto the next section--which we'll need for the second Lab Assignment.
+IMPORTANT: The first Lab Assignment in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the second Lab Assignment.
 
 === Generative AI in Coding
 
@@ -126,12 +126,12 @@ I have many ethical concerns about AI in general, and about generative AI to cre
 Simply put, these tools can be used in ways that are indisputably unethical. 
 Most obviously, students can easily use these tools to generate code that is then submitted as the student's own work.
 
-I would like to think it goes without saying, but based on the number of students who deny this, I guess I need to say it: using AI to generate code that we submit as our own is cheating.
-It is no different than copying someone else's code and submitting it as our own.
+I would like to think it goes without saying, but based on the number of students who deny this, I guess I need to say it: using AI to generate code that you submit as your own is cheating.
+It is no different than copying someone else's code and submitting it as your own.
 
 It presents a real challenge for teachers trying to assess student learning, and a real temptation for students struggling to learn--and able to simply let AI do the work for them.
 
-But the impact this technology has had--and will continue to have--on the field of software development is undeniable, and I would be doing us a disservice if we didn't learn a little about it.
+But the impact this technology has had--and will continue to have--on the field of software development is undeniable, and I would be doing you a disservice if we didn't learn a little about it.
 
 ==== The Promise of Generative AI in Coding
 
@@ -145,9 +145,9 @@ The longer answer is: I don't know, but I'm excited to find out.
 For now, we can look at what generative AI can do for us today.
 Here are a few of the current and near-future applications of generative AI in coding:
 
-* *Code completion:* Many IDEs already have code completion features that suggest code as we type.
+* *Code completion:* Many IDEs already have code completion features that suggest code as you type.
 Generative AI can take this a step further by suggesting entire lines of code, or even entire methods.
-* *Code generation:* Generative AI can generate code based on a description of what we want the code to do.
+* *Code generation:* Generative AI can generate code based on a description of what you want the code to do.
 * *Code refactoring:* _Refactoring_ is the process of rewriting code without changing the task the code performs. Once we get code working, we can refactor it to make it more efficient, more secure, or more maintainable. In other words, we can make it better. AI can look at our existing code and recommend changes that make it better.
 * *Debugging:* Generative AI can help us find and fix bugs in our code--often, before we even run it.
 * *Documentation:* Writing good documentation is an important part of software development, but many programmers hate doing it. Generative AI can help us write documentation that is clear, concise, and accurate.
@@ -173,10 +173,73 @@ Again, I can only guess, but here are some things I *fear* might happen due to A
 * *Loss of institutional knowledge:* Every programming team relies on veteran coders who have been around and have a deep understanding of the codebase. When there's a question about what a module does, or why an algorithm was implemented a certain way, those veterans are the ones who have the answers. If AI is generating code, we may lose that institutional knowledge.
 * *Decreased quality of entry-level programmers:* If AI can generate code for us, it's possible that we'll see a decrease in the quality of entry-level programmers. People who rely heavily on AI while learning to code may not develop the same problem-solving skills as those who learn to code without AI. 
 
-==== What Does That All Mean for Us?
+==== What Does That All Mean for You?
 
 I don't know. 
 As excited as I am to see AI reach this tipping point in software development, it's kind of a scary time to be a programming teacher.
 Until recently, I've always
 
-Coders who rely heavily on artificial intelligence tools to solve problems may be able to pass themselves off as more skilled
+Coders who rely heavily on artificial intelligence tools to solve problems may be able to pass themselves off as more skilled than they actually are--indeed, they might even *believe* themselves to be more skilled than they actually are.
+But such coders will be less skilled at testing, debugging and maintaining code, and that could lead to a decrease in the quality of software.
+Putting code into production (releasing it in software that people actually use) without understanding it well enough to regiorously test it is a recipe for disaster.
+
+I think there is still a bright future for programmers, but the landscape will be different.
+Coders will need to have a deeper understanding of the code they write, and they will need to be able to solve problems that AI can't.
+They'll need to be able to evaluate the code that AI generates, and they'll need to be able to maintain and update that code.
+The role of software architect--the person who designs the overall structure of a software project--will become even more important, as will the role of the software tester.
+
+Students will need to have the discipline to learn to code without relying on AI tools, and they'll need to develop the problem-solving skills that AI can't provide.
+Testing and debugging skills will be more important than ever, and those can really only be developed through practice--and that practice comes from writing code, testing it to find errors, and fixing problems.
+
+==== Using Generative AI Tools
+
+Online tools like ChatGPT and Microsoft's Copilot can help you generate code without any specialized software. 
+Simply enter a description of what you want the code to do, and the AI will generate code for you.
+You can then copy and paste that code into your IDE and work with it from there.
+
+But IDEs are also beginning to integrate generative AI tools focused on coding.
+For example, Visual Studio Code now includes a feature called *GitHub Copilot* that has been trained on billions of lines of code.
+The user interface provides a chat window where you can describe what you want the code to do, and Copilot will generate code for you.
+You can choose to accept that suggestions, or you can refine your prompt to get a different suggestion.
+
+Additionally, Copilot can generate code as you type.
+It will analyze the code you've already written and suggest the next line of code.
+You can accept that suggestion, or you can ignore it and keep typing.
+It essentially acts as a very advanced code completion tool--or like the "autocomplete" feature on your phone's keyboard, but for code.
+
+At this time, GitHub Copilot requires a subscription, but you can use it for free for a limited number of lines of code; and students get an expanded free tier.
+
+*And yes, I used Copilot to help me prepare the content on AI in this chapter...*
+
+.Time To Watch!
+****
+Intro to GitHub Copilot in VS Code
+
+// https://youtu.be/gHuJgnpG7pI
+
+video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+// Files from video:
+
+// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+****
+
+
+
+
+'''
+:sectnums!:
+=== Check Yourself Before You Wreck Yourself (on the assignments)
+
+==== Can you answer these questions?
+
+****
+
+1. What is the difference between a compile-time error and a runtime error?
+
+2. How can using output statements help in debugging a program?
+
+3. What are some strategies you can use when you're frustrated by a bug in your code?
+
+****
+:sectnums:

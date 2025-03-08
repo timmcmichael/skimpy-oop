@@ -88,12 +88,12 @@ public class BasicGUI {
 
 This code creates a window with the title "Hello, World!" and a label that says "It's so gooey!".
 
-NOTE: The `JFrame.EXIT_ON_CLOSE` attribute tells the program to exit when the user closes the window. If we don't set this attribute, the program will continue running in the background after the window is closed. There are a few other options for this attribute, but `EXIT_ON_CLOSE` is the most common.
+NOTE: The `JFrame.EXIT_ON_CLOSE` attribute tells the program to exit when the user closes the window. If this attribute is not set, the program will continue running in the background after the window is closed. There are a few other options for this attribute, but `EXIT_ON_CLOSE` is the most common.
 
 .Screenshot of `BasicGUI.java` in action on macOS
 image::basic-gui.png[Basic GUI,width=200]
 
-As you can see, the code to create a simple GUI is is a little more complex than the single `println()` statement of an equivalent console application, which is why we've waited until now to learn it.
+As you can see, the code to create a simple GUI is a little more complex than the single `println()` statement of an equivalent console application, which is why we've waited until now to learn it.
 
 .Time To Watch!
 ****
@@ -118,7 +118,7 @@ This means that the program must be able to respond to these events; we call thi
 In Swing, we can add _event listeners_ to widgets, which are objects that respond to events.
 For example, we can add an event listener to a button that will run a method when the button is clicked.
 The method that runs in response to an event is called an _event handler_.
-Once we've added an event listener to a widger, the event handler is like any other method in our program, and we can write it to do whatever we want.
+Once we've added an event listener to a widget, the event handler is like any other method in our program, and we can write it to do whatever we want.
 
 .Time To Watch!
 ****
@@ -182,7 +182,7 @@ There are a variety of conventions for naming widgets, but two are most common:
 * Prefix the name to identify the widget type, like `lbl` for a label, `txt` for a text field, or `btn` for a button.
 * Append the type of widget to the end of the name, like `helloLabel`, `nameTextField`, or `submitButton`.
 
-I use the prefix method in my code, mostly because I'm used to that from C# programming (where that's the preferred style), but you can use either method in my class.
+I use the prefix method in my code, mostly because I'm used to that from C# programming (where that's the preferred style), but you can use either approach on your assignments.
 The most important thing is to be consistent in your naming so that anyone reading your code can easily understand what each widget is for.
 
 
