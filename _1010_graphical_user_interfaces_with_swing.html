@@ -549,21 +549,19 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </li>
 <li><a href="_1010_graphical_user_interfaces_with_swing.html"><span class="toc-current">10. 1010 - Graphical User Interfaces with Swing</span></a>
 <ul class="sectlevel2">
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_content_coming_soon">10.1. <mark>Content coming soon!</mark></a>
-</li>
 <li><a href="_1010_graphical_user_interfaces_with_swing.html#_whats_the_point_11">What&#8217;s the Point?</a>
 </li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_graphical_user_interfaces">10.2. Graphical User Interfaces</a>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html#_graphical_user_interfaces">10.1. Graphical User Interfaces</a>
 </li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_the_swing_library">10.3. The Swing Library</a>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html#_the_swing_library">10.2. The Swing Library</a>
 </li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_event_driven_programming_with_swing">10.4. Event-Driven Programming with Swing</a>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html#_event_driven_programming_with_swing">10.3. Event-Driven Programming with Swing</a>
 </li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_processing_user_input_with_swing">10.5. Processing User Input with Swing</a>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html#_processing_user_input_with_swing">10.4. Processing User Input with Swing</a>
 </li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_widgets">10.6. Widgets</a>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html#_widgets">10.5. Widgets</a>
 </li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_gui_layouts">10.7. GUI Layouts</a>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html#_gui_layouts">10.6. GUI Layouts</a>
 </li>
 <li><a href="_1010_graphical_user_interfaces_with_swing.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_11">Check Yourself Before You Wreck Yourself (on the assignments)</a>
 </li>
@@ -578,8 +576,6 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <div class="sect1">
 <h2 id="_1010_graphical_user_interfaces_with_swing">10. 1010 - Graphical User Interfaces with Swing</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_content_coming_soon">10.1. <mark>Content coming soon!</mark></h3>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Help Make These Materials Better!</div>
@@ -588,7 +584,6 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </div>
 <div class="paragraph">
 <p><a href="https://forms.gle/4173pZ1yPuNX7pku6" target="_blank" rel="noopener">CIS150AB Course Materials Feedback (Google Form)</a></p>
-</div>
 </div>
 </div>
 </div>
@@ -616,7 +611,7 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_graphical_user_interfaces">10.2. Graphical User Interfaces</h3>
+<h3 id="_graphical_user_interfaces">10.1. Graphical User Interfaces</h3>
 <div class="paragraph">
 <p>Until now, we&#8217;ve been creating <em>console applications</em>, in which the entire user interface is text-based.
 Though many utility applications are text-based, those are generally used by "power users," software developers, and system administrators.
@@ -642,7 +637,7 @@ These GUI elements are called <em>widgets</em> or <em>controls</em>. Mobile appl
 </div>
 </div>
 <div class="sect2">
-<h3 id="_the_swing_library">10.3. The Swing Library</h3>
+<h3 id="_the_swing_library">10.2. The Swing Library</h3>
 <div class="paragraph">
 <p>The code required to create and display a functioning GUI is complex and far beyond our current skills, but we can use pre-built GUI widgets written by other developers.
 These are typically bundled into <em>libraries</em>, or <em>frameworks</em>, that we can use in our own programs.
@@ -743,7 +738,7 @@ The <code>JFrame.EXIT_ON_CLOSE</code> attribute tells the program to exit when t
 </div>
 </div>
 <div class="sect2">
-<h3 id="_event_driven_programming_with_swing">10.4. Event-Driven Programming with Swing</h3>
+<h3 id="_event_driven_programming_with_swing">10.3. Event-Driven Programming with Swing</h3>
 <div class="paragraph">
 <p>A GUI application offers a lot more flexibility than a console application, since the user can interact with the program in many ways.
 In a console application, the program runs from top to bottom, and the user can only interact by typing text.
@@ -784,7 +779,7 @@ Once we&#8217;ve added an event listener to a widget, the event handler is like 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_processing_user_input_with_swing">10.5. Processing User Input with Swing</h3>
+<h3 id="_processing_user_input_with_swing">10.4. Processing User Input with Swing</h3>
 <div class="paragraph">
 <p>Once we&#8217;ve learned how to work with widgets and add event listeners, we can put everything together to create a GUI application that gets input from the user, performs actions or calculations with that data, and displays the results.</p>
 </div>
@@ -816,7 +811,7 @@ Once we&#8217;ve added an event listener to a widget, the event handler is like 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_widgets">10.6. Widgets</h3>
+<h3 id="_widgets">10.5. Widgets</h3>
 <div class="paragraph">
 <p>Using <code>JLabel</code> and <code>JTextField</code>, we&#8217;ve been about to create GUI programs that function much like console applications, but that doesn&#8217;t really take advantage of the power of GUIs.
 A well-designed GUI application utilizes specialized widgets that are designed for specific types of user input and output.</p>
@@ -873,7 +868,7 @@ Use widgets as they are intended, even if they are able to be used in other ways
 </table>
 </div>
 <div class="sect3">
-<h4 id="_widget_naming_conventions">10.6.1. Widget Naming Conventions</h4>
+<h4 id="_widget_naming_conventions">10.5.1. Widget Naming Conventions</h4>
 <div class="paragraph">
 <p>When naming widgets, it&#8217;s a good idea to use a consistent naming convention that makes it clear what type of widget it is.
 There are a variety of conventions for naming widgets, but two are most common:</p>
@@ -927,7 +922,7 @@ The most important thing is to be consistent in your naming so that anyone readi
 </div>
 </div>
 <div class="sect2">
-<h3 id="_gui_layouts">10.7. GUI Layouts</h3>
+<h3 id="_gui_layouts">10.6. GUI Layouts</h3>
 <div class="paragraph">
 <p>As we add more widgets to our GUI, we&#8217;ll need to consider how they are arranged on the screen.
 While we can set the position of each widget manually, this is tedious and doesn&#8217;t work well when the window is resized.
@@ -1053,7 +1048,7 @@ There are tools that allow us to create GUIs visually, by dragging and dropping 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-08 09:23:51 -0700
+Last updated 2025-03-08 15:40:40 -0700
 </div>
 </div>
 </body>
