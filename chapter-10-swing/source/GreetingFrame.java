@@ -1,3 +1,10 @@
+
+/*
+ * This demonstrates event handling with the Swing framework.
+ * 
+ * NOTE: This is the completed code at the end of the video. The video starts from a new file, so there is no starter file.
+ * 
+ */
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;

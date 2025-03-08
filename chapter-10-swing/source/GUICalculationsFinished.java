@@ -1,8 +1,15 @@
+
+/*
+ * This is a demonstration of a Swing GUI that performs calculations with user input and then displays the result.
+ * 
+ * NOTE: This is the completed code at the end of the video (and doesn't compile due to the filename change). See GUICalculations.java for the starter file.
+ * 
+ */
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class GUICalculationsDone extends JFrame implements ActionListener {
+public class GUICalculations extends JFrame implements ActionListener {
 
     // Widgets
     JLabel lblFood, lblDrink, lblResult;
@@ -10,7 +17,7 @@ public class GUICalculationsDone extends JFrame implements ActionListener {
     JCheckBox chkTip;
     JButton btnCalc;
 
-    public GUICalculationsDone() {
+    public GUICalculations() {
         super("Meal Price");
         this.lblFood = new JLabel("Enter the price of food:");
         this.txtFood = new JTextField("0.00");

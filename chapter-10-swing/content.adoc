@@ -48,7 +48,10 @@ Intro to GUIs [COMING SOON!]
 Intro to Swing in Java [COMING SOON!]
 
 // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+Files from video:
 
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/SimpleGUI.java[`SimpleGUI.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/SimpleGUIFinished.java[`SimpleGUIFinished.java`^]
 ****
 
 === Event-Driven Programming with Swing
@@ -61,6 +64,13 @@ Swing Event Handling [COMING SOON!]
 
 // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 
+Files from video:
+
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/GreetingFrame.java[`GreetingFrame.java`^]
+
+_Note: there is no starter code for this video._
+
+
 ****
 
 === Processing User Input with Swing
@@ -72,6 +82,10 @@ Swing Event Handling [COMING SOON!]
 Calculations in Swing [COMING SOON!]
 
 // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+Files from video:
+
+* Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/GUICalculations.java[`GUICalculations.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/GUICalculationsFinished.java[`GUICalculationsFinished.java`^]
 
 ****
 
@@ -84,6 +98,12 @@ Calculations in Swing [COMING SOON!]
 More Swing Widgets [COMING SOON!]
 
 // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+Files from video:
+
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/JCheckBoxDemo.java[`JCheckBoxDemo.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/JRadioButtonDemo.java[`JRadioButtonDemo.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/JComboBoxDemo.java[`JComboBoxDemo.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/JComboBoxDemo2.java[`JComboBoxDemo2.java`^]
 
 ****
 
@@ -96,6 +116,14 @@ More Swing Widgets [COMING SOON!]
 Swing Layouts [COMING SOON!]
 
 // video::PR6u4KvAkas[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+Files from video:
+
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/FlowLayoutDemo.java[`FlowLayoutDemo.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/JPanelDemo.java[`JPanelDemo.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/GridLayoutDemo.java[`GridLayoutDemo.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/BorderLayoutDemo.java[`BorderLayoutDemo.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/NestedLayoutDemo.java[`NestedLayoutDemo.java`^]
+* Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/NestedLayoutDemoColors.java[`NestedLayoutDemoColors.java`^]
 
 ****
 
