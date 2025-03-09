@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="Tim McMichael">
 <title>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -434,145 +433,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-pre.pygments .hll { background-color: #ffffcc }
-pre.pygments { background: #f8f8f8; }
-pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
-pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
-pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
-pre.pygments .tok-o { color: #666666 } /* Operator */
-pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
-pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
-pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
-pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
-pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
-pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
-pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
-pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
-pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
-pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
-pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
-pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
-pre.pygments .tok-go { color: #717171 } /* Generic.Output */
-pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
-pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
-pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
-pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
-pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
-pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
-pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
-pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
-pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
-pre.pygments .tok-m { color: #666666 } /* Literal.Number */
-pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
-pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
-pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
-pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
-pre.pygments .tok-no { color: #880000 } /* Name.Constant */
-pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
-pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
-pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
-pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
-pre.pygments .tok-nl { color: #767600 } /* Name.Label */
-pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
-pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
-pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
-pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
-pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
-pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
-pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
-pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
-pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
-pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
-pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
-pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
-pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
-pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
-pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
-pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
-pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
-pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
-pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
-pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
-pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
-pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
-pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
-pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
-pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
-pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
-pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
-pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
-pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
-</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_1000_arrays" class="book toc2 toc-left">
+<body id="_1000_arrays" class="article">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
-<div class="details">
-<span id="author" class="author">Tim McMichael</span><br>
-</div>
-<div id="toc" class="toc2">
-<div id="toctitle">Skimpy Contents</div>
-<p><span class="toc-root"><a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a></span></p><ul class="sectlevel1">
-<li><a href="_skimpy_preface_an_excuse_for_the_inadequacies_within.html">Skimpy Preface: An Excuse for the Inadequacies Within</a>
-</li>
-<li><a href="_how_to_use_this_book.html">How to Use This Book</a>
-</li>
-<li><a href="_related_resources.html">Related Resources</a>
-</li>
-<li><a href="_0000_getting_started.html">0. 0000 - Getting Started</a>
-</li>
-<li><a href="_0001_computers_and_coding.html">1. 0001 - Computers and Coding</a>
-</li>
-<li><a href="_0010_variables.html">2. 0010 - Variables</a>
-</li>
-<li><a href="_0011_methods.html">3. 0011 - Methods</a>
-</li>
-<li><a href="_0100_classes_and_objects.html">4. 0100 - Classes and Objects</a>
-</li>
-<li><a href="_0101_decisions.html">5. 0101 - Decisions</a>
-</li>
-<li><a href="_0110_loops.html">6. 0110 - Loops</a>
-</li>
-<li><a href="_0111_debugging_and_generative_ai.html">7. 0111 - Debugging and Generative AI</a>
-</li>
-<li><a href="_1000_arrays.html"><span class="toc-current">8. 1000 - Arrays</span></a>
-<ul class="sectlevel2">
-<li><a href="_1000_arrays.html#_whats_the_point_9">What&#8217;s the Point?</a>
-</li>
-<li><a href="_1000_arrays.html#_arrays_and_indexes">8.1. Arrays and Indexes</a>
-</li>
-<li><a href="_1000_arrays.html#_defining_and_using_arrays">8.2. Defining and Using Arrays</a>
-</li>
-<li><a href="_1000_arrays.html#_traversing_arrays">8.3. Traversing Arrays</a>
-</li>
-<li><a href="_1000_arrays.html#_putting_objects_in_arrays">8.4. Putting Objects in Arrays</a>
-</li>
-<li><a href="_1000_arrays.html#_for_each_loops">8.5. "For-Each" Loops</a>
-</li>
-<li><a href="_1000_arrays.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_9">Check Yourself Before You Wreck Yourself (on the assignments)</a>
-</li>
-</ul>
-</li>
-<li><a href="_1001_inheritance.html">9. 1001 - Inheritance</a>
-</li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html">10. 1010 - Graphical User Interfaces with Swing</a>
-</li>
-<li><a href="_stuff_thats_tacked_on_the_end.html">11. Stuff That&#8217;s Tacked on the End</a>
-</li>
-</ul>
-</div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_1000_arrays">8. 1000 - Arrays</h2>
+<h2 id="_1000_arrays">9. 1000 - Arrays</h2>
 <div class="sectionbody">
 <div class="sidebarblock">
 <div class="content">
@@ -606,7 +478,7 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_arrays_and_indexes">8.1. Arrays and Indexes</h3>
+<h3 id="_arrays_and_indexes">9.1. Arrays and Indexes</h3>
 <div class="paragraph">
 <p>The variables we&#8217;ve used to this point can only store one piece of data at a time, and sometimes we need to store more than that.
 For example, we might need to store a list of items to buy at the grocery store.
@@ -636,7 +508,7 @@ If our grocery list has 5 items, the indexes of the items would be 0, 1, 2, 3, a
 </div>
 </div>
 <div class="sect2">
-<h3 id="_defining_and_using_arrays">8.2. Defining and Using Arrays</h3>
+<h3 id="_defining_and_using_arrays">9.2. Defining and Using Arrays</h3>
 <div class="paragraph">
 <p>In Java, arrays are objects, so they have to be created with the <code>new</code> keyword, and array identifiers use square brackets [] to specify array elements.</p>
 </div>
@@ -644,7 +516,7 @@ If our grocery list has 5 items, the indexes of the items would be 0, 1, 2, 3, a
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<div class="title">Tip</div>
 </td>
 <td class="content">
 Any time you see square brackets in Java, you&#8217;re dealing with an array.
@@ -657,7 +529,7 @@ Any time you see square brackets in Java, you&#8217;re dealing with an array.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">groceryItems</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-o">[</span><span class="tok-mi">5</span><span class="tok-o">]</span><span class="tok-p">;</span></code></pre>
+<pre class="highlight"><code class="language-java" data-lang="java">String[] groceryItems = new String[5];</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -668,11 +540,11 @@ Any time you see square brackets in Java, you&#8217;re dealing with an array.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">0</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;milk&quot;</span><span class="tok-p">;</span>
-<span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">1</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;eggs&quot;</span><span class="tok-p">;</span>
-<span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">2</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;bread&quot;</span><span class="tok-p">;</span>
-<span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">3</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;butter&quot;</span><span class="tok-p">;</span>
-<span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">4</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;cheese&quot;</span><span class="tok-p">;</span></code></pre>
+<pre class="highlight"><code class="language-java" data-lang="java">groceryItems[0] = "milk";
+groceryItems[1] = "eggs";
+groceryItems[2] = "bread";
+groceryItems[3] = "butter";
+groceryItems[4] = "cheese";</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -684,10 +556,10 @@ The element is just like any other variable, so we can use it in expressions, pa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;The first item on the list is &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">0</span><span class="tok-o">]</span><span class="tok-p">);</span>
-<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;The last item on the list is &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">4</span><span class="tok-o">]</span><span class="tok-p">);</span>
-<span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">2</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;bananas&quot;</span><span class="tok-p">;</span>
-<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Bread has been replaced with &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">2</span><span class="tok-o">]</span><span class="tok-p">);</span></code></pre>
+<pre class="highlight"><code class="language-java" data-lang="java">System.out.println("The first item on the list is " + groceryItems[0]);
+System.out.println("The last item on the list is " + groceryItems[4]);
+groceryItems[2] = "bananas";
+System.out.println("Bread has been replaced with " + groceryItems[2]);</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -725,7 +597,7 @@ In our grocery list example, any index greater than 4 would be out of bounds.</p
 </div>
 </div>
 <div class="sect2">
-<h3 id="_traversing_arrays">8.3. Traversing Arrays</h3>
+<h3 id="_traversing_arrays">9.3. Traversing Arrays</h3>
 <div class="paragraph">
 <p>Working with individual elements in an array can be useful, but to really see the power of arrays, you need loops.
 With a loop, we can easily move through an array and perform some task or operation on each element.
@@ -743,12 +615,12 @@ The syntax for a <code>for</code> traversal is:</p>
 <div class="listingblock">
 <div class="title">Example of a <code>for</code> loop to traverse an array</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">scores</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-mi">90</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">85</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">95</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">88</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">92</span><span class="tok-p">};</span>
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
-<span class="tok-k">for</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">i</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-n">i</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-n">scores</span><span class="tok-p">.</span><span class="tok-na">length</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-n">i</span><span class="tok-o">++</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">    </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">+=</span><span class="tok-w"> </span><span class="tok-n">scores</span><span class="tok-o">[</span><span class="tok-n">i</span><span class="tok-o">]</span><span class="tok-p">;</span>
-<span class="tok-p">}</span>
-<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;The sum of the scores is &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-p">);</span></code></pre>
+<pre class="highlight"><code class="language-java" data-lang="java">int scores[] = {90, 85, 95, 88, 92};
+int sum = 0;
+for (int i = 0; i &lt; scores.length; i++) {
+    sum += scores[i];
+}
+System.out.println("The sum of the scores is " + sum);</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -763,7 +635,7 @@ It also wouldn&#8217;t be accessible outside of the loop due to its scope.</p>
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<div class="title">Note</div>
 </td>
 <td class="content">
 At this point, clever students point out that we could get the sum of the scores without using a loop at all, using the <code>Arrays</code> class from the <code>java.util</code> package. Sure, but since we&#8217;re learning about loops, that would defeat the point. My assignments for this chapter assess your ability to write loops, so you won&#8217;t get any points for code that doesn&#8217;t at least try to traverse the array.
@@ -779,12 +651,12 @@ If we hard-coded the size of the array into the loop, we would have to change ou
 <div class="listingblock">
 <div class="title">Example of a hard-coded loop</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">scores</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-mi">90</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">85</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">95</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">88</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">92</span><span class="tok-p">};</span>
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
-<span class="tok-k">for</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">i</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-n">i</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">5</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-n">i</span><span class="tok-o">++</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><span class="tok-c1">// Uh oh! What if we add another score?</span>
-<span class="tok-w">    </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">+=</span><span class="tok-w"> </span><span class="tok-n">scores</span><span class="tok-o">[</span><span class="tok-n">i</span><span class="tok-o">]</span><span class="tok-p">;</span>
-<span class="tok-p">}</span>
-<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;The sum of the scores is &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-p">);</span></code></pre>
+<pre class="highlight"><code class="language-java" data-lang="java">int scores[] = {90, 85, 95, 88, 92};
+int sum = 0;
+for (int i = 0; i &lt; 5; i++) { // Uh oh! What if we add another score?
+    sum += scores[i];
+}
+System.out.println("The sum of the scores is " + sum);</code></pre>
 </div>
 </div>
 <div class="sidebarblock">
@@ -817,7 +689,7 @@ If we hard-coded the size of the array into the loop, we would have to change ou
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-important" title="Important"></i>
+<div class="title">Important</div>
 </td>
 <td class="content">
 The Lab Assignments in Canvas can be completed using what we&#8217;ve covered to this point. You might choose to complete that work now, then move onto the rest of the chapter&#8212;&#8203;which you&#8217;ll need for the Programming Project.
@@ -827,7 +699,7 @@ The Lab Assignments in Canvas can be completed using what we&#8217;ve covered to
 </div>
 </div>
 <div class="sect2">
-<h3 id="_putting_objects_in_arrays">8.4. Putting Objects in Arrays</h3>
+<h3 id="_putting_objects_in_arrays">9.4. Putting Objects in Arrays</h3>
 <div class="paragraph">
 <p>In Java, an array can hold a primitive type, like an <code>int</code>, or an object.
 We&#8217;ve been using arrays of Strings, which are objects, but students sometimes don&#8217;t realize that they can also create arrays of objects they define themselves.</p>
@@ -837,12 +709,12 @@ We&#8217;ve been using arrays of Strings, which are objects, but students someti
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">GroceryItem</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">groceryItems</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">GroceryItem</span><span class="tok-o">[</span><span class="tok-mi">5</span><span class="tok-o">]</span><span class="tok-p">;</span>
-<span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">0</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">GroceryItem</span><span class="tok-p">(</span><span class="tok-s">&quot;milk&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-p">);</span>
-<span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">1</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">GroceryItem</span><span class="tok-p">(</span><span class="tok-s">&quot;eggs&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">9</span><span class="tok-p">);</span>
-<span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">2</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">GroceryItem</span><span class="tok-p">(</span><span class="tok-s">&quot;bread&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">);</span>
-<span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">3</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">GroceryItem</span><span class="tok-p">(</span><span class="tok-s">&quot;butter&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-p">);</span>
-<span class="tok-n">groceryItems</span><span class="tok-o">[</span><span class="tok-mi">4</span><span class="tok-o">]</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">GroceryItem</span><span class="tok-p">(</span><span class="tok-s">&quot;cheese&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-p">);</span></code></pre>
+<pre class="highlight"><code class="language-java" data-lang="java">GroceryItem[] groceryItems = new GroceryItem[5];
+groceryItems[0] = new GroceryItem("milk", 4);
+groceryItems[1] = new GroceryItem("eggs", 9);
+groceryItems[2] = new GroceryItem("bread", 7);
+groceryItems[3] = new GroceryItem("butter", 4);
+groceryItems[4] = new GroceryItem("cheese", 4);</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -877,7 +749,7 @@ Our array can hold multiple objects, and each object can have multiple fields&#8
 </div>
 </div>
 <div class="sect2">
-<h3 id="_for_each_loops">8.5. "For-Each" Loops</h3>
+<h3 id="_for_each_loops">9.5. "For-Each" Loops</h3>
 <div class="paragraph">
 <p>Because array traversal is such a common task, Java provides a special kind of loop that makes it easier to traverse an array.
 It is officially known as an <em>enhanced for loop</em>, but it is often called a "for-each loop" because it goes through each element in the array.
@@ -888,7 +760,7 @@ However, it is less flexible than a traditional for loop: we can&#8217;t use it 
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<div class="title">Note</div>
 </td>
 <td class="content">
 The for-each loop is optional. You can always use a traditional for loop to traverse an array, and you&#8217;ll need to know how to do that for the assignments in this chapter.
@@ -955,7 +827,7 @@ The for-each loop is optional. You can always use a traditional for loop to trav
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-08 15:40:40 -0700
+Last updated 2025-03-08 19:47:23 -0700
 </div>
 </div>
 </body>

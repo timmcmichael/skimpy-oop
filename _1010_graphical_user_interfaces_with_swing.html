@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="Tim McMichael">
 <title>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -434,147 +433,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-pre.pygments .hll { background-color: #ffffcc }
-pre.pygments { background: #f8f8f8; }
-pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
-pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
-pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
-pre.pygments .tok-o { color: #666666 } /* Operator */
-pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
-pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
-pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
-pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
-pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
-pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
-pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
-pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
-pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
-pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
-pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
-pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
-pre.pygments .tok-go { color: #717171 } /* Generic.Output */
-pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
-pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
-pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
-pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
-pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
-pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
-pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
-pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
-pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
-pre.pygments .tok-m { color: #666666 } /* Literal.Number */
-pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
-pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
-pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
-pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
-pre.pygments .tok-no { color: #880000 } /* Name.Constant */
-pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
-pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
-pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
-pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
-pre.pygments .tok-nl { color: #767600 } /* Name.Label */
-pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
-pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
-pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
-pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
-pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
-pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
-pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
-pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
-pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
-pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
-pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
-pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
-pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
-pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
-pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
-pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
-pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
-pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
-pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
-pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
-pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
-pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
-pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
-pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
-pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
-pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
-pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
-pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
-pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
-</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_1010_graphical_user_interfaces_with_swing" class="book toc2 toc-left">
+<body id="_1010_graphical_user_interfaces_with_swing" class="article">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
-<div class="details">
-<span id="author" class="author">Tim McMichael</span><br>
-</div>
-<div id="toc" class="toc2">
-<div id="toctitle">Skimpy Contents</div>
-<p><span class="toc-root"><a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a></span></p><ul class="sectlevel1">
-<li><a href="_skimpy_preface_an_excuse_for_the_inadequacies_within.html">Skimpy Preface: An Excuse for the Inadequacies Within</a>
-</li>
-<li><a href="_how_to_use_this_book.html">How to Use This Book</a>
-</li>
-<li><a href="_related_resources.html">Related Resources</a>
-</li>
-<li><a href="_0000_getting_started.html">0. 0000 - Getting Started</a>
-</li>
-<li><a href="_0001_computers_and_coding.html">1. 0001 - Computers and Coding</a>
-</li>
-<li><a href="_0010_variables.html">2. 0010 - Variables</a>
-</li>
-<li><a href="_0011_methods.html">3. 0011 - Methods</a>
-</li>
-<li><a href="_0100_classes_and_objects.html">4. 0100 - Classes and Objects</a>
-</li>
-<li><a href="_0101_decisions.html">5. 0101 - Decisions</a>
-</li>
-<li><a href="_0110_loops.html">6. 0110 - Loops</a>
-</li>
-<li><a href="_0111_debugging_and_generative_ai.html">7. 0111 - Debugging and Generative AI</a>
-</li>
-<li><a href="_1000_arrays.html">8. 1000 - Arrays</a>
-</li>
-<li><a href="_1001_inheritance.html">9. 1001 - Inheritance</a>
-</li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html"><span class="toc-current">10. 1010 - Graphical User Interfaces with Swing</span></a>
-<ul class="sectlevel2">
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_whats_the_point_11">What&#8217;s the Point?</a>
-</li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_graphical_user_interfaces">10.1. Graphical User Interfaces</a>
-</li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_the_swing_library">10.2. The Swing Library</a>
-</li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_event_driven_programming_with_swing">10.3. Event-Driven Programming with Swing</a>
-</li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_processing_user_input_with_swing">10.4. Processing User Input with Swing</a>
-</li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_widgets">10.5. Widgets</a>
-</li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_gui_layouts">10.6. GUI Layouts</a>
-</li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_11">Check Yourself Before You Wreck Yourself (on the assignments)</a>
-</li>
-</ul>
-</li>
-<li><a href="_stuff_thats_tacked_on_the_end.html">11. Stuff That&#8217;s Tacked on the End</a>
-</li>
-</ul>
-</div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_1010_graphical_user_interfaces_with_swing">10. 1010 - Graphical User Interfaces with Swing</h2>
+<h2 id="_1010_graphical_user_interfaces_with_swing">11. 1010 - Graphical User Interfaces with Swing</h2>
 <div class="sectionbody">
 <div class="sidebarblock">
 <div class="content">
@@ -611,7 +481,7 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <hr>
 </div>
 <div class="sect2">
-<h3 id="_graphical_user_interfaces">10.1. Graphical User Interfaces</h3>
+<h3 id="_graphical_user_interfaces">11.1. Graphical User Interfaces</h3>
 <div class="paragraph">
 <p>Until now, we&#8217;ve been creating <em>console applications</em>, in which the entire user interface is text-based.
 Though many utility applications are text-based, those are generally used by "power users," software developers, and system administrators.
@@ -637,7 +507,7 @@ These GUI elements are called <em>widgets</em> or <em>controls</em>. Mobile appl
 </div>
 </div>
 <div class="sect2">
-<h3 id="_the_swing_library">10.2. The Swing Library</h3>
+<h3 id="_the_swing_library">11.2. The Swing Library</h3>
 <div class="paragraph">
 <p>The code required to create and display a functioning GUI is complex and far beyond our current skills, but we can use pre-built GUI widgets written by other developers.
 These are typically bundled into <em>libraries</em>, or <em>frameworks</em>, that we can use in our own programs.
@@ -647,7 +517,7 @@ The two most common GUI frameworks for Java are called <em>Swing</em> and <em>Ja
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<div class="title">Note</div>
 </td>
 <td class="content">
 JavaFX is newer and more powerful than Swing, but it&#8217;s also more complex and has a steeper learning curve. The concepts learned in Swing will transfer to JavaFX, so learning Swing is a great place to start.
@@ -670,20 +540,20 @@ Finally, we&#8217;ll set the frame to be visible, which will cause the window to
 <div class="listingblock">
 <div class="title">Example of a simple GUI using Swing</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-nn">javax.swing.*</span><span class="tok-p">;</span>
+<pre class="highlight"><code class="language-java" data-lang="java">import javax.swing.*;
 
-<span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">BasicGUI</span><span class="tok-w"> </span><span class="tok-p">{</span>
+public class BasicGUI {
 
-<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">        </span><span class="tok-n">JFrame</span><span class="tok-w"> </span><span class="tok-n">frame</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">JFrame</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello, World!&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">        </span><span class="tok-n">frame</span><span class="tok-p">.</span><span class="tok-na">setSize</span><span class="tok-p">(</span><span class="tok-mi">300</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-mi">200</span><span class="tok-p">);</span>
-<span class="tok-w">        </span><span class="tok-n">frame</span><span class="tok-p">.</span><span class="tok-na">setDefaultCloseOperation</span><span class="tok-p">(</span><span class="tok-n">JFrame</span><span class="tok-p">.</span><span class="tok-na">EXIT_ON_CLOSE</span><span class="tok-p">);</span>
-<span class="tok-w">        </span><span class="tok-n">JLabel</span><span class="tok-w"> </span><span class="tok-n">lblHello</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">JLabel</span><span class="tok-p">(</span><span class="tok-s">&quot;It&#39;s so gooey!&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">        </span><span class="tok-n">frame</span><span class="tok-p">.</span><span class="tok-na">add</span><span class="tok-p">(</span><span class="tok-n">lblHello</span><span class="tok-p">);</span>
-<span class="tok-w">        </span><span class="tok-n">frame</span><span class="tok-p">.</span><span class="tok-na">setVisible</span><span class="tok-p">(</span><span class="tok-kc">true</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-p">}</span>
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Hello, World!");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JLabel lblHello = new JLabel("It's so gooey!");
+        frame.add(lblHello);
+        frame.setVisible(true);
+    }
 
-<span class="tok-p">}</span></code></pre>
+}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -693,7 +563,7 @@ Finally, we&#8217;ll set the frame to be visible, which will cause the window to
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<div class="title">Note</div>
 </td>
 <td class="content">
 The <code>JFrame.EXIT_ON_CLOSE</code> attribute tells the program to exit when the user closes the window. If this attribute is not set, the program will continue running in the background after the window is closed. There are a few other options for this attribute, but <code>EXIT_ON_CLOSE</code> is the most common.
@@ -705,7 +575,7 @@ The <code>JFrame.EXIT_ON_CLOSE</code> attribute tells the program to exit when t
 <div class="content">
 <img src="chapter-10-gui/images/basic-gui.png" alt="Basic GUI" width="200">
 </div>
-<div class="title">Figure 10. Screenshot of <code>BasicGUI.java</code> in action on macOS</div>
+<div class="title"> 10. Screenshot of <code>BasicGUI.java</code> in action on macOS</div>
 </div>
 <div class="paragraph">
 <p>As you can see, the code to create a simple GUI is a little more complex than the single <code>println()</code> statement of an equivalent console application, which is why we&#8217;ve waited until now to learn it.</p>
@@ -738,7 +608,7 @@ The <code>JFrame.EXIT_ON_CLOSE</code> attribute tells the program to exit when t
 </div>
 </div>
 <div class="sect2">
-<h3 id="_event_driven_programming_with_swing">10.3. Event-Driven Programming with Swing</h3>
+<h3 id="_event_driven_programming_with_swing">11.3. Event-Driven Programming with Swing</h3>
 <div class="paragraph">
 <p>A GUI application offers a lot more flexibility than a console application, since the user can interact with the program in many ways.
 In a console application, the program runs from top to bottom, and the user can only interact by typing text.
@@ -779,7 +649,7 @@ Once we&#8217;ve added an event listener to a widget, the event handler is like 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_processing_user_input_with_swing">10.4. Processing User Input with Swing</h3>
+<h3 id="_processing_user_input_with_swing">11.4. Processing User Input with Swing</h3>
 <div class="paragraph">
 <p>Once we&#8217;ve learned how to work with widgets and add event listeners, we can put everything together to create a GUI application that gets input from the user, performs actions or calculations with that data, and displays the results.</p>
 </div>
@@ -811,7 +681,7 @@ Once we&#8217;ve added an event listener to a widget, the event handler is like 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_widgets">10.5. Widgets</h3>
+<h3 id="_widgets">11.5. Widgets</h3>
 <div class="paragraph">
 <p>Using <code>JLabel</code> and <code>JTextField</code>, we&#8217;ve been about to create GUI programs that function much like console applications, but that doesn&#8217;t really take advantage of the power of GUIs.
 A well-designed GUI application utilizes specialized widgets that are designed for specific types of user input and output.</p>
@@ -859,7 +729,7 @@ There is a great deal of documentation available online for the Swing framework,
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<div class="title">Tip</div>
 </td>
 <td class="content">
 Use widgets as they are intended, even if they are able to be used in other ways, such as displaying output in a text field. Users are accustomed to certain behaviors from widgets, and using them in unexpected ways can make the application harder to use.
@@ -868,7 +738,7 @@ Use widgets as they are intended, even if they are able to be used in other ways
 </table>
 </div>
 <div class="sect3">
-<h4 id="_widget_naming_conventions">10.5.1. Widget Naming Conventions</h4>
+<h4 id="_widget_naming_conventions">11.5.1. Widget Naming Conventions</h4>
 <div class="paragraph">
 <p>When naming widgets, it&#8217;s a good idea to use a consistent naming convention that makes it clear what type of widget it is.
 There are a variety of conventions for naming widgets, but two are most common:</p>
@@ -922,7 +792,7 @@ The most important thing is to be consistent in your naming so that anyone readi
 </div>
 </div>
 <div class="sect2">
-<h3 id="_gui_layouts">10.6. GUI Layouts</h3>
+<h3 id="_gui_layouts">11.6. GUI Layouts</h3>
 <div class="paragraph">
 <p>As we add more widgets to our GUI, we&#8217;ll need to consider how they are arranged on the screen.
 While we can set the position of each widget manually, this is tedious and doesn&#8217;t work well when the window is resized.
@@ -966,7 +836,7 @@ The most common layout managers are:</p>
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<div class="title">Note</div>
 </td>
 <td class="content">
 There are tools that allow us to create GUIs visually, by dragging and dropping widgets onto a window, and then generating the code that will produce the GUI. But our goal is to learn how layout managers work, so we&#8217;ll be creating our GUIs by writing the code ourselves. For GUI designs that don&#8217;t have to be turned into an obnoxious professor for a grade, you&#8217;re welcome to take advantage of these tools.
@@ -1048,7 +918,7 @@ There are tools that allow us to create GUIs visually, by dragging and dropping 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-08 15:40:40 -0700
+Last updated 2025-03-08 19:47:23 -0700
 </div>
 </div>
 </body>
