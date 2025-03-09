@@ -435,12 +435,84 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_0010_variables" class="article toc2 toc-left">
+<body id="_0010_variables" class="book toc2 toc-left">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
 <div class="details">
@@ -455,60 +527,60 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="_related_resources.html">Related Resources</a>
 </li>
-<li><a href="_0000_getting_started.html">1. 0000 - Getting Started</a>
+<li><a href="_0000_getting_started.html">0. 0000 - Getting Started</a>
 </li>
-<li><a href="_0001_computers_and_coding.html">2. 0001 - Computers and Coding</a>
+<li><a href="_0001_computers_and_coding.html">1. 0001 - Computers and Coding</a>
 </li>
-<li><a href="_0010_variables.html"><span class="toc-current">3. 0010 - Variables</span></a>
+<li><a href="_0010_variables.html"><span class="toc-current">2. 0010 - Variables</span></a>
 <ul class="sectlevel2">
 <li><a href="_0010_variables.html#_whats_the_point_3">What&#8217;s the Point?</a>
 </li>
-<li><a href="_0010_variables.html#_java_identifiers">3.1. Java Identifiers</a>
+<li><a href="_0010_variables.html#_java_identifiers">2.1. Java Identifiers</a>
 </li>
-<li><a href="_0010_variables.html#_numeric_data_types">3.2. Numeric Data Types</a>
+<li><a href="_0010_variables.html#_numeric_data_types">2.2. Numeric Data Types</a>
 </li>
-<li><a href="_0010_variables.html#_boolean_data_type_and_boolean_logic">3.3. <code>boolean</code> Data Type (and Boolean Logic)</a>
+<li><a href="_0010_variables.html#_boolean_data_type_and_boolean_logic">2.3. <code>boolean</code> Data Type (and Boolean Logic)</a>
 </li>
-<li><a href="_0010_variables.html#_char_data_type">3.4. <code>char</code> Data Type</a>
+<li><a href="_0010_variables.html#_char_data_type">2.4. <code>char</code> Data Type</a>
 </li>
-<li><a href="_0010_variables.html#_strings">3.5. Strings</a>
+<li><a href="_0010_variables.html#_strings">2.5. Strings</a>
 </li>
-<li><a href="_0010_variables.html#_declaring_constants">3.6. Declaring Constants</a>
+<li><a href="_0010_variables.html#_declaring_constants">2.6. Declaring Constants</a>
 </li>
-<li><a href="_0010_variables.html#_outputting_variable_and_constant_values">3.7. Outputting Variable (and Constant) Values</a>
+<li><a href="_0010_variables.html#_outputting_variable_and_constant_values">2.7. Outputting Variable (and Constant) Values</a>
 </li>
-<li><a href="_0010_variables.html#_math_calculations">3.8. Math Calculations</a>
+<li><a href="_0010_variables.html#_math_calculations">2.8. Math Calculations</a>
 </li>
-<li><a href="_0010_variables.html#_getting_user_input">3.9. Getting User Input</a>
+<li><a href="_0010_variables.html#_getting_user_input">2.9. Getting User Input</a>
 </li>
 <li><a href="_0010_variables.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_3">Check Yourself Before You Wreck Yourself (on the assignments)</a>
 </li>
 </ul>
 </li>
-<li><a href="_0011_methods.html">4. 0011 - Methods</a>
+<li><a href="_0011_methods.html">3. 0011 - Methods</a>
 </li>
-<li><a href="_0100_classes_and_objects.html">5. 0100 - Classes and Objects</a>
+<li><a href="_0100_classes_and_objects.html">4. 0100 - Classes and Objects</a>
 </li>
-<li><a href="_0101_decisions.html">6. 0101 - Decisions</a>
+<li><a href="_0101_decisions.html">5. 0101 - Decisions</a>
 </li>
-<li><a href="_0110_loops.html">7. 0110 - Loops</a>
+<li><a href="_0110_loops.html">6. 0110 - Loops</a>
 </li>
-<li><a href="_0111_debugging_and_generative_ai.html">8. 0111 - Debugging and Generative AI</a>
+<li><a href="_0111_debugging_and_generative_ai.html">7. 0111 - Debugging and Generative AI</a>
 </li>
-<li><a href="_1000_arrays.html">9. 1000 - Arrays</a>
+<li><a href="_1000_arrays.html">8. 1000 - Arrays</a>
 </li>
-<li><a href="_1001_inheritance.html">10. 1001 - Inheritance</a>
+<li><a href="_1001_inheritance.html">9. 1001 - Inheritance</a>
 </li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html">11. 1010 - Graphical User Interfaces with Swing</a>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html">10. 1010 - Graphical User Interfaces with Swing</a>
 </li>
-<li><a href="_stuff_thats_tacked_on_the_end.html">12. Stuff That&#8217;s Tacked on the End</a>
+<li><a href="_stuff_thats_tacked_on_the_end.html">11. Stuff That&#8217;s Tacked on the End</a>
 </li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_0010_variables">3. 0010 - Variables</h2>
+<h2 id="_0010_variables">2. 0010 - Variables</h2>
 <div class="sectionbody">
 <div class="sidebarblock">
 <div class="content">
@@ -566,15 +638,15 @@ In computer programming, a piece of information is called <strong>data</strong>.
 <div class="listingblock">
 <div class="title">HelloWorld.java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public class HelloWorld {
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
-    public static void main(String[] args) {
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
-        System.out.println("Hello World!"); <i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello World!&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 
-    }
+<span class="tok-w">    </span><span class="tok-p">}</span>
 
-}</code></pre>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -683,7 +755,7 @@ If you have programming experience in Python or JavaScript, the idea of a data t
 </div>
 </div>
 <div class="sect2">
-<h3 id="_java_identifiers">3.1. Java Identifiers</h3>
+<h3 id="_java_identifiers">2.1. Java Identifiers</h3>
 <div class="paragraph">
 <p>Variable names (more properly called variable <em>identifiers</em>) are the character sequences that identify a variable.
 There are a few rules that determine whether or not an identifier is valid:
@@ -696,7 +768,7 @@ The expectation in my course is that your code will align with those conventions
 </div>
 </div>
 <div class="sect2">
-<h3 id="_numeric_data_types">3.2. Numeric Data Types</h3>
+<h3 id="_numeric_data_types">2.2. Numeric Data Types</h3>
 <div class="paragraph">
 <p>Variables for storing numbers come in two flavors: <strong>integers</strong> and <strong>floating-point</strong> numbers.
 As you may remember from your math class, an integer is a whole number; that is, a number that doesn&#8217;t include any decimal places or fractional values.
@@ -731,9 +803,9 @@ It&#8217;s called "single" in some programming languages, which helps understand
 <div class="listingblock">
 <div class="title">Examples of numeric variable declarations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">int myAge = 21;
-float myGPA = 3.75f; <i class="conum" data-value="1"></i><b>(1)</b>
-double myFriendsGPA = 3.54;</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">myAge</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">;</span>
+<span class="tok-kt">float</span><span class="tok-w"> </span><span class="tok-n">myGPA</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.75f</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">myFriendsGPA</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.54</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -745,7 +817,7 @@ double myFriendsGPA = 3.54;</code></pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_who_cares_about_variable_size">3.2.1. Who Cares About Variable Size?</h4>
+<h4 id="_who_cares_about_variable_size">2.2.1. Who Cares About Variable Size?</h4>
 <div class="paragraph">
 <p>The general rule in programming is to be as efficient with your resources (memory, storage, processing speed, network bandwidth, etc.) as possible.
 If you&#8217;re storing a person&#8217;s age, you don&#8217;t really need an <code>int</code>; nobody is going to be two million years old!
@@ -785,7 +857,7 @@ Just know that you&#8217;ll get fired if you do that at your job with the bank.
 </div>
 </div>
 <div class="sect2">
-<h3 id="_boolean_data_type_and_boolean_logic">3.3. <code>boolean</code> Data Type (and Boolean Logic)</h3>
+<h3 id="_boolean_data_type_and_boolean_logic">2.3. <code>boolean</code> Data Type (and Boolean Logic)</h3>
 <div class="paragraph">
 <p>A <code>boolean</code> variable has only two possible values: <code>true</code> and <code>false</code>.
 It&#8217;s useful for tracking information that is only one thing or the other.
@@ -801,8 +873,8 @@ That is to say, we usually name our <code>boolean</code> variables using words l
 <div class="listingblock">
 <div class="title">Examples of Boolean variable declarations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">boolean isPassing = true;
-boolean hasCar = false;</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isPassing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">hasCar</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -811,7 +883,7 @@ We&#8217;ll look at this "Boolean logic" in the <a href="#">chapter on decisions
 </div>
 </div>
 <div class="sect2">
-<h3 id="_char_data_type">3.4. <code>char</code> Data Type</h3>
+<h3 id="_char_data_type">2.4. <code>char</code> Data Type</h3>
 <div class="paragraph">
 <p>If we want to store a single character, like a student&#8217;s letter grade or their first initial, we can use the <code>char</code> data type.
 Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol&#8212;&#8203;or some other weird stuff, too.</p>
@@ -819,8 +891,8 @@ Char literals are created by putting a character in single quotes, and that char
 <div class="listingblock">
 <div class="title">Examples of character variable declarations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">char myLetterGrade = 'A';
-char firstInitial = 'T';</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">myLetterGrade</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;A&#39;</span><span class="tok-p">;</span>
+<span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">firstInitial</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;T&#39;</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -854,7 +926,7 @@ Lowercase letters are considered different characters, so 97 is 'a' and 98 is 'b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_strings">3.5. Strings</h3>
+<h3 id="_strings">2.5. Strings</h3>
 <div class="paragraph">
 <p>A <code>char</code> is pretty limited since it can only hold a single character.
 If we want to put a collection of characters together to make words and sentences, we need multiple <code>char</code>s grouped into a single variable.
@@ -878,8 +950,8 @@ For now, a really important thing to notice and remember is that primitive types
 <div class="listingblock">
 <div class="title">Examples of <code>String</code> variable declarations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">String address = "3000 N. Dysart Road";
-String bestClass = "CIS150AB";</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">address</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;3000 N. Dysart Road&quot;</span><span class="tok-p">;</span>
+<span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">bestClass</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;CIS150AB&quot;</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -899,7 +971,7 @@ Always remember that, in Java, single quotes mean a <code>char</code> and double
 </div>
 </div>
 <div class="sect2">
-<h3 id="_declaring_constants">3.6. Declaring Constants</h3>
+<h3 id="_declaring_constants">2.6. Declaring Constants</h3>
 <div class="paragraph">
 <p>A constant is similar to a variable, with two rules:</p>
 </div>
@@ -920,9 +992,9 @@ So that people looking at your code can easily tell it&#8217;s a constant rather
 <div class="listingblock">
 <div class="title">Examples of constant declarations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">final double SALES_TAX_RATE = 8.7;
-final int MINIMUM_AGE = 18;
-final String FAVORITE_CLASS = "CIS150AB";</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">SALES_TAX_RATE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">8.7</span><span class="tok-p">;</span>
+<span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">MINIMUM_AGE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">;</span>
+<span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">FAVORITE_CLASS</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;CIS150AB&quot;</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -942,19 +1014,19 @@ final String FAVORITE_CLASS = "CIS150AB";</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_outputting_variable_and_constant_values">3.7. Outputting Variable (and Constant) Values</h3>
+<h3 id="_outputting_variable_and_constant_values">2.7. Outputting Variable (and Constant) Values</h3>
 <div class="paragraph">
 <p>Assigning a value to a variable or constant does not produce any output.
 If we want to display the output of a variable&#8212;&#8203;or a constant&#8212;&#8203;we just put the identifier in a <code>print()</code> or <code>println()</code> statement without any quotation marks:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">String artistName = "Sam Cooke";
-int birthYear = 1931;
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">1931</span><span class="tok-p">;</span>
 
-System.out.print(artistName);
-System.out.print(" was born in ");
-System.out.println(birthYear);</code></pre>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-n">artistName</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot; was born in &quot;</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">birthYear</span><span class="tok-p">);</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -963,10 +1035,10 @@ We can combine output into one statement by creating a string with multiple piec
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">String artistName = "Sam Cooke";
-int birthYear = 1931;
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">1931</span><span class="tok-p">;</span>
 
-System.out.println(artistName + " was born in " + birthYear);</code></pre>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot; was born in &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-p">);</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -978,7 +1050,7 @@ Be thoughtful when concatenating, because the `</code> symbol is also used to do
 </div>
 </div>
 <div class="sect2">
-<h3 id="_math_calculations">3.8. Math Calculations</h3>
+<h3 id="_math_calculations">2.8. Math Calculations</h3>
 <div class="paragraph">
 <p>To start doing some calculations, we&#8217;ll use <em>operators</em>.
 You can think of an operator as a symbol that performs a calculation or other action.
@@ -1027,8 +1099,8 @@ Each operator acts on the value to either side:</p>
 <div class="listingblock">
 <div class="title">Examples of simple arithmetic operations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">int sum = 5 + 7; <i class="conum" data-value="1"></i><b>(1)</b>
-int difference = sum - 2; <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">5</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">difference</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -1070,7 +1142,7 @@ int difference = sum - 2; <i class="conum" data-value="2"></i><b>(2)</b></code><
 </div>
 </div>
 <div class="sect3">
-<h4 id="_order_of_operations">3.8.1. Order of Operations</h4>
+<h4 id="_order_of_operations">2.8.1. Order of Operations</h4>
 <div class="paragraph">
 <p>Early on in your math studies you learned about <em>order of operations</em> when an arithmetic expression has more than one calculation, and it works the same in Java.
 We call this <em>operator precedence</em>, and here are the guidlines:</p>
@@ -1094,9 +1166,9 @@ We call this <em>operator precedence</em>, and here are the guidlines:</p>
 <div class="listingblock">
 <div class="title">Examples of operator precedence</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">int result1 = 17 - 4 * 6 / 3; <i class="conum" data-value="1"></i><b>(1)</b>
-int result2 = 17 - 4 / 2 + 2; <i class="conum" data-value="2"></i><b>(2)</b>
-int result3 = 17 - 4 / (2 + 2); <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result1</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">*</span><span class="tok-w"> </span><span class="tok-mi">6</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result2</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result3</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-mi">2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="3"></i><b>(3)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -1117,7 +1189,7 @@ int result3 = 17 - 4 / (2 + 2); <i class="conum" data-value="3"></i><b>(3)</b></
 </div>
 </div>
 <div class="sect3">
-<h4 id="_more_arithmetic_with_less_typing">3.8.2. More Arithmetic with Less Typing!</h4>
+<h4 id="_more_arithmetic_with_less_typing">2.8.2. More Arithmetic with Less Typing!</h4>
 <div class="paragraph">
 <p>There&#8217;s a pretty consistent rule of thumb in coding that says programmers want to type as little as possible, so programming languages often provide shorthand ways of writing code that&#8217;s used frequently.
 <em>Compound assignment operators</em> (also called <em>shorthand operators</em>) simplify the syntax when you need to change a variable&#8217;s value relative to it&#8217;s existing value.
@@ -1191,7 +1263,7 @@ There are two forms to the increment and decrement operators: <strong>prefix</st
 </div>
 </div>
 <div class="sect2">
-<h3 id="_getting_user_input">3.9. Getting User Input</h3>
+<h3 id="_getting_user_input">2.9. Getting User Input</h3>
 <div class="paragraph">
 <p>Until now, our code hasn&#8217;t been interactive&#8212;&#8203;each execution of a program results in the exact same output, and the user never has the chance to input anything.
 To produce output, we&#8217;ve been using <code>System.out</code> to send text to the "standard output device"--your monitor.
@@ -1301,7 +1373,7 @@ As a reminder, there&#8217;s a weird quirk that happens when you get numeric inp
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-08 20:20:27 -0700
+Last updated 2025-03-08 21:19:35 -0700
 </div>
 </div>
 </body>

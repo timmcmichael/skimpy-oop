@@ -1,4 +1,3 @@
-= Skimpy OOP: Introduction to Object-Oriented Programming Using Java
 
 :author: Tim McMichael
 :doctype: book
@@ -11,9 +10,16 @@
 :chapter-number: -1
 :sectnums:
 
+= Skimpy OOP: Introduction to Object-Oriented Programming Using Java
+
+:figure-caption!:
+image::https://timmcmichael.github.io/skimpy-oop/Skimpy_OOP_Cover.png[title="Image created with the assistance of DALL-E 2",width=400]
+
+:figure-caption: Figure
+
+
 [preface]
 == Skimpy Preface: An Excuse for the Inadequacies Within
-
 
 This isn't a real textbook. 
 It's not _imaginary_ or anything, it's just missing most of the stuff a real textbook includes. It's, well, skimpy.
