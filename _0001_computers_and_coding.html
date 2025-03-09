@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="Tim McMichael">
 <title>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -434,147 +433,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-pre.pygments .hll { background-color: #ffffcc }
-pre.pygments { background: #f8f8f8; }
-pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
-pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
-pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
-pre.pygments .tok-o { color: #666666 } /* Operator */
-pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
-pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
-pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
-pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
-pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
-pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
-pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
-pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
-pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
-pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
-pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
-pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
-pre.pygments .tok-go { color: #717171 } /* Generic.Output */
-pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
-pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
-pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
-pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
-pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
-pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
-pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
-pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
-pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
-pre.pygments .tok-m { color: #666666 } /* Literal.Number */
-pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
-pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
-pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
-pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
-pre.pygments .tok-no { color: #880000 } /* Name.Constant */
-pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
-pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
-pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
-pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
-pre.pygments .tok-nl { color: #767600 } /* Name.Label */
-pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
-pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
-pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
-pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
-pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
-pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
-pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
-pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
-pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
-pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
-pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
-pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
-pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
-pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
-pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
-pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
-pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
-pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
-pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
-pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
-pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
-pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
-pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
-pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
-pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
-pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
-pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
-pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
-pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
-</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_0001_computers_and_coding" class="book toc2 toc-left">
+<body id="_0001_computers_and_coding" class="article">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
-<div class="details">
-<span id="author" class="author">Tim McMichael</span><br>
-</div>
-<div id="toc" class="toc2">
-<div id="toctitle">Skimpy Contents</div>
-<p><span class="toc-root"><a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a></span></p><ul class="sectlevel1">
-<li><a href="_skimpy_preface_an_excuse_for_the_inadequacies_within.html">Skimpy Preface: An Excuse for the Inadequacies Within</a>
-</li>
-<li><a href="_how_to_use_this_book.html">How to Use This Book</a>
-</li>
-<li><a href="_related_resources.html">Related Resources</a>
-</li>
-<li><a href="_0000_getting_started.html">0. 0000 - Getting Started</a>
-</li>
-<li><a href="_0001_computers_and_coding.html"><span class="toc-current">1. 0001 - Computers and Coding</span></a>
-<ul class="sectlevel2">
-<li><a href="_0001_computers_and_coding.html#_whats_the_point_2">What&#8217;s the Point?</a>
-</li>
-<li><a href="_0001_computers_and_coding.html#_programming_languages">1.1. Programming Languages</a>
-</li>
-<li><a href="_0001_computers_and_coding.html#_programming_paradigms">1.2. Programming Paradigms</a>
-</li>
-<li><a href="_0001_computers_and_coding.html#_software_development_process">1.3. Software Development Process</a>
-</li>
-<li><a href="_0001_computers_and_coding.html#_first_java_program">1.4. First Java Program</a>
-</li>
-<li><a href="_0001_computers_and_coding.html#_basic_output">1.5. Basic Output</a>
-</li>
-<li><a href="_0001_computers_and_coding.html#_code_comments">1.6. Code Comments</a>
-</li>
-<li><a href="_0001_computers_and_coding.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_2">Check Yourself Before You Wreck Yourself (on the assignments)</a>
-</li>
-</ul>
-</li>
-<li><a href="_0010_variables.html">2. 0010 - Variables</a>
-</li>
-<li><a href="_0011_methods.html">3. 0011 - Methods</a>
-</li>
-<li><a href="_0100_classes_and_objects.html">4. 0100 - Classes and Objects</a>
-</li>
-<li><a href="_0101_decisions.html">5. 0101 - Decisions</a>
-</li>
-<li><a href="_0110_loops.html">6. 0110 - Loops</a>
-</li>
-<li><a href="_0111_debugging_and_generative_ai.html">7. 0111 - Debugging and Generative AI</a>
-</li>
-<li><a href="_1000_arrays.html">8. 1000 - Arrays</a>
-</li>
-<li><a href="_1001_inheritance.html">9. 1001 - Inheritance</a>
-</li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html">10. 1010 - Graphical User Interfaces with Swing</a>
-</li>
-<li><a href="_stuff_thats_tacked_on_the_end.html">11. Stuff That&#8217;s Tacked on the End</a>
-</li>
-</ul>
-</div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_0001_computers_and_coding">1. 0001 - Computers and Coding</h2>
+<h2 id="_0001_computers_and_coding">2. 0001 - Computers and Coding</h2>
 <div class="sectionbody">
 <div class="sidebarblock">
 <div class="content">
@@ -614,7 +484,7 @@ Because the guts of a computer (a CPU) are kinda like a bunch of light switches&
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<div class="title">Note</div>
 </td>
 <td class="content">
 Never has the concept of a modern computer been so recklessly simplified. I feel shame.
@@ -685,7 +555,7 @@ Of course, even a simple program requires a lot of instructions, so you&#8217;re
 </div>
 </div>
 <div class="sect2">
-<h3 id="_programming_languages">1.1. Programming Languages</h3>
+<h3 id="_programming_languages">2.1. Programming Languages</h3>
 <div class="paragraph">
 <p>A programming language is something that&#8217;s easier for humans to use than machine language, but is capable of being accurately translated to machine language.</p>
 </div>
@@ -693,7 +563,7 @@ Of course, even a simple program requires a lot of instructions, so you&#8217;re
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<div class="title">Note</div>
 </td>
 <td class="content">
 There are many, many programming languages. <a href="https://en.wikipedia.org/wiki/List_of_programming_languages">Seriously, there are a lot</a>.
@@ -741,7 +611,7 @@ This "write once, run anywhere" ability contributes greatly to Java&#8217;s popu
 </div>
 </div>
 <div class="sect2">
-<h3 id="_programming_paradigms">1.2. Programming Paradigms</h3>
+<h3 id="_programming_paradigms">2.2. Programming Paradigms</h3>
 <div class="paragraph">
 <p>A paradigm is a model or example, or maybe better described as a way of seeing things&#8212;&#8203;which is helpful to think about, since we can all have different ways of seeing how a problem could be solved.</p>
 </div>
@@ -785,7 +655,7 @@ But that really is a personal preference, and I wouldn&#8217;t argue that OOP is
 <p>Well, I wouldn&#8217;t argue <em>much</em>.</p>
 </div>
 <div class="sect3">
-<h4 id="_comparing_procedural_programming_and_oop">1.2.1. Comparing Procedural Programming and OOP</h4>
+<h4 id="_comparing_procedural_programming_and_oop">2.2.1. Comparing Procedural Programming and OOP</h4>
 <div class="paragraph">
 <p>In procedural programming, we break up a program into the tasks we need to complete.
 Each individual task is handled by a set of statements that we call a <strong>procedure</strong>.
@@ -800,7 +670,7 @@ In short, information is kept separate from the code that uses it and is passed 
 <div class="content">
 <img src="chapter-1-coding/images/ProceduralProgramming.png" alt="Diagram of data passing in procedural programming" width="400">
 </div>
-<div class="title">Figure 1. Passing data in procedural programming</div>
+<div class="title"> 1. Passing data in procedural programming</div>
 </div>
 <div class="paragraph">
 <p>Many programming languages (including Python) refer to procedures as <strong>functions</strong>, and the term <strong>subroutines</strong> is also used in some cases; if you&#8217;ve done some programming in any language, you&#8217;ve almost certainly used procedures in some form.</p>
@@ -823,7 +693,7 @@ But that&#8217;s probably just a matter of habit; as I mentioned, I spent much o
 </div>
 </div>
 <div class="sect2">
-<h3 id="_software_development_process">1.3. Software Development Process</h3>
+<h3 id="_software_development_process">2.3. Software Development Process</h3>
 <div class="paragraph">
 <p>Learning to write code means creating a lot of programs&#8212;&#8203;mostly small, straightforward programs at first.
 Remember those awful word problems where a train leaves Chicago traveling 40 mph, and another train leaves Denver at 35 mph?
@@ -864,7 +734,7 @@ And when we are faced with solving a programming problem that really intimidates
 </div>
 </div>
 <div class="sect2">
-<h3 id="_first_java_program">1.4. First Java Program</h3>
+<h3 id="_first_java_program">2.4. First Java Program</h3>
 <div class="paragraph">
 <p>Enough of that, let&#8217;s try writing some code.</p>
 </div>
@@ -902,43 +772,38 @@ But Java puts OOP front and center, and we can&#8217;t start writing statements 
 <div class="listingblock">
 <div class="title">HelloWorld.java - Hello World program in Java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<pre class="highlight"><code class="language-java" data-lang="java">public class HelloWorld { <b class="conum">(1)</b>
 
-<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+    public static void main(String[] args) { <b class="conum">(2)</b>
 
-<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello World!&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="3"></i><b>(3)</b>
+        System.out.println("Hello World!"); <b class="conum">(3)</b>
 
-<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><i class="conum" data-value="4"></i><b>(4)</b>
+    } <b class="conum">(4)</b>
 
-<span class="tok-p">}</span><span class="tok-w"> </span><i class="conum" data-value="5"></i><b>(5)</b></code></pre>
+} <b class="conum">(5)</b></code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Here are the parts of the program:</p>
 </div>
 <div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Class declaration and start of a code block. This is a publicly accessible class called <code>HelloWorld</code>.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td><code>main()</code> method declaration and start of a code block. <code>main()</code> is where a Java program starts running.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td><code>println()</code> statement to output the message.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>End of the <code>main()</code> method code block, as indicated by the indenting and closing curly brace.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="5"></i><b>5</b></td>
-<td>End of the class code block.</td>
-</tr>
-</table>
+<ol>
+<li>
+<p>Class declaration and start of a code block. This is a publicly accessible class called <code>HelloWorld</code>.</p>
+</li>
+<li>
+<p><code>main()</code> method declaration and start of a code block. <code>main()</code> is where a Java program starts running.</p>
+</li>
+<li>
+<p><code>println()</code> statement to output the message.</p>
+</li>
+<li>
+<p>End of the <code>main()</code> method code block, as indicated by the indenting and closing curly brace.</p>
+</li>
+<li>
+<p>End of the class code block.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>We&#8217;ll learn about all of these components as we go.
@@ -946,7 +811,7 @@ But for now, we&#8217;re off and running!</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_basic_output">1.5. Basic Output</h3>
+<h3 id="_basic_output">2.5. Basic Output</h3>
 <div class="paragraph">
 <p>The first programs we create in Java are <em>console</em> programs&#8212;&#8203;they are text-based programs that can&#8217;t really display any graphics.
 Start start with, we&#8217;ll use two basic ways to output text to the console: <code>System.out.print()</code> and <code>System.out.println()</code> statements.
@@ -979,15 +844,15 @@ Basically, it hits enter, and the next output statement will be on a new line.</
 <div class="listingblock">
 <div class="title">OutputExample.java - Simple console output in Java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">OutputExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<pre class="highlight"><code class="language-java" data-lang="java">public class OutputExample {
 
-<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;As the Rolling Stones might say,&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;you can&#39;t always&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;get what you want.&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-p">}</span>
+    public static void main(String[] args) {
+        System.out.print("As the Rolling Stones might say,");
+        System.out.println("you can't always");
+        System.out.println("get what you want.");
+    }
 
-<span class="tok-p">}</span></code></pre>
+}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -995,7 +860,7 @@ Basically, it hits enter, and the next output statement will be on a new line.</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code><span></span>As the Rolling Stones might say,you can&#39;t always
+<pre class="highlight"><code>As the Rolling Stones might say,you can't always
 get what you want</code></pre>
 </div>
 </div>
@@ -1011,7 +876,7 @@ Notice that it doesn&#8217;t even add a space; if we want a space there, we have
 </div>
 </div>
 <div class="sect2">
-<h3 id="_code_comments">1.6. Code Comments</h3>
+<h3 id="_code_comments">2.6. Code Comments</h3>
 <div class="paragraph">
 <p>The Java compiler goes through our source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn&#8217;t understand, which causes it to stop and output an error message).
 If there&#8217;s something in our source code we don&#8217;t want the compiler to process, we can identify it as a <em>code comment</em> and the compiler will ignore it.
@@ -1038,21 +903,21 @@ When the compiler sees <code>/<strong></code> it will ignore everything until it
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-cm">/*</span>
-<span class="tok-cm">This program shows the difference between print() and println().</span>
-<span class="tok-cm">It is referring to an old Rolling Stones song.</span>
+<pre class="highlight"><code class="language-java" data-lang="java">/*
+This program shows the difference between print() and println().
+It is referring to an old Rolling Stones song.
 
-<span class="tok-cm">Everything in this comment block will be ignored</span>
-<span class="tok-cm">*/</span>
-<span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">OutputExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+Everything in this comment block will be ignored
+*/
+public class OutputExample {
 
-<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
-<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;As the Rolling Stones might say,&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;you can&#39;t always&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;get what you want.&quot;</span><span class="tok-p">);</span>
-<span class="tok-w">    </span><span class="tok-p">}</span>
+    public static void main(String[] args) {
+        System.out.print("As the Rolling Stones might say,");
+        System.out.println("you can't always");
+        System.out.println("get what you want.");
+    }
 
-<span class="tok-p">}</span></code></pre>
+}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1065,7 +930,7 @@ So code comments should be descriptive, especially when code might be confusing.
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<div class="title">Tip</div>
 </td>
 <td class="content">
 Code comments don&#8217;t cost anything, so use lots of them!
@@ -1077,7 +942,7 @@ Code comments don&#8217;t cost anything, so use lots of them!
 <p>We often add a multiline comment block at the top of a file to provide information about the overall program or class.</p>
 </div>
 <div class="sect3">
-<h4 id="_commenting_out_code">1.6.1. "Commenting Out" Code</h4>
+<h4 id="_commenting_out_code">2.6.1. "Commenting Out" Code</h4>
 <div class="paragraph">
 <p>Coding is all about trial and error, and programmers spend a lot of time writing code in different ways until they get it working the way they want.
 In a process like that, it&#8217;s not unusual to delete something only to regret it and wish we could have that old code back.</p>
@@ -1092,7 +957,7 @@ But if we want to see or use the code again down the road, it&#8217;s still ther
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<div class="title">Tip</div>
 </td>
 <td class="content">
 Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Code, highlight a section of code and press <strong>alt-/</strong> (or <strong>⌘-/</strong> on macOS) and VS Code will add <code>//</code> at the start of each line. Highlighting a comment and pressing the shortcut again will "uncomment" it and remove the slashes. Other IDEs provide similar functionality.
@@ -1137,7 +1002,7 @@ Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Cod
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-08 09:23:51 -0700
+Last updated 2025-03-08 19:47:23 -0700
 </div>
 </div>
 </body>
