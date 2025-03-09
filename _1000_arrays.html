@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="author" content="Tim McMichael">
 <title>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -433,14 +434,69 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_1000_arrays" class="article">
+<body id="_1000_arrays" class="article toc2 toc-left">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
+<div class="details">
+<span id="author" class="author">Tim McMichael</span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Skimpy Contents</div>
+<p><span class="toc-root"><a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a></span></p><ul class="sectlevel1">
+<li><a href="_skimpy_preface_an_excuse_for_the_inadequacies_within.html">Skimpy Preface: An Excuse for the Inadequacies Within</a>
+</li>
+<li><a href="_how_to_use_this_book.html">How to Use This Book</a>
+</li>
+<li><a href="_related_resources.html">Related Resources</a>
+</li>
+<li><a href="_0000_getting_started.html">1. 0000 - Getting Started</a>
+</li>
+<li><a href="_0001_computers_and_coding.html">2. 0001 - Computers and Coding</a>
+</li>
+<li><a href="_0010_variables.html">3. 0010 - Variables</a>
+</li>
+<li><a href="_0011_methods.html">4. 0011 - Methods</a>
+</li>
+<li><a href="_0100_classes_and_objects.html">5. 0100 - Classes and Objects</a>
+</li>
+<li><a href="_0101_decisions.html">6. 0101 - Decisions</a>
+</li>
+<li><a href="_0110_loops.html">7. 0110 - Loops</a>
+</li>
+<li><a href="_0111_debugging_and_generative_ai.html">8. 0111 - Debugging and Generative AI</a>
+</li>
+<li><a href="_1000_arrays.html"><span class="toc-current">9. 1000 - Arrays</span></a>
+<ul class="sectlevel2">
+<li><a href="_1000_arrays.html#_whats_the_point_9">What&#8217;s the Point?</a>
+</li>
+<li><a href="_1000_arrays.html#_arrays_and_indexes">9.1. Arrays and Indexes</a>
+</li>
+<li><a href="_1000_arrays.html#_defining_and_using_arrays">9.2. Defining and Using Arrays</a>
+</li>
+<li><a href="_1000_arrays.html#_traversing_arrays">9.3. Traversing Arrays</a>
+</li>
+<li><a href="_1000_arrays.html#_putting_objects_in_arrays">9.4. Putting Objects in Arrays</a>
+</li>
+<li><a href="_1000_arrays.html#_for_each_loops">9.5. "For-Each" Loops</a>
+</li>
+<li><a href="_1000_arrays.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_9">Check Yourself Before You Wreck Yourself (on the assignments)</a>
+</li>
+</ul>
+</li>
+<li><a href="_1001_inheritance.html">10. 1001 - Inheritance</a>
+</li>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html">11. 1010 - Graphical User Interfaces with Swing</a>
+</li>
+<li><a href="_stuff_thats_tacked_on_the_end.html">12. Stuff That&#8217;s Tacked on the End</a>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
 <div class="sect1">
@@ -516,7 +572,7 @@ If our grocery list has 5 items, the indexes of the items would be 0, 1, 2, 3, a
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 Any time you see square brackets in Java, you&#8217;re dealing with an array.
@@ -529,7 +585,7 @@ Any time you see square brackets in Java, you&#8217;re dealing with an array.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">String[] groceryItems = new String[5];</code></pre>
+<pre class="pygments highlight"><code data-lang="java">String[] groceryItems = new String[5];</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -540,7 +596,7 @@ Any time you see square brackets in Java, you&#8217;re dealing with an array.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">groceryItems[0] = "milk";
+<pre class="pygments highlight"><code data-lang="java">groceryItems[0] = "milk";
 groceryItems[1] = "eggs";
 groceryItems[2] = "bread";
 groceryItems[3] = "butter";
@@ -556,7 +612,7 @@ The element is just like any other variable, so we can use it in expressions, pa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">System.out.println("The first item on the list is " + groceryItems[0]);
+<pre class="pygments highlight"><code data-lang="java">System.out.println("The first item on the list is " + groceryItems[0]);
 System.out.println("The last item on the list is " + groceryItems[4]);
 groceryItems[2] = "bananas";
 System.out.println("Bread has been replaced with " + groceryItems[2]);</code></pre>
@@ -615,7 +671,7 @@ The syntax for a <code>for</code> traversal is:</p>
 <div class="listingblock">
 <div class="title">Example of a <code>for</code> loop to traverse an array</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">int scores[] = {90, 85, 95, 88, 92};
+<pre class="pygments highlight"><code data-lang="java">int scores[] = {90, 85, 95, 88, 92};
 int sum = 0;
 for (int i = 0; i &lt; scores.length; i++) {
     sum += scores[i];
@@ -635,7 +691,7 @@ It also wouldn&#8217;t be accessible outside of the loop due to its scope.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 At this point, clever students point out that we could get the sum of the scores without using a loop at all, using the <code>Arrays</code> class from the <code>java.util</code> package. Sure, but since we&#8217;re learning about loops, that would defeat the point. My assignments for this chapter assess your ability to write loops, so you won&#8217;t get any points for code that doesn&#8217;t at least try to traverse the array.
@@ -651,7 +707,7 @@ If we hard-coded the size of the array into the loop, we would have to change ou
 <div class="listingblock">
 <div class="title">Example of a hard-coded loop</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">int scores[] = {90, 85, 95, 88, 92};
+<pre class="pygments highlight"><code data-lang="java">int scores[] = {90, 85, 95, 88, 92};
 int sum = 0;
 for (int i = 0; i &lt; 5; i++) { // Uh oh! What if we add another score?
     sum += scores[i];
@@ -689,7 +745,7 @@ System.out.println("The sum of the scores is " + sum);</code></pre>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Important</div>
+<i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
 The Lab Assignments in Canvas can be completed using what we&#8217;ve covered to this point. You might choose to complete that work now, then move onto the rest of the chapter&#8212;&#8203;which you&#8217;ll need for the Programming Project.
@@ -709,7 +765,7 @@ We&#8217;ve been using arrays of Strings, which are objects, but students someti
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">GroceryItem[] groceryItems = new GroceryItem[5];
+<pre class="pygments highlight"><code data-lang="java">GroceryItem[] groceryItems = new GroceryItem[5];
 groceryItems[0] = new GroceryItem("milk", 4);
 groceryItems[1] = new GroceryItem("eggs", 9);
 groceryItems[2] = new GroceryItem("bread", 7);
@@ -760,7 +816,7 @@ However, it is less flexible than a traditional for loop: we can&#8217;t use it 
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 The for-each loop is optional. You can always use a traditional for loop to traverse an array, and you&#8217;ll need to know how to do that for the assignments in this chapter.
@@ -827,7 +883,7 @@ The for-each loop is optional. You can always use a traditional for loop to trav
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-08 20:03:49 -0700
+Last updated 2025-03-08 20:05:34 -0700
 </div>
 </div>
 </body>
