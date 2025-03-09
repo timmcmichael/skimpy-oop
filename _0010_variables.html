@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="author" content="Tim McMichael">
 <title>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -433,14 +434,78 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_0010_variables" class="article">
+<body id="_0010_variables" class="article toc2 toc-left">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
+<div class="details">
+<span id="author" class="author">Tim McMichael</span><br>
+<span id="email" class="email"><a href="mailto:tim.mcmichael@estrellamountain.edu">tim.mcmichael@estrellamountain.edu</a></span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Skimpy Contents</div>
+<p><span class="toc-root"><a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a></span></p><ul class="sectlevel1">
+<li><a href="_skimpy_preface_an_excuse_for_the_inadequacies_within.html">Skimpy Preface: An Excuse for the Inadequacies Within</a>
+</li>
+<li><a href="_how_to_use_this_book.html">How to Use This Book</a>
+</li>
+<li><a href="_related_resources.html">Related Resources</a>
+</li>
+<li><a href="_0000_getting_started.html">1. 0000 - Getting Started</a>
+</li>
+<li><a href="_0001_computers_and_coding.html">2. 0001 - Computers and Coding</a>
+</li>
+<li><a href="_0010_variables.html"><span class="toc-current">3. 0010 - Variables</span></a>
+<ul class="sectlevel2">
+<li><a href="_0010_variables.html#_whats_the_point_3">What&#8217;s the Point?</a>
+</li>
+<li><a href="_0010_variables.html#_java_identifiers">3.1. Java Identifiers</a>
+</li>
+<li><a href="_0010_variables.html#_numeric_data_types">3.2. Numeric Data Types</a>
+</li>
+<li><a href="_0010_variables.html#_boolean_data_type_and_boolean_logic">3.3. <code>boolean</code> Data Type (and Boolean Logic)</a>
+</li>
+<li><a href="_0010_variables.html#_char_data_type">3.4. <code>char</code> Data Type</a>
+</li>
+<li><a href="_0010_variables.html#_strings">3.5. Strings</a>
+</li>
+<li><a href="_0010_variables.html#_declaring_constants">3.6. Declaring Constants</a>
+</li>
+<li><a href="_0010_variables.html#_outputting_variable_and_constant_values">3.7. Outputting Variable (and Constant) Values</a>
+</li>
+<li><a href="_0010_variables.html#_math_calculations">3.8. Math Calculations</a>
+</li>
+<li><a href="_0010_variables.html#_getting_user_input">3.9. Getting User Input</a>
+</li>
+<li><a href="_0010_variables.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_3">Check Yourself Before You Wreck Yourself (on the assignments)</a>
+</li>
+</ul>
+</li>
+<li><a href="_0011_methods.html">4. 0011 - Methods</a>
+</li>
+<li><a href="_0100_classes_and_objects.html">5. 0100 - Classes and Objects</a>
+</li>
+<li><a href="_0101_decisions.html">6. 0101 - Decisions</a>
+</li>
+<li><a href="_0110_loops.html">7. 0110 - Loops</a>
+</li>
+<li><a href="_0111_debugging_and_generative_ai.html">8. 0111 - Debugging and Generative AI</a>
+</li>
+<li><a href="_1000_arrays.html">9. 1000 - Arrays</a>
+</li>
+<li><a href="_1001_inheritance.html">10. 1001 - Inheritance</a>
+</li>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html">11. 1010 - Graphical User Interfaces with Swing</a>
+</li>
+<li><a href="_stuff_thats_tacked_on_the_end.html">12. Stuff That&#8217;s Tacked on the End</a>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
 <div class="sect1">
@@ -502,11 +567,11 @@ In computer programming, a piece of information is called <strong>data</strong>.
 <div class="listingblock">
 <div class="title">HelloWorld.java</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class HelloWorld {
+<pre class="pygments highlight"><code data-lang="java">public class HelloWorld {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!"); <b class="conum">(1)</b>
+        System.out.println("Hello World!"); <i class="conum" data-value="1"></i><b>(1)</b>
 
     }
 
@@ -514,11 +579,12 @@ In computer programming, a piece of information is called <strong>data</strong>.
 </div>
 </div>
 <div class="colist arabic">
-<ol>
-<li>
-<p>The string literal "Hello World"</p>
-</li>
-</ol>
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The string literal "Hello World"</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>The only way to change what&#8217;s output is by editing that constant&#8212;&#8203;in the quotation marks&#8212;&#8203;in our source code, before we run the program.</p>
@@ -527,7 +593,7 @@ In computer programming, a piece of information is called <strong>data</strong>.
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 The string literal in our <code>Hello World</code> code is just one kind of constant. We&#8217;ll learn about others later.
@@ -582,7 +648,7 @@ Placing data in that variable is referred to as <strong>assigning</strong> a val
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you&#8212;&#8203;so you don&#8217;t have to specify it. It&#8217;s one reason I prefer to teach beginners using Java, which teaches you how data types work.
@@ -666,17 +732,18 @@ It&#8217;s called "single" in some programming languages, which helps understand
 <div class="listingblock">
 <div class="title">Examples of numeric variable declarations</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">int myAge = 21;
-float myGPA = 3.75f; <b class="conum">(1)</b>
+<pre class="pygments highlight"><code data-lang="java">int myAge = 21;
+float myGPA = 3.75f; <i class="conum" data-value="1"></i><b>(1)</b>
 double myFriendsGPA = 3.54;</code></pre>
 </div>
 </div>
 <div class="colist arabic">
-<ol>
-<li>
-<p>The <code>f</code> suffix denotes that the value 3.75 is a <code>float</code> rather than a <code>double</code>.</p>
-</li>
-</ol>
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The <code>f</code> suffix denotes that the value 3.75 is a <code>float</code> rather than a <code>double</code>.</td>
+</tr>
+</table>
 </div>
 <div class="sect3">
 <h4 id="_who_cares_about_variable_size">3.2.1. Who Cares About Variable Size?</h4>
@@ -704,7 +771,7 @@ While you&#8217;re learning, just worry about getting your code to work.</p>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 There&#8217;s another bad data type practice that I use with beginners.
@@ -735,7 +802,7 @@ That is to say, we usually name our <code>boolean</code> variables using words l
 <div class="listingblock">
 <div class="title">Examples of Boolean variable declarations</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">boolean isPassing = true;
+<pre class="pygments highlight"><code data-lang="java">boolean isPassing = true;
 boolean hasCar = false;</code></pre>
 </div>
 </div>
@@ -753,7 +820,7 @@ Char literals are created by putting a character in single quotes, and that char
 <div class="listingblock">
 <div class="title">Examples of character variable declarations</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">char myLetterGrade = 'A';
+<pre class="pygments highlight"><code data-lang="java">char myLetterGrade = 'A';
 char firstInitial = 'T';</code></pre>
 </div>
 </div>
@@ -761,7 +828,7 @@ char firstInitial = 'T';</code></pre>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 Some people pronounce the <code>char</code> data type like the word "chart" without the "t". And some people pronounce it like the word "care". Either is okay.
@@ -773,7 +840,7 @@ Some people pronounce the <code>char</code> data type like the word "chart" with
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 I pronounce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
@@ -812,7 +879,7 @@ For now, a really important thing to notice and remember is that primitive types
 <div class="listingblock">
 <div class="title">Examples of <code>String</code> variable declarations</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">String address = "3000 N. Dysart Road";
+<pre class="pygments highlight"><code data-lang="java">String address = "3000 N. Dysart Road";
 String bestClass = "CIS150AB";</code></pre>
 </div>
 </div>
@@ -823,7 +890,7 @@ String bestClass = "CIS150AB";</code></pre>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 Always remember that, in Java, single quotes mean a <code>char</code> and double quotes mean a <code>String</code>. It&#8217;s easy to get them mixed up&#8212;&#8203;especially if you use Python, where they are interchangeable&#8212;&#8203;but your code won&#8217;t compile if you mix them up.
@@ -854,7 +921,7 @@ So that people looking at your code can easily tell it&#8217;s a constant rather
 <div class="listingblock">
 <div class="title">Examples of constant declarations</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">final double SALES_TAX_RATE = 8.7;
+<pre class="pygments highlight"><code data-lang="java">final double SALES_TAX_RATE = 8.7;
 final int MINIMUM_AGE = 18;
 final String FAVORITE_CLASS = "CIS150AB";</code></pre>
 </div>
@@ -883,7 +950,7 @@ If we want to display the output of a variable&#8212;&#8203;or a constant&#8212;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">String artistName = "Sam Cooke";
+<pre class="pygments highlight"><code data-lang="java">String artistName = "Sam Cooke";
 int birthYear = 1931;
 
 System.out.print(artistName);
@@ -897,7 +964,7 @@ We can combine output into one statement by creating a string with multiple piec
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">String artistName = "Sam Cooke";
+<pre class="pygments highlight"><code data-lang="java">String artistName = "Sam Cooke";
 int birthYear = 1931;
 
 System.out.println(artistName + " was born in " + birthYear);</code></pre>
@@ -961,19 +1028,21 @@ Each operator acts on the value to either side:</p>
 <div class="listingblock">
 <div class="title">Examples of simple arithmetic operations</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">int sum = 5 + 7; <b class="conum">(1)</b>
-int difference = sum - 2; <b class="conum">(2)</b></code></pre>
+<pre class="pygments highlight"><code data-lang="java">int sum = 5 + 7; <i class="conum" data-value="1"></i><b>(1)</b>
+int difference = sum - 2; <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
-<ol>
-<li>
-<p>The value of <code>sum</code> will be 12</p>
-</li>
-<li>
-<p>The value of <code>difference</code> will be 10 (i.e., 10 - 2)</p>
-</li>
-</ol>
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The value of <code>sum</code> will be 12</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>The value of <code>difference</code> will be 10 (i.e., 10 - 2)</td>
+</tr>
+</table>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -1026,23 +1095,26 @@ We call this <em>operator precedence</em>, and here are the guidlines:</p>
 <div class="listingblock">
 <div class="title">Examples of operator precedence</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">int result1 = 17 - 4 * 6 / 3; <b class="conum">(1)</b>
-int result2 = 17 - 4 / 2 + 2; <b class="conum">(2)</b>
-int result3 = 17 - 4 / (2 + 2); <b class="conum">(3)</b></code></pre>
+<pre class="pygments highlight"><code data-lang="java">int result1 = 17 - 4 * 6 / 3; <i class="conum" data-value="1"></i><b>(1)</b>
+int result2 = 17 - 4 / 2 + 2; <i class="conum" data-value="2"></i><b>(2)</b>
+int result3 = 17 - 4 / (2 + 2); <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
-<ol>
-<li>
-<p><code>result1</code> is 8: <code>4 * 6</code> is 24, then <code>24 / 3</code> is 8, and then <code>17 - 8</code> is 9.</p>
-</li>
-<li>
-<p><code>result2</code> is 17: <code>4 / 2</code> is 2, then <code>17 - 2</code> is 15, and then <code>15 + 2</code> is 17.</p>
-</li>
-<li>
-<p><code>result3</code> is 16: <code>(2 + 2)</code> is 4, then <code>4 / 4</code> is 1, and then <code>17 - 1</code> is 16.</p>
-</li>
-</ol>
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td><code>result1</code> is 8: <code>4 * 6</code> is 24, then <code>24 / 3</code> is 8, and then <code>17 - 8</code> is 9.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td><code>result2</code> is 17: <code>4 / 2</code> is 2, then <code>17 - 2</code> is 15, and then <code>15 + 2</code> is 17.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td><code>result3</code> is 16: <code>(2 + 2)</code> is 4, then <code>4 / 4</code> is 1, and then <code>17 - 1</code> is 16.</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
@@ -1109,7 +1181,7 @@ If we&#8217;re counting down the number of days until our next birthday, we coul
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 There are two forms to the increment and decrement operators: <strong>prefix</strong> and <strong>postfix</strong>. These examples use the postfix form, putting the operator after the variable name, whereas a prefix form would have the operator before the variable name: <code>++age</code>. There&#8217;s a subtle difference in how postfix and prefix operations work, but for now you can use them interchangeably. I mention it here only because you might see code examples online using the prefix form.
@@ -1186,7 +1258,7 @@ We can access that input device using something called the <code>Scanner</code> 
 <table>
 <tr>
 <td class="icon">
-<div class="title">Warning</div>
+<i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
 As a reminder, there&#8217;s a weird quirk that happens when you get numeric input from a user and then ask for <code>String</code> input using <code>next()</code> or <code>nextLine()</code>. If your program seems to skip that <code>next()</code> or <code>nextLine()</code>, review that part of the video!
@@ -1230,7 +1302,7 @@ As a reminder, there&#8217;s a weird quirk that happens when you get numeric inp
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-08 21:30:11 -0700
+Last updated 2025-03-08 21:40:00 -0700
 </div>
 </div>
 </body>

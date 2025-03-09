@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="author" content="Tim McMichael">
 <title>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -433,14 +434,70 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_0100_classes_and_objects" class="article">
+<body id="_0100_classes_and_objects" class="article toc2 toc-left">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
+<div class="details">
+<span id="author" class="author">Tim McMichael</span><br>
+<span id="email" class="email"><a href="mailto:tim.mcmichael@estrellamountain.edu">tim.mcmichael@estrellamountain.edu</a></span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Skimpy Contents</div>
+<p><span class="toc-root"><a href="index.html">Skimpy OOP: Introduction to Object-Oriented Programming Using Java</a></span></p><ul class="sectlevel1">
+<li><a href="_skimpy_preface_an_excuse_for_the_inadequacies_within.html">Skimpy Preface: An Excuse for the Inadequacies Within</a>
+</li>
+<li><a href="_how_to_use_this_book.html">How to Use This Book</a>
+</li>
+<li><a href="_related_resources.html">Related Resources</a>
+</li>
+<li><a href="_0000_getting_started.html">1. 0000 - Getting Started</a>
+</li>
+<li><a href="_0001_computers_and_coding.html">2. 0001 - Computers and Coding</a>
+</li>
+<li><a href="_0010_variables.html">3. 0010 - Variables</a>
+</li>
+<li><a href="_0011_methods.html">4. 0011 - Methods</a>
+</li>
+<li><a href="_0100_classes_and_objects.html"><span class="toc-current">5. 0100 - Classes and Objects</span></a>
+<ul class="sectlevel2">
+<li><a href="_0100_classes_and_objects.html#_whats_the_point_5">What&#8217;s the Point?</a>
+</li>
+<li><a href="_0100_classes_and_objects.html#_oop_basics">5.1. OOP Basics</a>
+</li>
+<li><a href="_0100_classes_and_objects.html#_encapsulation">5.2. Encapsulation</a>
+</li>
+<li><a href="_0100_classes_and_objects.html#_defining_and_using_a_class">5.3. Defining and Using a Class</a>
+</li>
+<li><a href="_0100_classes_and_objects.html#_constructors">5.4. Constructors</a>
+</li>
+<li><a href="_0100_classes_and_objects.html#_static_constants_and_methods">5.5. <code>static</code> Constants and Methods</a>
+</li>
+<li><a href="_0100_classes_and_objects.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_5">Check Yourself Before You Wreck Yourself (on the assignments)</a>
+</li>
+</ul>
+</li>
+<li><a href="_0101_decisions.html">6. 0101 - Decisions</a>
+</li>
+<li><a href="_0110_loops.html">7. 0110 - Loops</a>
+</li>
+<li><a href="_0111_debugging_and_generative_ai.html">8. 0111 - Debugging and Generative AI</a>
+</li>
+<li><a href="_1000_arrays.html">9. 1000 - Arrays</a>
+</li>
+<li><a href="_1001_inheritance.html">10. 1001 - Inheritance</a>
+</li>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html">11. 1010 - Graphical User Interfaces with Swing</a>
+</li>
+<li><a href="_stuff_thats_tacked_on_the_end.html">12. Stuff That&#8217;s Tacked on the End</a>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
 <div class="sect1">
@@ -558,7 +615,7 @@ With an order, we might send it to the kitchen, print the bill, or close the bil
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 Your Canvas course includes access to <strong>Lucid (Whiteboard)</strong>, which is a free online tool you can use to create UML diagrams. If you create your account through the link in the left-hand navbar in Canvas, you&#8217;ll have access to the premium features for free.
@@ -611,7 +668,7 @@ The class header is followed by a code block, enclosed in curly braces.</p>
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code>. A class header and code block.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class WeatherRecord {
+<pre class="pygments highlight"><code data-lang="java">public class WeatherRecord {
 
    // class code goes here
 
@@ -653,7 +710,7 @@ This means that the fields can only be accessed and changed by the methods of th
 <table>
 <tr>
 <td class="icon">
-<div class="title">Warning</div>
+<i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
 Since a class will compile and run even if we leave off the <code>private</code> access modifier, it&#8217;s easy to forget to use it. But don&#8217;t worry, I&#8217;ll help you remember by taking huge points off your assignments if you don&#8217;t make your fields <code>private</code>. As I&#8217;ve mentioned, you&#8217;re not really doing OOP if you don&#8217;t encapsulate your fields, and we&#8217;re learning OOP here.
@@ -664,7 +721,7 @@ Since a class will compile and run even if we leave off the <code>private</code>
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code>. Fields added to the <code>WeatherRecord</code> class.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class WeatherRecord {
+<pre class="pygments highlight"><code data-lang="java">public class WeatherRecord {
    private String date;
    private int highTemp;
    private int avgTemp;
@@ -719,7 +776,7 @@ Because of that convention, another name for accessor methods is <strong>getters
 <div class="listingblock">
 <div class="title">Example of an accessor method (or "getter")</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public int getHighTemperature() {
+<pre class="pygments highlight"><code data-lang="java">public int getHighTemperature() {
         return highTemperature;
     }</code></pre>
 </div>
@@ -734,7 +791,7 @@ But read-only access usually does no harm, so often we&#8217;ll have getters for
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code>. Getters added to the <code>WeatherRecord</code> class.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class WeatherRecord {
+<pre class="pygments highlight"><code data-lang="java">public class WeatherRecord {
    private String date;
    private int highTemp;
    private int avgTemp;
@@ -765,7 +822,7 @@ The naming convention for setters is to start with <code>set</code> and then the
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public void setHighTemperature(int temp) {
+<pre class="pygments highlight"><code data-lang="java">public void setHighTemperature(int temp) {
         highTemperature = temp;
     }</code></pre>
 </div>
@@ -782,7 +839,7 @@ But we really should only write setters for fields that we want to be able to ch
 <table>
 <tr>
 <td class="icon">
-<div class="title">Tip</div>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
 As a rule of thumb for beginners, create <strong>getters</strong> for all of your fields when you first write your class, and then add <strong>setters</strong> only as you need them. Because this is sometimes tricky for beginners to determine, I don&#8217;t deduct points for writing unnecessary setters&#8212;&#8203;but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
@@ -799,7 +856,7 @@ But for now, this is just another one of those frustrating rules that you just h
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code>. Setters added to the <code>WeatherRecord</code> class, and comments identifying the parts.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class WeatherRecord {
+<pre class="pygments highlight"><code data-lang="java">public class WeatherRecord {
     // Fields
     private String date;
     private int highTemperature;
@@ -867,7 +924,7 @@ The declaration is still a <em>data type</em> and an _identifier, but in this ca
 <div class="listingblock">
 <div class="title">Example of a declaration statement for an object.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">WeatherRecord day1;</code></pre>
+<pre class="pygments highlight"><code data-lang="java">WeatherRecord day1;</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -882,7 +939,7 @@ We&#8217;ll use the <code>new</code> keyword to allocate memory, and then we&#82
 <div class="listingblock">
 <div class="title">Example of an assignment statement for a newly declared object.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">WeatherRecord day1;
+<pre class="pygments highlight"><code data-lang="java">WeatherRecord day1;
 day1 = new WeatherRecord();</code></pre>
 </div>
 </div>
@@ -893,7 +950,7 @@ day1 = new WeatherRecord();</code></pre>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 We&#8217;ve already learned that parentheses in Java <strong>always</strong> means we&#8217;re referring to a method. A constructor is a special method called when instantiating an object.
@@ -913,7 +970,7 @@ We&#8217;ve already learned that parentheses in Java <strong>always</strong> mea
 <div class="listingblock">
 <div class="title">Instance method calls using dot notation.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">WeatherRecord day1 = new WeatherRecord();
+<pre class="pygments highlight"><code data-lang="java">WeatherRecord day1 = new WeatherRecord();
 day1.setHighTemperature(87);
 System.out.println("High temperature on day 1:" + day1.getHighTemperature());</code></pre>
 </div>
@@ -929,7 +986,7 @@ To see why it&#8217;s necessary, consider the following example.</p>
 <div class="listingblock">
 <div class="title">An instance method call using dot notation with multiple objects.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">WeatherRecord day1 = new WeatherRecord();
+<pre class="pygments highlight"><code data-lang="java">WeatherRecord day1 = new WeatherRecord();
 WeatherRecord day2 = new WeatherRecord();
 
 day1.setHighTemperature(87);</code></pre>
@@ -988,7 +1045,7 @@ Sorry, I can&#8217;t do much better than that for now.</p>
 <div class="listingblock">
 <div class="title"><code>WeatherRecordDemo.java</code>. A driver class to demonstrate the <code>WeatherRecord</code> class.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class WeatherRecordDemo {
+<pre class="pygments highlight"><code data-lang="java">public class WeatherRecordDemo {
     public static void main(String[] args) {
         // Instantiate two objects
         WeatherRecord day1 = new WeatherRecord();
@@ -1052,7 +1109,7 @@ In general, I ask students to create at least two instances of each class they a
 <table>
 <tr>
 <td class="icon">
-<div class="title">Important</div>
+<i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
 The Lab Assignments in Canvas can be completed using what we&#8217;ve covered to this point. You might choose to complete that work now, then move onto the next section&#8212;&#8203;which you&#8217;ll need for the Programming Project.
@@ -1087,7 +1144,7 @@ A definition for a constructor for the <code>WeatherRecord</code> class would lo
 <div class="listingblock">
 <div class="title">Example of a constructor for the <code>WeatherRecord</code> class.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public WeatherRecord() {
+<pre class="pygments highlight"><code data-lang="java">public WeatherRecord() {
     // code to initialize fields goes here
 }</code></pre>
 </div>
@@ -1099,7 +1156,7 @@ As a beginner, our rule of thumb is to just make a simple assignment statement f
 <div class="listingblock">
 <div class="title">Example of a constructor that initializes fields.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public WeatherRecord() {
+<pre class="pygments highlight"><code data-lang="java">public WeatherRecord() {
     date = "2025-01-01";
     highTemperature = 0;
     averageWindSpeed = 0.0;
@@ -1117,7 +1174,7 @@ We can initialize those fields to any value we want, but we should choose values
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 This constructor is called a <strong>parameterless</strong> constructor because it doesn&#8217;t have any parameters in the parentheses. It&#8217;s technically <strong>not</strong> a default constructor, because we wrote it ourselves rather than letting the compiler do it, but so many people call it a default constructor that the term is used more often than <em>parameterless constructor</em>.
@@ -1133,7 +1190,7 @@ We add parameters to our constructor just like we do with any other method, by l
 <div class="listingblock">
 <div class="title">Example of a constructor with parameters.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public WeatherRecord(String date) {
+<pre class="pygments highlight"><code data-lang="java">public WeatherRecord(String date) {
     this.date = date;
     this.highTemperature = 0;
     this.averageWindSpeed = 0.0;
@@ -1171,7 +1228,7 @@ That can include having a parameterless constructor and one or more constructors
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 To see a complete example of the <code>WeatherRecord</code> class with constructors, fields, and methods, as well as a driver class to demonstrate it, visit the_Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects" target="_blank" rel="noopener">GitHub repository for this chapter</a>.
@@ -1255,7 +1312,7 @@ Since they&#8217;re <code>static</code>, we can call them without creating a <co
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 The <code>print()</code> and <code>println()</code> are slightly more complicated than that, since they&#8217;re actually <em>instance methods</em> of the <code>PrintStream</code> class, which is a class that <code>System.out</code> is an instance of. But for our purposes, we can think of them as <code>static</code> methods of the <code>System</code> class. You don&#8217;t need to know that right now, but if I don&#8217;t mention it then somebody will claim I&#8217;m an idiot. I probably <em>am</em> an idiot, but not for this reason.
@@ -1271,7 +1328,7 @@ If we have a savings account class, a common example when learning OOP, we might
 <div class="listingblock">
 <div class="title"><code>SavingsAccount.java</code>. A class with a <code>static</code> constant.</div>
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class SavingsAccount {
+<pre class="pygments highlight"><code data-lang="java">public class SavingsAccount {
     private static final double INTEREST_RATE = 0.02;
 
     // other fields and methods go here. See the repository for the complete code.
@@ -1316,7 +1373,7 @@ If we have a savings account class, a common example when learning OOP, we might
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-08 21:30:11 -0700
+Last updated 2025-03-08 21:40:00 -0700
 </div>
 </div>
 </body>

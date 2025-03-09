@@ -1,16 +1,6 @@
-= Skimpy OOP: Introduction to Object-Oriented Programming Using Java
-
-:author: Tim McMichael
-:doctype: book
-:email: tim.mcmichael@estrellamountain.edu
 :toc: left
-:toc-title: Skimpy Contents
-:toclevels: 2
-:icons: font
-:source-highlighter: pygments
-:multipage-level: 1
-:chapter-number: -1
-:sectnums:
+
+= Skimpy OOP: Introduction to Object-Oriented Programming Using Java
 
 
 :figure-caption!:
@@ -19,6 +9,16 @@ image::https://timmcmichael.github.io/skimpy-oop/Skimpy_OOP_Cover.png[title="Ima
 
 :figure-caption: Figure
 
+:author: Tim McMichael
+:doctype: book
+:email: tim.mcmichael@estrellamountain.edu
+:toc-title: Skimpy Contents
+:toclevels: 2
+:icons: font
+:source-highlighter: pygments
+:multipage-level: 1
+:chapter-number: -1
+:sectnums:
 
 [preface]
 == Skimpy Preface: An Excuse for the Inadequacies Within
