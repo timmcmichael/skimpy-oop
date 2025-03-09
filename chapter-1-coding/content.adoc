@@ -27,7 +27,7 @@ _Source code examples from this chapter and associated videos are available on h
 A computer is basically a device that executes a set of commands--and does so very quickly.
 Because the guts of a computer (a CPU) are kinda like a bunch of light switches--and I mean a *BUNCH* of light switches--it can only deal with zeros and ones: a switch that is off is "zero," and a switch that's on is "one." 
 
-NOTE: Never has the concept of a modern computer been so recklessly simplified. I feel shame.
+NOTE: Never before has the concept of a modern computer been so recklessly simplified. I feel shame.
 
 All of the information a computer handles ultimately has to be represented by some combination of 1s and 0s, which we call a *binary* (or "base-two") number system.
  The chapters of this eBook are numbered using binary to show basic examples of the numbering system: 0001 is, well, 1 in decimal. 
