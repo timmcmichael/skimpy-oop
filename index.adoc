@@ -16,9 +16,15 @@ image::https://timmcmichael.github.io/skimpy-oop/Skimpy_OOP_Cover.png[title="Ima
 :toclevels: 2
 :icons: font
 :source-highlighter: pygments
+// :pygments-style: monokai
+// :plantuml-theme: crt-green
 :multipage-level: 1
 :chapter-number: -1
 :sectnums:
+// :stylesheet: dark.css
+
+// Skins gallery: https://larento.github.io/asciidoctor-skins/
+// Skins repository: https://github.com/darshandsoni/asciidoctor-skins
 
 [preface]
 == Skimpy Preface: An Excuse for the Inadequacies Within
@@ -88,7 +94,7 @@ Course YouTube playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLX
 === Source code files:
 
 The source code files shown in the eBook and videos are available on GitHub; a link at the beginning of each chapter will take you to the appropriate folder in the repository.
-If you have trouble finding something (or using the GitHub site), please contact me at mailto:tim.mcmichael@estrellamountain.edu[tim.mcmichael@estrellamountain.edu] or in Canvas.
+If you have trouble finding something (or using the GitHub site), please contact me at {email} or in Canvas.
 
 * GitHub Repository: https://github.com/timmcmichael/EMCCTimFiles[https://github.com/timmcmichael/EMCCTimFiles]
 
@@ -122,4 +128,5 @@ include::back-matter/content.adoc[]
 // TODO: Check all GitHub file links
 // TODO: Canvas - update overview competencies to match book/videos
 // TODO: Canvas - When finished, Update required textbook to recommended; update Module Overview references to match.
+// TODO: Customize CSS, or use a skin (https://github.com/darshandsoni/asciidoctor-skins)
 // TODO: Set theme for plantUML renderings: https://the-lum.github.io/puml-themes-gallery/diagrams/Class.html

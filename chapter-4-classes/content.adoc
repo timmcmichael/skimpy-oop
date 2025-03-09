@@ -68,10 +68,12 @@ The UML standards are extensive, but we'll be using a simplified version in this
 Consider a program to handle orders at a restaurant. A simple class to represent one person's order might look like this:
 
 .Example of a class diagram for a restaurant order
+// image::OrderDiagram-crt-green.png["Class diagram for the `Order` class"]
 image::OrderDiagram.png["Class diagram for the `Order` class"]
 // Image rendered at plantuml.com with the following code:
 // [plantuml, target="OrderDiagram", format=png]
 // ----
+// !theme crt-green // delete for light theme
 // @startuml
 // skinparam classAttributeIconSize 0
 // class Order {
