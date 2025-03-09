@@ -435,12 +435,84 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="_0100_classes_and_objects" class="article toc2 toc-left">
+<body id="_0100_classes_and_objects" class="book toc2 toc-left">
 <div id="header">
 <h1>Skimpy OOP: Introduction to Object-Oriented Programming Using Java</h1>
 <div class="details">
@@ -455,52 +527,52 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="_related_resources.html">Related Resources</a>
 </li>
-<li><a href="_0000_getting_started.html">1. 0000 - Getting Started</a>
+<li><a href="_0000_getting_started.html">0. 0000 - Getting Started</a>
 </li>
-<li><a href="_0001_computers_and_coding.html">2. 0001 - Computers and Coding</a>
+<li><a href="_0001_computers_and_coding.html">1. 0001 - Computers and Coding</a>
 </li>
-<li><a href="_0010_variables.html">3. 0010 - Variables</a>
+<li><a href="_0010_variables.html">2. 0010 - Variables</a>
 </li>
-<li><a href="_0011_methods.html">4. 0011 - Methods</a>
+<li><a href="_0011_methods.html">3. 0011 - Methods</a>
 </li>
-<li><a href="_0100_classes_and_objects.html"><span class="toc-current">5. 0100 - Classes and Objects</span></a>
+<li><a href="_0100_classes_and_objects.html"><span class="toc-current">4. 0100 - Classes and Objects</span></a>
 <ul class="sectlevel2">
 <li><a href="_0100_classes_and_objects.html#_whats_the_point_5">What&#8217;s the Point?</a>
 </li>
-<li><a href="_0100_classes_and_objects.html#_oop_basics">5.1. OOP Basics</a>
+<li><a href="_0100_classes_and_objects.html#_oop_basics">4.1. OOP Basics</a>
 </li>
-<li><a href="_0100_classes_and_objects.html#_encapsulation">5.2. Encapsulation</a>
+<li><a href="_0100_classes_and_objects.html#_encapsulation">4.2. Encapsulation</a>
 </li>
-<li><a href="_0100_classes_and_objects.html#_defining_and_using_a_class">5.3. Defining and Using a Class</a>
+<li><a href="_0100_classes_and_objects.html#_defining_and_using_a_class">4.3. Defining and Using a Class</a>
 </li>
-<li><a href="_0100_classes_and_objects.html#_constructors">5.4. Constructors</a>
+<li><a href="_0100_classes_and_objects.html#_constructors">4.4. Constructors</a>
 </li>
-<li><a href="_0100_classes_and_objects.html#_static_constants_and_methods">5.5. <code>static</code> Constants and Methods</a>
+<li><a href="_0100_classes_and_objects.html#_static_constants_and_methods">4.5. <code>static</code> Constants and Methods</a>
 </li>
 <li><a href="_0100_classes_and_objects.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_5">Check Yourself Before You Wreck Yourself (on the assignments)</a>
 </li>
 </ul>
 </li>
-<li><a href="_0101_decisions.html">6. 0101 - Decisions</a>
+<li><a href="_0101_decisions.html">5. 0101 - Decisions</a>
 </li>
-<li><a href="_0110_loops.html">7. 0110 - Loops</a>
+<li><a href="_0110_loops.html">6. 0110 - Loops</a>
 </li>
-<li><a href="_0111_debugging_and_generative_ai.html">8. 0111 - Debugging and Generative AI</a>
+<li><a href="_0111_debugging_and_generative_ai.html">7. 0111 - Debugging and Generative AI</a>
 </li>
-<li><a href="_1000_arrays.html">9. 1000 - Arrays</a>
+<li><a href="_1000_arrays.html">8. 1000 - Arrays</a>
 </li>
-<li><a href="_1001_inheritance.html">10. 1001 - Inheritance</a>
+<li><a href="_1001_inheritance.html">9. 1001 - Inheritance</a>
 </li>
-<li><a href="_1010_graphical_user_interfaces_with_swing.html">11. 1010 - Graphical User Interfaces with Swing</a>
+<li><a href="_1010_graphical_user_interfaces_with_swing.html">10. 1010 - Graphical User Interfaces with Swing</a>
 </li>
-<li><a href="_stuff_thats_tacked_on_the_end.html">12. Stuff That&#8217;s Tacked on the End</a>
+<li><a href="_stuff_thats_tacked_on_the_end.html">11. Stuff That&#8217;s Tacked on the End</a>
 </li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_0100_classes_and_objects">5. 0100 - Classes and Objects</h2>
+<h2 id="_0100_classes_and_objects">4. 0100 - Classes and Objects</h2>
 <div class="sectionbody">
 <div class="sidebarblock">
 <div class="content">
@@ -549,7 +621,7 @@ In this chapter, we&#8217;ll start our transition to OOP by learning about class
 </div>
 </div>
 <div class="sect2">
-<h3 id="_oop_basics">5.1. OOP Basics</h3>
+<h3 id="_oop_basics">4.1. OOP Basics</h3>
 <div class="paragraph">
 <p>Until now, we have been organizing our programs into methods, which is a procedural programming approach.
 We&#8217;ve been thinking of a program as a collection of tasks that need to be performed in a specific order.
@@ -585,7 +657,7 @@ A class defines the <strong>attributes</strong> and <strong>behaviors</strong> o
 </div>
 </div>
 <div class="sect3">
-<h4 id="_class_diagrams">5.1.1. Class Diagrams</h4>
+<h4 id="_class_diagrams">4.1.1. Class Diagrams</h4>
 <div class="paragraph">
 <p>In OOP, our planning for a program starts by deciding what objects&#8212;&#8203;and therefore, what classes&#8212;&#8203;we&#8217;ll need in order to implement the functionality we want.
 To help organize our thinking, we&#8217;ll use a tool called a <strong>class diagram</strong>, which gives a visual representation of the classes and their relationships in our program.
@@ -625,7 +697,7 @@ Your Canvas course includes access to <strong>Lucid (Whiteboard)</strong>, which
 </div>
 </div>
 <div class="sect2">
-<h3 id="_encapsulation">5.2. Encapsulation</h3>
+<h3 id="_encapsulation">4.2. Encapsulation</h3>
 <div class="paragraph">
 <p>Object-oriented programming is all about creating objects that can interact with each other.
 Since the objects will be interacting, we need to think about how to keep them from interfering with each other in ways we don&#8217;t want.
@@ -650,7 +722,7 @@ And that&#8217;s what we&#8217;re here to learn.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_defining_and_using_a_class">5.3. Defining and Using a Class</h3>
+<h3 id="_defining_and_using_a_class">4.3. Defining and Using a Class</h3>
 <div class="paragraph">
 <p>We&#8217;ll look at a program to keep rudimentary weather records; for a single day&#8217;s weather data, we&#8217;ll have a class called <code>WeatherRecord</code>.</p>
 </div>
@@ -667,11 +739,11 @@ The class header is followed by a code block, enclosed in curly braces.</p>
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code>. A class header and code block.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public class WeatherRecord {
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
-   // class code goes here
+<span class="tok-w">   </span><span class="tok-c1">// class code goes here</span>
 
-}</code></pre>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="dlist">
@@ -695,7 +767,7 @@ The class header is followed by a code block, enclosed in curly braces.</p>
 To begin with, we&#8217;ll focus on two types of instance members: <strong>fields</strong> and <strong>methods</strong>.</p>
 </div>
 <div class="sect3">
-<h4 id="_fields">5.3.1. Fields</h4>
+<h4 id="_fields">4.3.1. Fields</h4>
 <div class="paragraph">
 <p>Fields are the implementation of the attributes of the class.
 They are also known as <strong>instance variables</strong> because they are similar to the variables we&#8217;ve been using in our programs, but their scope is the object created from the class, not the method where they&#8217;re defined.
@@ -720,11 +792,11 @@ Since a class will compile and run even if we leave off the <code>private</code>
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code>. Fields added to the <code>WeatherRecord</code> class.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public class WeatherRecord {
-   private String date;
-   private int highTemp;
-   private int avgTemp;
-}</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">avgTemp</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -750,7 +822,7 @@ And so no puppies' toys will be harmed as long as we use <strong>private</strong
 </div>
 </div>
 <div class="sect3">
-<h4 id="_methods">5.3.2. Methods</h4>
+<h4 id="_methods">4.3.2. Methods</h4>
 <div class="paragraph">
 <p>Ensuring that our fields are <code>private</code> is the first step in encapsulating our class, but it&#8217;s not the only step.
 We also need to create methods that can access and change the fields&#8212;&#8203;otherwise, the fields are useless.
@@ -775,9 +847,9 @@ Because of that convention, another name for accessor methods is <strong>getters
 <div class="listingblock">
 <div class="title">Example of an accessor method (or "getter")</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public int getHighTemperature() {
-        return highTemperature;
-    }</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getHighTemperature</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -790,24 +862,24 @@ But read-only access usually does no harm, so often we&#8217;ll have getters for
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code>. Getters added to the <code>WeatherRecord</code> class.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public class WeatherRecord {
-   private String date;
-   private int highTemp;
-   private int avgTemp;
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">avgTemp</span><span class="tok-p">;</span>
 
-   public String getDate() {
-      return date;
-   }
+<span class="tok-w">   </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getDate</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">      </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-p">}</span>
 
-   public int getHighTemp() {
-      return highTemp;
-   }
+<span class="tok-w">   </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getHighTemp</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">      </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">highTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-p">}</span>
 
-   public int getAvgTemp() {
-      return avgTemp;
-   }
+<span class="tok-w">   </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getAvgTemp</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">      </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">avgTemp</span><span class="tok-p">;</span>
+<span class="tok-w">   </span><span class="tok-p">}</span>
 
-}</code></pre>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 </div>
@@ -821,9 +893,9 @@ The naming convention for setters is to start with <code>set</code> and then the
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public void setHighTemperature(int temp) {
-        highTemperature = temp;
-    }</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setHighTemperature</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">temp</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">highTemperature</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">temp</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -855,38 +927,38 @@ But for now, this is just another one of those frustrating rules that you just h
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code>. Setters added to the <code>WeatherRecord</code> class, and comments identifying the parts.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public class WeatherRecord {
-    // Fields
-    private String date;
-    private int highTemperature;
-    private double averageWindSpeed;
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-c1">// Fields</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
 
-    // Getters
-    public String getDate() {
-        return date;
-    }
+<span class="tok-w">    </span><span class="tok-c1">// Getters</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getDate</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
 
-    public int getHighTemperature() {
-        return highTemperature;
-    }
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">getHighTemperature</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
 
-    public double getAverageWindSpeed() {
-        return averageWindSpeed;
-    }
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-nf">getAverageWindSpeed</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
 
-    // Setters and Mutators
-    public void setDate(String date) {
-        this.date = date;
-    }
+<span class="tok-w">    </span><span class="tok-c1">// Setters and Mutators</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setDate</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">date</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
 
-    public void setHighTemperature(int highTemperature) {
-        this.highTemperature = highTemperature;
-    }
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setHighTemperature</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
 
-    public void setAverageWindSpeed(double averageWindSpeed) {
-        this.averageWindSpeed = averageWindSpeed;
-    }
-}</code></pre>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">setAverageWindSpeed</span><span class="tok-p">(</span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -910,7 +982,7 @@ These methods are still mutators, and we might even still refer to them as <em>s
 </div>
 </div>
 <div class="sect3">
-<h4 id="_using_the_class">5.3.3. Using the Class</h4>
+<h4 id="_using_the_class">4.3.3. Using the Class</h4>
 <div class="paragraph">
 <p>As we&#8217;ve learned, defining a class establishes a blueprint; to make use of a class in a program, we need to use that blueprint to create an object.
 We can as many objects from a class as we need, and each object is known as an <strong>instance</strong> of the class.
@@ -923,7 +995,7 @@ The declaration is still a <em>data type</em> and an _identifier, but in this ca
 <div class="listingblock">
 <div class="title">Example of a declaration statement for an object.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">WeatherRecord day1;</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">WeatherRecord</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -938,8 +1010,8 @@ We&#8217;ll use the <code>new</code> keyword to allocate memory, and then we&#82
 <div class="listingblock">
 <div class="title">Example of an assignment statement for a newly declared object.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">WeatherRecord day1;
-day1 = new WeatherRecord();</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">WeatherRecord</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-p">;</span>
+<span class="tok-n">day1</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">WeatherRecord</span><span class="tok-p">();</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -969,9 +1041,9 @@ We&#8217;ve already learned that parentheses in Java <strong>always</strong> mea
 <div class="listingblock">
 <div class="title">Instance method calls using dot notation.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">WeatherRecord day1 = new WeatherRecord();
-day1.setHighTemperature(87);
-System.out.println("High temperature on day 1:" + day1.getHighTemperature());</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">WeatherRecord</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">WeatherRecord</span><span class="tok-p">();</span>
+<span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">setHighTemperature</span><span class="tok-p">(</span><span class="tok-mi">87</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;High temperature on day 1:&quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">getHighTemperature</span><span class="tok-p">());</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -985,10 +1057,10 @@ To see why it&#8217;s necessary, consider the following example.</p>
 <div class="listingblock">
 <div class="title">An instance method call using dot notation with multiple objects.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">WeatherRecord day1 = new WeatherRecord();
-WeatherRecord day2 = new WeatherRecord();
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">WeatherRecord</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">WeatherRecord</span><span class="tok-p">();</span>
+<span class="tok-n">WeatherRecord</span><span class="tok-w"> </span><span class="tok-n">day2</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">WeatherRecord</span><span class="tok-p">();</span>
 
-day1.setHighTemperature(87);</code></pre>
+<span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">setHighTemperature</span><span class="tok-p">(</span><span class="tok-mi">87</span><span class="tok-p">);</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1044,33 +1116,33 @@ Sorry, I can&#8217;t do much better than that for now.</p>
 <div class="listingblock">
 <div class="title"><code>WeatherRecordDemo.java</code>. A driver class to demonstrate the <code>WeatherRecord</code> class.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public class WeatherRecordDemo {
-    public static void main(String[] args) {
-        // Instantiate two objects
-        WeatherRecord day1 = new WeatherRecord();
-        WeatherRecord day2 = new WeatherRecord();
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecordDemo</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-c1">// Instantiate two objects</span>
+<span class="tok-w">        </span><span class="tok-n">WeatherRecord</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">WeatherRecord</span><span class="tok-p">();</span>
+<span class="tok-w">        </span><span class="tok-n">WeatherRecord</span><span class="tok-w"> </span><span class="tok-n">day2</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-k">new</span><span class="tok-w"> </span><span class="tok-n">WeatherRecord</span><span class="tok-p">();</span>
 
-        // Set field values for both instances
-        day1.setDate("2024-10-01");
-        day1.setHighTemperature(87);
-        day1.setAverageWindSpeed(1.5);
+<span class="tok-w">        </span><span class="tok-c1">// Set field values for both instances</span>
+<span class="tok-w">        </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">setDate</span><span class="tok-p">(</span><span class="tok-s">&quot;2024-10-01&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">setHighTemperature</span><span class="tok-p">(</span><span class="tok-mi">87</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">setAverageWindSpeed</span><span class="tok-p">(</span><span class="tok-mf">1.5</span><span class="tok-p">);</span>
 
-        day2.setDate("2024-10-02");
-        day2.setHighTemperature(75);
-        day2.setAverageWindSpeed(8.25);
+<span class="tok-w">        </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">setDate</span><span class="tok-p">(</span><span class="tok-s">&quot;2024-10-02&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">setHighTemperature</span><span class="tok-p">(</span><span class="tok-mi">75</span><span class="tok-p">);</span>
+<span class="tok-w">        </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">setAverageWindSpeed</span><span class="tok-p">(</span><span class="tok-mf">8.25</span><span class="tok-p">);</span>
 
-        // Output field values for both instances
-        System.out.println("Date: " + day1.getDate());
-        System.out.println("High Temperature: " + day1.getHighTemperature());
-        System.out.println("Average Wind Speed: " + day1.getAverageWindSpeed());
+<span class="tok-w">        </span><span class="tok-c1">// Output field values for both instances</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Date: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">getDate</span><span class="tok-p">());</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;High Temperature: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">getHighTemperature</span><span class="tok-p">());</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Average Wind Speed: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day1</span><span class="tok-p">.</span><span class="tok-na">getAverageWindSpeed</span><span class="tok-p">());</span>
 
-        System.out.println("------------------------------");
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;------------------------------&quot;</span><span class="tok-p">);</span>
 
-        System.out.println("Date: " + day2.getDate());
-        System.out.println("High Temperature: " + day2.getHighTemperature());
-        System.out.println("Average Wind Speed: " + day2.getAverageWindSpeed());
-    }
-}</code></pre>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Date: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">getDate</span><span class="tok-p">());</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;High Temperature: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">getHighTemperature</span><span class="tok-p">());</span>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Average Wind Speed: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">day2</span><span class="tok-p">.</span><span class="tok-na">getAverageWindSpeed</span><span class="tok-p">());</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1120,7 +1192,7 @@ The Lab Assignments in Canvas can be completed using what we&#8217;ve covered to
 </div>
 </div>
 <div class="sect2">
-<h3 id="_constructors">5.4. Constructors</h3>
+<h3 id="_constructors">4.4. Constructors</h3>
 <div class="paragraph">
 <p>When we instantiate a new object, the syntax includes a call to a method, immediately following the <code>new</code> keyword:</p>
 </div>
@@ -1143,9 +1215,9 @@ A definition for a constructor for the <code>WeatherRecord</code> class would lo
 <div class="listingblock">
 <div class="title">Example of a constructor for the <code>WeatherRecord</code> class.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public WeatherRecord() {
-    // code to initialize fields goes here
-}</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-nf">WeatherRecord</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-c1">// code to initialize fields goes here</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1155,11 +1227,11 @@ As a beginner, our rule of thumb is to just make a simple assignment statement f
 <div class="listingblock">
 <div class="title">Example of a constructor that initializes fields.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public WeatherRecord() {
-    date = "2025-01-01";
-    highTemperature = 0;
-    averageWindSpeed = 0.0;
-}</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-nf">WeatherRecord</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">date</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;2025-01-01&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-n">highTemperature</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-n">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">0.0</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1189,11 +1261,11 @@ We add parameters to our constructor just like we do with any other method, by l
 <div class="listingblock">
 <div class="title">Example of a constructor with parameters.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public WeatherRecord(String date) {
-    this.date = date;
-    this.highTemperature = 0;
-    this.averageWindSpeed = 0.0;
-}</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-nf">WeatherRecord</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">date</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">0.0</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1265,7 +1337,7 @@ To see a complete example of the <code>WeatherRecord</code> class with construct
 </div>
 </div>
 <div class="sect3">
-<h4 id="_constructors_and_encapsulation">5.4.1. Constructors and Encapsulation</h4>
+<h4 id="_constructors_and_encapsulation">4.4.1. Constructors and Encapsulation</h4>
 <div class="paragraph">
 <p>Constructors allow us to be stricter with our encapsulation since now we don&#8217;t have to have setters to put data into our objects. We can provide a constructor to accept all the data the object needs, decide if we give access to change a field after the object has been instantiated.</p>
 </div>
@@ -1275,7 +1347,7 @@ To see a complete example of the <code>WeatherRecord</code> class with construct
 </div>
 </div>
 <div class="sect2">
-<h3 id="_static_constants_and_methods">5.5. <code>static</code> Constants and Methods</h3>
+<h3 id="_static_constants_and_methods">4.5. <code>static</code> Constants and Methods</h3>
 <div class="paragraph">
 <p>Since our first <code>Hello World</code> program, we&#8217;ve been using the <code>static</code> keyword to create methods&#8212;&#8203;beginning with the <code>main()</code> method that is the starting point for every Java program.
 However, we haven&#8217;t had enough context to understand what that keyword means.</p>
@@ -1327,16 +1399,16 @@ If we have a savings account class, a common example when learning OOP, we might
 <div class="listingblock">
 <div class="title"><code>SavingsAccount.java</code>. A class with a <code>static</code> constant.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public class SavingsAccount {
-    private static final double INTEREST_RATE = 0.02;
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">SavingsAccount</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">INTEREST_RATE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">0.02</span><span class="tok-p">;</span>
 
-    // other fields and methods go here. See the repository for the complete code.
+<span class="tok-w">    </span><span class="tok-c1">// other fields and methods go here. See the repository for the complete code.</span>
 
-    public void addInterest() {
-        balance += balance * INTEREST_RATE;
-    }
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">addInterest</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-n">balance</span><span class="tok-w"> </span><span class="tok-o">+=</span><span class="tok-w"> </span><span class="tok-n">balance</span><span class="tok-w"> </span><span class="tok-o">*</span><span class="tok-w"> </span><span class="tok-n">INTEREST_RATE</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
 
-}</code></pre>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <hr>
@@ -1372,7 +1444,7 @@ If we have a savings account class, a common example when learning OOP, we might
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-08 20:20:27 -0700
+Last updated 2025-03-08 21:19:35 -0700
 </div>
 </div>
 </body>
