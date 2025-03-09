@@ -1,6 +1,8 @@
+= Skimpy OOP: Introduction to Object-Oriented Programming Using Java
 
 :author: Tim McMichael
 :doctype: book
+:email: tim.mcmichael@estrellamountain.edu
 :toc: left
 :toc-title: Skimpy Contents
 :toclevels: 2
@@ -10,9 +12,9 @@
 :chapter-number: -1
 :sectnums:
 
-= Skimpy OOP: Introduction to Object-Oriented Programming Using Java
 
 :figure-caption!:
+
 image::https://timmcmichael.github.io/skimpy-oop/Skimpy_OOP_Cover.png[title="Image created with the assistance of DALL-E 2",width=400]
 
 :figure-caption: Figure
