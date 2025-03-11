@@ -93,6 +93,7 @@ Files from video:
 * Completed code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/03%20Methods/SimpleMethodFinished.java[`SimpleMethodFinished.java`^]
 ****
 
+[[variable_scope]] 
 === Variable Scope
 
 As we begin organizing our code into different methods and (when we learn object-oriented programming basics) classes, we'll need to understand how data is compartmentalized within a program.
@@ -395,6 +396,7 @@ File from video:
 
 IMPORTANT: The Lab Assignments in Canvas can be completed using what we've covered to this point. You might choose to complete that work now, then move onto the next section--which you'll need for the Programming Project.
 
+[[overloading]]
 === Overloading a Method
 
 Sometimes the task, action, or calculation that a method produces has different ways of operating depending on the circumstances.

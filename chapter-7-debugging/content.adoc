@@ -114,7 +114,7 @@ IMPORTANT: The first Lab Assignment in Canvas can be completed using what we've 
 
 Generative Artificial Intelligence is a type of AI that can generate new content based on existing data.
 Tools like ChatGPT and Copilot are well-known examples of generative AI.
-We can ask a generative AI tool to write song lyrics about Java programming, for example, and it will produce a https://timmcmichael.github.io/skimpy-oop/chapter-7-debugging/ai_song.html[new song for us^].
+We can ask a generative AI tool to write song lyrics about Java programming, for example, and it will produce a link:chapter-7-debugging/ai_song.html[new song for us^].
 
 Artificial Intelligence is a broad field, and the topic is well beyond the scope of this course.
 But generative AI has important implications for the field of software development, so we'll focus on just that aspect of the technology.

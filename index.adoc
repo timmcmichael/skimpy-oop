@@ -78,7 +78,7 @@ Then, start reading the chapter in this eBook.
 * After the video, continue reading the chapter.
 * Each chapter begins with *What's the Point?*, which gives you an idea of what you should be able to do after reading the chapter.
 * At the end of each chapter, *Check Yourself Before You Wreck Yourself (on the assignments)* provides a few questions to help you review the material.
-* You can find sample answers to these questions at the very end of the eBook, in the https://timmcmichael.github.io/skimpy-oop/_stuff_thats_tacked_on_the_end.html[*Stuff That's Tacked on the End*] section.
+* You can find sample answers to these questions at the very end of the eBook, in the <<_stuff_thats_tacked_on_the_end>> section.
 * A few sections of the book are identified as *optional*. These sections are not required for the course assignments or quizzes, but they might be interesting or helpful to you.
 
 == Related Resources
@@ -124,6 +124,7 @@ include::chapter-10-swing/content.adoc[]
 
 include::back-matter/content.adoc[]
 
+// TODO: Fix xrefs throughout
 // TODO: Check chapters to see if Labs can be completed with partial reading/viewing
 // TODO: Check all GitHub file links
 // TODO: Canvas - update overview competencies to match book/videos
