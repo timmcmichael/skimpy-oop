@@ -212,7 +212,7 @@ Assignments in my course require you to actually use if-else statements, so you 
 The `if-else` structure is great for choosing between two blocks of code, but what if we have more than two options?
 To handle this, we can chain multiple `if-else` statements together.
 
-.`WeatherRecord.java` (excerpt). Example of an `if-else if` statement. See https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions[GitHub^] for the full file.
+.`WeatherRecord.java` (excerpt). Example of an `if-else if` statement. See https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions[GitHub^] for the complete file.
 [source,java]
 ----
 public class WeatherRecord {
@@ -302,7 +302,7 @@ else {
 In the example below, the outermost if-else structure checks the high temperature of the day. 
 The if-else structures within those blocks check the average wind speed and return an appropriate description.
 
-.`WeatherRecord.java` (excerpt). Example of a nested `if-else` statement. See https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions[GitHub^] for the full file.
+.`WeatherRecord.java` (excerpt). Example of a nested `if-else` statement. See https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions[GitHub^] for the complete file.
 [source,java]
 ----
 public String getFullDescription() {
