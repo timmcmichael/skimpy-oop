@@ -539,6 +539,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
+<p>Current imagesdir = chapter-4-classes/images</p>
+</div>
+<div class="paragraph">
 <p><em>Source code examples from this chapter and associated videos are available on <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects" target="_blank" rel="noopener">GitHub</a>.</em></p>
 </div>
 <hr>
@@ -742,7 +745,7 @@ Since a class will compile and run even if we leave off the <code>private</code>
 </div>
 </div>
 <div class="paragraph">
-<p>You might remember from <a href="https://timmcmichael.github.io/skimpy-oop/_0011_methods.html#_variable_scope">the section on variable scope in Chapter 0011</a> that using global variables is terrible, and every time we create a global variable, a puppy loses its favorite toy.
+<p>You might remember from <a href="_0011_methods.html#variable_scope">the section on variable scope in Chapter 0011</a> that using global variables is terrible, and every time we create a global variable, a puppy loses its favorite toy.
 And these fields look an awful lot like global variables.
 But fields in a class are <strong>not</strong> global variables; they&#8217;re <strong>instance</strong> variables, and they&#8217;re a good thing.
 The fields are <strong>encapsulated</strong>, so they can only be accessed and changed by the methods of the class&#8212;&#8203;which is a good thing.
@@ -1027,7 +1030,7 @@ My examples always demonstrate this <em>separation of concerns</em>, so you&#821
 <div class="content">
 <div class="title">Interesting!</div>
 <div class="paragraph">
-<p>I asked an AI platform to give me an image of an angry mob with pitchforks and torches (coming after me because I make them separate their input and output), and the AI spit out this <a href="https://github.com/timmcmichael/skimpy-oop/blob/5c16f73bd0e71a33b94727618d3097f503eb27a6/chapter-4-classes/images/creepy_mob.png?raw=true" target="_blank" rel="noopener">nightmare fuel</a>.
+<p>I asked an AI platform to give me an image of an angry mob with pitchforks and torches (coming after me because I make them separate their input and output), and the AI spit out this <a href="chapter-4-classes/images/creepy_mob.png" target="_blank" rel="noopener">nightmare fuel</a>.
 I decided it was too creepy to display in the text, but this crime against nature should be preserved for posterity. If a mob like that comes for me, I&#8217;ll let them put <code>print()</code> statements wherever they want!</p>
 </div>
 </div>
@@ -1213,7 +1216,7 @@ We add parameters to our constructor just like we do with any other method, by l
 </li>
 <li>
 <p>The parameter has the same name as the field: <code>date</code>. This is a common practice, but it&#8217;s potentially confusing.
-And it also violates guidance I gave you when we learned about <a href="https://timmcmichael.github.io/skimpy-oop/_0011_methods.html#_variable_scope">variable scope</a>.</p>
+And it also violates guidance I gave you when we learned about <a href="_0011_methods.html#variable_scope">variable scope</a>.</p>
 <div class="paragraph">
 <p>In this case, the parameter is a <em>local variable</em> to the constructor, and it&#8217;s <em>shadowing</em> the field. Our assignment statement needs to be carefully written: <code>this.date</code> refers to the field, and <code>date</code> refers to the parameter.</p>
 </div>
@@ -1221,7 +1224,7 @@ And it also violates guidance I gave you when we learned about <a href="https://
 </ol>
 </div>
 <div class="paragraph">
-<p>We can also <a href="https://timmcmichael.github.io/skimpy-oop/_0011_methods.html#_overloading_a_method">overload</a> constructors, which means we can have multiple constructors with different parameters&#8212;&#8203;just like we can with any other method.
+<p>We can also <a href="_0011_methods.html#overloading">overload</a> constructors, which means we can have multiple constructors with different parameters&#8212;&#8203;just like we can with any other method.
 That can include having a parameterless constructor and one or more constructors with parameters, or having multiple constructors with different numbers of parameters.</p>
 </div>
 <div class="admonitionblock note">
@@ -1373,7 +1376,7 @@ If we have a savings account class, a common example when learning OOP, we might
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-09 10:44:54 -0700
+Last updated 2025-03-11 13:37:31 -0700
 </div>
 </div>
 </body>
