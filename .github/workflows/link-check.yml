@@ -3,7 +3,7 @@ name: Check Links on GitHub Pages
 on:
   push:
     branches:
-      - gh-pages  # Runs when the gh-pages branch is updated
+      - gh-pages  # Runs when the site is updated
   schedule:
     - cron: '0 0 * * 0'  # Runs weekly on Sundays
   pull_request:
@@ -15,10 +15,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
       - name: Run Lychee Broken Link Checker
         uses: lycheeverse/lychee-action@v1.8.0
         with:
-          args: --verbose --fail https://timmcmichael.github.io/skimpy-oop
+          args: --verbose --fail --output lychee-report.json https://timmcmichael.github.io/skimpy-oop/
+
+      - name: Upload Report as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: broken-links-report
+          path: lychee-report.json
