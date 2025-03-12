@@ -27,8 +27,6 @@ https://forms.gle/4173pZ1yPuNX7pku6[CIS150AB Course Materials Feedback (Google F
 * Define and use constructors.
 * Understand the role of `static` in Java.
 
-Current imagesdir = {imagesdir}
-
 _Source code examples from this chapter and associated videos are available on https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/04%20Classes%20and%20Objects[GitHub^]._
 
 :sectnums:
