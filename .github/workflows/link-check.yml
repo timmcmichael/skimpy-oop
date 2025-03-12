@@ -21,4 +21,4 @@ jobs:
       - name: Run Lychee Broken Link Checker
         uses: lycheeverse/lychee-action@v1.8.0
         with:
-          args: --verbose --fail args: --verbose --fail https://timmcmichael.github.io/
+          args: --verbose --fail https://timmcmichael.github.io/
