@@ -1,0 +1,24 @@
+name: Check Links on GitHub Pages
+
+on:
+  push:
+    branches:
+      - gh-pages  # Runs when the gh-pages branch is updated
+  schedule:
+    - cron: '0 0 * * 0'  # Runs weekly on Sundays
+  pull_request:
+    branches:
+      - gh-pages  # Runs on PRs to gh-pages
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Lychee Broken Link Checker
+        uses: lycheeverse/lychee-action@v1.8.0
+        with:
+          args: --verbose --fail args: --verbose --fail https://timmcmichael.github.io/
