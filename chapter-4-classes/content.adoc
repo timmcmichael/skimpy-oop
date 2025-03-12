@@ -651,3 +651,4 @@ public class SavingsAccount {
 3. What is encapsulation, and why is it important in OOP? Provide an example.
 ****
 :sectnums:
+_Sample answers provided in <<_classes_and_objects,Stuff That's Tacked On The End>>_.
