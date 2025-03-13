@@ -1,6 +1,7 @@
 name: Check Broken Links
 
 on:
+  workflow_dispatch: # Allows manual triggering of the workflow
   push:
     branches:
       - gh-pages
