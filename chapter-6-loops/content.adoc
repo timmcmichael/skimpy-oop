@@ -264,9 +264,9 @@ When the `continue` statement is executed, the program stops executing the loop'
 video::gc4D-7UhxR0[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
 // File from video:
 
-// TODO: Fix broken links!
-* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/BreakContinueDemo1.java[`BreakDemo1.java`^]
-* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/BreakContinueDemo2.java[`BreakDemo2.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/BreakDemo1.java[`BreakDemo1.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/BreakDemo2.java[`BreakDemo2.java`^]
+* Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/EvilDemo.java[`EvilDemo.java`^]
 
 ****
 
