@@ -539,3 +539,4 @@ Can you answer these questions?
 
 ****
 :sectnums:
+_Sample answers provided in <<_methods,Stuff That's Tacked On The End>>_.

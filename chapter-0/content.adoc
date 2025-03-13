@@ -85,12 +85,17 @@ Once you've installed the JDK and VS Code (along with the Java extensions), you'
 
 '''
 
+:sectunms!:
 === Check Yourself Before You Wreck Yourself (on the assignments)
 
 ==== Can you answer these questions?
+
 
 ****
 1. What does "JDK" stand for?
 
 2. What is an example of an Integrated Development Environment?
 ****
+:sectnums:
+
+_Sample answers provided in <<_getting_started_chapter,Stuff That's Tacked On The End>>_.

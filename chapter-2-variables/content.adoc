@@ -464,3 +464,4 @@ WARNING: As a reminder, there's a weird quirk that happens when you get numeric 
 4. **What are compound assignment operators in Java? Provide examples of how they are used in arithmetic operations.**
 ****
 :sectnums:
+_Sample answers provided in <<_variables,Stuff That's Tacked On The End>>_.
