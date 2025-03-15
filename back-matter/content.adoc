@@ -1,10 +1,10 @@
 :imagesdir: images
 :sourcedir: source
-// The following corrects the directories if this is included in the index file.
-ifeval::["{docname}" == "index"]
-:imagesdir: chapter-1/images
-:sourcedir: chapter-1/source
-endif::[]
+// // The following corrects the directories if this is included in the index file.
+// ifeval::["{docname}" == "index"]
+// :imagesdir: chapter-1/images
+// :sourcedir: chapter-1/source
+// endif::[]
 
 
 == Stuff That's Tacked on the End

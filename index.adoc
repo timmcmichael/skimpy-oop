@@ -5,7 +5,8 @@
 
 :figure-caption!:
 
-image::https://timmcmichael.github.io/skimpy-oop/Skimpy_OOP_Cover.png[title="Image created with the assistance of DALL-E 2",width=400]
+// image::https://timmcmichael.github.io/skimpy-oop/Skimpy_OOP_Cover.png[title="Image created with the assistance of DALL-E 2",width=400]
+image::Skimpy_OOP_Cover.png[title="Image created with the assistance of DALL-E 2",width=400]
 
 :figure-caption: Figure
 
