@@ -27,3 +27,6 @@
 
 Desktop:
 /usr/local/bin/asciidoctor-multipage -r /Library/Ruby/Gems/2.6.0/gems/asciidoctor-diagram-2.3.1/lib/asciidoctor-diagram index.adoc
+
+
+Link Check action: https://github.com/lycheeverse/lychee-action?tab=readme-ov-file

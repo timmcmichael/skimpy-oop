@@ -2,8 +2,8 @@
 :sourcedir: source
 // The following corrects the directories if this is included in the index file.
 ifeval::["{docname}" == "index"]
-:imagesdir: chapter-10-gui/images
-:sourcedir: chapter-10-gui/source
+:imagesdir: chapter-10-swing/images
+:sourcedir: chapter-10-swing/source
 endif::[]
 
 == 1010 - Graphical User Interfaces with Swing
