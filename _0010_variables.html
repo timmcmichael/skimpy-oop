@@ -435,6 +435,78 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
@@ -567,15 +639,15 @@ In computer programming, a piece of information is called <strong>data</strong>.
 <div class="listingblock">
 <div class="title">HelloWorld.java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public class HelloWorld {
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
-    public static void main(String[] args) {
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
-        System.out.println("Hello World!"); <i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello World!&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 
-    }
+<span class="tok-w">    </span><span class="tok-p">}</span>
 
-}</code></pre>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -732,9 +804,9 @@ It&#8217;s called "single" in some programming languages, which helps understand
 <div class="listingblock">
 <div class="title">Examples of numeric variable declarations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">int myAge = 21;
-float myGPA = 3.75f; <i class="conum" data-value="1"></i><b>(1)</b>
-double myFriendsGPA = 3.54;</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">myAge</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">;</span>
+<span class="tok-kt">float</span><span class="tok-w"> </span><span class="tok-n">myGPA</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.75f</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">myFriendsGPA</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.54</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -802,8 +874,8 @@ That is to say, we usually name our <code>boolean</code> variables using words l
 <div class="listingblock">
 <div class="title">Examples of Boolean variable declarations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">boolean isPassing = true;
-boolean hasCar = false;</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isPassing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">hasCar</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -820,8 +892,8 @@ Char literals are created by putting a character in single quotes, and that char
 <div class="listingblock">
 <div class="title">Examples of character variable declarations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">char myLetterGrade = 'A';
-char firstInitial = 'T';</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">myLetterGrade</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;A&#39;</span><span class="tok-p">;</span>
+<span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">firstInitial</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;T&#39;</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -879,8 +951,8 @@ For now, a really important thing to notice and remember is that primitive types
 <div class="listingblock">
 <div class="title">Examples of <code>String</code> variable declarations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">String address = "3000 N. Dysart Road";
-String bestClass = "CIS150AB";</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">address</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;3000 N. Dysart Road&quot;</span><span class="tok-p">;</span>
+<span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">bestClass</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;CIS150AB&quot;</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -921,9 +993,9 @@ So that people looking at your code can easily tell it&#8217;s a constant rather
 <div class="listingblock">
 <div class="title">Examples of constant declarations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">final double SALES_TAX_RATE = 8.7;
-final int MINIMUM_AGE = 18;
-final String FAVORITE_CLASS = "CIS150AB";</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">SALES_TAX_RATE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">8.7</span><span class="tok-p">;</span>
+<span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">MINIMUM_AGE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">;</span>
+<span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">FAVORITE_CLASS</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;CIS150AB&quot;</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -950,12 +1022,12 @@ If we want to display the output of a variable&#8212;&#8203;or a constant&#8212;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">String artistName = "Sam Cooke";
-int birthYear = 1931;
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">1931</span><span class="tok-p">;</span>
 
-System.out.print(artistName);
-System.out.print(" was born in ");
-System.out.println(birthYear);</code></pre>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-n">artistName</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot; was born in &quot;</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">birthYear</span><span class="tok-p">);</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -964,10 +1036,10 @@ We can combine output into one statement by creating a string with multiple piec
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">String artistName = "Sam Cooke";
-int birthYear = 1931;
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">1931</span><span class="tok-p">;</span>
 
-System.out.println(artistName + " was born in " + birthYear);</code></pre>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot; was born in &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-p">);</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1028,8 +1100,8 @@ Each operator acts on the value to either side:</p>
 <div class="listingblock">
 <div class="title">Examples of simple arithmetic operations</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">int sum = 5 + 7; <i class="conum" data-value="1"></i><b>(1)</b>
-int difference = sum - 2; <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">5</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">difference</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -1095,9 +1167,9 @@ We call this <em>operator precedence</em>, and here are the guidlines:</p>
 <div class="listingblock">
 <div class="title">Examples of operator precedence</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">int result1 = 17 - 4 * 6 / 3; <i class="conum" data-value="1"></i><b>(1)</b>
-int result2 = 17 - 4 / 2 + 2; <i class="conum" data-value="2"></i><b>(2)</b>
-int result3 = 17 - 4 / (2 + 2); <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result1</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">*</span><span class="tok-w"> </span><span class="tok-mi">6</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result2</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result3</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-mi">2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">);</span><span class="tok-w"> </span><i class="conum" data-value="3"></i><b>(3)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -1305,11 +1377,7 @@ As a reminder, there&#8217;s a weird quirk that happens when you get numeric inp
 </div>
 <div id="footer">
 <div id="footer-text">
-<<<<<<< HEAD
-Last updated 2025-03-15 11:24:51 -0700
-=======
-Last updated 2025-03-15 19:54:19 -0700
->>>>>>> fb6260d (html fixes)
+Last updated 2025-03-15 20:00:28 -0700
 </div>
 </div>
 </body>

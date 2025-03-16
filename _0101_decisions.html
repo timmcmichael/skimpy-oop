@@ -435,6 +435,78 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #3D7B7B; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #9C6500 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gr { color: #E40000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #008400 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #717171 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #687822 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #717171; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #767600 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #A45A77 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
@@ -584,8 +656,8 @@ These can be assigned to variables of type <code>boolean</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">boolean isTimAmazing = true;
-boolean isClassBoring = false;</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isTimAmazing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isClassBoring</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 </div>
@@ -642,8 +714,8 @@ We can store that result in a <code>boolean</code> variable, as shown below, and
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">boolean canBuyAlcohol = age &gt;= 21;
-boolean isNegative = number &lt; 0;</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">canBuyAlcohol</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isNegative</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">number</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -659,10 +731,10 @@ The following code will not work as we might expect:</p>
 <div class="listingblock">
 <div class="title">Example of an incorrect <code>String</code> comparison.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">// Should output "true", but (sometimes) doesn't
-String name = "Paul McCartney";
-System.out.print("Is this person Paul McCartney?");
-System.out.println(name == "Paul McCartney");   // DON'T DO THIS!</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-c1">// Should output &quot;true&quot;, but (sometimes) doesn&#39;t</span>
+<span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Paul McCartney&quot;</span><span class="tok-p">;</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;Is this person Paul McCartney?&quot;</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">==</span><span class="tok-w"> </span><span class="tok-s">&quot;Paul McCartney&quot;</span><span class="tok-p">);</span><span class="tok-w">   </span><span class="tok-c1">// DON&#39;T DO THIS!</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -676,10 +748,10 @@ This method will examine the contents of the strings and return <code>true</code
 <div class="listingblock">
 <div class="title">Example of a correct <code>String</code> comparison.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">// Outputs "true"
-String name = "Paul McCartney";
-System.out.print("Is this person Paul McCartney? ");
-System.out.println(name.equals("Paul McCartney"));</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-c1">// Outputs &quot;true&quot;</span>
+<span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">name</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Paul McCartney&quot;</span><span class="tok-p">;</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;Is this person Paul McCartney? &quot;</span><span class="tok-p">);</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">name</span><span class="tok-p">.</span><span class="tok-na">equals</span><span class="tok-p">(</span><span class="tok-s">&quot;Paul McCartney&quot;</span><span class="tok-p">));</span></code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -711,11 +783,11 @@ In either case the program will continue executing the next line of code after t
 <div class="listingblock">
 <div class="title">Example of an <code>if</code> Statement.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">int age = 20;
-if (age &lt; 21) {
-    System.out.println("You can't buy alcohol.");
-}
-System.out.println("Keep that in mind when you go to the store!");</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">;</span>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Keep that in mind when you go to the store!&quot;</span><span class="tok-p">);</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -741,14 +813,14 @@ The syntax is simple: after the <code>if</code> block, add the keyword <code>els
 <div class="listingblock">
 <div class="title">Example of an <code>if-else</code> Statement.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">int age = 20;
-if (age &lt; 21) {
-    System.out.println("You can't buy alcohol.");
-}
-else {
-    System.out.println("You can buy alcohol.");
-}
-System.out.println("Keep that in mind when you go to the store!");</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">20</span><span class="tok-p">;</span>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can&#39;t buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You can buy alcohol.&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Keep that in mind when you go to the store!&quot;</span><span class="tok-p">);</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -799,24 +871,24 @@ To handle this, we can chain multiple <code>if-else</code> statements together.<
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code> (excerpt). Example of an <code>if-else if</code> statement. See <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions" target="_blank" rel="noopener">GitHub</a> for the complete file.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public class WeatherRecord {
-    // Fields
-    private String date;
-    private int highTemperature;
-    private double averageWindSpeed;
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">WeatherRecord</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-c1">// Fields</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">date</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">highTemperature</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-kd">private</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">averageWindSpeed</span><span class="tok-p">;</span>
 
-    public String getTempDescription() {
-        if (this.highTemperature &gt; 90) {
-            return "Hot";
-        } else if (this.highTemperature &gt; 70) {
-            return "Warm";
-        } else if (this.highTemperature &gt; 50) {
-            return "Cool";
-        } else {
-            return "Cold";
-        }
-    }
-}</code></pre>
+<span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getTempDescription</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">90</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Hot&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">70</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Warm&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">50</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cool&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cold&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-p">}</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -907,17 +979,17 @@ Nested if statements check multiple conditions in a hierarchical way: if one con
 <div class="listingblock">
 <div class="title">Basic structure of a nested <code>if-else</code> statement.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">if (condition1) {
-    if (condition2) {
-        // executes if both condition1 and condition2 are true
-    }
-    else {
-        // executes if condition1 is true and condition2 is false
-    }
-}
-else {
-    // executes if condition1 is false
-}</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">condition1</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">condition2</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-c1">// executes if both condition1 and condition2 are true</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-w">    </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-c1">// executes if condition1 is true and condition2 is false</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span>
+<span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-c1">// executes if condition1 is false</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -927,33 +999,33 @@ The if-else structures within those blocks check the average wind speed and retu
 <div class="listingblock">
 <div class="title"><code>WeatherRecord.java</code> (excerpt). Example of a nested <code>if-else</code> statement. See <a href="https://github.com/timmcmichael/EMCCTimFiles/tree/4bf0da6df6f4fe3e3a0ccd477b4455df400cffb6/OOP%20with%20Java%20(CIS150AB)/05%20Decisions" target="_blank" rel="noopener">GitHub</a> for the complete file.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public String getFullDescription() {
-        if (this.highTemperature &gt; 90) {
-            if (this.averageWindSpeed &gt; 10) {
-                return "Hot and Windy";
-            } else {
-                return "Hot";
-            }
-        } else if (this.highTemperature &gt; 70) {
-            if (this.averageWindSpeed &gt; 10) {
-                return "Warm and Windy";
-            } else {
-                return "Warm";
-            }
-        } else if (this.highTemperature &gt; 50) {
-            if (this.averageWindSpeed &gt; 10) {
-                return "Cool and Windy";
-            } else {
-                return "Cool";
-            }
-        } else {
-            if (this.averageWindSpeed &gt; 10) {
-                return "Cold and Windy";
-            } else {
-                return "Cold";
-            }
-        }
-    }</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getFullDescription</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">90</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Hot and Windy&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Hot&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">70</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Warm and Windy&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Warm&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">highTemperature</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">50</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cool and Windy&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cool&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span>
+<span class="tok-w">        </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">            </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-k">this</span><span class="tok-p">.</span><span class="tok-na">averageWindSpeed</span><span class="tok-w"> </span><span class="tok-o">&gt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cold and Windy&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">                </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Cold&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">            </span><span class="tok-p">}</span>
+<span class="tok-w">        </span><span class="tok-p">}</span>
+<span class="tok-w">    </span><span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="sidebarblock">
@@ -1035,9 +1107,9 @@ For example, we could check if a student is eligible for a scholarship based on 
 <div class="listingblock">
 <div class="title">Example of a decision using a logical AND operation.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">if (gpa &gt;= 3.5 &amp;&amp; age &lt; 25) {
-    System.out.println("You qualify for the scholarship!");
-}</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">gpa</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mf">3.5</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">age</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">25</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You qualify for the scholarship!&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1062,12 +1134,12 @@ Often, the logic we create using an AND operation can be implemented using neste
 <div class="listingblock">
 <div class="title">Example of a decision using a logical OR operation.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">boolean isTimAmazing = false;
-boolean isClassFun = true;
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isTimAmazing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isClassFun</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
 
-if (isTimAmazing || isClassFun) {
-    System.out.println("You should take this class!");
-}</code></pre>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">isTimAmazing</span><span class="tok-w"> </span><span class="tok-o">||</span><span class="tok-w"> </span><span class="tok-n">isClassFun</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;You should take this class!&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1091,11 +1163,11 @@ If the operand is <code>false</code>, the NOT operation will evaluate to <code>t
 <div class="listingblock">
 <div class="title">Example of a decision using a logical NOT operation.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">boolean isTimAmazing = false;
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isTimAmazing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span>
 
-if (!isTimAmazing) {
-    System.out.println("At least his mom still loves him!");
-}</code></pre>
+<span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-o">!</span><span class="tok-n">isTimAmazing</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;At least his mom still loves him!&quot;</span><span class="tok-p">);</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="sect3">
@@ -1110,21 +1182,21 @@ Range checking means we want to see if a value is within a certain range.</p>
 <div class="listingblock">
 <div class="title">Example of range checking using logical operators.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public String getLetterGrade(int percentage) {
-    if (percentage &gt;= 90 &amp;&amp; percentage &lt;= 100) {
-        return "A";
-    } else if (percentage &gt;= 80 &amp;&amp; percentage &lt; 90) {
-        return "B";
-    } else if (percentage &gt;= 70 &amp;&amp; percentage &lt; 80) {
-        return "C";
-    } else if (percentage &gt;= 60 &amp;&amp; percentage &lt; 70) {
-        return "D";
-    } else if (percentage &gt;= 0 &amp;&amp; percentage &lt; 60) {
-        return "F";
-    } else {
-        return "Invalid percentage";
-    }
-}</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-nf">getLetterGrade</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">90</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&lt;=</span><span class="tok-w"> </span><span class="tok-mi">100</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;A&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">80</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">90</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;B&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">70</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">80</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;C&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">60</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">70</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;D&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-k">if</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&gt;=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-w"> </span><span class="tok-o">&amp;&amp;</span><span class="tok-w"> </span><span class="tok-n">percentage</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">60</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;F&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">else</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-s">&quot;Invalid percentage&quot;</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1146,19 +1218,19 @@ And since you see them often in code written by others, it&#8217;s good to know 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">switch (expression) {
-    case value1:
-        // Code to be executed if expression equals value1
-        break;
-    case value2:
-        // Code to be executed if expression equals value2
-        break;
-    case value3:
-        // Code to be executed if expression equals value3
-        break;
-    default:
-        // Code to be executed if expression doesn't match any case
-}</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">switch</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">expression</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-n">value1</span><span class="tok-p">:</span>
+<span class="tok-w">        </span><span class="tok-c1">// Code to be executed if expression equals value1</span>
+<span class="tok-w">        </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-n">value2</span><span class="tok-p">:</span>
+<span class="tok-w">        </span><span class="tok-c1">// Code to be executed if expression equals value2</span>
+<span class="tok-w">        </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-n">value3</span><span class="tok-p">:</span>
+<span class="tok-w">        </span><span class="tok-c1">// Code to be executed if expression equals value3</span>
+<span class="tok-w">        </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">    </span><span class="tok-k">default</span><span class="tok-p">:</span>
+<span class="tok-w">        </span><span class="tok-c1">// Code to be executed if expression doesn&#39;t match any case</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1173,21 +1245,21 @@ This can be useful in some situations, but it&#8217;s generally not what you wan
 <div class="listingblock">
 <div class="title">Example of a <code>switch</code> statement.</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">public void trafficInstructions(String lightColor) {
-    switch (lightColor) {
-        case "red":
-            System.out.println("Stop!");
-            break;
-        case "yellow":
-            System.out.println("Slow down!");
-            break;
-        case "green":
-            System.out.println("Go!");
-            break;
-        default:
-            System.out.println("Invalid light color.");
-    }
-}</code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">trafficInstructions</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">lightColor</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">    </span><span class="tok-k">switch</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">lightColor</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">        </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-s">&quot;red&quot;</span><span class="tok-p">:</span>
+<span class="tok-w">            </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Stop!&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">            </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-s">&quot;yellow&quot;</span><span class="tok-p">:</span>
+<span class="tok-w">            </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Slow down!&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">            </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-k">case</span><span class="tok-w"> </span><span class="tok-s">&quot;green&quot;</span><span class="tok-p">:</span>
+<span class="tok-w">            </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Go!&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">            </span><span class="tok-k">break</span><span class="tok-p">;</span>
+<span class="tok-w">        </span><span class="tok-k">default</span><span class="tok-p">:</span>
+<span class="tok-w">            </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Invalid light color.&quot;</span><span class="tok-p">);</span>
+<span class="tok-w">    </span><span class="tok-p">}</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 </div>
@@ -1254,11 +1326,7 @@ This can be useful in some situations, but it&#8217;s generally not what you wan
 </div>
 <div id="footer">
 <div id="footer-text">
-<<<<<<< HEAD
-Last updated 2025-03-15 11:24:51 -0700
-=======
-Last updated 2025-03-15 19:54:19 -0700
->>>>>>> fb6260d (html fixes)
+Last updated 2025-03-15 20:00:28 -0700
 </div>
 </div>
 </body>
