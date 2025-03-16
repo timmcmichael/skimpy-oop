@@ -5,7 +5,10 @@
 
 :figure-caption!:
 
+<<<<<<< HEAD
 // image::https://timmcmichael.github.io/skimpy-oop/Skimpy_OOP_Cover.png[title="Image created with the assistance of DALL-E 2",width=400]
+=======
+>>>>>>> fb6260d (html fixes)
 image::Skimpy_OOP_Cover.png[title="Image created with the assistance of DALL-E 2",width=400]
 
 :figure-caption: Figure
