@@ -50,7 +50,7 @@ If you're a sports fan, I have a better analogy.
 A quarterback and a coach could have a language based completely on numbers.
 The coach tells the QB "22" and the QB knows which play to run, because they've agreed on what instruction (play) the number 22 means--and there are football teams that do exactly this.
 
-Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of 22) and the QB would have to know binary numbers (or have them written on his wrist-band thing as a cheatsheet).
+Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of twenty two) and the QB would have to know binary numbers (or have them written on his wrist-band thing as a cheatsheet).
 
 Want to take the analogy one step further?
 A player standing on the sideline with their helmet on could represent a 1, and a player with their helmet off could represent a 0.
