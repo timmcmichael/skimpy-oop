@@ -150,13 +150,14 @@ The data for our program--the stuff we're keeping track of--is stored somewhere 
 If a procedure needs something to complete its task, that data is sent to the procedure, which then sends back a result. 
 In short, information is kept separate from the code that uses it and is passed back and forth as necessary.
 
+:xrefstyle: short
+
+In <<passing-data>>, the _main procedure_ passes the values `5` and `4` to the _adding procedure_, which uses that information to calculate the sum `9` and return it to the _main procedure_. The _subtracting procedure_ also requires two numbers. `10` and `3` are passed to that procedure, which returns `7` to the _main procedure_.
+
 .Passing data in procedural programming
 [#passing-data]
 image::ProceduralProgramming.png[Diagram of data passing in procedural programming, 400]
 
-:xrefstyle: short
-
-In <<passing-data>>, the _main procedure_ passes the values `5` and `4` to the _adding procedure_, which uses that information to calculate the sum `9` and return it to the _main procedure_. The _subtracting procedure_ also requires two numbers. `10` and `3` are passed to that procedure, which returns `7` to the _main procedure_.
 
 :xrefstyle: basic
 
