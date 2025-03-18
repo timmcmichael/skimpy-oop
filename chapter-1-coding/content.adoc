@@ -100,13 +100,13 @@ That's called *interpreting* instead of compiling, but it's conceptually the sam
 The C programming language is an example of a compiled language, and Python is an example of an interpreted language. 
 
 Java is an interesting case, because it's both compiled *and* interpreted. 
-The JDK compiles your source code into an intermediate language called *bytecode*. 
+The JDK compiles our source code into an intermediate language called *bytecode*. 
 To execute the program, you use the Java Runtime Environment to interpret that bytecode file as it executes.
 
 Bytecode is very close to machine language. 
 In fact, it's basically a "virtual machine language"--a machine language for a CPU that doesn't actually exist. 
 This approach allows Java to be cross-platform (runnable on many different machines). 
-A compiled machine language file only works on a computer that "speaks" the same machine language, but if you compile your program to a bytecode file, it'll run on any computer that has the Java Runtime Environment installed--and that will interpret the bytecode as it executes. 
+A compiled machine language file only works on a computer that "speaks" the same machine language, but if we compile our program to a bytecode file, it'll run on any computer that has the Java Runtime Environment installed--and that will interpret the bytecode as it executes. 
 This "write once, run anywhere" ability contributes greatly to Java's popularity.
 
 === Programming Paradigms
@@ -183,7 +183,7 @@ For big or small projects, a good general approach to software development is:
 Analysis:: Identify the goals and scope of the program. As a rule, keep it small and focused--you can always add features later. *Ask yourself, _What does this program need to do?_*
 Testing Plan:: Determine how the final program will be tested. The testing plan will be useful, but most importantly, taking the time to establish a specific testing plan ensures that you thoroughly understand the program before you begin writing code. If you don't know how the program will work, you're not yet ready to begin coding. *Ask yourself, _How will I make sure the program works correctly?_*
 Implementation:: Write and test the code. We say that this is an _iterative_ (or "repeating") process, meaning you'll write and test one small piece, staying with it until you know it's good. Then you'll move on to the next piece and repeat. *Ask yourself, _What code do I need in order to get the next part of the program working?_*
-Revise or maintain:: If your needs or program requirements change, you'll need to go back to the first step and begin planning the next version. If not, you'll need to monitor that the program continues to perform as expected over time. *Ask yourself, _What's next for this program?_*
+Revise or maintain:: If our needs or program requirements change, we'll need to go back to the first step and begin planning the next version. If not, we'll need to monitor that the program continues to perform as expected over time. *Ask yourself, _What's next for this program?_*
 
 We'll flesh out this process as we go--and as our programs become more advanced.
 
