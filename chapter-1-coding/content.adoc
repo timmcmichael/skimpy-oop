@@ -189,7 +189,7 @@ We'll flesh out this process as we go--and as our programs become more advanced.
 
 === First Java Program
 
-Enough of that, let's try writing some code.
+Enough of that, let's write some code!
 
 One of the (valid) criticisms of Java as a choice for beginners is that it's a little complicated to create our first program. 
 In Python, we just open a file and write our first command; in recent versions, C# has added that ability as well.
