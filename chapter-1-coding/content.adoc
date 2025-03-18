@@ -50,7 +50,7 @@ If you're a sports fan, I have a better analogy.
 A quarterback and a coach could have a language based completely on numbers.
 The coach tells the QB "22" and the QB knows which play to run, because they've agreed on what instruction (play) the number 22 means--and there are football teams that do exactly this.
 
-Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of twenty two) and the QB would have to know binary numbers (or have them written on his wrist-band thing as a cheatsheet).
+Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of twenty two) and the QB would have to know binary numbers,or have them written on his wrist-band thing as a cheatsheet.
 
 Want to take the analogy one step further?
 A player standing on the sideline with their helmet on could represent a 1, and a player with their helmet off could represent a 0.
@@ -63,7 +63,7 @@ Let's see...
 
 Remember that a computer can execute commands super fast.
 Each command, or *instruction* (like a football play), is represented by a number--a binary number, since that's the number system the computer uses.
-The collection of these instructions the computer understands is called *machine language*.
+The collection of instructions the computer understands is called *machine language*.
 
 .Interesting!
 ****
@@ -83,7 +83,7 @@ NOTE: There are many, many programming languages. https://en.wikipedia.org/wiki/
 
 The instructions you write using a programming language are called *source code*.
 Translating source code file to a machine language file that can be executed is called *compiling*, and is done by an application called a compiler.
-When the computer runs the program, it's using that machine language translation created by the compiler.
+When the computer runs the program, it's using the machine language translation created by the compiler.
 Clicking on the icon to open Microsoft Word runs a file that's been compiled from source code.
 
 .Time To Watch!
@@ -95,7 +95,7 @@ video::yR939VDXPaM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=3]
 ****
 
 Some programming languages don't get translated ahead of time--they get translated "on the fly," as the program is running.
-That's called *interpreting* instead of compiling.
+That's called *interpreting* instead of compiling, but it's conceptually the same thing.
 
 The C programming language is an example of a compiled language, and Python is an example of an interpreted language. 
 
