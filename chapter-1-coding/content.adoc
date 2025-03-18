@@ -240,7 +240,7 @@ But for now, we're off and running!
 
 The first programs we create in Java are _console_ programs--they are text-based programs that can't really display any graphics.
 To start with, we'll use two basic ways to output text to the console: `System.out.print()` and `System.out.println()` statements.
-`print()` outputs whatever is in the parentheses, and we'll need to put that text in quotation marks:
+`print()` outputs whatever text is in the parentheses, and we'll need to put that text in quotation marks:
 
 `System.out.print("Mick Jagger");`
 
@@ -250,7 +250,7 @@ This is just like if we type something in a word processor but don't hit enter; 
 In the same way, the next output statement will continue on the same line in the console.
 
 A `println()` statement works exactly the same way, but it advances the cursor to the next line when it's finished.
-Basically, it hits enter, and the next output statement will be on a new line.
+Basically, it hits _enter_, and the next output statement will begin on a new line.
 
 .Interesting!
 ****
@@ -281,10 +281,10 @@ As the Rolling Stones might say,you can't always
 get what you want
 ----
 
-After the `print()` statement executes, the cursor is still sitting right after the comma following *say*, so when the next line of code outputs _*you can't always*_, that output just gets jammed onto the end. 
+After the `print()` statement executes, the cursor is still sitting right after the comma following *say*, so when the next line of code outputs *_you can't always_*, that output just gets jammed onto the end. 
 Notice that it doesn't even add a space; if we want a space there, we have to include it within our quotation marks.
 
-Because _*you can't always*_ is in a `println()` statement, the cursor advances and _*get what you want*_ is on a new line.
+Because *_you can't always_* is in a `println()` statement, the cursor advances and *_get what you want_* is on a new line.
 
 We'll use `print()` and `println()` in every Java program we write for quite a while, so it's important to take time to experiment with them on our own to make sure we understand how they work.
 
@@ -293,7 +293,7 @@ We'll use `print()` and `println()` in every Java program we write for quite a w
 The Java compiler goes through our source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn't understand, which causes it to stop and output an error message).
 If there's something in our source code we don't want the compiler to process, we can identify it as a _code comment_ and the compiler will ignore it.
 Code comments are generally used to provide information for any humans who might be looking at the code.
-And since it's ignored by the compiler, it can be written however we want; so our code comments should be written in plain human language (english, if we're submitting it to me).
+And since it's ignored by the compiler, it can be written however we want; so our code comments should be written in plain human language (English, if we're submitting it to me).
 To indicate a comment, use two slashes:
 
 `// This is a comment!`
