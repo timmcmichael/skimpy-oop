@@ -239,7 +239,7 @@ But for now, we're off and running!
 === Basic Output
 
 The first programs we create in Java are _console_ programs--they are text-based programs that can't really display any graphics.
-Start start with, we'll use two basic ways to output text to the console: `System.out.print()` and `System.out.println()` statements.
+To start with, we'll use two basic ways to output text to the console: `System.out.print()` and `System.out.println()` statements.
 `print()` outputs whatever is in the parentheses, and we'll need to put that text in quotation marks:
 
 `System.out.print("Mick Jagger");`
