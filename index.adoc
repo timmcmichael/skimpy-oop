@@ -124,7 +124,7 @@ include::chapter-10-swing/content.adoc[]
 
 include::back-matter/content.adoc[]
 
-// TODO: Fix xrefs throughout
+// TODO: Fix xrefs to figures/code throughout - use :xrefstyle: short and then reset to :xrefstyle: basic
 // TODO: Check chapters to see if Labs can be completed with partial reading/viewing
 // TODO: Check all GitHub file links
 // TODO: Canvas - update overview competencies to match book/videos
