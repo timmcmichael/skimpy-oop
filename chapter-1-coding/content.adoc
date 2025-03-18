@@ -180,7 +180,7 @@ And when we are faced with solving a programming problem that really intimidates
 
 For big or small projects, a good general approach to software development is:
 
-Analysis:: Identify the goals and scope of the program. As a rule, keep it small and focused--you can always add features later. *Ask yourself, _What does this program need to do?_*
+Analysis:: Identify the goals and scope of the program. As a rule, keep it small and focused--we can always add features later. *Ask yourself, _What does this program need to do?_*
 Testing Plan:: Determine how the final program will be tested. The testing plan will be useful, but most importantly, taking the time to establish a specific testing plan ensures that you thoroughly understand the program before you begin writing code. If you don't know how the program will work, you're not yet ready to begin coding. *Ask yourself, _How will I make sure the program works correctly?_*
 Implementation:: Write and test the code. We say that this is an _iterative_ (or "repeating") process, meaning you'll write and test one small piece, staying with it until you know it's good. Then you'll move on to the next piece and repeat. *Ask yourself, _What code do I need in order to get the next part of the program working?_*
 Revise or maintain:: If our needs or program requirements change, we'll need to go back to the first step and begin planning the next version. If not, we'll need to monitor that the program continues to perform as expected over time. *Ask yourself, _What's next for this program?_*
