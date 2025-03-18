@@ -29,19 +29,6 @@ Visual Studio Code, eclipse, IntelliJ, and many others.
 
 ==== Computers and Coding
 
-// [qanda]
-// What tool converts your programming into something the computer can run?::
-// A compiler (or, in some cases, interpreter)
-
-// What is the name of the instruction set, specific to each computer type, that a computer can understand and execute?::
-// Machine language
-
-// What are some advantages of using an organized software development process?::
-// Keeps you focused, breaks up a complicated problem/program, etc.
-
-// What programming paradigm bundles procedures with the data they use?::
-// Object-oriented programming (OOP)
-
 [qanda]
 *What is the primary role of a programming language in the context of computer programming?*::
 The primary role of a programming language is to act as a bridge between human language and machine language. It allows humans to write instructions in a way that is easier for them to understand and use, which can then be accurately translated into machine language that a computer can execute.

@@ -50,7 +50,7 @@ If you're a sports fan, I have a better analogy.
 A quarterback and a coach could have a language based completely on numbers.
 The coach tells the QB "22" and the QB knows which play to run, because they've agreed on what instruction (play) the number 22 means--and there are football teams that do exactly this.
 
-Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of 22) and the QB would have to know binary numbers (or have them written on his wrist-band thing as a cheatsheet).
+Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of twenty two) and the QB would have to know binary numbers,or have them written on his wrist-band thing as a cheatsheet.
 
 Want to take the analogy one step further?
 A player standing on the sideline with their helmet on could represent a 1, and a player with their helmet off could represent a 0.
@@ -63,7 +63,7 @@ Let's see...
 
 Remember that a computer can execute commands super fast.
 Each command, or *instruction* (like a football play), is represented by a number--a binary number, since that's the number system the computer uses.
-The collection of these instructions the computer understands is called *machine language*.
+The collection of instructions the computer understands is called *machine language*.
 
 .Interesting!
 ****
@@ -83,7 +83,7 @@ NOTE: There are many, many programming languages. https://en.wikipedia.org/wiki/
 
 The instructions you write using a programming language are called *source code*.
 Translating source code file to a machine language file that can be executed is called *compiling*, and is done by an application called a compiler.
-When the computer runs the program, it's using that machine language translation created by the compiler.
+When the computer runs the program, it's using the machine language translation created by the compiler.
 Clicking on the icon to open Microsoft Word runs a file that's been compiled from source code.
 
 .Time To Watch!
@@ -95,18 +95,18 @@ video::yR939VDXPaM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=3]
 ****
 
 Some programming languages don't get translated ahead of time--they get translated "on the fly," as the program is running.
-That's called *interpreting* instead of compiling.
+That's called *interpreting* instead of compiling, but it's conceptually the same thing.
 
 The C programming language is an example of a compiled language, and Python is an example of an interpreted language. 
 
 Java is an interesting case, because it's both compiled *and* interpreted. 
-The JDK compiles your source code into an intermediate language called *bytecode*. 
+The JDK compiles our source code into an intermediate language called *bytecode*. 
 To execute the program, you use the Java Runtime Environment to interpret that bytecode file as it executes.
 
 Bytecode is very close to machine language. 
 In fact, it's basically a "virtual machine language"--a machine language for a CPU that doesn't actually exist. 
 This approach allows Java to be cross-platform (runnable on many different machines). 
-A compiled machine language file only works on a computer that "speaks" the same machine language, but if you compile your program to a bytecode file, it'll run on any computer that has the Java Runtime Environment installed--and that will interpret the bytecode as it executes. 
+A compiled machine language file only works on a computer that "speaks" the same machine language, but if we compile our program to a bytecode file, it'll run on any computer that has the Java Runtime Environment installed--and that will interpret the bytecode as it executes. 
 This "write once, run anywhere" ability contributes greatly to Java's popularity.
 
 === Programming Paradigms
@@ -180,16 +180,16 @@ And when we are faced with solving a programming problem that really intimidates
 
 For big or small projects, a good general approach to software development is:
 
-Analysis:: Identify the goals and scope of the program. As a rule, keep it small and focused--you can always add features later. *Ask yourself, _What does this program need to do?_*
+Analysis:: Identify the goals and scope of the program. As a rule, keep it small and focused--we can always add features later. *Ask yourself, _What does this program need to do?_*
 Testing Plan:: Determine how the final program will be tested. The testing plan will be useful, but most importantly, taking the time to establish a specific testing plan ensures that you thoroughly understand the program before you begin writing code. If you don't know how the program will work, you're not yet ready to begin coding. *Ask yourself, _How will I make sure the program works correctly?_*
 Implementation:: Write and test the code. We say that this is an _iterative_ (or "repeating") process, meaning you'll write and test one small piece, staying with it until you know it's good. Then you'll move on to the next piece and repeat. *Ask yourself, _What code do I need in order to get the next part of the program working?_*
-Revise or maintain:: If your needs or program requirements change, you'll need to go back to the first step and begin planning the next version. If not, you'll need to monitor that the program continues to perform as expected over time. *Ask yourself, _What's next for this program?_*
+Revise or maintain:: If our needs or program requirements change, we'll need to go back to the first step and begin planning the next version. If not, we'll need to monitor that the program continues to perform as expected over time. *Ask yourself, _What's next for this program?_*
 
 We'll flesh out this process as we go--and as our programs become more advanced.
 
 === First Java Program
 
-Enough of that, let's try writing some code.
+Enough of that, let's write some code!
 
 One of the (valid) criticisms of Java as a choice for beginners is that it's a little complicated to create our first program. 
 In Python, we just open a file and write our first command; in recent versions, C# has added that ability as well.
@@ -239,8 +239,8 @@ But for now, we're off and running!
 === Basic Output
 
 The first programs we create in Java are _console_ programs--they are text-based programs that can't really display any graphics.
-Start start with, we'll use two basic ways to output text to the console: `System.out.print()` and `System.out.println()` statements.
-`print()` outputs whatever is in the parentheses, and we'll need to put that text in quotation marks:
+To start with, we'll use two basic ways to output text to the console: `System.out.print()` and `System.out.println()` statements.
+`print()` outputs whatever text is in the parentheses, and we'll need to put that text in quotation marks:
 
 `System.out.print("Mick Jagger");`
 
@@ -250,7 +250,7 @@ This is just like if we type something in a word processor but don't hit enter; 
 In the same way, the next output statement will continue on the same line in the console.
 
 A `println()` statement works exactly the same way, but it advances the cursor to the next line when it's finished.
-Basically, it hits enter, and the next output statement will be on a new line.
+Basically, it hits _enter_, and the next output statement will begin on a new line.
 
 .Interesting!
 ****
@@ -281,10 +281,10 @@ As the Rolling Stones might say,you can't always
 get what you want
 ----
 
-After the `print()` statement executes, the cursor is still sitting right after the comma following *say*, so when the next line of code outputs _*you can't always*_, that output just gets jammed onto the end. 
+After the `print()` statement executes, the cursor is still sitting right after the comma following *say*, so when the next line of code outputs *_you can't always_*, that output just gets jammed onto the end. 
 Notice that it doesn't even add a space; if we want a space there, we have to include it within our quotation marks.
 
-Because _*you can't always*_ is in a `println()` statement, the cursor advances and _*get what you want*_ is on a new line.
+Because *_you can't always_* is in a `println()` statement, the cursor advances and *_get what you want_* is on a new line.
 
 We'll use `print()` and `println()` in every Java program we write for quite a while, so it's important to take time to experiment with them on our own to make sure we understand how they work.
 
@@ -293,7 +293,7 @@ We'll use `print()` and `println()` in every Java program we write for quite a w
 The Java compiler goes through our source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn't understand, which causes it to stop and output an error message).
 If there's something in our source code we don't want the compiler to process, we can identify it as a _code comment_ and the compiler will ignore it.
 Code comments are generally used to provide information for any humans who might be looking at the code.
-And since it's ignored by the compiler, it can be written however we want; so our code comments should be written in plain human language (english, if we're submitting it to me).
+And since it's ignored by the compiler, it can be written however we want; so our code comments should be written in plain human language (English, if we're submitting it to me).
 To indicate a comment, use two slashes:
 
 `// This is a comment!`
@@ -305,8 +305,8 @@ We can add a comment onto the end of a line of code:
 
 The `println()` statement still gets processed and will execute when we run our program, but everything after the slashes gets ignored.
 
-To make a comment that takes up multiple lines, start the comment block with `/*` (that's a slash and an asterisk) and end it with `*/` (asterisk and a slash).
-When the compiler sees `/*` it will ignore everything until it finds `*/`, and then it will resume processing as usual.
+To make a comment that takes up multiple lines, start the comment block with `/{asterisk}` (that's a slash and an asterisk) and end it with `{asterisk}/` (asterisk and a slash).
+When the compiler sees `/{asterisk}` it will ignore everything until it finds `{asterisk}/`, and then it will resume processing as usual.
 
 [source,java]
 ----
@@ -314,7 +314,7 @@ When the compiler sees `/*` it will ignore everything until it finds `*/`, and t
 This program shows the difference between print() and println().
 It is referring to an old Rolling Stones song.
 
-Everything in this comment block will be ignored
+Everything in this comment block will be ignored.
 */
 public class OutputExample {
 

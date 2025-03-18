@@ -651,7 +651,7 @@ A quarterback and a coach could have a language based completely on numbers.
 The coach tells the QB "22" and the QB knows which play to run, because they&#8217;ve agreed on what instruction (play) the number 22 means&#8212;&#8203;and there are football teams that do exactly this.</p>
 </div>
 <div class="paragraph">
-<p>Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of 22) and the QB would have to know binary numbers (or have them written on his wrist-band thing as a cheatsheet).</p>
+<p>Sending that number to the quarterback as a binary number would be a lot less efficient because the coach would have to say "10110" (which is the binary representation of twenty two) and the QB would have to know binary numbers,or have them written on his wrist-band thing as a cheatsheet.</p>
 </div>
 <div class="paragraph">
 <p>Want to take the analogy one step further?
@@ -667,7 +667,7 @@ Let&#8217;s see&#8230;&#8203;</p>
 <div class="paragraph">
 <p>Remember that a computer can execute commands super fast.
 Each command, or <strong>instruction</strong> (like a football play), is represented by a number&#8212;&#8203;a binary number, since that&#8217;s the number system the computer uses.
-The collection of these instructions the computer understands is called <strong>machine language</strong>.</p>
+The collection of instructions the computer understands is called <strong>machine language</strong>.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -705,7 +705,7 @@ There are many, many programming languages. <a href="https://en.wikipedia.org/wi
 <div class="paragraph">
 <p>The instructions you write using a programming language are called <strong>source code</strong>.
 Translating source code file to a machine language file that can be executed is called <strong>compiling</strong>, and is done by an application called a compiler.
-When the computer runs the program, it&#8217;s using that machine language translation created by the compiler.
+When the computer runs the program, it&#8217;s using the machine language translation created by the compiler.
 Clicking on the icon to open Microsoft Word runs a file that&#8217;s been compiled from source code.</p>
 </div>
 <div class="sidebarblock">
@@ -723,21 +723,21 @@ Clicking on the icon to open Microsoft Word runs a file that&#8217;s been compil
 </div>
 <div class="paragraph">
 <p>Some programming languages don&#8217;t get translated ahead of time&#8212;&#8203;they get translated "on the fly," as the program is running.
-That&#8217;s called <strong>interpreting</strong> instead of compiling.</p>
+That&#8217;s called <strong>interpreting</strong> instead of compiling, but it&#8217;s conceptually the same thing.</p>
 </div>
 <div class="paragraph">
 <p>The C programming language is an example of a compiled language, and Python is an example of an interpreted language.</p>
 </div>
 <div class="paragraph">
 <p>Java is an interesting case, because it&#8217;s both compiled <strong>and</strong> interpreted.
-The JDK compiles your source code into an intermediate language called <strong>bytecode</strong>.
+The JDK compiles our source code into an intermediate language called <strong>bytecode</strong>.
 To execute the program, you use the Java Runtime Environment to interpret that bytecode file as it executes.</p>
 </div>
 <div class="paragraph">
 <p>Bytecode is very close to machine language.
 In fact, it&#8217;s basically a "virtual machine language"--a machine language for a CPU that doesn&#8217;t actually exist.
 This approach allows Java to be cross-platform (runnable on many different machines).
-A compiled machine language file only works on a computer that "speaks" the same machine language, but if you compile your program to a bytecode file, it&#8217;ll run on any computer that has the Java Runtime Environment installed&#8212;&#8203;and that will interpret the bytecode as it executes.
+A compiled machine language file only works on a computer that "speaks" the same machine language, but if we compile our program to a bytecode file, it&#8217;ll run on any computer that has the Java Runtime Environment installed&#8212;&#8203;and that will interpret the bytecode as it executes.
 This "write once, run anywhere" ability contributes greatly to Java&#8217;s popularity.</p>
 </div>
 </div>
@@ -844,7 +844,7 @@ And when we are faced with solving a programming problem that really intimidates
 <dl>
 <dt class="hdlist1">Analysis</dt>
 <dd>
-<p>Identify the goals and scope of the program. As a rule, keep it small and focused&#8212;&#8203;you can always add features later. <strong>Ask yourself, <em>What does this program need to do?</em></strong></p>
+<p>Identify the goals and scope of the program. As a rule, keep it small and focused&#8212;&#8203;we can always add features later. <strong>Ask yourself, <em>What does this program need to do?</em></strong></p>
 </dd>
 <dt class="hdlist1">Testing Plan</dt>
 <dd>
@@ -856,7 +856,7 @@ And when we are faced with solving a programming problem that really intimidates
 </dd>
 <dt class="hdlist1">Revise or maintain</dt>
 <dd>
-<p>If your needs or program requirements change, you&#8217;ll need to go back to the first step and begin planning the next version. If not, you&#8217;ll need to monitor that the program continues to perform as expected over time. <strong>Ask yourself, <em>What&#8217;s next for this program?</em></strong></p>
+<p>If our needs or program requirements change, we&#8217;ll need to go back to the first step and begin planning the next version. If not, we&#8217;ll need to monitor that the program continues to perform as expected over time. <strong>Ask yourself, <em>What&#8217;s next for this program?</em></strong></p>
 </dd>
 </dl>
 </div>
@@ -867,7 +867,7 @@ And when we are faced with solving a programming problem that really intimidates
 <div class="sect2">
 <h3 id="_first_java_program">1.4. First Java Program</h3>
 <div class="paragraph">
-<p>Enough of that, let&#8217;s try writing some code.</p>
+<p>Enough of that, let&#8217;s write some code!</p>
 </div>
 <div class="paragraph">
 <p>One of the (valid) criticisms of Java as a choice for beginners is that it&#8217;s a little complicated to create our first program.
@@ -950,8 +950,8 @@ But for now, we&#8217;re off and running!</p>
 <h3 id="_basic_output">1.5. Basic Output</h3>
 <div class="paragraph">
 <p>The first programs we create in Java are <em>console</em> programs&#8212;&#8203;they are text-based programs that can&#8217;t really display any graphics.
-Start start with, we&#8217;ll use two basic ways to output text to the console: <code>System.out.print()</code> and <code>System.out.println()</code> statements.
-<code>print()</code> outputs whatever is in the parentheses, and we&#8217;ll need to put that text in quotation marks:</p>
+To start with, we&#8217;ll use two basic ways to output text to the console: <code>System.out.print()</code> and <code>System.out.println()</code> statements.
+<code>print()</code> outputs whatever text is in the parentheses, and we&#8217;ll need to put that text in quotation marks:</p>
 </div>
 <div class="paragraph">
 <p><code>System.out.print("Mick Jagger");</code></p>
@@ -964,7 +964,7 @@ In the same way, the next output statement will continue on the same line in the
 </div>
 <div class="paragraph">
 <p>A <code>println()</code> statement works exactly the same way, but it advances the cursor to the next line when it&#8217;s finished.
-Basically, it hits enter, and the next output statement will be on a new line.</p>
+Basically, it hits <em>enter</em>, and the next output statement will begin on a new line.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -1001,11 +1001,11 @@ get what you want</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>After the <code>print()</code> statement executes, the cursor is still sitting right after the comma following <strong>say</strong>, so when the next line of code outputs <em>*you can&#8217;t always*</em>, that output just gets jammed onto the end.
+<p>After the <code>print()</code> statement executes, the cursor is still sitting right after the comma following <strong>say</strong>, so when the next line of code outputs <strong><em>you can&#8217;t always</em></strong>, that output just gets jammed onto the end.
 Notice that it doesn&#8217;t even add a space; if we want a space there, we have to include it within our quotation marks.</p>
 </div>
 <div class="paragraph">
-<p>Because <em>*you can&#8217;t always*</em> is in a <code>println()</code> statement, the cursor advances and <em>*get what you want*</em> is on a new line.</p>
+<p>Because <strong><em>you can&#8217;t always</em></strong> is in a <code>println()</code> statement, the cursor advances and <strong><em>get what you want</em></strong> is on a new line.</p>
 </div>
 <div class="paragraph">
 <p>We&#8217;ll use <code>print()</code> and <code>println()</code> in every Java program we write for quite a while, so it&#8217;s important to take time to experiment with them on our own to make sure we understand how they work.</p>
@@ -1017,7 +1017,7 @@ Notice that it doesn&#8217;t even add a space; if we want a space there, we have
 <p>The Java compiler goes through our source code file line by line, translating all of the code into something that we can execute (unless it finds something it doesn&#8217;t understand, which causes it to stop and output an error message).
 If there&#8217;s something in our source code we don&#8217;t want the compiler to process, we can identify it as a <em>code comment</em> and the compiler will ignore it.
 Code comments are generally used to provide information for any humans who might be looking at the code.
-And since it&#8217;s ignored by the compiler, it can be written however we want; so our code comments should be written in plain human language (english, if we&#8217;re submitting it to me).
+And since it&#8217;s ignored by the compiler, it can be written however we want; so our code comments should be written in plain human language (English, if we&#8217;re submitting it to me).
 To indicate a comment, use two slashes:</p>
 </div>
 <div class="paragraph">
@@ -1034,8 +1034,8 @@ We can add a comment onto the end of a line of code:</p>
 <p>The <code>println()</code> statement still gets processed and will execute when we run our program, but everything after the slashes gets ignored.</p>
 </div>
 <div class="paragraph">
-<p>To make a comment that takes up multiple lines, start the comment block with <code>/<strong></code> (that&#8217;s a slash and an asterisk) and end it with <code></strong>/</code> (asterisk and a slash).
-When the compiler sees <code>/<strong></code> it will ignore everything until it finds <code></strong>/</code>, and then it will resume processing as usual.</p>
+<p>To make a comment that takes up multiple lines, start the comment block with <code>/*</code> (that&#8217;s a slash and an asterisk) and end it with <code>*/</code> (asterisk and a slash).
+When the compiler sees <code>/*</code> it will ignore everything until it finds <code>*/</code>, and then it will resume processing as usual.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1043,7 +1043,7 @@ When the compiler sees <code>/<strong></code> it will ignore everything until it
 <span class="tok-cm">This program shows the difference between print() and println().</span>
 <span class="tok-cm">It is referring to an old Rolling Stones song.</span>
 
-<span class="tok-cm">Everything in this comment block will be ignored</span>
+<span class="tok-cm">Everything in this comment block will be ignored.</span>
 <span class="tok-cm">*/</span>
 <span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">OutputExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
