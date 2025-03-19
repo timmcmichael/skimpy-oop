@@ -353,7 +353,7 @@ Instead of deleting code that's not working the way we want, we can just mark it
 As far as the compiler is concerned, we've deleted the code.
 But if we want to see or use the code again down the road, it's still there.
 
-TIP: Many IDEs have a keyboard shortcut for commenting out code. In Visual Studio Code, highlight a section of code and press *alt-/* (or *⌘-/* on macOS) and VS Code will add `//` at the start of each line. Highlighting a comment and pressing the shortcut again will "uncomment" it and remove the slashes. Other IDEs provide similar functionality.
+TIP: Almost all IDEs have a keyboard shortcut for commenting out code--and in most, it's the same shortcut. Highlight a section of code and press kbd:[Alt,/] on Windows or kbd:[⌘,/] on macOS, and many IDEs will add `//` at the start of each line. Highlighting a comment and pressing the shortcut again will usually "uncomment" it and remove the slashes. If that doesn't work, check the IDE's documentation to see if there's a different shortcut.
 
 '''
 
