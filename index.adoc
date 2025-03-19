@@ -16,7 +16,7 @@ image::Skimpy_OOP_Cover.png[title="Image created with the assistance of DALL-E 2
 :toclevels: 2
 :icons: font
 :source-highlighter: pygments
-// :pygments-style: monokai
+:pygments-style: monokai
 // :plantuml-theme: crt-green
 :multipage-level: 1
 :chapter-number: -1
@@ -126,6 +126,9 @@ include::chapter-10-swing/content.adoc[]
 
 include::back-matter/content.adoc[]
 
+// TODO: Add chapter/example numbers to all code listings
+// TODO: Use .... blocks for output
+// TODO: Confirm that all example file names are enclosed in backticks
 // TODO: Fix xrefs to figures/code throughout - use :xrefstyle: short and then reset to :xrefstyle: basic
 // TODO: Check chapters to see if Labs can be completed with partial reading/viewing
 // TODO: Check all GitHub file links

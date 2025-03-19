@@ -219,7 +219,7 @@ File from video:
 
 Take a look at the code for a basic "Hello World" program; we'll learn what all of these pieces are as we go, but we should at least identify them now.
 
-.HelloWorld.java - Hello World program in Java
+.`HelloWorld.java` - Hello World program in Java
 [source,java]
 ----
 public class HelloWorld { <.>
@@ -266,7 +266,7 @@ println() works by outputting the text inside the parentheses and then outputtin
 
 To understand the difference between `print()` and `println()`, consider this program.
 
-.OutputExample.java - Simple console output in Java
+.`OutputExample.java` - Simple console output in Java
 [source,java]
 ----
 public class OutputExample {
@@ -282,11 +282,11 @@ public class OutputExample {
 
 The program produces the following output:
 
-[source]
-----
+
+....
 As the Rolling Stones might say,you can't always
 get what you want
-----
+....
 
 After the `print()` statement executes, the cursor is still sitting right after the comma following *say*, so when the next line of code outputs *_you can't always_*, that output just gets jammed onto the end. 
 Notice that it doesn't even add a space; if we want a space there, we have to include it within our quotation marks.
@@ -308,13 +308,18 @@ To indicate a comment, use two slashes:
 Once the compiler sees two slashes, it just ignores the rest of the line.
 We can add a comment onto the end of a line of code:
 
-`System.out.println("Hello World"); // this outputs text to the console`
+.Inline comment placed at the end of a line of code
+[source,java]
+----
+System.out.println("Hello World"); // this outputs text to the console
+----
 
 The `println()` statement still gets processed and will execute when we run our program, but everything after the slashes gets ignored.
 
 To make a comment that takes up multiple lines, start the comment block with `/{asterisk}` (that's a slash and an asterisk) and end it with `{asterisk}/` (asterisk and a slash).
 When the compiler sees `/{asterisk}` it will ignore everything until it finds `{asterisk}/`, and then it will resume processing as usual.
 
+.Multi-line comment block
 [source,java]
 ----
 /*
