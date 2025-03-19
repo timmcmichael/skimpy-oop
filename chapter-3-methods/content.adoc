@@ -234,7 +234,6 @@ A parameter is a variable that exists in the method and receives the argument, a
 The methods we've defined so far didn't need any information, so we haven't been putting anything in the parentheses--but now let's see an example with a parameter.
 
 .ParameterExample.java - Defining a parameter and passing in an argument
-
 [source,java]
 ----
 public class ParameterExample {

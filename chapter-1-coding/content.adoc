@@ -220,7 +220,6 @@ File from video:
 Take a look at the code for a basic "Hello World" program; we'll learn what all of these pieces are as we go, but we should at least identify them now.
 
 .HelloWorld.java - Hello World program in Java
-
 [source,java]
 ----
 public class HelloWorld { <.>
