@@ -38,8 +38,7 @@ variable:: A piece of data that may change (or "vary") during program execution.
 
 In our `Hello World` code, the letters and characters we output are _constant_ data.
 
-.HelloWorld.java
-
+.`HelloWorld.java`
 [source,java]
 ----
 public class HelloWorld {
@@ -106,7 +105,11 @@ Files from video:
 === Java Identifiers
 Variable names (more properly called variable _identifiers_) are the character sequences that identify a variable.
 There are a few rules that determine whether or not an identifier is valid:
-* The first character must be an uppercase or lowercase letter, an underscore (_), or a dollar sign ($).
+
+* Can contain letters, digits, underscores (_), and/or dollar signs ($)
+* The first character *can't* be a digit.
+* Can' no't contain whitespaces (tab, space, etc.)
+* Can't be a Java keyword or reserved word (words that are used in the Java language, like `double` or `public`)
 
 In addition to those technical rules about identifier names, the convention in Java is to use descriptive names in "camel case" format, as described in the preceding video. 
 Single-letter variable names, like `x` for a number, are fine in your math class, but are generally *not* okay when you're coding.
@@ -138,7 +141,6 @@ The other floating-point data type in Java is called `float`.
 It's called "single" in some programming languages, which helps understand where the name `double` comes from: `double` uses twice as much memory (64 bits) as a `float` or "single" (32 bits)--and therefore its range of values is twice as big. Be aware that to make a `float` number in Java, you have to add the letter F (in capital or lowercase form) at the end of the number.
 
 .Examples of numeric variable declarations
-
 [source,java]
 ----
 int myAge = 21;
@@ -182,7 +184,6 @@ The best practice is to name a `boolean` variable in a way that expresses this e
 That is to say, we usually name our `boolean` variables using words like _is_, _has_, _can_, and so on.
 
 .Examples of Boolean variable declarations
-
 [source,java]
 ----
 boolean isPassing = true;
@@ -197,7 +198,6 @@ If we want to store a single character, like a student's letter grade or their f
 Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol--or some other weird stuff, too.
 
 .Examples of character variable declarations
-
 [source,java]
 ----
 char myLetterGrade = 'A';
@@ -228,7 +228,6 @@ For now, a really important thing to notice and remember is that primitive types
 `String` literals are denoted with double quotation marks.
 
 .Examples of `String` variable declarations
-
 [source, java]
 ----
 String address = "3000 N. Dysart Road";
@@ -250,7 +249,6 @@ To create a constant, add the keyword `final` at the start of your statement, fo
 So that people looking at your code can easily tell it's a constant rather than a variable, it should be named with all capital letters, using the underscore character to separate words.
 
 .Examples of constant declarations
-
 [source, java]
 ----
 final double SALES_TAX_RATE = 8.7;
@@ -273,7 +271,6 @@ The naming convention used for Java constants is called *snake case*. More speci
 
 Assigning a value to a variable or constant does not produce any output.
 If we want to display the output of a variable--or a constant--we just put the identifier in a `print()` or `println()` statement without any quotation marks:
-
 [source,java]
 ----
 String artistName = "Sam Cooke";
@@ -286,7 +283,6 @@ System.out.println(birthYear);
 
 This code output `Sam Cooke was born in 1931`.
 We can combine output into one statement by creating a string with multiple pieces using the `+` symbol.
-
 [source,java]
 ----
 String artistName = "Sam Cooke";
@@ -328,7 +324,6 @@ The arithmetic operators work pretty much the way you'd expect, except maybe _mo
 Each operator acts on the value to either side:
 
 .Examples of simple arithmetic operations
-
 [source,java]
 ----
 int sum = 5 + 7; <.> 
@@ -361,7 +356,6 @@ We call this _operator precedence_, and here are the guidlines:
 Consider the following examples:
 
 .Examples of operator precedence
-
 [source, java]
 ----
 int result1 = 17 - 4 * 6 / 3; <.>
