@@ -105,7 +105,11 @@ Files from video:
 === Java Identifiers
 Variable names (more properly called variable _identifiers_) are the character sequences that identify a variable.
 There are a few rules that determine whether or not an identifier is valid:
-* The first character must be an uppercase or lowercase letter, an underscore (_), or a dollar sign ($).
+
+* Can contain letters, digits, underscores (_), and/or dollar signs ($)
+* The first character *can't* be a digit.
+* Can' no't contain whitespaces (tab, space, etc.)
+* Can't be a Java keyword or reserved word (words that are used in the Java language, like `double` or `public`)
 
 In addition to those technical rules about identifier names, the convention in Java is to use descriptive names in "camel case" format, as described in the preceding video. 
 Single-letter variable names, like `x` for a number, are fine in your math class, but are generally *not* okay when you're coding.
