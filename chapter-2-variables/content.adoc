@@ -94,8 +94,8 @@ NOTE: If you have programming experience in Python or JavaScript, the idea of a 
 ****
 Using Variables in Java
 
-// https://www.youtube.com/watch?v=At0vquefCuo&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=5
-video::At0vquefCuo[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=5 ]
+// https://www.youtube.com/watch?v=At0vquefCuo&list={playlist}&index=5
+video::At0vquefCuo[youtube, list={playlist}&index=5 ]
 Files from video:
 
 * Completed code: link:https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`DeclaringVariables.java`^]
@@ -336,7 +336,7 @@ int difference = sum - 2; <.>
 ****
 Arithmetic Operations in Java
 
-video::kfVVgFMuR3A[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::kfVVgFMuR3A[youtube, list={playlist}]
 Files from video:
 
 * https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/Operations.java/[`Operations.java`^]
@@ -419,7 +419,7 @@ User Input in Java
 
 // https://youtu.be/8y430BQktYQ
 
-video::8y430BQktYQ[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::8y430BQktYQ[youtube, list={playlist}]
 File from video:
 
 * https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/InputDemo.java[`InputDemo.java`^]

@@ -46,7 +46,7 @@ Introduction to Arrays
 
 // https://youtu.be/08IJJod4O3o
 
-video::08IJJod4O3o[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::08IJJod4O3o[youtube, list={playlist}]
 // Files from video:
 
 // * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
@@ -103,7 +103,7 @@ Array Syntax in Java
 
 // https://youtu.be/RBY8zz7f-bU
 
-video::RBY8zz7f-bU[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::RBY8zz7f-bU[youtube, list={playlist}]
 Files from video:
 
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/08%20Arrays/BasicSyntax.java[`BasicSyntax.java`^]
@@ -164,7 +164,7 @@ Loops and Arrays in Java
 
 // https://youtu.be/s48mWBeLkuY
 
-video::s48mWBeLkuY[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::s48mWBeLkuY[youtube, list={playlist}]
 
 Files from video:
 
@@ -201,7 +201,7 @@ Putting Objects in Arrays
 
 // https://youtu.be/S2ufDoBKWx4
 
-video::S2ufDoBKWx4[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::S2ufDoBKWx4[youtube, list={playlist}]
 
 Files from video:
 
@@ -226,7 +226,7 @@ NOTE: The for-each loop is optional. You can always use a traditional for loop t
 
 // https://youtu.be/GXVSXNhX2O0
 
-video::GXVSXNhX2O0[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::GXVSXNhX2O0[youtube, list={playlist}]
 
 Files from video:
 

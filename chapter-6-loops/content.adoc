@@ -46,7 +46,7 @@ Introduction to Loops
 
 // https://youtu.be/eq9oHVazmZI
 
-video::eq9oHVazmZI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::eq9oHVazmZI[youtube, list={playlist}]
 ****
 
 === `while` Loops
@@ -115,7 +115,7 @@ I personally consider it less readable than using a clear condition in the `whil
 `while` Loops in Java [COMING SOON!]
 // https://youtu.be/wMbpslAjDDc
 
-video::wMbpslAjDDc[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::wMbpslAjDDc[youtube, list={playlist}]
 
 Files from video:
 
@@ -153,7 +153,7 @@ The `while` statement is at the end of the loop; the `do` statement at the begin
 
 https://youtu.be/urwIMiEqGBw
 
-video::urwIMiEqGBw[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::urwIMiEqGBw[youtube, list={playlist}]
 Files from video:
 
 * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/DoWhileLoopDemo1.java[`DoWhileLoopDemo1.java`^]
@@ -235,7 +235,7 @@ Once you get the hang of the syntax, the `for` loop is a really convenient way t
 
 // https://youtu.be/uRoLVgHkWbA
 
-video::uRoLVgHkWbA[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::uRoLVgHkWbA[youtube, list={playlist}]
 File from video:
 * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/ForLoopDemo1.java[`ForLoopDemo1.java`^]
 ****
@@ -261,7 +261,7 @@ When the `continue` statement is executed, the program stops executing the loop'
 
 // https://youtu.be/gc4D-7UhxR0
 
-video::gc4D-7UhxR0[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::gc4D-7UhxR0[youtube, list={playlist}]
 // File from video:
 
 * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/BreakDemo1.java[`BreakDemo1.java`^]
