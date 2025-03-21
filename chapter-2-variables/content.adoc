@@ -71,7 +71,7 @@ That's fine, but we better make sure we don't want the coffee anymore before we 
 A variable works the same way.
 It can hold one value, and that value can vary--remember, that's where the name comes from--but once it's changed, that old value is lost.
 
-We guess we could mix coffee and water, but then that's really a new substance and we can't get back our plain coffee (or our water).
+I guess we could mix coffee and water, but then that's really a new substance and we can't get back our plain coffee (or our water).
 If we want to store coffee *and* water, we can do that by using two different containers. 
 
 From a programming perspective--rather than a coffee perspective--a variable is a location in the computer's memory where we can store a value.
