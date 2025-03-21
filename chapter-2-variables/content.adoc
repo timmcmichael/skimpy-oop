@@ -77,8 +77,10 @@ If we want to store coffee *and* water, we can do that by using two different co
 From a programming perspective--rather than a coffee perspective--a variable is a location in the computer's memory where we can store a value.
 In order to use that value, we have to know where to find it, so we give the memory location a name, technically called an *identifier*.
 
+image::elway.jpg[A photograph of John Elway, width=100,float=right]
+
 And the computer will need to know how much memory to set aside for that variable, which depends on the kinds of values we want to store. 
-Storing the number 7 doesn't take very much space; storing a picture of John Elway takes a lot more space.
+Storing the number 7 doesn't take very much space; storing a picture of John Elway takes a lot more space (but it's worth it).
 The *type* of data we can store in a variable is called its
 
 ..._drumroll_, please...
