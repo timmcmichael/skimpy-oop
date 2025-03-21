@@ -68,7 +68,7 @@ Intro to Debugging
 // https://youtu.be/jcslOC6-cbk
 
 
-video::jcslOC6-cbk[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::jcslOC6-cbk[youtube, list={playlist}]
 
 ****
 
@@ -96,7 +96,7 @@ Debugging in Java with VS Code
 
 // https://youtu.be/t4whOTYQ10k
 
-video::t4whOTYQ10k[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::t4whOTYQ10k[youtube, list={playlist}]
 Files from video:
 
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/07%20Debugging/MethodDebugging.java[`MethodDebugging.java`^]
@@ -217,7 +217,7 @@ Intro to GitHub Copilot in VS Code
 
 // https://youtu.be/gHuJgnpG7pI
 
-video::gHuJgnpG7pI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::gHuJgnpG7pI[youtube, list={playlist}]
 // Files from video:
 
 // * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]

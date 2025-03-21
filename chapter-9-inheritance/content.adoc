@@ -82,7 +82,7 @@ Introduction to Inheritance
 
 // https://www.youtube.com/watch?v=LXKXWT0y3oQ
 
-video::LXKXWT0y3oQ[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::LXKXWT0y3oQ[youtube, list={playlist}]
 ****
 
 === Implementing Inheritance
@@ -133,7 +133,7 @@ Extending a Class in Java
 
 // https://www.youtube.com/watch?v=HjI19TvQkII
 
-video::HjI19TvQkII[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::HjI19TvQkII[youtube, list={playlist}]
 
 Files from video:
 
@@ -244,7 +244,7 @@ Method Overriding in Java
 
 // https://www.youtube.com/watch?v=NFi4uhXK8FM
 
-video::NFi4uhXK8FM[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::NFi4uhXK8FM[youtube, list={playlist}]
 
 Files from video:
 
@@ -308,7 +308,7 @@ Constructors and Inheritance in Java
 
 // https://www.youtube.com/watch?v=IFTod6pc7Go
 
-video::IFTod6pc7Go[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::IFTod6pc7Go[youtube, list={playlist}]
 
 Files from video:
 
@@ -345,7 +345,7 @@ Arrays of Subclasses in Java
 
 // https://www.youtube.com/watch?v=7sBbGqkEr0Q
 
-video::7sBbGqkEr0Q[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::7sBbGqkEr0Q[youtube, list={playlist}]
 
 Files from video:
 

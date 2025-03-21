@@ -71,14 +71,16 @@ That's fine, but we better make sure we don't want the coffee anymore before we 
 A variable works the same way.
 It can hold one value, and that value can vary--remember, that's where the name comes from--but once it's changed, that old value is lost.
 
-We guess we could mix coffee and water, but then that's really a new substance and we can't get back our plain coffee (or our water).
+I guess we could mix coffee and water, but then that's really a new substance and we can't get back our plain coffee (or our water).
 If we want to store coffee *and* water, we can do that by using two different containers. 
 
 From a programming perspective--rather than a coffee perspective--a variable is a location in the computer's memory where we can store a value.
 In order to use that value, we have to know where to find it, so we give the memory location a name, technically called an *identifier*.
 
+image::elway.jpg[A photograph of John Elway, width=100,float=right]
+
 And the computer will need to know how much memory to set aside for that variable, which depends on the kinds of values we want to store. 
-Storing the number 7 doesn't take very much space; storing a picture of John Elway takes a lot more space.
+Storing the number 7 doesn't take very much space; storing a picture of John Elway takes a lot more space (but it's worth it).
 The *type* of data we can store in a variable is called its
 
 ..._drumroll_, please...
@@ -88,14 +90,14 @@ The *type* of data we can store in a variable is called its
 Reserving a memory location by specifying a data type and identifier is known as *declaring* a variable.
 Placing data in that variable is referred to as *assigning* a value to a variable.
 
-NOTE: If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you--so you don't have to specify it. It's one reason I prefer to teach beginners using Java, which teaches you how data types work.
+NOTE: If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you--so you don't have to specify it. It's one reason I prefer to teach beginners using Java or C#, which teaches you how data types work.
 
 .Time To Watch!
 ****
 Using Variables in Java
 
-// https://www.youtube.com/watch?v=At0vquefCuo&list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=5
-video::At0vquefCuo[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU&index=5 ]
+// https://www.youtube.com/watch?v=At0vquefCuo&list={playlist}&index=5
+video::At0vquefCuo[youtube, list={playlist}&index=5 ]
 Files from video:
 
 * Completed code: link:https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/DeclaringVariables.java[`DeclaringVariables.java`^]
@@ -106,9 +108,9 @@ Files from video:
 Variable names (more properly called variable _identifiers_) are the character sequences that identify a variable.
 There are a few rules that determine whether or not an identifier is valid:
 
-* Can contain letters, digits, underscores (_), and/or dollar signs ($)
+* Can contain letters (upper or lower case), digits (0 - 9), underscores (_), and/or dollar signs ($)
 * The first character *can't* be a digit.
-* Can' no't contain whitespaces (tab, space, etc.)
+* Can't contain whitespaces (tab, space, etc.) or special characters (like #, @, !, etc.) except the underscore and dollar sign.
 * Can't be a Java keyword or reserved word (words that are used in the Java language, like `double` or `public`)
 
 In addition to those technical rules about identifier names, the convention in Java is to use descriptive names in "camel case" format, as described in the preceding video. 
@@ -206,7 +208,7 @@ char firstInitial = 'T';
 
 NOTE: Some people pronounce the `char` data type like the word "chart" without the "t". And some people pronounce it like the word "care". Either is okay. 
 
-NOTE: I pronounce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
+NOTE: Also, I pronounce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
 
 A `char` is really just an integer, but the number it holds conforms to a standard list of character values called *ASCII* (with the fun pronounciation "Ass key").
 In this standard, the number 65 is a capital 'A', 66 is 'B', and so on.
@@ -336,7 +338,7 @@ int difference = sum - 2; <.>
 ****
 Arithmetic Operations in Java
 
-video::kfVVgFMuR3A[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::kfVVgFMuR3A[youtube, list={playlist}]
 Files from video:
 
 * https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/Operations.java/[`Operations.java`^]
@@ -419,7 +421,7 @@ User Input in Java
 
 // https://youtu.be/8y430BQktYQ
 
-video::8y430BQktYQ[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::8y430BQktYQ[youtube, list={playlist}]
 File from video:
 
 * https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/02%20Variables/InputDemo.java[`InputDemo.java`^]

@@ -20,6 +20,7 @@ image::Skimpy_OOP_Cover.png[title="Image created with the assistance of DALL-E 2
 // :plantuml-theme: crt-green
 :multipage-level: 1
 :chapter-number: -1
+:playlist: PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU
 :sectnums:
 :experimental: // necessary for keyboard and UI macros
 
@@ -87,18 +88,18 @@ Then, start reading the chapter in this eBook.
 
 In general, this book includes resources within each chapter. The following links collect those resources so you can find them when necessary.
 
-GitHub landing page: https://timmcmichael.github.io
+GitHub landing page: https://timmcmichael.github.io[https://timmcmichael.github.io^]
 
-YouTube channel: https://www.youtube.com/@ProfTimEMCC[@ProfTimEMCC]
+YouTube channel: https://www.youtube.com/@ProfTimEMCC[@ProfTimEMCC^]
 
-Course YouTube playlist: https://www.youtube.com/playlist?list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU[Object-Oriented Progamming Fundamentals (CIS150AB)]
+Course YouTube playlist: https://www.youtube.com/playlist?list={playlist}[Object-Oriented Progamming Fundamentals (CIS150AB)^]
 
 === Source code files:
 
 The source code files shown in the eBook and videos are available on GitHub; a link at the beginning of each chapter will take you to the appropriate folder in the repository.
 If you have trouble finding something (or using the GitHub site), please contact me at {email} or in Canvas.
 
-* GitHub Repository: https://github.com/timmcmichael/EMCCTimFiles[https://github.com/timmcmichael/EMCCTimFiles]
+* GitHub Repository: https://github.com/timmcmichael/EMCCTimFiles[https://github.com/timmcmichael/EMCCTimFiles^]
 
 :sectnums:
 

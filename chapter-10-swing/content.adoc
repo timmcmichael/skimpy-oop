@@ -42,7 +42,7 @@ Intro to GUIs
 
 // https://youtu.be/ghe5TA1qA28
 
-video::ghe5TA1qA28[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::ghe5TA1qA28[youtube, list={playlist}]
 
 ****
 
@@ -97,7 +97,7 @@ Intro to Swing in Java
 
 // https://youtu.be/djh5Cd0cPmA
 
-video::djh5Cd0cPmA[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::djh5Cd0cPmA[youtube, list={playlist}]
 Files from video:
 
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/SimpleGUI.java[`SimpleGUI.java`^]
@@ -122,7 +122,7 @@ Swing Event Handling
 
 // https://youtu.be/rsZ6f-twWfI
 
-video::rsZ6f-twWfI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::rsZ6f-twWfI[youtube, list={playlist}]
 
 Files from video:
 
@@ -142,7 +142,7 @@ Calculations in Swing
 
 // https://youtu.be/dJfuwUfRczI
 
-video::dJfuwUfRczI[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::dJfuwUfRczI[youtube, list={playlist}]
 Files from video:
 
 * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/GUICalculations.java[`GUICalculations.java`^]
@@ -188,7 +188,7 @@ More Swing Widgets
 
 // https://youtu.be/2HlIsvtYTec
 
-video::2HlIsvtYTec[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::2HlIsvtYTec[youtube, list={playlist}]
 Files from video:
 
 * Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/JCheckBoxDemo.java[`JCheckBoxDemo.java`^]
@@ -230,7 +230,7 @@ Swing Layouts
 
 // https://youtu.be/kM3p7V_3UOk
 
-video::kM3p7V_3UOk[youtube, list=PL_Lc2HVYD16Y-vLXkIgggjYrSdF5DEFnU]
+video::kM3p7V_3UOk[youtube, list={playlist}]
 Files from video:
 
 * Sample code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/10%20Swing%20GUIs/FlowLayoutDemo.java[`FlowLayoutDemo.java`^]
