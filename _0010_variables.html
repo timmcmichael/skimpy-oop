@@ -704,16 +704,21 @@ That&#8217;s fine, but we better make sure we don&#8217;t want the coffee anymor
 It can hold one value, and that value can vary&#8212;&#8203;remember, that&#8217;s where the name comes from&#8212;&#8203;but once it&#8217;s changed, that old value is lost.</p>
 </div>
 <div class="paragraph">
-<p>We guess we could mix coffee and water, but then that&#8217;s really a new substance and we can&#8217;t get back our plain coffee (or our water).
+<p>I guess we could mix coffee and water, but then that&#8217;s really a new substance and we can&#8217;t get back our plain coffee (or our water).
 If we want to store coffee <strong>and</strong> water, we can do that by using two different containers.</p>
 </div>
 <div class="paragraph">
 <p>From a programming perspective&#8212;&#8203;rather than a coffee perspective&#8212;&#8203;a variable is a location in the computer&#8217;s memory where we can store a value.
 In order to use that value, we have to know where to find it, so we give the memory location a name, technically called an <strong>identifier</strong>.</p>
 </div>
+<div class="imageblock right">
+<div class="content">
+<img src="chapter-2-variables/images/elway.jpg" alt="A photograph of John Elway" width="100">
+</div>
+</div>
 <div class="paragraph">
 <p>And the computer will need to know how much memory to set aside for that variable, which depends on the kinds of values we want to store.
-Storing the number 7 doesn&#8217;t take very much space; storing a picture of John Elway takes a lot more space.
+Storing the number 7 doesn&#8217;t take very much space; storing a picture of John Elway takes a lot more space (but it&#8217;s worth it).
 The <strong>type</strong> of data we can store in a variable is called its</p>
 </div>
 <div class="paragraph">
@@ -733,7 +738,7 @@ Placing data in that variable is referred to as <strong>assigning</strong> a val
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you&#8212;&#8203;so you don&#8217;t have to specify it. It&#8217;s one reason I prefer to teach beginners using Java, which teaches you how data types work.
+If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you&#8212;&#8203;so you don&#8217;t have to specify it. It&#8217;s one reason I prefer to teach beginners using Java or C#, which teaches you how data types work.
 </td>
 </tr>
 </table>
@@ -774,13 +779,13 @@ There are a few rules that determine whether or not an identifier is valid:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Can contain letters, digits, underscores (_), and/or dollar signs ($)</p>
+<p>Can contain letters (upper or lower case), digits (0 - 9), underscores (_), and/or dollar signs ($)</p>
 </li>
 <li>
 <p>The first character <strong>can&#8217;t</strong> be a digit.</p>
 </li>
 <li>
-<p>Can' no&#8217;t contain whitespaces (tab, space, etc.)</p>
+<p>Can&#8217;t contain whitespaces (tab, space, etc.) or special characters (like #, @, !, etc.) except the underscore and dollar sign.</p>
 </li>
 <li>
 <p>Can&#8217;t be a Java keyword or reserved word (words that are used in the Java language, like <code>double</code> or <code>public</code>)</p>
@@ -940,7 +945,7 @@ Some people pronounce the <code>char</code> data type like the word "chart" with
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-I pronounce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
+Also, I pronounce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
 </td>
 </tr>
 </table>
