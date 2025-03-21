@@ -90,7 +90,7 @@ The *type* of data we can store in a variable is called its
 Reserving a memory location by specifying a data type and identifier is known as *declaring* a variable.
 Placing data in that variable is referred to as *assigning* a value to a variable.
 
-NOTE: If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you--so you don't have to specify it. It's one reason I prefer to teach beginners using Java, which teaches you how data types work.
+NOTE: If you have programming experience in Python or JavaScript, the idea of a data type might be new to you. In those languages, the interpreter determines the data type for you--so you don't have to specify it. It's one reason I prefer to teach beginners using Java or C#, which teaches you how data types work.
 
 .Time To Watch!
 ****
