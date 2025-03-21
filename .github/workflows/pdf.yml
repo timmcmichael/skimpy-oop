@@ -29,7 +29,6 @@ jobs:
                           gem install asciidoctor-multipage && \
                           gem install asciidoctor-pdf && \
                           gem install pygments.rb && \
-                          gem install asciidoc-diagram && \
                           asciidoctor-pdf -r asciidoctor-diagram -D /documents/output-light  -a source-highlighter=pygments /documents/index.adoc"
 
       - name: List output files
