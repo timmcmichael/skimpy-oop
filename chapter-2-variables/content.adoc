@@ -108,7 +108,7 @@ Files from video:
 Variable names (more properly called variable _identifiers_) are the character sequences that identify a variable.
 There are a few rules that determine whether or not an identifier is valid:
 
-* Can contain letters, digits, underscores (_), and/or dollar signs ($)
+* Can contain letters (upper or lower case), digits (0 - 9), underscores (_), and/or dollar signs ($)
 * The first character *can't* be a digit.
 * Can' no't contain whitespaces (tab, space, etc.)
 * Can't be a Java keyword or reserved word (words that are used in the Java language, like `double` or `public`)
