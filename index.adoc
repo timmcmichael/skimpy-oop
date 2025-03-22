@@ -5,7 +5,7 @@
 
 :figure-caption!:
 
-image::Skimpy_OOP_Cover.png[title="Image created with the assistance of DALL-E 2",width=400]
+image::Skimpy_OOP_Cover2.png[title="Image created with the assistance of DALL-E 2",width=400]
 
 :figure-caption: Figure
 
