@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build AsciiDoc Multipage (macOS/Linux)",
+        "type": "shell",
+        "command": "./build.sh",
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Build AsciiDoc Multipage (Windows - Batch)",
+        "type": "shell",
+        "command": "cmd.exe",
+        "args": [
+          "/c",
+          "build.bat"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+  
