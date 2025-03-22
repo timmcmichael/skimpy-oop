@@ -647,7 +647,7 @@ In computer programming, a piece of information is called <strong>data</strong>.
 <p>In our <code>Hello World</code> code, the letters and characters we output are <em>constant</em> data.</p>
 </div>
 <div class="listingblock">
-<div class="title"><code>HelloWorld.java</code></div>
+<div class="title"><code>HelloWorld</code> in Java</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
@@ -832,7 +832,7 @@ For example, a <code>byte</code> uses 8 bits of memory and can store a number be
 It&#8217;s called "single" in some programming languages, which helps understand where the name <code>double</code> comes from: <code>double</code> uses twice as much memory (64 bits) as a <code>float</code> or "single" (32 bits)--and therefore its range of values is twice as big. Be aware that to make a <code>float</code> number in Java, you have to add the letter F (in capital or lowercase form) at the end of the number.</p>
 </div>
 <div class="listingblock">
-<div class="title">Examples of numeric variable declarations</div>
+<div class="title">Numeric variable declarations in Java</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">myAge</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">;</span>
 <span class="tok-kt">float</span><span class="tok-w"> </span><span class="tok-n">myGPA</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.75f</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
@@ -902,7 +902,7 @@ Again, only two possible answers to that question; she either owns one or she do
 That is to say, we usually name our <code>boolean</code> variables using words like <em>is</em>, <em>has</em>, <em>can</em>, and so on.</p>
 </div>
 <div class="listingblock">
-<div class="title">Examples of Boolean variable declarations</div>
+<div class="title">Boolean variable declarations in Java</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isPassing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
 <span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">hasCar</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span></code></pre>
@@ -920,7 +920,7 @@ We&#8217;ll look at this "Boolean logic" in the <a href="#">chapter on decisions
 Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol&#8212;&#8203;or some other weird stuff, too.</p>
 </div>
 <div class="listingblock">
-<div class="title">Examples of character variable declarations</div>
+<div class="title">Character variable declarations in Java</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">myLetterGrade</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;A&#39;</span><span class="tok-p">;</span>
 <span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">firstInitial</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;T&#39;</span><span class="tok-p">;</span></code></pre>
@@ -979,7 +979,7 @@ For now, a really important thing to notice and remember is that primitive types
 <p><code>String</code> literals are denoted with double quotation marks.</p>
 </div>
 <div class="listingblock">
-<div class="title">Examples of <code>String</code> variable declarations</div>
+<div class="title"><code>String</code> variable declarations in Java</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">address</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;3000 N. Dysart Road&quot;</span><span class="tok-p">;</span>
 <span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">bestClass</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;CIS150AB&quot;</span><span class="tok-p">;</span></code></pre>
@@ -995,7 +995,7 @@ For now, a really important thing to notice and remember is that primitive types
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Always remember that, in Java, single quotes mean a <code>char</code> and double quotes mean a <code>String</code>. It&#8217;s easy to get them mixed up&#8212;&#8203;especially if you use Python, where they are interchangeable&#8212;&#8203;but your code won&#8217;t compile if you mix them up.
+Always remember that, in Java, single quotes mean a <code>char</code> and double quotes mean a <code>String</code>. It&#8217;s easy to get them mixed up&#8212;&#8203;especially if you&#8217;re used to Python, where they are interchangeable&#8212;&#8203;but your code won&#8217;t compile if you mix them up.
 </td>
 </tr>
 </table>
@@ -1021,7 +1021,7 @@ Always remember that, in Java, single quotes mean a <code>char</code> and double
 So that people looking at your code can easily tell it&#8217;s a constant rather than a variable, it should be named with all capital letters, using the underscore character to separate words.</p>
 </div>
 <div class="listingblock">
-<div class="title">Examples of constant declarations</div>
+<div class="title">Constant declarations in Java</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">SALES_TAX_RATE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">8.7</span><span class="tok-p">;</span>
 <span class="tok-kd">final</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">MINIMUM_AGE</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">18</span><span class="tok-p">;</span>
@@ -1051,6 +1051,7 @@ So that people looking at your code can easily tell it&#8217;s a constant rather
 If we want to display the output of a variable&#8212;&#8203;or a constant&#8212;&#8203;we just put the identifier in a <code>print()</code> or <code>println()</code> statement without any quotation marks:</p>
 </div>
 <div class="listingblock">
+<div class="title">Outputting variables using separate <code>print()</code> statements</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
 <span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">1931</span><span class="tok-p">;</span>
@@ -1065,6 +1066,7 @@ If we want to display the output of a variable&#8212;&#8203;or a constant&#8212;
 We can combine output into one statement by creating a string with multiple pieces using the <code>+</code> symbol.</p>
 </div>
 <div class="listingblock">
+<div class="title">Outputting variables using concatenation</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
 <span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">1931</span><span class="tok-p">;</span>
@@ -1088,7 +1090,7 @@ You can think of an operator as a symbol that performs a calculation or other ac
 You&#8217;ve been using an operator already: the <em>assignment operator</em>, which uses the <code>=</code> symbol.
 The action it completes is assigning the value on the right of the <code>=</code> symbol to the variable on the left.
 Arithmetic operations work in a similar way.
-In Java, there are five arithmetic operators:</p>
+In Java, there are five basic arithmetic operators:</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even" style="width: 50%;">
 <caption class="title">Table 1. Java arithmetic operators</caption>
@@ -1128,7 +1130,7 @@ In Java, there are five arithmetic operators:</p>
 Each operator acts on the value to either side:</p>
 </div>
 <div class="listingblock">
-<div class="title">Examples of simple arithmetic operations</div>
+<div class="title">Simple arithmetic operations in Java</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">5</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 <span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">difference</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b></code></pre>
@@ -1195,7 +1197,7 @@ We call this <em>operator precedence</em>, and here are the guidlines:</p>
 <p>Consider the following examples:</p>
 </div>
 <div class="listingblock">
-<div class="title">Examples of operator precedence</div>
+<div class="title">Operator precedence in Java</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result1</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">*</span><span class="tok-w"> </span><span class="tok-mi">6</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">3</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 <span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">result2</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">17</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">4</span><span class="tok-w"> </span><span class="tok-o">/</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
@@ -1233,7 +1235,7 @@ For example, if we want to add 10 to a <code>weight</code> variable that already
 <p>Java starts on the right side of the assignment expression and retrieves the current value of <code>weight</code>, which is 145, adds 10 to that value, and stores the result back in <code>weight</code>.</p>
 </div>
 <div class="paragraph">
-<p>We can combine the addition operator (<code>`) with the assignment operator (`=`) to make a compound addition operator: `=</code>, which allows use to rewrite the above line of code as:</p>
+<p>We can combine the addition operator (<code>`) with the assignment operator (`=`) to make a compound addition operator: `=</code>, which allows us to rewrite the above line of code as:</p>
 </div>
 <div class="paragraph">
 <p><code>weight += 10</code>;</p>
@@ -1407,7 +1409,7 @@ As a reminder, there&#8217;s a weird quirk that happens when you get numeric inp
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-20 17:59:48 -0700
+Last updated 2025-03-21 18:41:42 -0700
 </div>
 </div>
 </body>
