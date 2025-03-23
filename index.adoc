@@ -127,7 +127,7 @@ include::chapter-10-swing/content.adoc[]
 
 include::back-matter/content.adoc[]
 
-// TODO: Add chapter/example numbers to all code listings
+// TODO: Add chapter/example numbers to all code listings with {chapter-number} attribute
 // TODO: Use .... blocks for output
 // TODO: Confirm that all example file names are enclosed in backticks
 // TODO: Fix xrefs to figures/code throughout - use :xrefstyle: short and then reset to :xrefstyle: basic
