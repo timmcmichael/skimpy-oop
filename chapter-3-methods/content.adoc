@@ -30,7 +30,7 @@ _Source code examples from this chapter and associated videos are available on h
 
 As our programs begin to get larger and more complex, it will be important to keep our code organized. 
 Each program we write is contained within a _class_, and classes are the basic building block of an OOP program; we'll explore them in more detail in the next chapter.
-Within a program, we can organize code in *methods*.
+Within a class or program, we can organize code in *methods*.
 A method is a collection of statements that work together to complete a single task.
 Consider the assembly instructions for building a LEGO set. 
 
@@ -40,7 +40,7 @@ It might take dozens of small steps to complete the set, but taken together, the
 A method is conceptually the same. 
 
 If you've worked with other programming languages, you may know methods by a different name. 
-In Python, we use functions, and in other languages we use procedures or subroutines. 
+In Python, we use _functions_, and in other languages we use _procedures_ or _subroutines_. 
 All of those terms pretty much mean the same thing, but in Java they're called methods.
 And really, they're generally called methods whenever we're using object-oriented programming, so even in Python we sometimes call them methods.
 
