@@ -65,7 +65,11 @@ To output text, we've been calling the `println()` and `print()` methods.
 
 TIP: In Java, parentheses *always* indicate a method, whether or not there is anything inside of the parentheses. Anytime you see parentheses in Java code, you're looking at either a method definition or a method call.
 
-Consider this simple method definition:
+A method definition includes a method header followed by a code block.
+
+// TODO: Replace this image/code with a musical example
+
+.A method definition in Java
 [source,java]
 ----
 public static void displayCopyright() {
@@ -104,7 +108,7 @@ The outermost code block is our class.
 Although there are a few things that can go outside the class, like `package` and `import` statements, the class code block contains all of the components of our program.
 
 In some cases we can place one block inside another, as such as putting a method inside a class.
-This is called _nesting_ blocks, and a nested block must completely enclosed; in other words, a method can't be partly in a class and partly out of it.
+This is called _nesting_ blocks, and a nested block must be completely enclosed; in other words, a method can't be partly in a class and partly out of it.
 
 And some kinds of blocks can't be nested. 
 A method can be nested inside a class, but a method cannot be nested inside another method.
@@ -113,9 +117,11 @@ Many IDEs, including https://code.visualstudio.com[Visual Studio Code] use color
 .An example of nested blocks in Visual Studio Code.
 image::Blocks.png[A screenshot of Java source code with blocks indicated by bracketing]
 
-A variable can only be used or accessed inside the block in which it was declared; that block is the variable's `scope`.
+A variable can only be used or accessed inside the block in which it was declared, or within a block nested within that block; this is the variable's `scope`.
 When we refer to a variable, the compiler checks within that code block, or scope, to see if the variable has been declared.
-If it doesn't find a variable with that identifier within the current scope, it will stop compiling.
+If it doesn't find a variable with that identifier within the current scope, it will move out to the enclosing code block (if it is nested within a class, for example) and check there. 
+If the variable is still not found, the compiler stops and produces an error.
+
 Basically, referring to a variable that is declared in a different scope is the same as referring to a variable we never declared at all.
 Trying to use a variable in a different code block is referred to as an _out of scope_ reference.
 
@@ -144,7 +150,7 @@ public class ScopeExample {
 When we first started using variables, we learned that we can't make two variables with the same name, but it's a little more nuanced than that.
 We can't make two variables with the same name _and scope_.
 Java *will* allow us to declare a variable with the same name in a different scope, which is called _variable shadowing_.
-Shadowing is a *very* bad practice, because it often leads to confusion about which variable is in scope.
+Shadowing is a *very* bad practice, because it often leads to confusion about which variable is in scope (though we'll see an exception down the road).
 
 The example below can be confusing to beginners and to people who are reading the code quickly.
 When `outputNumber()` is called, another variable named `favoriteNumber` is created and assigned the value `18`. 
