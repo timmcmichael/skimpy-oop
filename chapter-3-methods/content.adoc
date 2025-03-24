@@ -185,8 +185,8 @@ public class ShadowingExample {
 
 ==== Global Variables
 
-As we can see, variable scope has a big impact on how our code runs.
-Beginning programmers sometimes try to avoid scope issues by declaring their variables within the class code block, which makes them accessible to any block nested within the class.
+As you can see, variable scope has a big impact on how our code runs.
+Beginning programmers sometimes try to avoid scope issues by declaring their variables within the class code block, which makes them accessible to any block nested within the class--inclusing all of the methods the class encloses.
 This kind of class-level variable is sometimes called a _global variable_, and the use of global variables is generally discouraged.
 
 
@@ -237,7 +237,7 @@ In this example, "Hello World" is an argument.
 We establish what information a method needs as part of the method definition.
 Within the method we're defining, those pieces of information are called *parameters*.
 A parameter is a variable that exists in the method and receives the argument, and it's declared inside the parentheses in our method definition.
-The methods we've defined so far didn't need any information, so we haven't been putting anything in the parentheses--but now let's see an example with a parameter.
+The methods we've defined so far didn't need any outside information, so we haven't been putting anything in the parentheses--but now let's see an example with a parameter.
 
 .ParameterExample.java - Defining a parameter and passing in an argument
 [source,java]
@@ -280,9 +280,9 @@ File from video:
 === Returning Values
 
 The methods we've seen to this point are basically commands--they simply perform a task, and then when they're done, program execution just goes back to the method that called it and resumes there.
-But we can also create methods that are like questions--they perform a chunk of code, but when they are finished they give back an answer.
+But we can also create methods that are like questions--they execute a chunk of code, but when they are finished they give back an answer.
 
-Consider this method:
+Consider these methods:
 [source,java]
 ----
 public static void printFavNum() { <.>
@@ -304,7 +304,7 @@ The `void` in the method header is the return type, and _void_ basically means n
 The second method is asking to get a favorite number, so it is going to give back an `int`. The return type is specified as `int`.
 The `return` statement sends the `favNum` value back to the method that called `getFavNum()`.
 
-IMPORTANT: If a method has a return type of anything other than `void`, it will only compile if it has a `return` statement followed by a value (literal or variable) of the specified type.
+IMPORTANT: If a method has a return type of anything other than `void`, it will only compile if it has a `return` statement followed by a value--either literal or variable--of the specified type.
 
 This means that methods themselves essentially have data types.
 `printFavNum()` has a data type of `void`. 
@@ -321,7 +321,7 @@ A `return` statement in a `void` method stops execution of the method and return
 [source,java]
 ----
 public static void shortCircuit() {
-   System.out.print(“This runs...”);
+   System.out.print(“This line of code runs...”);
    return;
    System.out.print(“This can never run!”);
 }
