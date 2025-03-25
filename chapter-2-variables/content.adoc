@@ -210,7 +210,7 @@ NOTE: Some people pronounce the `char` data type like the word "chart" without t
 
 NOTE: Also, I pronounce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
 
-A `char` is really just an integer, but the number it holds conforms to a standard list of character values called *ASCII* (with the fun pronounciation "Ass key").
+A `char` is really just an integer, but the number it holds conforms to a standard list of character values called *ASCII* (with the fun pronunciation "Ass key").
 In this standard, the number 65 is a capital 'A', 66 is 'B', and so on.
 Lowercase letters are considered different characters, so 97 is 'a' and 98 is 'b'. Check out the https://en.wikipedia.org/wiki/ASCII#Table_of_codes[complete ASCII table] if you're curious.
 
@@ -369,7 +369,7 @@ int result2 = 17 - 4 / 2 + 2; <.>
 int result3 = 17 - 4 / (2 + 2); <.>
 ----
 
-<.> `result1` is 8: `4 * 6` is 24, then `24 / 3` is 8, and then `17 - 8` is 9.
+<.> `result1` is 9: `4 * 6` is 24, then `24 / 3` is 8, and then `17 - 8` is 9.
 <.> `result2` is 17: `4 / 2` is 2, then `17 - 2` is 15, and then `15 + 2` is 17.
 <.> `result3` is 16: `(2 + 2)` is 4, then `4 / 4` is 1, and then `17 - 1` is 16.
 
@@ -388,7 +388,7 @@ We can combine the addition operator (`+`) with the assignment operator (`=`) to
 
 `weight += 10`;
 
-You can use compound assignment operators for all of the arithmetic opeerations:
+You can use compound assignment operators for all of the arithmetic operations:
 
 * `+=` adds the value on the right to variable value on the left.
 * `-=` substracts the value on the right from the variable on the left.
