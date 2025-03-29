@@ -64,7 +64,7 @@ We can then add other widgets to the frame, like buttons, text fields, and label
 Finally, we'll set the frame to be visible, which will cause the window to appear on the screen.
 
 .Example of a simple GUI using Swing
-[source,java]
+[source,java,linenums]
 ----
 import javax.swing.*;
 

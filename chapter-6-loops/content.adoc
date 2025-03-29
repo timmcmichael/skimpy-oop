@@ -60,7 +60,7 @@ The only difference is that, after the block of code is executed, the program ju
 If the condition is still true, the block of code is executed again.
 
 .Example of a `while` loop
-[source,java]
+[source,java,linenums]
 ----
 int count = 0;
 while (count < 10) {
@@ -83,7 +83,7 @@ An infinite loop is a loop that repeats forever, because the condition that dete
 Infinite loops are a common mistake for new programmers, and they can cause our program to hang or crash.
 
 .Example of an infinite loop
-[source,java]
+[source,java,linenums]
 ----
 int count = 0;
 while (count < 10) {
@@ -99,7 +99,7 @@ NOTE: Your IDE will have a way to stop the program if it's stuck in an infinite 
 
 The simplest infinite loop we can create in Java is:
 
-[source,java]
+[source,java,linenums]
 ----
 while (true) { 
     // hey, there's nothing to stop this loop!
@@ -133,7 +133,7 @@ This means that the block of code will always execute at least once.
 Other than that, a `do-while` loop is exactly the same as a `while` loop.
 
 .Example of a `do-while` loop
-[source,java]
+[source,java,linenums]
 ----
 int count = 0;
 do {
@@ -181,7 +181,7 @@ For example, if a program displays a menu with three options, a loop could keep 
 There are more advanced techniques we'll eventually use for input validation, but indefinite loops are a simple and effective way to make sure the user's input is what we expect.
 
 .Example of input validation with a `do-while` loop
-[source,java]
+[source,java,linenums]
 ----
 import java.util.Scanner;
 
@@ -213,7 +213,7 @@ Definite loops are really common, especially when we learn about things like _ar
 The syntax of a `for` loop can be a little intimidating for new coders, but it really just combines into one line of code all three of the pieces we need for a loop: initializing a counter, checking the counter, and changing the counter.
 
 .`for` loop syntax
-[source,java]
+[source,java,linenums]
 ----
 for (int count = 0; count < 10; count++) {
     System.out.println("Count is: " + count);

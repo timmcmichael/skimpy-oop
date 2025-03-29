@@ -70,7 +70,7 @@ A method definition includes a method header followed by a code block.
 // TODO: Replace this image/code with a musical example
 
 .A method definition in Java
-[source,java]
+[source,java,linenums]
 ----
 public static void displayCopyright() {
     System.out.println("(C) 2025 by Tim McMichael. All rights reserved.");
@@ -126,7 +126,7 @@ Basically, referring to a variable that is declared in a different scope is the 
 Trying to use a variable in a different code block is referred to as an _out of scope_ reference.
 
 .`ScopeExample.java`. An example of code with an out-of-scope variable reference.
-[source,java]
+[source,java,linenums]
 ----
 public class ScopeExample {
 
@@ -159,7 +159,7 @@ Then, program execution returns to `main()`, where a `println()` statement outpu
 However, _this_ `favoriteNumber` wasn't changed to 10--the other one was.
 
 .`ShadowingExample.java`. An example of variable shadowing, which we should avoid.
-[source,java]
+[source,java,linenums]
 ----
 public class ShadowingExample {
 
@@ -191,7 +191,7 @@ This kind of class-level variable is sometimes called a _global variable_, and t
 
 
 .`GlobalVariableExample.java`. An example of a global variable, which we should not use.
-[source,java]
+[source,java,linenums]
 ----
 public class GlobalVariableExample {
     static int favoriteNumber = 7; <.>
@@ -240,7 +240,7 @@ A parameter is a variable that exists in the method and receives the argument, a
 The methods we've defined so far didn't need any outside information, so we haven't been putting anything in the parentheses--but now let's see an example with a parameter.
 
 .ParameterExample.java - Defining a parameter and passing in an argument
-[source,java]
+[source,java,linenums]
 ----
 public class ParameterExample {
 
@@ -283,7 +283,7 @@ The methods we've seen to this point are basically commands--they simply perform
 But we can also create methods that are like questions--they execute a chunk of code, but when they are finished they give back an answer.
 
 Consider these methods:
-[source,java]
+[source,java,linenums]
 ----
 public static void printFavNum() { <.>
     int favNum = 10 - 3;
@@ -318,7 +318,7 @@ This evaluated the same way as any other assignment statement. It starts on the 
 
 A `return` statement in a `void` method stops execution of the method and returns to the calling method.
 
-[source,java]
+[source,java,linenums]
 ----
 public static void shortCircuit() {
    System.out.print(“This line of code runs...”);
@@ -344,7 +344,7 @@ That `print()` statement won't work--rather, the user will never see the result,
 
 Consider this code:
 
-[source,java]
+[source,java,linenums]
 ----
 public class BadOutput {
     public static void main(String[] args) {
@@ -361,7 +361,7 @@ public class BadOutput {
 If the `kingOfSoul()` method knows who the King of Soul is, how do we print that out if we can't perform the output inside the method?
 The solution is to return the String and perform the output in `main()`.
 
-[source,java]
+[source,java,linenums]
 ----
 public class GoodOutput {
     public static void main(String[] args) {
@@ -408,7 +408,7 @@ Sometimes the task, action, or calculation that a method produces has different 
 
 Consider a method that calculates the average age of two people:
 
-[source,java]
+[source,java,linenums]
 ----
 public static double averageAge(int age1, int age2) {
        return (double) (age1 + age2) / 2;
@@ -425,7 +425,7 @@ To create another version of a method that operates a little differently, we can
 To overload a method, we write a new method with the same identifier, but with a different set of parameters. 
 An overload for our `averageAge()` method could look like this:
 
-[source,java]
+[source,java,linenums]
 ----
 public static double averageAge(int age1, int age2, int age3) {
         return (double) (age1 + age2 + age3) / 3;
@@ -439,7 +439,7 @@ When we're using the method, we can call whichever best suits our needs at the t
 The compiler can also easily distinguish overloaded methods if the _types_ of the parameters are different.
 An implementation that accepts `double`s is valid:
 
-[source,java]
+[source,java,linenums]
 ----
     public static double averageAge(double age1, double age2, double age3) {
         return (double) (age1 + age2 + age3) / 3;
@@ -454,7 +454,7 @@ The _names_ of those parameters doesn't differentiate them, so different names i
 
 
 .`BadOverloading.java`. An invalid example of overloading.
-[source,java]
+[source,java,linenums]
 ----
 public class BadOverloading {
     public static void main(String[] args) {

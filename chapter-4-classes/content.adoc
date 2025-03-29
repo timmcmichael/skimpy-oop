@@ -158,7 +158,7 @@ To implement this class in code, we'll start with a class header. The class head
 The class header is followed by a code block, enclosed in curly braces.
 
 .`WeatherRecord.java`. A class header and code block. 
-[source,java]
+[source,java,linenums]
 ----
 public class WeatherRecord {
 
@@ -189,7 +189,7 @@ WARNING: Since a class will compile and run even if we leave off the `private` a
 // Fields are declared at the top of the class using the same naming conventions we've been using for variables: a descriptive name formatted in camelCase.
 
 .`WeatherRecord.java`. Fields added to the `WeatherRecord` class.
-[source,java]
+[source,java,linenums]
 ----
 public class WeatherRecord {
    private String date;
@@ -231,7 +231,7 @@ Java naming conventions specify that accessor methods should start with `get` an
 Because of that convention, another name for accessor methods is *getters*.
 
 .Example of an accessor method (or "getter")
-[source,java]
+[source,java,linenums]
 ----
 public int getHighTemperature() {
         return highTemperature;
@@ -244,7 +244,7 @@ A getter allows other classes to be able to read the value of a field; if they d
 But read-only access usually does no harm, so often we'll have getters for all of our fields.
 
 .`WeatherRecord.java`. Getters added to the `WeatherRecord` class.
-[source,java]
+[source,java,linenums]
 ----
 public class WeatherRecord {
    private String date;
@@ -273,7 +273,7 @@ Though they sometimes return a value, their primary purpose is to change the val
 As we're getting the hang of this OOP thing, we'll create a lot of mutator methods that are just *setters*--methods that set the value of a field.
 The naming convention for setters is to start with `set` and then the name of the field they change, formatted in camelCase; they usually have a void return type.
 
-[source,java]
+[source,java,linenums]
 ----
 public void setHighTemperature(int temp) {
         highTemperature = temp;
@@ -294,7 +294,7 @@ As we learn more about Java, we'll be able to write more complex methods that ca
 But for now, this is just another one of those frustrating rules that you just have to follow until you know enough to understand it.
 
 .`WeatherRecord.java`. Setters added to the `WeatherRecord` class, and comments identifying the parts.
-[source,java]
+[source,java,linenums]
 ----
 public class WeatherRecord {
     // Fields
@@ -352,7 +352,7 @@ To create our first objects, we use the same two steps we've been using to creat
 The declaration is still a _data type_ and an _identifier, but in this case the data type is the name of the class:
 
 .Example of a declaration statement for an object.
-[source,java]
+[source,java,linenums]
 ----
 WeatherRecord day1;
 ----
@@ -365,7 +365,7 @@ The assignment statement works the same, but what we're assigning looks a lot di
 We'll use the `new` keyword to allocate memory, and then we'll call a *constructor*.
 
 .Example of an assignment statement for a newly declared object.
-[source,java]
+[source,java,linenums]
 ----
 WeatherRecord day1;
 day1 = new WeatherRecord();
@@ -382,7 +382,7 @@ Just like with variables, we often combine those two statements into one line of
 Now that we have an object, we can call its instance methods using _dot notation_, which means we put the object name (*not* the class name!), followed by a dot, followed by the method call:
 
 .Instance method calls using dot notation.
-[source,java]
+[source,java,linenums]
 ----
 WeatherRecord day1 = new WeatherRecord();
 day1.setHighTemperature(87);
@@ -396,7 +396,7 @@ It's easy for beginners to forget to use that dot notation.
 To see why it's necessary, consider the following example.
 
 .An instance method call using dot notation with multiple objects.
-[source,java]
+[source,java,linenums]
 ----
 WeatherRecord day1 = new WeatherRecord();
 WeatherRecord day2 = new WeatherRecord();
@@ -446,7 +446,7 @@ Unfortunately, this is one of those things that boils down to, "because I said s
 Sorry, I can't do much better than that for now.
 
 .`WeatherRecordDemo.java`. A driver class to demonstrate the `WeatherRecord` class.
-[source,java]
+[source,java,linenums]
 ----
 public class WeatherRecordDemo {
     public static void main(String[] args) {
@@ -512,7 +512,7 @@ A constructor is always public, it has no return type (not even `void`), and its
 A definition for a constructor for the `WeatherRecord` class would look like this:
 
 .Example of a constructor for the `WeatherRecord` class.
-[source,java]
+[source,java,linenums]
 ----
 public WeatherRecord() {
     // code to initialize fields goes here
@@ -523,7 +523,7 @@ The most important job of a constructor is setting values for each field of the 
 As a beginner, our rule of thumb is to just make a simple assignment statement for each field.
 
 .Example of a constructor that initializes fields.
-[source,java]
+[source,java,linenums]
 ----
 public WeatherRecord() {
     date = "2025-01-01";
@@ -544,7 +544,7 @@ This is useful when we want to set the initial values of the fields to something
 We add parameters to our constructor just like we do with any other method, by listing the data type and identifier in the parentheses.
 
 .Example of a constructor with parameters.
-[source,java]
+[source,java,linenums]
 ----
 public WeatherRecord(String date) {
     this.date = date;
@@ -622,7 +622,7 @@ When we put a `static` constant in an object class (which would also use the key
 If we have a savings account class, a common example when learning OOP, we might have a `static final double INTEREST_RATE` constant. This would mean that every savings account would earn the same interest rate, which is often how banks work.
 
 .`SavingsAccount.java`. A class with a `static` constant.
-[source,java]
+[source,java,linenums]
 ----
 public class SavingsAccount {
     private static final double INTEREST_RATE = 0.02;

@@ -78,13 +78,13 @@ The primary role of a programming language is to act as a bridge between human l
 *What is the difference between a constant and a variable in Java? Provide an example of each.*::
    - A *constant* is a piece of data that cannot change during program execution. It is declared using the `final` keyword and must be assigned a value when it is declared. For example: 
 +
-[source,java]
+[source,java,linenums]
 ----
 final double SALES_TAX_RATE = 8.7;
 ----
    - A *variable* is a piece of data that can change (or "vary") during program execution. It is declared by specifying a data type and an identifier, and can be assigned different values throughout the program. For example:
 +
-[source,java]
+[source,java,linenums]
 ----
 int age = 21;
 age = 22; // The value of age can be changed
@@ -92,7 +92,7 @@ age = 22; // The value of age can be changed
 *Explain the purpose of the `Scanner` class in Java and provide an example of how it is used to get user input.*::
    - The `Scanner` class in Java is used to get input from the user through the keyboard. It provides methods to read different types of input, such as strings, integers, and doubles. To use the `Scanner` class, you need to import it and create an instance of the class. Here is an example:
 +
-[source,java]
+[source,java,linenums]
 ----
 import java.util.Scanner;
 
@@ -116,13 +116,13 @@ public class InputDemo {
 *Describe the difference between integer division and floating-point division in Java. Why is it important to be aware of this distinction?*::
    - *Integer division* in Java occurs when both operands are integers. The result is also an integer, and any fractional part is truncated (i.e., discarded). For example:
 +
-[source,java]
+[source,java,linenums]
 ----
 int result = 10 / 3; // result is 3, not 3.33
 ----
    - *Floating-point division* occurs when at least one of the operands is a floating-point number (e.g., `float` or `double`). The result is a floating-point number, and the fractional part is preserved. For example:
 +
-[source,java]
+[source,java,linenums]
 ----
 double result = 10.0 / 3; // result is 3.333333...
 ----
@@ -131,7 +131,7 @@ double result = 10.0 / 3; // result is 3.333333...
 *What are compound assignment operators in Java? Provide examples of how they are used in arithmetic operations.*::
    - Compound assignment operators in Java are shorthand ways of writing common arithmetic operations that update the value of a variable. They combine an arithmetic operator with the assignment operator (`=`). Here are some examples:
 +
-[source,java]
+[source,java,linenums]
 ----
 int x = 5;
 x += 3; // Equivalent to x = x + 3; x is now 8
@@ -225,7 +225,7 @@ An `ArrayIndexOutOfBoundsException` is a runtime error that occurs when you try 
 *How can loops be used to traverse an array? Provide an example of a for loop that sums the elements of an integer array.*::
 Loops can be used to traverse an array by iterating through each element, performing operations such as reading, modifying, or accumulating values. Here is an example of a for loop that sums the elements of an integer array:
 +
-[source,java]
+[source,java,linenums]
 ----
 int[] scores = {90, 85, 95, 88, 92};
 int sum = 0;

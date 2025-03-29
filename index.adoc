@@ -129,6 +129,7 @@ include::back-matter/content.adoc[]
 
 // TODO: Add chapter/example numbers to all code listings with {chapter-number} attribute
 // TODO: Use .... blocks for output
+// TODO: Check impact of enabling line numbers in source blocks. Get rid of labels/callouts?
 // TODO: Confirm that all example file names are enclosed in backticks
 // TODO: Fix xrefs to figures/code throughout - use :xrefstyle: short and then reset to :xrefstyle: basic
 // TODO: Check chapters to see if Labs can be completed with partial reading/viewing
