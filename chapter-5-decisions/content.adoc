@@ -203,9 +203,9 @@ File from video:
 
 .Interesting!
 ****
-Java includes a shorthand form of an if-else statement called the _ternary operator_, which uses the question mark symbol. It's a useful little trick, but it can be confusing for beginners--and for the people reading our code later. We won't look at them in this course, but a web search should turn up plenty of examples if we are curious.
+Java includes a shorthand form of an if-else statement called the _ternary operator_, which uses the question mark symbol. It's a useful little trick, but it can be confusing for beginners--and for the people reading our code later. We won't look at them in this course, but a web search should turn up plenty of examples if you are curious.
 
-Assignments in my course require you to actually use if-else statements, so you shouldn't use the ternary operator in code you submit to me.
+Assignments in my course require you to use full if-else statements, so you shouldn't use the ternary operator in code you submit to me.
 ****
 
 === The `if-else if` Structure
@@ -409,7 +409,7 @@ The following code is a very common beginner mistake and will *not* compile:
 `if (percentage >= 80 && < 90) { ... }`
 
 This reads like "if the percentage is greater than or equal to 80 and less than 90," but the second part of the expression is not a complete Boolean expression. 
-We need to include the variable name and the comparison operator on both sides of the `&&` operator.
+We need to include the variable name and the comparison operator on *both* sides of the `&&` operator.
 
 The NOT operation is a little different, as it only takes one operand (making it a _unary_ operator_, if you're nerdy about words, like I am).
 It simply inverts the value of the operand.
