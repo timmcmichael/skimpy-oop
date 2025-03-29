@@ -380,14 +380,14 @@ When we're learning new things, we sometimes have to accept the wisdom of people
 We're all about learning good habits and best practices around here, so we'll almost always return values rather than printing them.
 
 There are times when we want a method whose sole purpose is to produce some output. 
-In that case, be sure to give it an appropriate identifier.
+In that case, we should give it an appropriate identifier.
 Notice that those kinds of methods in my examples have _print_ or _output_ in the name.
 
-I rarely want students to create methods that produce output, and when I do I always make that explicit in my directions. 
+On assignments, I rarely want students to create methods that produce output, and when I do I always make that explicit in my directions. 
 When I refer to _returning_ something, I mean just that. 
 The rule of thumb is, *all input and output statements should be in the `main()` method* and data should be passed around as necessary.
 
-TIP: I strongly penalize input and output statements outside of the `main()` method because I'm trying to build habits that will serve us well as we learn more about programming.
+TIP: I strongly penalize input and output statements outside of the `main()` method because I'm trying to build habits that will serve you well as you learn more about programming.
 
 .Time To Watch!
 ****
