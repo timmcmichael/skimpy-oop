@@ -218,10 +218,9 @@ Intro to GitHub Copilot in VS Code
 // https://youtu.be/gHuJgnpG7pI
 
 video::gHuJgnpG7pI[youtube, list={playlist}]
-// Files from video:
+File from video:
 
-// * Starter code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
-// * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/HelloWorld.java[`HelloWorld.java`^]
+* Starter code: https://github.com/timmcmichael/EMCCTimFiles/blob/main/OOP%20with%20Java%20(CIS150AB)/07%20Generative%20AI/CopilotFun.java[`CopilotFun.java`^]
 ****
 
 

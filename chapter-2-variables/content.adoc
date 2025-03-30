@@ -39,7 +39,7 @@ variable:: A piece of data that may change (or "vary") during program execution.
 In our `Hello World` code, the letters and characters we output are _constant_ data.
 
 .`HelloWorld` in Java
-[source,java]
+[source,java,linenums]
 ----
 public class HelloWorld {
 
@@ -143,7 +143,7 @@ The other floating-point data type in Java is called `float`.
 It's called "single" in some programming languages, which helps understand where the name `double` comes from: `double` uses twice as much memory (64 bits) as a `float` or "single" (32 bits)--and therefore its range of values is twice as big. Be aware that to make a `float` number in Java, you have to add the letter F (in capital or lowercase form) at the end of the number.
 
 .Numeric variable declarations in Java
-[source,java]
+[source,java,linenums]
 ----
 int myAge = 21;
 float myGPA = 3.75f; <.>
@@ -186,7 +186,7 @@ The best practice is to name a `boolean` variable in a way that expresses this e
 That is to say, we usually name our `boolean` variables using words like _is_, _has_, _can_, and so on.
 
 .Boolean variable declarations in Java
-[source,java]
+[source,java,linenums]
 ----
 boolean isPassing = true;
 boolean hasCar = false;
@@ -200,7 +200,7 @@ If we want to store a single character, like a student's letter grade or their f
 Char literals are created by putting a character in single quotes, and that character can be a letter, number, punctuation mark or symbol--or some other weird stuff, too.
 
 .Character variable declarations in Java
-[source,java]
+[source,java,linenums]
 ----
 char myLetterGrade = 'A';
 char firstInitial = 'T';
@@ -210,7 +210,7 @@ NOTE: Some people pronounce the `char` data type like the word "chart" without t
 
 NOTE: Also, I pronounce it "char" like "chart" without the "t" and firmly believe that only a sociopath would say it like the word "care".
 
-A `char` is really just an integer, but the number it holds conforms to a standard list of character values called *ASCII* (with the fun pronounciation "Ass key").
+A `char` is really just an integer, but the number it holds conforms to a standard list of character values called *ASCII* (with the fun pronunciation "Ass key").
 In this standard, the number 65 is a capital 'A', 66 is 'B', and so on.
 Lowercase letters are considered different characters, so 97 is 'a' and 98 is 'b'. Check out the https://en.wikipedia.org/wiki/ASCII#Table_of_codes[complete ASCII table] if you're curious.
 
@@ -275,7 +275,7 @@ Assigning a value to a variable or constant does not produce any output.
 If we want to display the output of a variable--or a constant--we just put the identifier in a `print()` or `println()` statement without any quotation marks:
 
 .Outputting variables using separate `print()` statements
-[source,java]
+[source,java,linenums]
 ----
 String artistName = "Sam Cooke";
 int birthYear = 1931;
@@ -289,7 +289,7 @@ This code output `Sam Cooke was born in 1931`.
 We can combine output into one statement by creating a string with multiple pieces using the `+` symbol.
 
 .Outputting variables using concatenation
-[source,java]
+[source,java,linenums]
 ----
 String artistName = "Sam Cooke";
 int birthYear = 1931;
@@ -302,6 +302,7 @@ Be thoughtful when concatenating, because the `+` symbol is also used to do addi
 
 For our purposes, there's no difference between outputting using separate `print()` statements or concatenating everything in one statement; you can use whichever approach you prefer (and we'll learn other ways to output values, too).
 
+[[_math_calculations_]]
 === Math Calculations
 To start doing some calculations, we'll use _operators_.
 You can think of an operator as a symbol that performs a calculation or other action.
@@ -330,7 +331,7 @@ The arithmetic operators work pretty much the way you'd expect, except maybe _mo
 Each operator acts on the value to either side:
 
 .Simple arithmetic operations in Java
-[source,java]
+[source,java,linenums]
 ----
 int sum = 5 + 7; <.> 
 int difference = sum - 2; <.>
@@ -369,7 +370,7 @@ int result2 = 17 - 4 / 2 + 2; <.>
 int result3 = 17 - 4 / (2 + 2); <.>
 ----
 
-<.> `result1` is 8: `4 * 6` is 24, then `24 / 3` is 8, and then `17 - 8` is 9.
+<.> `result1` is 9: `4 * 6` is 24, then `24 / 3` is 8, and then `17 - 8` is 9.
 <.> `result2` is 17: `4 / 2` is 2, then `17 - 2` is 15, and then `15 + 2` is 17.
 <.> `result3` is 16: `(2 + 2)` is 4, then `4 / 4` is 1, and then `17 - 1` is 16.
 
@@ -388,7 +389,7 @@ We can combine the addition operator (`+`) with the assignment operator (`=`) to
 
 `weight += 10`;
 
-You can use compound assignment operators for all of the arithmetic opeerations:
+You can use compound assignment operators for all of the arithmetic operations:
 
 * `+=` adds the value on the right to variable value on the left.
 * `-=` substracts the value on the right from the variable on the left.

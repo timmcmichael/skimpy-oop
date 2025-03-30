@@ -51,8 +51,8 @@ video::eq9oHVazmZI[youtube, list={playlist}]
 
 === `while` Loops
 
-The first structure Java provides for creating loops is the `while` loop.
-The `while` loop repeats a block of code as long as a certain condition is true.
+The first structure Java offers for creating loops is the `while` loop.
+The `while` loop repeats a block of code as long as a specified condition is true.
 The condition is checked before the block of code is executed, so the block of code might not execute at all if the condition is false the first time it's checked.
 
 A `while` loop is exactly like an `if` statement: a Boolean expression is checked, and if it's true, the block of code is executed.
@@ -60,7 +60,7 @@ The only difference is that, after the block of code is executed, the program ju
 If the condition is still true, the block of code is executed again.
 
 .Example of a `while` loop
-[source,java]
+[source,java,linenums]
 ----
 int count = 0;
 while (count < 10) {
@@ -77,13 +77,13 @@ This process repeats until the expression `count < 10` is false.
 The result of this loop is that the program prints out the value of `count` 10 times, starting with 0 and ending with 9.
 It is a definite loop because, before the loop starts, it's already known that the loop will repeat 10 times.
 
-==== Infinite Loops
+=== Infinite Loops
 One thing to be careful of when using a `while` loop is the possibility of creating an _infinite loop_.
 An infinite loop is a loop that repeats forever, because the condition that determines whether the loop should repeat is never false.
 Infinite loops are a common mistake for new programmers, and they can cause our program to hang or crash.
 
 .Example of an infinite loop
-[source,java]
+[source,java,linenums]
 ----
 int count = 0;
 while (count < 10) {
@@ -95,11 +95,11 @@ In this example, we've forgotten to increment `count` by 1 after printing it out
 `count` will always be `0`, so the condition `count < 10` will always be true.
 The program will print out "Count is: 0" over and over again, forever.
 
-NOTE: Your IDE will have a way to stop the program if it's stuck in an infinite loop. Often, this is a square button--essentially the symbol for "stop". In VS Code, you can also kill the terminal window that's running the program by clicking the trash can icon in the terminal window. Finally, in many cases you can press `Ctrl+C` to stop the program.
+NOTE: Your IDE will have a way to stop the program if it's stuck in an infinite loop. Often, this is a square button--essentially the symbol for "stop". In VS Code, you can also kill the terminal window that's running the program by clicking the trash can icon in the terminal window. Finally, in many cases you can press kbd:[Ctrl+C] to stop the program.
 
 The simplest infinite loop we can create in Java is:
 
-[source,java]
+[source,java,linenums]
 ----
 while (true) { 
     // hey, there's nothing to stop this loop!
@@ -107,12 +107,12 @@ while (true) {
 ----
 
 This loop will repeat forever, because the condition `true` is always true.
-Some programmers use this to start a loop and then use an if statement to break out of the loop when a certain condition is met, but that's not really an infinite loop--it just puts the boolean expression that controls the loop in an `if` statement instead of the `while` statement. 
-I personally consider it less readable than using a clear condition in the `while` statement, so I don't write loops like that.
+Some programmers use this to start a loop and then use an if statement to break out of the loop when a certain condition is met, but that's not really an infinite loop--it just puts the boolean expression that controls the loop in an `if` statement  within the loop's body instead of in the `while` statement. 
+I personally consider that less readable than using a clear condition in the `while` statement, so I don't write loops like that.
 
 .Time To Watch!
 ****
-`while` Loops in Java [COMING SOON!]
+`while` Loops in Java
 // https://youtu.be/wMbpslAjDDc
 
 video::wMbpslAjDDc[youtube, list={playlist}]
@@ -133,7 +133,7 @@ This means that the block of code will always execute at least once.
 Other than that, a `do-while` loop is exactly the same as a `while` loop.
 
 .Example of a `do-while` loop
-[source,java]
+[source,java,linenums]
 ----
 int count = 0;
 do {
@@ -147,11 +147,11 @@ The `while` statement is at the end of the loop; the `do` statement at the begin
 
 .Time To Watch!
 ****
-`do-while` Loops in Java [COMING SOON!]
+`do-while` Loops in Java 
 
 // link is correct, just needs to be published
 
-https://youtu.be/urwIMiEqGBw
+// https://youtu.be/urwIMiEqGBw
 
 video::urwIMiEqGBw[youtube, list={playlist}]
 Files from video:
@@ -160,7 +160,7 @@ Files from video:
 * Completed code: https://raw.githubusercontent.com/timmcmichael/EMCCTimFiles/refs/heads/main/OOP%20with%20Java%20(CIS150AB)/06%20Loops/DoWhileLoopDemo2.java[`DoWhileLoopDemo2.java`^]
 ****
 
-==== Choosing Between `while` and `do-while` Loops
+==== Choosing Between a `while` and a `do-while` Loops
 Both `while` and `do-while` loops work well for _indefinite loops_ (though they can be used for definite loops as well).
 There's nothing in the structure of these loops that requires a counter or other control variable, so they can be used for loops that repeat until a certain condition is met, however many iterations that requires.
 
@@ -178,10 +178,10 @@ A common use for indefinite loops is _input validation_.
 Input validation is the process of checking the data that a user inputs into a program to make sure it's valid.
 For example, if a program displays a menu with three options, a loop could keep asking for a selection until the user enters one of the three choices.
 
-There are more advanced techniques we'll eventually use for input validation, but indefinite loops are a simple and effective way to make sure the user's input is what we expect.
+There are more advanced techniques we'll eventually use for input validation, but indefinite loops are a simple way to make sure the user's input is what we expect.
 
 .Example of input validation with a `do-while` loop
-[source,java]
+[source,java,linenums]
 ----
 import java.util.Scanner;
 
@@ -209,11 +209,11 @@ This snippet of a program will keep displaying the menu and asking for the user'
 
 === `for` Loops
 
-Definite loops are really common, especially when we learn about things like _arrays_ later on, so Java provides a keyword that allows for a compact way to create that kind of loop: the `for` loop.
+Definite loops are really common, especially when we learn about things like _arrays_ later on, so Java provides a keyword that allows for a compact format to create that kind of loop: the `for` loop.
 The syntax of a `for` loop can be a little intimidating for new coders, but it really just combines into one line of code all three of the pieces we need for a loop: initializing a counter, checking the counter, and changing the counter.
 
 .`for` loop syntax
-[source,java]
+[source,java,linenums]
 ----
 for (int count = 0; count < 10; count++) {
     System.out.println("Count is: " + count);
@@ -229,7 +229,7 @@ Once you get the hang of the syntax, the `for` loop is a really convenient way t
 
 .Time To Watch!
 ****
-`for` Loops in Java [COMING SOON!]
+`for` Loops in Java
 
 // Link is correct, just needs to be published
 
@@ -243,7 +243,7 @@ File from video:
 === OPTIONAL: `break` and `continue` Statements
 I believe that `while`, `do-while`, and `for` loops, when written with clear Boolean expressions, are the most readable loops, and any loop a coder will need in their career can be written with those structures.
 A well-written loop will execute the block of code as many times as necessary, and then stop when the condition is false, without any additional help from the programmer.
-However, Java provides two statements that can be used to control the flow of a loop: the `break` statement and the `continue` statement.
+However, Java provides two statements that can be used to alter the flow of a loop: the `break` statement and the `continue` statement.
 
 Since they aren't necessary for writing loops, I consider them optional: none of my assignments or quiz questions will require you to know them.
 
@@ -257,7 +257,7 @@ When the `continue` statement is executed, the program stops executing the loop'
 
 .Time To Watch!
 ****
-`break` and `continue` in Java [COMING SOON!]
+`break` and `continue` in Java
 
 // https://youtu.be/gc4D-7UhxR0
 
@@ -272,7 +272,7 @@ video::gc4D-7UhxR0[youtube, list={playlist}]
 
 
 === A Word About Nested Loops
-We can put a loop inside another loop, and that's called a _nested loop_. They are useful in some situations, and studying them can improve our ability to think through loop-based algorithms.
+We can put a loop inside another loop, and that's called a _nested loop_. They are useful in some situations, and studying them can improve your ability to think through loop-based algorithms.
 
 However, they are beyond the scope of this course, which focuses on the fundamentals of object-oriented programming.
 
@@ -280,6 +280,8 @@ If you want to explore them, the textbook addresses nested loops in section 6.6 
 
 // TODO: Solution walkthrough with data validation? Maybe select a tip amount from a menu?
 
+
+//TODO: Video/content on recursion
 === JUST FOR FUN: Recursion
 ****
 Content labelled as *Just for Fun* is not required for the course, but is included for students who are interested in learning more about the topic. If you're struggling to learn the material in this course, please skip this--maybe you can return when you have more time.

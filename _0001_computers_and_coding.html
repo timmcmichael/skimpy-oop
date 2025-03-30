@@ -916,7 +916,15 @@ But Java puts OOP front and center, and we can&#8217;t start writing statements 
 <div class="listingblock">
 <div class="title"><code>HelloWorld.java</code> - Hello World program in Java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
 
 <span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
 
@@ -924,7 +932,8 @@ But Java puts OOP front and center, and we can&#8217;t start writing statements 
 
 <span class="tok-w">    </span><span class="tok-p">}</span><span class="tok-w"> </span><i class="conum" data-value="4"></i><b>(4)</b>
 
-<span class="tok-p">}</span><span class="tok-w"> </span><i class="conum" data-value="5"></i><b>(5)</b></code></pre>
+<span class="tok-p">}</span><span class="tok-w"> </span><i class="conum" data-value="5"></i><b>(5)</b>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -993,7 +1002,15 @@ Basically, it hits <em>enter</em>, and the next output statement will begin on a
 <div class="listingblock">
 <div class="title"><code>OutputExample.java</code> - Simple console output in Java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">OutputExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">OutputExample</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
 <span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 <span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot;As the Rolling Stones might say,&quot;</span><span class="tok-p">);</span>
@@ -1001,7 +1018,8 @@ Basically, it hits <em>enter</em>, and the next output statement will begin on a
 <span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;get what you want.&quot;</span><span class="tok-p">);</span>
 <span class="tok-w">    </span><span class="tok-p">}</span>
 
-<span class="tok-p">}</span></code></pre>
+<span class="tok-p">}</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1043,7 +1061,8 @@ We can add a comment onto the end of a line of code:</p>
 <div class="listingblock">
 <div class="title">Inline comment placed at the end of a line of code</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello World&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><span class="tok-c1">// this outputs text to the console</span></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello World&quot;</span><span class="tok-p">);</span><span class="tok-w"> </span><span class="tok-c1">// this outputs text to the console</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1056,7 +1075,21 @@ When the compiler sees <code>/*</code> it will ignore everything until it finds 
 <div class="listingblock">
 <div class="title">Multi-line comment block</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-cm">/*</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-cm">/*</span>
 <span class="tok-cm">This program shows the difference between print() and println().</span>
 <span class="tok-cm">It is referring to an old Rolling Stones song.</span>
 
@@ -1070,7 +1103,8 @@ When the compiler sees <code>/*</code> it will ignore everything until it finds 
 <span class="tok-w">        </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;get what you want.&quot;</span><span class="tok-p">);</span>
 <span class="tok-w">    </span><span class="tok-p">}</span>
 
-<span class="tok-p">}</span></code></pre>
+<span class="tok-p">}</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1158,7 +1192,7 @@ Almost all IDEs have a keyboard shortcut for commenting out code&#8212;&#8203;an
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-21 18:41:42 -0700
+Last updated 2025-03-29 15:15:42 -0700
 </div>
 </div>
 </body>

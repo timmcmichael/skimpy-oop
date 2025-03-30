@@ -60,7 +60,7 @@ In Java, arrays are objects, so they have to be created with the `new` keyword, 
 TIP: Any time you see square brackets in Java, you're dealing with an array.
 
 The following example shows how an array is declared and initialized:
-[source,java]
+[source,java,linenums]
 ----
 String[] groceryItems = new String[5];
 ----
@@ -68,7 +68,7 @@ String[] groceryItems = new String[5];
 This code creates an array of `String` objects called `groceryItems` that can hold 5 elements.
 
 Once we have an array, we can assign values to its elements using the index, which is placed in square brackets after the array name:
-[source,java]
+[source,java,linenums]
 ----
 groceryItems[0] = "milk";
 groceryItems[1] = "eggs";
@@ -82,7 +82,7 @@ Each element in the array is assigned a value, and the index is used to specify 
 Once we have values in an array, we can access them using the index.
 The element is just like any other variable, so we can use it in expressions, pass it to methods, and so on.
 
-[source,java]
+[source,java,linenums]
 ----
 System.out.println("The first item on the list is " + groceryItems[0]);
 System.out.println("The last item on the list is " + groceryItems[4]);
@@ -124,7 +124,7 @@ Most of the time, we'll use a simple `for` loop to traverse an array.
 The syntax for a `for` traversal is:
 
 .Example of a `for` loop to traverse an array
-[source,java]
+[source,java,linenums]
 ----
 int scores[] = {90, 85, 95, 88, 92};
 int sum = 0;
@@ -148,7 +148,7 @@ That way, this same loop will work for any array of any size.
 If we hard-coded the size of the array into the loop, we would have to change our code every time we changed the size of the array.
 
 .Example of a hard-coded loop
-[source,java]
+[source,java,linenums]
 ----
 int scores[] = {90, 85, 95, 88, 92};
 int sum = 0;
@@ -182,7 +182,7 @@ We've been using arrays of Strings, which are objects, but students sometimes do
 
 If we were to define a GroceryItem class with fields for the name and the aisle where it's located, we could create an array of GroceryItem objects.
 
-[source,java]
+[source,java,linenums]
 ----
 GroceryItem[] groceryItems = new GroceryItem[5];
 groceryItems[0] = new GroceryItem("milk", 4);

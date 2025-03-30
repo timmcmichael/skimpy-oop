@@ -93,7 +93,7 @@ A parent class becomes a _superclass_, and a child class becomes a _subclass_. Y
 
 In Java, we use the `extends` keyword to indicate that one class is a subclass of another class. Here's an example of a `FootballPlayer` class that extends the `Athlete` class:
 
-[source,java]
+[source,java,linenums]
 ----
 public class Athlete {
     private String athleteName;
@@ -156,7 +156,7 @@ If it doesn't find the method there, it looks in the superclass.
 If there's no method in there, it goes to *that* class's superclass, and so on up the hierarchy.
 If it gets to the top of the hierarchy and still hasn't found the method, the code will not compile.
 
-[source,java]
+[source,java,linenums]
 ----
 TennisPlayer serena = new TennisPlayer();
 serena.serve(); <.>
@@ -171,7 +171,7 @@ In some cases, we might want to provide a different implementation of a method i
 If a `TennisPlayer` has a specific way of running that is different from the way an `Athlete` runs, we can override the `run()` method in the `TennisPlayer` class.
 The `FootballPlayer` class will still use the `run()` method from the `Athlete` class, unless we override it in the `FootballPlayer` class as well.
 
-[source,java]
+[source,java,linenums]
 ----
 public class TennisPlayer extends Athlete {
     private String dominantHand;
@@ -205,7 +205,7 @@ This method returns a `String` representation of the object.
 
 The compiler will automatically call the `toString()` method when we try to print an object:
 
-[source,java]
+[source,java,linenums]
 ----
 TennisPlayer serena = new TennisPlayer();
 System.out.println(serena);
@@ -219,7 +219,7 @@ This is probably not very useful to us, but we can override the `toString()` met
 A common practice is to return a string that includes the values of the object's fields.
 
 .Example of overriding the `toString()` method in the `TennisPlayer` class
-[source,java]
+[source,java,linenums]
 ----
 @Override
 public String toString() {
@@ -272,7 +272,7 @@ Things are pretty straightforward when using default or parameterless constructo
 However, if we provide a constructor with parameters in the superclass, we need to make sure that the subclass constructor calls the superclass constructor and provides values for the parameters.
 To _explicitly_ call the superclass constructor, use the `super` keyword.
 
-[source,java]
+[source,java,linenums]
 ----
 public class Athlete {
     private String athleteName;
@@ -327,7 +327,7 @@ It can be difficult for inexperienced programmers to recognize all of the ways t
 This means that we can create an array of `Athlete` objects, and we can use it to store objects of the `Athlete` class, the `FootballPlayer` class, and the `TennisPlayer` class.
 This is possible because every `FootballPlayer` _is an_ `Athlete`, and every `TennisPlayer` _is an_ `Athlete`.
 
-[source,java]
+[source,java,linenums]
 ----
 Athlete[] athletes = new Athlete[3];
 athletes[0] = new Athlete("Alice", 25, 150);

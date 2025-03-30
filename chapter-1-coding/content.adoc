@@ -220,7 +220,7 @@ File from video:
 Take a look at the code for a basic "Hello World" program; we'll learn what all of these pieces are as we go, but we should at least identify them now.
 
 .`HelloWorld.java` - Hello World program in Java
-[source,java]
+[source,java,linenums]
 ----
 public class HelloWorld { <.>
 
@@ -267,7 +267,7 @@ println() works by outputting the text inside the parentheses and then outputtin
 To understand the difference between `print()` and `println()`, consider this program.
 
 .`OutputExample.java` - Simple console output in Java
-[source,java]
+[source,java,linenums]
 ----
 public class OutputExample {
 
@@ -309,7 +309,7 @@ Once the compiler sees two slashes, it just ignores the rest of the line.
 We can add a comment onto the end of a line of code:
 
 .Inline comment placed at the end of a line of code
-[source,java]
+[source,java,linenums]
 ----
 System.out.println("Hello World"); // this outputs text to the console
 ----
@@ -320,7 +320,7 @@ To make a comment that takes up multiple lines, start the comment block with `/{
 When the compiler sees `/{asterisk}` it will ignore everything until it finds `{asterisk}/`, and then it will resume processing as usual.
 
 .Multi-line comment block
-[source,java]
+[source,java,linenums]
 ----
 /*
 This program shows the difference between print() and println().

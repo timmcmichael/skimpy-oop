@@ -30,7 +30,7 @@ _Source code examples from this chapter and associated videos are available on h
 
 As our programs begin to get larger and more complex, it will be important to keep our code organized. 
 Each program we write is contained within a _class_, and classes are the basic building block of an OOP program; we'll explore them in more detail in the next chapter.
-Within a program, we can organize code in *methods*.
+Within a class or program, we can organize code in *methods*.
 A method is a collection of statements that work together to complete a single task.
 Consider the assembly instructions for building a LEGO set. 
 
@@ -40,7 +40,7 @@ It might take dozens of small steps to complete the set, but taken together, the
 A method is conceptually the same. 
 
 If you've worked with other programming languages, you may know methods by a different name. 
-In Python, we use functions, and in other languages we use procedures or subroutines. 
+In Python, we use _functions_, and in other languages we use _procedures_ or _subroutines_. 
 All of those terms pretty much mean the same thing, but in Java they're called methods.
 And really, they're generally called methods whenever we're using object-oriented programming, so even in Python we sometimes call them methods.
 
@@ -65,8 +65,12 @@ To output text, we've been calling the `println()` and `print()` methods.
 
 TIP: In Java, parentheses *always* indicate a method, whether or not there is anything inside of the parentheses. Anytime you see parentheses in Java code, you're looking at either a method definition or a method call.
 
-Consider this simple method definition:
-[source,java]
+A method definition includes a method header followed by a code block.
+
+// TODO: Replace this image/code with a musical example
+
+.A method definition in Java
+[source,java,linenums]
 ----
 public static void displayCopyright() {
     System.out.println("(C) 2025 by Tim McMichael. All rights reserved.");
@@ -104,7 +108,7 @@ The outermost code block is our class.
 Although there are a few things that can go outside the class, like `package` and `import` statements, the class code block contains all of the components of our program.
 
 In some cases we can place one block inside another, as such as putting a method inside a class.
-This is called _nesting_ blocks, and a nested block must completely enclosed; in other words, a method can't be partly in a class and partly out of it.
+This is called _nesting_ blocks, and a nested block must be completely enclosed; in other words, a method can't be partly in a class and partly out of it.
 
 And some kinds of blocks can't be nested. 
 A method can be nested inside a class, but a method cannot be nested inside another method.
@@ -113,14 +117,16 @@ Many IDEs, including https://code.visualstudio.com[Visual Studio Code] use color
 .An example of nested blocks in Visual Studio Code.
 image::Blocks.png[A screenshot of Java source code with blocks indicated by bracketing]
 
-A variable can only be used or accessed inside the block in which it was declared; that block is the variable's `scope`.
+A variable can only be used or accessed inside the block in which it was declared, or within a block nested within that block; this is the variable's `scope`.
 When we refer to a variable, the compiler checks within that code block, or scope, to see if the variable has been declared.
-If it doesn't find a variable with that identifier within the current scope, it will stop compiling.
+If it doesn't find a variable with that identifier within the current scope, it will move out to the enclosing code block (if it is nested within a class, for example) and check there. 
+If the variable is still not found, the compiler stops and produces an error.
+
 Basically, referring to a variable that is declared in a different scope is the same as referring to a variable we never declared at all.
 Trying to use a variable in a different code block is referred to as an _out of scope_ reference.
 
 .`ScopeExample.java`. An example of code with an out-of-scope variable reference.
-[source,java]
+[source,java,linenums]
 ----
 public class ScopeExample {
 
@@ -144,7 +150,7 @@ public class ScopeExample {
 When we first started using variables, we learned that we can't make two variables with the same name, but it's a little more nuanced than that.
 We can't make two variables with the same name _and scope_.
 Java *will* allow us to declare a variable with the same name in a different scope, which is called _variable shadowing_.
-Shadowing is a *very* bad practice, because it often leads to confusion about which variable is in scope.
+Shadowing is a *very* bad practice, because it often leads to confusion about which variable is in scope (though we'll see an exception down the road).
 
 The example below can be confusing to beginners and to people who are reading the code quickly.
 When `outputNumber()` is called, another variable named `favoriteNumber` is created and assigned the value `18`. 
@@ -153,7 +159,7 @@ Then, program execution returns to `main()`, where a `println()` statement outpu
 However, _this_ `favoriteNumber` wasn't changed to 10--the other one was.
 
 .`ShadowingExample.java`. An example of variable shadowing, which we should avoid.
-[source,java]
+[source,java,linenums]
 ----
 public class ShadowingExample {
 
@@ -179,13 +185,13 @@ public class ShadowingExample {
 
 ==== Global Variables
 
-As we can see, variable scope has a big impact on how our code runs.
-Beginning programmers sometimes try to avoid scope issues by declaring their variables within the class code block, which makes them accessible to any block nested within the class.
+As you can see, variable scope has a big impact on how our code runs.
+Beginning programmers sometimes try to avoid scope issues by declaring their variables within the class code block, which makes them accessible to any block nested within the class--inclusing all of the methods the class encloses.
 This kind of class-level variable is sometimes called a _global variable_, and the use of global variables is generally discouraged.
 
 
 .`GlobalVariableExample.java`. An example of a global variable, which we should not use.
-[source,java]
+[source,java,linenums]
 ----
 public class GlobalVariableExample {
     static int favoriteNumber = 7; <.>
@@ -231,10 +237,10 @@ In this example, "Hello World" is an argument.
 We establish what information a method needs as part of the method definition.
 Within the method we're defining, those pieces of information are called *parameters*.
 A parameter is a variable that exists in the method and receives the argument, and it's declared inside the parentheses in our method definition.
-The methods we've defined so far didn't need any information, so we haven't been putting anything in the parentheses--but now let's see an example with a parameter.
+The methods we've defined so far didn't need any outside information, so we haven't been putting anything in the parentheses--but now let's see an example with a parameter.
 
 .ParameterExample.java - Defining a parameter and passing in an argument
-[source,java]
+[source,java,linenums]
 ----
 public class ParameterExample {
 
@@ -274,10 +280,10 @@ File from video:
 === Returning Values
 
 The methods we've seen to this point are basically commands--they simply perform a task, and then when they're done, program execution just goes back to the method that called it and resumes there.
-But we can also create methods that are like questions--they perform a chunk of code, but when they are finished they give back an answer.
+But we can also create methods that are like questions--they execute a chunk of code, but when they are finished they give back an answer.
 
-Consider this method:
-[source,java]
+Consider these methods:
+[source,java,linenums]
 ----
 public static void printFavNum() { <.>
     int favNum = 10 - 3;
@@ -298,7 +304,7 @@ The `void` in the method header is the return type, and _void_ basically means n
 The second method is asking to get a favorite number, so it is going to give back an `int`. The return type is specified as `int`.
 The `return` statement sends the `favNum` value back to the method that called `getFavNum()`.
 
-IMPORTANT: If a method has a return type of anything other than `void`, it will only compile if it has a `return` statement followed by a value (literal or variable) of the specified type.
+IMPORTANT: If a method has a return type of anything other than `void`, it will only compile if it has a `return` statement followed by a value--either literal or variable--of the specified type.
 
 This means that methods themselves essentially have data types.
 `printFavNum()` has a data type of `void`. 
@@ -312,10 +318,10 @@ This evaluated the same way as any other assignment statement. It starts on the 
 
 A `return` statement in a `void` method stops execution of the method and returns to the calling method.
 
-[source,java]
+[source,java,linenums]
 ----
 public static void shortCircuit() {
-   System.out.print(“This runs...”);
+   System.out.print(“This line of code runs...”);
    return;
    System.out.print(“This can never run!”);
 }
@@ -338,7 +344,7 @@ That `print()` statement won't work--rather, the user will never see the result,
 
 Consider this code:
 
-[source,java]
+[source,java,linenums]
 ----
 public class BadOutput {
     public static void main(String[] args) {
@@ -355,7 +361,7 @@ public class BadOutput {
 If the `kingOfSoul()` method knows who the King of Soul is, how do we print that out if we can't perform the output inside the method?
 The solution is to return the String and perform the output in `main()`.
 
-[source,java]
+[source,java,linenums]
 ----
 public class GoodOutput {
     public static void main(String[] args) {
@@ -374,14 +380,14 @@ When we're learning new things, we sometimes have to accept the wisdom of people
 We're all about learning good habits and best practices around here, so we'll almost always return values rather than printing them.
 
 There are times when we want a method whose sole purpose is to produce some output. 
-In that case, be sure to give it an appropriate identifier.
+In that case, we should give it an appropriate identifier.
 Notice that those kinds of methods in my examples have _print_ or _output_ in the name.
 
-I rarely want students to create methods that produce output, and when I do I always make that explicit in my directions. 
+On assignments, I rarely want students to create methods that produce output, and when I do I always make that explicit in my directions. 
 When I refer to _returning_ something, I mean just that. 
 The rule of thumb is, *all input and output statements should be in the `main()` method* and data should be passed around as necessary.
 
-TIP: I strongly penalize input and output statements outside of the `main()` method because I'm trying to build habits that will serve us well as we learn more about programming.
+TIP: I strongly penalize input and output statements outside of the `main()` method because I'm trying to build habits that will serve you well as you learn more about programming.
 
 .Time To Watch!
 ****
@@ -402,7 +408,7 @@ Sometimes the task, action, or calculation that a method produces has different 
 
 Consider a method that calculates the average age of two people:
 
-[source,java]
+[source,java,linenums]
 ----
 public static double averageAge(int age1, int age2) {
        return (double) (age1 + age2) / 2;
@@ -419,7 +425,7 @@ To create another version of a method that operates a little differently, we can
 To overload a method, we write a new method with the same identifier, but with a different set of parameters. 
 An overload for our `averageAge()` method could look like this:
 
-[source,java]
+[source,java,linenums]
 ----
 public static double averageAge(int age1, int age2, int age3) {
         return (double) (age1 + age2 + age3) / 3;
@@ -433,7 +439,7 @@ When we're using the method, we can call whichever best suits our needs at the t
 The compiler can also easily distinguish overloaded methods if the _types_ of the parameters are different.
 An implementation that accepts `double`s is valid:
 
-[source,java]
+[source,java,linenums]
 ----
     public static double averageAge(double age1, double age2, double age3) {
         return (double) (age1 + age2 + age3) / 3;
@@ -448,7 +454,7 @@ The _names_ of those parameters doesn't differentiate them, so different names i
 
 
 .`BadOverloading.java`. An invalid example of overloading.
-[source,java]
+[source,java,linenums]
 ----
 public class BadOverloading {
     public static void main(String[] args) {
