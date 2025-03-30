@@ -51,8 +51,8 @@ video::eq9oHVazmZI[youtube, list={playlist}]
 
 === `while` Loops
 
-The first structure Java provides for creating loops is the `while` loop.
-The `while` loop repeats a block of code as long as a certain condition is true.
+The first structure Java offers for creating loops is the `while` loop.
+The `while` loop repeats a block of code as long as a specified condition is true.
 The condition is checked before the block of code is executed, so the block of code might not execute at all if the condition is false the first time it's checked.
 
 A `while` loop is exactly like an `if` statement: a Boolean expression is checked, and if it's true, the block of code is executed.
@@ -77,7 +77,7 @@ This process repeats until the expression `count < 10` is false.
 The result of this loop is that the program prints out the value of `count` 10 times, starting with 0 and ending with 9.
 It is a definite loop because, before the loop starts, it's already known that the loop will repeat 10 times.
 
-==== Infinite Loops
+=== Infinite Loops
 One thing to be careful of when using a `while` loop is the possibility of creating an _infinite loop_.
 An infinite loop is a loop that repeats forever, because the condition that determines whether the loop should repeat is never false.
 Infinite loops are a common mistake for new programmers, and they can cause our program to hang or crash.
@@ -95,7 +95,7 @@ In this example, we've forgotten to increment `count` by 1 after printing it out
 `count` will always be `0`, so the condition `count < 10` will always be true.
 The program will print out "Count is: 0" over and over again, forever.
 
-NOTE: Your IDE will have a way to stop the program if it's stuck in an infinite loop. Often, this is a square button--essentially the symbol for "stop". In VS Code, you can also kill the terminal window that's running the program by clicking the trash can icon in the terminal window. Finally, in many cases you can press `Ctrl+C` to stop the program.
+NOTE: Your IDE will have a way to stop the program if it's stuck in an infinite loop. Often, this is a square button--essentially the symbol for "stop". In VS Code, you can also kill the terminal window that's running the program by clicking the trash can icon in the terminal window. Finally, in many cases you can press kbd:[Ctrl+C] to stop the program.
 
 The simplest infinite loop we can create in Java is:
 
