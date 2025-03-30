@@ -556,19 +556,21 @@ pre.pygments .tok-il { color: #ae81ff } /* Literal.Number.Integer.Long */
 </li>
 <li><a href="_0110_loops.html#_while_loops">6.1. <code>while</code> Loops</a>
 </li>
-<li><a href="_0110_loops.html#_do_while_loops">6.2. <code>do-while</code> Loops</a>
+<li><a href="_0110_loops.html#_infinite_loops">6.2. Infinite Loops</a>
 </li>
-<li><a href="_0110_loops.html#_input_validation_with_loops">6.3. Input Validation with Loops</a>
+<li><a href="_0110_loops.html#_do_while_loops">6.3. <code>do-while</code> Loops</a>
 </li>
-<li><a href="_0110_loops.html#_for_loops">6.4. <code>for</code> Loops</a>
+<li><a href="_0110_loops.html#_input_validation_with_loops">6.4. Input Validation with Loops</a>
 </li>
-<li><a href="_0110_loops.html#_optional_break_and_continue_statements">6.5. OPTIONAL: <code>break</code> and <code>continue</code> Statements</a>
+<li><a href="_0110_loops.html#_for_loops">6.5. <code>for</code> Loops</a>
 </li>
-<li><a href="_0110_loops.html#_a_word_about_nested_loops">6.6. A Word About Nested Loops</a>
+<li><a href="_0110_loops.html#_optional_break_and_continue_statements">6.6. OPTIONAL: <code>break</code> and <code>continue</code> Statements</a>
 </li>
-<li><a href="_0110_loops.html#_just_for_fun_recursion">6.7. JUST FOR FUN: Recursion</a>
+<li><a href="_0110_loops.html#_a_word_about_nested_loops">6.7. A Word About Nested Loops</a>
 </li>
-<li><a href="_0110_loops.html#_solution_walkthroughs">6.8. Solution Walkthroughs</a>
+<li><a href="_0110_loops.html#_just_for_fun_recursion">6.8. JUST FOR FUN: Recursion</a>
+</li>
+<li><a href="_0110_loops.html#_solution_walkthroughs">6.9. Solution Walkthroughs</a>
 </li>
 <li><a href="_0110_loops.html#_check_yourself_before_you_wreck_yourself_on_the_assignments_7">Check Yourself Before You Wreck Yourself (on the assignments)</a>
 </li>
@@ -660,8 +662,8 @@ Each time the loop repeats, it&#8217;s called an <em>iteration</em>.</p>
 <div class="sect2">
 <h3 id="_while_loops">6.1. <code>while</code> Loops</h3>
 <div class="paragraph">
-<p>The first structure Java provides for creating loops is the <code>while</code> loop.
-The <code>while</code> loop repeats a block of code as long as a certain condition is true.
+<p>The first structure Java offers for creating loops is the <code>while</code> loop.
+The <code>while</code> loop repeats a block of code as long as a specified condition is true.
 The condition is checked before the block of code is executed, so the block of code might not execute at all if the condition is false the first time it&#8217;s checked.</p>
 </div>
 <div class="paragraph">
@@ -672,11 +674,16 @@ If the condition is still true, the block of code is executed again.</p>
 <div class="listingblock">
 <div class="title">Example of a <code>while</code> loop</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
 <span class="tok-k">while</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 <span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Count is: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-p">);</span>
 <span class="tok-w">    </span><span class="tok-n">count</span><span class="tok-o">++</span><span class="tok-p">;</span>
-<span class="tok-p">}</span></code></pre>
+<span class="tok-p">}</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -689,8 +696,9 @@ This process repeats until the expression <code>count &lt; 10</code> is false.</
 <p>The result of this loop is that the program prints out the value of <code>count</code> 10 times, starting with 0 and ending with 9.
 It is a definite loop because, before the loop starts, it&#8217;s already known that the loop will repeat 10 times.</p>
 </div>
-<div class="sect3">
-<h4 id="_infinite_loops">6.1.1. Infinite Loops</h4>
+</div>
+<div class="sect2">
+<h3 id="_infinite_loops">6.2. Infinite Loops</h3>
 <div class="paragraph">
 <p>One thing to be careful of when using a <code>while</code> loop is the possibility of creating an <em>infinite loop</em>.
 An infinite loop is a loop that repeats forever, because the condition that determines whether the loop should repeat is never false.
@@ -699,10 +707,14 @@ Infinite loops are a common mistake for new programmers, and they can cause our 
 <div class="listingblock">
 <div class="title">Example of an infinite loop</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
 <span class="tok-k">while</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 <span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Count is: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-p">);</span>
-<span class="tok-p">}</span></code></pre>
+<span class="tok-p">}</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -717,7 +729,7 @@ The program will print out "Count is: 0" over and over again, forever.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Your IDE will have a way to stop the program if it&#8217;s stuck in an infinite loop. Often, this is a square button&#8212;&#8203;essentially the symbol for "stop". In VS Code, you can also kill the terminal window that&#8217;s running the program by clicking the trash can icon in the terminal window. Finally, in many cases you can press <code>Ctrl+C</code> to stop the program.
+Your IDE will have a way to stop the program if it&#8217;s stuck in an infinite loop. Often, this is a square button&#8212;&#8203;essentially the symbol for "stop". In VS Code, you can also kill the terminal window that&#8217;s running the program by clicking the trash can icon in the terminal window. Finally, in many cases you can press <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>C</kbd></span> to stop the program.
 </td>
 </tr>
 </table>
@@ -727,21 +739,24 @@ Your IDE will have a way to stop the program if it&#8217;s stuck in an infinite 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">while</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kc">true</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-k">while</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kc">true</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 <span class="tok-w">    </span><span class="tok-c1">// hey, there&#39;s nothing to stop this loop!</span>
-<span class="tok-p">}</span></code></pre>
+<span class="tok-p">}</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>This loop will repeat forever, because the condition <code>true</code> is always true.
-Some programmers use this to start a loop and then use an if statement to break out of the loop when a certain condition is met, but that&#8217;s not really an infinite loop&#8212;&#8203;it just puts the boolean expression that controls the loop in an <code>if</code> statement instead of the <code>while</code> statement.
-I personally consider it less readable than using a clear condition in the <code>while</code> statement, so I don&#8217;t write loops like that.</p>
+Some programmers use this to start a loop and then use an if statement to break out of the loop when a certain condition is met, but that&#8217;s not really an infinite loop&#8212;&#8203;it just puts the boolean expression that controls the loop in an <code>if</code> statement  within the loop&#8217;s body instead of in the <code>while</code> statement.
+I personally consider that less readable than using a clear condition in the <code>while</code> statement, so I don&#8217;t write loops like that.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p><code>while</code> Loops in Java [COMING SOON!]</p>
+<p><code>while</code> Loops in Java</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -767,9 +782,8 @@ I personally consider it less readable than using a clear condition in the <code
 </div>
 </div>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_do_while_loops">6.2. <code>do-while</code> Loops</h3>
+<h3 id="_do_while_loops">6.3. <code>do-while</code> Loops</h3>
 <div class="paragraph">
 <p>As we&#8217;ve seen, a <code>while</code> loop checks the condition before executing the block of code.
 A <code>do-while</code> loop is similar, but it checks the condition <strong>after</strong> executing the block of code: <em>run first, then check</em>.
@@ -779,11 +793,16 @@ Other than that, a <code>do-while</code> loop is exactly the same as a <code>whi
 <div class="listingblock">
 <div class="title">Example of a <code>do-while</code> loop</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span>
 <span class="tok-k">do</span><span class="tok-w"> </span><span class="tok-p">{</span>
 <span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Count is: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-p">);</span>
 <span class="tok-w">    </span><span class="tok-n">count</span><span class="tok-o">++</span><span class="tok-p">;</span>
-<span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">while</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">);</span></code></pre>
+<span class="tok-p">}</span><span class="tok-w"> </span><span class="tok-k">while</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">);</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -794,10 +813,7 @@ The <code>while</code> statement is at the end of the loop; the <code>do</code> 
 <div class="content">
 <div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p><code>do-while</code> Loops in Java [COMING SOON!]</p>
-</div>
-<div class="paragraph">
-<p><a href="https://youtu.be/urwIMiEqGBw" class="bare">https://youtu.be/urwIMiEqGBw</a></p>
+<p><code>do-while</code> Loops in Java</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -820,7 +836,7 @@ The <code>while</code> statement is at the end of the loop; the <code>do</code> 
 </div>
 </div>
 <div class="sect3">
-<h4 id="_choosing_between_while_and_do_while_loops">6.2.1. Choosing Between <code>while</code> and <code>do-while</code> Loops</h4>
+<h4 id="_choosing_between_a_while_and_a_do_while_loops">6.3.1. Choosing Between a <code>while</code> and a <code>do-while</code> Loops</h4>
 <div class="paragraph">
 <p>Both <code>while</code> and <code>do-while</code> loops work well for <em>indefinite loops</em> (though they can be used for definite loops as well).
 There&#8217;s nothing in the structure of these loops that requires a counter or other control variable, so they can be used for loops that repeat until a certain condition is met, however many iterations that requires.</p>
@@ -839,19 +855,38 @@ The simple rule of thumb for now is: if we need to guarantee that the block of c
 </div>
 </div>
 <div class="sect2">
-<h3 id="_input_validation_with_loops">6.3. Input Validation with Loops</h3>
+<h3 id="_input_validation_with_loops">6.4. Input Validation with Loops</h3>
 <div class="paragraph">
 <p>A common use for indefinite loops is <em>input validation</em>.
 Input validation is the process of checking the data that a user inputs into a program to make sure it&#8217;s valid.
 For example, if a program displays a menu with three options, a loop could keep asking for a selection until the user enters one of the three choices.</p>
 </div>
 <div class="paragraph">
-<p>There are more advanced techniques we&#8217;ll eventually use for input validation, but indefinite loops are a simple and effective way to make sure the user&#8217;s input is what we expect.</p>
+<p>There are more advanced techniques we&#8217;ll eventually use for input validation, but indefinite loops are a simple way to make sure the user&#8217;s input is what we expect.</p>
 </div>
 <div class="listingblock">
 <div class="title">Example of input validation with a <code>do-while</code> loop</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-nn">java.util.Scanner</span><span class="tok-p">;</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-nn">java.util.Scanner</span><span class="tok-p">;</span>
 
 <span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">InputValidation</span><span class="tok-w"> </span><span class="tok-p">{</span>
 <span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
@@ -870,7 +905,8 @@ For example, if a program displays a menu with three options, a loop could keep 
 
 <span class="tok-w">        </span><span class="tok-c1">// Rest of the code...</span>
 <span class="tok-w">    </span><span class="tok-p">}</span>
-<span class="tok-p">}</span></code></pre>
+<span class="tok-p">}</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -878,17 +914,20 @@ For example, if a program displays a menu with three options, a loop could keep 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_for_loops">6.4. <code>for</code> Loops</h3>
+<h3 id="_for_loops">6.5. <code>for</code> Loops</h3>
 <div class="paragraph">
-<p>Definite loops are really common, especially when we learn about things like <em>arrays</em> later on, so Java provides a keyword that allows for a compact way to create that kind of loop: the <code>for</code> loop.
+<p>Definite loops are really common, especially when we learn about things like <em>arrays</em> later on, so Java provides a keyword that allows for a compact format to create that kind of loop: the <code>for</code> loop.
 The syntax of a <code>for</code> loop can be a little intimidating for new coders, but it really just combines into one line of code all three of the pieces we need for a loop: initializing a counter, checking the counter, and changing the counter.</p>
 </div>
 <div class="listingblock">
 <div class="title"><code>for</code> loop syntax</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-k">for</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-o">++</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-k">for</span><span class="tok-w"> </span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-w"> </span><span class="tok-o">&lt;</span><span class="tok-w"> </span><span class="tok-mi">10</span><span class="tok-p">;</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-o">++</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 <span class="tok-w">    </span><span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Count is: &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">count</span><span class="tok-p">);</span>
-<span class="tok-p">}</span></code></pre>
+<span class="tok-p">}</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -904,7 +943,7 @@ The syntax of a <code>for</code> loop can be a little intimidating for new coder
 <div class="content">
 <div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p><code>for</code> Loops in Java [COMING SOON!]</p>
+<p><code>for</code> Loops in Java</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -919,11 +958,11 @@ The syntax of a <code>for</code> loop can be a little intimidating for new coder
 </div>
 </div>
 <div class="sect2">
-<h3 id="_optional_break_and_continue_statements">6.5. OPTIONAL: <code>break</code> and <code>continue</code> Statements</h3>
+<h3 id="_optional_break_and_continue_statements">6.6. OPTIONAL: <code>break</code> and <code>continue</code> Statements</h3>
 <div class="paragraph">
 <p>I believe that <code>while</code>, <code>do-while</code>, and <code>for</code> loops, when written with clear Boolean expressions, are the most readable loops, and any loop a coder will need in their career can be written with those structures.
 A well-written loop will execute the block of code as many times as necessary, and then stop when the condition is false, without any additional help from the programmer.
-However, Java provides two statements that can be used to control the flow of a loop: the <code>break</code> statement and the <code>continue</code> statement.</p>
+However, Java provides two statements that can be used to alter the flow of a loop: the <code>break</code> statement and the <code>continue</code> statement.</p>
 </div>
 <div class="paragraph">
 <p>Since they aren&#8217;t necessary for writing loops, I consider them optional: none of my assignments or quiz questions will require you to know them.</p>
@@ -942,7 +981,7 @@ When the <code>continue</code> statement is executed, the program stops executin
 <div class="content">
 <div class="title">Time To Watch!</div>
 <div class="paragraph">
-<p><code>break</code> and <code>continue</code> in Java [COMING SOON!]</p>
+<p><code>break</code> and <code>continue</code> in Java</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -966,9 +1005,9 @@ When the <code>continue</code> statement is executed, the program stops executin
 </div>
 </div>
 <div class="sect2">
-<h3 id="_a_word_about_nested_loops">6.6. A Word About Nested Loops</h3>
+<h3 id="_a_word_about_nested_loops">6.7. A Word About Nested Loops</h3>
 <div class="paragraph">
-<p>We can put a loop inside another loop, and that&#8217;s called a <em>nested loop</em>. They are useful in some situations, and studying them can improve our ability to think through loop-based algorithms.</p>
+<p>We can put a loop inside another loop, and that&#8217;s called a <em>nested loop</em>. They are useful in some situations, and studying them can improve your ability to think through loop-based algorithms.</p>
 </div>
 <div class="paragraph">
 <p>However, they are beyond the scope of this course, which focuses on the fundamentals of object-oriented programming.</p>
@@ -978,7 +1017,7 @@ When the <code>continue</code> statement is executed, the program stops executin
 </div>
 </div>
 <div class="sect2">
-<h3 id="_just_for_fun_recursion">6.7. JUST FOR FUN: Recursion</h3>
+<h3 id="_just_for_fun_recursion">6.8. JUST FOR FUN: Recursion</h3>
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
@@ -991,7 +1030,7 @@ When the <code>continue</code> statement is executed, the program stops executin
 </div>
 </div>
 <div class="sect2">
-<h3 id="_solution_walkthroughs">6.8. Solution Walkthroughs</h3>
+<h3 id="_solution_walkthroughs">6.9. Solution Walkthroughs</h3>
 <div class="paragraph">
 <p>In "solution walkthrough" videos, I give a problem/prompt that is similar to the kinds of work I assign, and then I record myself writing a solution. It&#8217;s not absolutely mandatory to watch this video, but students report that these videos are particularly helpful.</p>
 </div>
@@ -1064,7 +1103,7 @@ When the <code>continue</code> statement is executed, the program stops executin
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-21 18:41:42 -0700
+Last updated 2025-03-29 15:15:42 -0700
 </div>
 </div>
 </body>

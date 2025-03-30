@@ -560,7 +560,7 @@ pre.pygments .tok-il { color: #ae81ff } /* Literal.Number.Integer.Long */
 </li>
 <li><a href="_0010_variables.html#_outputting_variable_and_constant_values">2.7. Outputting Variable (and Constant) Values</a>
 </li>
-<li><a href="_0010_variables.html#_math_calculations">2.8. Math Calculations</a>
+<li><a href="_0010_variables.html#_math_calculations_">2.8. Math Calculations</a>
 </li>
 <li><a href="_0010_variables.html#_getting_user_input">2.9. Getting User Input</a>
 </li>
@@ -649,7 +649,15 @@ In computer programming, a piece of information is called <strong>data</strong>.
 <div class="listingblock">
 <div class="title"><code>HelloWorld</code> in Java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">class</span> <span class="tok-nc">HelloWorld</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
 <span class="tok-w">    </span><span class="tok-kd">public</span><span class="tok-w"> </span><span class="tok-kd">static</span><span class="tok-w"> </span><span class="tok-kt">void</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span><span class="tok-w"> </span><span class="tok-n">args</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
 
@@ -657,7 +665,8 @@ In computer programming, a piece of information is called <strong>data</strong>.
 
 <span class="tok-w">    </span><span class="tok-p">}</span>
 
-<span class="tok-p">}</span></code></pre>
+<span class="tok-p">}</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -834,9 +843,12 @@ It&#8217;s called "single" in some programming languages, which helps understand
 <div class="listingblock">
 <div class="title">Numeric variable declarations in Java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">myAge</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">;</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">myAge</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">21</span><span class="tok-p">;</span>
 <span class="tok-kt">float</span><span class="tok-w"> </span><span class="tok-n">myGPA</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.75f</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
-<span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">myFriendsGPA</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.54</span><span class="tok-p">;</span></code></pre>
+<span class="tok-kt">double</span><span class="tok-w"> </span><span class="tok-n">myFriendsGPA</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mf">3.54</span><span class="tok-p">;</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -904,8 +916,10 @@ That is to say, we usually name our <code>boolean</code> variables using words l
 <div class="listingblock">
 <div class="title">Boolean variable declarations in Java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isPassing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
-<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">hasCar</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">isPassing</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span><span class="tok-p">;</span>
+<span class="tok-kt">boolean</span><span class="tok-w"> </span><span class="tok-n">hasCar</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">false</span><span class="tok-p">;</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -922,8 +936,10 @@ Char literals are created by putting a character in single quotes, and that char
 <div class="listingblock">
 <div class="title">Character variable declarations in Java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">myLetterGrade</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;A&#39;</span><span class="tok-p">;</span>
-<span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">firstInitial</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;T&#39;</span><span class="tok-p">;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">myLetterGrade</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;A&#39;</span><span class="tok-p">;</span>
+<span class="tok-kt">char</span><span class="tok-w"> </span><span class="tok-n">firstInitial</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-sc">&#39;T&#39;</span><span class="tok-p">;</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -951,7 +967,7 @@ Also, I pronounce it "char" like "chart" without the "t" and firmly believe that
 </table>
 </div>
 <div class="paragraph">
-<p>A <code>char</code> is really just an integer, but the number it holds conforms to a standard list of character values called <strong>ASCII</strong> (with the fun pronounciation "Ass key").
+<p>A <code>char</code> is really just an integer, but the number it holds conforms to a standard list of character values called <strong>ASCII</strong> (with the fun pronunciation "Ass key").
 In this standard, the number 65 is a capital 'A', 66 is 'B', and so on.
 Lowercase letters are considered different characters, so 97 is 'a' and 98 is 'b'. Check out the <a href="https://en.wikipedia.org/wiki/ASCII#Table_of_codes">complete ASCII table</a> if you&#8217;re curious.</p>
 </div>
@@ -1053,12 +1069,18 @@ If we want to display the output of a variable&#8212;&#8203;or a constant&#8212;
 <div class="listingblock">
 <div class="title">Outputting variables using separate <code>print()</code> statements</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
 <span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">1931</span><span class="tok-p">;</span>
 
 <span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-n">artistName</span><span class="tok-p">);</span>
 <span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">print</span><span class="tok-p">(</span><span class="tok-s">&quot; was born in &quot;</span><span class="tok-p">);</span>
-<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">birthYear</span><span class="tok-p">);</span></code></pre>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">birthYear</span><span class="tok-p">);</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1068,10 +1090,14 @@ We can combine output into one statement by creating a string with multiple piec
 <div class="listingblock">
 <div class="title">Outputting variables using concatenation</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-n">String</span><span class="tok-w"> </span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s">&quot;Sam Cooke&quot;</span><span class="tok-p">;</span>
 <span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">1931</span><span class="tok-p">;</span>
 
-<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot; was born in &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-p">);</span></code></pre>
+<span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-n">artistName</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-s">&quot; was born in &quot;</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-n">birthYear</span><span class="tok-p">);</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1083,7 +1109,7 @@ Be thoughtful when concatenating, because the `</code> symbol is also used to do
 </div>
 </div>
 <div class="sect2">
-<h3 id="_math_calculations">2.8. Math Calculations</h3>
+<h3 id="_math_calculations_">2.8. Math Calculations</h3>
 <div class="paragraph">
 <p>To start doing some calculations, we&#8217;ll use <em>operators</em>.
 You can think of an operator as a symbol that performs a calculation or other action.
@@ -1132,8 +1158,10 @@ Each operator acts on the value to either side:</p>
 <div class="listingblock">
 <div class="title">Simple arithmetic operations in Java</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">5</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">difference</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">5</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-mi">7</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">difference</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">sum</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-w"> </span><span class="tok-mi">2</span><span class="tok-p">;</span><span class="tok-w"> </span><i class="conum" data-value="2"></i><b>(2)</b>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -1208,7 +1236,7 @@ We call this <em>operator precedence</em>, and here are the guidlines:</p>
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td><code>result1</code> is 8: <code>4 * 6</code> is 24, then <code>24 / 3</code> is 8, and then <code>17 - 8</code> is 9.</td>
+<td><code>result1</code> is 9: <code>4 * 6</code> is 24, then <code>24 / 3</code> is 8, and then <code>17 - 8</code> is 9.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
@@ -1241,7 +1269,7 @@ For example, if we want to add 10 to a <code>weight</code> variable that already
 <p><code>weight += 10</code>;</p>
 </div>
 <div class="paragraph">
-<p>You can use compound assignment operators for all of the arithmetic opeerations:</p>
+<p>You can use compound assignment operators for all of the arithmetic operations:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1409,7 +1437,7 @@ As a reminder, there&#8217;s a weird quirk that happens when you get numeric inp
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-21 18:41:42 -0700
+Last updated 2025-03-29 15:15:42 -0700
 </div>
 </div>
 </body>
