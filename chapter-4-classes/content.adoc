@@ -65,11 +65,12 @@ video::Hnzm4sVsIAI[youtube, list={playlist}]
 ==== Class Diagrams
 In OOP, our planning for a program starts by deciding what objects--and therefore, what classes--we'll need in order to implement the functionality we want.
 To help organize our thinking, we'll use a tool called a *class diagram*, which gives a visual representation of the classes and their relationships in our program.
-The format programmers use for class diagrams is called UML (Unified Modeling Language). 
-The UML standards are extensive, but we'll be using a simplified version in this course. 
+The format programmers use for class diagrams is called _Unified Modeling Language_ (UM)). 
+The UML standards are extensive, and we'll be using a simplified version in this course. 
 
 Consider a program to handle orders at a restaurant. A simple class to represent one person's order might look like this:
 
+// TODO: Revert to plantuml for class diagrams
 .Example of a class diagram for a restaurant order
 // image::OrderDiagram-crt-green.png["Class diagram for the `Order` class"]
 image::OrderDiagram.png["Class diagram for the `Order` class"]
@@ -119,7 +120,7 @@ If we have an `Order` class in a program used by a restaurant, we don't want som
 
 To prevent this kind of tampering, whether it's intentional or accidental, OOP relies on a concept called *encapsulation*.
 Encapsulation of a class means that attributes are hidden from the outside world, and only the behaviors of the class can access and change them.
-As an analogy, consider the counter at a fast food restaurant. We can't just reach over and grab a handful of fries; we have to ask the employee behind the counter to get them for us.
+Continuing with food service analogies, consider the counter at a fast food restaurant. We can't just reach over and grab a handful of fries; we have to ask the employee behind the counter to get them for us.
 In this analogy, the food is encapsulated and we can only access it by using a behavior, like "order food".
 
 Another way to think of encapsulation is the way we interact with other people in social situations.
@@ -176,7 +177,7 @@ To begin with, we'll focus on two types of instance members: *fields* and *metho
 
 ==== Fields
 
-Fields are the implementation of the attributes of the class.
+*Fields* are the implementation of the _attributes_ of the class.
 They are also known as *instance variables* because they are similar to the variables we've been using in our programs, but their scope is the object created from the class, not the method where they're defined.
 A field is unique to the object; if we make two objects from our `WeatherRecord` class, each object will have its own date, high temperature, and average temperature.
 // If we change the high temperature for one object, it won't affect the high temperature for the other object.
@@ -206,9 +207,9 @@ image::SadPuppy.png["Sad puppy", width=200, float=right]
 
 You might remember from <<variable_scope,the section on variable scope in Chapter 0011>> that using global variables is terrible, and every time we create a global variable, a puppy loses its favorite toy. 
 And these fields look an awful lot like global variables.
-But fields in a class are *not* global variables; they're *instance* variables, and they're a good thing.
-The fields are *encapsulated*, so they can only be accessed and changed by the methods of the class--which is a good thing.
-And the fields are unique to each object, so we can have multiple objects with different values for the fields--which is also a good thing.
+But fields in a class are *not* global variables; they're *instance* variables, and that's a good thing.
+The fields are *encapsulated*, so they can only be accessed and changed by the methods of the class--which is also good thing.
+And the fields are unique to each object, so we can have multiple objects with different values for the fields--which is yet another a good thing.
 And so no puppies' toys will be harmed as long as we use *private* fields correctly.
 
 ==== Methods
@@ -219,7 +220,7 @@ So far, our methods have included the keyword `static`; we'll learn more about t
 These _nonstatic_ methods are called *instance methods*, and they are otherwise very similar to the `static` methods we've been using.
 
 Though there are exceptions, most of these instance methods will be `public`, so they can be accessed from other classes.
-Remember, the foundation of encapsulation is having `private` fields and public methods to permit interactions with that data.
+Remember, the foundation of encapsulation is having `private` fields and `public` methods to permit interactions with that data.
 
 In broad terms, we can categorize instance methods into two types: *accessor* methods and *mutator* methods.
 
@@ -286,7 +287,7 @@ All this method does is accept a new value and assign it to the field.
 Choosing to write setters isn't quite as straightforward as with getters, where there's generally no harm in exposing read-only access to everything.
 But we really should only write setters for fields that we want to be able to change from outside the class.
 
-TIP: As a rule of thumb for beginners, create *getters* for all of your fields when you first write your class, and then add *setters* only as you need them. Because this is sometimes tricky for beginners to determine, I don't deduct points for writing unnecessary setters--but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
+TIP: A rule of thumb for beginners: create *getters* for all of your fields when you first write your class, and then add *setters* only as you need them. Because this is sometimes tricky for beginners to determine, I don't deduct points for writing unnecessary setters--but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
 
 If you're paaying attention to what we're doing here, you might be thinking that these setters really just give public access to the fields, which seems to go against the whole idea of encapsulation.
 That's true for now, but only because we don't know enough Java yet to do anything about it.
