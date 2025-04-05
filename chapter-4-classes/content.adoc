@@ -598,7 +598,7 @@ In that case, our constructor would accept the account number, but we wouldn't p
 Since our first "Hello World" program, we've been using the `static` keyword to create methods--beginning with the `main()` method that is the starting point for every Java program.
 However, we haven't had enough context to understand what that keyword means.
 
-We've learned about _instance members_, which are the fields and methods that belong to a class, and _instance members_, which are the fields and methods that belong to an object.
+We've learned about _instance members_, which are the fields and methods that belong to an object.
 Fields are instance members, which means that each object has its own copy of the field that can be changed without affecting other objects.
 Instance methods are the code that an object can run, and they can access and change the fields of the object.
 Instance members are defined without using the `static` keyword, so we refer to them as _nonstatic_ members.
@@ -611,7 +611,7 @@ Since they're `static`, we can call them without creating a `System` object:
 
 `System.out.println("Hello, World!");`
 
-If `println()` were an instance method, we'd have to create a `System` object before we could call it:
+If `println()` was an instance method (without the `static` keyword), we'd have to create a `System` object before we could call it:
 
 `System mySystem = new System();`
 `mySystem.println("Hello, World!");`
@@ -620,7 +620,7 @@ That would be a pain, so we're glad that `println()` is `static`.
 
 NOTE: The `print()` and `println()` are slightly more complicated than that, since they're actually _instance methods_ of the `PrintStream` class, which is a class that `System.out` is an instance of. But for our purposes, we can think of them as `static` methods of the `System` class. You don't need to know that right now, but if I don't mention it then somebody will claim I'm an idiot. I probably _am_ an idiot, but not for this reason.
 
-As our skills develop, we'll learn more about using `static` in our programs and classes, but an important one to known about for now is the `static` constant.
+As our skills develop, we'll learn more about using `static` in our programs and classes, but an important one to know about for now is the `static` constant.
 When we put a `static` constant in an object class (which would also use the keyword `final`), we're creating a value that is shared by all objects created from the class.
 If we have a savings account class, a common example when learning OOP, we might have a `static final double INTEREST_RATE` constant. 
 This would mean that every savings account would earn the same interest rate, which is often how banks work.
@@ -638,6 +638,24 @@ public class SavingsAccount {
     }
 
 }   
+----
+
+In this example, the INTEREST_RATE is declared as private, so it can't be accessed from outside the class--but it can be accessed by any object created from the class.
+A constant can also be declared as `public`, which would allow other classes to access it. 
+As an example, the `Math` class has a `PI` constant that is defined as follows:
+
+.The definition of the `PI` constant in the `Math` class.
+[source,java]
+----
+public static final double PI = 3.141592653589793;
+----
+
+To use this in a program, we can call it just like we call `println()`--without creating an object:
+
+.Using the PI constant in a calculation
+[source,java]
+----
+double area = Math.PI * radius * radius;
 ----
 
 '''
