@@ -127,6 +127,9 @@ include::chapter-10-swing/content.adoc[]
 
 include::back-matter/content.adoc[]
 
+// TODO: Add license and link (attributes) to footer
+// TODO: Add author homepage (github) to header
+
 // TODO: Add chapter/example numbers to all code listings with {chapter-number} attribute
 // TODO: Use .... blocks for output
 // TODO: Check impact of enabling line numbers in source blocks. Get rid of labels/callouts?
@@ -138,4 +141,3 @@ include::back-matter/content.adoc[]
 // TODO: Canvas - When finished, Update required textbook to recommended; update Module Overview references to match.
 // TODO: Customize CSS, or use a skin (https://github.com/darshandsoni/asciidoctor-skins)
 // TODO: Set theme for plantUML renderings: https://the-lum.github.io/puml-themes-gallery/diagrams/Class.html
-// TODO: Add Interfaces & Abstract Classes--in Ch 9 or as chapter 12?
