@@ -120,7 +120,8 @@ If we have an `Order` class in a program used by a restaurant, we don't want som
 
 To prevent this kind of tampering, whether it's intentional or accidental, OOP relies on a concept called *encapsulation*.
 Encapsulation of a class means that attributes are hidden from the outside world, and only the behaviors of the class can access and change them.
-Continuing with food service analogies, consider the counter at a fast food restaurant. We can't just reach over and grab a handful of fries; we have to ask the employee behind the counter to get them for us.
+Continuing with food service analogies, consider the counter at a fast food restaurant. 
+We can't just reach over and grab a handful of fries; we have to ask the employee behind the counter to get them for us.
 In this analogy, the food is encapsulated and we can only access it by using a behavior, like "order food".
 
 Another way to think of encapsulation is the way we interact with other people in social situations.

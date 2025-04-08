@@ -108,10 +108,6 @@ IMPORTANT: The first Lab Assignment in Canvas can be completed using what we've 
 
 === Generative AI in Coding
 
-:!sectnums:
-==== #The AI content is under construction. Check back soon for updates!#
-:sectnums:
-
 Generative Artificial Intelligence is a type of AI that can generate new content based on existing data.
 Tools like ChatGPT and Copilot are well-known examples of generative AI.
 We can ask a generative AI tool to write song lyrics about Java programming, for example, and it will produce a link:chapter-7-debugging/ai_song.html[new song for us^].
