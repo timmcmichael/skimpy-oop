@@ -44,7 +44,7 @@ If you're majoring in something else, you might never write another line of code
 It's also possible that I just don't know very much. 
 You know, a skimpy brain.
 
-=== But why are we stuck reading this eBook?
+=== But why are we stuck reading *this* eBook?
 
 The only reason I wrote this is because real textbooks are expensive. 
 As I started to record more and more videos to supplement the real textbook I was using, students had less and less reason to actually read it.
@@ -63,7 +63,7 @@ _Looking at you, Python nerds..._
 Okay, there are a few reasons I use Java to teach OOP:
 
 * It's cross-platform, so my students can use Windows, macOS, or Linux machines and I can grade the work without hassle on whatever machine I'm currently using.
-* I like the way Java implements OOP, which I think is "stronger" than in Python, for example.
+* I like the way Java implements OOP, which I think is "stronger" than in Python, for example (though not as strong as C#, in my opinion).
 * Java is _strongly, statically typed_, meaning we have to declare data types when we make our variables and that type can't change. I believe this "stricter" approach to data types is better for beginners. 
 * Since it uses C syntax, Java skills transfer well to many other languages.
 * At https://www.estrellamountain.edu[Estrella Mountain Community College], we have other CIS classes that teach C# (my favorite OOP language) and Python. I want students using something different for this course so that they get exposed to multiple languages before they graduate. 
