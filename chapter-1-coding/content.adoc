@@ -309,7 +309,7 @@ To indicate a comment, use two slashes:
 
 `// This is a comment!`
 
-Once the compiler sees two slashes, it just ignores the rest of the line.
+Once the compiler sees two slashes, it just ignores the rest of the line and moves on to the next line.
 We can add a comment onto the end of a line of code:
 
 .Inline comment placed at the end of a line of code
