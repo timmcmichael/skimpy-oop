@@ -25,6 +25,12 @@ _Source code examples from this chapter and associated videos are available on h
 
 :sectnums:
 '''
+
+Arrays will be our first real exploration of the idea of data structures.
+Data structures are ways of organizing and storing data so that we can use it more efficiently.
+Data structures are a fundamental part of computer science, and they are used in almost every program we write.
+Arrays aren't necessarily the best data structure for every situation, but they are a good place to start.
+
 === Arrays and Indexes
 
 The variables we've used to this point can only store one piece of data at a time, and sometimes we need to store more than that.

@@ -65,11 +65,12 @@ video::Hnzm4sVsIAI[youtube, list={playlist}]
 ==== Class Diagrams
 In OOP, our planning for a program starts by deciding what objects--and therefore, what classes--we'll need in order to implement the functionality we want.
 To help organize our thinking, we'll use a tool called a *class diagram*, which gives a visual representation of the classes and their relationships in our program.
-The format programmers use for class diagrams is called UML (Unified Modeling Language). 
-The UML standards are extensive, but we'll be using a simplified version in this course. 
+The format programmers use for class diagrams is called _Unified Modeling Language_ (UM)). 
+The UML standards are extensive, and we'll be using a simplified version in this course. 
 
 Consider a program to handle orders at a restaurant. A simple class to represent one person's order might look like this:
 
+// TODO: Revert to plantuml for class diagrams
 .Example of a class diagram for a restaurant order
 // image::OrderDiagram-crt-green.png["Class diagram for the `Order` class"]
 image::OrderDiagram.png["Class diagram for the `Order` class"]
@@ -119,7 +120,8 @@ If we have an `Order` class in a program used by a restaurant, we don't want som
 
 To prevent this kind of tampering, whether it's intentional or accidental, OOP relies on a concept called *encapsulation*.
 Encapsulation of a class means that attributes are hidden from the outside world, and only the behaviors of the class can access and change them.
-As an analogy, consider the counter at a fast food restaurant. We can't just reach over and grab a handful of fries; we have to ask the employee behind the counter to get them for us.
+Continuing with food service analogies, consider the counter at a fast food restaurant. 
+We can't just reach over and grab a handful of fries; we have to ask the employee behind the counter to get them for us.
 In this analogy, the food is encapsulated and we can only access it by using a behavior, like "order food".
 
 Another way to think of encapsulation is the way we interact with other people in social situations.
@@ -176,7 +178,7 @@ To begin with, we'll focus on two types of instance members: *fields* and *metho
 
 ==== Fields
 
-Fields are the implementation of the attributes of the class.
+*Fields* are the implementation of the _attributes_ of the class.
 They are also known as *instance variables* because they are similar to the variables we've been using in our programs, but their scope is the object created from the class, not the method where they're defined.
 A field is unique to the object; if we make two objects from our `WeatherRecord` class, each object will have its own date, high temperature, and average temperature.
 // If we change the high temperature for one object, it won't affect the high temperature for the other object.
@@ -206,9 +208,9 @@ image::SadPuppy.png["Sad puppy", width=200, float=right]
 
 You might remember from <<variable_scope,the section on variable scope in Chapter 0011>> that using global variables is terrible, and every time we create a global variable, a puppy loses its favorite toy. 
 And these fields look an awful lot like global variables.
-But fields in a class are *not* global variables; they're *instance* variables, and they're a good thing.
-The fields are *encapsulated*, so they can only be accessed and changed by the methods of the class--which is a good thing.
-And the fields are unique to each object, so we can have multiple objects with different values for the fields--which is also a good thing.
+But fields in a class are *not* global variables; they're *instance* variables, and that's a good thing.
+The fields are *encapsulated*, so they can only be accessed and changed by the methods of the class--which is also good thing.
+And the fields are unique to each object, so we can have multiple objects with different values for the fields--which is yet another a good thing.
 And so no puppies' toys will be harmed as long as we use *private* fields correctly.
 
 ==== Methods
@@ -219,7 +221,7 @@ So far, our methods have included the keyword `static`; we'll learn more about t
 These _nonstatic_ methods are called *instance methods*, and they are otherwise very similar to the `static` methods we've been using.
 
 Though there are exceptions, most of these instance methods will be `public`, so they can be accessed from other classes.
-Remember, the foundation of encapsulation is having `private` fields and public methods to permit interactions with that data.
+Remember, the foundation of encapsulation is having `private` fields and `public` methods to permit interactions with that data.
 
 In broad terms, we can categorize instance methods into two types: *accessor* methods and *mutator* methods.
 
@@ -286,7 +288,7 @@ All this method does is accept a new value and assign it to the field.
 Choosing to write setters isn't quite as straightforward as with getters, where there's generally no harm in exposing read-only access to everything.
 But we really should only write setters for fields that we want to be able to change from outside the class.
 
-TIP: As a rule of thumb for beginners, create *getters* for all of your fields when you first write your class, and then add *setters* only as you need them. Because this is sometimes tricky for beginners to determine, I don't deduct points for writing unnecessary setters--but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
+TIP: A rule of thumb for beginners: create *getters* for all of your fields when you first write your class, and then add *setters* only as you need them. Because this is sometimes tricky for beginners to determine, I don't deduct points for writing unnecessary setters--but sometimes my directions will explicitly tell you not to write a setter for a field, and I do deduct for that.
 
 If you're paaying attention to what we're doing here, you might be thinking that these setters really just give public access to the fields, which seems to go against the whole idea of encapsulation.
 That's true for now, but only because we don't know enough Java yet to do anything about it.
@@ -395,7 +397,7 @@ This is a good test of the _set_ and _get_ methods for the `highTemperature` fie
 It's easy for beginners to forget to use that dot notation.
 To see why it's necessary, consider the following example.
 
-.An instance method call using dot notation with multiple objects.
+.Instance method calls on multiple objects.
 [source,java,linenums]
 ----
 WeatherRecord day1 = new WeatherRecord();
@@ -405,12 +407,12 @@ day1.setHighTemperature(87);
 ----
 
 If we left off the `day1.` part of the call, the compiler would not know which `setHighTemperature()` method to use, `day1` or `day2`.
-Even when we only have one instance, the compiler needs to know where to find that method, so the dot notation is required every time we call an instance method.
+And even when we only have one instance, the compiler needs to know where to find that method, so the dot notation is required every time we call an instance method.
 
 ===== Object Classes vs. Driver Classes
 
 Ok, time for another convention that seems only intended to be nitpicky and pointless, but is important and is expected on assignments in this course.
-OOP nerds value keeping parts of our programs compartmentalized, and that includes separating the class definition and the code that uses the class.
+OOP nerds value keeping the different parts of our programs compartmentalized, and that includes separating the class definition from the code that uses the class.
 A class definition goes in its own file, which must have a filename exactly match the name of the class (with _.java_ as an extension)--and that one's not a convention, that's a syntax rule for the compiler.
 A class we define for use as object can be called an *object class* or a *user-defined class*. 
 
@@ -504,7 +506,7 @@ This is a call to a special method called a *constructor*.
 A constructor runs when an object is instantiated, and it's used to set up the object with any initial values or behaviors.
 A constructor's primary job is to initialize the fields of the object--to give each instance variable a value.
 If we don't write a constructor, the compiler will create one for us; it's called a default constructor, and it will set all fields to their default values.
-For example, numeric fields like `int` and `double` will be set to `zero, and `String` fields will be set to `null`.
+For example, numeric fields like `int` and `double` will be set to zero, and `String` fields will be set to `null`.
 We've been using setters to change those initial values to what we want, but we can also write our own constructors to set those values when the object is created.
 
 Constructors are a special kind of method, so their syntax is a little different from other methods.
@@ -526,13 +528,13 @@ As a beginner, our rule of thumb is to just make a simple assignment statement f
 [source,java,linenums]
 ----
 public WeatherRecord() {
-    date = "2025-01-01";
-    highTemperature = 0;
-    averageWindSpeed = 0.0;
+    this.date = "2025-01-01";
+    this.highTemperature = 0;
+    this.averageWindSpeed = 0.0;
 }
 ----
 
-Since our WeatherRecord class has three fields, we've got three assignment statements in our constructor.
+Since our `WeatherRecord` class has three fields, we've got three assignment statements in our constructor.
 We can initialize those fields to any value we want, but we should choose values that make sense for the object; whatever we put there will be the default values that each object gets when it is instantiated.
 
 Constructors should be written at the top of the class, before the fields and methods.
@@ -586,16 +588,18 @@ Files from video:
 
 ==== Constructors and Encapsulation
 
-Constructors allow us to be stricter with our encapsulation since now we don't have to have setters to put data into our objects. We can provide a constructor to accept all the data the object needs, decide if we give access to change a field after the object has been instantiated.
+Constructors allow us to be stricter with our encapsulation since now we don't have to have setters to put data into our objects. 
+We can provide a constructor to accept all the data the object needs, decide if we give access to change a field after the object has been instantiated.
 
-For example, if we're making a bank account object, we'd need to provide an account number when we create the account, but we probably shouldn't allow the account number to be changed after the account is created. In that case, our constructor would accept the account number, but we wouldn't provide a setter for the account number.
+For example, if we're making a bank account object, we'd need to provide an account number when we create the account, but we probably shouldn't allow the account number to be changed after the account is created. 
+In that case, our constructor would accept the account number, but we wouldn't provide a setter for the account number.
 
 === `static` Constants and Methods
 
-Since our first `Hello World` program, we've been using the `static` keyword to create methods--beginning with the `main()` method that is the starting point for every Java program.
+Since our first "Hello World" program, we've been using the `static` keyword to create methods--beginning with the `main()` method that is the starting point for every Java program.
 However, we haven't had enough context to understand what that keyword means.
 
-We've learned about _instance members_, which are the fields and methods that belong to a class, and _instance members_, which are the fields and methods that belong to an object.
+We've learned about _instance members_, which are the fields and methods that belong to an object.
 Fields are instance members, which means that each object has its own copy of the field that can be changed without affecting other objects.
 Instance methods are the code that an object can run, and they can access and change the fields of the object.
 Instance members are defined without using the `static` keyword, so we refer to them as _nonstatic_ members.
@@ -608,7 +612,7 @@ Since they're `static`, we can call them without creating a `System` object:
 
 `System.out.println("Hello, World!");`
 
-If `println()` were an instance method, we'd have to create a `System` object before we could call it:
+If `println()` was an instance method (without the `static` keyword), we'd have to create a `System` object before we could call it:
 
 `System mySystem = new System();`
 `mySystem.println("Hello, World!");`
@@ -617,9 +621,10 @@ That would be a pain, so we're glad that `println()` is `static`.
 
 NOTE: The `print()` and `println()` are slightly more complicated than that, since they're actually _instance methods_ of the `PrintStream` class, which is a class that `System.out` is an instance of. But for our purposes, we can think of them as `static` methods of the `System` class. You don't need to know that right now, but if I don't mention it then somebody will claim I'm an idiot. I probably _am_ an idiot, but not for this reason.
 
-Throughout our learning, we'll learn more about using `static` in our programs and classes, but an important one to known about for now is the `static` constant.
+As our skills develop, we'll learn more about using `static` in our programs and classes, but an important one to know about for now is the `static` constant.
 When we put a `static` constant in an object class (which would also use the keyword `final`), we're creating a value that is shared by all objects created from the class.
-If we have a savings account class, a common example when learning OOP, we might have a `static final double INTEREST_RATE` constant. This would mean that every savings account would earn the same interest rate, which is often how banks work.
+If we have a savings account class, a common example when learning OOP, we might have a `static final double INTEREST_RATE` constant. 
+This would mean that every savings account would earn the same interest rate, which is often how banks work.
 
 .`SavingsAccount.java`. A class with a `static` constant.
 [source,java,linenums]
@@ -634,6 +639,24 @@ public class SavingsAccount {
     }
 
 }   
+----
+
+In this example, the INTEREST_RATE is declared as private, so it can't be accessed from outside the class--but it can be accessed by any object created from the class.
+A constant can also be declared as `public`, which would allow other classes to access it. 
+As an example, the `Math` class has a `PI` constant that is defined as follows:
+
+.The definition of the `PI` constant in the `Math` class.
+[source,java]
+----
+public static final double PI = 3.141592653589793;
+----
+
+To use this in a program, we can call it just like we call `println()`--without creating an object:
+
+.Using the PI constant in a calculation
+[source,java]
+----
+double area = Math.PI * radius * radius;
 ----
 
 '''

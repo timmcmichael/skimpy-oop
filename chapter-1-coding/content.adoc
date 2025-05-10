@@ -30,16 +30,12 @@ Because the guts of a computer (a CPU) are kinda like a bunch of light switches-
 NOTE: Never before has the concept of a modern computer been so recklessly simplified. I feel shame.
 
 All of the information a computer handles ultimately has to be represented by some combination of 1s and 0s, which we call a *binary* (or "base-two") number system.
- The chapters of this eBook are numbered using binary to show basic examples of the numbering system: 0001 is, well, 1 in decimal. 
+
+.Interesting!
+****
+The chapters of this eBook are numbered using binary to show basic examples of the numbering system: 0001 is, well, 1 in decimal. 
 And 0100 is 4 in decimal. We won't get into binary numbers, but it's not very complicated and is kind of interesting if you're a nerd.
-
-.Learn More
 ****
-The amazing https://code.org[code.org] project has a playlist of great, short videos on how computers work--including binary numbers--if you want to know a little more without going too crazy:
-
-https://www.youtube.com/playlist?list=PLzdnOPI1iJNcsRwJhvksEo1tJqjIqWbN-[How Computers Work]
-****
-
 
 Imagine that your BFF is in your object-oriented programming class, but that cruel professor won't let you sit together.
 When the professor turns his back, you can use your fingers to send a quick message to your BFF.
@@ -58,20 +54,28 @@ Now the coach could just line up five players and tell the 2nd and 5th ones to t
 The QB could look over, see the pattern of helmets (10110) and run play 22.
 
 Okay, that would be the nerdiest football team in history.
-And how is that relevant?
+
+.Learn More
+****
+The amazing https://code.org[code.org] project has a playlist of great, short videos on how computers work--including binary numbers--if you want to know a little more without going too crazy:
+
+https://www.youtube.com/playlist?list=PLzdnOPI1iJNcsRwJhvksEo1tJqjIqWbN-[How Computers Work]
+****
+
+And how is any of that relevant?
 Let's see...
 
 Remember that a computer can execute commands super fast.
 Each command, or *instruction* (like a football play), is represented by a number--a binary number, since that's the number system the computer uses.
 The collection of instructions the computer understands is called *machine language*.
 
+You could give the computer a set of instructions (aka, a program) if you just looked up the binary number for each instruction you wanted to use. 
+Of course, even a simple program requires a lot of instructions, so you're going to be looking up a *lot* of stuff.
+
 .Interesting!
 ****
 Just like people in different cultures use different languages, different CPU types use different languages. There are lots of different machine languages out there.
 ****
-
-You could give the computer a set of instructions (aka, a program) if you just looked up the binary number for each instruction you wanted to use. 
-Of course, even a simple program requires a lot of instructions, so you're going to be looking up a *lot* of stuff.
 
 Few people actually _want_ to do that, so the rest of us use programming languages instead.
 
@@ -305,7 +309,7 @@ To indicate a comment, use two slashes:
 
 `// This is a comment!`
 
-Once the compiler sees two slashes, it just ignores the rest of the line.
+Once the compiler sees two slashes, it just ignores the rest of the line and moves on to the next line.
 We can add a comment onto the end of a line of code:
 
 .Inline comment placed at the end of a line of code

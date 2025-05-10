@@ -297,7 +297,7 @@ int birthYear = 1931;
 System.out.println(artistName + " was born in " + birthYear);
 ----
 
-Creating a `String` using the `+` symbol is called _concatenating_. 
+Creating a `String` using the `\+` symbol is called _concatenating_. 
 Be thoughtful when concatenating, because the `+` symbol is also used to do addition with numbers, as you'll see.
 
 For our purposes, there's no difference between outputting using separate `print()` statements or concatenating everything in one statement; you can use whichever approach you prefer (and we'll learn other ways to output values, too).
